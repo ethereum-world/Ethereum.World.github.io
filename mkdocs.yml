@@ -1,3 +1,5 @@
 site_name: AKASHA World Framework docs
 theme:
   name: material
+nav:
+  - API: modules.md
