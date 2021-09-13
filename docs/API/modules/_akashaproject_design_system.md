@@ -6,13 +6,13 @@
 
 ### Variables
 
-- [default](_akashaproject_design_system.md#default)
+- [exported](_akashaproject_design_system.md#exported)
 
 ## Variables
 
-### default
+### exported
 
-• `Const` **default**: `Object`
+• `Const` **exported**: `Object`
 
 #### Type declaration
 

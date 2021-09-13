@@ -14,14 +14,14 @@
 
 ### Functions
 
-- [default](_akashaproject_awf_sdk.md#default)
+- [getSDK](_akashaproject_awf_sdk.md#getsdk)
 - [init](_akashaproject_awf_sdk.md#init)
 
 ## Functions
 
-### default
+### getSDK
 
-▸ **default**(): [`AWF_SDK`](../interfaces/_akashaproject_awf_sdk.AWF_SDK.md)
+▸ **getSDK**(): [`AWF_SDK`](../interfaces/_akashaproject_awf_sdk.AWF_SDK.md)
 
 #### Returns
 
