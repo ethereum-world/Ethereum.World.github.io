@@ -1,0 +1,4603 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.7">
+    
+    
+      
+        <title>Akashaproject ui awf hooks. internal - AKASHA World Framework docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.cd566b2a.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#namespace-internal" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="AKASHA World Framework docs" class="md-header__button md-logo" aria-label="AKASHA World Framework docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AKASHA World Framework docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Akashaproject ui awf hooks. internal 
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="AKASHA World Framework docs" class="md-nav__button md-logo" aria-label="AKASHA World Framework docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    AKASHA World Framework docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        API
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    Table of contents
+  </a>
+  
+    <nav class="md-nav" aria-label="Table of contents">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enumerations" class="md-nav__link">
+    Enumerations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#classes" class="md-nav__link">
+    Classes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interfaces" class="md-nav__link">
+    Interfaces
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-aliases" class="md-nav__link">
+    Type aliases
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variables" class="md-nav__link">
+    Variables
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#type-aliases_1" class="md-nav__link">
+    Type aliases
+  </a>
+  
+    <nav class="md-nav" aria-label="Type aliases">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#action" class="md-nav__link">
+    Action
+  </a>
+  
+    <nav class="md-nav" aria-label="Action">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#action_1" class="md-nav__link">
+    Action
+  </a>
+  
+    <nav class="md-nav" aria-label="Action">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_1" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_1" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#componentstate" class="md-nav__link">
+    ComponentState
+  </a>
+  
+    <nav class="md-nav" aria-label="ComponentState">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_2" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#componenttype" class="md-nav__link">
+    ComponentType
+  </a>
+  
+    <nav class="md-nav" aria-label="ComponentType">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_2" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_3" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consumer" class="md-nav__link">
+    Consumer
+  </a>
+  
+    <nav class="md-nav" aria-label="Consumer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_3" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_4" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataupdatefunction" class="md-nav__link">
+    DataUpdateFunction
+  </a>
+  
+    <nav class="md-nav" aria-label="DataUpdateFunction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_4" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_5" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ensuredquerykey" class="md-nav__link">
+    EnsuredQueryKey
+  </a>
+  
+    <nav class="md-nav" aria-label="EnsuredQueryKey">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_5" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_6" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exclude" class="md-nav__link">
+    Exclude
+  </a>
+  
+    <nav class="md-nav" aria-label="Exclude">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_6" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_7" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flatarray" class="md-nav__link">
+    FlatArray
+  </a>
+  
+    <nav class="md-nav" aria-label="FlatArray">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_7" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_8" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getderivedstatefromerror" class="md-nav__link">
+    GetDerivedStateFromError
+  </a>
+  
+    <nav class="md-nav" aria-label="GetDerivedStateFromError">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_8" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_1" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_1" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_1" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_9" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getderivedstatefromprops" class="md-nav__link">
+    GetDerivedStateFromProps
+  </a>
+  
+    <nav class="md-nav" aria-label="GetDerivedStateFromProps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_9" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_2" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_2" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_2" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_10" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getnextpageparamfunction" class="md-nav__link">
+    GetNextPageParamFunction
+  </a>
+  
+    <nav class="md-nav" aria-label="GetNextPageParamFunction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_10" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_3" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_3" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_3" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_11" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getpreviouspageparamfunction" class="md-nav__link">
+    GetPreviousPageParamFunction
+  </a>
+  
+    <nav class="md-nav" aria-label="GetPreviousPageParamFunction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_11" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_4" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_4" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_4" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_12" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#infinitequeryobserverresult" class="md-nav__link">
+    InfiniteQueryObserverResult
+  </a>
+  
+    <nav class="md-nav" aria-label="InfiniteQueryObserverResult">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_12" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_13" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#initialdatafunction" class="md-nav__link">
+    InitialDataFunction
+  </a>
+  
+    <nav class="md-nav" aria-label="InitialDataFunction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_13" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_5" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_5" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_14" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iteratorresult" class="md-nav__link">
+    IteratorResult
+  </a>
+  
+    <nav class="md-nav" aria-label="IteratorResult">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_14" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_15" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jsxelementconstructor" class="md-nav__link">
+    JSXElementConstructor
+  </a>
+  
+    <nav class="md-nav" aria-label="JSXElementConstructor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_15" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_16" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key" class="md-nav__link">
+    Key
+  </a>
+  
+    <nav class="md-nav" aria-label="Key">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_17" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listener" class="md-nav__link">
+    Listener
+  </a>
+  
+    <nav class="md-nav" aria-label="Listener">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_6" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_6" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_18" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mutatefunction" class="md-nav__link">
+    MutateFunction
+  </a>
+  
+    <nav class="md-nav" aria-label="MutateFunction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_16" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_7" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_5" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_7" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_19" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mutationcachelistener" class="md-nav__link">
+    MutationCacheListener
+  </a>
+  
+    <nav class="md-nav" aria-label="MutationCacheListener">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_8" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_6" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_8" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_20" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mutationfunction" class="md-nav__link">
+    MutationFunction
+  </a>
+  
+    <nav class="md-nav" aria-label="MutationFunction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_17" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_9" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_7" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_9" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_21" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mutationkey" class="md-nav__link">
+    MutationKey
+  </a>
+  
+    <nav class="md-nav" aria-label="MutationKey">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_22" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mutationmeta" class="md-nav__link">
+    MutationMeta
+  </a>
+  
+    <nav class="md-nav" aria-label="MutationMeta">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_23" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mutationobserverlistener" class="md-nav__link">
+    MutationObserverListener
+  </a>
+  
+    <nav class="md-nav" aria-label="MutationObserverListener">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_18" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_10" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_8" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_10" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_24" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mutationobserverresult" class="md-nav__link">
+    MutationObserverResult
+  </a>
+  
+    <nav class="md-nav" aria-label="MutationObserverResult">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_19" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_25" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mutationstatus" class="md-nav__link">
+    MutationStatus
+  </a>
+  
+    <nav class="md-nav" aria-label="MutationStatus">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_26" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onerrorhandler" class="md-nav__link">
+    OnErrorHandler
+  </a>
+  
+    <nav class="md-nav" aria-label="OnErrorHandler">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_11" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_9" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_11" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_27" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onloginsuccesshandler" class="md-nav__link">
+    OnLoginSuccessHandler
+  </a>
+  
+    <nav class="md-nav" aria-label="OnLoginSuccessHandler">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_12" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_10" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_12" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_28" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onlogoutsuccesshandler" class="md-nav__link">
+    OnLogoutSuccessHandler
+  </a>
+  
+    <nav class="md-nav" aria-label="OnLogoutSuccessHandler">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_13" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_13" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_29" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#override" class="md-nav__link">
+    Override
+  </a>
+  
+    <nav class="md-nav" aria-label="Override">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_20" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_30" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_11" class="md-nav__link">
+    Parameters
+  </a>
+  
+    <nav class="md-nav" aria-label="Parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_21" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_31" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#partial" class="md-nav__link">
+    Partial
+  </a>
+  
+    <nav class="md-nav" aria-label="Partial">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_22" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_32" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pick" class="md-nav__link">
+    Pick
+  </a>
+  
+    <nav class="md-nav" aria-label="Pick">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_23" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_33" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#placeholderdatafunction" class="md-nav__link">
+    PlaceholderDataFunction
+  </a>
+  
+    <nav class="md-nav" aria-label="PlaceholderDataFunction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_24" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_14" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_14" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_34" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#profile" class="md-nav__link">
+    Profile
+  </a>
+  
+    <nav class="md-nav" aria-label="Profile">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_15" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_35" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#propswithchildren" class="md-nav__link">
+    PropsWithChildren
+  </a>
+  
+    <nav class="md-nav" aria-label="PropsWithChildren">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_25" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_36" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#provider" class="md-nav__link">
+    Provider
+  </a>
+  
+    <nav class="md-nav" aria-label="Provider">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_26" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_37" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#querycachelistener" class="md-nav__link">
+    QueryCacheListener
+  </a>
+  
+    <nav class="md-nav" aria-label="QueryCacheListener">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_16" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_12" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_15" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_38" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#querycachenotifyevent" class="md-nav__link">
+    QueryCacheNotifyEvent
+  </a>
+  
+    <nav class="md-nav" aria-label="QueryCacheNotifyEvent">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_39" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#queryfunction" class="md-nav__link">
+    QueryFunction
+  </a>
+  
+    <nav class="md-nav" aria-label="QueryFunction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_27" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_17" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_13" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_16" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_40" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#querykey" class="md-nav__link">
+    QueryKey
+  </a>
+  
+    <nav class="md-nav" aria-label="QueryKey">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_41" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#querykeyhashfunction" class="md-nav__link">
+    QueryKeyHashFunction
+  </a>
+  
+    <nav class="md-nav" aria-label="QueryKeyHashFunction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_28" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_18" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_14" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_17" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_42" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#querymeta" class="md-nav__link">
+    QueryMeta
+  </a>
+  
+    <nav class="md-nav" aria-label="QueryMeta">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_43" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#queryobserverlistener" class="md-nav__link">
+    QueryObserverListener
+  </a>
+  
+    <nav class="md-nav" aria-label="QueryObserverListener">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_29" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_19" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_15" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_18" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_44" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#queryobserverresult" class="md-nav__link">
+    QueryObserverResult
+  </a>
+  
+    <nav class="md-nav" aria-label="QueryObserverResult">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_30" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_45" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#querystatus" class="md-nav__link">
+    QueryStatus
+  </a>
+  
+    <nav class="md-nav" aria-label="QueryStatus">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_46" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reactchild" class="md-nav__link">
+    ReactChild
+  </a>
+  
+    <nav class="md-nav" aria-label="ReactChild">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_47" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reactfragment" class="md-nav__link">
+    ReactFragment
+  </a>
+  
+    <nav class="md-nav" aria-label="ReactFragment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_48" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reactinstance" class="md-nav__link">
+    ReactInstance
+  </a>
+  
+    <nav class="md-nav" aria-label="ReactInstance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_49" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reactnode" class="md-nav__link">
+    ReactNode
+  </a>
+  
+    <nav class="md-nav" aria-label="ReactNode">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_50" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reacttext" class="md-nav__link">
+    ReactText
+  </a>
+  
+    <nav class="md-nav" aria-label="ReactText">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_51" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#readonly" class="md-nav__link">
+    Readonly
+  </a>
+  
+    <nav class="md-nav" aria-label="Readonly">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_31" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_52" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#record" class="md-nav__link">
+    Record
+  </a>
+  
+    <nav class="md-nav" aria-label="Record">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_32" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_53" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#retrydelayfunction" class="md-nav__link">
+    RetryDelayFunction
+  </a>
+  
+    <nav class="md-nav" aria-label="RetryDelayFunction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_33" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_20" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_16" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_19" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_54" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#retrydelayvalue" class="md-nav__link">
+    RetryDelayValue
+  </a>
+  
+    <nav class="md-nav" aria-label="RetryDelayValue">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_34" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_55" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#retryvalue" class="md-nav__link">
+    RetryValue
+  </a>
+  
+    <nav class="md-nav" aria-label="RetryValue">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_35" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_56" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shouldretryfunction" class="md-nav__link">
+    ShouldRetryFunction
+  </a>
+  
+    <nav class="md-nav" aria-label="ShouldRetryFunction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_36" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_21" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_17" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_20" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_57" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#updater" class="md-nav__link">
+    Updater
+  </a>
+  
+    <nav class="md-nav" aria-label="Updater">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_37" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_58" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usebasemutationresult" class="md-nav__link">
+    UseBaseMutationResult
+  </a>
+  
+    <nav class="md-nav" aria-label="UseBaseMutationResult">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_38" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_59" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usebasequeryresult" class="md-nav__link">
+    UseBaseQueryResult
+  </a>
+  
+    <nav class="md-nav" aria-label="UseBaseQueryResult">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_39" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_60" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#useinfinitequeryresult" class="md-nav__link">
+    UseInfiniteQueryResult
+  </a>
+  
+    <nav class="md-nav" aria-label="UseInfiniteQueryResult">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_40" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_61" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usemoderationparam" class="md-nav__link">
+    UseModerationParam
+  </a>
+  
+    <nav class="md-nav" aria-label="UseModerationParam">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_22" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_62" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usemutateasyncfunction" class="md-nav__link">
+    UseMutateAsyncFunction
+  </a>
+  
+    <nav class="md-nav" aria-label="UseMutateAsyncFunction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_41" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_63" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usemutatefunction" class="md-nav__link">
+    UseMutateFunction
+  </a>
+  
+    <nav class="md-nav" aria-label="UseMutateFunction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_42" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_23" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_18" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_21" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_64" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usemutationresult" class="md-nav__link">
+    UseMutationResult
+  </a>
+  
+    <nav class="md-nav" aria-label="UseMutationResult">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_43" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_65" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usequeryresult" class="md-nav__link">
+    UseQueryResult
+  </a>
+  
+    <nav class="md-nav" aria-label="UseQueryResult">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_44" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_66" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validationmap" class="md-nav__link">
+    ValidationMap
+  </a>
+  
+    <nav class="md-nav" aria-label="ValidationMap">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_45" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_67" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validator" class="md-nav__link">
+    Validator
+  </a>
+  
+    <nav class="md-nav" aria-label="Validator">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_46" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_68" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#weakvalidationmap" class="md-nav__link">
+    WeakValidationMap
+  </a>
+  
+    <nav class="md-nav" aria-label="WeakValidationMap">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_47" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_69" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usepostparam" class="md-nav__link">
+    usePostParam
+  </a>
+  
+    <nav class="md-nav" aria-label="usePostParam">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_24" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_70" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variables_1" class="md-nav__link">
+    Variables
+  </a>
+  
+    <nav class="md-nav" aria-label="Variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#error" class="md-nav__link">
+    Error
+  </a>
+  
+    <nav class="md-nav" aria-label="Error">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_71" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+<p><a href="../../">AWF</a> / <a href="../">Modules</a> / <a href="../akashaproject_ui_awf_hooks/">@akashaproject/ui-awf-hooks</a> / &lt;internal></p>
+<h1 id="namespace-internal">Namespace: &lt;internal></h1>
+<p><a href="../akashaproject_ui_awf_hooks/">@akashaproject/ui-awf-hooks</a>.<internal></p>
+<h2 id="table-of-contents">Table of contents</h2>
+<h3 id="enumerations">Enumerations</h3>
+<ul>
+<li><a href="../../enums/akashaproject_ui_awf_hooks._internal_.EthProviders/">EthProviders</a></li>
+<li><a href="../../enums/akashaproject_ui_awf_hooks._internal_.INJECTED_PROVIDERS/">INJECTED_PROVIDERS</a></li>
+<li><a href="../../enums/akashaproject_ui_awf_hooks._internal_.ItemTypes/">ItemTypes</a></li>
+<li><a href="../../enums/akashaproject_ui_awf_hooks._internal_.LEGAL_DOCS/">LEGAL_DOCS</a></li>
+<li><a href="../../enums/akashaproject_ui_awf_hooks._internal_.PostType/">PostType</a></li>
+<li><a href="../../enums/akashaproject_ui_awf_hooks._internal_.ProfileProviders/">ProfileProviders</a></li>
+</ul>
+<h3 id="classes">Classes</h3>
+<ul>
+<li><a href="../../classes/akashaproject_ui_awf_hooks._internal_.Component/">Component</a></li>
+<li><a href="../../classes/akashaproject_ui_awf_hooks._internal_.Mutation/">Mutation</a></li>
+<li><a href="../../classes/akashaproject_ui_awf_hooks._internal_.MutationCache/">MutationCache</a></li>
+<li><a href="../../classes/akashaproject_ui_awf_hooks._internal_.MutationObserver/">MutationObserver</a></li>
+<li><a href="../../classes/akashaproject_ui_awf_hooks._internal_.Query/">Query</a></li>
+<li><a href="../../classes/akashaproject_ui_awf_hooks._internal_.QueryCache/">QueryCache</a></li>
+<li><a href="../../classes/akashaproject_ui_awf_hooks._internal_.QueryClient/">QueryClient</a></li>
+<li><a href="../../classes/akashaproject_ui_awf_hooks._internal_.QueryObserver/">QueryObserver</a></li>
+<li><a href="../../classes/akashaproject_ui_awf_hooks._internal_.Subscribable/">Subscribable</a></li>
+</ul>
+<h3 id="interfaces">Interfaces</h3>
+<ul>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.CancelOptions/">CancelOptions</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.CommentResponse/">CommentResponse</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.Comment_Response/">Comment_Response</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.ComponentClass/">ComponentClass</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.ComponentLifecycle/">ComponentLifecycle</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.ConcatArray/">ConcatArray</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.ConsumerProps/">ConsumerProps</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.Context/">Context</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.ContinueAction/">ContinueAction</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.ContinueAction-1/">ContinueAction</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.CurrentUser/">CurrentUser</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.DataProviderInput/">DataProviderInput</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.DefaultOptions/">DefaultOptions</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.DeprecatedLifecycle/">DeprecatedLifecycle</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.Error/">Error</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.ErrorAction/">ErrorAction</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.ErrorAction-1/">ErrorAction</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.ErrorInfo/">ErrorInfo</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.ExoticComponent/">ExoticComponent</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.FailedAction/">FailedAction</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.FailedAction-1/">FailedAction</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.FetchAction/">FetchAction</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.FetchContext/">FetchContext</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.FetchInfiniteQueryOptions/">FetchInfiniteQueryOptions</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.FetchNextPageOptions/">FetchNextPageOptions</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.FetchOptions/">FetchOptions</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.FetchPreviousPageOptions/">FetchPreviousPageOptions</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.FetchQueryOptions/">FetchQueryOptions</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.FunctionComponent/">FunctionComponent</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.GlobalSearchResultTagItem/">GlobalSearchResultTagItem</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.IContentClickDetails/">IContentClickDetails</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.IEntryData/">IEntryData</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.ILogger/">ILogger</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.IMetadata/">IMetadata</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.IProfileData/">IProfileData</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.IPublishData/">IPublishData</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.IUseIsValidTokenProps/">IUseIsValidTokenProps</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.InfiniteData/">InfiniteData</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.InfiniteQueryObserverBaseResult/">InfiniteQueryObserverBaseResult</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.InfiniteQueryObserverIdleResult/">InfiniteQueryObserverIdleResult</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.InfiniteQueryObserverLoadingErrorResult/">InfiniteQueryObserverLoadingErrorResult</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.InfiniteQueryObserverLoadingResult/">InfiniteQueryObserverLoadingResult</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.InfiniteQueryObserverRefetchErrorResult/">InfiniteQueryObserverRefetchErrorResult</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.InfiniteQueryObserverSuccessResult/">InfiniteQueryObserverSuccessResult</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.InvalidateAction/">InvalidateAction</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.InvalidateOptions/">InvalidateOptions</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.InvalidateQueryFilters/">InvalidateQueryFilters</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.IterableIterator/">IterableIterator</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.Iterator/">Iterator</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.IteratorReturnResult/">IteratorReturnResult</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.IteratorYieldResult/">IteratorYieldResult</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.LinkPreview_Response/">LinkPreview_Response</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.LoadingAction/">LoadingAction</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.LogItemsReponse/">LogItemsReponse</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.ModeratedItemsReponse/">ModeratedItemsReponse</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.MutateOptions/">MutateOptions</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.MutationCacheConfig/">MutationCacheConfig</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.MutationConfig/">MutationConfig</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.MutationFilters/">MutationFilters</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.MutationObserverBaseResult/">MutationObserverBaseResult</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.MutationObserverErrorResult/">MutationObserverErrorResult</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.MutationObserverIdleResult/">MutationObserverIdleResult</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.MutationObserverLoadingResult/">MutationObserverLoadingResult</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.MutationObserverOptions/">MutationObserverOptions</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.MutationObserverSuccessResult/">MutationObserverSuccessResult</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.MutationOptions/">MutationOptions</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.MutationState/">MutationState</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.NewLifecycle/">NewLifecycle</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.NotifyEventObserverAdded/">NotifyEventObserverAdded</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.NotifyEventObserverRemoved/">NotifyEventObserverRemoved</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.NotifyEventObserverResultsUpdated/">NotifyEventObserverResultsUpdated</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.NotifyEventQueryAdded/">NotifyEventQueryAdded</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.NotifyEventQueryRemoved/">NotifyEventQueryRemoved</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.NotifyEventQueryUpdated/">NotifyEventQueryUpdated</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.NotifyOptions/">NotifyOptions</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.ObserverFetchOptions/">ObserverFetchOptions</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.PaginatedResponse/">PaginatedResponse</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.PauseAction/">PauseAction</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.PauseAction-1/">PauseAction</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.PendingEntry/">PendingEntry</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.PendingItemsReponse/">PendingItemsReponse</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.PostResponse/">PostResponse</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.Post_Response/">Post_Response</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.ProviderExoticComponent/">ProviderExoticComponent</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.ProviderProps/">ProviderProps</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.QueryBehavior/">QueryBehavior</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.QueryCacheConfig/">QueryCacheConfig</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.QueryClientConfig/">QueryClientConfig</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.QueryConfig/">QueryConfig</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.QueryFilters/">QueryFilters</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.QueryFunctionContext/">QueryFunctionContext</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.QueryObserverBaseResult/">QueryObserverBaseResult</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.QueryObserverIdleResult/">QueryObserverIdleResult</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.QueryObserverLoadingErrorResult/">QueryObserverLoadingErrorResult</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.QueryObserverLoadingResult/">QueryObserverLoadingResult</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.QueryObserverOptions/">QueryObserverOptions</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.QueryObserverRefetchErrorResult/">QueryObserverRefetchErrorResult</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.QueryObserverSuccessResult/">QueryObserverSuccessResult</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.QueryOptions/">QueryOptions</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.QueryState/">QueryState</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.ReactElement/">ReactElement</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.ReactNodeArray/">ReactNodeArray</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.ReactPortal/">ReactPortal</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.RefetchOptions/">RefetchOptions</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.RefetchPageFilters/">RefetchPageFilters</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.RefetchQueryFilters/">RefetchQueryFilters</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.ResetOptions/">ResetOptions</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.ResetQueryFilters/">ResetQueryFilters</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.ResultOptions/">ResultOptions</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.SearchTagsResult_Response/">SearchTagsResult_Response</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.SetDataOptions/">SetDataOptions</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.SetStateAction/">SetStateAction</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.SetStateAction-1/">SetStateAction</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.SetStateOptions/">SetStateOptions</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.StaticLifecycle/">StaticLifecycle</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.SuccessAction/">SuccessAction</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.SuccessAction-1/">SuccessAction</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.Tag_Response/">Tag_Response</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.UpdateProfileFormData/">UpdateProfileFormData</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.UseAnalyticsActions/">UseAnalyticsActions</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.UseAnalyticsState/">UseAnalyticsState</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.UseGlobalLoginProps/">UseGlobalLoginProps</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.UseReasonsActions/">UseReasonsActions</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.UserFollowers_Response/">UserFollowers_Response</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.UserProfile_Response/">UserProfile_Response</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.Validator/">Validator</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.VideoPreview_Response/">VideoPreview_Response</a></li>
+</ul>
+<h3 id="type-aliases">Type aliases</h3>
+<ul>
+<li><a href="./#action">Action</a></li>
+<li><a href="./#action">Action</a></li>
+<li><a href="./#componentstate">ComponentState</a></li>
+<li><a href="./#componenttype">ComponentType</a></li>
+<li><a href="./#consumer">Consumer</a></li>
+<li><a href="./#dataupdatefunction">DataUpdateFunction</a></li>
+<li><a href="./#ensuredquerykey">EnsuredQueryKey</a></li>
+<li><a href="./#exclude">Exclude</a></li>
+<li><a href="./#flatarray">FlatArray</a></li>
+<li><a href="./#getderivedstatefromerror">GetDerivedStateFromError</a></li>
+<li><a href="./#getderivedstatefromprops">GetDerivedStateFromProps</a></li>
+<li><a href="./#getnextpageparamfunction">GetNextPageParamFunction</a></li>
+<li><a href="./#getpreviouspageparamfunction">GetPreviousPageParamFunction</a></li>
+<li><a href="./#infinitequeryobserverresult">InfiniteQueryObserverResult</a></li>
+<li><a href="./#initialdatafunction">InitialDataFunction</a></li>
+<li><a href="./#iteratorresult">IteratorResult</a></li>
+<li><a href="./#jsxelementconstructor">JSXElementConstructor</a></li>
+<li><a href="./#key">Key</a></li>
+<li><a href="./#listener">Listener</a></li>
+<li><a href="./#mutatefunction">MutateFunction</a></li>
+<li><a href="./#mutationcachelistener">MutationCacheListener</a></li>
+<li><a href="./#mutationfunction">MutationFunction</a></li>
+<li><a href="./#mutationkey">MutationKey</a></li>
+<li><a href="./#mutationmeta">MutationMeta</a></li>
+<li><a href="./#mutationobserverlistener">MutationObserverListener</a></li>
+<li><a href="./#mutationobserverresult">MutationObserverResult</a></li>
+<li><a href="./#mutationstatus">MutationStatus</a></li>
+<li><a href="./#onerrorhandler">OnErrorHandler</a></li>
+<li><a href="./#onloginsuccesshandler">OnLoginSuccessHandler</a></li>
+<li><a href="./#onlogoutsuccesshandler">OnLogoutSuccessHandler</a></li>
+<li><a href="./#override">Override</a></li>
+<li><a href="./#parameters">Parameters</a></li>
+<li><a href="./#partial">Partial</a></li>
+<li><a href="./#pick">Pick</a></li>
+<li><a href="./#placeholderdatafunction">PlaceholderDataFunction</a></li>
+<li><a href="./#profile">Profile</a></li>
+<li><a href="./#propswithchildren">PropsWithChildren</a></li>
+<li><a href="./#provider">Provider</a></li>
+<li><a href="./#querycachelistener">QueryCacheListener</a></li>
+<li><a href="./#querycachenotifyevent">QueryCacheNotifyEvent</a></li>
+<li><a href="./#queryfunction">QueryFunction</a></li>
+<li><a href="./#querykey">QueryKey</a></li>
+<li><a href="./#querykeyhashfunction">QueryKeyHashFunction</a></li>
+<li><a href="./#querymeta">QueryMeta</a></li>
+<li><a href="./#queryobserverlistener">QueryObserverListener</a></li>
+<li><a href="./#queryobserverresult">QueryObserverResult</a></li>
+<li><a href="./#querystatus">QueryStatus</a></li>
+<li><a href="./#reactchild">ReactChild</a></li>
+<li><a href="./#reactfragment">ReactFragment</a></li>
+<li><a href="./#reactinstance">ReactInstance</a></li>
+<li><a href="./#reactnode">ReactNode</a></li>
+<li><a href="./#reacttext">ReactText</a></li>
+<li><a href="./#readonly">Readonly</a></li>
+<li><a href="./#record">Record</a></li>
+<li><a href="./#retrydelayfunction">RetryDelayFunction</a></li>
+<li><a href="./#retrydelayvalue">RetryDelayValue</a></li>
+<li><a href="./#retryvalue">RetryValue</a></li>
+<li><a href="./#shouldretryfunction">ShouldRetryFunction</a></li>
+<li><a href="./#updater">Updater</a></li>
+<li><a href="./#usebasemutationresult">UseBaseMutationResult</a></li>
+<li><a href="./#usebasequeryresult">UseBaseQueryResult</a></li>
+<li><a href="./#useinfinitequeryresult">UseInfiniteQueryResult</a></li>
+<li><a href="./#usemoderationparam">UseModerationParam</a></li>
+<li><a href="./#usemutateasyncfunction">UseMutateAsyncFunction</a></li>
+<li><a href="./#usemutatefunction">UseMutateFunction</a></li>
+<li><a href="./#usemutationresult">UseMutationResult</a></li>
+<li><a href="./#usequeryresult">UseQueryResult</a></li>
+<li><a href="./#validationmap">ValidationMap</a></li>
+<li><a href="./#validator">Validator</a></li>
+<li><a href="./#weakvalidationmap">WeakValidationMap</a></li>
+<li><a href="./#usepostparam">usePostParam</a></li>
+</ul>
+<h3 id="variables">Variables</h3>
+<ul>
+<li><a href="./#error">Error</a></li>
+</ul>
+<h2 id="type-aliases_1">Type aliases</h2>
+<h3 id="action">Action</h3>
+<p>Ƭ <strong>Action</strong>&lt;<code>TData</code>, <code>TError</code>, <code>TVariables</code>, <code>TContext</code>>: <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.ContinueAction/"><code>ContinueAction</code></a> | <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.ErrorAction/"><code>ErrorAction</code></a>&lt;<code>TError</code>> | <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.FailedAction/"><code>FailedAction</code></a> | <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.LoadingAction/"><code>LoadingAction</code></a>&lt;<code>TVariables</code>, <code>TContext</code>> | <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.PauseAction/"><code>PauseAction</code></a> | <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.SetStateAction/"><code>SetStateAction</code></a>&lt;<code>TData</code>, <code>TError</code>, <code>TVariables</code>, <code>TContext</code>> | <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.SuccessAction/"><code>SuccessAction</code></a>&lt;<code>TData</code>></p>
+<h4 id="type-parameters">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>TData</code></td>
+</tr>
+<tr>
+<td align="left"><code>TError</code></td>
+</tr>
+<tr>
+<td align="left"><code>TVariables</code></td>
+</tr>
+<tr>
+<td align="left"><code>TContext</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in">Defined in</h4>
+<p>ui/hooks/node_modules/react-query/types/core/mutation.d.ts:47</p>
+<hr />
+<h3 id="action_1">Action</h3>
+<p>Ƭ <strong>Action</strong>&lt;<code>TData</code>, <code>TError</code>>: <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.ContinueAction-1/"><code>ContinueAction</code></a> | <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.ErrorAction-1/"><code>ErrorAction</code></a>&lt;<code>TError</code>> | <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.FailedAction-1/"><code>FailedAction</code></a> | <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.FetchAction/"><code>FetchAction</code></a> | <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.InvalidateAction/"><code>InvalidateAction</code></a> | <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.PauseAction-1/"><code>PauseAction</code></a> | <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.SetStateAction-1/"><code>SetStateAction</code></a>&lt;<code>TData</code>, <code>TError</code>> | <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.SuccessAction-1/"><code>SuccessAction</code></a>&lt;<code>TData</code>></p>
+<h4 id="type-parameters_1">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>TData</code></td>
+</tr>
+<tr>
+<td align="left"><code>TError</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_1">Defined in</h4>
+<p>ui/hooks/node_modules/react-query/types/core/query.d.ts:73</p>
+<hr />
+<h3 id="componentstate">ComponentState</h3>
+<p>Ƭ <strong>ComponentState</strong>: <code>any</code></p>
+<h4 id="defined-in_2">Defined in</h4>
+<p>ui/hooks/node_modules/@types/react/index.d.ts:128</p>
+<hr />
+<h3 id="componenttype">ComponentType</h3>
+<p>Ƭ <strong>ComponentType</strong>&lt;<code>P</code>>: <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.ComponentClass/"><code>ComponentClass</code></a>&lt;<code>P</code>> | <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.FunctionComponent/"><code>FunctionComponent</code></a>&lt;<code>P</code>></p>
+<h4 id="type-parameters_2">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>P</code></td>
+<td align="left">{}</td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_3">Defined in</h4>
+<p>ui/hooks/node_modules/@types/react/index.d.ts:82</p>
+<hr />
+<h3 id="consumer">Consumer</h3>
+<p>Ƭ <strong>Consumer</strong>&lt;<code>T</code>>: <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.ExoticComponent/"><code>ExoticComponent</code></a>&lt;<a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.ConsumerProps/"><code>ConsumerProps</code></a>&lt;<code>T</code>>></p>
+<h4 id="type-parameters_3">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_4">Defined in</h4>
+<p>ui/hooks/node_modules/@types/react/index.d.ts:374</p>
+<hr />
+<h3 id="dataupdatefunction">DataUpdateFunction</h3>
+<p>Ƭ <strong>DataUpdateFunction</strong>&lt;<code>TInput</code>, <code>TOutput</code>>: (<code>input</code>: <code>TInput</code>) =&gt; <code>TOutput</code></p>
+<h4 id="type-parameters_4">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>TInput</code></td>
+</tr>
+<tr>
+<td align="left"><code>TOutput</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="type-declaration">Type declaration</h4>
+<p>▸ (<code>input</code>): <code>TOutput</code></p>
+<h5 id="parameters">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>input</code></td>
+<td align="left"><code>TInput</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns">Returns</h5>
+<p><code>TOutput</code></p>
+<h4 id="defined-in_5">Defined in</h4>
+<p>ui/hooks/node_modules/react-query/types/core/utils.d.ts:53</p>
+<hr />
+<h3 id="ensuredquerykey">EnsuredQueryKey</h3>
+<p>Ƭ <strong>EnsuredQueryKey</strong>&lt;<code>T</code>>: <code>T</code> extends <code>string</code> ? [<code>T</code>] : <a href="./#exclude"><code>Exclude</code></a>&lt;<code>T</code>, <code>string</code>></p>
+<h4 id="type-parameters_5">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <a href="./#querykey"><code>QueryKey</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_6">Defined in</h4>
+<p>ui/hooks/node_modules/react-query/types/core/types.d.ts:6</p>
+<hr />
+<h3 id="exclude">Exclude</h3>
+<p>Ƭ <strong>Exclude</strong>&lt;<code>T</code>, <code>U</code>>: <code>T</code> extends <code>U</code> ? <code>never</code> : <code>T</code></p>
+<p>Exclude from T those types that are assignable to U</p>
+<h4 id="type-parameters_6">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+</tr>
+<tr>
+<td align="left"><code>U</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_7">Defined in</h4>
+<p>node_modules/typescript/lib/lib.es5.d.ts:1506</p>
+<hr />
+<h3 id="flatarray">FlatArray</h3>
+<p>Ƭ <strong>FlatArray</strong>&lt;<code>Arr</code>, <code>Depth</code>>: { <code>done</code>: <code>Arr</code> ; <code>recur</code>: <code>Arr</code> extends <code>ReadonlyArray</code>&lt;infer InnerArr> ? <a href="./#flatarray"><code>FlatArray</code></a>&lt;<code>InnerArr</code>, [<code>-1</code>, <code>0</code>, <code>1</code>, <code>2</code>, <code>3</code>, <code>4</code>, <code>5</code>, <code>6</code>, <code>7</code>, <code>8</code>, <code>9</code>, <code>10</code>, <code>11</code>, <code>12</code>, <code>13</code>, <code>14</code>, <code>15</code>, <code>16</code>, <code>17</code>, <code>18</code>, <code>19</code>, <code>20</code>][<code>Depth</code>]> : <code>Arr</code>  }[<code>Depth</code> extends <code>-1</code> ? <code>"done"</code> : <code>"recur"</code>]</p>
+<h4 id="type-parameters_7">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>Arr</code></td>
+<td align="left"><code>Arr</code></td>
+</tr>
+<tr>
+<td align="left"><code>Depth</code></td>
+<td align="left">extends <code>number</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_8">Defined in</h4>
+<p>node_modules/typescript/lib/lib.es2019.array.d.ts:21</p>
+<hr />
+<h3 id="getderivedstatefromerror">GetDerivedStateFromError</h3>
+<p>Ƭ <strong>GetDerivedStateFromError</strong>&lt;<code>P</code>, <code>S</code>>: (<code>error</code>: <code>any</code>) =&gt; <a href="./#partial"><code>Partial</code></a>&lt;<code>S</code>> | <code>null</code></p>
+<h4 id="type-parameters_8">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>P</code></td>
+</tr>
+<tr>
+<td align="left"><code>S</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="type-declaration_1">Type declaration</h4>
+<p>▸ (<code>error</code>): <a href="./#partial"><code>Partial</code></a>&lt;<code>S</code>> | <code>null</code></p>
+<h5 id="parameters_1">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>error</code></td>
+<td align="left"><code>any</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_1">Returns</h5>
+<p><a href="./#partial"><code>Partial</code></a>&lt;<code>S</code>> | <code>null</code></p>
+<h4 id="defined-in_9">Defined in</h4>
+<p>ui/hooks/node_modules/@types/react/index.d.ts:657</p>
+<hr />
+<h3 id="getderivedstatefromprops">GetDerivedStateFromProps</h3>
+<p>Ƭ <strong>GetDerivedStateFromProps</strong>&lt;<code>P</code>, <code>S</code>>: (<code>nextProps</code>: <a href="./#readonly"><code>Readonly</code></a>&lt;<code>P</code>>, <code>prevState</code>: <code>S</code>) =&gt; <a href="./#partial"><code>Partial</code></a>&lt;<code>S</code>> | <code>null</code></p>
+<h4 id="type-parameters_9">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>P</code></td>
+</tr>
+<tr>
+<td align="left"><code>S</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="type-declaration_2">Type declaration</h4>
+<p>▸ (<code>nextProps</code>, <code>prevState</code>): <a href="./#partial"><code>Partial</code></a>&lt;<code>S</code>> | <code>null</code></p>
+<h5 id="parameters_2">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>nextProps</code></td>
+<td align="left"><a href="./#readonly"><code>Readonly</code></a>&lt;<code>P</code>></td>
+</tr>
+<tr>
+<td align="left"><code>prevState</code></td>
+<td align="left"><code>S</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_2">Returns</h5>
+<p><a href="./#partial"><code>Partial</code></a>&lt;<code>S</code>> | <code>null</code></p>
+<h4 id="defined-in_10">Defined in</h4>
+<p>ui/hooks/node_modules/@types/react/index.d.ts:649</p>
+<hr />
+<h3 id="getnextpageparamfunction">GetNextPageParamFunction</h3>
+<p>Ƭ <strong>GetNextPageParamFunction</strong>&lt;<code>TQueryFnData</code>>: (<code>lastPage</code>: <code>TQueryFnData</code>, <code>allPages</code>: <code>TQueryFnData</code>[]) =&gt; <code>unknown</code></p>
+<h4 id="type-parameters_10">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>TQueryFnData</code></td>
+<td align="left"><code>unknown</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="type-declaration_3">Type declaration</h4>
+<p>▸ (<code>lastPage</code>, <code>allPages</code>): <code>unknown</code></p>
+<h5 id="parameters_3">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>lastPage</code></td>
+<td align="left"><code>TQueryFnData</code></td>
+</tr>
+<tr>
+<td align="left"><code>allPages</code></td>
+<td align="left"><code>TQueryFnData</code>[]</td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_3">Returns</h5>
+<p><code>unknown</code></p>
+<h4 id="defined-in_11">Defined in</h4>
+<p>ui/hooks/node_modules/react-query/types/core/types.d.ts:18</p>
+<hr />
+<h3 id="getpreviouspageparamfunction">GetPreviousPageParamFunction</h3>
+<p>Ƭ <strong>GetPreviousPageParamFunction</strong>&lt;<code>TQueryFnData</code>>: (<code>firstPage</code>: <code>TQueryFnData</code>, <code>allPages</code>: <code>TQueryFnData</code>[]) =&gt; <code>unknown</code></p>
+<h4 id="type-parameters_11">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>TQueryFnData</code></td>
+<td align="left"><code>unknown</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="type-declaration_4">Type declaration</h4>
+<p>▸ (<code>firstPage</code>, <code>allPages</code>): <code>unknown</code></p>
+<h5 id="parameters_4">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>firstPage</code></td>
+<td align="left"><code>TQueryFnData</code></td>
+</tr>
+<tr>
+<td align="left"><code>allPages</code></td>
+<td align="left"><code>TQueryFnData</code>[]</td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_4">Returns</h5>
+<p><code>unknown</code></p>
+<h4 id="defined-in_12">Defined in</h4>
+<p>ui/hooks/node_modules/react-query/types/core/types.d.ts:17</p>
+<hr />
+<h3 id="infinitequeryobserverresult">InfiniteQueryObserverResult</h3>
+<p>Ƭ <strong>InfiniteQueryObserverResult</strong>&lt;<code>TData</code>, <code>TError</code>>: <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.InfiniteQueryObserverIdleResult/"><code>InfiniteQueryObserverIdleResult</code></a>&lt;<code>TData</code>, <code>TError</code>> | <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.InfiniteQueryObserverLoadingErrorResult/"><code>InfiniteQueryObserverLoadingErrorResult</code></a>&lt;<code>TData</code>, <code>TError</code>> | <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.InfiniteQueryObserverLoadingResult/"><code>InfiniteQueryObserverLoadingResult</code></a>&lt;<code>TData</code>, <code>TError</code>> | <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.InfiniteQueryObserverRefetchErrorResult/"><code>InfiniteQueryObserverRefetchErrorResult</code></a>&lt;<code>TData</code>, <code>TError</code>> | <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.InfiniteQueryObserverSuccessResult/"><code>InfiniteQueryObserverSuccessResult</code></a>&lt;<code>TData</code>, <code>TError</code>></p>
+<h4 id="type-parameters_12">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>TData</code></td>
+<td align="left"><code>unknown</code></td>
+</tr>
+<tr>
+<td align="left"><code>TError</code></td>
+<td align="left"><code>unknown</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_13">Defined in</h4>
+<p>ui/hooks/node_modules/react-query/types/core/types.d.ts:352</p>
+<hr />
+<h3 id="initialdatafunction">InitialDataFunction</h3>
+<p>Ƭ <strong>InitialDataFunction</strong>&lt;<code>T</code>>: () =&gt; <code>T</code> | <code>undefined</code></p>
+<h4 id="type-parameters_13">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="type-declaration_5">Type declaration</h4>
+<p>▸ (): <code>T</code> | <code>undefined</code></p>
+<h5 id="returns_5">Returns</h5>
+<p><code>T</code> | <code>undefined</code></p>
+<h4 id="defined-in_14">Defined in</h4>
+<p>ui/hooks/node_modules/react-query/types/core/types.d.ts:14</p>
+<hr />
+<h3 id="iteratorresult">IteratorResult</h3>
+<p>Ƭ <strong>IteratorResult</strong>&lt;<code>T</code>, <code>TReturn</code>>: <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.IteratorYieldResult/"><code>IteratorYieldResult</code></a>&lt;<code>T</code>> | <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.IteratorReturnResult/"><code>IteratorReturnResult</code></a>&lt;<code>TReturn</code>></p>
+<h4 id="type-parameters_14">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left"><code>T</code></td>
+</tr>
+<tr>
+<td align="left"><code>TReturn</code></td>
+<td align="left"><code>any</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_15">Defined in</h4>
+<p>node_modules/typescript/lib/lib.es2015.iterable.d.ts:41</p>
+<hr />
+<h3 id="jsxelementconstructor">JSXElementConstructor</h3>
+<p>Ƭ <strong>JSXElementConstructor</strong>&lt;<code>P</code>>: (<code>props</code>: <code>P</code>) =&gt; <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.ReactElement/"><code>ReactElement</code></a>&lt;<code>any</code>, <code>any</code>> | <code>null</code> | (<code>props</code>: <code>P</code>) =&gt; <a href="../../classes/akashaproject_ui_awf_hooks._internal_.Component/"><code>Component</code></a>&lt;<code>P</code>, <code>any</code>></p>
+<h4 id="type-parameters_15">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>P</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_16">Defined in</h4>
+<p>ui/hooks/node_modules/@types/react/index.d.ts:84</p>
+<hr />
+<h3 id="key">Key</h3>
+<p>Ƭ <strong>Key</strong>: <code>string</code> | <code>number</code></p>
+<h4 id="defined-in_17">Defined in</h4>
+<p>ui/hooks/node_modules/@types/react/index.d.ts:130</p>
+<hr />
+<h3 id="listener">Listener</h3>
+<p>Ƭ <strong>Listener</strong>: () =&gt; <code>void</code></p>
+<h4 id="type-declaration_6">Type declaration</h4>
+<p>▸ (): <code>void</code></p>
+<h5 id="returns_6">Returns</h5>
+<p><code>void</code></p>
+<h4 id="defined-in_18">Defined in</h4>
+<p>ui/hooks/node_modules/react-query/types/core/subscribable.d.ts:1</p>
+<hr />
+<h3 id="mutatefunction">MutateFunction</h3>
+<p>Ƭ <strong>MutateFunction</strong>&lt;<code>TData</code>, <code>TError</code>, <code>TVariables</code>, <code>TContext</code>>: (<code>variables</code>: <code>TVariables</code>, <code>options?</code>: <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.MutateOptions/"><code>MutateOptions</code></a>&lt;<code>TData</code>, <code>TError</code>, <code>TVariables</code>, <code>TContext</code>>) =&gt; <code>Promise</code>&lt;<code>TData</code>></p>
+<h4 id="type-parameters_16">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>TData</code></td>
+<td align="left"><code>unknown</code></td>
+</tr>
+<tr>
+<td align="left"><code>TError</code></td>
+<td align="left"><code>unknown</code></td>
+</tr>
+<tr>
+<td align="left"><code>TVariables</code></td>
+<td align="left"><code>void</code></td>
+</tr>
+<tr>
+<td align="left"><code>TContext</code></td>
+<td align="left"><code>unknown</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="type-declaration_7">Type declaration</h4>
+<p>▸ (<code>variables</code>, <code>options?</code>): <code>Promise</code>&lt;<code>TData</code>></p>
+<h5 id="parameters_5">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>variables</code></td>
+<td align="left"><code>TVariables</code></td>
+</tr>
+<tr>
+<td align="left"><code>options?</code></td>
+<td align="left"><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.MutateOptions/"><code>MutateOptions</code></a>&lt;<code>TData</code>, <code>TError</code>, <code>TVariables</code>, <code>TContext</code>></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_7">Returns</h5>
+<p><code>Promise</code>&lt;<code>TData</code>></p>
+<h4 id="defined-in_19">Defined in</h4>
+<p>ui/hooks/node_modules/react-query/types/core/types.d.ts:378</p>
+<hr />
+<h3 id="mutationcachelistener">MutationCacheListener</h3>
+<p>Ƭ <strong>MutationCacheListener</strong>: (<code>mutation?</code>: <a href="../../classes/akashaproject_ui_awf_hooks._internal_.Mutation/"><code>Mutation</code></a>) =&gt; <code>void</code></p>
+<h4 id="type-declaration_8">Type declaration</h4>
+<p>▸ (<code>mutation?</code>): <code>void</code></p>
+<h5 id="parameters_6">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>mutation?</code></td>
+<td align="left"><a href="../../classes/akashaproject_ui_awf_hooks._internal_.Mutation/"><code>Mutation</code></a></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_8">Returns</h5>
+<p><code>void</code></p>
+<h4 id="defined-in_20">Defined in</h4>
+<p>ui/hooks/node_modules/react-query/types/core/mutationCache.d.ts:11</p>
+<hr />
+<h3 id="mutationfunction">MutationFunction</h3>
+<p>Ƭ <strong>MutationFunction</strong>&lt;<code>TData</code>, <code>TVariables</code>>: (<code>variables</code>: <code>TVariables</code>) =&gt; <code>Promise</code>&lt;<code>TData</code>></p>
+<h4 id="type-parameters_17">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>TData</code></td>
+<td align="left"><code>unknown</code></td>
+</tr>
+<tr>
+<td align="left"><code>TVariables</code></td>
+<td align="left"><code>unknown</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="type-declaration_9">Type declaration</h4>
+<p>▸ (<code>variables</code>): <code>Promise</code>&lt;<code>TData</code>></p>
+<h5 id="parameters_7">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>variables</code></td>
+<td align="left"><code>TVariables</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_9">Returns</h5>
+<p><code>Promise</code>&lt;<code>TData</code>></p>
+<h4 id="defined-in_21">Defined in</h4>
+<p>ui/hooks/node_modules/react-query/types/core/types.d.ts:356</p>
+<hr />
+<h3 id="mutationkey">MutationKey</h3>
+<p>Ƭ <strong>MutationKey</strong>: <code>string</code> | readonly <code>unknown</code>[]</p>
+<h4 id="defined-in_22">Defined in</h4>
+<p>ui/hooks/node_modules/react-query/types/core/types.d.ts:353</p>
+<hr />
+<h3 id="mutationmeta">MutationMeta</h3>
+<p>Ƭ <strong>MutationMeta</strong>: <a href="./#record"><code>Record</code></a>&lt;<code>string</code>, <code>unknown</code>></p>
+<h4 id="defined-in_23">Defined in</h4>
+<p>ui/hooks/node_modules/react-query/types/core/types.d.ts:355</p>
+<hr />
+<h3 id="mutationobserverlistener">MutationObserverListener</h3>
+<p>Ƭ <strong>MutationObserverListener</strong>&lt;<code>TData</code>, <code>TError</code>, <code>TVariables</code>, <code>TContext</code>>: (<code>result</code>: <a href="./#mutationobserverresult"><code>MutationObserverResult</code></a>&lt;<code>TData</code>, <code>TError</code>, <code>TVariables</code>, <code>TContext</code>>) =&gt; <code>void</code></p>
+<h4 id="type-parameters_18">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>TData</code></td>
+</tr>
+<tr>
+<td align="left"><code>TError</code></td>
+</tr>
+<tr>
+<td align="left"><code>TVariables</code></td>
+</tr>
+<tr>
+<td align="left"><code>TContext</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="type-declaration_10">Type declaration</h4>
+<p>▸ (<code>result</code>): <code>void</code></p>
+<h5 id="parameters_8">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>result</code></td>
+<td align="left"><a href="./#mutationobserverresult"><code>MutationObserverResult</code></a>&lt;<code>TData</code>, <code>TError</code>, <code>TVariables</code>, <code>TContext</code>></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_10">Returns</h5>
+<p><code>void</code></p>
+<h4 id="defined-in_24">Defined in</h4>
+<p>ui/hooks/node_modules/react-query/types/core/mutationObserver.d.ts:5</p>
+<hr />
+<h3 id="mutationobserverresult">MutationObserverResult</h3>
+<p>Ƭ <strong>MutationObserverResult</strong>&lt;<code>TData</code>, <code>TError</code>, <code>TVariables</code>, <code>TContext</code>>: <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.MutationObserverIdleResult/"><code>MutationObserverIdleResult</code></a>&lt;<code>TData</code>, <code>TError</code>, <code>TVariables</code>, <code>TContext</code>> | <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.MutationObserverLoadingResult/"><code>MutationObserverLoadingResult</code></a>&lt;<code>TData</code>, <code>TError</code>, <code>TVariables</code>, <code>TContext</code>> | <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.MutationObserverErrorResult/"><code>MutationObserverErrorResult</code></a>&lt;<code>TData</code>, <code>TError</code>, <code>TVariables</code>, <code>TContext</code>> | <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.MutationObserverSuccessResult/"><code>MutationObserverSuccessResult</code></a>&lt;<code>TData</code>, <code>TError</code>, <code>TVariables</code>, <code>TContext</code>></p>
+<h4 id="type-parameters_19">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>TData</code></td>
+<td align="left"><code>unknown</code></td>
+</tr>
+<tr>
+<td align="left"><code>TError</code></td>
+<td align="left"><code>unknown</code></td>
+</tr>
+<tr>
+<td align="left"><code>TVariables</code></td>
+<td align="left"><code>void</code></td>
+</tr>
+<tr>
+<td align="left"><code>TContext</code></td>
+<td align="left"><code>unknown</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_25">Defined in</h4>
+<p>ui/hooks/node_modules/react-query/types/core/types.d.ts:423</p>
+<hr />
+<h3 id="mutationstatus">MutationStatus</h3>
+<p>Ƭ <strong>MutationStatus</strong>: <code>"idle"</code> | <code>"loading"</code> | <code>"success"</code> | <code>"error"</code></p>
+<h4 id="defined-in_26">Defined in</h4>
+<p>ui/hooks/node_modules/react-query/types/core/types.d.ts:354</p>
+<hr />
+<h3 id="onerrorhandler">OnErrorHandler</h3>
+<p>Ƭ <strong>OnErrorHandler</strong>: (<code>payload</code>: { <code>error</code>: <a href="./#error"><code>Error</code></a>  }) =&gt; <code>void</code></p>
+<h4 id="type-declaration_11">Type declaration</h4>
+<p>▸ (<code>payload</code>): <code>void</code></p>
+<h5 id="parameters_9">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>payload</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>payload.error</code></td>
+<td align="left"><a href="./#error"><code>Error</code></a></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_11">Returns</h5>
+<p><code>void</code></p>
+<h4 id="defined-in_27">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-global-login.ts#L13">ui/hooks/src/use-global-login.ts:13</a></p>
+<hr />
+<h3 id="onloginsuccesshandler">OnLoginSuccessHandler</h3>
+<p>Ƭ <strong>OnLoginSuccessHandler</strong>: (<code>data</code>: <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.CurrentUser/"><code>CurrentUser</code></a>) =&gt; <code>void</code></p>
+<h4 id="type-declaration_12">Type declaration</h4>
+<p>▸ (<code>data</code>): <code>void</code></p>
+<p>a hook that will fire an action when the signIn is called</p>
+<h5 id="parameters_10">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>data</code></td>
+<td align="left"><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.CurrentUser/"><code>CurrentUser</code></a></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_12">Returns</h5>
+<p><code>void</code></p>
+<h4 id="defined-in_28">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-global-login.ts#L11">ui/hooks/src/use-global-login.ts:11</a></p>
+<hr />
+<h3 id="onlogoutsuccesshandler">OnLogoutSuccessHandler</h3>
+<p>Ƭ <strong>OnLogoutSuccessHandler</strong>: () =&gt; <code>void</code></p>
+<h4 id="type-declaration_13">Type declaration</h4>
+<p>▸ (): <code>void</code></p>
+<h5 id="returns_13">Returns</h5>
+<p><code>void</code></p>
+<h4 id="defined-in_29">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-global-login.ts#L12">ui/hooks/src/use-global-login.ts:12</a></p>
+<hr />
+<h3 id="override">Override</h3>
+<p>Ƭ <strong>Override</strong>&lt;<code>A</code>, <code>B</code>>: { [K in keyof A]: K extends keyof B ? B[K] : A[K] }</p>
+<h4 id="type-parameters_20">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>A</code></td>
+</tr>
+<tr>
+<td align="left"><code>B</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_30">Defined in</h4>
+<p>ui/hooks/node_modules/react-query/types/react/types.d.ts:21</p>
+<hr />
+<h3 id="parameters_11">Parameters</h3>
+<p>Ƭ <strong>Parameters</strong>&lt;<code>T</code>>: <code>T</code> extends (...<code>args</code>: infer P) =&gt; <code>any</code> ? <code>P</code> : <code>never</code></p>
+<p>Obtain the parameters of a function type in a tuple</p>
+<h4 id="type-parameters_21">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends (...<code>args</code>: <code>any</code>) =&gt; <code>any</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_31">Defined in</h4>
+<p>node_modules/typescript/lib/lib.es5.d.ts:1526</p>
+<hr />
+<h3 id="partial">Partial</h3>
+<p>Ƭ <strong>Partial</strong>&lt;<code>T</code>>: { [P in keyof T]?: T[P] }</p>
+<p>Make all properties in T optional</p>
+<h4 id="type-parameters_22">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_32">Defined in</h4>
+<p>node_modules/typescript/lib/lib.es5.d.ts:1471</p>
+<hr />
+<h3 id="pick">Pick</h3>
+<p>Ƭ <strong>Pick</strong>&lt;<code>T</code>, <code>K</code>>: { [P in K]: T[P] }</p>
+<p>From T, pick a set of properties whose keys are in the union K</p>
+<h4 id="type-parameters_23">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left"><code>T</code></td>
+</tr>
+<tr>
+<td align="left"><code>K</code></td>
+<td align="left">extends keyof <code>T</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_33">Defined in</h4>
+<p>node_modules/typescript/lib/lib.es5.d.ts:1492</p>
+<hr />
+<h3 id="placeholderdatafunction">PlaceholderDataFunction</h3>
+<p>Ƭ <strong>PlaceholderDataFunction</strong>&lt;<code>TResult</code>>: () =&gt; <code>TResult</code> | <code>undefined</code></p>
+<h4 id="type-parameters_24">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>TResult</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="type-declaration_14">Type declaration</h4>
+<p>▸ (): <code>TResult</code> | <code>undefined</code></p>
+<h5 id="returns_14">Returns</h5>
+<p><code>TResult</code> | <code>undefined</code></p>
+<h4 id="defined-in_34">Defined in</h4>
+<p>ui/hooks/node_modules/react-query/types/core/types.d.ts:15</p>
+<hr />
+<h3 id="profile">Profile</h3>
+<p>Ƭ <strong>Profile</strong>: <code>Object</code></p>
+<h4 id="type-declaration_15">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>avatar</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>ethAddress</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>name</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>pubKey</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>userName</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_35">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/moderation-requests.ts#L17">ui/hooks/src/moderation-requests.ts:17</a></p>
+<hr />
+<h3 id="propswithchildren">PropsWithChildren</h3>
+<p>Ƭ <strong>PropsWithChildren</strong>&lt;<code>P</code>>: <code>P</code> &amp; { <code>children?</code>: <a href="./#reactnode"><code>ReactNode</code></a>  }</p>
+<h4 id="type-parameters_25">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>P</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_36">Defined in</h4>
+<p>ui/hooks/node_modules/@types/react/index.d.ts:824</p>
+<hr />
+<h3 id="provider">Provider</h3>
+<p>Ƭ <strong>Provider</strong>&lt;<code>T</code>>: <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.ProviderExoticComponent/"><code>ProviderExoticComponent</code></a>&lt;<a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.ProviderProps/"><code>ProviderProps</code></a>&lt;<code>T</code>>></p>
+<h4 id="type-parameters_26">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_37">Defined in</h4>
+<p>ui/hooks/node_modules/@types/react/index.d.ts:373</p>
+<hr />
+<h3 id="querycachelistener">QueryCacheListener</h3>
+<p>Ƭ <strong>QueryCacheListener</strong>: (<code>event?</code>: <a href="./#querycachenotifyevent"><code>QueryCacheNotifyEvent</code></a>) =&gt; <code>void</code></p>
+<h4 id="type-declaration_16">Type declaration</h4>
+<p>▸ (<code>event?</code>): <code>void</code></p>
+<h5 id="parameters_12">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>event?</code></td>
+<td align="left"><a href="./#querycachenotifyevent"><code>QueryCacheNotifyEvent</code></a></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_15">Returns</h5>
+<p><code>void</code></p>
+<h4 id="defined-in_38">Defined in</h4>
+<p>ui/hooks/node_modules/react-query/types/core/queryCache.d.ts:39</p>
+<hr />
+<h3 id="querycachenotifyevent">QueryCacheNotifyEvent</h3>
+<p>Ƭ <strong>QueryCacheNotifyEvent</strong>: <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.NotifyEventQueryAdded/"><code>NotifyEventQueryAdded</code></a> | <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.NotifyEventQueryRemoved/"><code>NotifyEventQueryRemoved</code></a> | <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.NotifyEventQueryUpdated/"><code>NotifyEventQueryUpdated</code></a> | <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.NotifyEventObserverAdded/"><code>NotifyEventObserverAdded</code></a> | <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.NotifyEventObserverRemoved/"><code>NotifyEventObserverRemoved</code></a> | <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.NotifyEventObserverResultsUpdated/"><code>NotifyEventObserverResultsUpdated</code></a></p>
+<h4 id="defined-in_39">Defined in</h4>
+<p>ui/hooks/node_modules/react-query/types/core/queryCache.d.ts:38</p>
+<hr />
+<h3 id="queryfunction">QueryFunction</h3>
+<p>Ƭ <strong>QueryFunction</strong>&lt;<code>T</code>, <code>TQueryKey</code>>: (<code>context</code>: <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.QueryFunctionContext/"><code>QueryFunctionContext</code></a>&lt;<code>TQueryKey</code>>) =&gt; <code>T</code> | <code>Promise</code>&lt;<code>T</code>></p>
+<h4 id="type-parameters_27">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left"><code>unknown</code></td>
+</tr>
+<tr>
+<td align="left"><code>TQueryKey</code></td>
+<td align="left">extends <a href="./#querykey"><code>QueryKey</code></a> = <a href="./#querykey"><code>QueryKey</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="type-declaration_17">Type declaration</h4>
+<p>▸ (<code>context</code>): <code>T</code> | <code>Promise</code>&lt;<code>T</code>></p>
+<h5 id="parameters_13">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>context</code></td>
+<td align="left"><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.QueryFunctionContext/"><code>QueryFunctionContext</code></a>&lt;<code>TQueryKey</code>></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_16">Returns</h5>
+<p><code>T</code> | <code>Promise</code>&lt;<code>T</code>></p>
+<h4 id="defined-in_40">Defined in</h4>
+<p>ui/hooks/node_modules/react-query/types/core/types.d.ts:7</p>
+<hr />
+<h3 id="querykey">QueryKey</h3>
+<p>Ƭ <strong>QueryKey</strong>: <code>string</code> | readonly <code>unknown</code>[]</p>
+<h4 id="defined-in_41">Defined in</h4>
+<p>ui/hooks/node_modules/react-query/types/core/types.d.ts:5</p>
+<hr />
+<h3 id="querykeyhashfunction">QueryKeyHashFunction</h3>
+<p>Ƭ <strong>QueryKeyHashFunction</strong>&lt;<code>TQueryKey</code>>: (<code>queryKey</code>: <code>TQueryKey</code>) =&gt; <code>string</code></p>
+<h4 id="type-parameters_28">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>TQueryKey</code></td>
+<td align="left">extends <a href="./#querykey"><code>QueryKey</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="type-declaration_18">Type declaration</h4>
+<p>▸ (<code>queryKey</code>): <code>string</code></p>
+<h5 id="parameters_14">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>queryKey</code></td>
+<td align="left"><code>TQueryKey</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_17">Returns</h5>
+<p><code>string</code></p>
+<h4 id="defined-in_42">Defined in</h4>
+<p>ui/hooks/node_modules/react-query/types/core/types.d.ts:16</p>
+<hr />
+<h3 id="querymeta">QueryMeta</h3>
+<p>Ƭ <strong>QueryMeta</strong>: <a href="./#record"><code>Record</code></a>&lt;<code>string</code>, <code>unknown</code>></p>
+<h4 id="defined-in_43">Defined in</h4>
+<p>ui/hooks/node_modules/react-query/types/core/types.d.ts:23</p>
+<hr />
+<h3 id="queryobserverlistener">QueryObserverListener</h3>
+<p>Ƭ <strong>QueryObserverListener</strong>&lt;<code>TData</code>, <code>TError</code>>: (<code>result</code>: <a href="./#queryobserverresult"><code>QueryObserverResult</code></a>&lt;<code>TData</code>, <code>TError</code>>) =&gt; <code>void</code></p>
+<h4 id="type-parameters_29">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>TData</code></td>
+</tr>
+<tr>
+<td align="left"><code>TError</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="type-declaration_19">Type declaration</h4>
+<p>▸ (<code>result</code>): <code>void</code></p>
+<h5 id="parameters_15">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>result</code></td>
+<td align="left"><a href="./#queryobserverresult"><code>QueryObserverResult</code></a>&lt;<code>TData</code>, <code>TError</code>></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_18">Returns</h5>
+<p><code>void</code></p>
+<h4 id="defined-in_44">Defined in</h4>
+<p>ui/hooks/node_modules/react-query/types/core/queryObserver.d.ts:6</p>
+<hr />
+<h3 id="queryobserverresult">QueryObserverResult</h3>
+<p>Ƭ <strong>QueryObserverResult</strong>&lt;<code>TData</code>, <code>TError</code>>: <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.QueryObserverIdleResult/"><code>QueryObserverIdleResult</code></a>&lt;<code>TData</code>, <code>TError</code>> | <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.QueryObserverLoadingErrorResult/"><code>QueryObserverLoadingErrorResult</code></a>&lt;<code>TData</code>, <code>TError</code>> | <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.QueryObserverLoadingResult/"><code>QueryObserverLoadingResult</code></a>&lt;<code>TData</code>, <code>TError</code>> | <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.QueryObserverRefetchErrorResult/"><code>QueryObserverRefetchErrorResult</code></a>&lt;<code>TData</code>, <code>TError</code>> | <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.QueryObserverSuccessResult/"><code>QueryObserverSuccessResult</code></a>&lt;<code>TData</code>, <code>TError</code>></p>
+<h4 id="type-parameters_30">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>TData</code></td>
+<td align="left"><code>unknown</code></td>
+</tr>
+<tr>
+<td align="left"><code>TError</code></td>
+<td align="left"><code>unknown</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_45">Defined in</h4>
+<p>ui/hooks/node_modules/react-query/types/core/types.d.ts:288</p>
+<hr />
+<h3 id="querystatus">QueryStatus</h3>
+<p>Ƭ <strong>QueryStatus</strong>: <code>"idle"</code> | <code>"loading"</code> | <code>"error"</code> | <code>"success"</code></p>
+<h4 id="defined-in_46">Defined in</h4>
+<p>ui/hooks/node_modules/react-query/types/core/types.d.ts:209</p>
+<hr />
+<h3 id="reactchild">ReactChild</h3>
+<p>Ƭ <strong>ReactChild</strong>: <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.ReactElement/"><code>ReactElement</code></a> | <a href="./#reacttext"><code>ReactText</code></a></p>
+<h4 id="defined-in_47">Defined in</h4>
+<p>ui/hooks/node_modules/@types/react/index.d.ts:233</p>
+<hr />
+<h3 id="reactfragment">ReactFragment</h3>
+<p>Ƭ <strong>ReactFragment</strong>: {} | <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.ReactNodeArray/"><code>ReactNodeArray</code></a></p>
+<h4 id="defined-in_48">Defined in</h4>
+<p>ui/hooks/node_modules/@types/react/index.d.ts:236</p>
+<hr />
+<h3 id="reactinstance">ReactInstance</h3>
+<p>Ƭ <strong>ReactInstance</strong>: <a href="../../classes/akashaproject_ui_awf_hooks._internal_.Component/"><code>Component</code></a>&lt;<code>any</code>> | <code>Element</code></p>
+<h4 id="defined-in_49">Defined in</h4>
+<p>ui/hooks/node_modules/@types/react/index.d.ts:429</p>
+<hr />
+<h3 id="reactnode">ReactNode</h3>
+<p>Ƭ <strong>ReactNode</strong>: <a href="./#reactchild"><code>ReactChild</code></a> | <a href="./#reactfragment"><code>ReactFragment</code></a> | <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.ReactPortal/"><code>ReactPortal</code></a> | <code>boolean</code> | <code>null</code> | <code>undefined</code></p>
+<h4 id="defined-in_50">Defined in</h4>
+<p>ui/hooks/node_modules/@types/react/index.d.ts:237</p>
+<hr />
+<h3 id="reacttext">ReactText</h3>
+<p>Ƭ <strong>ReactText</strong>: <code>string</code> | <code>number</code></p>
+<h4 id="defined-in_51">Defined in</h4>
+<p>ui/hooks/node_modules/@types/react/index.d.ts:232</p>
+<hr />
+<h3 id="readonly">Readonly</h3>
+<p>Ƭ <strong>Readonly</strong>&lt;<code>T</code>>: { readonly [P in keyof T]: T[P] }</p>
+<p>Make all properties in T readonly</p>
+<h4 id="type-parameters_31">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_52">Defined in</h4>
+<p>node_modules/typescript/lib/lib.es5.d.ts:1485</p>
+<hr />
+<h3 id="record">Record</h3>
+<p>Ƭ <strong>Record</strong>&lt;<code>K</code>, <code>T</code>>: { [P in K]: T }</p>
+<p>Construct a type with a set of properties K of type T</p>
+<h4 id="type-parameters_32">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>K</code></td>
+<td align="left">extends keyof <code>any</code></td>
+</tr>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left"><code>T</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_53">Defined in</h4>
+<p>node_modules/typescript/lib/lib.es5.d.ts:1499</p>
+<hr />
+<h3 id="retrydelayfunction">RetryDelayFunction</h3>
+<p>Ƭ <strong>RetryDelayFunction</strong>&lt;<code>TError</code>>: (<code>failureCount</code>: <code>number</code>, <code>error</code>: <code>TError</code>) =&gt; <code>number</code></p>
+<h4 id="type-parameters_33">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>TError</code></td>
+<td align="left"><code>unknown</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="type-declaration_20">Type declaration</h4>
+<p>▸ (<code>failureCount</code>, <code>error</code>): <code>number</code></p>
+<h5 id="parameters_16">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>failureCount</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>error</code></td>
+<td align="left"><code>TError</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_19">Returns</h5>
+<p><code>number</code></p>
+<h4 id="defined-in_54">Defined in</h4>
+<p>ui/hooks/node_modules/react-query/types/core/retryer.d.ts:16</p>
+<hr />
+<h3 id="retrydelayvalue">RetryDelayValue</h3>
+<p>Ƭ <strong>RetryDelayValue</strong>&lt;<code>TError</code>>: <code>number</code> | <a href="./#retrydelayfunction"><code>RetryDelayFunction</code></a>&lt;<code>TError</code>></p>
+<h4 id="type-parameters_34">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>TError</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_55">Defined in</h4>
+<p>ui/hooks/node_modules/react-query/types/core/retryer.d.ts:15</p>
+<hr />
+<h3 id="retryvalue">RetryValue</h3>
+<p>Ƭ <strong>RetryValue</strong>&lt;<code>TError</code>>: <code>boolean</code> | <code>number</code> | <a href="./#shouldretryfunction"><code>ShouldRetryFunction</code></a>&lt;<code>TError</code>></p>
+<h4 id="type-parameters_35">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>TError</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_56">Defined in</h4>
+<p>ui/hooks/node_modules/react-query/types/core/retryer.d.ts:13</p>
+<hr />
+<h3 id="shouldretryfunction">ShouldRetryFunction</h3>
+<p>Ƭ <strong>ShouldRetryFunction</strong>&lt;<code>TError</code>>: (<code>failureCount</code>: <code>number</code>, <code>error</code>: <code>TError</code>) =&gt; <code>boolean</code></p>
+<h4 id="type-parameters_36">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>TError</code></td>
+<td align="left"><code>unknown</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="type-declaration_21">Type declaration</h4>
+<p>▸ (<code>failureCount</code>, <code>error</code>): <code>boolean</code></p>
+<h5 id="parameters_17">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>failureCount</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>error</code></td>
+<td align="left"><code>TError</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_20">Returns</h5>
+<p><code>boolean</code></p>
+<h4 id="defined-in_57">Defined in</h4>
+<p>ui/hooks/node_modules/react-query/types/core/retryer.d.ts:14</p>
+<hr />
+<h3 id="updater">Updater</h3>
+<p>Ƭ <strong>Updater</strong>&lt;<code>TInput</code>, <code>TOutput</code>>: <code>TOutput</code> | <a href="./#dataupdatefunction"><code>DataUpdateFunction</code></a>&lt;<code>TInput</code>, <code>TOutput</code>></p>
+<h4 id="type-parameters_37">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>TInput</code></td>
+</tr>
+<tr>
+<td align="left"><code>TOutput</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_58">Defined in</h4>
+<p>ui/hooks/node_modules/react-query/types/core/utils.d.ts:54</p>
+<hr />
+<h3 id="usebasemutationresult">UseBaseMutationResult</h3>
+<p>Ƭ <strong>UseBaseMutationResult</strong>&lt;<code>TData</code>, <code>TError</code>, <code>TVariables</code>, <code>TContext</code>>: <a href="./#override"><code>Override</code></a>&lt;<a href="./#mutationobserverresult"><code>MutationObserverResult</code></a>&lt;<code>TData</code>, <code>TError</code>, <code>TVariables</code>, <code>TContext</code>>, { <code>mutate</code>: <a href="./#usemutatefunction"><code>UseMutateFunction</code></a>&lt;<code>TData</code>, <code>TError</code>, <code>TVariables</code>, <code>TContext</code>>  }> &amp; { <code>mutateAsync</code>: <a href="./#usemutateasyncfunction"><code>UseMutateAsyncFunction</code></a>&lt;<code>TData</code>, <code>TError</code>, <code>TVariables</code>, <code>TContext</code>>  }</p>
+<h4 id="type-parameters_38">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>TData</code></td>
+<td align="left"><code>unknown</code></td>
+</tr>
+<tr>
+<td align="left"><code>TError</code></td>
+<td align="left"><code>unknown</code></td>
+</tr>
+<tr>
+<td align="left"><code>TVariables</code></td>
+<td align="left"><code>unknown</code></td>
+</tr>
+<tr>
+<td align="left"><code>TContext</code></td>
+<td align="left"><code>unknown</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_59">Defined in</h4>
+<p>ui/hooks/node_modules/react-query/types/react/types.d.ts:15</p>
+<hr />
+<h3 id="usebasequeryresult">UseBaseQueryResult</h3>
+<p>Ƭ <strong>UseBaseQueryResult</strong>&lt;<code>TData</code>, <code>TError</code>>: <a href="./#queryobserverresult"><code>QueryObserverResult</code></a>&lt;<code>TData</code>, <code>TError</code>></p>
+<h4 id="type-parameters_39">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>TData</code></td>
+<td align="left"><code>unknown</code></td>
+</tr>
+<tr>
+<td align="left"><code>TError</code></td>
+<td align="left"><code>unknown</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_60">Defined in</h4>
+<p>ui/hooks/node_modules/react-query/types/react/types.d.ts:8</p>
+<hr />
+<h3 id="useinfinitequeryresult">UseInfiniteQueryResult</h3>
+<p>Ƭ <strong>UseInfiniteQueryResult</strong>&lt;<code>TData</code>, <code>TError</code>>: <a href="./#infinitequeryobserverresult"><code>InfiniteQueryObserverResult</code></a>&lt;<code>TData</code>, <code>TError</code>></p>
+<h4 id="type-parameters_40">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>TData</code></td>
+<td align="left"><code>unknown</code></td>
+</tr>
+<tr>
+<td align="left"><code>TError</code></td>
+<td align="left"><code>unknown</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_61">Defined in</h4>
+<p>ui/hooks/node_modules/react-query/types/react/types.d.ts:10</p>
+<hr />
+<h3 id="usemoderationparam">UseModerationParam</h3>
+<p>Ƭ <strong>UseModerationParam</strong>: <code>Object</code></p>
+<h4 id="type-declaration_22">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>contentId</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>contentType</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>dataToSign</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>isPending?</code></td>
+<td align="left"><code>boolean</code></td>
+</tr>
+<tr>
+<td align="left"><code>url</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_62">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-moderation.ts#L36">ui/hooks/src/use-moderation.ts:36</a></p>
+<hr />
+<h3 id="usemutateasyncfunction">UseMutateAsyncFunction</h3>
+<p>Ƭ <strong>UseMutateAsyncFunction</strong>&lt;<code>TData</code>, <code>TError</code>, <code>TVariables</code>, <code>TContext</code>>: <a href="./#mutatefunction"><code>MutateFunction</code></a>&lt;<code>TData</code>, <code>TError</code>, <code>TVariables</code>, <code>TContext</code>></p>
+<h4 id="type-parameters_41">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>TData</code></td>
+<td align="left"><code>unknown</code></td>
+</tr>
+<tr>
+<td align="left"><code>TError</code></td>
+<td align="left"><code>unknown</code></td>
+</tr>
+<tr>
+<td align="left"><code>TVariables</code></td>
+<td align="left"><code>void</code></td>
+</tr>
+<tr>
+<td align="left"><code>TContext</code></td>
+<td align="left"><code>unknown</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_63">Defined in</h4>
+<p>ui/hooks/node_modules/react-query/types/react/types.d.ts:14</p>
+<hr />
+<h3 id="usemutatefunction">UseMutateFunction</h3>
+<p>Ƭ <strong>UseMutateFunction</strong>&lt;<code>TData</code>, <code>TError</code>, <code>TVariables</code>, <code>TContext</code>>: (...<code>args</code>: <a href="./#parameters"><code>Parameters</code></a>&lt;<a href="./#mutatefunction"><code>MutateFunction</code></a>&lt;<code>TData</code>, <code>TError</code>, <code>TVariables</code>, <code>TContext</code>>>) =&gt; <code>void</code></p>
+<h4 id="type-parameters_42">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>TData</code></td>
+<td align="left"><code>unknown</code></td>
+</tr>
+<tr>
+<td align="left"><code>TError</code></td>
+<td align="left"><code>unknown</code></td>
+</tr>
+<tr>
+<td align="left"><code>TVariables</code></td>
+<td align="left"><code>void</code></td>
+</tr>
+<tr>
+<td align="left"><code>TContext</code></td>
+<td align="left"><code>unknown</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="type-declaration_23">Type declaration</h4>
+<p>▸ (...<code>args</code>): <code>void</code></p>
+<h5 id="parameters_18">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>...args</code></td>
+<td align="left"><a href="./#parameters"><code>Parameters</code></a>&lt;<a href="./#mutatefunction"><code>MutateFunction</code></a>&lt;<code>TData</code>, <code>TError</code>, <code>TVariables</code>, <code>TContext</code>>></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_21">Returns</h5>
+<p><code>void</code></p>
+<h4 id="defined-in_64">Defined in</h4>
+<p>ui/hooks/node_modules/react-query/types/react/types.d.ts:13</p>
+<hr />
+<h3 id="usemutationresult">UseMutationResult</h3>
+<p>Ƭ <strong>UseMutationResult</strong>&lt;<code>TData</code>, <code>TError</code>, <code>TVariables</code>, <code>TContext</code>>: <a href="./#usebasemutationresult"><code>UseBaseMutationResult</code></a>&lt;<code>TData</code>, <code>TError</code>, <code>TVariables</code>, <code>TContext</code>></p>
+<h4 id="type-parameters_43">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>TData</code></td>
+<td align="left"><code>unknown</code></td>
+</tr>
+<tr>
+<td align="left"><code>TError</code></td>
+<td align="left"><code>unknown</code></td>
+</tr>
+<tr>
+<td align="left"><code>TVariables</code></td>
+<td align="left"><code>unknown</code></td>
+</tr>
+<tr>
+<td align="left"><code>TContext</code></td>
+<td align="left"><code>unknown</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_65">Defined in</h4>
+<p>ui/hooks/node_modules/react-query/types/react/types.d.ts:20</p>
+<hr />
+<h3 id="usequeryresult">UseQueryResult</h3>
+<p>Ƭ <strong>UseQueryResult</strong>&lt;<code>TData</code>, <code>TError</code>>: <a href="./#usebasequeryresult"><code>UseBaseQueryResult</code></a>&lt;<code>TData</code>, <code>TError</code>></p>
+<h4 id="type-parameters_44">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>TData</code></td>
+<td align="left"><code>unknown</code></td>
+</tr>
+<tr>
+<td align="left"><code>TError</code></td>
+<td align="left"><code>unknown</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_66">Defined in</h4>
+<p>ui/hooks/node_modules/react-query/types/react/types.d.ts:9</p>
+<hr />
+<h3 id="validationmap">ValidationMap</h3>
+<p>Ƭ <strong>ValidationMap</strong>&lt;<code>T</code>>: { [K in keyof T]?: Validator&lt;T[K]> }</p>
+<h4 id="type-parameters_45">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_67">Defined in</h4>
+<p>ui/hooks/node_modules/@types/prop-types/index.d.ts:51</p>
+<hr />
+<h3 id="validator">Validator</h3>
+<p>Ƭ <strong>Validator</strong>&lt;<code>T</code>>: <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.Validator/"><code>Validator</code></a>&lt;<code>T</code>></p>
+<h4 id="type-parameters_46">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_68">Defined in</h4>
+<p>ui/hooks/node_modules/@types/react/index.d.ts:2955</p>
+<hr />
+<h3 id="weakvalidationmap">WeakValidationMap</h3>
+<p>Ƭ <strong>WeakValidationMap</strong>&lt;<code>T</code>>: { [K in keyof T]?: null extends T[K] ? Validator&lt;T[K] | null | undefined> : undefined extends T[K] ? Validator&lt;T[K] | null | undefined> : Validator&lt;T[K]> }</p>
+<h4 id="type-parameters_47">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_69">Defined in</h4>
+<p>ui/hooks/node_modules/@types/react/index.d.ts:2961</p>
+<hr />
+<h3 id="usepostparam">usePostParam</h3>
+<p>Ƭ <strong>usePostParam</strong>: <code>Object</code></p>
+<h4 id="type-declaration_24">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>enabler</code></td>
+<td align="left"><code>boolean</code></td>
+</tr>
+<tr>
+<td align="left"><code>loggedUser?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>postId</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_70">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-posts.ts#L20">ui/hooks/src/use-posts.ts:20</a></p>
+<h2 id="variables_1">Variables</h2>
+<h3 id="error">Error</h3>
+<p>• <strong>Error</strong>: <code>ErrorConstructor</code></p>
+<h4 id="defined-in_71">Defined in</h4>
+<p>node_modules/typescript/lib/lib.es5.d.ts:984</p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.22074ed6.min.js"}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.01de222e.min.js"></script>
+      
+    
+  </body>
+</html>

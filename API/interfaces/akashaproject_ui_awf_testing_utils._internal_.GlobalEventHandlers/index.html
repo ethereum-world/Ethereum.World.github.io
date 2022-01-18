@@ -1,0 +1,6963 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.7">
+    
+    
+      
+        <title>akashaproject ui awf testing utils. internal .GlobalEventHandlers - AKASHA World Framework docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.cd566b2a.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#interface-globaleventhandlers" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="AKASHA World Framework docs" class="md-header__button md-logo" aria-label="AKASHA World Framework docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AKASHA World Framework docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              akashaproject ui awf testing utils. internal .GlobalEventHandlers
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="AKASHA World Framework docs" class="md-nav__button md-logo" aria-label="AKASHA World Framework docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    AKASHA World Framework docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modules/" class="md-nav__link">
+        API
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hierarchy" class="md-nav__link">
+    Hierarchy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    Table of contents
+  </a>
+  
+    <nav class="md-nav" aria-label="Table of contents">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    Properties
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    Methods
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties_1" class="md-nav__link">
+    Properties
+  </a>
+  
+    <nav class="md-nav" aria-label="Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#onabort" class="md-nav__link">
+    onabort
+  </a>
+  
+    <nav class="md-nav" aria-label="onabort">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onanimationcancel" class="md-nav__link">
+    onanimationcancel
+  </a>
+  
+    <nav class="md-nav" aria-label="onanimationcancel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_1" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_1" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_1" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_1" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onanimationend" class="md-nav__link">
+    onanimationend
+  </a>
+  
+    <nav class="md-nav" aria-label="onanimationend">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_2" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_2" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_2" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_2" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onanimationiteration" class="md-nav__link">
+    onanimationiteration
+  </a>
+  
+    <nav class="md-nav" aria-label="onanimationiteration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_3" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_3" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_3" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_3" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onanimationstart" class="md-nav__link">
+    onanimationstart
+  </a>
+  
+    <nav class="md-nav" aria-label="onanimationstart">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_4" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_4" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_4" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_4" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onauxclick" class="md-nav__link">
+    onauxclick
+  </a>
+  
+    <nav class="md-nav" aria-label="onauxclick">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_5" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_5" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_5" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_5" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onblur" class="md-nav__link">
+    onblur
+  </a>
+  
+    <nav class="md-nav" aria-label="onblur">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_6" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_6" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_6" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_6" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oncanplay" class="md-nav__link">
+    oncanplay
+  </a>
+  
+    <nav class="md-nav" aria-label="oncanplay">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_7" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_7" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_7" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_7" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oncanplaythrough" class="md-nav__link">
+    oncanplaythrough
+  </a>
+  
+    <nav class="md-nav" aria-label="oncanplaythrough">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_8" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_8" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_8" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_8" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onchange" class="md-nav__link">
+    onchange
+  </a>
+  
+    <nav class="md-nav" aria-label="onchange">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_9" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_9" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_9" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_9" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onclick" class="md-nav__link">
+    onclick
+  </a>
+  
+    <nav class="md-nav" aria-label="onclick">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_10" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_10" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_10" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_10" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onclose" class="md-nav__link">
+    onclose
+  </a>
+  
+    <nav class="md-nav" aria-label="onclose">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_11" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_11" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_11" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_11" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oncontextmenu" class="md-nav__link">
+    oncontextmenu
+  </a>
+  
+    <nav class="md-nav" aria-label="oncontextmenu">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_12" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_12" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_12" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_12" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oncuechange" class="md-nav__link">
+    oncuechange
+  </a>
+  
+    <nav class="md-nav" aria-label="oncuechange">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_13" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_13" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_13" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_13" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ondblclick" class="md-nav__link">
+    ondblclick
+  </a>
+  
+    <nav class="md-nav" aria-label="ondblclick">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_14" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_14" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_14" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_14" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ondrag" class="md-nav__link">
+    ondrag
+  </a>
+  
+    <nav class="md-nav" aria-label="ondrag">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_15" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_15" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_15" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_15" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ondragend" class="md-nav__link">
+    ondragend
+  </a>
+  
+    <nav class="md-nav" aria-label="ondragend">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_16" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_16" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_16" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_16" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ondragenter" class="md-nav__link">
+    ondragenter
+  </a>
+  
+    <nav class="md-nav" aria-label="ondragenter">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_17" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_17" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_17" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_17" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ondragleave" class="md-nav__link">
+    ondragleave
+  </a>
+  
+    <nav class="md-nav" aria-label="ondragleave">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_18" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_18" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_18" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_18" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ondragover" class="md-nav__link">
+    ondragover
+  </a>
+  
+    <nav class="md-nav" aria-label="ondragover">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_19" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_19" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_19" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_19" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ondragstart" class="md-nav__link">
+    ondragstart
+  </a>
+  
+    <nav class="md-nav" aria-label="ondragstart">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_20" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_20" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_20" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_20" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ondrop" class="md-nav__link">
+    ondrop
+  </a>
+  
+    <nav class="md-nav" aria-label="ondrop">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_21" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_21" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_21" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_21" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ondurationchange" class="md-nav__link">
+    ondurationchange
+  </a>
+  
+    <nav class="md-nav" aria-label="ondurationchange">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_22" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_22" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_22" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_22" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onemptied" class="md-nav__link">
+    onemptied
+  </a>
+  
+    <nav class="md-nav" aria-label="onemptied">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_23" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_23" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_23" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_23" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onended" class="md-nav__link">
+    onended
+  </a>
+  
+    <nav class="md-nav" aria-label="onended">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_24" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_24" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_24" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_24" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onerror" class="md-nav__link">
+    onerror
+  </a>
+  
+    <nav class="md-nav" aria-label="onerror">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_25" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onfocus" class="md-nav__link">
+    onfocus
+  </a>
+  
+    <nav class="md-nav" aria-label="onfocus">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_25" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_25" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_25" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_26" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onformdata" class="md-nav__link">
+    onformdata
+  </a>
+  
+    <nav class="md-nav" aria-label="onformdata">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_26" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_26" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_26" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_27" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ongotpointercapture" class="md-nav__link">
+    ongotpointercapture
+  </a>
+  
+    <nav class="md-nav" aria-label="ongotpointercapture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_27" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_27" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_27" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_28" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oninput" class="md-nav__link">
+    oninput
+  </a>
+  
+    <nav class="md-nav" aria-label="oninput">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_28" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_28" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_28" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_29" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oninvalid" class="md-nav__link">
+    oninvalid
+  </a>
+  
+    <nav class="md-nav" aria-label="oninvalid">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_29" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_29" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_29" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_30" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onkeydown" class="md-nav__link">
+    onkeydown
+  </a>
+  
+    <nav class="md-nav" aria-label="onkeydown">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_30" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_30" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_30" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_31" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onkeypress" class="md-nav__link">
+    onkeypress
+  </a>
+  
+    <nav class="md-nav" aria-label="onkeypress">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_31" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_31" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_31" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_32" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onkeyup" class="md-nav__link">
+    onkeyup
+  </a>
+  
+    <nav class="md-nav" aria-label="onkeyup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_32" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_32" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_32" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_33" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onload" class="md-nav__link">
+    onload
+  </a>
+  
+    <nav class="md-nav" aria-label="onload">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_33" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_33" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_33" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_34" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onloadeddata" class="md-nav__link">
+    onloadeddata
+  </a>
+  
+    <nav class="md-nav" aria-label="onloadeddata">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_34" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_34" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_34" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_35" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onloadedmetadata" class="md-nav__link">
+    onloadedmetadata
+  </a>
+  
+    <nav class="md-nav" aria-label="onloadedmetadata">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_35" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_35" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_35" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_36" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onloadstart" class="md-nav__link">
+    onloadstart
+  </a>
+  
+    <nav class="md-nav" aria-label="onloadstart">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_36" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_36" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_36" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_37" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onlostpointercapture" class="md-nav__link">
+    onlostpointercapture
+  </a>
+  
+    <nav class="md-nav" aria-label="onlostpointercapture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_37" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_37" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_37" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_38" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onmousedown" class="md-nav__link">
+    onmousedown
+  </a>
+  
+    <nav class="md-nav" aria-label="onmousedown">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_38" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_38" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_38" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_39" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onmouseenter" class="md-nav__link">
+    onmouseenter
+  </a>
+  
+    <nav class="md-nav" aria-label="onmouseenter">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_39" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_39" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_39" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_40" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onmouseleave" class="md-nav__link">
+    onmouseleave
+  </a>
+  
+    <nav class="md-nav" aria-label="onmouseleave">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_40" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_40" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_40" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_41" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onmousemove" class="md-nav__link">
+    onmousemove
+  </a>
+  
+    <nav class="md-nav" aria-label="onmousemove">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_41" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_41" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_41" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_42" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onmouseout" class="md-nav__link">
+    onmouseout
+  </a>
+  
+    <nav class="md-nav" aria-label="onmouseout">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_42" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_42" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_42" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_43" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onmouseover" class="md-nav__link">
+    onmouseover
+  </a>
+  
+    <nav class="md-nav" aria-label="onmouseover">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_43" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_43" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_43" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_44" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onmouseup" class="md-nav__link">
+    onmouseup
+  </a>
+  
+    <nav class="md-nav" aria-label="onmouseup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_44" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_44" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_44" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_45" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onpause" class="md-nav__link">
+    onpause
+  </a>
+  
+    <nav class="md-nav" aria-label="onpause">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_45" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_45" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_45" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_46" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onplay" class="md-nav__link">
+    onplay
+  </a>
+  
+    <nav class="md-nav" aria-label="onplay">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_46" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_46" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_46" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_47" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onplaying" class="md-nav__link">
+    onplaying
+  </a>
+  
+    <nav class="md-nav" aria-label="onplaying">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_47" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_47" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_47" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_48" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onpointercancel" class="md-nav__link">
+    onpointercancel
+  </a>
+  
+    <nav class="md-nav" aria-label="onpointercancel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_48" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_48" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_48" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_49" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onpointerdown" class="md-nav__link">
+    onpointerdown
+  </a>
+  
+    <nav class="md-nav" aria-label="onpointerdown">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_49" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_49" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_49" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_50" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onpointerenter" class="md-nav__link">
+    onpointerenter
+  </a>
+  
+    <nav class="md-nav" aria-label="onpointerenter">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_50" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_50" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_50" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_51" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onpointerleave" class="md-nav__link">
+    onpointerleave
+  </a>
+  
+    <nav class="md-nav" aria-label="onpointerleave">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_51" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_51" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_51" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_52" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onpointermove" class="md-nav__link">
+    onpointermove
+  </a>
+  
+    <nav class="md-nav" aria-label="onpointermove">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_52" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_52" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_52" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_53" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onpointerout" class="md-nav__link">
+    onpointerout
+  </a>
+  
+    <nav class="md-nav" aria-label="onpointerout">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_53" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_53" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_53" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_54" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onpointerover" class="md-nav__link">
+    onpointerover
+  </a>
+  
+    <nav class="md-nav" aria-label="onpointerover">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_54" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_54" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_54" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_55" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onpointerup" class="md-nav__link">
+    onpointerup
+  </a>
+  
+    <nav class="md-nav" aria-label="onpointerup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_55" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_55" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_55" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_56" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onprogress" class="md-nav__link">
+    onprogress
+  </a>
+  
+    <nav class="md-nav" aria-label="onprogress">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_56" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_56" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_56" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_57" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onratechange" class="md-nav__link">
+    onratechange
+  </a>
+  
+    <nav class="md-nav" aria-label="onratechange">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_57" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_57" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_57" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_58" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onreset" class="md-nav__link">
+    onreset
+  </a>
+  
+    <nav class="md-nav" aria-label="onreset">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_58" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_58" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_58" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_59" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onresize" class="md-nav__link">
+    onresize
+  </a>
+  
+    <nav class="md-nav" aria-label="onresize">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_59" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_59" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_59" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_60" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onscroll" class="md-nav__link">
+    onscroll
+  </a>
+  
+    <nav class="md-nav" aria-label="onscroll">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_60" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_60" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_60" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_61" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onseeked" class="md-nav__link">
+    onseeked
+  </a>
+  
+    <nav class="md-nav" aria-label="onseeked">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_61" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_61" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_61" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_62" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onseeking" class="md-nav__link">
+    onseeking
+  </a>
+  
+    <nav class="md-nav" aria-label="onseeking">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_62" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_62" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_62" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_63" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onselect" class="md-nav__link">
+    onselect
+  </a>
+  
+    <nav class="md-nav" aria-label="onselect">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_63" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_63" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_63" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_64" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onselectionchange" class="md-nav__link">
+    onselectionchange
+  </a>
+  
+    <nav class="md-nav" aria-label="onselectionchange">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_64" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_64" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_64" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_65" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onselectstart" class="md-nav__link">
+    onselectstart
+  </a>
+  
+    <nav class="md-nav" aria-label="onselectstart">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_65" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_65" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_65" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_66" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onstalled" class="md-nav__link">
+    onstalled
+  </a>
+  
+    <nav class="md-nav" aria-label="onstalled">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_66" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_66" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_66" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_67" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onsubmit" class="md-nav__link">
+    onsubmit
+  </a>
+  
+    <nav class="md-nav" aria-label="onsubmit">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_67" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_67" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_67" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_68" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onsuspend" class="md-nav__link">
+    onsuspend
+  </a>
+  
+    <nav class="md-nav" aria-label="onsuspend">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_68" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_68" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_68" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_69" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ontimeupdate" class="md-nav__link">
+    ontimeupdate
+  </a>
+  
+    <nav class="md-nav" aria-label="ontimeupdate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_69" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_69" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_69" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_70" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ontoggle" class="md-nav__link">
+    ontoggle
+  </a>
+  
+    <nav class="md-nav" aria-label="ontoggle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_70" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_70" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_70" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_71" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ontouchcancel" class="md-nav__link">
+    ontouchcancel
+  </a>
+  
+    <nav class="md-nav" aria-label="ontouchcancel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_71" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_71" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_71" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_72" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ontouchend" class="md-nav__link">
+    ontouchend
+  </a>
+  
+    <nav class="md-nav" aria-label="ontouchend">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_72" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_72" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_72" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_73" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ontouchmove" class="md-nav__link">
+    ontouchmove
+  </a>
+  
+    <nav class="md-nav" aria-label="ontouchmove">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_73" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_73" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_73" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_74" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ontouchstart" class="md-nav__link">
+    ontouchstart
+  </a>
+  
+    <nav class="md-nav" aria-label="ontouchstart">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_74" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_74" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_74" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_75" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ontransitioncancel" class="md-nav__link">
+    ontransitioncancel
+  </a>
+  
+    <nav class="md-nav" aria-label="ontransitioncancel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_75" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_75" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_75" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_76" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ontransitionend" class="md-nav__link">
+    ontransitionend
+  </a>
+  
+    <nav class="md-nav" aria-label="ontransitionend">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_76" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_76" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_76" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_77" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ontransitionrun" class="md-nav__link">
+    ontransitionrun
+  </a>
+  
+    <nav class="md-nav" aria-label="ontransitionrun">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_77" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_77" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_77" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_78" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ontransitionstart" class="md-nav__link">
+    ontransitionstart
+  </a>
+  
+    <nav class="md-nav" aria-label="ontransitionstart">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_78" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_78" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_78" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_79" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onvolumechange" class="md-nav__link">
+    onvolumechange
+  </a>
+  
+    <nav class="md-nav" aria-label="onvolumechange">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_79" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_79" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_79" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_80" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onwaiting" class="md-nav__link">
+    onwaiting
+  </a>
+  
+    <nav class="md-nav" aria-label="onwaiting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_80" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_80" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_80" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_81" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onwebkitanimationend" class="md-nav__link">
+    onwebkitanimationend
+  </a>
+  
+    <nav class="md-nav" aria-label="onwebkitanimationend">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_81" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_81" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_81" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_82" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onwebkitanimationiteration" class="md-nav__link">
+    onwebkitanimationiteration
+  </a>
+  
+    <nav class="md-nav" aria-label="onwebkitanimationiteration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_82" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_82" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_82" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_83" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onwebkitanimationstart" class="md-nav__link">
+    onwebkitanimationstart
+  </a>
+  
+    <nav class="md-nav" aria-label="onwebkitanimationstart">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_83" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_83" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_83" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_84" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onwebkittransitionend" class="md-nav__link">
+    onwebkittransitionend
+  </a>
+  
+    <nav class="md-nav" aria-label="onwebkittransitionend">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_84" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_84" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_84" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_85" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onwheel" class="md-nav__link">
+    onwheel
+  </a>
+  
+    <nav class="md-nav" aria-label="onwheel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_85" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_85" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_85" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_86" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#methods_1" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#addeventlistener" class="md-nav__link">
+    addEventListener
+  </a>
+  
+    <nav class="md-nav" aria-label="addEventListener">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_86" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_86" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_87" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_87" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_87" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_88" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removeeventlistener" class="md-nav__link">
+    removeEventListener
+  </a>
+  
+    <nav class="md-nav" aria-label="removeEventListener">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_1" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_88" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_88" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_89" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_89" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_89" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_90" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+<p><a href="../../">AWF</a> / <a href="../../modules/">Modules</a> / <a href="../../modules/akashaproject_ui_awf_testing_utils/">@akashaproject/ui-awf-testing-utils</a> / <a href="../../modules/akashaproject_ui_awf_testing_utils._internal_/">&lt;internal></a> / GlobalEventHandlers</p>
+<h1 id="interface-globaleventhandlers">Interface: GlobalEventHandlers</h1>
+<p><a href="../../modules/akashaproject_ui_awf_testing_utils/">@akashaproject/ui-awf-testing-utils</a>.<a href="../../modules/akashaproject_ui_awf_testing_utils._internal_/"><internal></a>.GlobalEventHandlers</p>
+<h2 id="hierarchy">Hierarchy</h2>
+<ul>
+<li><strong><code>GlobalEventHandlers</code></strong></li>
+</ul>
+<p>↳ <a href="../akashaproject_ui_awf_testing_utils._internal_.Window/"><code>Window</code></a></p>
+<h2 id="table-of-contents">Table of contents</h2>
+<h3 id="properties">Properties</h3>
+<ul>
+<li><a href="./#onabort">onabort</a></li>
+<li><a href="./#onanimationcancel">onanimationcancel</a></li>
+<li><a href="./#onanimationend">onanimationend</a></li>
+<li><a href="./#onanimationiteration">onanimationiteration</a></li>
+<li><a href="./#onanimationstart">onanimationstart</a></li>
+<li><a href="./#onauxclick">onauxclick</a></li>
+<li><a href="./#onblur">onblur</a></li>
+<li><a href="./#oncanplay">oncanplay</a></li>
+<li><a href="./#oncanplaythrough">oncanplaythrough</a></li>
+<li><a href="./#onchange">onchange</a></li>
+<li><a href="./#onclick">onclick</a></li>
+<li><a href="./#onclose">onclose</a></li>
+<li><a href="./#oncontextmenu">oncontextmenu</a></li>
+<li><a href="./#oncuechange">oncuechange</a></li>
+<li><a href="./#ondblclick">ondblclick</a></li>
+<li><a href="./#ondrag">ondrag</a></li>
+<li><a href="./#ondragend">ondragend</a></li>
+<li><a href="./#ondragenter">ondragenter</a></li>
+<li><a href="./#ondragleave">ondragleave</a></li>
+<li><a href="./#ondragover">ondragover</a></li>
+<li><a href="./#ondragstart">ondragstart</a></li>
+<li><a href="./#ondrop">ondrop</a></li>
+<li><a href="./#ondurationchange">ondurationchange</a></li>
+<li><a href="./#onemptied">onemptied</a></li>
+<li><a href="./#onended">onended</a></li>
+<li><a href="./#onerror">onerror</a></li>
+<li><a href="./#onfocus">onfocus</a></li>
+<li><a href="./#onformdata">onformdata</a></li>
+<li><a href="./#ongotpointercapture">ongotpointercapture</a></li>
+<li><a href="./#oninput">oninput</a></li>
+<li><a href="./#oninvalid">oninvalid</a></li>
+<li><a href="./#onkeydown">onkeydown</a></li>
+<li><a href="./#onkeypress">onkeypress</a></li>
+<li><a href="./#onkeyup">onkeyup</a></li>
+<li><a href="./#onload">onload</a></li>
+<li><a href="./#onloadeddata">onloadeddata</a></li>
+<li><a href="./#onloadedmetadata">onloadedmetadata</a></li>
+<li><a href="./#onloadstart">onloadstart</a></li>
+<li><a href="./#onlostpointercapture">onlostpointercapture</a></li>
+<li><a href="./#onmousedown">onmousedown</a></li>
+<li><a href="./#onmouseenter">onmouseenter</a></li>
+<li><a href="./#onmouseleave">onmouseleave</a></li>
+<li><a href="./#onmousemove">onmousemove</a></li>
+<li><a href="./#onmouseout">onmouseout</a></li>
+<li><a href="./#onmouseover">onmouseover</a></li>
+<li><a href="./#onmouseup">onmouseup</a></li>
+<li><a href="./#onpause">onpause</a></li>
+<li><a href="./#onplay">onplay</a></li>
+<li><a href="./#onplaying">onplaying</a></li>
+<li><a href="./#onpointercancel">onpointercancel</a></li>
+<li><a href="./#onpointerdown">onpointerdown</a></li>
+<li><a href="./#onpointerenter">onpointerenter</a></li>
+<li><a href="./#onpointerleave">onpointerleave</a></li>
+<li><a href="./#onpointermove">onpointermove</a></li>
+<li><a href="./#onpointerout">onpointerout</a></li>
+<li><a href="./#onpointerover">onpointerover</a></li>
+<li><a href="./#onpointerup">onpointerup</a></li>
+<li><a href="./#onprogress">onprogress</a></li>
+<li><a href="./#onratechange">onratechange</a></li>
+<li><a href="./#onreset">onreset</a></li>
+<li><a href="./#onresize">onresize</a></li>
+<li><a href="./#onscroll">onscroll</a></li>
+<li><a href="./#onseeked">onseeked</a></li>
+<li><a href="./#onseeking">onseeking</a></li>
+<li><a href="./#onselect">onselect</a></li>
+<li><a href="./#onselectionchange">onselectionchange</a></li>
+<li><a href="./#onselectstart">onselectstart</a></li>
+<li><a href="./#onstalled">onstalled</a></li>
+<li><a href="./#onsubmit">onsubmit</a></li>
+<li><a href="./#onsuspend">onsuspend</a></li>
+<li><a href="./#ontimeupdate">ontimeupdate</a></li>
+<li><a href="./#ontoggle">ontoggle</a></li>
+<li><a href="./#ontouchcancel">ontouchcancel</a></li>
+<li><a href="./#ontouchend">ontouchend</a></li>
+<li><a href="./#ontouchmove">ontouchmove</a></li>
+<li><a href="./#ontouchstart">ontouchstart</a></li>
+<li><a href="./#ontransitioncancel">ontransitioncancel</a></li>
+<li><a href="./#ontransitionend">ontransitionend</a></li>
+<li><a href="./#ontransitionrun">ontransitionrun</a></li>
+<li><a href="./#ontransitionstart">ontransitionstart</a></li>
+<li><a href="./#onvolumechange">onvolumechange</a></li>
+<li><a href="./#onwaiting">onwaiting</a></li>
+<li><a href="./#onwebkitanimationend">onwebkitanimationend</a></li>
+<li><a href="./#onwebkitanimationiteration">onwebkitanimationiteration</a></li>
+<li><a href="./#onwebkitanimationstart">onwebkitanimationstart</a></li>
+<li><a href="./#onwebkittransitionend">onwebkittransitionend</a></li>
+<li><a href="./#onwheel">onwheel</a></li>
+</ul>
+<h3 id="methods">Methods</h3>
+<ul>
+<li><a href="./#addeventlistener">addEventListener</a></li>
+<li><a href="./#removeeventlistener">removeEventListener</a></li>
+</ul>
+<h2 id="properties_1">Properties</h2>
+<h3 id="onabort">onabort</h3>
+<p>• <strong>onabort</strong>: (<code>ev</code>: <code>UIEvent</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<p>Fires when the user aborts the download.</p>
+<h5 id="parameters">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>UIEvent</code></td>
+<td align="left">The event.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5677</p>
+<hr />
+<h3 id="onanimationcancel">onanimationcancel</h3>
+<p>• <strong>onanimationcancel</strong>: (<code>ev</code>: <code>AnimationEvent</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_1">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<h5 id="parameters_1">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>AnimationEvent</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_1">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_1">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5678</p>
+<hr />
+<h3 id="onanimationend">onanimationend</h3>
+<p>• <strong>onanimationend</strong>: (<code>ev</code>: <code>AnimationEvent</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_2">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<h5 id="parameters_2">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>AnimationEvent</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_2">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_2">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5679</p>
+<hr />
+<h3 id="onanimationiteration">onanimationiteration</h3>
+<p>• <strong>onanimationiteration</strong>: (<code>ev</code>: <code>AnimationEvent</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_3">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<h5 id="parameters_3">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>AnimationEvent</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_3">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_3">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5680</p>
+<hr />
+<h3 id="onanimationstart">onanimationstart</h3>
+<p>• <strong>onanimationstart</strong>: (<code>ev</code>: <code>AnimationEvent</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_4">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<h5 id="parameters_4">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>AnimationEvent</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_4">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_4">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5681</p>
+<hr />
+<h3 id="onauxclick">onauxclick</h3>
+<p>• <strong>onauxclick</strong>: (<code>ev</code>: <code>MouseEvent</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_5">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<h5 id="parameters_5">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>MouseEvent</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_5">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_5">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5682</p>
+<hr />
+<h3 id="onblur">onblur</h3>
+<p>• <strong>onblur</strong>: (<code>ev</code>: <code>FocusEvent</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_6">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<p>Fires when the object loses the input focus.</p>
+<h5 id="parameters_6">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>FocusEvent</code></td>
+<td align="left">The focus event.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_6">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_6">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5687</p>
+<hr />
+<h3 id="oncanplay">oncanplay</h3>
+<p>• <strong>oncanplay</strong>: (<code>ev</code>: <code>Event</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_7">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<p>Occurs when playback is possible, but would require further buffering.</p>
+<h5 id="parameters_7">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>Event</code></td>
+<td align="left">The event.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_7">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_7">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5692</p>
+<hr />
+<h3 id="oncanplaythrough">oncanplaythrough</h3>
+<p>• <strong>oncanplaythrough</strong>: (<code>ev</code>: <code>Event</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_8">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<h5 id="parameters_8">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>Event</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_8">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_8">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5693</p>
+<hr />
+<h3 id="onchange">onchange</h3>
+<p>• <strong>onchange</strong>: (<code>ev</code>: <code>Event</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_9">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<p>Fires when the contents of the object or selection have changed.</p>
+<h5 id="parameters_9">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>Event</code></td>
+<td align="left">The event.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_9">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_9">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5698</p>
+<hr />
+<h3 id="onclick">onclick</h3>
+<p>• <strong>onclick</strong>: (<code>ev</code>: <code>MouseEvent</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_10">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<p>Fires when the user clicks the left mouse button on the object</p>
+<h5 id="parameters_10">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>MouseEvent</code></td>
+<td align="left">The mouse event.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_10">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_10">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5703</p>
+<hr />
+<h3 id="onclose">onclose</h3>
+<p>• <strong>onclose</strong>: (<code>ev</code>: <code>Event</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_11">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<h5 id="parameters_11">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>Event</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_11">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_11">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5704</p>
+<hr />
+<h3 id="oncontextmenu">oncontextmenu</h3>
+<p>• <strong>oncontextmenu</strong>: (<code>ev</code>: <code>MouseEvent</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_12">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<p>Fires when the user clicks the right mouse button in the client area, opening the context menu.</p>
+<h5 id="parameters_12">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>MouseEvent</code></td>
+<td align="left">The mouse event.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_12">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_12">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5709</p>
+<hr />
+<h3 id="oncuechange">oncuechange</h3>
+<p>• <strong>oncuechange</strong>: (<code>ev</code>: <code>Event</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_13">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<h5 id="parameters_13">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>Event</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_13">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_13">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5710</p>
+<hr />
+<h3 id="ondblclick">ondblclick</h3>
+<p>• <strong>ondblclick</strong>: (<code>ev</code>: <code>MouseEvent</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_14">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<p>Fires when the user double-clicks the object.</p>
+<h5 id="parameters_14">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>MouseEvent</code></td>
+<td align="left">The mouse event.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_14">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_14">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5715</p>
+<hr />
+<h3 id="ondrag">ondrag</h3>
+<p>• <strong>ondrag</strong>: (<code>ev</code>: <code>DragEvent</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_15">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<p>Fires on the source object continuously during a drag operation.</p>
+<h5 id="parameters_15">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>DragEvent</code></td>
+<td align="left">The event.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_15">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_15">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5720</p>
+<hr />
+<h3 id="ondragend">ondragend</h3>
+<p>• <strong>ondragend</strong>: (<code>ev</code>: <code>DragEvent</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_16">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<p>Fires on the source object when the user releases the mouse at the close of a drag operation.</p>
+<h5 id="parameters_16">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>DragEvent</code></td>
+<td align="left">The event.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_16">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_16">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5725</p>
+<hr />
+<h3 id="ondragenter">ondragenter</h3>
+<p>• <strong>ondragenter</strong>: (<code>ev</code>: <code>DragEvent</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_17">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<p>Fires on the target element when the user drags the object to a valid drop target.</p>
+<h5 id="parameters_17">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>DragEvent</code></td>
+<td align="left">The drag event.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_17">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_17">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5730</p>
+<hr />
+<h3 id="ondragleave">ondragleave</h3>
+<p>• <strong>ondragleave</strong>: (<code>ev</code>: <code>DragEvent</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_18">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<p>Fires on the target object when the user moves the mouse out of a valid drop target during a drag operation.</p>
+<h5 id="parameters_18">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>DragEvent</code></td>
+<td align="left">The drag event.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_18">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_18">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5735</p>
+<hr />
+<h3 id="ondragover">ondragover</h3>
+<p>• <strong>ondragover</strong>: (<code>ev</code>: <code>DragEvent</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_19">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<p>Fires on the target element continuously while the user drags the object over a valid drop target.</p>
+<h5 id="parameters_19">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>DragEvent</code></td>
+<td align="left">The event.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_19">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_19">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5740</p>
+<hr />
+<h3 id="ondragstart">ondragstart</h3>
+<p>• <strong>ondragstart</strong>: (<code>ev</code>: <code>DragEvent</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_20">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<p>Fires on the source object when the user starts to drag a text selection or selected object.</p>
+<h5 id="parameters_20">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>DragEvent</code></td>
+<td align="left">The event.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_20">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_20">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5745</p>
+<hr />
+<h3 id="ondrop">ondrop</h3>
+<p>• <strong>ondrop</strong>: (<code>ev</code>: <code>DragEvent</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_21">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<h5 id="parameters_21">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>DragEvent</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_21">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_21">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5746</p>
+<hr />
+<h3 id="ondurationchange">ondurationchange</h3>
+<p>• <strong>ondurationchange</strong>: (<code>ev</code>: <code>Event</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_22">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<p>Occurs when the duration attribute is updated.</p>
+<h5 id="parameters_22">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>Event</code></td>
+<td align="left">The event.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_22">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_22">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5751</p>
+<hr />
+<h3 id="onemptied">onemptied</h3>
+<p>• <strong>onemptied</strong>: (<code>ev</code>: <code>Event</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_23">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<p>Occurs when the media element is reset to its initial state.</p>
+<h5 id="parameters_23">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>Event</code></td>
+<td align="left">The event.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_23">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_23">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5756</p>
+<hr />
+<h3 id="onended">onended</h3>
+<p>• <strong>onended</strong>: (<code>ev</code>: <code>Event</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_24">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<p>Occurs when the end of playback is reached.</p>
+<h5 id="parameters_24">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>Event</code></td>
+<td align="left">The event</td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_24">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_24">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5761</p>
+<hr />
+<h3 id="onerror">onerror</h3>
+<p>• <strong>onerror</strong>: <a href="../akashaproject_ui_awf_testing_utils._internal_.OnErrorEventHandlerNonNull/"><code>OnErrorEventHandlerNonNull</code></a></p>
+<p>Fires when an error occurs during object loading.</p>
+<p><strong><code>param</code></strong> The event.</p>
+<h4 id="defined-in_25">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5766</p>
+<hr />
+<h3 id="onfocus">onfocus</h3>
+<p>• <strong>onfocus</strong>: (<code>ev</code>: <code>FocusEvent</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_25">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<p>Fires when the object receives focus.</p>
+<h5 id="parameters_25">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>FocusEvent</code></td>
+<td align="left">The event.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_25">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_26">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5771</p>
+<hr />
+<h3 id="onformdata">onformdata</h3>
+<p>• <strong>onformdata</strong>: (<code>ev</code>: <a href="../../modules/akashaproject_ui_awf_testing_utils._internal_/#formdataevent"><code>FormDataEvent</code></a>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_26">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<h5 id="parameters_26">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><a href="../../modules/akashaproject_ui_awf_testing_utils._internal_/#formdataevent"><code>FormDataEvent</code></a></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_26">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_27">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5772</p>
+<hr />
+<h3 id="ongotpointercapture">ongotpointercapture</h3>
+<p>• <strong>ongotpointercapture</strong>: (<code>ev</code>: <code>PointerEvent</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_27">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<h5 id="parameters_27">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>PointerEvent</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_27">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_28">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5773</p>
+<hr />
+<h3 id="oninput">oninput</h3>
+<p>• <strong>oninput</strong>: (<code>ev</code>: <code>Event</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_28">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<h5 id="parameters_28">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>Event</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_28">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_29">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5774</p>
+<hr />
+<h3 id="oninvalid">oninvalid</h3>
+<p>• <strong>oninvalid</strong>: (<code>ev</code>: <code>Event</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_29">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<h5 id="parameters_29">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>Event</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_29">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_30">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5775</p>
+<hr />
+<h3 id="onkeydown">onkeydown</h3>
+<p>• <strong>onkeydown</strong>: (<code>ev</code>: <code>KeyboardEvent</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_30">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<p>Fires when the user presses a key.</p>
+<h5 id="parameters_30">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>KeyboardEvent</code></td>
+<td align="left">The keyboard event</td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_30">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_31">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5780</p>
+<hr />
+<h3 id="onkeypress">onkeypress</h3>
+<p>• <strong>onkeypress</strong>: (<code>ev</code>: <code>KeyboardEvent</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_31">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<p>Fires when the user presses an alphanumeric key.</p>
+<p><strong><code>deprecated</code></strong></p>
+<h5 id="parameters_31">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>KeyboardEvent</code></td>
+<td align="left">The event.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_31">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_32">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5786</p>
+<hr />
+<h3 id="onkeyup">onkeyup</h3>
+<p>• <strong>onkeyup</strong>: (<code>ev</code>: <code>KeyboardEvent</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_32">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<p>Fires when the user releases a key.</p>
+<h5 id="parameters_32">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>KeyboardEvent</code></td>
+<td align="left">The keyboard event</td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_32">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_33">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5791</p>
+<hr />
+<h3 id="onload">onload</h3>
+<p>• <strong>onload</strong>: (<code>ev</code>: <code>Event</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_33">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<p>Fires immediately after the browser loads the object.</p>
+<h5 id="parameters_33">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>Event</code></td>
+<td align="left">The event.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_33">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_34">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5796</p>
+<hr />
+<h3 id="onloadeddata">onloadeddata</h3>
+<p>• <strong>onloadeddata</strong>: (<code>ev</code>: <code>Event</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_34">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<p>Occurs when media data is loaded at the current playback position.</p>
+<h5 id="parameters_34">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>Event</code></td>
+<td align="left">The event.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_34">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_35">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5801</p>
+<hr />
+<h3 id="onloadedmetadata">onloadedmetadata</h3>
+<p>• <strong>onloadedmetadata</strong>: (<code>ev</code>: <code>Event</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_35">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<p>Occurs when the duration and dimensions of the media have been determined.</p>
+<h5 id="parameters_35">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>Event</code></td>
+<td align="left">The event.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_35">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_36">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5806</p>
+<hr />
+<h3 id="onloadstart">onloadstart</h3>
+<p>• <strong>onloadstart</strong>: (<code>ev</code>: <code>Event</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_36">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<p>Occurs when Internet Explorer begins looking for media data.</p>
+<h5 id="parameters_36">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>Event</code></td>
+<td align="left">The event.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_36">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_37">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5811</p>
+<hr />
+<h3 id="onlostpointercapture">onlostpointercapture</h3>
+<p>• <strong>onlostpointercapture</strong>: (<code>ev</code>: <code>PointerEvent</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_37">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<h5 id="parameters_37">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>PointerEvent</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_37">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_38">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5812</p>
+<hr />
+<h3 id="onmousedown">onmousedown</h3>
+<p>• <strong>onmousedown</strong>: (<code>ev</code>: <code>MouseEvent</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_38">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<p>Fires when the user clicks the object with either mouse button.</p>
+<h5 id="parameters_38">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>MouseEvent</code></td>
+<td align="left">The mouse event.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_38">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_39">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5817</p>
+<hr />
+<h3 id="onmouseenter">onmouseenter</h3>
+<p>• <strong>onmouseenter</strong>: (<code>ev</code>: <code>MouseEvent</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_39">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<h5 id="parameters_39">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>MouseEvent</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_39">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_40">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5818</p>
+<hr />
+<h3 id="onmouseleave">onmouseleave</h3>
+<p>• <strong>onmouseleave</strong>: (<code>ev</code>: <code>MouseEvent</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_40">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<h5 id="parameters_40">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>MouseEvent</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_40">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_41">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5819</p>
+<hr />
+<h3 id="onmousemove">onmousemove</h3>
+<p>• <strong>onmousemove</strong>: (<code>ev</code>: <code>MouseEvent</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_41">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<p>Fires when the user moves the mouse over the object.</p>
+<h5 id="parameters_41">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>MouseEvent</code></td>
+<td align="left">The mouse event.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_41">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_42">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5824</p>
+<hr />
+<h3 id="onmouseout">onmouseout</h3>
+<p>• <strong>onmouseout</strong>: (<code>ev</code>: <code>MouseEvent</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_42">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<p>Fires when the user moves the mouse pointer outside the boundaries of the object.</p>
+<h5 id="parameters_42">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>MouseEvent</code></td>
+<td align="left">The mouse event.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_42">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_43">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5829</p>
+<hr />
+<h3 id="onmouseover">onmouseover</h3>
+<p>• <strong>onmouseover</strong>: (<code>ev</code>: <code>MouseEvent</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_43">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<p>Fires when the user moves the mouse pointer into the object.</p>
+<h5 id="parameters_43">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>MouseEvent</code></td>
+<td align="left">The mouse event.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_43">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_44">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5834</p>
+<hr />
+<h3 id="onmouseup">onmouseup</h3>
+<p>• <strong>onmouseup</strong>: (<code>ev</code>: <code>MouseEvent</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_44">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<p>Fires when the user releases a mouse button while the mouse is over the object.</p>
+<h5 id="parameters_44">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>MouseEvent</code></td>
+<td align="left">The mouse event.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_44">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_45">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5839</p>
+<hr />
+<h3 id="onpause">onpause</h3>
+<p>• <strong>onpause</strong>: (<code>ev</code>: <code>Event</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_45">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<p>Occurs when playback is paused.</p>
+<h5 id="parameters_45">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>Event</code></td>
+<td align="left">The event.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_45">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_46">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5844</p>
+<hr />
+<h3 id="onplay">onplay</h3>
+<p>• <strong>onplay</strong>: (<code>ev</code>: <code>Event</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_46">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<p>Occurs when the play method is requested.</p>
+<h5 id="parameters_46">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>Event</code></td>
+<td align="left">The event.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_46">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_47">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5849</p>
+<hr />
+<h3 id="onplaying">onplaying</h3>
+<p>• <strong>onplaying</strong>: (<code>ev</code>: <code>Event</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_47">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<p>Occurs when the audio or video has started playing.</p>
+<h5 id="parameters_47">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>Event</code></td>
+<td align="left">The event.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_47">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_48">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5854</p>
+<hr />
+<h3 id="onpointercancel">onpointercancel</h3>
+<p>• <strong>onpointercancel</strong>: (<code>ev</code>: <code>PointerEvent</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_48">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<h5 id="parameters_48">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>PointerEvent</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_48">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_49">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5855</p>
+<hr />
+<h3 id="onpointerdown">onpointerdown</h3>
+<p>• <strong>onpointerdown</strong>: (<code>ev</code>: <code>PointerEvent</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_49">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<h5 id="parameters_49">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>PointerEvent</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_49">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_50">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5856</p>
+<hr />
+<h3 id="onpointerenter">onpointerenter</h3>
+<p>• <strong>onpointerenter</strong>: (<code>ev</code>: <code>PointerEvent</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_50">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<h5 id="parameters_50">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>PointerEvent</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_50">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_51">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5857</p>
+<hr />
+<h3 id="onpointerleave">onpointerleave</h3>
+<p>• <strong>onpointerleave</strong>: (<code>ev</code>: <code>PointerEvent</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_51">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<h5 id="parameters_51">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>PointerEvent</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_51">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_52">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5858</p>
+<hr />
+<h3 id="onpointermove">onpointermove</h3>
+<p>• <strong>onpointermove</strong>: (<code>ev</code>: <code>PointerEvent</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_52">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<h5 id="parameters_52">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>PointerEvent</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_52">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_53">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5859</p>
+<hr />
+<h3 id="onpointerout">onpointerout</h3>
+<p>• <strong>onpointerout</strong>: (<code>ev</code>: <code>PointerEvent</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_53">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<h5 id="parameters_53">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>PointerEvent</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_53">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_54">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5860</p>
+<hr />
+<h3 id="onpointerover">onpointerover</h3>
+<p>• <strong>onpointerover</strong>: (<code>ev</code>: <code>PointerEvent</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_54">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<h5 id="parameters_54">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>PointerEvent</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_54">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_55">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5861</p>
+<hr />
+<h3 id="onpointerup">onpointerup</h3>
+<p>• <strong>onpointerup</strong>: (<code>ev</code>: <code>PointerEvent</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_55">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<h5 id="parameters_55">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>PointerEvent</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_55">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_56">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5862</p>
+<hr />
+<h3 id="onprogress">onprogress</h3>
+<p>• <strong>onprogress</strong>: (<code>ev</code>: <a href="../../modules/akashaproject_ui_awf_testing_utils._internal_/#progressevent"><code>ProgressEvent</code></a>&lt;<code>EventTarget</code>>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_56">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<p>Occurs to indicate progress while downloading media data.</p>
+<h5 id="parameters_56">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><a href="../../modules/akashaproject_ui_awf_testing_utils._internal_/#progressevent"><code>ProgressEvent</code></a>&lt;<code>EventTarget</code>></td>
+<td align="left">The event.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_56">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_57">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5867</p>
+<hr />
+<h3 id="onratechange">onratechange</h3>
+<p>• <strong>onratechange</strong>: (<code>ev</code>: <code>Event</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_57">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<p>Occurs when the playback rate is increased or decreased.</p>
+<h5 id="parameters_57">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>Event</code></td>
+<td align="left">The event.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_57">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_58">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5872</p>
+<hr />
+<h3 id="onreset">onreset</h3>
+<p>• <strong>onreset</strong>: (<code>ev</code>: <code>Event</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_58">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<p>Fires when the user resets a form.</p>
+<h5 id="parameters_58">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>Event</code></td>
+<td align="left">The event.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_58">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_59">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5877</p>
+<hr />
+<h3 id="onresize">onresize</h3>
+<p>• <strong>onresize</strong>: (<code>ev</code>: <code>UIEvent</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_59">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<h5 id="parameters_59">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>UIEvent</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_59">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_60">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5878</p>
+<hr />
+<h3 id="onscroll">onscroll</h3>
+<p>• <strong>onscroll</strong>: (<code>ev</code>: <code>Event</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_60">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<p>Fires when the user repositions the scroll box in the scroll bar on the object.</p>
+<h5 id="parameters_60">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>Event</code></td>
+<td align="left">The event.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_60">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_61">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5883</p>
+<hr />
+<h3 id="onseeked">onseeked</h3>
+<p>• <strong>onseeked</strong>: (<code>ev</code>: <code>Event</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_61">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<p>Occurs when the seek operation ends.</p>
+<h5 id="parameters_61">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>Event</code></td>
+<td align="left">The event.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_61">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_62">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5888</p>
+<hr />
+<h3 id="onseeking">onseeking</h3>
+<p>• <strong>onseeking</strong>: (<code>ev</code>: <code>Event</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_62">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<p>Occurs when the current playback position is moved.</p>
+<h5 id="parameters_62">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>Event</code></td>
+<td align="left">The event.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_62">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_63">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5893</p>
+<hr />
+<h3 id="onselect">onselect</h3>
+<p>• <strong>onselect</strong>: (<code>ev</code>: <code>Event</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_63">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<p>Fires when the current selection changes.</p>
+<h5 id="parameters_63">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>Event</code></td>
+<td align="left">The event.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_63">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_64">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5898</p>
+<hr />
+<h3 id="onselectionchange">onselectionchange</h3>
+<p>• <strong>onselectionchange</strong>: (<code>ev</code>: <code>Event</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_64">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<h5 id="parameters_64">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>Event</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_64">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_65">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5899</p>
+<hr />
+<h3 id="onselectstart">onselectstart</h3>
+<p>• <strong>onselectstart</strong>: (<code>ev</code>: <code>Event</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_65">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<h5 id="parameters_65">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>Event</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_65">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_66">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5900</p>
+<hr />
+<h3 id="onstalled">onstalled</h3>
+<p>• <strong>onstalled</strong>: (<code>ev</code>: <code>Event</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_66">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<p>Occurs when the download has stopped.</p>
+<h5 id="parameters_66">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>Event</code></td>
+<td align="left">The event.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_66">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_67">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5905</p>
+<hr />
+<h3 id="onsubmit">onsubmit</h3>
+<p>• <strong>onsubmit</strong>: (<code>ev</code>: <code>Event</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_67">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<h5 id="parameters_67">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>Event</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_67">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_68">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5906</p>
+<hr />
+<h3 id="onsuspend">onsuspend</h3>
+<p>• <strong>onsuspend</strong>: (<code>ev</code>: <code>Event</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_68">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<p>Occurs if the load operation has been intentionally halted.</p>
+<h5 id="parameters_68">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>Event</code></td>
+<td align="left">The event.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_68">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_69">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5911</p>
+<hr />
+<h3 id="ontimeupdate">ontimeupdate</h3>
+<p>• <strong>ontimeupdate</strong>: (<code>ev</code>: <code>Event</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_69">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<p>Occurs to indicate the current playback position.</p>
+<h5 id="parameters_69">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>Event</code></td>
+<td align="left">The event.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_69">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_70">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5916</p>
+<hr />
+<h3 id="ontoggle">ontoggle</h3>
+<p>• <strong>ontoggle</strong>: (<code>ev</code>: <code>Event</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_70">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<h5 id="parameters_70">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>Event</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_70">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_71">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5917</p>
+<hr />
+<h3 id="ontouchcancel">ontouchcancel</h3>
+<p>• <code>Optional</code> <strong>ontouchcancel</strong>: (<code>ev</code>: <code>TouchEvent</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_71">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<h5 id="parameters_71">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>TouchEvent</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_71">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_72">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5918</p>
+<hr />
+<h3 id="ontouchend">ontouchend</h3>
+<p>• <code>Optional</code> <strong>ontouchend</strong>: (<code>ev</code>: <code>TouchEvent</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_72">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<h5 id="parameters_72">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>TouchEvent</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_72">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_73">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5919</p>
+<hr />
+<h3 id="ontouchmove">ontouchmove</h3>
+<p>• <code>Optional</code> <strong>ontouchmove</strong>: (<code>ev</code>: <code>TouchEvent</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_73">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<h5 id="parameters_73">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>TouchEvent</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_73">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_74">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5920</p>
+<hr />
+<h3 id="ontouchstart">ontouchstart</h3>
+<p>• <code>Optional</code> <strong>ontouchstart</strong>: (<code>ev</code>: <code>TouchEvent</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_74">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<h5 id="parameters_74">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>TouchEvent</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_74">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_75">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5921</p>
+<hr />
+<h3 id="ontransitioncancel">ontransitioncancel</h3>
+<p>• <strong>ontransitioncancel</strong>: (<code>ev</code>: <code>TransitionEvent</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_75">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<h5 id="parameters_75">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>TransitionEvent</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_75">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_76">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5922</p>
+<hr />
+<h3 id="ontransitionend">ontransitionend</h3>
+<p>• <strong>ontransitionend</strong>: (<code>ev</code>: <code>TransitionEvent</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_76">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<h5 id="parameters_76">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>TransitionEvent</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_76">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_77">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5923</p>
+<hr />
+<h3 id="ontransitionrun">ontransitionrun</h3>
+<p>• <strong>ontransitionrun</strong>: (<code>ev</code>: <code>TransitionEvent</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_77">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<h5 id="parameters_77">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>TransitionEvent</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_77">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_78">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5924</p>
+<hr />
+<h3 id="ontransitionstart">ontransitionstart</h3>
+<p>• <strong>ontransitionstart</strong>: (<code>ev</code>: <code>TransitionEvent</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_78">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<h5 id="parameters_78">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>TransitionEvent</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_78">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_79">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5925</p>
+<hr />
+<h3 id="onvolumechange">onvolumechange</h3>
+<p>• <strong>onvolumechange</strong>: (<code>ev</code>: <code>Event</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_79">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<p>Occurs when the volume is changed, or playback is muted or unmuted.</p>
+<h5 id="parameters_79">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>Event</code></td>
+<td align="left">The event.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_79">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_80">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5930</p>
+<hr />
+<h3 id="onwaiting">onwaiting</h3>
+<p>• <strong>onwaiting</strong>: (<code>ev</code>: <code>Event</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_80">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<p>Occurs when playback stops because the next frame of a video resource is not available.</p>
+<h5 id="parameters_80">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>Event</code></td>
+<td align="left">The event.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_80">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_81">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5935</p>
+<hr />
+<h3 id="onwebkitanimationend">onwebkitanimationend</h3>
+<p>• <strong>onwebkitanimationend</strong>: (<code>ev</code>: <code>Event</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_81">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<h5 id="parameters_81">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>Event</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_81">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_82">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5936</p>
+<hr />
+<h3 id="onwebkitanimationiteration">onwebkitanimationiteration</h3>
+<p>• <strong>onwebkitanimationiteration</strong>: (<code>ev</code>: <code>Event</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_82">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<h5 id="parameters_82">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>Event</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_82">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_83">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5937</p>
+<hr />
+<h3 id="onwebkitanimationstart">onwebkitanimationstart</h3>
+<p>• <strong>onwebkitanimationstart</strong>: (<code>ev</code>: <code>Event</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_83">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<h5 id="parameters_83">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>Event</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_83">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_84">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5938</p>
+<hr />
+<h3 id="onwebkittransitionend">onwebkittransitionend</h3>
+<p>• <strong>onwebkittransitionend</strong>: (<code>ev</code>: <code>Event</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_84">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<h5 id="parameters_84">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>Event</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_84">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_85">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5939</p>
+<hr />
+<h3 id="onwheel">onwheel</h3>
+<p>• <strong>onwheel</strong>: (<code>ev</code>: <code>WheelEvent</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_85">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<h5 id="parameters_85">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>WheelEvent</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_85">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_86">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5940</p>
+<h2 id="methods_1">Methods</h2>
+<h3 id="addeventlistener">addEventListener</h3>
+<p>▸ <strong>addEventListener</strong>&lt;<code>K</code>>(<code>type</code>, <code>listener</code>, <code>options?</code>): <code>void</code></p>
+<h4 id="type-parameters">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>K</code></td>
+<td align="left">extends keyof <a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/"><code>GlobalEventHandlersEventMap</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_86">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>type</code></td>
+<td align="left"><code>K</code></td>
+</tr>
+<tr>
+<td align="left"><code>listener</code></td>
+<td align="left">(<code>ev</code>: <a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/"><code>GlobalEventHandlersEventMap</code></a>[<code>K</code>]) =&gt; <code>any</code></td>
+</tr>
+<tr>
+<td align="left"><code>options?</code></td>
+<td align="left"><code>boolean</code> | <a href="../akashaproject_ui_awf_testing_utils._internal_.AddEventListenerOptions/"><code>AddEventListenerOptions</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_86">Returns</h4>
+<p><code>void</code></p>
+<h4 id="defined-in_87">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5941</p>
+<p>▸ <strong>addEventListener</strong>(<code>type</code>, <code>listener</code>, <code>options?</code>): <code>void</code></p>
+<h4 id="parameters_87">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>type</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>listener</code></td>
+<td align="left"><a href="../../modules/akashaproject_ui_awf_testing_utils._internal_/#eventlisteneroreventlistenerobject"><code>EventListenerOrEventListenerObject</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>options?</code></td>
+<td align="left"><code>boolean</code> | <a href="../akashaproject_ui_awf_testing_utils._internal_.AddEventListenerOptions/"><code>AddEventListenerOptions</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_87">Returns</h4>
+<p><code>void</code></p>
+<h4 id="defined-in_88">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5942</p>
+<hr />
+<h3 id="removeeventlistener">removeEventListener</h3>
+<p>▸ <strong>removeEventListener</strong>&lt;<code>K</code>>(<code>type</code>, <code>listener</code>, <code>options?</code>): <code>void</code></p>
+<h4 id="type-parameters_1">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>K</code></td>
+<td align="left">extends keyof <a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/"><code>GlobalEventHandlersEventMap</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_88">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>type</code></td>
+<td align="left"><code>K</code></td>
+</tr>
+<tr>
+<td align="left"><code>listener</code></td>
+<td align="left">(<code>ev</code>: <a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/"><code>GlobalEventHandlersEventMap</code></a>[<code>K</code>]) =&gt; <code>any</code></td>
+</tr>
+<tr>
+<td align="left"><code>options?</code></td>
+<td align="left"><code>boolean</code> | <a href="../akashaproject_ui_awf_testing_utils._internal_.EventListenerOptions/"><code>EventListenerOptions</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_88">Returns</h4>
+<p><code>void</code></p>
+<h4 id="defined-in_89">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5943</p>
+<p>▸ <strong>removeEventListener</strong>(<code>type</code>, <code>listener</code>, <code>options?</code>): <code>void</code></p>
+<h4 id="parameters_89">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>type</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>listener</code></td>
+<td align="left"><a href="../../modules/akashaproject_ui_awf_testing_utils._internal_/#eventlisteneroreventlistenerobject"><code>EventListenerOrEventListenerObject</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>options?</code></td>
+<td align="left"><code>boolean</code> | <a href="../akashaproject_ui_awf_testing_utils._internal_.EventListenerOptions/"><code>EventListenerOptions</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_89">Returns</h4>
+<p><code>void</code></p>
+<h4 id="defined-in_90">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5944</p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.22074ed6.min.js"}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.01de222e.min.js"></script>
+      
+    
+  </body>
+</html>

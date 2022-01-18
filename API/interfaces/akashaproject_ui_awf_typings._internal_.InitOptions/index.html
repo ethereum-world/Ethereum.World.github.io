@@ -1,0 +1,2021 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.7">
+    
+    
+      
+        <title>akashaproject ui awf typings. internal .InitOptions - AKASHA World Framework docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.cd566b2a.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#interface-initoptions" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="AKASHA World Framework docs" class="md-header__button md-logo" aria-label="AKASHA World Framework docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AKASHA World Framework docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              akashaproject ui awf typings. internal .InitOptions
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="AKASHA World Framework docs" class="md-nav__button md-logo" aria-label="AKASHA World Framework docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    AKASHA World Framework docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modules/" class="md-nav__link">
+        API
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hierarchy" class="md-nav__link">
+    Hierarchy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    Table of contents
+  </a>
+  
+    <nav class="md-nav" aria-label="Table of contents">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    Properties
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    Methods
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties_1" class="md-nav__link">
+    Properties
+  </a>
+  
+    <nav class="md-nav" aria-label="Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#appendnamespacetocimode" class="md-nav__link">
+    appendNamespaceToCIMode
+  </a>
+  
+    <nav class="md-nav" aria-label="appendNamespaceToCIMode">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#appendnamespacetomissingkey" class="md-nav__link">
+    appendNamespaceToMissingKey
+  </a>
+  
+    <nav class="md-nav" aria-label="appendNamespaceToMissingKey">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_1" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backend" class="md-nav__link">
+    backend
+  </a>
+  
+    <nav class="md-nav" aria-label="backend">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_2" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cache" class="md-nav__link">
+    cache
+  </a>
+  
+    <nav class="md-nav" aria-label="cache">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_1" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_3" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cleancode" class="md-nav__link">
+    cleanCode
+  </a>
+  
+    <nav class="md-nav" aria-label="cleanCode">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_4" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compatibilityjson" class="md-nav__link">
+    compatibilityJSON
+  </a>
+  
+    <nav class="md-nav" aria-label="compatibilityJSON">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_5" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contextseparator" class="md-nav__link">
+    contextSeparator
+  </a>
+  
+    <nav class="md-nav" aria-label="contextSeparator">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_6" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#debug" class="md-nav__link">
+    debug
+  </a>
+  
+    <nav class="md-nav" aria-label="debug">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_7" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defaultns" class="md-nav__link">
+    defaultNS
+  </a>
+  
+    <nav class="md-nav" aria-label="defaultNS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_8" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#detection" class="md-nav__link">
+    detection
+  </a>
+  
+    <nav class="md-nav" aria-label="detection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_2" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_9" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#editor" class="md-nav__link">
+    editor
+  </a>
+  
+    <nav class="md-nav" aria-label="editor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_10" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fallbacklng" class="md-nav__link">
+    fallbackLng
+  </a>
+  
+    <nav class="md-nav" aria-label="fallbackLng">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_11" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fallbackns" class="md-nav__link">
+    fallbackNS
+  </a>
+  
+    <nav class="md-nav" aria-label="fallbackNS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_12" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#i18nformat" class="md-nav__link">
+    i18nFormat
+  </a>
+  
+    <nav class="md-nav" aria-label="i18nFormat">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_3" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_13" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ignorejsonstructure" class="md-nav__link">
+    ignoreJSONStructure
+  </a>
+  
+    <nav class="md-nav" aria-label="ignoreJSONStructure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_14" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#initimmediate" class="md-nav__link">
+    initImmediate
+  </a>
+  
+    <nav class="md-nav" aria-label="initImmediate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_15" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interpolation" class="md-nav__link">
+    interpolation
+  </a>
+  
+    <nav class="md-nav" aria-label="interpolation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_16" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#joinarrays" class="md-nav__link">
+    joinArrays
+  </a>
+  
+    <nav class="md-nav" aria-label="joinArrays">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_17" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#keyseparator" class="md-nav__link">
+    keySeparator
+  </a>
+  
+    <nav class="md-nav" aria-label="keySeparator">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_18" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lng" class="md-nav__link">
+    lng
+  </a>
+  
+    <nav class="md-nav" aria-label="lng">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_19" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#load" class="md-nav__link">
+    load
+  </a>
+  
+    <nav class="md-nav" aria-label="load">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_20" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#locizelastused" class="md-nav__link">
+    locizeLastUsed
+  </a>
+  
+    <nav class="md-nav" aria-label="locizeLastUsed">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_1" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_21" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lowercaselng" class="md-nav__link">
+    lowerCaseLng
+  </a>
+  
+    <nav class="md-nav" aria-label="lowerCaseLng">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_22" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#missingkeyhandler" class="md-nav__link">
+    missingKeyHandler
+  </a>
+  
+    <nav class="md-nav" aria-label="missingKeyHandler">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_23" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#missingkeynovaluefallbacktokey" class="md-nav__link">
+    missingKeyNoValueFallbackToKey
+  </a>
+  
+    <nav class="md-nav" aria-label="missingKeyNoValueFallbackToKey">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_24" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nonexplicitsupportedlngs" class="md-nav__link">
+    nonExplicitSupportedLngs
+  </a>
+  
+    <nav class="md-nav" aria-label="nonExplicitSupportedLngs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_25" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nonexplicitwhitelist" class="md-nav__link">
+    nonExplicitWhitelist
+  </a>
+  
+    <nav class="md-nav" aria-label="nonExplicitWhitelist">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_26" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ns" class="md-nav__link">
+    ns
+  </a>
+  
+    <nav class="md-nav" aria-label="ns">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_27" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nsseparator" class="md-nav__link">
+    nsSeparator
+  </a>
+  
+    <nav class="md-nav" aria-label="nsSeparator">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_28" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#partialbundledlanguages" class="md-nav__link">
+    partialBundledLanguages
+  </a>
+  
+    <nav class="md-nav" aria-label="partialBundledLanguages">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_29" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pluralseparator" class="md-nav__link">
+    pluralSeparator
+  </a>
+  
+    <nav class="md-nav" aria-label="pluralSeparator">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_30" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#postprocess" class="md-nav__link">
+    postProcess
+  </a>
+  
+    <nav class="md-nav" aria-label="postProcess">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_31" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#postprocesspassresolved" class="md-nav__link">
+    postProcessPassResolved
+  </a>
+  
+    <nav class="md-nav" aria-label="postProcessPassResolved">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_32" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#preload" class="md-nav__link">
+    preload
+  </a>
+  
+    <nav class="md-nav" aria-label="preload">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_33" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#react" class="md-nav__link">
+    react
+  </a>
+  
+    <nav class="md-nav" aria-label="react">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_34" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    resources
+  </a>
+  
+    <nav class="md-nav" aria-label="resources">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_35" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returnemptystring" class="md-nav__link">
+    returnEmptyString
+  </a>
+  
+    <nav class="md-nav" aria-label="returnEmptyString">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_36" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returnnull" class="md-nav__link">
+    returnNull
+  </a>
+  
+    <nav class="md-nav" aria-label="returnNull">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_37" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returnobjects" class="md-nav__link">
+    returnObjects
+  </a>
+  
+    <nav class="md-nav" aria-label="returnObjects">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_38" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#savemissing" class="md-nav__link">
+    saveMissing
+  </a>
+  
+    <nav class="md-nav" aria-label="saveMissing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_39" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#savemissingto" class="md-nav__link">
+    saveMissingTo
+  </a>
+  
+    <nav class="md-nav" aria-label="saveMissingTo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_40" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simplifypluralsuffix" class="md-nav__link">
+    simplifyPluralSuffix
+  </a>
+  
+    <nav class="md-nav" aria-label="simplifyPluralSuffix">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_41" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#supportedlngs" class="md-nav__link">
+    supportedLngs
+  </a>
+  
+    <nav class="md-nav" aria-label="supportedLngs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_42" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#updatemissing" class="md-nav__link">
+    updateMissing
+  </a>
+  
+    <nav class="md-nav" aria-label="updateMissing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_43" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#whitelist" class="md-nav__link">
+    whitelist
+  </a>
+  
+    <nav class="md-nav" aria-label="whitelist">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_44" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#methods_1" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#missinginterpolationhandler" class="md-nav__link">
+    missingInterpolationHandler
+  </a>
+  
+    <nav class="md-nav" aria-label="missingInterpolationHandler">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_45" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#overloadtranslationoptionhandler" class="md-nav__link">
+    overloadTranslationOptionHandler
+  </a>
+  
+    <nav class="md-nav" aria-label="overloadTranslationOptionHandler">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_1" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_1" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_46" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parsemissingkeyhandler" class="md-nav__link">
+    parseMissingKeyHandler
+  </a>
+  
+    <nav class="md-nav" aria-label="parseMissingKeyHandler">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_2" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_2" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_47" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returnedobjecthandler" class="md-nav__link">
+    returnedObjectHandler
+  </a>
+  
+    <nav class="md-nav" aria-label="returnedObjectHandler">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_3" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_3" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_48" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+<p><a href="../../">AWF</a> / <a href="../../modules/">Modules</a> / <a href="../../modules/akashaproject_ui_awf_typings/">@akashaproject/ui-awf-typings</a> / <a href="../../modules/akashaproject_ui_awf_typings._internal_/">&lt;internal></a> / InitOptions</p>
+<h1 id="interface-initoptions">Interface: InitOptions</h1>
+<p><a href="../../modules/akashaproject_ui_awf_typings/">@akashaproject/ui-awf-typings</a>.<a href="../../modules/akashaproject_ui_awf_typings._internal_/"><internal></a>.InitOptions</p>
+<h2 id="hierarchy">Hierarchy</h2>
+<ul>
+<li><a href="../../modules/akashaproject_ui_awf_typings._internal_/#mergeby"><code>MergeBy</code></a>&lt;<a href="../akashaproject_ui_awf_typings._internal_.DefaultPluginOptions/"><code>DefaultPluginOptions</code></a>, <a href="../akashaproject_ui_awf_typings._internal_.PluginOptions/"><code>PluginOptions</code></a>></li>
+</ul>
+<p>↳ <strong><code>InitOptions</code></strong></p>
+<h2 id="table-of-contents">Table of contents</h2>
+<h3 id="properties">Properties</h3>
+<ul>
+<li><a href="./#appendnamespacetocimode">appendNamespaceToCIMode</a></li>
+<li><a href="./#appendnamespacetomissingkey">appendNamespaceToMissingKey</a></li>
+<li><a href="./#backend">backend</a></li>
+<li><a href="./#cache">cache</a></li>
+<li><a href="./#cleancode">cleanCode</a></li>
+<li><a href="./#compatibilityjson">compatibilityJSON</a></li>
+<li><a href="./#contextseparator">contextSeparator</a></li>
+<li><a href="./#debug">debug</a></li>
+<li><a href="./#defaultns">defaultNS</a></li>
+<li><a href="./#detection">detection</a></li>
+<li><a href="./#editor">editor</a></li>
+<li><a href="./#fallbacklng">fallbackLng</a></li>
+<li><a href="./#fallbackns">fallbackNS</a></li>
+<li><a href="./#i18nformat">i18nFormat</a></li>
+<li><a href="./#ignorejsonstructure">ignoreJSONStructure</a></li>
+<li><a href="./#initimmediate">initImmediate</a></li>
+<li><a href="./#interpolation">interpolation</a></li>
+<li><a href="./#joinarrays">joinArrays</a></li>
+<li><a href="./#keyseparator">keySeparator</a></li>
+<li><a href="./#lng">lng</a></li>
+<li><a href="./#load">load</a></li>
+<li><a href="./#locizelastused">locizeLastUsed</a></li>
+<li><a href="./#lowercaselng">lowerCaseLng</a></li>
+<li><a href="./#missingkeyhandler">missingKeyHandler</a></li>
+<li><a href="./#missingkeynovaluefallbacktokey">missingKeyNoValueFallbackToKey</a></li>
+<li><a href="./#nonexplicitsupportedlngs">nonExplicitSupportedLngs</a></li>
+<li><a href="./#nonexplicitwhitelist">nonExplicitWhitelist</a></li>
+<li><a href="./#ns">ns</a></li>
+<li><a href="./#nsseparator">nsSeparator</a></li>
+<li><a href="./#partialbundledlanguages">partialBundledLanguages</a></li>
+<li><a href="./#pluralseparator">pluralSeparator</a></li>
+<li><a href="./#postprocess">postProcess</a></li>
+<li><a href="./#postprocesspassresolved">postProcessPassResolved</a></li>
+<li><a href="./#preload">preload</a></li>
+<li><a href="./#react">react</a></li>
+<li><a href="./#resources">resources</a></li>
+<li><a href="./#returnemptystring">returnEmptyString</a></li>
+<li><a href="./#returnnull">returnNull</a></li>
+<li><a href="./#returnobjects">returnObjects</a></li>
+<li><a href="./#savemissing">saveMissing</a></li>
+<li><a href="./#savemissingto">saveMissingTo</a></li>
+<li><a href="./#simplifypluralsuffix">simplifyPluralSuffix</a></li>
+<li><a href="./#supportedlngs">supportedLngs</a></li>
+<li><a href="./#updatemissing">updateMissing</a></li>
+<li><a href="./#whitelist">whitelist</a></li>
+</ul>
+<h3 id="methods">Methods</h3>
+<ul>
+<li><a href="./#missinginterpolationhandler">missingInterpolationHandler</a></li>
+<li><a href="./#overloadtranslationoptionhandler">overloadTranslationOptionHandler</a></li>
+<li><a href="./#parsemissingkeyhandler">parseMissingKeyHandler</a></li>
+<li><a href="./#returnedobjecthandler">returnedObjectHandler</a></li>
+</ul>
+<h2 id="properties_1">Properties</h2>
+<h3 id="appendnamespacetocimode">appendNamespaceToCIMode</h3>
+<p>• <code>Optional</code> <strong>appendNamespaceToCIMode</strong>: <code>boolean</code></p>
+<p>Prefixes the namespace to the returned key when using <code>cimode</code></p>
+<p><strong><code>default</code></strong> false</p>
+<h4 id="defined-in">Defined in</h4>
+<p>ui/typings/node_modules/i18next/index.d.ts:481</p>
+<hr />
+<h3 id="appendnamespacetomissingkey">appendNamespaceToMissingKey</h3>
+<p>• <code>Optional</code> <strong>appendNamespaceToMissingKey</strong>: <code>boolean</code></p>
+<p>Appends namespace to missing key</p>
+<p><strong><code>default</code></strong> false</p>
+<h4 id="defined-in_1">Defined in</h4>
+<p>ui/typings/node_modules/i18next/index.d.ts:372</p>
+<hr />
+<h3 id="backend">backend</h3>
+<p>• <code>Optional</code> <strong>backend</strong>: <code>object</code></p>
+<p>Options for backend - check documentation of plugin</p>
+<p><strong><code>default</code></strong> undefined</p>
+<h4 id="inherited-from">Inherited from</h4>
+<p>MergeBy.backend</p>
+<h4 id="defined-in_2">Defined in</h4>
+<p>ui/typings/node_modules/i18next/index.d.ts:205</p>
+<hr />
+<h3 id="cache">cache</h3>
+<p>• <code>Optional</code> <strong>cache</strong>: <code>object</code></p>
+<p>Options for cache layer - check documentation of plugin</p>
+<p><strong><code>default</code></strong> undefined</p>
+<h4 id="inherited-from_1">Inherited from</h4>
+<p>MergeBy.cache</p>
+<h4 id="defined-in_3">Defined in</h4>
+<p>ui/typings/node_modules/i18next/index.d.ts:211</p>
+<hr />
+<h3 id="cleancode">cleanCode</h3>
+<p>• <code>Optional</code> <strong>cleanCode</strong>: <code>boolean</code></p>
+<p>Language will be lowercased EN --&gt; en while leaving full locales like en-US</p>
+<p><strong><code>default</code></strong> false</p>
+<h4 id="defined-in_4">Defined in</h4>
+<p>ui/typings/node_modules/i18next/index.d.ts:300</p>
+<hr />
+<h3 id="compatibilityjson">compatibilityJSON</h3>
+<p>• <code>Optional</code> <strong>compatibilityJSON</strong>: <code>"v1"</code> | <code>"v2"</code> | <code>"v3"</code></p>
+<p>Compatibility JSON version</p>
+<p><strong><code>default</code></strong> 'v3'</p>
+<h4 id="defined-in_5">Defined in</h4>
+<p>ui/typings/node_modules/i18next/index.d.ts:487</p>
+<hr />
+<h3 id="contextseparator">contextSeparator</h3>
+<p>• <code>Optional</code> <strong>contextSeparator</strong>: <code>string</code></p>
+<p>Char to split context from key</p>
+<p><strong><code>default</code></strong> '_'</p>
+<h4 id="defined-in_6">Defined in</h4>
+<p>ui/typings/node_modules/i18next/index.d.ts:475</p>
+<hr />
+<h3 id="debug">debug</h3>
+<p>• <code>Optional</code> <strong>debug</strong>: <code>boolean</code></p>
+<p>Logs info level to console output. Helps finding issues with loading not working.</p>
+<p><strong><code>default</code></strong> false</p>
+<h4 id="defined-in_7">Defined in</h4>
+<p>ui/typings/node_modules/i18next/index.d.ts:225</p>
+<hr />
+<h3 id="defaultns">defaultNS</h3>
+<p>• <code>Optional</code> <strong>defaultNS</strong>: <code>string</code></p>
+<p>Default namespace used if not passed to translation function</p>
+<p><strong><code>default</code></strong> 'translation'</p>
+<h4 id="defined-in_8">Defined in</h4>
+<p>ui/typings/node_modules/i18next/index.d.ts:312</p>
+<hr />
+<h3 id="detection">detection</h3>
+<p>• <code>Optional</code> <strong>detection</strong>: <code>object</code></p>
+<p>Options for language detection - check documentation of plugin</p>
+<p><strong><code>default</code></strong> undefined</p>
+<h4 id="inherited-from_2">Inherited from</h4>
+<p>MergeBy.detection</p>
+<h4 id="defined-in_9">Defined in</h4>
+<p>ui/typings/node_modules/i18next/index.d.ts:199</p>
+<hr />
+<h3 id="editor">editor</h3>
+<p>• <code>Optional</code> <strong>editor</strong>: <code>Object</code></p>
+<p>Options for https://github.com/locize/locize-editor</p>
+<p><strong><code>default</code></strong> undefined</p>
+<h4 id="type-declaration">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>autoOpen?</code></td>
+<td align="left"><code>boolean</code></td>
+<td align="left">If set to false you will need to open the editor via API  <strong><code>default</code></strong> true</td>
+</tr>
+<tr>
+<td align="left"><code>bodyStyle?</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">Styles to adapt layout in iframe mode to your website layout. This will add a style to <code>&lt;body&gt;</code>  <strong><code>default</code></strong> 'margin-right: 605px;'</td>
+</tr>
+<tr>
+<td align="left"><code>enableByQS?</code></td>
+<td align="left"><code>string</code> | <code>false</code></td>
+<td align="left">Enable by adding querystring locize=true; can be set to another value or turned off by setting to false  <strong><code>default</code></strong> 'locize'</td>
+</tr>
+<tr>
+<td align="left"><code>enabled?</code></td>
+<td align="left"><code>boolean</code></td>
+<td align="left">Enable on init without the need of adding querystring locize=true  <strong><code>default</code></strong> false</td>
+</tr>
+<tr>
+<td align="left"><code>iframeContainerStyle?</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">Styles to adapt layout in iframe mode to your website layout. This will add a style to the <code>&lt;iframe&gt;</code>  <strong><code>default</code></strong> 'z-index: 2000; position: fixed; top: 0; right: 0; bottom: 0; width: 600px; box-shadow: -3px 0 5px 0 rgba(0,0,0,0.5);'</td>
+</tr>
+<tr>
+<td align="left"><code>iframeStyle?</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">Styles to adapt layout in iframe mode to your website layout. This will add a style to the parent of <code>&lt;iframe&gt;</code>  <strong><code>default</code></strong> 'height: 100%; width: 600px; border: none;'</td>
+</tr>
+<tr>
+<td align="left"><code>lngOverride?</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">Use lng in editor, eg. if running with lng=cimode (i18next, locize)  <strong><code>default</code></strong> null</td>
+</tr>
+<tr>
+<td align="left"><code>lngOverrideQS?</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">Use lng in editor taken from query string, eg. if running with lng=cimode (i18next, locize)  <strong><code>default</code></strong> 'useLng'</td>
+</tr>
+<tr>
+<td align="left"><code>mode?</code></td>
+<td align="left"><code>"iframe"</code> | <code>"window"</code></td>
+<td align="left">How the editor will open. Setting to window will open a new window/tab instead  <strong><code>default</code></strong> 'iframe'</td>
+</tr>
+<tr>
+<td align="left"><code>toggleKeyCode?</code></td>
+<td align="left"><code>number</code></td>
+<td align="left">Turn on/off by pressing key combination. Combine this with <code>toggleKeyModifier</code>  <strong><code>default</code></strong> 24 (x)</td>
+</tr>
+<tr>
+<td align="left"><code>toggleKeyModifier?</code></td>
+<td align="left"><code>"ctrlKey"</code> | <code>"metaKey"</code> | <code>"altKey"</code> | <code>"shiftKey"</code></td>
+<td align="left">Turn on/off by pressing key combination. Combine this with <code>toggleKeyCode</code>  <strong><code>default</code></strong> 'ctrlKey'</td>
+</tr>
+<tr>
+<td align="left"><code>onEditorSaved?</code></td>
+<td align="left">(<code>lng</code>: <code>null</code>, <code>ns</code>: <code>string</code> | readonly <code>string</code>[]) =&gt; <code>void</code></td>
+<td align="left">Handle when locize saved the edited translations, eg. reload website  <strong><code>default</code></strong> noop</td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_10">Defined in</h4>
+<p>ui/typings/node_modules/i18next/index.d.ts:493</p>
+<hr />
+<h3 id="fallbacklng">fallbackLng</h3>
+<p>• <code>Optional</code> <strong>fallbackLng</strong>: <code>false</code> | <a href="../../modules/akashaproject_ui_awf_typings._internal_/#fallbacklng"><code>FallbackLng</code></a></p>
+<p>Language to use if translations in user language are not available.</p>
+<p><strong><code>default</code></strong> 'dev'</p>
+<h4 id="defined-in_11">Defined in</h4>
+<p>ui/typings/node_modules/i18next/index.d.ts:249</p>
+<hr />
+<h3 id="fallbackns">fallbackNS</h3>
+<p>• <code>Optional</code> <strong>fallbackNS</strong>: <code>string</code> | <code>false</code> | readonly <code>string</code>[]</p>
+<p>String or array of namespaces to lookup key if not found in given namespace.</p>
+<p><strong><code>default</code></strong> false</p>
+<h4 id="defined-in_12">Defined in</h4>
+<p>ui/typings/node_modules/i18next/index.d.ts:318</p>
+<hr />
+<h3 id="i18nformat">i18nFormat</h3>
+<p>• <code>Optional</code> <strong>i18nFormat</strong>: <code>object</code></p>
+<p>Options for i18n message format - check documentation of plugin</p>
+<p><strong><code>default</code></strong> undefined</p>
+<h4 id="inherited-from_3">Inherited from</h4>
+<p>MergeBy.i18nFormat</p>
+<h4 id="defined-in_13">Defined in</h4>
+<p>ui/typings/node_modules/i18next/index.d.ts:217</p>
+<hr />
+<h3 id="ignorejsonstructure">ignoreJSONStructure</h3>
+<p>• <code>Optional</code> <strong>ignoreJSONStructure</strong>: <code>boolean</code></p>
+<p>Automatically lookup for a flat key if a nested key is not found an vice-versa</p>
+<p><strong><code>default</code></strong> true</p>
+<h4 id="defined-in_14">Defined in</h4>
+<p>ui/typings/node_modules/i18next/index.d.ts:612</p>
+<hr />
+<h3 id="initimmediate">initImmediate</h3>
+<p>• <code>Optional</code> <strong>initImmediate</strong>: <code>boolean</code></p>
+<p>Triggers resource loading in init function inside a setTimeout (default async behaviour).
+Set it to false if your backend loads resources sync - that way calling i18next.t after
+init is possible without relaying on the init callback.</p>
+<p><strong><code>default</code></strong> true</p>
+<h4 id="defined-in_15">Defined in</h4>
+<p>ui/typings/node_modules/i18next/index.d.ts:451</p>
+<hr />
+<h3 id="interpolation">interpolation</h3>
+<p>• <code>Optional</code> <strong>interpolation</strong>: <a href="../akashaproject_ui_awf_typings._internal_.InterpolationOptions/"><code>InterpolationOptions</code></a></p>
+<p><strong><code>see</code></strong> https://www.i18next.com/interpolation.html</p>
+<h4 id="defined-in_16">Defined in</h4>
+<p>ui/typings/node_modules/i18next/index.d.ts:437</p>
+<hr />
+<h3 id="joinarrays">joinArrays</h3>
+<p>• <code>Optional</code> <strong>joinArrays</strong>: <code>string</code> | <code>false</code></p>
+<p>Char, eg. '\n' that arrays will be joined by</p>
+<p><strong><code>default</code></strong> false</p>
+<h4 id="defined-in_17">Defined in</h4>
+<p>ui/typings/node_modules/i18next/index.d.ts:426</p>
+<hr />
+<h3 id="keyseparator">keySeparator</h3>
+<p>• <code>Optional</code> <strong>keySeparator</strong>: <code>string</code> | <code>false</code></p>
+<p>Char to separate keys</p>
+<p><strong><code>default</code></strong> '.'</p>
+<h4 id="defined-in_18">Defined in</h4>
+<p>ui/typings/node_modules/i18next/index.d.ts:457</p>
+<hr />
+<h3 id="lng">lng</h3>
+<p>• <code>Optional</code> <strong>lng</strong>: <code>string</code></p>
+<p>Language to use (overrides language detection)</p>
+<p><strong><code>default</code></strong> undefined</p>
+<h4 id="defined-in_19">Defined in</h4>
+<p>ui/typings/node_modules/i18next/index.d.ts:243</p>
+<hr />
+<h3 id="load">load</h3>
+<p>• <code>Optional</code> <strong>load</strong>: <code>"all"</code> | <code>"currentOnly"</code> | <code>"languageOnly"</code></p>
+<p>Language codes to lookup, given set language is
+'en-US': 'all' --&gt; ['en-US', 'en', 'dev'],
+'currentOnly' --&gt; 'en-US',
+'languageOnly' --&gt; 'en'</p>
+<p><strong><code>default</code></strong> 'all'</p>
+<h4 id="defined-in_20">Defined in</h4>
+<p>ui/typings/node_modules/i18next/index.d.ts:282</p>
+<hr />
+<h3 id="locizelastused">locizeLastUsed</h3>
+<p>• <code>Optional</code> <strong>locizeLastUsed</strong>: <code>Object</code></p>
+<p>Options for https://github.com/locize/locize-lastused</p>
+<p><strong><code>default</code></strong> undefined</p>
+<h4 id="type-declaration_1">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>allowedHosts?</code></td>
+<td align="left">readonly <code>string</code>[]</td>
+<td align="left">Hostnames that are allowed to send last used data. Please keep those to your local system, staging, test servers (not production)  <strong><code>default</code></strong> ['localhost']</td>
+</tr>
+<tr>
+<td align="left"><code>apiKey?</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">An api key if you want to send missing keys</td>
+</tr>
+<tr>
+<td align="left"><code>debounceSubmit?</code></td>
+<td align="left"><code>number</code></td>
+<td align="left">Debounce interval to send data in milliseconds  <strong><code>default</code></strong> 90000</td>
+</tr>
+<tr>
+<td align="left"><code>projectId</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">The id of your locize project</td>
+</tr>
+<tr>
+<td align="left"><code>referenceLng?</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">The reference language of your project  <strong><code>default</code></strong> 'en'</td>
+</tr>
+<tr>
+<td align="left"><code>version?</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">Version  <strong><code>default</code></strong> 'latest'</td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_21">Defined in</h4>
+<p>ui/typings/node_modules/i18next/index.d.ts:571</p>
+<hr />
+<h3 id="lowercaselng">lowerCaseLng</h3>
+<p>• <code>Optional</code> <strong>lowerCaseLng</strong>: <code>boolean</code></p>
+<p>Language will be lowercased eg. en-US --&gt; en-us</p>
+<p><strong><code>default</code></strong> false</p>
+<h4 id="defined-in_22">Defined in</h4>
+<p>ui/typings/node_modules/i18next/index.d.ts:294</p>
+<hr />
+<h3 id="missingkeyhandler">missingKeyHandler</h3>
+<p>• <code>Optional</code> <strong>missingKeyHandler</strong>: <code>false</code> | (<code>lngs</code>: readonly <code>string</code>[], <code>ns</code>: <code>string</code>, <code>key</code>: <code>string</code>, <code>fallbackValue</code>: <code>string</code>, <code>updateMissing</code>: <code>boolean</code>, <code>options</code>: <code>any</code>) =&gt; <code>void</code></p>
+<p>Used for custom missing key handling (needs saveMissing set to true!)</p>
+<p><strong><code>default</code></strong> false</p>
+<h4 id="defined-in_23">Defined in</h4>
+<p>ui/typings/node_modules/i18next/index.d.ts:351</p>
+<hr />
+<h3 id="missingkeynovaluefallbacktokey">missingKeyNoValueFallbackToKey</h3>
+<p>• <code>Optional</code> <strong>missingKeyNoValueFallbackToKey</strong>: <code>boolean</code></p>
+<p>Used to not fallback to the key as default value, when using saveMissing functionality.
+i.e. when using with i18next-http-backend this will result in having a key with an empty string value.</p>
+<p><strong><code>default</code></strong> false</p>
+<h4 id="defined-in_24">Defined in</h4>
+<p>ui/typings/node_modules/i18next/index.d.ts:345</p>
+<hr />
+<h3 id="nonexplicitsupportedlngs">nonExplicitSupportedLngs</h3>
+<p>• <code>Optional</code> <strong>nonExplicitSupportedLngs</strong>: <code>boolean</code></p>
+<p>If true will pass eg. en-US if finding en in supportedLngs</p>
+<p><strong><code>default</code></strong> false</p>
+<h4 id="defined-in_25">Defined in</h4>
+<p>ui/typings/node_modules/i18next/index.d.ts:273</p>
+<hr />
+<h3 id="nonexplicitwhitelist">nonExplicitWhitelist</h3>
+<p>• <code>Optional</code> <strong>nonExplicitWhitelist</strong>: <code>boolean</code></p>
+<p>DEPRECTADED use nonExplicitSupportedLngs</p>
+<p><strong><code>default</code></strong> false</p>
+<h4 id="defined-in_26">Defined in</h4>
+<p>ui/typings/node_modules/i18next/index.d.ts:261</p>
+<hr />
+<h3 id="ns">ns</h3>
+<p>• <code>Optional</code> <strong>ns</strong>: <code>string</code> | readonly <code>string</code>[]</p>
+<p>String or array of namespaces to load</p>
+<p><strong><code>default</code></strong> 'translation'</p>
+<h4 id="defined-in_27">Defined in</h4>
+<p>ui/typings/node_modules/i18next/index.d.ts:306</p>
+<hr />
+<h3 id="nsseparator">nsSeparator</h3>
+<p>• <code>Optional</code> <strong>nsSeparator</strong>: <code>string</code> | <code>false</code></p>
+<p>Char to split namespace from key</p>
+<p><strong><code>default</code></strong> ':'</p>
+<h4 id="defined-in_28">Defined in</h4>
+<p>ui/typings/node_modules/i18next/index.d.ts:463</p>
+<hr />
+<h3 id="partialbundledlanguages">partialBundledLanguages</h3>
+<p>• <code>Optional</code> <strong>partialBundledLanguages</strong>: <code>boolean</code></p>
+<p>Allow initializing with bundled resources while using a backend to load non bundled ones.</p>
+<p><strong><code>default</code></strong> false</p>
+<h4 id="defined-in_29">Defined in</h4>
+<p>ui/typings/node_modules/i18next/index.d.ts:237</p>
+<hr />
+<h3 id="pluralseparator">pluralSeparator</h3>
+<p>• <code>Optional</code> <strong>pluralSeparator</strong>: <code>string</code></p>
+<p>Char to split plural from key</p>
+<p><strong><code>default</code></strong> '_'</p>
+<h4 id="defined-in_30">Defined in</h4>
+<p>ui/typings/node_modules/i18next/index.d.ts:469</p>
+<hr />
+<h3 id="postprocess">postProcess</h3>
+<p>• <code>Optional</code> <strong>postProcess</strong>: <code>string</code> | <code>false</code> | readonly <code>string</code>[]</p>
+<p>String or array of postProcessors to apply per default</p>
+<p><strong><code>default</code></strong> false</p>
+<h4 id="defined-in_31">Defined in</h4>
+<p>ui/typings/node_modules/i18next/index.d.ts:390</p>
+<hr />
+<h3 id="postprocesspassresolved">postProcessPassResolved</h3>
+<p>• <code>Optional</code> <strong>postProcessPassResolved</strong>: <code>boolean</code></p>
+<p>passthrough the resolved object including 'usedNS', 'usedLang' etc into options object of postprocessors as 'i18nResolved' property</p>
+<p><strong><code>default</code></strong> false</p>
+<h4 id="defined-in_32">Defined in</h4>
+<p>ui/typings/node_modules/i18next/index.d.ts:396</p>
+<hr />
+<h3 id="preload">preload</h3>
+<p>• <code>Optional</code> <strong>preload</strong>: <code>false</code> | readonly <code>string</code>[]</p>
+<p>Array of languages to preload. Important on server-side to assert translations are loaded before rendering views.</p>
+<p><strong><code>default</code></strong> false</p>
+<h4 id="defined-in_33">Defined in</h4>
+<p>ui/typings/node_modules/i18next/index.d.ts:288</p>
+<hr />
+<h3 id="react">react</h3>
+<p>• <code>Optional</code> <strong>react</strong>: <a href="../akashaproject_ui_awf_typings._internal_.ReactOptions/"><code>ReactOptions</code></a></p>
+<p>Options for react - check documentation of plugin</p>
+<p><strong><code>default</code></strong> undefined</p>
+<h4 id="defined-in_34">Defined in</h4>
+<p>ui/typings/node_modules/i18next/index.d.ts:443</p>
+<hr />
+<h3 id="resources">resources</h3>
+<p>• <code>Optional</code> <strong>resources</strong>: <a href="../akashaproject_ui_awf_typings._internal_.Resource/"><code>Resource</code></a></p>
+<p>Resources to initialize with (if not using loading or not appending using addResourceBundle)</p>
+<p><strong><code>default</code></strong> undefined</p>
+<h4 id="defined-in_35">Defined in</h4>
+<p>ui/typings/node_modules/i18next/index.d.ts:231</p>
+<hr />
+<h3 id="returnemptystring">returnEmptyString</h3>
+<p>• <code>Optional</code> <strong>returnEmptyString</strong>: <code>boolean</code></p>
+<p>Allows empty string as valid translation</p>
+<p><strong><code>default</code></strong> true</p>
+<h4 id="defined-in_36">Defined in</h4>
+<p>ui/typings/node_modules/i18next/index.d.ts:408</p>
+<hr />
+<h3 id="returnnull">returnNull</h3>
+<p>• <code>Optional</code> <strong>returnNull</strong>: <code>boolean</code></p>
+<p>Allows null values as valid translation</p>
+<p><strong><code>default</code></strong> true</p>
+<h4 id="defined-in_37">Defined in</h4>
+<p>ui/typings/node_modules/i18next/index.d.ts:402</p>
+<hr />
+<h3 id="returnobjects">returnObjects</h3>
+<p>• <code>Optional</code> <strong>returnObjects</strong>: <code>boolean</code></p>
+<p>Allows objects as valid translation result</p>
+<p><strong><code>default</code></strong> false</p>
+<h4 id="defined-in_38">Defined in</h4>
+<p>ui/typings/node_modules/i18next/index.d.ts:414</p>
+<hr />
+<h3 id="savemissing">saveMissing</h3>
+<p>• <code>Optional</code> <strong>saveMissing</strong>: <code>boolean</code></p>
+<p>Calls save missing key function on backend if key not found</p>
+<p><strong><code>default</code></strong> false</p>
+<h4 id="defined-in_39">Defined in</h4>
+<p>ui/typings/node_modules/i18next/index.d.ts:324</p>
+<hr />
+<h3 id="savemissingto">saveMissingTo</h3>
+<p>• <code>Optional</code> <strong>saveMissingTo</strong>: <code>"all"</code> | <code>"current"</code> | <code>"fallback"</code></p>
+<p><strong><code>default</code></strong> 'fallback'</p>
+<h4 id="defined-in_40">Defined in</h4>
+<p>ui/typings/node_modules/i18next/index.d.ts:338</p>
+<hr />
+<h3 id="simplifypluralsuffix">simplifyPluralSuffix</h3>
+<p>• <code>Optional</code> <strong>simplifyPluralSuffix</strong>: <code>boolean</code></p>
+<p>Will use 'plural' as suffix for languages only having 1 plural form, setting it to false will suffix all with numbers</p>
+<p><strong><code>default</code></strong> true</p>
+<h4 id="defined-in_41">Defined in</h4>
+<p>ui/typings/node_modules/i18next/index.d.ts:384</p>
+<hr />
+<h3 id="supportedlngs">supportedLngs</h3>
+<p>• <code>Optional</code> <strong>supportedLngs</strong>: <code>false</code> | readonly <code>string</code>[]</p>
+<p>Array of allowed languages</p>
+<p><strong><code>default</code></strong> false</p>
+<h4 id="defined-in_42">Defined in</h4>
+<p>ui/typings/node_modules/i18next/index.d.ts:267</p>
+<hr />
+<h3 id="updatemissing">updateMissing</h3>
+<p>• <code>Optional</code> <strong>updateMissing</strong>: <code>boolean</code></p>
+<p>Experimental: enable to update default values using the saveMissing
+(Works only if defaultValue different from translated value.
+Only useful on initial development or when keeping code as source of truth not changing values outside of code.
+Only supported if backend supports it already)</p>
+<p><strong><code>default</code></strong> false</p>
+<h4 id="defined-in_43">Defined in</h4>
+<p>ui/typings/node_modules/i18next/index.d.ts:333</p>
+<hr />
+<h3 id="whitelist">whitelist</h3>
+<p>• <code>Optional</code> <strong>whitelist</strong>: <code>false</code> | readonly <code>string</code>[]</p>
+<p>DEPRECATED use supportedLngs</p>
+<p><strong><code>default</code></strong> false</p>
+<h4 id="defined-in_44">Defined in</h4>
+<p>ui/typings/node_modules/i18next/index.d.ts:255</p>
+<h2 id="methods_1">Methods</h2>
+<h3 id="missinginterpolationhandler">missingInterpolationHandler</h3>
+<p>▸ <code>Optional</code> <strong>missingInterpolationHandler</strong>(<code>text</code>, <code>value</code>, <code>options</code>): <code>any</code></p>
+<p>Gets called in case a interpolation value is undefined. This method will not be called if the value is empty string or null</p>
+<p><strong><code>default</code></strong> noop</p>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>text</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>value</code></td>
+<td align="left"><code>any</code></td>
+</tr>
+<tr>
+<td align="left"><code>options</code></td>
+<td align="left"><a href="./"><code>InitOptions</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><code>any</code></p>
+<h4 id="defined-in_45">Defined in</h4>
+<p>ui/typings/node_modules/i18next/index.d.ts:378</p>
+<hr />
+<h3 id="overloadtranslationoptionhandler">overloadTranslationOptionHandler</h3>
+<p>▸ <code>Optional</code> <strong>overloadTranslationOptionHandler</strong>(<code>args</code>): <a href="../../modules/akashaproject_ui_awf_typings._internal_/#toptions"><code>TOptions</code></a>&lt;<a href="../../modules/akashaproject_ui_awf_typings._internal_/#stringmap"><code>StringMap</code></a>></p>
+<p>Sets defaultValue</p>
+<p><strong><code>default</code></strong> args =&gt; ({ defaultValue: args[1] })</p>
+<h4 id="parameters_1">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>args</code></td>
+<td align="left"><code>string</code>[]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_1">Returns</h4>
+<p><a href="../../modules/akashaproject_ui_awf_typings._internal_/#toptions"><code>TOptions</code></a>&lt;<a href="../../modules/akashaproject_ui_awf_typings._internal_/#stringmap"><code>StringMap</code></a>></p>
+<h4 id="defined-in_46">Defined in</h4>
+<p>ui/typings/node_modules/i18next/index.d.ts:432</p>
+<hr />
+<h3 id="parsemissingkeyhandler">parseMissingKeyHandler</h3>
+<p>▸ <code>Optional</code> <strong>parseMissingKeyHandler</strong>(<code>key</code>): <code>any</code></p>
+<p>Receives a key that was not found in <code>t()</code> and returns a value, that will be returned by <code>t()</code></p>
+<p><strong><code>default</code></strong> noop</p>
+<h4 id="parameters_2">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>key</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_2">Returns</h4>
+<p><code>any</code></p>
+<h4 id="defined-in_47">Defined in</h4>
+<p>ui/typings/node_modules/i18next/index.d.ts:366</p>
+<hr />
+<h3 id="returnedobjecthandler">returnedObjectHandler</h3>
+<p>▸ <code>Optional</code> <strong>returnedObjectHandler</strong>(<code>key</code>, <code>value</code>, <code>options</code>): <code>void</code></p>
+<p>Gets called if object was passed in as key but returnObjects was set to false</p>
+<p><strong><code>default</code></strong> noop</p>
+<h4 id="parameters_3">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>key</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>value</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>options</code></td>
+<td align="left"><code>any</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_3">Returns</h4>
+<p><code>void</code></p>
+<h4 id="defined-in_48">Defined in</h4>
+<p>ui/typings/node_modules/i18next/index.d.ts:420</p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.22074ed6.min.js"}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.01de222e.min.js"></script>
+      
+    
+  </body>
+</html>

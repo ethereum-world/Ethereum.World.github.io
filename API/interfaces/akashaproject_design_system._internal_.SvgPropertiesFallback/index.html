@@ -1,0 +1,1897 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.7">
+    
+    
+      
+        <title>akashaproject design system. internal .SvgPropertiesFallback - AKASHA World Framework docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.cd566b2a.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#interface-svgpropertiesfallbacktlength" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="AKASHA World Framework docs" class="md-header__button md-logo" aria-label="AKASHA World Framework docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AKASHA World Framework docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              akashaproject design system. internal .SvgPropertiesFallback
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="AKASHA World Framework docs" class="md-nav__button md-logo" aria-label="AKASHA World Framework docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    AKASHA World Framework docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modules/" class="md-nav__link">
+        API
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#type-parameters" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hierarchy" class="md-nav__link">
+    Hierarchy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    Table of contents
+  </a>
+  
+    <nav class="md-nav" aria-label="Table of contents">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    Properties
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties_1" class="md-nav__link">
+    Properties
+  </a>
+  
+    <nav class="md-nav" aria-label="Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#alignmentbaseline" class="md-nav__link">
+    alignmentBaseline
+  </a>
+  
+    <nav class="md-nav" aria-label="alignmentBaseline">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#baselineshift" class="md-nav__link">
+    baselineShift
+  </a>
+  
+    <nav class="md-nav" aria-label="baselineShift">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_1" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clip" class="md-nav__link">
+    clip
+  </a>
+  
+    <nav class="md-nav" aria-label="clip">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_2" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clippath" class="md-nav__link">
+    clipPath
+  </a>
+  
+    <nav class="md-nav" aria-label="clipPath">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_3" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cliprule" class="md-nav__link">
+    clipRule
+  </a>
+  
+    <nav class="md-nav" aria-label="clipRule">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_4" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#color" class="md-nav__link">
+    color
+  </a>
+  
+    <nav class="md-nav" aria-label="color">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_5" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#colorinterpolation" class="md-nav__link">
+    colorInterpolation
+  </a>
+  
+    <nav class="md-nav" aria-label="colorInterpolation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_6" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#colorrendering" class="md-nav__link">
+    colorRendering
+  </a>
+  
+    <nav class="md-nav" aria-label="colorRendering">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_7" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cursor" class="md-nav__link">
+    cursor
+  </a>
+  
+    <nav class="md-nav" aria-label="cursor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_8" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#direction" class="md-nav__link">
+    direction
+  </a>
+  
+    <nav class="md-nav" aria-label="direction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_9" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#display" class="md-nav__link">
+    display
+  </a>
+  
+    <nav class="md-nav" aria-label="display">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_10" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dominantbaseline" class="md-nav__link">
+    dominantBaseline
+  </a>
+  
+    <nav class="md-nav" aria-label="dominantBaseline">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_11" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fill" class="md-nav__link">
+    fill
+  </a>
+  
+    <nav class="md-nav" aria-label="fill">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_12" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fillopacity" class="md-nav__link">
+    fillOpacity
+  </a>
+  
+    <nav class="md-nav" aria-label="fillOpacity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_13" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fillrule" class="md-nav__link">
+    fillRule
+  </a>
+  
+    <nav class="md-nav" aria-label="fillRule">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_14" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filter" class="md-nav__link">
+    filter
+  </a>
+  
+    <nav class="md-nav" aria-label="filter">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_15" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#floodcolor" class="md-nav__link">
+    floodColor
+  </a>
+  
+    <nav class="md-nav" aria-label="floodColor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_16" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#floodopacity" class="md-nav__link">
+    floodOpacity
+  </a>
+  
+    <nav class="md-nav" aria-label="floodOpacity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_17" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#font" class="md-nav__link">
+    font
+  </a>
+  
+    <nav class="md-nav" aria-label="font">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_18" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fontfamily" class="md-nav__link">
+    fontFamily
+  </a>
+  
+    <nav class="md-nav" aria-label="fontFamily">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_19" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fontsize" class="md-nav__link">
+    fontSize
+  </a>
+  
+    <nav class="md-nav" aria-label="fontSize">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_20" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fontsizeadjust" class="md-nav__link">
+    fontSizeAdjust
+  </a>
+  
+    <nav class="md-nav" aria-label="fontSizeAdjust">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_21" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fontstretch" class="md-nav__link">
+    fontStretch
+  </a>
+  
+    <nav class="md-nav" aria-label="fontStretch">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_22" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fontstyle" class="md-nav__link">
+    fontStyle
+  </a>
+  
+    <nav class="md-nav" aria-label="fontStyle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_23" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fontvariant" class="md-nav__link">
+    fontVariant
+  </a>
+  
+    <nav class="md-nav" aria-label="fontVariant">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_24" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fontweight" class="md-nav__link">
+    fontWeight
+  </a>
+  
+    <nav class="md-nav" aria-label="fontWeight">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_25" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#glyphorientationvertical" class="md-nav__link">
+    glyphOrientationVertical
+  </a>
+  
+    <nav class="md-nav" aria-label="glyphOrientationVertical">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_26" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#imagerendering" class="md-nav__link">
+    imageRendering
+  </a>
+  
+    <nav class="md-nav" aria-label="imageRendering">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_27" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#letterspacing" class="md-nav__link">
+    letterSpacing
+  </a>
+  
+    <nav class="md-nav" aria-label="letterSpacing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_28" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lightingcolor" class="md-nav__link">
+    lightingColor
+  </a>
+  
+    <nav class="md-nav" aria-label="lightingColor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_29" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lineheight" class="md-nav__link">
+    lineHeight
+  </a>
+  
+    <nav class="md-nav" aria-label="lineHeight">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_30" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#marker" class="md-nav__link">
+    marker
+  </a>
+  
+    <nav class="md-nav" aria-label="marker">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_31" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#markerend" class="md-nav__link">
+    markerEnd
+  </a>
+  
+    <nav class="md-nav" aria-label="markerEnd">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_32" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#markermid" class="md-nav__link">
+    markerMid
+  </a>
+  
+    <nav class="md-nav" aria-label="markerMid">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_33" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#markerstart" class="md-nav__link">
+    markerStart
+  </a>
+  
+    <nav class="md-nav" aria-label="markerStart">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_34" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mask" class="md-nav__link">
+    mask
+  </a>
+  
+    <nav class="md-nav" aria-label="mask">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_35" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opacity" class="md-nav__link">
+    opacity
+  </a>
+  
+    <nav class="md-nav" aria-label="opacity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_36" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#overflow" class="md-nav__link">
+    overflow
+  </a>
+  
+    <nav class="md-nav" aria-label="overflow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_37" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paintorder" class="md-nav__link">
+    paintOrder
+  </a>
+  
+    <nav class="md-nav" aria-label="paintOrder">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_38" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pointerevents" class="md-nav__link">
+    pointerEvents
+  </a>
+  
+    <nav class="md-nav" aria-label="pointerEvents">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_39" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shaperendering" class="md-nav__link">
+    shapeRendering
+  </a>
+  
+    <nav class="md-nav" aria-label="shapeRendering">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_40" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stopcolor" class="md-nav__link">
+    stopColor
+  </a>
+  
+    <nav class="md-nav" aria-label="stopColor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_41" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stopopacity" class="md-nav__link">
+    stopOpacity
+  </a>
+  
+    <nav class="md-nav" aria-label="stopOpacity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_42" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stroke" class="md-nav__link">
+    stroke
+  </a>
+  
+    <nav class="md-nav" aria-label="stroke">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_43" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strokedasharray" class="md-nav__link">
+    strokeDasharray
+  </a>
+  
+    <nav class="md-nav" aria-label="strokeDasharray">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_44" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strokedashoffset" class="md-nav__link">
+    strokeDashoffset
+  </a>
+  
+    <nav class="md-nav" aria-label="strokeDashoffset">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_45" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strokelinecap" class="md-nav__link">
+    strokeLinecap
+  </a>
+  
+    <nav class="md-nav" aria-label="strokeLinecap">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_46" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strokelinejoin" class="md-nav__link">
+    strokeLinejoin
+  </a>
+  
+    <nav class="md-nav" aria-label="strokeLinejoin">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_47" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strokemiterlimit" class="md-nav__link">
+    strokeMiterlimit
+  </a>
+  
+    <nav class="md-nav" aria-label="strokeMiterlimit">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_48" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strokeopacity" class="md-nav__link">
+    strokeOpacity
+  </a>
+  
+    <nav class="md-nav" aria-label="strokeOpacity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_49" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strokewidth" class="md-nav__link">
+    strokeWidth
+  </a>
+  
+    <nav class="md-nav" aria-label="strokeWidth">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_50" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#textanchor" class="md-nav__link">
+    textAnchor
+  </a>
+  
+    <nav class="md-nav" aria-label="textAnchor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_51" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#textdecoration" class="md-nav__link">
+    textDecoration
+  </a>
+  
+    <nav class="md-nav" aria-label="textDecoration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_52" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#textrendering" class="md-nav__link">
+    textRendering
+  </a>
+  
+    <nav class="md-nav" aria-label="textRendering">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_53" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unicodebidi" class="md-nav__link">
+    unicodeBidi
+  </a>
+  
+    <nav class="md-nav" aria-label="unicodeBidi">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_54" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vectoreffect" class="md-nav__link">
+    vectorEffect
+  </a>
+  
+    <nav class="md-nav" aria-label="vectorEffect">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_55" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visibility" class="md-nav__link">
+    visibility
+  </a>
+  
+    <nav class="md-nav" aria-label="visibility">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_56" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#whitespace" class="md-nav__link">
+    whiteSpace
+  </a>
+  
+    <nav class="md-nav" aria-label="whiteSpace">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_57" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wordspacing" class="md-nav__link">
+    wordSpacing
+  </a>
+  
+    <nav class="md-nav" aria-label="wordSpacing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_58" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#writingmode" class="md-nav__link">
+    writingMode
+  </a>
+  
+    <nav class="md-nav" aria-label="writingMode">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_59" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+<p><a href="../../">AWF</a> / <a href="../../modules/">Modules</a> / <a href="../../modules/akashaproject_design_system/">@akashaproject/design-system</a> / <a href="../../modules/akashaproject_design_system._internal_/">&lt;internal></a> / SvgPropertiesFallback</p>
+<h1 id="interface-svgpropertiesfallbacktlength">Interface: SvgPropertiesFallback&lt;TLength></h1>
+<p><a href="../../modules/akashaproject_design_system/">@akashaproject/design-system</a>.<a href="../../modules/akashaproject_design_system._internal_/"><internal></a>.SvgPropertiesFallback</p>
+<h2 id="type-parameters">Type parameters</h2>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>TLength</code></td>
+<td align="left"><code>string</code> | <code>0</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="hierarchy">Hierarchy</h2>
+<ul>
+<li><strong><code>SvgPropertiesFallback</code></strong></li>
+</ul>
+<p>↳ <a href="../akashaproject_design_system._internal_.PropertiesFallback/"><code>PropertiesFallback</code></a></p>
+<h2 id="table-of-contents">Table of contents</h2>
+<h3 id="properties">Properties</h3>
+<ul>
+<li><a href="./#alignmentbaseline">alignmentBaseline</a></li>
+<li><a href="./#baselineshift">baselineShift</a></li>
+<li><a href="./#clip">clip</a></li>
+<li><a href="./#clippath">clipPath</a></li>
+<li><a href="./#cliprule">clipRule</a></li>
+<li><a href="./#color">color</a></li>
+<li><a href="./#colorinterpolation">colorInterpolation</a></li>
+<li><a href="./#colorrendering">colorRendering</a></li>
+<li><a href="./#cursor">cursor</a></li>
+<li><a href="./#direction">direction</a></li>
+<li><a href="./#display">display</a></li>
+<li><a href="./#dominantbaseline">dominantBaseline</a></li>
+<li><a href="./#fill">fill</a></li>
+<li><a href="./#fillopacity">fillOpacity</a></li>
+<li><a href="./#fillrule">fillRule</a></li>
+<li><a href="./#filter">filter</a></li>
+<li><a href="./#floodcolor">floodColor</a></li>
+<li><a href="./#floodopacity">floodOpacity</a></li>
+<li><a href="./#font">font</a></li>
+<li><a href="./#fontfamily">fontFamily</a></li>
+<li><a href="./#fontsize">fontSize</a></li>
+<li><a href="./#fontsizeadjust">fontSizeAdjust</a></li>
+<li><a href="./#fontstretch">fontStretch</a></li>
+<li><a href="./#fontstyle">fontStyle</a></li>
+<li><a href="./#fontvariant">fontVariant</a></li>
+<li><a href="./#fontweight">fontWeight</a></li>
+<li><a href="./#glyphorientationvertical">glyphOrientationVertical</a></li>
+<li><a href="./#imagerendering">imageRendering</a></li>
+<li><a href="./#letterspacing">letterSpacing</a></li>
+<li><a href="./#lightingcolor">lightingColor</a></li>
+<li><a href="./#lineheight">lineHeight</a></li>
+<li><a href="./#marker">marker</a></li>
+<li><a href="./#markerend">markerEnd</a></li>
+<li><a href="./#markermid">markerMid</a></li>
+<li><a href="./#markerstart">markerStart</a></li>
+<li><a href="./#mask">mask</a></li>
+<li><a href="./#opacity">opacity</a></li>
+<li><a href="./#overflow">overflow</a></li>
+<li><a href="./#paintorder">paintOrder</a></li>
+<li><a href="./#pointerevents">pointerEvents</a></li>
+<li><a href="./#shaperendering">shapeRendering</a></li>
+<li><a href="./#stopcolor">stopColor</a></li>
+<li><a href="./#stopopacity">stopOpacity</a></li>
+<li><a href="./#stroke">stroke</a></li>
+<li><a href="./#strokedasharray">strokeDasharray</a></li>
+<li><a href="./#strokedashoffset">strokeDashoffset</a></li>
+<li><a href="./#strokelinecap">strokeLinecap</a></li>
+<li><a href="./#strokelinejoin">strokeLinejoin</a></li>
+<li><a href="./#strokemiterlimit">strokeMiterlimit</a></li>
+<li><a href="./#strokeopacity">strokeOpacity</a></li>
+<li><a href="./#strokewidth">strokeWidth</a></li>
+<li><a href="./#textanchor">textAnchor</a></li>
+<li><a href="./#textdecoration">textDecoration</a></li>
+<li><a href="./#textrendering">textRendering</a></li>
+<li><a href="./#unicodebidi">unicodeBidi</a></li>
+<li><a href="./#vectoreffect">vectorEffect</a></li>
+<li><a href="./#visibility">visibility</a></li>
+<li><a href="./#whitespace">whiteSpace</a></li>
+<li><a href="./#wordspacing">wordSpacing</a></li>
+<li><a href="./#writingmode">writingMode</a></li>
+</ul>
+<h2 id="properties_1">Properties</h2>
+<h3 id="alignmentbaseline">alignmentBaseline</h3>
+<p>• <code>Optional</code> <strong>alignmentBaseline</strong>: <a href="../../modules/akashaproject_design_system._internal_/#alignmentbaselineproperty"><code>AlignmentBaselineProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#alignmentbaselineproperty"><code>AlignmentBaselineProperty</code></a>[]</p>
+<h4 id="defined-in">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26356</p>
+<hr />
+<h3 id="baselineshift">baselineShift</h3>
+<p>• <code>Optional</code> <strong>baselineShift</strong>: <a href="../../modules/akashaproject_design_system._internal_/#baselineshiftproperty"><code>BaselineShiftProperty</code></a>&lt;<code>TLength</code>> | <a href="../../modules/akashaproject_design_system._internal_/#baselineshiftproperty"><code>BaselineShiftProperty</code></a>&lt;<code>TLength</code>>[]</p>
+<h4 id="defined-in_1">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26357</p>
+<hr />
+<h3 id="clip">clip</h3>
+<p>• <code>Optional</code> <strong>clip</strong>: <code>string</code> | <code>string</code>[]</p>
+<h4 id="defined-in_2">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26358</p>
+<hr />
+<h3 id="clippath">clipPath</h3>
+<p>• <code>Optional</code> <strong>clipPath</strong>: <code>string</code> | <code>string</code>[]</p>
+<h4 id="defined-in_3">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26359</p>
+<hr />
+<h3 id="cliprule">clipRule</h3>
+<p>• <code>Optional</code> <strong>clipRule</strong>: <a href="../../modules/akashaproject_design_system._internal_/#clipruleproperty"><code>ClipRuleProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#clipruleproperty"><code>ClipRuleProperty</code></a>[]</p>
+<h4 id="defined-in_4">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26360</p>
+<hr />
+<h3 id="color">color</h3>
+<p>• <code>Optional</code> <strong>color</strong>: <code>string</code> | <code>string</code>[]</p>
+<h4 id="defined-in_5">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26361</p>
+<hr />
+<h3 id="colorinterpolation">colorInterpolation</h3>
+<p>• <code>Optional</code> <strong>colorInterpolation</strong>: <a href="../../modules/akashaproject_design_system._internal_/#colorinterpolationproperty"><code>ColorInterpolationProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#colorinterpolationproperty"><code>ColorInterpolationProperty</code></a>[]</p>
+<h4 id="defined-in_6">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26362</p>
+<hr />
+<h3 id="colorrendering">colorRendering</h3>
+<p>• <code>Optional</code> <strong>colorRendering</strong>: <a href="../../modules/akashaproject_design_system._internal_/#colorrenderingproperty"><code>ColorRenderingProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#colorrenderingproperty"><code>ColorRenderingProperty</code></a>[]</p>
+<h4 id="defined-in_7">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26363</p>
+<hr />
+<h3 id="cursor">cursor</h3>
+<p>• <code>Optional</code> <strong>cursor</strong>: <code>string</code> | <code>string</code>[]</p>
+<h4 id="defined-in_8">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26364</p>
+<hr />
+<h3 id="direction">direction</h3>
+<p>• <code>Optional</code> <strong>direction</strong>: <a href="../../modules/akashaproject_design_system._internal_/#directionproperty"><code>DirectionProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#directionproperty"><code>DirectionProperty</code></a>[]</p>
+<h4 id="defined-in_9">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26365</p>
+<hr />
+<h3 id="display">display</h3>
+<p>• <code>Optional</code> <strong>display</strong>: <code>string</code> | <code>string</code>[]</p>
+<h4 id="defined-in_10">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26366</p>
+<hr />
+<h3 id="dominantbaseline">dominantBaseline</h3>
+<p>• <code>Optional</code> <strong>dominantBaseline</strong>: <a href="../../modules/akashaproject_design_system._internal_/#dominantbaselineproperty"><code>DominantBaselineProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#dominantbaselineproperty"><code>DominantBaselineProperty</code></a>[]</p>
+<h4 id="defined-in_11">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26367</p>
+<hr />
+<h3 id="fill">fill</h3>
+<p>• <code>Optional</code> <strong>fill</strong>: <code>string</code> | <code>string</code>[]</p>
+<h4 id="defined-in_12">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26368</p>
+<hr />
+<h3 id="fillopacity">fillOpacity</h3>
+<p>• <code>Optional</code> <strong>fillOpacity</strong>: <a href="../../modules/akashaproject_design_system._internal_/#globalsnumber"><code>GlobalsNumber</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#globalsnumber"><code>GlobalsNumber</code></a>[]</p>
+<h4 id="defined-in_13">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26369</p>
+<hr />
+<h3 id="fillrule">fillRule</h3>
+<p>• <code>Optional</code> <strong>fillRule</strong>: <a href="../../modules/akashaproject_design_system._internal_/#fillruleproperty"><code>FillRuleProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#fillruleproperty"><code>FillRuleProperty</code></a>[]</p>
+<h4 id="defined-in_14">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26370</p>
+<hr />
+<h3 id="filter">filter</h3>
+<p>• <code>Optional</code> <strong>filter</strong>: <code>string</code> | <code>string</code>[]</p>
+<h4 id="defined-in_15">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26371</p>
+<hr />
+<h3 id="floodcolor">floodColor</h3>
+<p>• <code>Optional</code> <strong>floodColor</strong>: <code>string</code> | <code>string</code>[]</p>
+<h4 id="defined-in_16">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26372</p>
+<hr />
+<h3 id="floodopacity">floodOpacity</h3>
+<p>• <code>Optional</code> <strong>floodOpacity</strong>: <a href="../../modules/akashaproject_design_system._internal_/#globalsnumber"><code>GlobalsNumber</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#globalsnumber"><code>GlobalsNumber</code></a>[]</p>
+<h4 id="defined-in_17">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26373</p>
+<hr />
+<h3 id="font">font</h3>
+<p>• <code>Optional</code> <strong>font</strong>: <code>string</code> | <code>string</code>[]</p>
+<h4 id="defined-in_18">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26374</p>
+<hr />
+<h3 id="fontfamily">fontFamily</h3>
+<p>• <code>Optional</code> <strong>fontFamily</strong>: <code>string</code> | <code>string</code>[]</p>
+<h4 id="defined-in_19">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26375</p>
+<hr />
+<h3 id="fontsize">fontSize</h3>
+<p>• <code>Optional</code> <strong>fontSize</strong>: <a href="../../modules/akashaproject_design_system._internal_/#fontsizeproperty"><code>FontSizeProperty</code></a>&lt;<code>TLength</code>> | <a href="../../modules/akashaproject_design_system._internal_/#fontsizeproperty"><code>FontSizeProperty</code></a>&lt;<code>TLength</code>>[]</p>
+<h4 id="defined-in_20">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26376</p>
+<hr />
+<h3 id="fontsizeadjust">fontSizeAdjust</h3>
+<p>• <code>Optional</code> <strong>fontSizeAdjust</strong>: <a href="../../modules/akashaproject_design_system._internal_/#fontsizeadjustproperty"><code>FontSizeAdjustProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#fontsizeadjustproperty"><code>FontSizeAdjustProperty</code></a>[]</p>
+<h4 id="defined-in_21">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26377</p>
+<hr />
+<h3 id="fontstretch">fontStretch</h3>
+<p>• <code>Optional</code> <strong>fontStretch</strong>: <code>string</code> | <code>string</code>[]</p>
+<h4 id="defined-in_22">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26378</p>
+<hr />
+<h3 id="fontstyle">fontStyle</h3>
+<p>• <code>Optional</code> <strong>fontStyle</strong>: <code>string</code> | <code>string</code>[]</p>
+<h4 id="defined-in_23">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26379</p>
+<hr />
+<h3 id="fontvariant">fontVariant</h3>
+<p>• <code>Optional</code> <strong>fontVariant</strong>: <code>string</code> | <code>string</code>[]</p>
+<h4 id="defined-in_24">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26380</p>
+<hr />
+<h3 id="fontweight">fontWeight</h3>
+<p>• <code>Optional</code> <strong>fontWeight</strong>: <a href="../../modules/akashaproject_design_system._internal_/#fontweightproperty"><code>FontWeightProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#fontweightproperty"><code>FontWeightProperty</code></a>[]</p>
+<h4 id="defined-in_25">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26381</p>
+<hr />
+<h3 id="glyphorientationvertical">glyphOrientationVertical</h3>
+<p>• <code>Optional</code> <strong>glyphOrientationVertical</strong>: <a href="../../modules/akashaproject_design_system._internal_/#glyphorientationverticalproperty"><code>GlyphOrientationVerticalProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#glyphorientationverticalproperty"><code>GlyphOrientationVerticalProperty</code></a>[]</p>
+<h4 id="defined-in_26">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26382</p>
+<hr />
+<h3 id="imagerendering">imageRendering</h3>
+<p>• <code>Optional</code> <strong>imageRendering</strong>: <a href="../../modules/akashaproject_design_system._internal_/#imagerenderingproperty"><code>ImageRenderingProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#imagerenderingproperty"><code>ImageRenderingProperty</code></a>[]</p>
+<h4 id="defined-in_27">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26383</p>
+<hr />
+<h3 id="letterspacing">letterSpacing</h3>
+<p>• <code>Optional</code> <strong>letterSpacing</strong>: <a href="../../modules/akashaproject_design_system._internal_/#letterspacingproperty"><code>LetterSpacingProperty</code></a>&lt;<code>TLength</code>> | <a href="../../modules/akashaproject_design_system._internal_/#letterspacingproperty"><code>LetterSpacingProperty</code></a>&lt;<code>TLength</code>>[]</p>
+<h4 id="defined-in_28">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26384</p>
+<hr />
+<h3 id="lightingcolor">lightingColor</h3>
+<p>• <code>Optional</code> <strong>lightingColor</strong>: <code>string</code> | <code>string</code>[]</p>
+<h4 id="defined-in_29">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26385</p>
+<hr />
+<h3 id="lineheight">lineHeight</h3>
+<p>• <code>Optional</code> <strong>lineHeight</strong>: <a href="../../modules/akashaproject_design_system._internal_/#lineheightproperty"><code>LineHeightProperty</code></a>&lt;<code>TLength</code>> | <a href="../../modules/akashaproject_design_system._internal_/#lineheightproperty"><code>LineHeightProperty</code></a>&lt;<code>TLength</code>>[]</p>
+<h4 id="defined-in_30">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26386</p>
+<hr />
+<h3 id="marker">marker</h3>
+<p>• <code>Optional</code> <strong>marker</strong>: <code>string</code> | <code>string</code>[]</p>
+<h4 id="defined-in_31">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26387</p>
+<hr />
+<h3 id="markerend">markerEnd</h3>
+<p>• <code>Optional</code> <strong>markerEnd</strong>: <code>string</code> | <code>string</code>[]</p>
+<h4 id="defined-in_32">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26388</p>
+<hr />
+<h3 id="markermid">markerMid</h3>
+<p>• <code>Optional</code> <strong>markerMid</strong>: <code>string</code> | <code>string</code>[]</p>
+<h4 id="defined-in_33">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26389</p>
+<hr />
+<h3 id="markerstart">markerStart</h3>
+<p>• <code>Optional</code> <strong>markerStart</strong>: <code>string</code> | <code>string</code>[]</p>
+<h4 id="defined-in_34">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26390</p>
+<hr />
+<h3 id="mask">mask</h3>
+<p>• <code>Optional</code> <strong>mask</strong>: <a href="../../modules/akashaproject_design_system._internal_/#maskproperty"><code>MaskProperty</code></a>&lt;<code>TLength</code>> | <a href="../../modules/akashaproject_design_system._internal_/#maskproperty"><code>MaskProperty</code></a>&lt;<code>TLength</code>>[]</p>
+<h4 id="defined-in_35">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26391</p>
+<hr />
+<h3 id="opacity">opacity</h3>
+<p>• <code>Optional</code> <strong>opacity</strong>: <a href="../../modules/akashaproject_design_system._internal_/#opacityproperty"><code>OpacityProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#opacityproperty"><code>OpacityProperty</code></a>[]</p>
+<h4 id="defined-in_36">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26392</p>
+<hr />
+<h3 id="overflow">overflow</h3>
+<p>• <code>Optional</code> <strong>overflow</strong>: <code>string</code> | <code>string</code>[]</p>
+<h4 id="defined-in_37">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26393</p>
+<hr />
+<h3 id="paintorder">paintOrder</h3>
+<p>• <code>Optional</code> <strong>paintOrder</strong>: <code>string</code> | <code>string</code>[]</p>
+<h4 id="defined-in_38">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26394</p>
+<hr />
+<h3 id="pointerevents">pointerEvents</h3>
+<p>• <code>Optional</code> <strong>pointerEvents</strong>: <a href="../../modules/akashaproject_design_system._internal_/#pointereventsproperty"><code>PointerEventsProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#pointereventsproperty"><code>PointerEventsProperty</code></a>[]</p>
+<h4 id="defined-in_39">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26395</p>
+<hr />
+<h3 id="shaperendering">shapeRendering</h3>
+<p>• <code>Optional</code> <strong>shapeRendering</strong>: <a href="../../modules/akashaproject_design_system._internal_/#shaperenderingproperty"><code>ShapeRenderingProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#shaperenderingproperty"><code>ShapeRenderingProperty</code></a>[]</p>
+<h4 id="defined-in_40">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26396</p>
+<hr />
+<h3 id="stopcolor">stopColor</h3>
+<p>• <code>Optional</code> <strong>stopColor</strong>: <code>string</code> | <code>string</code>[]</p>
+<h4 id="defined-in_41">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26397</p>
+<hr />
+<h3 id="stopopacity">stopOpacity</h3>
+<p>• <code>Optional</code> <strong>stopOpacity</strong>: <a href="../../modules/akashaproject_design_system._internal_/#globalsnumber"><code>GlobalsNumber</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#globalsnumber"><code>GlobalsNumber</code></a>[]</p>
+<h4 id="defined-in_42">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26398</p>
+<hr />
+<h3 id="stroke">stroke</h3>
+<p>• <code>Optional</code> <strong>stroke</strong>: <code>string</code> | <code>string</code>[]</p>
+<h4 id="defined-in_43">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26399</p>
+<hr />
+<h3 id="strokedasharray">strokeDasharray</h3>
+<p>• <code>Optional</code> <strong>strokeDasharray</strong>: <a href="../../modules/akashaproject_design_system._internal_/#strokedasharrayproperty"><code>StrokeDasharrayProperty</code></a>&lt;<code>TLength</code>> | <a href="../../modules/akashaproject_design_system._internal_/#strokedasharrayproperty"><code>StrokeDasharrayProperty</code></a>&lt;<code>TLength</code>>[]</p>
+<h4 id="defined-in_44">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26400</p>
+<hr />
+<h3 id="strokedashoffset">strokeDashoffset</h3>
+<p>• <code>Optional</code> <strong>strokeDashoffset</strong>: <a href="../../modules/akashaproject_design_system._internal_/#strokedashoffsetproperty"><code>StrokeDashoffsetProperty</code></a>&lt;<code>TLength</code>> | <a href="../../modules/akashaproject_design_system._internal_/#strokedashoffsetproperty"><code>StrokeDashoffsetProperty</code></a>&lt;<code>TLength</code>>[]</p>
+<h4 id="defined-in_45">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26401</p>
+<hr />
+<h3 id="strokelinecap">strokeLinecap</h3>
+<p>• <code>Optional</code> <strong>strokeLinecap</strong>: <a href="../../modules/akashaproject_design_system._internal_/#strokelinecapproperty"><code>StrokeLinecapProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#strokelinecapproperty"><code>StrokeLinecapProperty</code></a>[]</p>
+<h4 id="defined-in_46">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26402</p>
+<hr />
+<h3 id="strokelinejoin">strokeLinejoin</h3>
+<p>• <code>Optional</code> <strong>strokeLinejoin</strong>: <a href="../../modules/akashaproject_design_system._internal_/#strokelinejoinproperty"><code>StrokeLinejoinProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#strokelinejoinproperty"><code>StrokeLinejoinProperty</code></a>[]</p>
+<h4 id="defined-in_47">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26403</p>
+<hr />
+<h3 id="strokemiterlimit">strokeMiterlimit</h3>
+<p>• <code>Optional</code> <strong>strokeMiterlimit</strong>: <a href="../../modules/akashaproject_design_system._internal_/#globalsnumber"><code>GlobalsNumber</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#globalsnumber"><code>GlobalsNumber</code></a>[]</p>
+<h4 id="defined-in_48">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26404</p>
+<hr />
+<h3 id="strokeopacity">strokeOpacity</h3>
+<p>• <code>Optional</code> <strong>strokeOpacity</strong>: <a href="../../modules/akashaproject_design_system._internal_/#globalsnumber"><code>GlobalsNumber</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#globalsnumber"><code>GlobalsNumber</code></a>[]</p>
+<h4 id="defined-in_49">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26405</p>
+<hr />
+<h3 id="strokewidth">strokeWidth</h3>
+<p>• <code>Optional</code> <strong>strokeWidth</strong>: <a href="../../modules/akashaproject_design_system._internal_/#strokewidthproperty"><code>StrokeWidthProperty</code></a>&lt;<code>TLength</code>> | <a href="../../modules/akashaproject_design_system._internal_/#strokewidthproperty"><code>StrokeWidthProperty</code></a>&lt;<code>TLength</code>>[]</p>
+<h4 id="defined-in_50">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26406</p>
+<hr />
+<h3 id="textanchor">textAnchor</h3>
+<p>• <code>Optional</code> <strong>textAnchor</strong>: <a href="../../modules/akashaproject_design_system._internal_/#textanchorproperty"><code>TextAnchorProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#textanchorproperty"><code>TextAnchorProperty</code></a>[]</p>
+<h4 id="defined-in_51">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26407</p>
+<hr />
+<h3 id="textdecoration">textDecoration</h3>
+<p>• <code>Optional</code> <strong>textDecoration</strong>: <a href="../../modules/akashaproject_design_system._internal_/#textdecorationproperty"><code>TextDecorationProperty</code></a>&lt;<code>TLength</code>> | <a href="../../modules/akashaproject_design_system._internal_/#textdecorationproperty"><code>TextDecorationProperty</code></a>&lt;<code>TLength</code>>[]</p>
+<h4 id="defined-in_52">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26408</p>
+<hr />
+<h3 id="textrendering">textRendering</h3>
+<p>• <code>Optional</code> <strong>textRendering</strong>: <a href="../../modules/akashaproject_design_system._internal_/#textrenderingproperty"><code>TextRenderingProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#textrenderingproperty"><code>TextRenderingProperty</code></a>[]</p>
+<h4 id="defined-in_53">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26409</p>
+<hr />
+<h3 id="unicodebidi">unicodeBidi</h3>
+<p>• <code>Optional</code> <strong>unicodeBidi</strong>: <a href="../../modules/akashaproject_design_system._internal_/#unicodebidiproperty"><code>UnicodeBidiProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#unicodebidiproperty"><code>UnicodeBidiProperty</code></a>[]</p>
+<h4 id="defined-in_54">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26410</p>
+<hr />
+<h3 id="vectoreffect">vectorEffect</h3>
+<p>• <code>Optional</code> <strong>vectorEffect</strong>: <a href="../../modules/akashaproject_design_system._internal_/#vectoreffectproperty"><code>VectorEffectProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#vectoreffectproperty"><code>VectorEffectProperty</code></a>[]</p>
+<h4 id="defined-in_55">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26411</p>
+<hr />
+<h3 id="visibility">visibility</h3>
+<p>• <code>Optional</code> <strong>visibility</strong>: <a href="../../modules/akashaproject_design_system._internal_/#visibilityproperty"><code>VisibilityProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#visibilityproperty"><code>VisibilityProperty</code></a>[]</p>
+<h4 id="defined-in_56">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26412</p>
+<hr />
+<h3 id="whitespace">whiteSpace</h3>
+<p>• <code>Optional</code> <strong>whiteSpace</strong>: <a href="../../modules/akashaproject_design_system._internal_/#whitespaceproperty"><code>WhiteSpaceProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#whitespaceproperty"><code>WhiteSpaceProperty</code></a>[]</p>
+<h4 id="defined-in_57">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26413</p>
+<hr />
+<h3 id="wordspacing">wordSpacing</h3>
+<p>• <code>Optional</code> <strong>wordSpacing</strong>: <a href="../../modules/akashaproject_design_system._internal_/#wordspacingproperty"><code>WordSpacingProperty</code></a>&lt;<code>TLength</code>> | <a href="../../modules/akashaproject_design_system._internal_/#wordspacingproperty"><code>WordSpacingProperty</code></a>&lt;<code>TLength</code>>[]</p>
+<h4 id="defined-in_58">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26414</p>
+<hr />
+<h3 id="writingmode">writingMode</h3>
+<p>• <code>Optional</code> <strong>writingMode</strong>: <a href="../../modules/akashaproject_design_system._internal_/#writingmodeproperty"><code>WritingModeProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#writingmodeproperty"><code>WritingModeProperty</code></a>[]</p>
+<h4 id="defined-in_59">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26415</p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.22074ed6.min.js"}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.01de222e.min.js"></script>
+      
+    
+  </body>
+</html>

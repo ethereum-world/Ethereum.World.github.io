@@ -1,0 +1,5045 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.7">
+    
+    
+      
+        <title>Akashaproject ui awf hooks - AKASHA World Framework docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.cd566b2a.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#module-akashaprojectui-awf-hooks" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="AKASHA World Framework docs" class="md-header__button md-logo" aria-label="AKASHA World Framework docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AKASHA World Framework docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Akashaproject ui awf hooks
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="AKASHA World Framework docs" class="md-nav__button md-logo" aria-label="AKASHA World Framework docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    AKASHA World Framework docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        API
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    Table of contents
+  </a>
+  
+    <nav class="md-nav" aria-label="Table of contents">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#namespaces" class="md-nav__link">
+    Namespaces
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enumerations" class="md-nav__link">
+    Enumerations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interfaces" class="md-nav__link">
+    Interfaces
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    Properties
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variables" class="md-nav__link">
+    Variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#functions" class="md-nav__link">
+    Functions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties_1" class="md-nav__link">
+    Properties
+  </a>
+  
+    <nav class="md-nav" aria-label="Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#constants" class="md-nav__link">
+    constants
+  </a>
+  
+    <nav class="md-nav" aria-label="constants">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variables_1" class="md-nav__link">
+    Variables
+  </a>
+  
+    <nav class="md-nav" aria-label="Variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#comments_key" class="md-nav__link">
+    COMMENTS_KEY
+  </a>
+  
+    <nav class="md-nav" aria-label="COMMENTS_KEY">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comment_key" class="md-nav__link">
+    COMMENT_KEY
+  </a>
+  
+    <nav class="md-nav" aria-label="COMMENT_KEY">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_1" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create_post_mutation_key" class="md-nav__link">
+    CREATE_POST_MUTATION_KEY
+  </a>
+  
+    <nav class="md-nav" aria-label="CREATE_POST_MUTATION_KEY">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_2" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entry_key" class="md-nav__link">
+    ENTRY_KEY
+  </a>
+  
+    <nav class="md-nav" aria-label="ENTRY_KEY">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_3" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#profile_key" class="md-nav__link">
+    PROFILE_KEY
+  </a>
+  
+    <nav class="md-nav" aria-label="PROFILE_KEY">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_4" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update_profile_status" class="md-nav__link">
+    UPDATE_PROFILE_STATUS
+  </a>
+  
+    <nav class="md-nav" aria-label="UPDATE_PROFILE_STATUS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_5" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#functions_1" class="md-nav__link">
+    Functions
+  </a>
+  
+    <nav class="md-nav" aria-label="Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creatependingentry" class="md-nav__link">
+    createPendingEntry
+  </a>
+  
+    <nav class="md-nav" aria-label="createPendingEntry">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_6" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getlinkpreview" class="md-nav__link">
+    getLinkPreview
+  </a>
+  
+    <nav class="md-nav" aria-label="getLinkPreview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_1" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_1" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_7" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getmediaurl" class="md-nav__link">
+    getMediaUrl
+  </a>
+  
+    <nav class="md-nav" aria-label="getMediaUrl">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_2" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_2" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_8" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mapentry" class="md-nav__link">
+    mapEntry
+  </a>
+  
+    <nav class="md-nav" aria-label="mapEntry">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_3" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_3" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_9" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#switchtorequirednetwork" class="md-nav__link">
+    switchToRequiredNetwork
+  </a>
+  
+    <nav class="md-nav" aria-label="switchToRequiredNetwork">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_4" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_10" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uploadmediatotextile" class="md-nav__link">
+    uploadMediaToTextile
+  </a>
+  
+    <nav class="md-nav" aria-label="uploadMediaToTextile">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_4" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_5" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_11" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#useanalytics" class="md-nav__link">
+    useAnalytics
+  </a>
+  
+    <nav class="md-nav" aria-label="useAnalytics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_6" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_12" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usecheckmoderator" class="md-nav__link">
+    useCheckModerator
+  </a>
+  
+    <nav class="md-nav" aria-label="useCheckModerator">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_5" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_7" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_13" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usechecknewnotifications" class="md-nav__link">
+    useCheckNewNotifications
+  </a>
+  
+    <nav class="md-nav" aria-label="useCheckNewNotifications">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_6" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_8" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_14" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usecomment" class="md-nav__link">
+    useComment
+  </a>
+  
+    <nav class="md-nav" aria-label="useComment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_7" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_9" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_15" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#useconnectprovider" class="md-nav__link">
+    useConnectProvider
+  </a>
+  
+    <nav class="md-nav" aria-label="useConnectProvider">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_8" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_10" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_16" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usecreatecomment" class="md-nav__link">
+    useCreateComment
+  </a>
+  
+    <nav class="md-nav" aria-label="useCreateComment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_11" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_17" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usecreatepost" class="md-nav__link">
+    useCreatePost
+  </a>
+  
+    <nav class="md-nav" aria-label="useCreatePost">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_12" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_18" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usedeletebookmark" class="md-nav__link">
+    useDeleteBookmark
+  </a>
+  
+    <nav class="md-nav" aria-label="useDeleteBookmark">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_13" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_19" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usedeletecomment" class="md-nav__link">
+    useDeleteComment
+  </a>
+  
+    <nav class="md-nav" aria-label="useDeleteComment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_9" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_14" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_20" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usedeletepost" class="md-nav__link">
+    useDeletePost
+  </a>
+  
+    <nav class="md-nav" aria-label="useDeletePost">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_10" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_15" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_21" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#useeditcomment" class="md-nav__link">
+    useEditComment
+  </a>
+  
+    <nav class="md-nav" aria-label="useEditComment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_11" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_16" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_22" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#useeditpost" class="md-nav__link">
+    useEditPost
+  </a>
+  
+    <nav class="md-nav" aria-label="useEditPost">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_17" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_23" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#useensbyaddress" class="md-nav__link">
+    useEnsByAddress
+  </a>
+  
+    <nav class="md-nav" aria-label="useEnsByAddress">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_12" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_18" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_24" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#useensregistration" class="md-nav__link">
+    useEnsRegistration
+  </a>
+  
+    <nav class="md-nav" aria-label="useEnsRegistration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_13" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_19" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_25" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usefetchnotifications" class="md-nav__link">
+    useFetchNotifications
+  </a>
+  
+    <nav class="md-nav" aria-label="useFetchNotifications">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_14" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_20" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_26" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usefollow" class="md-nav__link">
+    useFollow
+  </a>
+  
+    <nav class="md-nav" aria-label="useFollow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_21" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_27" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usefollowers" class="md-nav__link">
+    useFollowers
+  </a>
+  
+    <nav class="md-nav" aria-label="useFollowers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_15" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_22" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_28" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usefollowing" class="md-nav__link">
+    useFollowing
+  </a>
+  
+    <nav class="md-nav" aria-label="useFollowing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_16" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_23" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_29" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usegetbookmarks" class="md-nav__link">
+    useGetBookmarks
+  </a>
+  
+    <nav class="md-nav" aria-label="useGetBookmarks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_17" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_24" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_30" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usegetcount" class="md-nav__link">
+    useGetCount
+  </a>
+  
+    <nav class="md-nav" aria-label="useGetCount">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_25" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_31" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usegetentryauthor" class="md-nav__link">
+    useGetEntryAuthor
+  </a>
+  
+    <nav class="md-nav" aria-label="useGetEntryAuthor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_18" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_26" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_32" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usegetflags" class="md-nav__link">
+    useGetFlags
+  </a>
+  
+    <nav class="md-nav" aria-label="useGetFlags">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_19" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_27" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_33" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usegetlogin" class="md-nav__link">
+    useGetLogin
+  </a>
+  
+    <nav class="md-nav" aria-label="useGetLogin">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_20" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_28" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_34" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usegetprofile" class="md-nav__link">
+    useGetProfile
+  </a>
+  
+    <nav class="md-nav" aria-label="useGetProfile">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_21" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_29" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_35" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usegettag" class="md-nav__link">
+    useGetTag
+  </a>
+  
+    <nav class="md-nav" aria-label="useGetTag">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_22" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_30" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_36" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usegloballogin" class="md-nav__link">
+    useGlobalLogin
+  </a>
+  
+    <nav class="md-nav" aria-label="useGlobalLogin">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_23" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_31" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_37" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usehandlenavigation" class="md-nav__link">
+    useHandleNavigation
+  </a>
+  
+    <nav class="md-nav" aria-label="useHandleNavigation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_24" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_32" class="md-nav__link">
+    Returns
+  </a>
+  
+    <nav class="md-nav" aria-label="Returns">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_25" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_33" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_38" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#useinfinitecomments" class="md-nav__link">
+    useInfiniteComments
+  </a>
+  
+    <nav class="md-nav" aria-label="useInfiniteComments">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_26" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_34" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_39" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#useinfinitedelisted" class="md-nav__link">
+    useInfiniteDelisted
+  </a>
+  
+    <nav class="md-nav" aria-label="useInfiniteDelisted">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_27" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_35" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_40" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#useinfinitekept" class="md-nav__link">
+    useInfiniteKept
+  </a>
+  
+    <nav class="md-nav" aria-label="useInfiniteKept">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_28" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_36" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_41" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#useinfinitelog" class="md-nav__link">
+    useInfiniteLog
+  </a>
+  
+    <nav class="md-nav" aria-label="useInfiniteLog">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_29" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_37" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_42" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#useinfinitepending" class="md-nav__link">
+    useInfinitePending
+  </a>
+  
+    <nav class="md-nav" aria-label="useInfinitePending">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_30" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_38" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_43" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#useinfiniteposts" class="md-nav__link">
+    useInfinitePosts
+  </a>
+  
+    <nav class="md-nav" aria-label="useInfinitePosts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_31" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_39" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_44" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#useinfinitepostsbyauthor" class="md-nav__link">
+    useInfinitePostsByAuthor
+  </a>
+  
+    <nav class="md-nav" aria-label="useInfinitePostsByAuthor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_32" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_40" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_45" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#useinfinitepostsbytag" class="md-nav__link">
+    useInfinitePostsByTag
+  </a>
+  
+    <nav class="md-nav" aria-label="useInfinitePostsByTag">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_33" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_41" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_46" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#useinjectedprovider" class="md-nav__link">
+    useInjectedProvider
+  </a>
+  
+    <nav class="md-nav" aria-label="useInjectedProvider">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_42" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_47" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#useinterests" class="md-nav__link">
+    useInterests
+  </a>
+  
+    <nav class="md-nav" aria-label="useInterests">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_34" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_43" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_48" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#useisfollowingmultiple" class="md-nav__link">
+    useIsFollowingMultiple
+  </a>
+  
+    <nav class="md-nav" aria-label="useIsFollowingMultiple">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_35" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_44" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_49" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#useissubscribedtotag" class="md-nav__link">
+    useIsSubscribedToTag
+  </a>
+  
+    <nav class="md-nav" aria-label="useIsSubscribedToTag">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_36" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_45" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_50" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#useisvalidtoken" class="md-nav__link">
+    useIsValidToken
+  </a>
+  
+    <nav class="md-nav" aria-label="useIsValidToken">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_37" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_46" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_51" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uselegaldoc" class="md-nav__link">
+    useLegalDoc
+  </a>
+  
+    <nav class="md-nav" aria-label="useLegalDoc">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_38" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_47" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_52" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uselogin" class="md-nav__link">
+    useLogin
+  </a>
+  
+    <nav class="md-nav" aria-label="useLogin">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_39" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_48" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_53" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uselogout" class="md-nav__link">
+    useLogout
+  </a>
+  
+    <nav class="md-nav" aria-label="useLogout">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_49" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_54" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usemarkasread" class="md-nav__link">
+    useMarkAsRead
+  </a>
+  
+    <nav class="md-nav" aria-label="useMarkAsRead">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_50" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_55" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usementionsearch" class="md-nav__link">
+    useMentionSearch
+  </a>
+  
+    <nav class="md-nav" aria-label="useMentionSearch">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_40" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_51" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_56" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usemoderation" class="md-nav__link">
+    useModeration
+  </a>
+  
+    <nav class="md-nav" aria-label="useModeration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_52" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_57" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usemutationlistener" class="md-nav__link">
+    useMutationListener
+  </a>
+  
+    <nav class="md-nav" aria-label="useMutationListener">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_41" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_53" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_58" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usenetworkstate" class="md-nav__link">
+    useNetworkState
+  </a>
+  
+    <nav class="md-nav" aria-label="useNetworkState">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_42" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_54" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_59" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usepost" class="md-nav__link">
+    usePost
+  </a>
+  
+    <nav class="md-nav" aria-label="usePost">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_43" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_55" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_60" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#useprofileupdate" class="md-nav__link">
+    useProfileUpdate
+  </a>
+  
+    <nav class="md-nav" aria-label="useProfileUpdate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_44" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_56" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_61" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usequerylistener" class="md-nav__link">
+    useQueryListener
+  </a>
+  
+    <nav class="md-nav" aria-label="useQueryListener">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_1" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_45" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_57" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_62" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usereasons" class="md-nav__link">
+    useReasons
+  </a>
+  
+    <nav class="md-nav" aria-label="useReasons">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_58" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_63" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usereport" class="md-nav__link">
+    useReport
+  </a>
+  
+    <nav class="md-nav" aria-label="useReport">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_59" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_64" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#userequirednetworkname" class="md-nav__link">
+    useRequiredNetworkName
+  </a>
+  
+    <nav class="md-nav" aria-label="useRequiredNetworkName">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_60" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_65" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usesavebookmark" class="md-nav__link">
+    useSaveBookmark
+  </a>
+  
+    <nav class="md-nav" aria-label="useSaveBookmark">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_61" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_66" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usesearch" class="md-nav__link">
+    useSearch
+  </a>
+  
+    <nav class="md-nav" aria-label="useSearch">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_46" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_62" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_67" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usesearchcomments" class="md-nav__link">
+    useSearchComments
+  </a>
+  
+    <nav class="md-nav" aria-label="useSearchComments">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_47" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_63" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_68" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usesearchposts" class="md-nav__link">
+    useSearchPosts
+  </a>
+  
+    <nav class="md-nav" aria-label="useSearchPosts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_48" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_64" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_69" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usesearchprofiles" class="md-nav__link">
+    useSearchProfiles
+  </a>
+  
+    <nav class="md-nav" aria-label="useSearchProfiles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_49" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_65" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_70" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usesearchtags" class="md-nav__link">
+    useSearchTags
+  </a>
+  
+    <nav class="md-nav" aria-label="useSearchTags">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_50" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_66" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_71" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usetagsearch" class="md-nav__link">
+    useTagSearch
+  </a>
+  
+    <nav class="md-nav" aria-label="useTagSearch">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_51" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_67" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_72" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usetagsubscriptions" class="md-nav__link">
+    useTagSubscriptions
+  </a>
+  
+    <nav class="md-nav" aria-label="useTagSubscriptions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_52" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_68" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_73" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usetoggletagsubscription" class="md-nav__link">
+    useToggleTagSubscription
+  </a>
+  
+    <nav class="md-nav" aria-label="useToggleTagSubscription">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_69" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_74" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usetrendingprofiles" class="md-nav__link">
+    useTrendingProfiles
+  </a>
+  
+    <nav class="md-nav" aria-label="useTrendingProfiles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_70" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_75" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usetrendingtags" class="md-nav__link">
+    useTrendingTags
+  </a>
+  
+    <nav class="md-nav" aria-label="useTrendingTags">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_71" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_76" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#useunfollow" class="md-nav__link">
+    useUnfollow
+  </a>
+  
+    <nav class="md-nav" aria-label="useUnfollow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_72" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_77" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#useupdateusernameprovider" class="md-nav__link">
+    useUpdateUsernameProvider
+  </a>
+  
+    <nav class="md-nav" aria-label="useUpdateUsernameProvider">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_53" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_73" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_78" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#useusernamevalidation" class="md-nav__link">
+    useUsernameValidation
+  </a>
+  
+    <nav class="md-nav" aria-label="useUsernameValidation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_54" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_74" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_79" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#withproviders" class="md-nav__link">
+    withProviders
+  </a>
+  
+    <nav class="md-nav" aria-label="withProviders">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_2" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_55" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_75" class="md-nav__link">
+    Returns
+  </a>
+  
+    <nav class="md-nav" aria-label="Returns">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_56" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_76" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_80" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+<p><a href="../../">AWF</a> / <a href="../">Modules</a> / @akashaproject/ui-awf-hooks</p>
+<h1 id="module-akashaprojectui-awf-hooks">Module: @akashaproject/ui-awf-hooks</h1>
+<h2 id="table-of-contents">Table of contents</h2>
+<h3 id="namespaces">Namespaces</h3>
+<ul>
+<li><a href="../akashaproject_ui_awf_hooks._internal_/">&lt;internal\&gt;</a></li>
+</ul>
+<h3 id="enumerations">Enumerations</h3>
+<ul>
+<li><a href="../../enums/akashaproject_ui_awf_hooks.CookieConsentTypes/">CookieConsentTypes</a></li>
+</ul>
+<h3 id="interfaces">Interfaces</h3>
+<ul>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks.EntryReport/">EntryReport</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks.FormProfileData/">FormProfileData</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks.ICount/">ICount</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks.ILogItem/">ILogItem</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks.IModeratedItem/">IModeratedItem</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks.IPendingItem/">IPendingItem</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_hooks.LoginState/">LoginState</a></li>
+</ul>
+<h3 id="properties">Properties</h3>
+<ul>
+<li><a href="./#constants">constants</a></li>
+</ul>
+<h3 id="variables">Variables</h3>
+<ul>
+<li><a href="./#comments_key">COMMENTS_KEY</a></li>
+<li><a href="./#comment_key">COMMENT_KEY</a></li>
+<li><a href="./#create_post_mutation_key">CREATE_POST_MUTATION_KEY</a></li>
+<li><a href="./#entry_key">ENTRY_KEY</a></li>
+<li><a href="./#profile_key">PROFILE_KEY</a></li>
+<li><a href="./#update_profile_status">UPDATE_PROFILE_STATUS</a></li>
+</ul>
+<h3 id="functions">Functions</h3>
+<ul>
+<li><a href="./#creatependingentry">createPendingEntry</a></li>
+<li><a href="./#getlinkpreview">getLinkPreview</a></li>
+<li><a href="./#getmediaurl">getMediaUrl</a></li>
+<li><a href="./#mapentry">mapEntry</a></li>
+<li><a href="./#switchtorequirednetwork">switchToRequiredNetwork</a></li>
+<li><a href="./#uploadmediatotextile">uploadMediaToTextile</a></li>
+<li><a href="./#useanalytics">useAnalytics</a></li>
+<li><a href="./#usecheckmoderator">useCheckModerator</a></li>
+<li><a href="./#usechecknewnotifications">useCheckNewNotifications</a></li>
+<li><a href="./#usecomment">useComment</a></li>
+<li><a href="./#useconnectprovider">useConnectProvider</a></li>
+<li><a href="./#usecreatecomment">useCreateComment</a></li>
+<li><a href="./#usecreatepost">useCreatePost</a></li>
+<li><a href="./#usedeletebookmark">useDeleteBookmark</a></li>
+<li><a href="./#usedeletecomment">useDeleteComment</a></li>
+<li><a href="./#usedeletepost">useDeletePost</a></li>
+<li><a href="./#useeditcomment">useEditComment</a></li>
+<li><a href="./#useeditpost">useEditPost</a></li>
+<li><a href="./#useensbyaddress">useEnsByAddress</a></li>
+<li><a href="./#useensregistration">useEnsRegistration</a></li>
+<li><a href="./#usefetchnotifications">useFetchNotifications</a></li>
+<li><a href="./#usefollow">useFollow</a></li>
+<li><a href="./#usefollowers">useFollowers</a></li>
+<li><a href="./#usefollowing">useFollowing</a></li>
+<li><a href="./#usegetbookmarks">useGetBookmarks</a></li>
+<li><a href="./#usegetcount">useGetCount</a></li>
+<li><a href="./#usegetentryauthor">useGetEntryAuthor</a></li>
+<li><a href="./#usegetflags">useGetFlags</a></li>
+<li><a href="./#usegetlogin">useGetLogin</a></li>
+<li><a href="./#usegetprofile">useGetProfile</a></li>
+<li><a href="./#usegettag">useGetTag</a></li>
+<li><a href="./#usegloballogin">useGlobalLogin</a></li>
+<li><a href="./#usehandlenavigation">useHandleNavigation</a></li>
+<li><a href="./#useinfinitecomments">useInfiniteComments</a></li>
+<li><a href="./#useinfinitedelisted">useInfiniteDelisted</a></li>
+<li><a href="./#useinfinitekept">useInfiniteKept</a></li>
+<li><a href="./#useinfinitelog">useInfiniteLog</a></li>
+<li><a href="./#useinfinitepending">useInfinitePending</a></li>
+<li><a href="./#useinfiniteposts">useInfinitePosts</a></li>
+<li><a href="./#useinfinitepostsbyauthor">useInfinitePostsByAuthor</a></li>
+<li><a href="./#useinfinitepostsbytag">useInfinitePostsByTag</a></li>
+<li><a href="./#useinjectedprovider">useInjectedProvider</a></li>
+<li><a href="./#useinterests">useInterests</a></li>
+<li><a href="./#useisfollowingmultiple">useIsFollowingMultiple</a></li>
+<li><a href="./#useissubscribedtotag">useIsSubscribedToTag</a></li>
+<li><a href="./#useisvalidtoken">useIsValidToken</a></li>
+<li><a href="./#uselegaldoc">useLegalDoc</a></li>
+<li><a href="./#uselogin">useLogin</a></li>
+<li><a href="./#uselogout">useLogout</a></li>
+<li><a href="./#usemarkasread">useMarkAsRead</a></li>
+<li><a href="./#usementionsearch">useMentionSearch</a></li>
+<li><a href="./#usemoderation">useModeration</a></li>
+<li><a href="./#usemutationlistener">useMutationListener</a></li>
+<li><a href="./#usenetworkstate">useNetworkState</a></li>
+<li><a href="./#usepost">usePost</a></li>
+<li><a href="./#useprofileupdate">useProfileUpdate</a></li>
+<li><a href="./#usequerylistener">useQueryListener</a></li>
+<li><a href="./#usereasons">useReasons</a></li>
+<li><a href="./#usereport">useReport</a></li>
+<li><a href="./#userequirednetworkname">useRequiredNetworkName</a></li>
+<li><a href="./#usesavebookmark">useSaveBookmark</a></li>
+<li><a href="./#usesearch">useSearch</a></li>
+<li><a href="./#usesearchcomments">useSearchComments</a></li>
+<li><a href="./#usesearchposts">useSearchPosts</a></li>
+<li><a href="./#usesearchprofiles">useSearchProfiles</a></li>
+<li><a href="./#usesearchtags">useSearchTags</a></li>
+<li><a href="./#usetagsearch">useTagSearch</a></li>
+<li><a href="./#usetagsubscriptions">useTagSubscriptions</a></li>
+<li><a href="./#usetoggletagsubscription">useToggleTagSubscription</a></li>
+<li><a href="./#usetrendingprofiles">useTrendingProfiles</a></li>
+<li><a href="./#usetrendingtags">useTrendingTags</a></li>
+<li><a href="./#useunfollow">useUnfollow</a></li>
+<li><a href="./#useupdateusernameprovider">useUpdateUsernameProvider</a></li>
+<li><a href="./#useusernamevalidation">useUsernameValidation</a></li>
+<li><a href="./#withproviders">withProviders</a></li>
+</ul>
+<h2 id="properties_1">Properties</h2>
+<h3 id="constants">constants</h3>
+<p>• <strong>constants</strong>: <code>Object</code></p>
+<h4 id="type-declaration">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>BASE_DECISION_URL</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>BASE_MODERATOR_URL</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>BASE_REASONS_URL</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>BASE_REPORT_URL</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>BASE_STATUS_URL</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>CHECK_MODERATOR_KEY</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>CONNECT_PROVIDER_KEY</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>DEFAULT_FETCH_TIMEOUT</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>DELISTED_ITEMS_KEY</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>INJECTED_PROVIDER_KEY</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>KEPT_ITEMS_KEY</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>LOG_ITEMS_KEY</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>MODERATED_CACHE_KEY_PREFIX</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>MODERATION_COUNT_CACHE_KEY_PREFIX</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>MODERATION_ITEMS_COUNT_KEY</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>MODERATION_ITEM_FLAGS_KEY</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>MODERATION_STATUS_KEY</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>PENDING_CACHE_KEY_PREFIX</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>PENDING_ITEMS_KEY</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>REQUIRED_NETWORK_KEY</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>TOKEN_VALIDATION_KEY</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="variables_1">Variables</h2>
+<h3 id="comments_key">COMMENTS_KEY</h3>
+<p>• <strong>COMMENTS_KEY</strong>: <code>"Comments"</code></p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-comments.ts#L20">ui/hooks/src/use-comments.ts:20</a></p>
+<hr />
+<h3 id="comment_key">COMMENT_KEY</h3>
+<p>• <strong>COMMENT_KEY</strong>: <code>"Comment"</code></p>
+<h4 id="defined-in_1">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-comments.ts#L19">ui/hooks/src/use-comments.ts:19</a></p>
+<hr />
+<h3 id="create_post_mutation_key">CREATE_POST_MUTATION_KEY</h3>
+<p>• <strong>CREATE_POST_MUTATION_KEY</strong>: <code>"CreatePost"</code></p>
+<h4 id="defined-in_2">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-posts.ts#L18">ui/hooks/src/use-posts.ts:18</a></p>
+<hr />
+<h3 id="entry_key">ENTRY_KEY</h3>
+<p>• <strong>ENTRY_KEY</strong>: <code>"Entry"</code></p>
+<h4 id="defined-in_3">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-posts.ts#L14">ui/hooks/src/use-posts.ts:14</a></p>
+<hr />
+<h3 id="profile_key">PROFILE_KEY</h3>
+<p>• <strong>PROFILE_KEY</strong>: <code>"PROFILE"</code></p>
+<h4 id="defined-in_4">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-profile.ts#L18">ui/hooks/src/use-profile.ts:18</a></p>
+<hr />
+<h3 id="update_profile_status">UPDATE_PROFILE_STATUS</h3>
+<p>• <strong>UPDATE_PROFILE_STATUS</strong>: <code>"UPDATE_PROFILE_STATUS"</code></p>
+<h4 id="defined-in_5">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-profile.ts#L23">ui/hooks/src/use-profile.ts:23</a></p>
+<h2 id="functions_1">Functions</h2>
+<h3 id="creatependingentry">createPendingEntry</h3>
+<p>▸ <code>Const</code> <strong>createPendingEntry</strong>(<code>author</code>, <code>entryPublishData</code>): <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.PendingEntry/"><code>PendingEntry</code></a></p>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>author</code></td>
+<td align="left"><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.IProfileData/"><code>IProfileData</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>entryPublishData</code></td>
+<td align="left"><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.IPublishData/"><code>IPublishData</code></a> &amp; { <code>entryId?</code>: <code>string</code>  }</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.PendingEntry/"><code>PendingEntry</code></a></p>
+<h4 id="defined-in_6">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/utils/entry-utils.ts#L173">ui/hooks/src/utils/entry-utils.ts:173</a></p>
+<hr />
+<h3 id="getlinkpreview">getLinkPreview</h3>
+<p>▸ <code>Const</code> <strong>getLinkPreview</strong>(<code>url</code>): <code>Promise</code>&lt;<a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.LinkPreview_Response/"><code>LinkPreview_Response</code></a>></p>
+<h4 id="parameters_1">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>url</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_1">Returns</h4>
+<p><code>Promise</code>&lt;<a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.LinkPreview_Response/"><code>LinkPreview_Response</code></a>></p>
+<h4 id="defined-in_7">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/utils/media-utils.ts#L80">ui/hooks/src/utils/media-utils.ts:80</a></p>
+<hr />
+<h3 id="getmediaurl">getMediaUrl</h3>
+<p>▸ <code>Const</code> <strong>getMediaUrl</strong>(<code>hash?</code>, <code>data?</code>): <code>string</code></p>
+<p>Utility to append an ipfs gateway to an ipfs hash</p>
+<h4 id="parameters_2">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>hash?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>data?</code></td>
+<td align="left"><code>any</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_2">Returns</h4>
+<p><code>string</code></p>
+<h4 id="defined-in_8">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/utils/media-utils.ts#L15">ui/hooks/src/utils/media-utils.ts:15</a></p>
+<hr />
+<h3 id="mapentry">mapEntry</h3>
+<p>▸ <code>Const</code> <strong>mapEntry</strong>(<code>entry</code>, <code>logger?</code>): <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.IEntryData/"><code>IEntryData</code></a></p>
+<p>Remap entry data coming from a response to the format expected by EntryCard
+content - from b64 to slate format
+profile images - append ipfs gateway
+entry images - append ipfs gateway</p>
+<h4 id="parameters_3">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>entry</code></td>
+<td align="left"><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.PostResponse/"><code>PostResponse</code></a> | <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.CommentResponse/"><code>CommentResponse</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>logger?</code></td>
+<td align="left"><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.ILogger/"><code>ILogger</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_3">Returns</h4>
+<p><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.IEntryData/"><code>IEntryData</code></a></p>
+<h4 id="defined-in_9">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/utils/entry-utils.ts#L71">ui/hooks/src/utils/entry-utils.ts:71</a></p>
+<hr />
+<h3 id="switchtorequirednetwork">switchToRequiredNetwork</h3>
+<p>▸ <code>Const</code> <strong>switchToRequiredNetwork</strong>(): <code>Promise</code>&lt;<code>void</code>></p>
+<p>An utility function to switch to required network - Metamask</p>
+<h4 id="returns_4">Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>></p>
+<h4 id="defined-in_10">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-injected-provider.ts#L38">ui/hooks/src/use-injected-provider.ts:38</a></p>
+<hr />
+<h3 id="uploadmediatotextile">uploadMediaToTextile</h3>
+<p>▸ <code>Const</code> <strong>uploadMediaToTextile</strong>(<code>data</code>, <code>isUrl?</code>): <code>Promise</code>&lt;{ <code>data</code>: { <code>size</code>: { <code>height</code>: <code>number</code> ; <code>naturalHeight</code>: <code>number</code> ; <code>naturalWidth</code>: <code>number</code> ; <code>width</code>: <code>number</code>  } = res.size; <code>src</code>: <code>string</code>  } ; <code>error</code>: <code>undefined</code> = error } | { <code>data</code>: <code>undefined</code> ; <code>error</code>: <code>any</code> = error }></p>
+<h4 id="parameters_4">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Default value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>data</code></td>
+<td align="left"><code>any</code></td>
+<td align="left"><code>undefined</code></td>
+</tr>
+<tr>
+<td align="left"><code>isUrl</code></td>
+<td align="left"><code>boolean</code></td>
+<td align="left"><code>false</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_5">Returns</h4>
+<p><code>Promise</code>&lt;{ <code>data</code>: { <code>size</code>: { <code>height</code>: <code>number</code> ; <code>naturalHeight</code>: <code>number</code> ; <code>naturalWidth</code>: <code>number</code> ; <code>width</code>: <code>number</code>  } = res.size; <code>src</code>: <code>string</code>  } ; <code>error</code>: <code>undefined</code> = error } | { <code>data</code>: <code>undefined</code> ; <code>error</code>: <code>any</code> = error }></p>
+<h4 id="defined-in_11">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/utils/media-utils.ts#L41">ui/hooks/src/utils/media-utils.ts:41</a></p>
+<hr />
+<h3 id="useanalytics">useAnalytics</h3>
+<p>▸ <code>Const</code> <strong>useAnalytics</strong>(): [<a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.UseAnalyticsState/"><code>UseAnalyticsState</code></a>, <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.UseAnalyticsActions/"><code>UseAnalyticsActions</code></a>]</p>
+<h4 id="returns_6">Returns</h4>
+<p>[<a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.UseAnalyticsState/"><code>UseAnalyticsState</code></a>, <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.UseAnalyticsActions/"><code>UseAnalyticsActions</code></a>]</p>
+<h4 id="defined-in_12">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-analytics.ts#L28">ui/hooks/src/use-analytics.ts:28</a></p>
+<hr />
+<h3 id="usecheckmoderator">useCheckModerator</h3>
+<p>▸ <strong>useCheckModerator</strong>(<code>loggedUser</code>): <a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;<code>number</code>, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<p>Hook to check if a user is a moderator</p>
+<h4 id="parameters_5">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>loggedUser</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">textile public key of the user</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_7">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;<code>number</code>, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<h4 id="defined-in_13">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-moderation.ts#L188">ui/hooks/src/use-moderation.ts:188</a></p>
+<hr />
+<h3 id="usechecknewnotifications">useCheckNewNotifications</h3>
+<p>▸ <strong>useCheckNewNotifications</strong>(<code>loggedEthAddress</code>): <a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;<code>boolean</code>, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<p>Hook to check for new notifications</p>
+<h4 id="parameters_6">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>loggedEthAddress</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">currently logged in user's eth address</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_8">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;<code>boolean</code>, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<h4 id="defined-in_14">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-notifications.ts#L119">ui/hooks/src/use-notifications.ts:119</a></p>
+<hr />
+<h3 id="usecomment">useComment</h3>
+<p>▸ <strong>useComment</strong>(<code>commentID</code>, <code>enabler?</code>): <a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;<a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.CommentResponse/"><code>CommentResponse</code></a>, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<p>Hook for fetching data for a specific comment</p>
+<h4 id="parameters_7">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Default value</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>commentID</code></td>
+<td align="left"><code>string</code></td>
+<td align="left"><code>undefined</code></td>
+<td align="left">id of comment to fetch data for</td>
+</tr>
+<tr>
+<td align="left"><code>enabler</code></td>
+<td align="left"><code>boolean</code></td>
+<td align="left"><code>true</code></td>
+<td align="left">flag for allowing the query</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_9">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;<a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.CommentResponse/"><code>CommentResponse</code></a>, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<h4 id="defined-in_15">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-comments.ts#L90">ui/hooks/src/use-comments.ts:90</a></p>
+<hr />
+<h3 id="useconnectprovider">useConnectProvider</h3>
+<p>▸ <strong>useConnectProvider</strong>(<code>provider</code>): <a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;<code>boolean</code>, <code>unknown</code>></p>
+<p>A hook to connect to injected provider</p>
+<h4 id="parameters_8">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>provider</code></td>
+<td align="left"><a href="../../enums/akashaproject_ui_awf_hooks._internal_.EthProviders/"><code>EthProviders</code></a></td>
+<td align="left">-: any of type EthProviders</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_10">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;<code>boolean</code>, <code>unknown</code>></p>
+<h4 id="defined-in_16">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-injected-provider.ts#L64">ui/hooks/src/use-injected-provider.ts:64</a></p>
+<hr />
+<h3 id="usecreatecomment">useCreateComment</h3>
+<p>▸ <strong>useCreateComment</strong>(): <a href="../akashaproject_ui_awf_hooks._internal_/#usemutationresult"><code>UseMutationResult</code></a>&lt;<code>string</code>, <code>unknown</code>, <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.IPublishData/"><code>IPublishData</code></a> &amp; { <code>postID</code>: <code>string</code>  }, { <code>entryId</code>: <code>string</code> = pendingID; <code>optimisticComment</code>: <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.IPublishData/"><code>IPublishData</code></a> &amp; { <code>postID</code>: <code>string</code>  }  }></p>
+<p>Hook for creating a new comment</p>
+<h4 id="returns_11">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#usemutationresult"><code>UseMutationResult</code></a>&lt;<code>string</code>, <code>unknown</code>, <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.IPublishData/"><code>IPublishData</code></a> &amp; { <code>postID</code>: <code>string</code>  }, { <code>entryId</code>: <code>string</code> = pendingID; <code>optimisticComment</code>: <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.IPublishData/"><code>IPublishData</code></a> &amp; { <code>postID</code>: <code>string</code>  }  }></p>
+<h4 id="defined-in_17">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-comments.ts#L174">ui/hooks/src/use-comments.ts:174</a></p>
+<hr />
+<h3 id="usecreatepost">useCreatePost</h3>
+<p>▸ <strong>useCreatePost</strong>(): <a href="../akashaproject_ui_awf_hooks._internal_/#usemutationresult"><code>UseMutationResult</code></a>&lt;<code>string</code>, <code>unknown</code>, <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.IPublishData/"><code>IPublishData</code></a>, { <code>entryId</code>: <code>string</code> = pendingID; <code>optimisticEntry</code>: <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.IPublishData/"><code>IPublishData</code></a> &amp; { <code>isPublishing</code>: <code>boolean</code> = true }  }></p>
+<p>Hook to create a new post
+pass the publish data from the editor to the mutate function</p>
+<h4 id="returns_12">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#usemutationresult"><code>UseMutationResult</code></a>&lt;<code>string</code>, <code>unknown</code>, <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.IPublishData/"><code>IPublishData</code></a>, { <code>entryId</code>: <code>string</code> = pendingID; <code>optimisticEntry</code>: <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.IPublishData/"><code>IPublishData</code></a> &amp; { <code>isPublishing</code>: <code>boolean</code> = true }  }></p>
+<h4 id="defined-in_18">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-posts.ts#L235">ui/hooks/src/use-posts.ts:235</a></p>
+<hr />
+<h3 id="usedeletebookmark">useDeleteBookmark</h3>
+<p>▸ <strong>useDeleteBookmark</strong>(): <a href="../akashaproject_ui_awf_hooks._internal_/#usemutationresult"><code>UseMutationResult</code></a>&lt;{ <code>data</code>: <code>string</code>[]  }, <code>unknown</code>, <code>string</code>, { <code>prevBmks</code>: { <code>entryId</code>: <code>string</code> ; <code>type</code>: <a href="../../enums/akashaproject_ui_awf_hooks._internal_.ItemTypes/"><code>ItemTypes</code></a>  }[]  }></p>
+<p>Hook used to delete a bookmark</p>
+<h4 id="returns_13">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#usemutationresult"><code>UseMutationResult</code></a>&lt;{ <code>data</code>: <code>string</code>[]  }, <code>unknown</code>, <code>string</code>, { <code>prevBmks</code>: { <code>entryId</code>: <code>string</code> ; <code>type</code>: <a href="../../enums/akashaproject_ui_awf_hooks._internal_.ItemTypes/"><code>ItemTypes</code></a>  }[]  }></p>
+<h4 id="defined-in_19">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-bookmarks.ts#L93">ui/hooks/src/use-bookmarks.ts:93</a></p>
+<hr />
+<h3 id="usedeletecomment">useDeleteComment</h3>
+<p>▸ <strong>useDeleteComment</strong>(<code>commentID</code>): <a href="../akashaproject_ui_awf_hooks._internal_/#usemutationresult"><code>UseMutationResult</code></a>&lt;<code>true</code>, <code>unknown</code>, <code>string</code>, { <code>previousComment</code>: <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.CommentResponse/"><code>CommentResponse</code></a>  }></p>
+<p>Hook for deleting a specific comment</p>
+<h4 id="parameters_9">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>commentID</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">id of the comment to be deleted</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_14">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#usemutationresult"><code>UseMutationResult</code></a>&lt;<code>true</code>, <code>unknown</code>, <code>string</code>, { <code>previousComment</code>: <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.CommentResponse/"><code>CommentResponse</code></a>  }></p>
+<h4 id="defined-in_20">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-comments.ts#L121">ui/hooks/src/use-comments.ts:121</a></p>
+<hr />
+<h3 id="usedeletepost">useDeletePost</h3>
+<p>▸ <strong>useDeletePost</strong>(<code>postID</code>): <a href="../akashaproject_ui_awf_hooks._internal_/#usemutationresult"><code>UseMutationResult</code></a>&lt;{ <code>data</code>: { <code>removePost</code>: <code>boolean</code>  }  }, <code>unknown</code>, <code>string</code>, { <code>previousPost</code>: <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.Post_Response/"><code>Post_Response</code></a>  }></p>
+<p>Hook to delete a post</p>
+<h4 id="parameters_10">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>postID</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">id of the post to be deleted</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_15">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#usemutationresult"><code>UseMutationResult</code></a>&lt;{ <code>data</code>: { <code>removePost</code>: <code>boolean</code>  }  }, <code>unknown</code>, <code>string</code>, { <code>previousPost</code>: <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.Post_Response/"><code>Post_Response</code></a>  }></p>
+<h4 id="defined-in_21">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-posts.ts#L175">ui/hooks/src/use-posts.ts:175</a></p>
+<hr />
+<h3 id="useeditcomment">useEditComment</h3>
+<p>▸ <strong>useEditComment</strong>(<code>commentID</code>, <code>hasCommentData</code>): <a href="../akashaproject_ui_awf_hooks._internal_/#usemutationresult"><code>UseMutationResult</code></a>&lt;<code>void</code> | { <code>data</code>: { <code>editComment</code>: <code>boolean</code>  }  }, <code>unknown</code>, <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.IPublishData/"><code>IPublishData</code></a> &amp; { <code>postID</code>: <code>string</code>  }, { <code>comment</code>: <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.IPublishData/"><code>IPublishData</code></a> &amp; { <code>postID</code>: <code>string</code>  }  }></p>
+<p>Hook for editing a comment</p>
+<h4 id="parameters_11">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>commentID</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>hasCommentData</code></td>
+<td align="left"><code>boolean</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_16">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#usemutationresult"><code>UseMutationResult</code></a>&lt;<code>void</code> | { <code>data</code>: { <code>editComment</code>: <code>boolean</code>  }  }, <code>unknown</code>, <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.IPublishData/"><code>IPublishData</code></a> &amp; { <code>postID</code>: <code>string</code>  }, { <code>comment</code>: <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.IPublishData/"><code>IPublishData</code></a> &amp; { <code>postID</code>: <code>string</code>  }  }></p>
+<h4 id="defined-in_22">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-comments.ts#L219">ui/hooks/src/use-comments.ts:219</a></p>
+<hr />
+<h3 id="useeditpost">useEditPost</h3>
+<p>▸ <code>Const</code> <strong>useEditPost</strong>(): <a href="../akashaproject_ui_awf_hooks._internal_/#usemutationresult"><code>UseMutationResult</code></a>&lt;<code>boolean</code>, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>, <code>any</code>, { <code>editedPost</code>: <code>any</code>  }></p>
+<p>Hook to edit a post
+pass the edited post data to the mutation function</p>
+<h4 id="returns_17">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#usemutationresult"><code>UseMutationResult</code></a>&lt;<code>boolean</code>, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>, <code>any</code>, { <code>editedPost</code>: <code>any</code>  }></p>
+<h4 id="defined-in_23">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-posts.ts#L283">ui/hooks/src/use-posts.ts:283</a></p>
+<hr />
+<h3 id="useensbyaddress">useEnsByAddress</h3>
+<p>▸ <strong>useEnsByAddress</strong>(<code>ethAddress</code>): <a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;<code>string</code>, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<p>Hook to resolve an ethAddress to an ENS name</p>
+<h4 id="parameters_12">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ethAddress</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">ethereum address to resolve</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_18">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;<code>string</code>, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<h4 id="defined-in_24">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-username.ts#L212">ui/hooks/src/use-username.ts:212</a></p>
+<hr />
+<h3 id="useensregistration">useEnsRegistration</h3>
+<p>▸ <strong>useEnsRegistration</strong>(<code>pubKey?</code>): <a href="../akashaproject_ui_awf_hooks._internal_/#usemutationresult"><code>UseMutationResult</code></a>&lt;{ <code>makeDefaultProvider</code>: <code>string</code>  }, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>, { <code>userName</code>: <code>string</code>  }, { <code>currentProfile</code>: <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.IProfileData/"><code>IProfileData</code></a>  }></p>
+<p>Hook to register a new ENS name</p>
+<h4 id="parameters_13">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>pubKey?</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">textile public key of the user</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_19">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#usemutationresult"><code>UseMutationResult</code></a>&lt;{ <code>makeDefaultProvider</code>: <code>string</code>  }, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>, { <code>userName</code>: <code>string</code>  }, { <code>currentProfile</code>: <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.IProfileData/"><code>IProfileData</code></a>  }></p>
+<h4 id="defined-in_25">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-username.ts#L144">ui/hooks/src/use-username.ts:144</a></p>
+<hr />
+<h3 id="usefetchnotifications">useFetchNotifications</h3>
+<p>▸ <strong>useFetchNotifications</strong>(<code>loggedEthAddress</code>): <a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;<code>any</code>, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<p>Hook to get a user's notifications</p>
+<h4 id="parameters_14">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>loggedEthAddress</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">currently logged in user's eth address</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_20">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;<code>any</code>, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<h4 id="defined-in_26">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-notifications.ts#L60">ui/hooks/src/use-notifications.ts:60</a></p>
+<hr />
+<h3 id="usefollow">useFollow</h3>
+<p>▸ <strong>useFollow</strong>(): <a href="../akashaproject_ui_awf_hooks._internal_/#usemutationresult"><code>UseMutationResult</code></a>&lt;{ <code>data</code>: { <code>follow</code>: <code>boolean</code>  }  }, <code>unknown</code>, <code>string</code>, { <code>previousFollowedProfiles</code>: <code>string</code>[]  }></p>
+<p>Hook to follow another user</p>
+<h4 id="returns_21">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#usemutationresult"><code>UseMutationResult</code></a>&lt;{ <code>data</code>: { <code>follow</code>: <code>boolean</code>  }  }, <code>unknown</code>, <code>string</code>, { <code>previousFollowedProfiles</code>: <code>string</code>[]  }></p>
+<h4 id="defined-in_27">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-follow.ts#L153">ui/hooks/src/use-follow.ts:153</a></p>
+<hr />
+<h3 id="usefollowers">useFollowers</h3>
+<p>▸ <strong>useFollowers</strong>(<code>pubKey</code>, <code>limit</code>, <code>offset?</code>): <a href="../akashaproject_ui_awf_hooks._internal_/#useinfinitequeryresult"><code>UseInfiniteQueryResult</code></a>&lt;<a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.UserFollowers_Response/"><code>UserFollowers_Response</code></a>, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<p>Hook to get followers for a user</p>
+<h4 id="parameters_15">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>pubKey</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">textile generated public key of the user</td>
+</tr>
+<tr>
+<td align="left"><code>limit</code></td>
+<td align="left"><code>number</code></td>
+<td align="left">number of followers to return per page</td>
+</tr>
+<tr>
+<td align="left"><code>offset?</code></td>
+<td align="left"><code>number</code></td>
+<td align="left">offset for query</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_22">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#useinfinitequeryresult"><code>UseInfiniteQueryResult</code></a>&lt;<a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.UserFollowers_Response/"><code>UserFollowers_Response</code></a>, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<h4 id="defined-in_28">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-profile.ts#L116">ui/hooks/src/use-profile.ts:116</a></p>
+<hr />
+<h3 id="usefollowing">useFollowing</h3>
+<p>▸ <strong>useFollowing</strong>(<code>pubKey</code>, <code>limit</code>, <code>offset?</code>): <a href="../akashaproject_ui_awf_hooks._internal_/#useinfinitequeryresult"><code>UseInfiniteQueryResult</code></a>&lt;<a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.UserFollowers_Response/"><code>UserFollowers_Response</code></a>, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<p>Hook to get a list of profiles following the user</p>
+<h4 id="parameters_16">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>pubKey</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">textile generated public key of the user</td>
+</tr>
+<tr>
+<td align="left"><code>limit</code></td>
+<td align="left"><code>number</code></td>
+<td align="left">number of profiles following the user to return per page</td>
+</tr>
+<tr>
+<td align="left"><code>offset?</code></td>
+<td align="left"><code>number</code></td>
+<td align="left">offset for query</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_23">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#useinfinitequeryresult"><code>UseInfiniteQueryResult</code></a>&lt;<a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.UserFollowers_Response/"><code>UserFollowers_Response</code></a>, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<h4 id="defined-in_29">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-profile.ts#L145">ui/hooks/src/use-profile.ts:145</a></p>
+<hr />
+<h3 id="usegetbookmarks">useGetBookmarks</h3>
+<p>▸ <strong>useGetBookmarks</strong>(<code>loggedEthAddress</code>, <code>enabler?</code>): <a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;<code>any</code>, <code>unknown</code>></p>
+<p>Hook for gettting a user's saved posts and comments</p>
+<h4 id="parameters_17">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Default value</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>loggedEthAddress</code></td>
+<td align="left"><code>string</code></td>
+<td align="left"><code>undefined</code></td>
+<td align="left">currently logged in user's ethereum address</td>
+</tr>
+<tr>
+<td align="left"><code>enabler</code></td>
+<td align="left"><code>boolean</code></td>
+<td align="left"><code>true</code></td>
+<td align="left">flag for allowing the query</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_24">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;<code>any</code>, <code>unknown</code>></p>
+<h4 id="defined-in_30">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-bookmarks.ts#L16">ui/hooks/src/use-bookmarks.ts:16</a></p>
+<hr />
+<h3 id="usegetcount">useGetCount</h3>
+<p>▸ <strong>useGetCount</strong>(): <a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;{ <code>delisted</code>: <code>number</code> = 0; <code>kept</code>: <code>number</code> = 0; <code>pending</code>: <code>number</code> = 0 }, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<p>Hook to get moderation counters</p>
+<h4 id="returns_25">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;{ <code>delisted</code>: <code>number</code> = 0; <code>kept</code>: <code>number</code> = 0; <code>pending</code>: <code>number</code> = 0 }, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<h4 id="defined-in_31">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-moderation.ts#L199">ui/hooks/src/use-moderation.ts:199</a></p>
+<hr />
+<h3 id="usegetentryauthor">useGetEntryAuthor</h3>
+<p>▸ <strong>useGetEntryAuthor</strong>(<code>entryId</code>): <a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;<a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.IProfileData/"><code>IProfileData</code></a>, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<p>Hook to get an entry author's profile data</p>
+<h4 id="parameters_18">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>entryId</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">the id of the specific post</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_26">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;<a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.IProfileData/"><code>IProfileData</code></a>, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<h4 id="defined-in_32">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-profile.ts#L91">ui/hooks/src/use-profile.ts:91</a></p>
+<hr />
+<h3 id="usegetflags">useGetFlags</h3>
+<p>▸ <strong>useGetFlags</strong>(<code>entryId</code>): <a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;<a href="../../interfaces/akashaproject_ui_awf_hooks.EntryReport/"><code>EntryReport</code></a>[], <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<p>Hook to get report flags for a specific entry</p>
+<h4 id="parameters_19">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>entryId</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">id of the entry</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_27">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;<a href="../../interfaces/akashaproject_ui_awf_hooks.EntryReport/"><code>EntryReport</code></a>[], <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<h4 id="defined-in_33">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-moderation.ts#L210">ui/hooks/src/use-moderation.ts:210</a></p>
+<hr />
+<h3 id="usegetlogin">useGetLogin</h3>
+<p>▸ <strong>useGetLogin</strong>(<code>onError?</code>): <a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;<a href="../../interfaces/akashaproject_ui_awf_hooks.LoginState/"><code>LoginState</code></a>, <code>unknown</code>></p>
+<p>Hook for retrieving the current authentication state of the user</p>
+<h4 id="parameters_20">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>onError?</code></td>
+<td align="left">(<code>error</code>: <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>) =&gt; <code>void</code></td>
+<td align="left">outside error handler</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_28">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;<a href="../../interfaces/akashaproject_ui_awf_hooks.LoginState/"><code>LoginState</code></a>, <code>unknown</code>></p>
+<h4 id="defined-in_34">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-login.ts#L42">ui/hooks/src/use-login.ts:42</a></p>
+<hr />
+<h3 id="usegetprofile">useGetProfile</h3>
+<p>▸ <strong>useGetProfile</strong>(<code>pubKey</code>, <code>loggedUser?</code>, <code>enabler?</code>): <a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;<a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.IProfileData/"><code>IProfileData</code></a>, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<p>Hook to get a user's profile data</p>
+<h4 id="parameters_21">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Default value</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>pubKey</code></td>
+<td align="left"><code>string</code></td>
+<td align="left"><code>undefined</code></td>
+<td align="left">the textile generated public key of the user</td>
+</tr>
+<tr>
+<td align="left"><code>loggedUser?</code></td>
+<td align="left"><code>string</code></td>
+<td align="left"><code>undefined</code></td>
+<td align="left">the textile generated public key of the currently logged in user</td>
+</tr>
+<tr>
+<td align="left"><code>enabler</code></td>
+<td align="left"><code>boolean</code></td>
+<td align="left"><code>true</code></td>
+<td align="left">flag to allow the query</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_29">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;<a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.IProfileData/"><code>IProfileData</code></a>, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<h4 id="defined-in_35">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-profile.ts#L58">ui/hooks/src/use-profile.ts:58</a></p>
+<hr />
+<h3 id="usegettag">useGetTag</h3>
+<p>▸ <strong>useGetTag</strong>(<code>tagName</code>, <code>enabler?</code>): <a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;<a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.Tag_Response/"><code>Tag_Response</code></a>, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<p>Hook to get a specific tag by name</p>
+<h4 id="parameters_22">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Default value</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>tagName</code></td>
+<td align="left"><code>string</code></td>
+<td align="left"><code>undefined</code></td>
+<td align="left">name of the tag</td>
+</tr>
+<tr>
+<td align="left"><code>enabler</code></td>
+<td align="left"><code>boolean</code></td>
+<td align="left"><code>true</code></td>
+<td align="left">flag to allow the query</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_30">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;<a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.Tag_Response/"><code>Tag_Response</code></a>, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<h4 id="defined-in_36">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-tag.ts#L120">ui/hooks/src/use-tag.ts:120</a></p>
+<hr />
+<h3 id="usegloballogin">useGlobalLogin</h3>
+<p>▸ <code>Const</code> <strong>useGlobalLogin</strong>(<code>props</code>): <code>void</code></p>
+<h4 id="parameters_23">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>props</code></td>
+<td align="left"><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.UseGlobalLoginProps/"><code>UseGlobalLoginProps</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_31">Returns</h4>
+<p><code>void</code></p>
+<h4 id="defined-in_37">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-global-login.ts#L24">ui/hooks/src/use-global-login.ts:24</a></p>
+<hr />
+<h3 id="usehandlenavigation">useHandleNavigation</h3>
+<p>▸ <code>Const</code> <strong>useHandleNavigation</strong>(<code>navigateFn</code>, <code>currentPostId?</code>): (<code>navigationDetails</code>: <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.IContentClickDetails/"><code>IContentClickDetails</code></a>, <code>itemType</code>: <a href="../../enums/akashaproject_ui_awf_hooks._internal_.ItemTypes/"><code>ItemTypes</code></a>) =&gt; <code>void</code></p>
+<h4 id="parameters_24">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>navigateFn</code></td>
+<td align="left">(<code>url</code>: <code>string</code>) =&gt; <code>void</code></td>
+</tr>
+<tr>
+<td align="left"><code>currentPostId?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_32">Returns</h4>
+<p><code>fn</code></p>
+<p>▸ (<code>navigationDetails</code>, <code>itemType</code>): <code>void</code></p>
+<h5 id="parameters_25">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>navigationDetails</code></td>
+<td align="left"><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.IContentClickDetails/"><code>IContentClickDetails</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>itemType</code></td>
+<td align="left"><a href="../../enums/akashaproject_ui_awf_hooks._internal_.ItemTypes/"><code>ItemTypes</code></a></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_33">Returns</h5>
+<p><code>void</code></p>
+<h4 id="defined-in_38">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-navigation.ts#L15">ui/hooks/src/use-navigation.ts:15</a></p>
+<hr />
+<h3 id="useinfinitecomments">useInfiniteComments</h3>
+<p>▸ <strong>useInfiniteComments</strong>(<code>limit</code>, <code>postID</code>, <code>offset?</code>): <a href="../akashaproject_ui_awf_hooks._internal_/#useinfinitequeryresult"><code>UseInfiniteQueryResult</code></a>&lt;{ <code>nextIndex</code>: <code>string</code> ; <code>results</code>: <code>string</code>[] ; <code>total</code>: <code>number</code>  }, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<p>Hook to get the comments for a specific post</p>
+<h4 id="parameters_26">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>limit</code></td>
+<td align="left"><code>number</code></td>
+<td align="left">number of comments to fetch on a page</td>
+</tr>
+<tr>
+<td align="left"><code>postID</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">id of the parent post</td>
+</tr>
+<tr>
+<td align="left"><code>offset?</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">id of where to start</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_34">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#useinfinitequeryresult"><code>UseInfiniteQueryResult</code></a>&lt;{ <code>nextIndex</code>: <code>string</code> ; <code>results</code>: <code>string</code>[] ; <code>total</code>: <code>number</code>  }, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<h4 id="defined-in_39">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-comments.ts#L48">ui/hooks/src/use-comments.ts:48</a></p>
+<hr />
+<h3 id="useinfinitedelisted">useInfiniteDelisted</h3>
+<p>▸ <strong>useInfiniteDelisted</strong>(<code>limit</code>, <code>offset?</code>): <a href="../akashaproject_ui_awf_hooks._internal_/#useinfinitequeryresult"><code>UseInfiniteQueryResult</code></a>&lt;<a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.ModeratedItemsReponse/"><code>ModeratedItemsReponse</code></a>, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<p>Hook to get delisted moderated items</p>
+<h4 id="parameters_27">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>limit</code></td>
+<td align="left"><code>number</code></td>
+<td align="left">number of items per page</td>
+</tr>
+<tr>
+<td align="left"><code>offset?</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">index of query offset</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_35">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#useinfinitequeryresult"><code>UseInfiniteQueryResult</code></a>&lt;<a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.ModeratedItemsReponse/"><code>ModeratedItemsReponse</code></a>, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<h4 id="defined-in_40">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-moderation.ts#L289">ui/hooks/src/use-moderation.ts:289</a></p>
+<hr />
+<h3 id="useinfinitekept">useInfiniteKept</h3>
+<p>▸ <strong>useInfiniteKept</strong>(<code>limit</code>, <code>offset?</code>): <a href="../akashaproject_ui_awf_hooks._internal_/#useinfinitequeryresult"><code>UseInfiniteQueryResult</code></a>&lt;<a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.ModeratedItemsReponse/"><code>ModeratedItemsReponse</code></a>, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<p>Hook to get kept moderated items</p>
+<h4 id="parameters_28">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>limit</code></td>
+<td align="left"><code>number</code></td>
+<td align="left">number of items per page</td>
+</tr>
+<tr>
+<td align="left"><code>offset?</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">index of query offset</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_36">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#useinfinitequeryresult"><code>UseInfiniteQueryResult</code></a>&lt;<a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.ModeratedItemsReponse/"><code>ModeratedItemsReponse</code></a>, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<h4 id="defined-in_41">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-moderation.ts#L265">ui/hooks/src/use-moderation.ts:265</a></p>
+<hr />
+<h3 id="useinfinitelog">useInfiniteLog</h3>
+<p>▸ <strong>useInfiniteLog</strong>(<code>limit</code>, <code>offset?</code>): <a href="../akashaproject_ui_awf_hooks._internal_/#useinfinitequeryresult"><code>UseInfiniteQueryResult</code></a>&lt;<a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.LogItemsReponse/"><code>LogItemsReponse</code></a>, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<p>Hook to get log of moderated items</p>
+<h4 id="parameters_29">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>limit</code></td>
+<td align="left"><code>number</code></td>
+<td align="left">number of items per page</td>
+</tr>
+<tr>
+<td align="left"><code>offset?</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">index of query offset</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_37">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#useinfinitequeryresult"><code>UseInfiniteQueryResult</code></a>&lt;<a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.LogItemsReponse/"><code>LogItemsReponse</code></a>, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<h4 id="defined-in_42">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-moderation.ts#L223">ui/hooks/src/use-moderation.ts:223</a></p>
+<hr />
+<h3 id="useinfinitepending">useInfinitePending</h3>
+<p>▸ <strong>useInfinitePending</strong>(<code>limit</code>, <code>offset?</code>): <a href="../akashaproject_ui_awf_hooks._internal_/#useinfinitequeryresult"><code>UseInfiniteQueryResult</code></a>&lt;<a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.PendingItemsReponse/"><code>PendingItemsReponse</code></a>, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<p>Hook to get pending moderation items</p>
+<h4 id="parameters_30">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>limit</code></td>
+<td align="left"><code>number</code></td>
+<td align="left">number of items per page</td>
+</tr>
+<tr>
+<td align="left"><code>offset?</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">index of query offset</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_38">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#useinfinitequeryresult"><code>UseInfiniteQueryResult</code></a>&lt;<a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.PendingItemsReponse/"><code>PendingItemsReponse</code></a>, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<h4 id="defined-in_43">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-moderation.ts#L246">ui/hooks/src/use-moderation.ts:246</a></p>
+<hr />
+<h3 id="useinfiniteposts">useInfinitePosts</h3>
+<p>▸ <strong>useInfinitePosts</strong>(<code>limit</code>, <code>offset?</code>): <a href="../akashaproject_ui_awf_hooks._internal_/#useinfinitequeryresult"><code>UseInfiniteQueryResult</code></a>&lt;{ <code>nextIndex</code>: <code>string</code> ; <code>results</code>: <code>string</code>[] ; <code>total</code>: <code>number</code>  }, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<p>Hook to get posts for feed, sorted chronologically</p>
+<h4 id="parameters_31">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>limit</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>offset?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_39">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#useinfinitequeryresult"><code>UseInfiniteQueryResult</code></a>&lt;{ <code>nextIndex</code>: <code>string</code> ; <code>results</code>: <code>string</code>[] ; <code>total</code>: <code>number</code>  }, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<h4 id="defined-in_44">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-posts.ts#L45">ui/hooks/src/use-posts.ts:45</a></p>
+<hr />
+<h3 id="useinfinitepostsbyauthor">useInfinitePostsByAuthor</h3>
+<p>▸ <strong>useInfinitePostsByAuthor</strong>(<code>pubKey</code>, <code>limit</code>, <code>enabled?</code>, <code>offset?</code>): <a href="../akashaproject_ui_awf_hooks._internal_/#useinfinitequeryresult"><code>UseInfiniteQueryResult</code></a>&lt;{ <code>nextIndex</code>: <code>string</code> ; <code>results</code>: <code>string</code>[] ; <code>total</code>: <code>number</code>  }, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<p>Hook to get an author's posts</p>
+<h4 id="parameters_32">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Default value</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>pubKey</code></td>
+<td align="left"><code>string</code></td>
+<td align="left"><code>undefined</code></td>
+<td align="left">textile public key of the user</td>
+</tr>
+<tr>
+<td align="left"><code>limit</code></td>
+<td align="left"><code>number</code></td>
+<td align="left"><code>undefined</code></td>
+<td align="left">-</td>
+</tr>
+<tr>
+<td align="left"><code>enabled</code></td>
+<td align="left"><code>boolean</code></td>
+<td align="left"><code>true</code></td>
+<td align="left">-</td>
+</tr>
+<tr>
+<td align="left"><code>offset?</code></td>
+<td align="left"><code>number</code></td>
+<td align="left"><code>undefined</code></td>
+<td align="left">-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_40">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#useinfinitequeryresult"><code>UseInfiniteQueryResult</code></a>&lt;{ <code>nextIndex</code>: <code>string</code> ; <code>results</code>: <code>string</code>[] ; <code>total</code>: <code>number</code>  }, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<h4 id="defined-in_45">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-posts.ts#L119">ui/hooks/src/use-posts.ts:119</a></p>
+<hr />
+<h3 id="useinfinitepostsbytag">useInfinitePostsByTag</h3>
+<p>▸ <strong>useInfinitePostsByTag</strong>(<code>name</code>, <code>limit</code>, <code>offset?</code>): <a href="../akashaproject_ui_awf_hooks._internal_/#useinfinitequeryresult"><code>UseInfiniteQueryResult</code></a>&lt;{ <code>nextIndex</code>: <code>string</code> ; <code>results</code>: <code>string</code>[] ; <code>total</code>: <code>number</code>  }, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<p>Hook to get posts that contain a specific tag</p>
+<h4 id="parameters_33">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>name</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">tag name</td>
+</tr>
+<tr>
+<td align="left"><code>limit</code></td>
+<td align="left"><code>number</code></td>
+<td align="left">-</td>
+</tr>
+<tr>
+<td align="left"><code>offset?</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_41">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#useinfinitequeryresult"><code>UseInfiniteQueryResult</code></a>&lt;{ <code>nextIndex</code>: <code>string</code> ; <code>results</code>: <code>string</code>[] ; <code>total</code>: <code>number</code>  }, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<h4 id="defined-in_46">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-posts.ts#L83">ui/hooks/src/use-posts.ts:83</a></p>
+<hr />
+<h3 id="useinjectedprovider">useInjectedProvider</h3>
+<p>▸ <strong>useInjectedProvider</strong>(): <a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;{ <code>details</code>: { <code>iconType</code>: <code>string</code> = ''; <code>subtitleLabel</code>: <code>string</code> = ''; <code>titleLabel</code>: <code>string</code> = '' } ; <code>name</code>: <a href="../../enums/akashaproject_ui_awf_hooks._internal_.INJECTED_PROVIDERS/"><code>INJECTED_PROVIDERS</code></a> = INJECTED_PROVIDERS.NOT_DETECTED }, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<p>A hook to get injected provider from the SDK</p>
+<h4 id="returns_42">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;{ <code>details</code>: { <code>iconType</code>: <code>string</code> = ''; <code>subtitleLabel</code>: <code>string</code> = ''; <code>titleLabel</code>: <code>string</code> = '' } ; <code>name</code>: <a href="../../enums/akashaproject_ui_awf_hooks._internal_.INJECTED_PROVIDERS/"><code>INJECTED_PROVIDERS</code></a> = INJECTED_PROVIDERS.NOT_DETECTED }, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<h4 id="defined-in_47">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-injected-provider.ts#L46">ui/hooks/src/use-injected-provider.ts:46</a></p>
+<hr />
+<h3 id="useinterests">useInterests</h3>
+<p>▸ <strong>useInterests</strong>(<code>pubKey</code>): <a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;<a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.Tag_Response/"><code>Tag_Response</code></a>[], <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<p>Fetch the list of subscribed tags for a specific pub key</p>
+<h4 id="parameters_34">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>pubKey</code></td>
+<td align="left"><code>any</code></td>
+<td align="left">the textile generated public key of the user</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_43">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;<a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.Tag_Response/"><code>Tag_Response</code></a>[], <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<h4 id="defined-in_48">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-profile.ts#L182">ui/hooks/src/use-profile.ts:182</a></p>
+<hr />
+<h3 id="useisfollowingmultiple">useIsFollowingMultiple</h3>
+<p>▸ <strong>useIsFollowingMultiple</strong>(<code>followerEthAddress</code>, <code>followingEthAddressArray</code>): <a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;<code>string</code>[], <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<p>Hook to check if a user is following other users</p>
+<h4 id="parameters_35">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>followerEthAddress</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">ethereum address of user to check for</td>
+</tr>
+<tr>
+<td align="left"><code>followingEthAddressArray</code></td>
+<td align="left"><code>string</code>[]</td>
+<td align="left">array of ethereum addresses to check if followed</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_44">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;<code>string</code>[], <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<h4 id="defined-in_49">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-follow.ts#L57">ui/hooks/src/use-follow.ts:57</a></p>
+<hr />
+<h3 id="useissubscribedtotag">useIsSubscribedToTag</h3>
+<p>▸ <strong>useIsSubscribedToTag</strong>(<code>tagName</code>, <code>loggedEthAddress</code>): <a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;<code>boolean</code>, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<p>Hook to check if a user subscribes to a tag</p>
+<h4 id="parameters_36">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>tagName</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">name of the tag</td>
+</tr>
+<tr>
+<td align="left"><code>loggedEthAddress</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">eth address of the logged in user</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_45">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;<code>boolean</code>, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<h4 id="defined-in_50">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-tag.ts#L42">ui/hooks/src/use-tag.ts:42</a></p>
+<hr />
+<h3 id="useisvalidtoken">useIsValidToken</h3>
+<p>▸ <strong>useIsValidToken</strong>(<code>props</code>): <a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;<code>void</code>, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<h4 id="parameters_37">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>props</code></td>
+<td align="left"><a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.IUseIsValidTokenProps/"><code>IUseIsValidTokenProps</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_46">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;<code>void</code>, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<h4 id="defined-in_51">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-invite-token-validation.ts#L22">ui/hooks/src/use-invite-token-validation.ts:22</a></p>
+<hr />
+<h3 id="uselegaldoc">useLegalDoc</h3>
+<p>▸ <strong>useLegalDoc</strong>(<code>docName</code>): <a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;<code>string</code>, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<p>Hook to get legal docs stored on ipfs</p>
+<h4 id="parameters_38">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>docName</code></td>
+<td align="left"><a href="../../enums/akashaproject_ui_awf_hooks._internal_.LEGAL_DOCS/"><code>LEGAL_DOCS</code></a></td>
+<td align="left">type of document to retrieve</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_47">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;<code>string</code>, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<h4 id="defined-in_52">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-legal.ts#L19">ui/hooks/src/use-legal.ts:19</a></p>
+<hr />
+<h3 id="uselogin">useLogin</h3>
+<p>▸ <strong>useLogin</strong>(<code>onError?</code>): <a href="../akashaproject_ui_awf_hooks._internal_/#usemutationresult"><code>UseMutationResult</code></a>&lt;<a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.CurrentUser/"><code>CurrentUser</code></a> &amp; { <code>isNewUser</code>: <code>boolean</code>  }, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>, { <code>checkRegistered</code>: <code>boolean</code> ; <code>selectedProvider</code>: <a href="../../enums/akashaproject_ui_awf_hooks._internal_.EthProviders/"><code>EthProviders</code></a>  }, <code>unknown</code>></p>
+<p>Hook to sign in a user</p>
+<h4 id="parameters_39">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>onError?</code></td>
+<td align="left">(<code>err</code>: <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>) =&gt; <code>void</code></td>
+<td align="left">outside error handler</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_48">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#usemutationresult"><code>UseMutationResult</code></a>&lt;<a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.CurrentUser/"><code>CurrentUser</code></a> &amp; { <code>isNewUser</code>: <code>boolean</code>  }, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>, { <code>checkRegistered</code>: <code>boolean</code> ; <code>selectedProvider</code>: <a href="../../enums/akashaproject_ui_awf_hooks._internal_.EthProviders/"><code>EthProviders</code></a>  }, <code>unknown</code>></p>
+<h4 id="defined-in_53">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-login.ts#L104">ui/hooks/src/use-login.ts:104</a></p>
+<hr />
+<h3 id="uselogout">useLogout</h3>
+<p>▸ <strong>useLogout</strong>(): <a href="../akashaproject_ui_awf_hooks._internal_/#usemutationresult"><code>UseMutationResult</code></a>&lt;<code>true</code>, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>, <code>void</code>, <code>unknown</code>></p>
+<p>Hook to sign out the current user</p>
+<h4 id="returns_49">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#usemutationresult"><code>UseMutationResult</code></a>&lt;<code>true</code>, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>, <code>void</code>, <code>unknown</code>></p>
+<h4 id="defined-in_54">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-login.ts#L250">ui/hooks/src/use-login.ts:250</a></p>
+<hr />
+<h3 id="usemarkasread">useMarkAsRead</h3>
+<p>▸ <strong>useMarkAsRead</strong>(): <a href="../akashaproject_ui_awf_hooks._internal_/#usemutationresult"><code>UseMutationResult</code></a>&lt;{ <code>data</code>: <code>boolean</code>  }, <code>unknown</code>, <code>string</code>, { <code>previousCheckNotifs</code>: <code>boolean</code> ; <code>previousNotifs</code>: <code>any</code>  }></p>
+<p>Hook to mark a notification as read
+pass the messageId to the mutate function</p>
+<h4 id="returns_50">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#usemutationresult"><code>UseMutationResult</code></a>&lt;{ <code>data</code>: <code>boolean</code>  }, <code>unknown</code>, <code>string</code>, { <code>previousCheckNotifs</code>: <code>boolean</code> ; <code>previousNotifs</code>: <code>any</code>  }></p>
+<h4 id="defined-in_55">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-notifications.ts#L72">ui/hooks/src/use-notifications.ts:72</a></p>
+<hr />
+<h3 id="usementionsearch">useMentionSearch</h3>
+<p>▸ <strong>useMentionSearch</strong>(<code>mention</code>): <a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;<a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.IProfileData/"><code>IProfileData</code></a>[], <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<p>Hook to search for profiles</p>
+<h4 id="parameters_40">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>mention</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">profile name to search for</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_51">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;<a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.IProfileData/"><code>IProfileData</code></a>[], <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<h4 id="defined-in_56">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-mentions.ts#L38">ui/hooks/src/use-mentions.ts:38</a></p>
+<hr />
+<h3 id="usemoderation">useModeration</h3>
+<p>▸ <strong>useModeration</strong>(): <a href="../akashaproject_ui_awf_hooks._internal_/#usemutationresult"><code>UseMutationResult</code></a>&lt;<code>number</code>, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>, <a href="../akashaproject_ui_awf_hooks._internal_/#usemoderationparam"><code>UseModerationParam</code></a>, <code>unknown</code>></p>
+<p>Hook for creating a moderation decision</p>
+<h4 id="returns_52">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#usemutationresult"><code>UseMutationResult</code></a>&lt;<code>number</code>, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>, <a href="../akashaproject_ui_awf_hooks._internal_/#usemoderationparam"><code>UseModerationParam</code></a>, <code>unknown</code>></p>
+<h4 id="defined-in_57">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-moderation.ts#L72">ui/hooks/src/use-moderation.ts:72</a></p>
+<hr />
+<h3 id="usemutationlistener">useMutationListener</h3>
+<p>▸ <code>Const</code> <strong>useMutationListener</strong>&lt;<code>TVars</code>>(<code>mutationKey</code>): <a href="../../classes/akashaproject_ui_awf_hooks._internal_.Mutation/"><code>Mutation</code></a>&lt;<code>unknown</code>, <code>unknown</code>, <code>TVars</code>, <code>unknown</code>></p>
+<p>Hook to detect changes to a mutation</p>
+<h4 id="type-parameters">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>TVars</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_41">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>mutationKey</code></td>
+<td align="left"><a href="../akashaproject_ui_awf_hooks._internal_/#mutationkey"><code>MutationKey</code></a></td>
+<td align="left">the key of the mutation to listen to</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_53">Returns</h4>
+<p><a href="../../classes/akashaproject_ui_awf_hooks._internal_.Mutation/"><code>Mutation</code></a>&lt;<code>unknown</code>, <code>unknown</code>, <code>TVars</code>, <code>unknown</code>></p>
+<p>Mutation | undefined</p>
+<h4 id="defined-in_58">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-query-listener.ts#L16">ui/hooks/src/use-query-listener.ts:16</a></p>
+<hr />
+<h3 id="usenetworkstate">useNetworkState</h3>
+<p>▸ <strong>useNetworkState</strong>(<code>enabler?</code>): <a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;{ <code>networkNotSupported</code>: <code>boolean</code> = true }, <code>unknown</code>></p>
+<p>Hook to check if the web3 provider is set to function on the Rinkeby test network</p>
+<h4 id="parameters_42">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>enabler?</code></td>
+<td align="left"><code>boolean</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_54">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;{ <code>networkNotSupported</code>: <code>boolean</code> = true }, <code>unknown</code>></p>
+<p>networkNotSupported: true if web3 provider on another network</p>
+<h4 id="defined-in_59">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-network-state.ts#L22">ui/hooks/src/use-network-state.ts:22</a></p>
+<hr />
+<h3 id="usepost">usePost</h3>
+<p>▸ <strong>usePost</strong>(<code>__namedParameters</code>): <a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;{ <code>_id</code>: <code>string</code> ; <code>author</code>: { <code>_id</code>: <code>string</code> ; <code>avatar</code>: <code>string</code> ; <code>contentId</code>: <code>string</code> ; <code>coverImage</code>: <code>string</code> ; <code>creationDate</code>: <code>string</code> ; <code>default</code>: [<a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.DataProviderInput/"><code>DataProviderInput</code></a>] ; <code>delisted</code>: <code>boolean</code> ; <code>description</code>: <code>string</code> ; <code>ethAddress</code>: <code>string</code> ; <code>moderated</code>: <code>boolean</code> ; <code>name</code>: <code>string</code> ; <code>providers</code>: [<a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.DataProviderInput/"><code>DataProviderInput</code></a>] ; <code>pubKey</code>: <code>string</code> ; <code>reason</code>: <code>string</code> ; <code>reported</code>: <code>boolean</code> ; <code>totalFollowers</code>: <code>number</code> ; <code>totalFollowing</code>: <code>number</code> ; <code>totalInterests</code>: <code>number</code> ; <code>totalPosts</code>: <code>string</code> ; <code>userName</code>: <code>string</code>  } ; <code>content</code>: [<a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.DataProviderInput/"><code>DataProviderInput</code></a>] ; <code>contentId</code>: <code>string</code> ; <code>creationDate</code>: <code>string</code> ; <code>delisted</code>: <code>boolean</code> ; <code>mentions</code>: [<code>string</code>] ; <code>moderated</code>: <code>boolean</code> ; <code>quotedBy</code>: [<code>string</code>] ; <code>quotedByAuthors</code>: [<a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.UserProfile_Response/"><code>UserProfile_Response</code></a>] ; <code>quotes</code>: [<a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.Post_Response/"><code>Post_Response</code></a>] ; <code>reason</code>: <code>string</code> ; <code>reported</code>: <code>boolean</code> ; <code>tags</code>: [<code>string</code>] ; <code>title</code>: <code>string</code> ; <code>totalComments</code>: <code>string</code> ; <code>type</code>: <a href="../../enums/akashaproject_ui_awf_hooks._internal_.PostType/"><code>PostType</code></a> ; <code>updatedAt</code>: <code>string</code>  }, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<p>Hook to get data for a specific post</p>
+<h4 id="parameters_43">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>__namedParameters</code></td>
+<td align="left"><a href="../akashaproject_ui_awf_hooks._internal_/#usepostparam"><code>usePostParam</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_55">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;{ <code>_id</code>: <code>string</code> ; <code>author</code>: { <code>_id</code>: <code>string</code> ; <code>avatar</code>: <code>string</code> ; <code>contentId</code>: <code>string</code> ; <code>coverImage</code>: <code>string</code> ; <code>creationDate</code>: <code>string</code> ; <code>default</code>: [<a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.DataProviderInput/"><code>DataProviderInput</code></a>] ; <code>delisted</code>: <code>boolean</code> ; <code>description</code>: <code>string</code> ; <code>ethAddress</code>: <code>string</code> ; <code>moderated</code>: <code>boolean</code> ; <code>name</code>: <code>string</code> ; <code>providers</code>: [<a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.DataProviderInput/"><code>DataProviderInput</code></a>] ; <code>pubKey</code>: <code>string</code> ; <code>reason</code>: <code>string</code> ; <code>reported</code>: <code>boolean</code> ; <code>totalFollowers</code>: <code>number</code> ; <code>totalFollowing</code>: <code>number</code> ; <code>totalInterests</code>: <code>number</code> ; <code>totalPosts</code>: <code>string</code> ; <code>userName</code>: <code>string</code>  } ; <code>content</code>: [<a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.DataProviderInput/"><code>DataProviderInput</code></a>] ; <code>contentId</code>: <code>string</code> ; <code>creationDate</code>: <code>string</code> ; <code>delisted</code>: <code>boolean</code> ; <code>mentions</code>: [<code>string</code>] ; <code>moderated</code>: <code>boolean</code> ; <code>quotedBy</code>: [<code>string</code>] ; <code>quotedByAuthors</code>: [<a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.UserProfile_Response/"><code>UserProfile_Response</code></a>] ; <code>quotes</code>: [<a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.Post_Response/"><code>Post_Response</code></a>] ; <code>reason</code>: <code>string</code> ; <code>reported</code>: <code>boolean</code> ; <code>tags</code>: [<code>string</code>] ; <code>title</code>: <code>string</code> ; <code>totalComments</code>: <code>string</code> ; <code>type</code>: <a href="../../enums/akashaproject_ui_awf_hooks._internal_.PostType/"><code>PostType</code></a> ; <code>updatedAt</code>: <code>string</code>  }, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<h4 id="defined-in_60">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-posts.ts#L163">ui/hooks/src/use-posts.ts:163</a></p>
+<hr />
+<h3 id="useprofileupdate">useProfileUpdate</h3>
+<p>▸ <strong>useProfileUpdate</strong>(<code>pubKey</code>): <a href="../akashaproject_ui_awf_hooks._internal_/#usemutationresult"><code>UseMutationResult</code></a>&lt;<code>void</code>, <code>unknown</code>, <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.UpdateProfileFormData/"><code>UpdateProfileFormData</code></a>, { <code>currentProfile</code>: <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.IProfileData/"><code>IProfileData</code></a>  }></p>
+<p>Hook to update a user's profile data</p>
+<h4 id="parameters_44">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>pubKey</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">the textile generated public key of the user</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_56">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#usemutationresult"><code>UseMutationResult</code></a>&lt;<code>void</code>, <code>unknown</code>, <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.UpdateProfileFormData/"><code>UpdateProfileFormData</code></a>, { <code>currentProfile</code>: <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.IProfileData/"><code>IProfileData</code></a>  }></p>
+<h4 id="defined-in_61">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-profile.ts#L331">ui/hooks/src/use-profile.ts:331</a></p>
+<hr />
+<h3 id="usequerylistener">useQueryListener</h3>
+<p>▸ <code>Const</code> <strong>useQueryListener</strong>&lt;<code>TData</code>>(<code>queryKey</code>): <a href="../akashaproject_ui_awf_hooks._internal_/#queryobserverresult"><code>QueryObserverResult</code></a>&lt;<code>TData</code>, <code>unknown</code>></p>
+<h4 id="type-parameters_1">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>TData</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_45">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>queryKey</code></td>
+<td align="left"><a href="../akashaproject_ui_awf_hooks._internal_/#querykey"><code>QueryKey</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_57">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#queryobserverresult"><code>QueryObserverResult</code></a>&lt;<code>TData</code>, <code>unknown</code>></p>
+<h4 id="defined-in_62">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-query-listener.ts#L33">ui/hooks/src/use-query-listener.ts:33</a></p>
+<hr />
+<h3 id="usereasons">useReasons</h3>
+<p>▸ <code>Const</code> <strong>useReasons</strong>(): [<code>string</code>[], <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.UseReasonsActions/"><code>UseReasonsActions</code></a>]</p>
+<p>A hook to get predefined reasons from moderation API</p>
+<h4 id="returns_58">Returns</h4>
+<p>[<code>string</code>[], <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.UseReasonsActions/"><code>UseReasonsActions</code></a>]</p>
+<h4 id="defined-in_63">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-reasons.ts#L47">ui/hooks/src/use-reasons.ts:47</a></p>
+<hr />
+<h3 id="usereport">useReport</h3>
+<p>▸ <strong>useReport</strong>(): <a href="../akashaproject_ui_awf_hooks._internal_/#usemutationresult"><code>UseMutationResult</code></a>&lt;<code>number</code>, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>, <a href="../akashaproject_ui_awf_hooks._internal_/#usemoderationparam"><code>UseModerationParam</code></a>, <code>unknown</code>></p>
+<p>Hook for reporting a post, reply or account</p>
+<h4 id="returns_59">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#usemutationresult"><code>UseMutationResult</code></a>&lt;<code>number</code>, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>, <a href="../akashaproject_ui_awf_hooks._internal_/#usemoderationparam"><code>UseModerationParam</code></a>, <code>unknown</code>></p>
+<h4 id="defined-in_64">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-moderation.ts#L129">ui/hooks/src/use-moderation.ts:129</a></p>
+<hr />
+<h3 id="userequirednetworkname">useRequiredNetworkName</h3>
+<p>▸ <strong>useRequiredNetworkName</strong>(): <a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;<code>string</code>, <code>unknown</code>></p>
+<p>A hook to get required network name from the SDK</p>
+<h4 id="returns_60">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;<code>string</code>, <code>unknown</code>></p>
+<h4 id="defined-in_65">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-injected-provider.ts#L75">ui/hooks/src/use-injected-provider.ts:75</a></p>
+<hr />
+<h3 id="usesavebookmark">useSaveBookmark</h3>
+<p>▸ <strong>useSaveBookmark</strong>(): <a href="../akashaproject_ui_awf_hooks._internal_/#usemutationresult"><code>UseMutationResult</code></a>&lt;<code>string</code>[], <code>unknown</code>, { <code>entryId</code>: <code>string</code> ; <code>itemType</code>: <a href="../../enums/akashaproject_ui_awf_hooks._internal_.ItemTypes/"><code>ItemTypes</code></a>  }, { <code>prevBmks</code>: { <code>entryId</code>: <code>string</code> ; <code>type</code>: <a href="../../enums/akashaproject_ui_awf_hooks._internal_.ItemTypes/"><code>ItemTypes</code></a>  }[]  }></p>
+<p>Hook used to save bookmarks
+can be used to bookmark replies and posts (itemType is passed to mutate()).</p>
+<h4 id="returns_61">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#usemutationresult"><code>UseMutationResult</code></a>&lt;<code>string</code>[], <code>unknown</code>, { <code>entryId</code>: <code>string</code> ; <code>itemType</code>: <a href="../../enums/akashaproject_ui_awf_hooks._internal_.ItemTypes/"><code>ItemTypes</code></a>  }, { <code>prevBmks</code>: { <code>entryId</code>: <code>string</code> ; <code>type</code>: <a href="../../enums/akashaproject_ui_awf_hooks._internal_.ItemTypes/"><code>ItemTypes</code></a>  }[]  }></p>
+<h4 id="defined-in_66">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-bookmarks.ts#L48">ui/hooks/src/use-bookmarks.ts:48</a></p>
+<hr />
+<h3 id="usesearch">useSearch</h3>
+<p>▸ <strong>useSearch</strong>(<code>searchQuery</code>, <code>loggedUser?</code>, <code>enabler?</code>): <a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;{ <code>comments</code>: <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.IEntryData/"><code>IEntryData</code></a>[] ; <code>entries</code>: <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.IEntryData/"><code>IEntryData</code></a>[] ; <code>profiles</code>: <code>any</code>[] ; <code>tags</code>: [<a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.GlobalSearchResultTagItem/"><code>GlobalSearchResultTagItem</code></a>] | []  }, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<p>Hook for fetching search results for a specific query</p>
+<h4 id="parameters_46">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Default value</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>searchQuery</code></td>
+<td align="left"><code>string</code></td>
+<td align="left"><code>undefined</code></td>
+<td align="left">query for the search</td>
+</tr>
+<tr>
+<td align="left"><code>loggedUser?</code></td>
+<td align="left"><code>string</code></td>
+<td align="left"><code>undefined</code></td>
+<td align="left">pubKey of the logged in user</td>
+</tr>
+<tr>
+<td align="left"><code>enabler</code></td>
+<td align="left"><code>boolean</code></td>
+<td align="left"><code>true</code></td>
+<td align="left">flag to allow the query</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_62">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;{ <code>comments</code>: <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.IEntryData/"><code>IEntryData</code></a>[] ; <code>entries</code>: <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.IEntryData/"><code>IEntryData</code></a>[] ; <code>profiles</code>: <code>any</code>[] ; <code>tags</code>: [<a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.GlobalSearchResultTagItem/"><code>GlobalSearchResultTagItem</code></a>] | []  }, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<p>search results for posts, comments, tags and profiles</p>
+<h4 id="defined-in_67">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-search.ts#L296">ui/hooks/src/use-search.ts:296</a></p>
+<hr />
+<h3 id="usesearchcomments">useSearchComments</h3>
+<p>▸ <strong>useSearchComments</strong>(<code>searchQuery</code>, <code>loggedUser?</code>, <code>enabler?</code>): <a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;<a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.IEntryData/"><code>IEntryData</code></a>[], <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<p>Hook to search for comments</p>
+<h4 id="parameters_47">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Default value</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>searchQuery</code></td>
+<td align="left"><code>string</code></td>
+<td align="left"><code>undefined</code></td>
+<td align="left">query for the search</td>
+</tr>
+<tr>
+<td align="left"><code>loggedUser?</code></td>
+<td align="left"><code>string</code></td>
+<td align="left"><code>undefined</code></td>
+<td align="left">pubKey of the logged in user</td>
+</tr>
+<tr>
+<td align="left"><code>enabler</code></td>
+<td align="left"><code>boolean</code></td>
+<td align="left"><code>true</code></td>
+<td align="left">flag to allow the query</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_63">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;<a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.IEntryData/"><code>IEntryData</code></a>[], <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<p>search results for comments</p>
+<h4 id="defined-in_68">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-search.ts#L155">ui/hooks/src/use-search.ts:155</a></p>
+<hr />
+<h3 id="usesearchposts">useSearchPosts</h3>
+<p>▸ <strong>useSearchPosts</strong>(<code>searchQuery</code>, <code>loggedUser?</code>, <code>enabler?</code>): <a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;<a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.IEntryData/"><code>IEntryData</code></a>[], <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<p>Hook to search for posts</p>
+<h4 id="parameters_48">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Default value</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>searchQuery</code></td>
+<td align="left"><code>string</code></td>
+<td align="left"><code>undefined</code></td>
+<td align="left">query for the search</td>
+</tr>
+<tr>
+<td align="left"><code>loggedUser?</code></td>
+<td align="left"><code>string</code></td>
+<td align="left"><code>undefined</code></td>
+<td align="left">pubKey of the logged in user</td>
+</tr>
+<tr>
+<td align="left"><code>enabler</code></td>
+<td align="left"><code>boolean</code></td>
+<td align="left"><code>true</code></td>
+<td align="left">flag to allow the query</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_64">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;<a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.IEntryData/"><code>IEntryData</code></a>[], <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<p>search results for posts</p>
+<h4 id="defined-in_69">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-search.ts#L108">ui/hooks/src/use-search.ts:108</a></p>
+<hr />
+<h3 id="usesearchprofiles">useSearchProfiles</h3>
+<p>▸ <strong>useSearchProfiles</strong>(<code>searchQuery</code>, <code>loggedUser?</code>, <code>enabler?</code>): <a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;<code>any</code>[], <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<p>Hook to search for profiles</p>
+<h4 id="parameters_49">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Default value</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>searchQuery</code></td>
+<td align="left"><code>string</code></td>
+<td align="left"><code>undefined</code></td>
+<td align="left">query for the search</td>
+</tr>
+<tr>
+<td align="left"><code>loggedUser?</code></td>
+<td align="left"><code>string</code></td>
+<td align="left"><code>undefined</code></td>
+<td align="left">pubKey of the logged in user</td>
+</tr>
+<tr>
+<td align="left"><code>enabler</code></td>
+<td align="left"><code>boolean</code></td>
+<td align="left"><code>true</code></td>
+<td align="left">flag to allow the query</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_65">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;<code>any</code>[], <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<p>search results for profiles, containing full profile data</p>
+<h4 id="defined-in_70">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-search.ts#L60">ui/hooks/src/use-search.ts:60</a></p>
+<hr />
+<h3 id="usesearchtags">useSearchTags</h3>
+<p>▸ <strong>useSearchTags</strong>(<code>searchQuery</code>, <code>enabler?</code>): <a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;<a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.SearchTagsResult_Response/"><code>SearchTagsResult_Response</code></a>[], <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<p>Hook to search for tags</p>
+<h4 id="parameters_50">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Default value</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>searchQuery</code></td>
+<td align="left"><code>string</code></td>
+<td align="left"><code>undefined</code></td>
+<td align="left">query for the search</td>
+</tr>
+<tr>
+<td align="left"><code>enabler</code></td>
+<td align="left"><code>boolean</code></td>
+<td align="left"><code>true</code></td>
+<td align="left">flag to allow the query</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_66">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;<a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.SearchTagsResult_Response/"><code>SearchTagsResult_Response</code></a>[], <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<p>search results for posts, comments, tags and profiles</p>
+<h4 id="defined-in_71">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-search.ts#L184">ui/hooks/src/use-search.ts:184</a></p>
+<hr />
+<h3 id="usetagsearch">useTagSearch</h3>
+<p>▸ <strong>useTagSearch</strong>(<code>tagName</code>): <a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;<a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.SearchTagsResult_Response/"><code>SearchTagsResult_Response</code></a>[], <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<p>Hook to search for tags</p>
+<h4 id="parameters_51">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>tagName</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">name of the tag</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_67">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;<a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.SearchTagsResult_Response/"><code>SearchTagsResult_Response</code></a>[], <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<h4 id="defined-in_72">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-tag.ts#L140">ui/hooks/src/use-tag.ts:140</a></p>
+<hr />
+<h3 id="usetagsubscriptions">useTagSubscriptions</h3>
+<p>▸ <strong>useTagSubscriptions</strong>(<code>loggedEthAddress</code>): <a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;<code>string</code>[], <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<p>Hook to get a user's subscribed tags</p>
+<h4 id="parameters_52">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>loggedEthAddress</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">eth address of the logged in user</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_68">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;<code>string</code>[], <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<h4 id="defined-in_73">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-tag.ts#L22">ui/hooks/src/use-tag.ts:22</a></p>
+<hr />
+<h3 id="usetoggletagsubscription">useToggleTagSubscription</h3>
+<p>▸ <strong>useToggleTagSubscription</strong>(): <a href="../akashaproject_ui_awf_hooks._internal_/#usemutationresult"><code>UseMutationResult</code></a>&lt;{ <code>data</code>: { <code>toggleInterestSub</code>: <code>boolean</code>  }  }, <code>unknown</code>, <code>string</code>, { <code>previousTagSubs</code>: <code>string</code>[]  }></p>
+<p>Hook to toggle a user's tag subscription
+pass the tagName to the mutation function</p>
+<h4 id="returns_69">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#usemutationresult"><code>UseMutationResult</code></a>&lt;{ <code>data</code>: { <code>toggleInterestSub</code>: <code>boolean</code>  }  }, <code>unknown</code>, <code>string</code>, { <code>previousTagSubs</code>: <code>string</code>[]  }></p>
+<h4 id="defined-in_74">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-tag.ts#L54">ui/hooks/src/use-tag.ts:54</a></p>
+<hr />
+<h3 id="usetrendingprofiles">useTrendingProfiles</h3>
+<p>▸ <strong>useTrendingProfiles</strong>(): <a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;<a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.IProfileData/"><code>IProfileData</code></a>[], <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<p>Hook to fetch trending profiles</p>
+<h4 id="returns_70">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;<a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.IProfileData/"><code>IProfileData</code></a>[], <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<h4 id="defined-in_75">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-trending.ts#L56">ui/hooks/src/use-trending.ts:56</a></p>
+<hr />
+<h3 id="usetrendingtags">useTrendingTags</h3>
+<p>▸ <strong>useTrendingTags</strong>(): <a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;<a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.SearchTagsResult_Response/"><code>SearchTagsResult_Response</code></a>[], <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<p>Hook to fetch trending tags</p>
+<h4 id="returns_71">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;<a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.SearchTagsResult_Response/"><code>SearchTagsResult_Response</code></a>[], <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>></p>
+<h4 id="defined-in_76">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-trending.ts#L21">ui/hooks/src/use-trending.ts:21</a></p>
+<hr />
+<h3 id="useunfollow">useUnfollow</h3>
+<p>▸ <strong>useUnfollow</strong>(): <a href="../akashaproject_ui_awf_hooks._internal_/#usemutationresult"><code>UseMutationResult</code></a>&lt;{ <code>data</code>: { <code>unFollow</code>: <code>boolean</code>  }  }, <code>unknown</code>, <code>string</code>, { <code>previousFollowedProfiles</code>: <code>string</code>[]  }></p>
+<p>Hook to unfollow another user</p>
+<h4 id="returns_72">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#usemutationresult"><code>UseMutationResult</code></a>&lt;{ <code>data</code>: { <code>unFollow</code>: <code>boolean</code>  }  }, <code>unknown</code>, <code>string</code>, { <code>previousFollowedProfiles</code>: <code>string</code>[]  }></p>
+<h4 id="defined-in_77">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-follow.ts#L225">ui/hooks/src/use-follow.ts:225</a></p>
+<hr />
+<h3 id="useupdateusernameprovider">useUpdateUsernameProvider</h3>
+<p>▸ <strong>useUpdateUsernameProvider</strong>(<code>pubKey?</code>): <a href="../akashaproject_ui_awf_hooks._internal_/#usemutationresult"><code>UseMutationResult</code></a>&lt;<code>void</code> | { <code>makeDefaultProvider</code>: <code>string</code>  }, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>, { <code>provider</code>: <a href="../../enums/akashaproject_ui_awf_hooks._internal_.ProfileProviders/"><code>ProfileProviders</code></a> ; <code>userName</code>: <code>string</code>  }, { <code>currentProfile</code>: <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.IProfileData/"><code>IProfileData</code></a>  }></p>
+<p>Hook to register a username for the user</p>
+<h4 id="parameters_53">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>pubKey?</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">textile public key of the user</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_73">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#usemutationresult"><code>UseMutationResult</code></a>&lt;<code>void</code> | { <code>makeDefaultProvider</code>: <code>string</code>  }, <a href="../akashaproject_ui_awf_hooks._internal_/#error"><code>Error</code></a>, { <code>provider</code>: <a href="../../enums/akashaproject_ui_awf_hooks._internal_.ProfileProviders/"><code>ProfileProviders</code></a> ; <code>userName</code>: <code>string</code>  }, { <code>currentProfile</code>: <a href="../../interfaces/akashaproject_ui_awf_hooks._internal_.IProfileData/"><code>IProfileData</code></a>  }></p>
+<h4 id="defined-in_78">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-username.ts#L70">ui/hooks/src/use-username.ts:70</a></p>
+<hr />
+<h3 id="useusernamevalidation">useUsernameValidation</h3>
+<p>▸ <strong>useUsernameValidation</strong>(<code>username</code>, <code>enabler?</code>): <a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;<code>any</code>, <code>unknown</code>></p>
+<p>Hook to check if a username is available</p>
+<h4 id="parameters_54">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Default value</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>username</code></td>
+<td align="left"><code>string</code></td>
+<td align="left"><code>undefined</code></td>
+<td align="left">name to check for</td>
+</tr>
+<tr>
+<td align="left"><code>enabler</code></td>
+<td align="left"><code>boolean</code></td>
+<td align="left"><code>true</code></td>
+<td align="left">prevent hook from running in passed falsy</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_74">Returns</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_/#usequeryresult"><code>UseQueryResult</code></a>&lt;<code>any</code>, <code>unknown</code>></p>
+<h4 id="defined-in_79">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/use-username.ts#L202">ui/hooks/src/use-username.ts:202</a></p>
+<hr />
+<h3 id="withproviders">withProviders</h3>
+<p>▸ <strong>withProviders</strong>&lt;<code>T</code>>(<code>WrappedComponent</code>): (<code>props</code>: <code>any</code>) =&gt; <code>Element</code></p>
+<h4 id="type-parameters_2">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_55">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>WrappedComponent</code></td>
+<td align="left"><a href="../akashaproject_ui_awf_hooks._internal_/#componenttype"><code>ComponentType</code></a>&lt;<code>T</code>></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_75">Returns</h4>
+<p><code>fn</code></p>
+<p>▸ (<code>props</code>): <code>Element</code></p>
+<h5 id="parameters_56">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>props</code></td>
+<td align="left"><code>any</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_76">Returns</h5>
+<p><code>Element</code></p>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>displayName</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_80">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/hooks/src/utils/provider-hoc.tsx#L21">ui/hooks/src/utils/provider-hoc.tsx:21</a></p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.22074ed6.min.js"}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.01de222e.min.js"></script>
+      
+    
+  </body>
+</html>

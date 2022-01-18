@@ -1,0 +1,1037 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.7">
+    
+    
+      
+        <title>akashaproject design system. internal .VendorShorthandPropertiesFallback - AKASHA World Framework docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.cd566b2a.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#interface-vendorshorthandpropertiesfallbacktlength" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="AKASHA World Framework docs" class="md-header__button md-logo" aria-label="AKASHA World Framework docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AKASHA World Framework docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              akashaproject design system. internal .VendorShorthandPropertiesFallback
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="AKASHA World Framework docs" class="md-nav__button md-logo" aria-label="AKASHA World Framework docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    AKASHA World Framework docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modules/" class="md-nav__link">
+        API
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#type-parameters" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hierarchy" class="md-nav__link">
+    Hierarchy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    Table of contents
+  </a>
+  
+    <nav class="md-nav" aria-label="Table of contents">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    Properties
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties_1" class="md-nav__link">
+    Properties
+  </a>
+  
+    <nav class="md-nav" aria-label="Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mozanimation" class="md-nav__link">
+    MozAnimation
+  </a>
+  
+    <nav class="md-nav" aria-label="MozAnimation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mozborderimage" class="md-nav__link">
+    MozBorderImage
+  </a>
+  
+    <nav class="md-nav" aria-label="MozBorderImage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_1" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mozcolumnrule" class="md-nav__link">
+    MozColumnRule
+  </a>
+  
+    <nav class="md-nav" aria-label="MozColumnRule">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_2" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mozcolumns" class="md-nav__link">
+    MozColumns
+  </a>
+  
+    <nav class="md-nav" aria-label="MozColumns">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_3" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#moztransition" class="md-nav__link">
+    MozTransition
+  </a>
+  
+    <nav class="md-nav" aria-label="MozTransition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_4" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#webkitanimation" class="md-nav__link">
+    WebkitAnimation
+  </a>
+  
+    <nav class="md-nav" aria-label="WebkitAnimation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_5" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#webkitborderbefore" class="md-nav__link">
+    WebkitBorderBefore
+  </a>
+  
+    <nav class="md-nav" aria-label="WebkitBorderBefore">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_6" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#webkitborderimage" class="md-nav__link">
+    WebkitBorderImage
+  </a>
+  
+    <nav class="md-nav" aria-label="WebkitBorderImage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_7" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#webkitborderradius" class="md-nav__link">
+    WebkitBorderRadius
+  </a>
+  
+    <nav class="md-nav" aria-label="WebkitBorderRadius">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_8" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#webkitcolumnrule" class="md-nav__link">
+    WebkitColumnRule
+  </a>
+  
+    <nav class="md-nav" aria-label="WebkitColumnRule">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_9" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#webkitcolumns" class="md-nav__link">
+    WebkitColumns
+  </a>
+  
+    <nav class="md-nav" aria-label="WebkitColumns">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_10" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#webkitflex" class="md-nav__link">
+    WebkitFlex
+  </a>
+  
+    <nav class="md-nav" aria-label="WebkitFlex">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_11" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#webkitflexflow" class="md-nav__link">
+    WebkitFlexFlow
+  </a>
+  
+    <nav class="md-nav" aria-label="WebkitFlexFlow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_12" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#webkitmask" class="md-nav__link">
+    WebkitMask
+  </a>
+  
+    <nav class="md-nav" aria-label="WebkitMask">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_13" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#webkitmaskboximage" class="md-nav__link">
+    WebkitMaskBoxImage
+  </a>
+  
+    <nav class="md-nav" aria-label="WebkitMaskBoxImage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_14" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#webkittextemphasis" class="md-nav__link">
+    WebkitTextEmphasis
+  </a>
+  
+    <nav class="md-nav" aria-label="WebkitTextEmphasis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_15" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#webkittextstroke" class="md-nav__link">
+    WebkitTextStroke
+  </a>
+  
+    <nav class="md-nav" aria-label="WebkitTextStroke">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_16" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#webkittransition" class="md-nav__link">
+    WebkitTransition
+  </a>
+  
+    <nav class="md-nav" aria-label="WebkitTransition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_17" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mscontentzoomlimit" class="md-nav__link">
+    msContentZoomLimit
+  </a>
+  
+    <nav class="md-nav" aria-label="msContentZoomLimit">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_18" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mscontentzoomsnap" class="md-nav__link">
+    msContentZoomSnap
+  </a>
+  
+    <nav class="md-nav" aria-label="msContentZoomSnap">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_19" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msflex" class="md-nav__link">
+    msFlex
+  </a>
+  
+    <nav class="md-nav" aria-label="msFlex">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_20" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msscrolllimit" class="md-nav__link">
+    msScrollLimit
+  </a>
+  
+    <nav class="md-nav" aria-label="msScrollLimit">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_21" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msscrollsnapx" class="md-nav__link">
+    msScrollSnapX
+  </a>
+  
+    <nav class="md-nav" aria-label="msScrollSnapX">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_22" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msscrollsnapy" class="md-nav__link">
+    msScrollSnapY
+  </a>
+  
+    <nav class="md-nav" aria-label="msScrollSnapY">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_23" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mstransition" class="md-nav__link">
+    msTransition
+  </a>
+  
+    <nav class="md-nav" aria-label="msTransition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_24" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+<p><a href="../../">AWF</a> / <a href="../../modules/">Modules</a> / <a href="../../modules/akashaproject_design_system/">@akashaproject/design-system</a> / <a href="../../modules/akashaproject_design_system._internal_/">&lt;internal></a> / VendorShorthandPropertiesFallback</p>
+<h1 id="interface-vendorshorthandpropertiesfallbacktlength">Interface: VendorShorthandPropertiesFallback&lt;TLength></h1>
+<p><a href="../../modules/akashaproject_design_system/">@akashaproject/design-system</a>.<a href="../../modules/akashaproject_design_system._internal_/"><internal></a>.VendorShorthandPropertiesFallback</p>
+<h2 id="type-parameters">Type parameters</h2>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>TLength</code></td>
+<td align="left"><code>string</code> | <code>0</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="hierarchy">Hierarchy</h2>
+<ul>
+<li><strong><code>VendorShorthandPropertiesFallback</code></strong></li>
+</ul>
+<p>↳ <a href="../akashaproject_design_system._internal_.VendorPropertiesFallback/"><code>VendorPropertiesFallback</code></a></p>
+<h2 id="table-of-contents">Table of contents</h2>
+<h3 id="properties">Properties</h3>
+<ul>
+<li><a href="./#mozanimation">MozAnimation</a></li>
+<li><a href="./#mozborderimage">MozBorderImage</a></li>
+<li><a href="./#mozcolumnrule">MozColumnRule</a></li>
+<li><a href="./#mozcolumns">MozColumns</a></li>
+<li><a href="./#moztransition">MozTransition</a></li>
+<li><a href="./#webkitanimation">WebkitAnimation</a></li>
+<li><a href="./#webkitborderbefore">WebkitBorderBefore</a></li>
+<li><a href="./#webkitborderimage">WebkitBorderImage</a></li>
+<li><a href="./#webkitborderradius">WebkitBorderRadius</a></li>
+<li><a href="./#webkitcolumnrule">WebkitColumnRule</a></li>
+<li><a href="./#webkitcolumns">WebkitColumns</a></li>
+<li><a href="./#webkitflex">WebkitFlex</a></li>
+<li><a href="./#webkitflexflow">WebkitFlexFlow</a></li>
+<li><a href="./#webkitmask">WebkitMask</a></li>
+<li><a href="./#webkitmaskboximage">WebkitMaskBoxImage</a></li>
+<li><a href="./#webkittextemphasis">WebkitTextEmphasis</a></li>
+<li><a href="./#webkittextstroke">WebkitTextStroke</a></li>
+<li><a href="./#webkittransition">WebkitTransition</a></li>
+<li><a href="./#mscontentzoomlimit">msContentZoomLimit</a></li>
+<li><a href="./#mscontentzoomsnap">msContentZoomSnap</a></li>
+<li><a href="./#msflex">msFlex</a></li>
+<li><a href="./#msscrolllimit">msScrollLimit</a></li>
+<li><a href="./#msscrollsnapx">msScrollSnapX</a></li>
+<li><a href="./#msscrollsnapy">msScrollSnapY</a></li>
+<li><a href="./#mstransition">msTransition</a></li>
+</ul>
+<h2 id="properties_1">Properties</h2>
+<h3 id="mozanimation">MozAnimation</h3>
+<p>• <code>Optional</code> <strong>MozAnimation</strong>: <a href="../../modules/akashaproject_design_system._internal_/#animationproperty"><code>AnimationProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#animationproperty"><code>AnimationProperty</code></a>[]</p>
+<p>The <strong><code>animation</code></strong> shorthand CSS property sets an animated transition between styles. It is a shorthand for <code>animation-name</code>, <code>animation-duration</code>, <code>animation-timing-function</code>, <code>animation-delay</code>, <code>animation-iteration-count</code>, <code>animation-direction</code>, <code>animation-fill-mode</code>, and <code>animation-play-state</code>.</p>
+<p><strong>Syntax</strong>: <code>&lt;single-animation&gt;#</code></p>
+<h4 id="defined-in">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25147</p>
+<hr />
+<h3 id="mozborderimage">MozBorderImage</h3>
+<p>• <code>Optional</code> <strong>MozBorderImage</strong>: <a href="../../modules/akashaproject_design_system._internal_/#borderimageproperty"><code>BorderImageProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#borderimageproperty"><code>BorderImageProperty</code></a>[]</p>
+<p>The <strong><code>border-image</code></strong> CSS property draws an image in place of an element's <code>border-style</code>.</p>
+<p><strong>Syntax</strong>: <code>&lt;'border-image-source'&gt; || &lt;'border-image-slice'&gt; [ / &lt;'border-image-width'&gt; | / &lt;'border-image-width'&gt;? / &lt;'border-image-outset'&gt; ]? || &lt;'border-image-repeat'&gt;</code></p>
+<h4 id="defined-in_1">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25153</p>
+<hr />
+<h3 id="mozcolumnrule">MozColumnRule</h3>
+<p>• <code>Optional</code> <strong>MozColumnRule</strong>: <a href="../../modules/akashaproject_design_system._internal_/#columnruleproperty"><code>ColumnRuleProperty</code></a>&lt;<code>TLength</code>> | <a href="../../modules/akashaproject_design_system._internal_/#columnruleproperty"><code>ColumnRuleProperty</code></a>&lt;<code>TLength</code>>[]</p>
+<p>The <strong><code>column-rule</code></strong> CSS property sets the width, style, and color of the rule (line) drawn between columns in a multi-column layout.</p>
+<p><strong>Syntax</strong>: <code>&lt;'column-rule-width'&gt; || &lt;'column-rule-style'&gt; || &lt;'column-rule-color'&gt;</code></p>
+<h4 id="defined-in_2">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25159</p>
+<hr />
+<h3 id="mozcolumns">MozColumns</h3>
+<p>• <code>Optional</code> <strong>MozColumns</strong>: <a href="../../modules/akashaproject_design_system._internal_/#columnsproperty"><code>ColumnsProperty</code></a>&lt;<code>TLength</code>> | <a href="../../modules/akashaproject_design_system._internal_/#columnsproperty"><code>ColumnsProperty</code></a>&lt;<code>TLength</code>>[]</p>
+<p>The <strong><code>columns</code></strong> CSS property sets the column width and column count of an element.</p>
+<p><strong>Syntax</strong>: <code>&lt;'column-width'&gt; || &lt;'column-count'&gt;</code></p>
+<h4 id="defined-in_3">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25165</p>
+<hr />
+<h3 id="moztransition">MozTransition</h3>
+<p>• <code>Optional</code> <strong>MozTransition</strong>: <code>string</code> | <code>string</code>[]</p>
+<p>The <strong><code>transition</code></strong> CSS property is a shorthand property for <code>transition-property</code>, <code>transition-duration</code>, <code>transition-timing-function</code>, and <code>transition-delay</code>.</p>
+<p><strong>Syntax</strong>: <code>&lt;single-transition&gt;#</code></p>
+<h4 id="defined-in_4">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25171</p>
+<hr />
+<h3 id="webkitanimation">WebkitAnimation</h3>
+<p>• <code>Optional</code> <strong>WebkitAnimation</strong>: <a href="../../modules/akashaproject_design_system._internal_/#animationproperty"><code>AnimationProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#animationproperty"><code>AnimationProperty</code></a>[]</p>
+<p>The <strong><code>animation</code></strong> shorthand CSS property sets an animated transition between styles. It is a shorthand for <code>animation-name</code>, <code>animation-duration</code>, <code>animation-timing-function</code>, <code>animation-delay</code>, <code>animation-iteration-count</code>, <code>animation-direction</code>, <code>animation-fill-mode</code>, and <code>animation-play-state</code>.</p>
+<p><strong>Syntax</strong>: <code>&lt;single-animation&gt;#</code></p>
+<h4 id="defined-in_5">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25219</p>
+<hr />
+<h3 id="webkitborderbefore">WebkitBorderBefore</h3>
+<p>• <code>Optional</code> <strong>WebkitBorderBefore</strong>: <a href="../../modules/akashaproject_design_system._internal_/#webkitborderbeforeproperty"><code>WebkitBorderBeforeProperty</code></a>&lt;<code>TLength</code>> | <a href="../../modules/akashaproject_design_system._internal_/#webkitborderbeforeproperty"><code>WebkitBorderBeforeProperty</code></a>&lt;<code>TLength</code>>[]</p>
+<p>The <strong><code>-webkit-border-before</code></strong> CSS property is a shorthand property for setting the individual logical block start border property values in a single place in the style sheet.</p>
+<p><strong>Syntax</strong>: <code>&lt;'border-width'&gt; || &lt;'border-style'&gt; || &lt;color&gt;</code></p>
+<h4 id="defined-in_6">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25225</p>
+<hr />
+<h3 id="webkitborderimage">WebkitBorderImage</h3>
+<p>• <code>Optional</code> <strong>WebkitBorderImage</strong>: <a href="../../modules/akashaproject_design_system._internal_/#borderimageproperty"><code>BorderImageProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#borderimageproperty"><code>BorderImageProperty</code></a>[]</p>
+<p>The <strong><code>border-image</code></strong> CSS property draws an image in place of an element's <code>border-style</code>.</p>
+<p><strong>Syntax</strong>: <code>&lt;'border-image-source'&gt; || &lt;'border-image-slice'&gt; [ / &lt;'border-image-width'&gt; | / &lt;'border-image-width'&gt;? / &lt;'border-image-outset'&gt; ]? || &lt;'border-image-repeat'&gt;</code></p>
+<h4 id="defined-in_7">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25231</p>
+<hr />
+<h3 id="webkitborderradius">WebkitBorderRadius</h3>
+<p>• <code>Optional</code> <strong>WebkitBorderRadius</strong>: <a href="../../modules/akashaproject_design_system._internal_/#borderradiusproperty"><code>BorderRadiusProperty</code></a>&lt;<code>TLength</code>> | <a href="../../modules/akashaproject_design_system._internal_/#borderradiusproperty"><code>BorderRadiusProperty</code></a>&lt;<code>TLength</code>>[]</p>
+<p>The <strong><code>border-radius</code></strong> CSS property rounds the corners of an element's outer border edge. You can set a single radius to make circular corners, or two radii to make elliptical corners.</p>
+<p><strong>Syntax</strong>: <code>&lt;length-percentage&gt;{1,4} [ / &lt;length-percentage&gt;{1,4} ]?</code></p>
+<h4 id="defined-in_8">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25237</p>
+<hr />
+<h3 id="webkitcolumnrule">WebkitColumnRule</h3>
+<p>• <code>Optional</code> <strong>WebkitColumnRule</strong>: <a href="../../modules/akashaproject_design_system._internal_/#columnruleproperty"><code>ColumnRuleProperty</code></a>&lt;<code>TLength</code>> | <a href="../../modules/akashaproject_design_system._internal_/#columnruleproperty"><code>ColumnRuleProperty</code></a>&lt;<code>TLength</code>>[]</p>
+<p>The <strong><code>column-rule</code></strong> CSS property sets the width, style, and color of the rule (line) drawn between columns in a multi-column layout.</p>
+<p><strong>Syntax</strong>: <code>&lt;'column-rule-width'&gt; || &lt;'column-rule-style'&gt; || &lt;'column-rule-color'&gt;</code></p>
+<h4 id="defined-in_9">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25243</p>
+<hr />
+<h3 id="webkitcolumns">WebkitColumns</h3>
+<p>• <code>Optional</code> <strong>WebkitColumns</strong>: <a href="../../modules/akashaproject_design_system._internal_/#columnsproperty"><code>ColumnsProperty</code></a>&lt;<code>TLength</code>> | <a href="../../modules/akashaproject_design_system._internal_/#columnsproperty"><code>ColumnsProperty</code></a>&lt;<code>TLength</code>>[]</p>
+<p>The <strong><code>columns</code></strong> CSS property sets the column width and column count of an element.</p>
+<p><strong>Syntax</strong>: <code>&lt;'column-width'&gt; || &lt;'column-count'&gt;</code></p>
+<h4 id="defined-in_10">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25249</p>
+<hr />
+<h3 id="webkitflex">WebkitFlex</h3>
+<p>• <code>Optional</code> <strong>WebkitFlex</strong>: <a href="../../modules/akashaproject_design_system._internal_/#flexproperty"><code>FlexProperty</code></a>&lt;<code>TLength</code>> | <a href="../../modules/akashaproject_design_system._internal_/#flexproperty"><code>FlexProperty</code></a>&lt;<code>TLength</code>>[]</p>
+<p>The <strong><code>flex</code></strong> CSS property sets how a flex item will grow or shrink to fit the space available in its flex container. It is a shorthand for <code>flex-grow</code>, <code>flex-shrink</code>, and <code>flex-basis</code>.</p>
+<p><strong>Syntax</strong>: <code>none | [ &lt;'flex-grow'&gt; &lt;'flex-shrink'&gt;? || &lt;'flex-basis'&gt; ]</code></p>
+<h4 id="defined-in_11">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25255</p>
+<hr />
+<h3 id="webkitflexflow">WebkitFlexFlow</h3>
+<p>• <code>Optional</code> <strong>WebkitFlexFlow</strong>: <code>string</code> | <code>string</code>[]</p>
+<p>The <strong><code>flex-flow</code></strong> CSS property is a shorthand property for <code>flex-direction</code> and <code>flex-wrap</code> properties.</p>
+<p><strong>Syntax</strong>: <code>&lt;'flex-direction'&gt; || &lt;'flex-wrap'&gt;</code></p>
+<h4 id="defined-in_12">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25261</p>
+<hr />
+<h3 id="webkitmask">WebkitMask</h3>
+<p>• <code>Optional</code> <strong>WebkitMask</strong>: <a href="../../modules/akashaproject_design_system._internal_/#webkitmaskproperty"><code>WebkitMaskProperty</code></a>&lt;<code>TLength</code>> | <a href="../../modules/akashaproject_design_system._internal_/#webkitmaskproperty"><code>WebkitMaskProperty</code></a>&lt;<code>TLength</code>>[]</p>
+<p>The <strong><code>mask</code></strong> CSS property hides an element (partially or fully) by masking or clipping the image at specific points.</p>
+<p><strong>Syntax</strong>: <code>[ &lt;mask-reference&gt; || &lt;position&gt; [ / &lt;bg-size&gt; ]? || &lt;repeat-style&gt; || [ &lt;box&gt; | border | padding | content | text ] || [ &lt;box&gt; | border | padding | content ] ]#</code></p>
+<h4 id="defined-in_13">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25267</p>
+<hr />
+<h3 id="webkitmaskboximage">WebkitMaskBoxImage</h3>
+<p>• <code>Optional</code> <strong>WebkitMaskBoxImage</strong>: <a href="../../modules/akashaproject_design_system._internal_/#maskborderproperty"><code>MaskBorderProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#maskborderproperty"><code>MaskBorderProperty</code></a>[]</p>
+<p>The <strong><code>mask-border</code></strong> CSS property lets you create a mask along the edge of an element's border.</p>
+<p><strong>Syntax</strong>: <code>&lt;'mask-border-source'&gt; || &lt;'mask-border-slice'&gt; [ / &lt;'mask-border-width'&gt;? [ / &lt;'mask-border-outset'&gt; ]? ]? || &lt;'mask-border-repeat'&gt; || &lt;'mask-border-mode'&gt;</code></p>
+<h4 id="defined-in_14">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25273</p>
+<hr />
+<h3 id="webkittextemphasis">WebkitTextEmphasis</h3>
+<p>• <code>Optional</code> <strong>WebkitTextEmphasis</strong>: <code>string</code> | <code>string</code>[]</p>
+<p>The <strong><code>text-emphasis</code></strong> CSS property applies emphasis marks to text (except spaces and control characters). It is a shorthand for <code>text-emphasis-style</code> and <code>text-emphasis-color</code>.</p>
+<p><strong>Syntax</strong>: <code>&lt;'text-emphasis-style'&gt; || &lt;'text-emphasis-color'&gt;</code></p>
+<h4 id="defined-in_15">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25279</p>
+<hr />
+<h3 id="webkittextstroke">WebkitTextStroke</h3>
+<p>• <code>Optional</code> <strong>WebkitTextStroke</strong>: <a href="../../modules/akashaproject_design_system._internal_/#webkittextstrokeproperty"><code>WebkitTextStrokeProperty</code></a>&lt;<code>TLength</code>> | <a href="../../modules/akashaproject_design_system._internal_/#webkittextstrokeproperty"><code>WebkitTextStrokeProperty</code></a>&lt;<code>TLength</code>>[]</p>
+<p>The <strong><code>-webkit-text-stroke</code></strong> CSS property specifies the width and color of strokes for text characters. This is a shorthand property for the longhand properties <code>-webkit-text-stroke-width</code> and <code>-webkit-text-stroke-color</code>.</p>
+<p><strong>Syntax</strong>: <code>&lt;length&gt; || &lt;color&gt;</code></p>
+<h4 id="defined-in_16">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25285</p>
+<hr />
+<h3 id="webkittransition">WebkitTransition</h3>
+<p>• <code>Optional</code> <strong>WebkitTransition</strong>: <code>string</code> | <code>string</code>[]</p>
+<p>The <strong><code>transition</code></strong> CSS property is a shorthand property for <code>transition-property</code>, <code>transition-duration</code>, <code>transition-timing-function</code>, and <code>transition-delay</code>.</p>
+<p><strong>Syntax</strong>: <code>&lt;single-transition&gt;#</code></p>
+<h4 id="defined-in_17">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25291</p>
+<hr />
+<h3 id="mscontentzoomlimit">msContentZoomLimit</h3>
+<p>• <code>Optional</code> <strong>msContentZoomLimit</strong>: <code>string</code> | <code>string</code>[]</p>
+<p>The <strong><code>-ms-content-zoom-limit</code></strong> CSS shorthand property is a Microsoft extension that specifies values for the <code>-ms-content-zoom-limit-min</code> and <code>-ms-content-zoom-limit-max</code> properties.</p>
+<p><strong>Syntax</strong>: <code>&lt;'-ms-content-zoom-limit-min'&gt; &lt;'-ms-content-zoom-limit-max'&gt;</code></p>
+<h4 id="defined-in_18">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25177</p>
+<hr />
+<h3 id="mscontentzoomsnap">msContentZoomSnap</h3>
+<p>• <code>Optional</code> <strong>msContentZoomSnap</strong>: <code>string</code> | <code>string</code>[]</p>
+<p>The <strong><code>-ms-content-zoom-snap</code></strong> CSS shorthand property is a Microsoft extension that specifies values for the <code>-ms-content-zoom-snap-type</code> and <code>-ms-content-zoom-snap-points</code> properties.</p>
+<p><strong>Syntax</strong>: <code>&lt;'-ms-content-zoom-snap-type'&gt; || &lt;'-ms-content-zoom-snap-points'&gt;</code></p>
+<h4 id="defined-in_19">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25183</p>
+<hr />
+<h3 id="msflex">msFlex</h3>
+<p>• <code>Optional</code> <strong>msFlex</strong>: <a href="../../modules/akashaproject_design_system._internal_/#flexproperty"><code>FlexProperty</code></a>&lt;<code>TLength</code>> | <a href="../../modules/akashaproject_design_system._internal_/#flexproperty"><code>FlexProperty</code></a>&lt;<code>TLength</code>>[]</p>
+<p>The <strong><code>flex</code></strong> CSS property sets how a flex item will grow or shrink to fit the space available in its flex container. It is a shorthand for <code>flex-grow</code>, <code>flex-shrink</code>, and <code>flex-basis</code>.</p>
+<p><strong>Syntax</strong>: <code>none | [ &lt;'flex-grow'&gt; &lt;'flex-shrink'&gt;? || &lt;'flex-basis'&gt; ]</code></p>
+<h4 id="defined-in_20">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25189</p>
+<hr />
+<h3 id="msscrolllimit">msScrollLimit</h3>
+<p>• <code>Optional</code> <strong>msScrollLimit</strong>: <code>string</code> | <code>string</code>[]</p>
+<p>The <strong>-ms-scroll-limit</strong> CSS property is a Microsoft extension that specifies values for the <code>-ms-scroll-limit-x-min</code>, <code>-ms-scroll-limit-y-min</code>, <code>-ms-scroll-limit-x-max</code>, and <code>-ms-scroll-limit-y-max</code> properties.</p>
+<p><strong>Syntax</strong>: <code>&lt;'-ms-scroll-limit-x-min'&gt; &lt;'-ms-scroll-limit-y-min'&gt; &lt;'-ms-scroll-limit-x-max'&gt; &lt;'-ms-scroll-limit-y-max'&gt;</code></p>
+<h4 id="defined-in_21">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25195</p>
+<hr />
+<h3 id="msscrollsnapx">msScrollSnapX</h3>
+<p>• <code>Optional</code> <strong>msScrollSnapX</strong>: <code>string</code> | <code>string</code>[]</p>
+<p>The <strong><code>-ms-scroll-snap-x</code></strong> CSS shorthand property is a Microsoft extension that specifies values for the <code>-ms-scroll-snap-type</code> and <code>-ms-scroll-snap-points-x</code> properties.</p>
+<p><strong>Syntax</strong>: <code>&lt;'-ms-scroll-snap-type'&gt; &lt;'-ms-scroll-snap-points-x'&gt;</code></p>
+<h4 id="defined-in_22">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25201</p>
+<hr />
+<h3 id="msscrollsnapy">msScrollSnapY</h3>
+<p>• <code>Optional</code> <strong>msScrollSnapY</strong>: <code>string</code> | <code>string</code>[]</p>
+<p>The <strong><code>-ms-scroll-snap-x</code></strong> CSS shorthand property is a Microsoft extension that specifies values for the <code>-ms-scroll-snap-type</code> and <code>-ms-scroll-snap-points-y</code> properties.</p>
+<p><strong>Syntax</strong>: <code>&lt;'-ms-scroll-snap-type'&gt; &lt;'-ms-scroll-snap-points-y'&gt;</code></p>
+<h4 id="defined-in_23">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25207</p>
+<hr />
+<h3 id="mstransition">msTransition</h3>
+<p>• <code>Optional</code> <strong>msTransition</strong>: <code>string</code> | <code>string</code>[]</p>
+<p>The <strong><code>transition</code></strong> CSS property is a shorthand property for <code>transition-property</code>, <code>transition-duration</code>, <code>transition-timing-function</code>, and <code>transition-delay</code>.</p>
+<p><strong>Syntax</strong>: <code>&lt;single-transition&gt;#</code></p>
+<h4 id="defined-in_24">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25213</p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.22074ed6.min.js"}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.01de222e.min.js"></script>
+      
+    
+  </body>
+</html>

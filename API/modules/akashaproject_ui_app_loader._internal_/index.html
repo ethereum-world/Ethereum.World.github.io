@@ -1,0 +1,4607 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.7">
+    
+    
+      
+        <title>Akashaproject ui app loader. internal - AKASHA World Framework docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.cd566b2a.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#namespace-internal" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="AKASHA World Framework docs" class="md-header__button md-logo" aria-label="AKASHA World Framework docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AKASHA World Framework docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Akashaproject ui app loader. internal 
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="AKASHA World Framework docs" class="md-nav__button md-logo" aria-label="AKASHA World Framework docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    AKASHA World Framework docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        API
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    Table of contents
+  </a>
+  
+    <nav class="md-nav" aria-label="Table of contents">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enumerations" class="md-nav__link">
+    Enumerations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#classes" class="md-nav__link">
+    Classes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interfaces" class="md-nav__link">
+    Interfaces
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-aliases" class="md-nav__link">
+    Type aliases
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variables" class="md-nav__link">
+    Variables
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#type-aliases_1" class="md-nav__link">
+    Type aliases
+  </a>
+  
+    <nav class="md-nav" aria-label="Type aliases">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#astnode" class="md-nav__link">
+    ASTNode
+  </a>
+  
+    <nav class="md-nav" aria-label="ASTNode">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accesslist" class="md-nav__link">
+    AccessList
+  </a>
+  
+    <nav class="md-nav" aria-label="AccessList">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_1" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accesslistish" class="md-nav__link">
+    AccessListish
+  </a>
+  
+    <nav class="md-nav" aria-label="AccessListish">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_2" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activityfn" class="md-nav__link">
+    ActivityFn
+  </a>
+  
+    <nav class="md-nav" aria-label="ActivityFn">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_3" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#appnameselector" class="md-nav__link">
+    AppNameSelector
+  </a>
+  
+    <nav class="md-nav" aria-label="AppNameSelector">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_1" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_1" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_1" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_4" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apporwidgetdefinition" class="md-nav__link">
+    AppOrWidgetDefinition
+  </a>
+  
+    <nav class="md-nav" aria-label="AppOrWidgetDefinition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_5" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arraybufferlike" class="md-nav__link">
+    ArrayBufferLike
+  </a>
+  
+    <nav class="md-nav" aria-label="ArrayBufferLike">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_6" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bignumberish" class="md-nav__link">
+    BigNumberish
+  </a>
+  
+    <nav class="md-nav" aria-label="BigNumberish">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_7" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#blocktag" class="md-nav__link">
+    BlockTag
+  </a>
+  
+    <nav class="md-nav" aria-label="BlockTag">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_8" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bodyinit" class="md-nav__link">
+    BodyInit
+  </a>
+  
+    <nav class="md-nav" aria-label="BodyInit">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_9" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buffersource" class="md-nav__link">
+    BufferSource
+  </a>
+  
+    <nav class="md-nav" aria-label="BufferSource">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_10" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bytes" class="md-nav__link">
+    Bytes
+  </a>
+  
+    <nav class="md-nav" aria-label="Bytes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_11" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#byteslike" class="md-nav__link">
+    BytesLike
+  </a>
+  
+    <nav class="md-nav" aria-label="BytesLike">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_12" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connectioninfo" class="md-nav__link">
+    ConnectionInfo
+  </a>
+  
+    <nav class="md-nav" aria-label="ConnectionInfo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_2" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_13" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deferrable" class="md-nav__link">
+    Deferrable
+  </a>
+  
+    <nav class="md-nav" aria-label="Deferrable">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_14" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#definitionnode" class="md-nav__link">
+    DefinitionNode
+  </a>
+  
+    <nav class="md-nav" aria-label="DefinitionNode">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_15" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eventdatatypes" class="md-nav__link">
+    EventDataTypes
+  </a>
+  
+    <nav class="md-nav" aria-label="EventDataTypes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_3" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_16" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eventlisteneroreventlistenerobject" class="md-nav__link">
+    EventListenerOrEventListenerObject
+  </a>
+  
+    <nav class="md-nav" aria-label="EventListenerOrEventListenerObject">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_17" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eventtype" class="md-nav__link">
+    EventType
+  </a>
+  
+    <nav class="md-nav" aria-label="EventType">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_18" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#executabledefinitionnode" class="md-nav__link">
+    ExecutableDefinitionNode
+  </a>
+  
+    <nav class="md-nav" aria-label="ExecutableDefinitionNode">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_19" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#externalprovider" class="md-nav__link">
+    ExternalProvider
+  </a>
+  
+    <nav class="md-nav" aria-label="ExternalProvider">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_4" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_20" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formdataentryvalue" class="md-nav__link">
+    FormDataEntryValue
+  </a>
+  
+    <nav class="md-nav" aria-label="FormDataEntryValue">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_21" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formatfunc" class="md-nav__link">
+    FormatFunc
+  </a>
+  
+    <nav class="md-nav" aria-label="FormatFunc">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_5" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_2" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_2" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_22" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formatfuncs" class="md-nav__link">
+    FormatFuncs
+  </a>
+  
+    <nav class="md-nav" aria-label="FormatFuncs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#index-signature" class="md-nav__link">
+    Index signature
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_23" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formats" class="md-nav__link">
+    Formats
+  </a>
+  
+    <nav class="md-nav" aria-label="Formats">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_6" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_24" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#headersinit" class="md-nav__link">
+    HeadersInit
+  </a>
+  
+    <nav class="md-nav" aria-label="HeadersInit">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_25" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iquicklru" class="md-nav__link">
+    IQuickLRU
+  </a>
+  
+    <nav class="md-nav" aria-label="IQuickLRU">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_26" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iteratorresult" class="md-nav__link">
+    IteratorResult
+  </a>
+  
+    <nav class="md-nav" aria-label="IteratorResult">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_1" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_27" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jsonrpcfetchfunc" class="md-nav__link">
+    JsonRpcFetchFunc
+  </a>
+  
+    <nav class="md-nav" aria-label="JsonRpcFetchFunc">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_7" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_3" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_3" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_28" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listener" class="md-nav__link">
+    Listener
+  </a>
+  
+    <nav class="md-nav" aria-label="Listener">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_8" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_4" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_4" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_29" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#messageeventsource" class="md-nav__link">
+    MessageEventSource
+  </a>
+  
+    <nav class="md-nav" aria-label="MessageEventSource">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_30" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#navigationfn" class="md-nav__link">
+    NavigationFn
+  </a>
+  
+    <nav class="md-nav" aria-label="NavigationFn">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_9" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_5" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_5" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_31" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#network" class="md-nav__link">
+    Network
+  </a>
+  
+    <nav class="md-nav" aria-label="Network">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_10" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_32" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#networkish" class="md-nav__link">
+    Networkish
+  </a>
+  
+    <nav class="md-nav" aria-label="Networkish">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_33" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nextlink" class="md-nav__link">
+    NextLink
+  </a>
+  
+    <nav class="md-nav" aria-label="NextLink">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_11" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_6" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_6" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_34" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operationtypenode" class="md-nav__link">
+    OperationTypeNode
+  </a>
+  
+    <nav class="md-nav" aria-label="OperationTypeNode">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_35" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parcel" class="md-nav__link">
+    Parcel
+  </a>
+  
+    <nav class="md-nav" aria-label="Parcel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_2" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_12" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_36" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pathnameselector" class="md-nav__link">
+    PathNameSelector
+  </a>
+  
+    <nav class="md-nav" aria-label="PathNameSelector">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_13" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_7" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_7" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_37" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#progresscallback" class="md-nav__link">
+    ProgressCallback
+  </a>
+  
+    <nav class="md-nav" aria-label="ProgressCallback">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_14" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_8" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_8" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_38" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#readablestreamdefaultreadresult" class="md-nav__link">
+    ReadableStreamDefaultReadResult
+  </a>
+  
+    <nav class="md-nav" aria-label="ReadableStreamDefaultReadResult">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_3" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_39" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#readonly" class="md-nav__link">
+    Readonly
+  </a>
+  
+    <nav class="md-nav" aria-label="Readonly">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_4" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_40" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#record" class="md-nav__link">
+    Record
+  </a>
+  
+    <nav class="md-nav" aria-label="Record">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_5" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_41" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#referrerpolicy" class="md-nav__link">
+    ReferrerPolicy
+  </a>
+  
+    <nav class="md-nav" aria-label="ReferrerPolicy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_42" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#requestcache" class="md-nav__link">
+    RequestCache
+  </a>
+  
+    <nav class="md-nav" aria-label="RequestCache">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_43" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#requestcredentials" class="md-nav__link">
+    RequestCredentials
+  </a>
+  
+    <nav class="md-nav" aria-label="RequestCredentials">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_44" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#requestdestination" class="md-nav__link">
+    RequestDestination
+  </a>
+  
+    <nav class="md-nav" aria-label="RequestDestination">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_45" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#requesthandler" class="md-nav__link">
+    RequestHandler
+  </a>
+  
+    <nav class="md-nav" aria-label="RequestHandler">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_15" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_9" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_9" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_46" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#requestinfo" class="md-nav__link">
+    RequestInfo
+  </a>
+  
+    <nav class="md-nav" aria-label="RequestInfo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_47" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#requestmode" class="md-nav__link">
+    RequestMode
+  </a>
+  
+    <nav class="md-nav" aria-label="RequestMode">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_48" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#requestredirect" class="md-nav__link">
+    RequestRedirect
+  </a>
+  
+    <nav class="md-nav" aria-label="RequestRedirect">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_49" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#responsetype" class="md-nav__link">
+    ResponseType
+  </a>
+  
+    <nav class="md-nav" aria-label="ResponseType">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_50" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selectionnode" class="md-nav__link">
+    SelectionNode
+  </a>
+  
+    <nav class="md-nav" aria-label="SelectionNode">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_51" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#servicecallresult" class="md-nav__link">
+    ServiceCallResult
+  </a>
+  
+    <nav class="md-nav" aria-label="ServiceCallResult">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_6" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_52" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#serviceworkerstate" class="md-nav__link">
+    ServiceWorkerState
+  </a>
+  
+    <nav class="md-nav" aria-label="ServiceWorkerState">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_53" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subscriber" class="md-nav__link">
+    Subscriber
+  </a>
+  
+    <nav class="md-nav" aria-label="Subscriber">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_7" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_16" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_10" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_10" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_54" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tokenkindenum" class="md-nav__link">
+    TokenKindEnum
+  </a>
+  
+    <nav class="md-nav" aria-label="TokenKindEnum">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_55" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transactionrequest" class="md-nav__link">
+    TransactionRequest
+  </a>
+  
+    <nav class="md-nav" aria-label="TransactionRequest">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_17" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_56" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transferable" class="md-nav__link">
+    Transferable
+  </a>
+  
+    <nav class="md-nav" aria-label="Transferable">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_57" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#typedefinitionnode" class="md-nav__link">
+    TypeDefinitionNode
+  </a>
+  
+    <nav class="md-nav" aria-label="TypeDefinitionNode">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_58" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#typeextensionnode" class="md-nav__link">
+    TypeExtensionNode
+  </a>
+  
+    <nav class="md-nav" aria-label="TypeExtensionNode">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_59" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#typenode" class="md-nav__link">
+    TypeNode
+  </a>
+  
+    <nav class="md-nav" aria-label="TypeNode">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_60" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#typesystemdefinitionnode" class="md-nav__link">
+    TypeSystemDefinitionNode
+  </a>
+  
+    <nav class="md-nav" aria-label="TypeSystemDefinitionNode">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_61" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#typesystemextensionnode" class="md-nav__link">
+    TypeSystemExtensionNode
+  </a>
+  
+    <nav class="md-nav" aria-label="TypeSystemExtensionNode">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_62" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#valuenode" class="md-nav__link">
+    ValueNode
+  </a>
+  
+    <nav class="md-nav" aria-label="ValueNode">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_63" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#windowproxy" class="md-nav__link">
+    WindowProxy
+  </a>
+  
+    <nav class="md-nav" aria-label="WindowProxy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_64" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#xmlhttprequestbodyinit" class="md-nav__link">
+    XMLHttpRequestBodyInit
+  </a>
+  
+    <nav class="md-nav" aria-label="XMLHttpRequestBodyInit">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_65" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variables_1" class="md-nav__link">
+    Variables
+  </a>
+  
+    <nav class="md-nav" aria-label="Variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#blob" class="md-nav__link">
+    Blob
+  </a>
+  
+    <nav class="md-nav" aria-label="Blob">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_18" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_66" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#broadcastchannel" class="md-nav__link">
+    BroadcastChannel
+  </a>
+  
+    <nav class="md-nav" aria-label="BroadcastChannel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_19" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_67" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#customevent" class="md-nav__link">
+    CustomEvent
+  </a>
+  
+    <nav class="md-nav" aria-label="CustomEvent">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_20" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_68" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#domstringlist" class="md-nav__link">
+    DOMStringList
+  </a>
+  
+    <nav class="md-nav" aria-label="DOMStringList">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_21" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_69" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#error" class="md-nav__link">
+    Error
+  </a>
+  
+    <nav class="md-nav" aria-label="Error">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_70" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#errorevent" class="md-nav__link">
+    ErrorEvent
+  </a>
+  
+    <nav class="md-nav" aria-label="ErrorEvent">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_22" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_71" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#file" class="md-nav__link">
+    File
+  </a>
+  
+    <nav class="md-nav" aria-label="File">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_23" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_72" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formdata" class="md-nav__link">
+    FormData
+  </a>
+  
+    <nav class="md-nav" aria-label="FormData">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_24" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_73" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#headers" class="md-nav__link">
+    Headers
+  </a>
+  
+    <nav class="md-nav" aria-label="Headers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_25" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_74" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#imagebitmap" class="md-nav__link">
+    ImageBitmap
+  </a>
+  
+    <nav class="md-nav" aria-label="ImageBitmap">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_26" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_75" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#location" class="md-nav__link">
+    Location
+  </a>
+  
+    <nav class="md-nav" aria-label="Location">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_27" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_76" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#messageevent" class="md-nav__link">
+    MessageEvent
+  </a>
+  
+    <nav class="md-nav" aria-label="MessageEvent">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_28" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_77" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#messageport" class="md-nav__link">
+    MessagePort
+  </a>
+  
+    <nav class="md-nav" aria-label="MessagePort">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_29" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_78" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#readablestream" class="md-nav__link">
+    ReadableStream
+  </a>
+  
+    <nav class="md-nav" aria-label="ReadableStream">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_30" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_79" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#readablestreamdefaultreader" class="md-nav__link">
+    ReadableStreamDefaultReader
+  </a>
+  
+    <nav class="md-nav" aria-label="ReadableStreamDefaultReader">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_31" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_80" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#request" class="md-nav__link">
+    Request
+  </a>
+  
+    <nav class="md-nav" aria-label="Request">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_32" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_81" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response" class="md-nav__link">
+    Response
+  </a>
+  
+    <nav class="md-nav" aria-label="Response">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_33" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_82" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#serviceworker" class="md-nav__link">
+    ServiceWorker
+  </a>
+  
+    <nav class="md-nav" aria-label="ServiceWorker">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_34" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_83" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#textencoder" class="md-nav__link">
+    TextEncoder
+  </a>
+  
+    <nav class="md-nav" aria-label="TextEncoder">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_35" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_84" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tokenkind" class="md-nav__link">
+    TokenKind
+  </a>
+  
+    <nav class="md-nav" aria-label="TokenKind">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_36" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_85" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#url" class="md-nav__link">
+    URL
+  </a>
+  
+    <nav class="md-nav" aria-label="URL">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_37" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_86" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#urlsearchparams" class="md-nav__link">
+    URLSearchParams
+  </a>
+  
+    <nav class="md-nav" aria-label="URLSearchParams">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_38" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_87" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#writablestream" class="md-nav__link">
+    WritableStream
+  </a>
+  
+    <nav class="md-nav" aria-label="WritableStream">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_39" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_88" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#writablestreamdefaultwriter" class="md-nav__link">
+    WritableStreamDefaultWriter
+  </a>
+  
+    <nav class="md-nav" aria-label="WritableStreamDefaultWriter">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_40" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_89" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+<p><a href="../../">AWF</a> / <a href="../">Modules</a> / <a href="../akashaproject_ui_app_loader/">@akashaproject/ui-app-loader</a> / &lt;internal></p>
+<h1 id="namespace-internal">Namespace: &lt;internal></h1>
+<p><a href="../akashaproject_ui_app_loader/">@akashaproject/ui-app-loader</a>.<internal></p>
+<h2 id="table-of-contents">Table of contents</h2>
+<h3 id="enumerations">Enumerations</h3>
+<ul>
+<li><a href="../../enums/akashaproject_ui_app_loader._internal_.EthProviders/">EthProviders</a></li>
+<li><a href="../../enums/akashaproject_ui_app_loader._internal_.EventTypes/">EventTypes</a></li>
+<li><a href="../../enums/akashaproject_ui_app_loader._internal_.INJECTED_PROVIDERS/">INJECTED_PROVIDERS</a></li>
+<li><a href="../../enums/akashaproject_ui_app_loader._internal_.ItemTypes/">ItemTypes</a></li>
+<li><a href="../../enums/akashaproject_ui_app_loader._internal_.LEGAL_DOCS/">LEGAL_DOCS</a></li>
+<li><a href="../../enums/akashaproject_ui_app_loader._internal_.LogLevels/">LogLevels</a></li>
+<li><a href="../../enums/akashaproject_ui_app_loader._internal_.LogoTypeSource/">LogoTypeSource</a></li>
+<li><a href="../../enums/akashaproject_ui_app_loader._internal_.MenuItemAreaType/">MenuItemAreaType</a></li>
+<li><a href="../../enums/akashaproject_ui_app_loader._internal_.MenuItemType/">MenuItemType</a></li>
+<li><a href="../../enums/akashaproject_ui_app_loader._internal_.PostType/">PostType</a></li>
+</ul>
+<h3 id="classes">Classes</h3>
+<ul>
+<li><a href="../../classes/akashaproject_ui_app_loader._internal_.AWF_Auth/">AWF_Auth</a></li>
+<li><a href="../../classes/akashaproject_ui_app_loader._internal_.AWF_Comments/">AWF_Comments</a></li>
+<li><a href="../../classes/akashaproject_ui_app_loader._internal_.AWF_ENS/">AWF_ENS</a></li>
+<li><a href="../../classes/akashaproject_ui_app_loader._internal_.AWF_Entry/">AWF_Entry</a></li>
+<li><a href="../../classes/akashaproject_ui_app_loader._internal_.AWF_IpfsConnector/">AWF_IpfsConnector</a></li>
+<li><a href="../../classes/akashaproject_ui_app_loader._internal_.AWF_Profile/">AWF_Profile</a></li>
+<li><a href="../../classes/akashaproject_ui_app_loader._internal_.AWF_Tags/">AWF_Tags</a></li>
+<li><a href="../../classes/akashaproject_ui_app_loader._internal_.ApolloLink/">ApolloLink</a></li>
+<li><a href="../../classes/akashaproject_ui_app_loader._internal_.AppSettings/">AppSettings</a></li>
+<li><a href="../../classes/akashaproject_ui_app_loader._internal_.Apps/">Apps</a></li>
+<li><a href="../../classes/akashaproject_ui_app_loader._internal_.BaseIntegration/">BaseIntegration</a></li>
+<li><a href="../../classes/akashaproject_ui_app_loader._internal_.BaseProvider/">BaseProvider</a></li>
+<li><a href="../../classes/akashaproject_ui_app_loader._internal_.BigNumber/">BigNumber</a></li>
+<li><a href="../../classes/akashaproject_ui_app_loader._internal_.DB/">DB</a></li>
+<li><a href="../../classes/akashaproject_ui_app_loader._internal_.Description/">Description</a></li>
+<li><a href="../../classes/akashaproject_ui_app_loader._internal_.Event/">Event</a></li>
+<li><a href="../../classes/akashaproject_ui_app_loader._internal_.EventBus/">EventBus</a></li>
+<li><a href="../../classes/akashaproject_ui_app_loader._internal_.ForkEvent/">ForkEvent</a></li>
+<li><a href="../../classes/akashaproject_ui_app_loader._internal_.Formatter/">Formatter</a></li>
+<li><a href="../../classes/akashaproject_ui_app_loader._internal_.Gql/">Gql</a></li>
+<li><a href="../../classes/akashaproject_ui_app_loader._internal_.GraphQLError/">GraphQLError</a></li>
+<li><a href="../../classes/akashaproject_ui_app_loader._internal_.HttpLink/">HttpLink</a></li>
+<li><a href="../../classes/akashaproject_ui_app_loader._internal_.JsonRpcProvider/">JsonRpcProvider</a></li>
+<li><a href="../../classes/akashaproject_ui_app_loader._internal_.JsonRpcSigner/">JsonRpcSigner</a></li>
+<li><a href="../../classes/akashaproject_ui_app_loader._internal_.Location/">Location</a></li>
+<li><a href="../../classes/akashaproject_ui_app_loader._internal_.Logging/">Logging</a></li>
+<li><a href="../../classes/akashaproject_ui_app_loader._internal_.Observable/">Observable</a></li>
+<li><a href="../../classes/akashaproject_ui_app_loader._internal_.Provider/">Provider</a></li>
+<li><a href="../../classes/akashaproject_ui_app_loader._internal_.Resolver/">Resolver</a></li>
+<li><a href="../../classes/akashaproject_ui_app_loader._internal_.Settings/">Settings</a></li>
+<li><a href="../../classes/akashaproject_ui_app_loader._internal_.Signer/">Signer</a></li>
+<li><a href="../../classes/akashaproject_ui_app_loader._internal_.SigningKey/">SigningKey</a></li>
+<li><a href="../../classes/akashaproject_ui_app_loader._internal_.Source/">Source</a></li>
+<li><a href="../../classes/akashaproject_ui_app_loader._internal_.Stash/">Stash</a></li>
+<li><a href="../../classes/akashaproject_ui_app_loader._internal_.Token/">Token</a></li>
+<li><a href="../../classes/akashaproject_ui_app_loader._internal_.UncheckedJsonRpcSigner/">UncheckedJsonRpcSigner</a></li>
+<li><a href="../../classes/akashaproject_ui_app_loader._internal_.Wallet/">Wallet</a></li>
+<li><a href="../../classes/akashaproject_ui_app_loader._internal_.Web3Connector/">Web3Connector</a></li>
+<li><a href="../../classes/akashaproject_ui_app_loader._internal_.Web3Provider/">Web3Provider</a></li>
+<li><a href="../../classes/akashaproject_ui_app_loader._internal_.Widgets/">Widgets</a></li>
+<li><a href="../../classes/akashaproject_ui_app_loader._internal_.Wordlist/">Wordlist</a></li>
+<li><a href="../../classes/akashaproject_ui_app_loader._internal_.default/">default</a></li>
+</ul>
+<h3 id="interfaces">Interfaces</h3>
+<ul>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.AWF_IAuth/">AWF_IAuth</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.AWF_IComments/">AWF_IComments</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.AWF_IENS/">AWF_IENS</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.AWF_IEntry/">AWF_IEntry</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.AWF_IIpfsConnector/">AWF_IIpfsConnector</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.AWF_IProfile/">AWF_IProfile</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.AWF_ITags/">AWF_ITags</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.AWF_SDK/">AWF_SDK</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.AbstractWorker/">AbstractWorker</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.AbstractWorkerEventMap/">AbstractWorkerEventMap</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.AddEventListenerOptions/">AddEventListenerOptions</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.AppRegistryInfo/">AppRegistryInfo</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.AppsSchema/">AppsSchema</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.ArgumentNode/">ArgumentNode</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.ArrayBufferView/">ArrayBufferView</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.ArrayLike/">ArrayLike</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.Avatar/">Avatar</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.BaseIntegrationClassOptions/">BaseIntegrationClassOptions</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.Blob/">Blob</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.Block/">Block</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.BlockWithTransactions/">BlockWithTransactions</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.Body/">Body</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.BooleanValueNode/">BooleanValueNode</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.BroadcastChannel/">BroadcastChannel</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.BroadcastChannelEventMap/">BroadcastChannelEventMap</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.CallSite/">CallSite</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.Comment_Response/">Comment_Response</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.Comments_Response/">Comments_Response</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.CurrentUser/">CurrentUser</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.CustomEvent/">CustomEvent</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.CustomProps/">CustomProps</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.DOMStringList/">DOMStringList</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.DataProviderInput/">DataProviderInput</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.DirectiveDefinitionNode/">DirectiveDefinitionNode</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.DirectiveNode/">DirectiveNode</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.DocumentNode/">DocumentNode</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.EnsProvider/">EnsProvider</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.EnsResolver/">EnsResolver</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.EnumTypeDefinitionNode/">EnumTypeDefinitionNode</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.EnumTypeExtensionNode/">EnumTypeExtensionNode</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.EnumValueDefinitionNode/">EnumValueDefinitionNode</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.EnumValueNode/">EnumValueNode</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.Error/">Error</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.ErrorEvent/">ErrorEvent</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.EventFilter/">EventFilter</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.EventListener/">EventListener</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.EventListenerObject/">EventListenerObject</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.EventListenerOptions/">EventListenerOptions</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.ExecutionResult/">ExecutionResult</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.ExtensionPointDefinition/">ExtensionPointDefinition</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.ExternallyOwnedAccount/">ExternallyOwnedAccount</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.FeeData/">FeeData</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.FetchResult/">FetchResult</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.FieldDefinitionNode/">FieldDefinitionNode</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.FieldNode/">FieldNode</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.File/">File</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.Filter/">Filter</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.FilterByBlockHash/">FilterByBlockHash</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.FloatValueNode/">FloatValueNode</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.FormData/">FormData</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.FragmentDefinitionNode/">FragmentDefinitionNode</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.FragmentSpreadNode/">FragmentSpreadNode</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.GlobalSearchResult/">GlobalSearchResult</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.GlobalSearchResultItem/">GlobalSearchResultItem</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.GlobalSearchResultTagItem/">GlobalSearchResultTagItem</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.GqlOperation/">GqlOperation</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.GraphQLErrorExtensions/">GraphQLErrorExtensions</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.GraphQLRequest/">GraphQLRequest</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.Headers/">Headers</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.Hexable/">Hexable</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.HttpOptions/">HttpOptions</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.IAppConfig/">IAppConfig</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.IAppSettings/">IAppSettings</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.IAwfSDK/">IAwfSDK</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.IDBService/">IDBService</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.IGqlClient/">IGqlClient</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.ILoaderConfig/">ILoaderConfig</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.ILogService/">ILogService</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.ILogger/">ILogger</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.IMenuItem/">IMenuItem</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.IMenuList/">IMenuList</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.ISdkConfig/">ISdkConfig</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.ISettingsService/">ISettingsService</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.ISingleSpaLifecycle/">ISingleSpaLifecycle</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.IStashService/">IStashService</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.IWeb3Connector/">IWeb3Connector</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.IWidgetConfig/">IWidgetConfig</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.ImageBitmap/">ImageBitmap</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.InlineFragmentNode/">InlineFragmentNode</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.InputObjectTypeDefinitionNode/">InputObjectTypeDefinitionNode</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.InputObjectTypeExtensionNode/">InputObjectTypeExtensionNode</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.InputValueDefinitionNode/">InputValueDefinitionNode</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.IntValueNode/">IntValueNode</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.IntegrationModule/">IntegrationModule</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.IntegrationRegistrationOptions/">IntegrationRegistrationOptions</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.IntegrationRegistryInfo/">IntegrationRegistryInfo</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.InterfaceTypeDefinitionNode/">InterfaceTypeDefinitionNode</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.InterfaceTypeExtensionNode/">InterfaceTypeExtensionNode</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.Iterable/">Iterable</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.IterableIterator/">IterableIterator</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.Iterator/">Iterator</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.IteratorReturnResult/">IteratorReturnResult</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.IteratorYieldResult/">IteratorYieldResult</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.LRUOptions/">LRUOptions</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.LayoutConfig/">LayoutConfig</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.LinkPreview_Response/">LinkPreview_Response</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.ListTypeNode/">ListTypeNode</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.ListValueNode/">ListValueNode</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.Location-1/">Location</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.Location-2/">Location</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.Log/">Log</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.LogoSourceType/">LogoSourceType</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.MessageEvent/">MessageEvent</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.MessagePort/">MessagePort</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.MessagePortEventMap/">MessagePortEventMap</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.Mnemonic/">Mnemonic</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.ModalNavigationOptions/">ModalNavigationOptions</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.NameNode/">NameNode</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.NamedTypeNode/">NamedTypeNode</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.NavigationOptions/">NavigationOptions</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.NonNullTypeNode/">NonNullTypeNode</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.NullValueNode/">NullValueNode</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.ObjectFieldNode/">ObjectFieldNode</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.ObjectTypeDefinitionNode/">ObjectTypeDefinitionNode</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.ObjectTypeExtensionNode/">ObjectTypeExtensionNode</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.ObjectValueNode/">ObjectValueNode</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.ObservableLike/">ObservableLike</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.Observer/">Observer</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.OnceBlockable/">OnceBlockable</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.Operation/">Operation</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.OperationDefinitionNode/">OperationDefinitionNode</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.OperationTypeDefinitionNode/">OperationTypeDefinitionNode</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.Options/">Options</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.PostMessageOptions/">PostMessageOptions</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.Post_Response/">Post_Response</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.PostsResult_Response/">PostsResult_Response</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.Printer/">Printer</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.ReadableStream/">ReadableStream</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.ReadableStreamDefaultReadDoneResult/">ReadableStreamDefaultReadDoneResult</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.ReadableStreamDefaultReadValueResult/">ReadableStreamDefaultReadValueResult</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.ReadableStreamDefaultReader/">ReadableStreamDefaultReader</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.ReadableStreamGenericReader/">ReadableStreamGenericReader</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.ReadableWritablePair/">ReadableWritablePair</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.RefCounted/">RefCounted</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.Request/">Request</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.RequestInit/">RequestInit</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.Response/">Response</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.ScalarTypeDefinitionNode/">ScalarTypeDefinitionNode</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.ScalarTypeExtensionNode/">ScalarTypeExtensionNode</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.SchemaDefinitionNode/">SchemaDefinitionNode</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.SchemaExtensionNode/">SchemaExtensionNode</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.SearchTagsResult_Response/">SearchTagsResult_Response</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.SelectionSetNode/">SelectionSetNode</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.ServiceWorker/">ServiceWorker</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.ServiceWorkerEventMap/">ServiceWorkerEventMap</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.SettingsSchema/">SettingsSchema</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.Signature/">Signature</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.SingleSpaEventDetail/">SingleSpaEventDetail</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.SourceLocation/">SourceLocation</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.StreamPipeOptions/">StreamPipeOptions</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.StringValueNode/">StringValueNode</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.Subscription/">Subscription</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.SubscriptionObserver/">SubscriptionObserver</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.Tag_Response/">Tag_Response</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.TagsResult_Response/">TagsResult_Response</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.TextEncoder/">TextEncoder</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.TextEncoderCommon/">TextEncoderCommon</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.TextEncoderEncodeIntoResult/">TextEncoderEncodeIntoResult</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.Timer/">Timer</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.Transaction/">Transaction</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.TransactionReceipt/">TransactionReceipt</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.TransactionResponse/">TransactionResponse</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.TypedDataDomain/">TypedDataDomain</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.TypedDataField/">TypedDataField</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.TypedDataSigner/">TypedDataSigner</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.TypedQueryDocumentNode/">TypedQueryDocumentNode</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.UIEventData/">UIEventData</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.URL/">URL</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.URLSearchParams/">URLSearchParams</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.UnionTypeDefinitionNode/">UnionTypeDefinitionNode</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.UnionTypeExtensionNode/">UnionTypeExtensionNode</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.UriFunction/">UriFunction</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.UserFollowers_Response/">UserFollowers_Response</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.UserProfile_Response/">UserProfile_Response</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.VariableDefinitionNode/">VariableDefinitionNode</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.VariableNode/">VariableNode</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.VideoPreview_Response/">VideoPreview_Response</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.WidgetRegistryInfo/">WidgetRegistryInfo</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.WritableStream/">WritableStream</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.WritableStreamDefaultWriter/">WritableStreamDefaultWriter</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_._Block/">_Block</a></li>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.default-1/">default</a></li>
+</ul>
+<h3 id="type-aliases">Type aliases</h3>
+<ul>
+<li><a href="./#astnode">ASTNode</a></li>
+<li><a href="./#accesslist">AccessList</a></li>
+<li><a href="./#accesslistish">AccessListish</a></li>
+<li><a href="./#activityfn">ActivityFn</a></li>
+<li><a href="./#appnameselector">AppNameSelector</a></li>
+<li><a href="./#apporwidgetdefinition">AppOrWidgetDefinition</a></li>
+<li><a href="./#arraybufferlike">ArrayBufferLike</a></li>
+<li><a href="./#bignumberish">BigNumberish</a></li>
+<li><a href="./#blocktag">BlockTag</a></li>
+<li><a href="./#bodyinit">BodyInit</a></li>
+<li><a href="./#buffersource">BufferSource</a></li>
+<li><a href="./#bytes">Bytes</a></li>
+<li><a href="./#byteslike">BytesLike</a></li>
+<li><a href="./#connectioninfo">ConnectionInfo</a></li>
+<li><a href="./#deferrable">Deferrable</a></li>
+<li><a href="./#definitionnode">DefinitionNode</a></li>
+<li><a href="./#eventdatatypes">EventDataTypes</a></li>
+<li><a href="./#eventlisteneroreventlistenerobject">EventListenerOrEventListenerObject</a></li>
+<li><a href="./#eventtype">EventType</a></li>
+<li><a href="./#executabledefinitionnode">ExecutableDefinitionNode</a></li>
+<li><a href="./#externalprovider">ExternalProvider</a></li>
+<li><a href="./#formdataentryvalue">FormDataEntryValue</a></li>
+<li><a href="./#formatfunc">FormatFunc</a></li>
+<li><a href="./#formatfuncs">FormatFuncs</a></li>
+<li><a href="./#formats">Formats</a></li>
+<li><a href="./#headersinit">HeadersInit</a></li>
+<li><a href="./#iquicklru">IQuickLRU</a></li>
+<li><a href="./#iteratorresult">IteratorResult</a></li>
+<li><a href="./#jsonrpcfetchfunc">JsonRpcFetchFunc</a></li>
+<li><a href="./#listener">Listener</a></li>
+<li><a href="./#messageeventsource">MessageEventSource</a></li>
+<li><a href="./#navigationfn">NavigationFn</a></li>
+<li><a href="./#network">Network</a></li>
+<li><a href="./#networkish">Networkish</a></li>
+<li><a href="./#nextlink">NextLink</a></li>
+<li><a href="./#operationtypenode">OperationTypeNode</a></li>
+<li><a href="./#parcel">Parcel</a></li>
+<li><a href="./#pathnameselector">PathNameSelector</a></li>
+<li><a href="./#progresscallback">ProgressCallback</a></li>
+<li><a href="./#readablestreamdefaultreadresult">ReadableStreamDefaultReadResult</a></li>
+<li><a href="./#readonly">Readonly</a></li>
+<li><a href="./#record">Record</a></li>
+<li><a href="./#referrerpolicy">ReferrerPolicy</a></li>
+<li><a href="./#requestcache">RequestCache</a></li>
+<li><a href="./#requestcredentials">RequestCredentials</a></li>
+<li><a href="./#requestdestination">RequestDestination</a></li>
+<li><a href="./#requesthandler">RequestHandler</a></li>
+<li><a href="./#requestinfo">RequestInfo</a></li>
+<li><a href="./#requestmode">RequestMode</a></li>
+<li><a href="./#requestredirect">RequestRedirect</a></li>
+<li><a href="./#responsetype">ResponseType</a></li>
+<li><a href="./#selectionnode">SelectionNode</a></li>
+<li><a href="./#servicecallresult">ServiceCallResult</a></li>
+<li><a href="./#serviceworkerstate">ServiceWorkerState</a></li>
+<li><a href="./#subscriber">Subscriber</a></li>
+<li><a href="./#tokenkindenum">TokenKindEnum</a></li>
+<li><a href="./#transactionrequest">TransactionRequest</a></li>
+<li><a href="./#transferable">Transferable</a></li>
+<li><a href="./#typedefinitionnode">TypeDefinitionNode</a></li>
+<li><a href="./#typeextensionnode">TypeExtensionNode</a></li>
+<li><a href="./#typenode">TypeNode</a></li>
+<li><a href="./#typesystemdefinitionnode">TypeSystemDefinitionNode</a></li>
+<li><a href="./#typesystemextensionnode">TypeSystemExtensionNode</a></li>
+<li><a href="./#valuenode">ValueNode</a></li>
+<li><a href="./#windowproxy">WindowProxy</a></li>
+<li><a href="./#xmlhttprequestbodyinit">XMLHttpRequestBodyInit</a></li>
+</ul>
+<h3 id="variables">Variables</h3>
+<ul>
+<li><a href="./#blob">Blob</a></li>
+<li><a href="./#broadcastchannel">BroadcastChannel</a></li>
+<li><a href="./#customevent">CustomEvent</a></li>
+<li><a href="./#domstringlist">DOMStringList</a></li>
+<li><a href="./#error">Error</a></li>
+<li><a href="./#errorevent">ErrorEvent</a></li>
+<li><a href="./#file">File</a></li>
+<li><a href="./#formdata">FormData</a></li>
+<li><a href="./#headers">Headers</a></li>
+<li><a href="./#imagebitmap">ImageBitmap</a></li>
+<li><a href="./#location">Location</a></li>
+<li><a href="./#messageevent">MessageEvent</a></li>
+<li><a href="./#messageport">MessagePort</a></li>
+<li><a href="./#readablestream">ReadableStream</a></li>
+<li><a href="./#readablestreamdefaultreader">ReadableStreamDefaultReader</a></li>
+<li><a href="./#request">Request</a></li>
+<li><a href="./#response">Response</a></li>
+<li><a href="./#serviceworker">ServiceWorker</a></li>
+<li><a href="./#textencoder">TextEncoder</a></li>
+<li><a href="./#tokenkind">TokenKind</a></li>
+<li><a href="./#url">URL</a></li>
+<li><a href="./#urlsearchparams">URLSearchParams</a></li>
+<li><a href="./#writablestream">WritableStream</a></li>
+<li><a href="./#writablestreamdefaultwriter">WritableStreamDefaultWriter</a></li>
+</ul>
+<h2 id="type-aliases_1">Type aliases</h2>
+<h3 id="astnode">ASTNode</h3>
+<p>Ƭ <strong>ASTNode</strong>: <a href="../../interfaces/akashaproject_ui_app_loader._internal_.NameNode/"><code>NameNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.DocumentNode/"><code>DocumentNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.OperationDefinitionNode/"><code>OperationDefinitionNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.VariableDefinitionNode/"><code>VariableDefinitionNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.VariableNode/"><code>VariableNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.SelectionSetNode/"><code>SelectionSetNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.FieldNode/"><code>FieldNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.ArgumentNode/"><code>ArgumentNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.FragmentSpreadNode/"><code>FragmentSpreadNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.InlineFragmentNode/"><code>InlineFragmentNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.FragmentDefinitionNode/"><code>FragmentDefinitionNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.IntValueNode/"><code>IntValueNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.FloatValueNode/"><code>FloatValueNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.StringValueNode/"><code>StringValueNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.BooleanValueNode/"><code>BooleanValueNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.NullValueNode/"><code>NullValueNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.EnumValueNode/"><code>EnumValueNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.ListValueNode/"><code>ListValueNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.ObjectValueNode/"><code>ObjectValueNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.ObjectFieldNode/"><code>ObjectFieldNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.DirectiveNode/"><code>DirectiveNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.NamedTypeNode/"><code>NamedTypeNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.ListTypeNode/"><code>ListTypeNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.NonNullTypeNode/"><code>NonNullTypeNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.SchemaDefinitionNode/"><code>SchemaDefinitionNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.OperationTypeDefinitionNode/"><code>OperationTypeDefinitionNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.ScalarTypeDefinitionNode/"><code>ScalarTypeDefinitionNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.ObjectTypeDefinitionNode/"><code>ObjectTypeDefinitionNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.FieldDefinitionNode/"><code>FieldDefinitionNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.InputValueDefinitionNode/"><code>InputValueDefinitionNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.InterfaceTypeDefinitionNode/"><code>InterfaceTypeDefinitionNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.UnionTypeDefinitionNode/"><code>UnionTypeDefinitionNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.EnumTypeDefinitionNode/"><code>EnumTypeDefinitionNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.EnumValueDefinitionNode/"><code>EnumValueDefinitionNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.InputObjectTypeDefinitionNode/"><code>InputObjectTypeDefinitionNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.DirectiveDefinitionNode/"><code>DirectiveDefinitionNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.SchemaExtensionNode/"><code>SchemaExtensionNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.ScalarTypeExtensionNode/"><code>ScalarTypeExtensionNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.ObjectTypeExtensionNode/"><code>ObjectTypeExtensionNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.InterfaceTypeExtensionNode/"><code>InterfaceTypeExtensionNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.UnionTypeExtensionNode/"><code>UnionTypeExtensionNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.EnumTypeExtensionNode/"><code>EnumTypeExtensionNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.InputObjectTypeExtensionNode/"><code>InputObjectTypeExtensionNode</code></a></p>
+<p>The list of all possible AST node types.</p>
+<h4 id="defined-in">Defined in</h4>
+<p>sdk/node_modules/graphql/language/ast.d.ts:108</p>
+<hr />
+<h3 id="accesslist">AccessList</h3>
+<p>Ƭ <strong>AccessList</strong>: { <code>address</code>: <code>string</code> ; <code>storageKeys</code>: <code>string</code>[]  }[]</p>
+<h4 id="defined-in_1">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/transactions/lib/index.d.ts:3</p>
+<hr />
+<h3 id="accesslistish">AccessListish</h3>
+<p>Ƭ <strong>AccessListish</strong>: <a href="./#accesslist"><code>AccessList</code></a> | [<code>string</code>, <code>string</code>[]][] | <a href="./#record"><code>Record</code></a>&lt;<code>string</code>, <code>string</code>[]></p>
+<h4 id="defined-in_2">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/transactions/lib/index.d.ts:7</p>
+<hr />
+<h3 id="activityfn">ActivityFn</h3>
+<p>Ƭ <strong>ActivityFn</strong>: (<code>location</code>: <a href="./#location"><code>Location</code></a>, <code>pathToActiveWhen</code>: (<code>path</code>: <code>string</code>, <code>exact?</code>: <code>boolean</code>) =&gt; (<code>location</code>: <a href="./#location"><code>Location</code></a>) =&gt; <code>boolean</code>, <code>layoutConfig?</code>: <a href="../../interfaces/akashaproject_ui_app_loader._internal_.LayoutConfig/"><code>LayoutConfig</code></a>) =&gt; <code>boolean</code></p>
+<h4 id="type-declaration">Type declaration</h4>
+<p>▸ (<code>location</code>, <code>pathToActiveWhen</code>, <code>layoutConfig?</code>): <code>boolean</code></p>
+<h5 id="parameters">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>location</code></td>
+<td align="left"><a href="./#location"><code>Location</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>pathToActiveWhen</code></td>
+<td align="left">(<code>path</code>: <code>string</code>, <code>exact?</code>: <code>boolean</code>) =&gt; (<code>location</code>: <a href="./#location"><code>Location</code></a>) =&gt; <code>boolean</code></td>
+</tr>
+<tr>
+<td align="left"><code>layoutConfig?</code></td>
+<td align="left"><a href="../../interfaces/akashaproject_ui_app_loader._internal_.LayoutConfig/"><code>LayoutConfig</code></a></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns">Returns</h5>
+<p><code>boolean</code></p>
+<h4 id="defined-in_3">Defined in</h4>
+<p>ui/typings/lib/app-loader.d.ts:15</p>
+<hr />
+<h3 id="appnameselector">AppNameSelector</h3>
+<p>Ƭ <strong>AppNameSelector</strong>: (<code>apps</code>: <a href="../../interfaces/akashaproject_ui_app_loader._internal_.IAppConfig/"><code>IAppConfig</code></a>[]) =&gt; <code>string</code></p>
+<h4 id="type-declaration_1">Type declaration</h4>
+<p>▸ (<code>apps</code>): <code>string</code></p>
+<h5 id="parameters_1">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>apps</code></td>
+<td align="left"><a href="../../interfaces/akashaproject_ui_app_loader._internal_.IAppConfig/"><code>IAppConfig</code></a>[]</td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_1">Returns</h5>
+<p><code>string</code></p>
+<h4 id="defined-in_4">Defined in</h4>
+<p>ui/typings/lib/index.d.ts:17</p>
+<hr />
+<h3 id="apporwidgetdefinition">AppOrWidgetDefinition</h3>
+<p>Ƭ <strong>AppOrWidgetDefinition</strong>: <code>string</code> | { <code>name</code>: <code>string</code> ; <code>version</code>: <code>string</code>  }</p>
+<h4 id="defined-in_5">Defined in</h4>
+<p>ui/typings/lib/app-loader.d.ts:156</p>
+<hr />
+<h3 id="arraybufferlike">ArrayBufferLike</h3>
+<p>Ƭ <strong>ArrayBufferLike</strong>: <code>ArrayBufferTypes</code>[keyof <code>ArrayBufferTypes</code>]</p>
+<h4 id="defined-in_6">Defined in</h4>
+<p>node_modules/typescript/lib/lib.es5.d.ts:1592</p>
+<hr />
+<h3 id="bignumberish">BigNumberish</h3>
+<p>Ƭ <strong>BigNumberish</strong>: <a href="../../classes/akashaproject_ui_app_loader._internal_.BigNumber/"><code>BigNumber</code></a> | <a href="./#bytes"><code>Bytes</code></a> | <code>bigint</code> | <code>string</code> | <code>number</code></p>
+<h4 id="defined-in_7">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/bignumber/lib/bignumber.d.ts:2</p>
+<hr />
+<h3 id="blocktag">BlockTag</h3>
+<p>Ƭ <strong>BlockTag</strong>: <code>string</code> | <code>number</code></p>
+<h4 id="defined-in_8">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/abstract-provider/lib/index.d.ts:32</p>
+<hr />
+<h3 id="bodyinit">BodyInit</h3>
+<p>Ƭ <strong>BodyInit</strong>: <a href="./#readablestream"><code>ReadableStream</code></a> | <a href="./#xmlhttprequestbodyinit"><code>XMLHttpRequestBodyInit</code></a></p>
+<h4 id="defined-in_9">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:18723</p>
+<hr />
+<h3 id="buffersource">BufferSource</h3>
+<p>Ƭ <strong>BufferSource</strong>: <a href="../../interfaces/akashaproject_ui_app_loader._internal_.ArrayBufferView/"><code>ArrayBufferView</code></a> | <code>ArrayBuffer</code></p>
+<h4 id="defined-in_10">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:18724</p>
+<hr />
+<h3 id="bytes">Bytes</h3>
+<p>Ƭ <strong>Bytes</strong>: <a href="../../interfaces/akashaproject_ui_app_loader._internal_.ArrayLike/"><code>ArrayLike</code></a>&lt;<code>number</code>></p>
+<h4 id="defined-in_11">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/bytes/lib/index.d.ts:1</p>
+<hr />
+<h3 id="byteslike">BytesLike</h3>
+<p>Ƭ <strong>BytesLike</strong>: <a href="./#bytes"><code>Bytes</code></a> | <code>string</code></p>
+<h4 id="defined-in_12">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/bytes/lib/index.d.ts:2</p>
+<hr />
+<h3 id="connectioninfo">ConnectionInfo</h3>
+<p>Ƭ <strong>ConnectionInfo</strong>: <code>Object</code></p>
+<h4 id="type-declaration_2">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>allowGzip?</code></td>
+<td align="left"><code>boolean</code></td>
+</tr>
+<tr>
+<td align="left"><code>allowInsecureAuthentication?</code></td>
+<td align="left"><code>boolean</code></td>
+</tr>
+<tr>
+<td align="left"><code>headers?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>password?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>throttleLimit?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>throttleSlotInterval?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>timeout?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>url</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>user?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>throttleCallback?</code></td>
+<td align="left">(<code>attempt</code>: <code>number</code>, <code>url</code>: <code>string</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_13">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/web/lib/index.d.ts:1</p>
+<hr />
+<h3 id="deferrable">Deferrable</h3>
+<p>Ƭ <strong>Deferrable</strong>&lt;<code>T</code>>: { [K in keyof T]: T[K] | Promise&lt;T[K]> }</p>
+<h4 id="type-parameters">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_14">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/properties/lib/index.d.ts:3</p>
+<hr />
+<h3 id="definitionnode">DefinitionNode</h3>
+<p>Ƭ <strong>DefinitionNode</strong>: <a href="./#executabledefinitionnode"><code>ExecutableDefinitionNode</code></a> | <a href="./#typesystemdefinitionnode"><code>TypeSystemDefinitionNode</code></a> | <a href="./#typesystemextensionnode"><code>TypeSystemExtensionNode</code></a></p>
+<h4 id="defined-in_15">Defined in</h4>
+<p>sdk/node_modules/graphql/language/ast.d.ts:218</p>
+<hr />
+<h3 id="eventdatatypes">EventDataTypes</h3>
+<p>Ƭ <strong>EventDataTypes</strong>: <code>Object</code></p>
+<h4 id="type-declaration_3">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>entryId?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>entryType?</code></td>
+<td align="left"><a href="../../enums/akashaproject_ui_app_loader._internal_.ItemTypes/"><code>ItemTypes</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>name</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>version?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_16">Defined in</h4>
+<p>ui/typings/lib/app-loader.d.ts:240</p>
+<hr />
+<h3 id="eventlisteneroreventlistenerobject">EventListenerOrEventListenerObject</h3>
+<p>Ƭ <strong>EventListenerOrEventListenerObject</strong>: <a href="../../interfaces/akashaproject_ui_app_loader._internal_.EventListener/"><code>EventListener</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.EventListenerObject/"><code>EventListenerObject</code></a></p>
+<h4 id="defined-in_17">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:18737</p>
+<hr />
+<h3 id="eventtype">EventType</h3>
+<p>Ƭ <strong>EventType</strong>: <code>string</code> | (<code>string</code> | <code>string</code>[])[] | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.EventFilter/"><code>EventFilter</code></a> | <a href="../../classes/akashaproject_ui_app_loader._internal_.ForkEvent/"><code>ForkEvent</code></a></p>
+<h4 id="defined-in_18">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/abstract-provider/lib/index.d.ts:119</p>
+<hr />
+<h3 id="executabledefinitionnode">ExecutableDefinitionNode</h3>
+<p>Ƭ <strong>ExecutableDefinitionNode</strong>: <a href="../../interfaces/akashaproject_ui_app_loader._internal_.OperationDefinitionNode/"><code>OperationDefinitionNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.FragmentDefinitionNode/"><code>FragmentDefinitionNode</code></a></p>
+<h4 id="defined-in_19">Defined in</h4>
+<p>sdk/node_modules/graphql/language/ast.d.ts:223</p>
+<hr />
+<h3 id="externalprovider">ExternalProvider</h3>
+<p>Ƭ <strong>ExternalProvider</strong>: <code>Object</code></p>
+<h4 id="type-declaration_4">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>host?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>isMetaMask?</code></td>
+<td align="left"><code>boolean</code></td>
+</tr>
+<tr>
+<td align="left"><code>isStatus?</code></td>
+<td align="left"><code>boolean</code></td>
+</tr>
+<tr>
+<td align="left"><code>path?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>request?</code></td>
+<td align="left">(<code>request</code>: { <code>method</code>: <code>string</code> ; <code>params?</code>: <code>any</code>[]  }) =&gt; <code>Promise</code>&lt;<code>any</code>></td>
+</tr>
+<tr>
+<td align="left"><code>send?</code></td>
+<td align="left">(<code>request</code>: { <code>method</code>: <code>string</code> ; <code>params?</code>: <code>any</code>[]  }, <code>callback</code>: (<code>error</code>: <code>any</code>, <code>response</code>: <code>any</code>) =&gt; <code>void</code>) =&gt; <code>void</code></td>
+</tr>
+<tr>
+<td align="left"><code>sendAsync?</code></td>
+<td align="left">(<code>request</code>: { <code>method</code>: <code>string</code> ; <code>params?</code>: <code>any</code>[]  }, <code>callback</code>: (<code>error</code>: <code>any</code>, <code>response</code>: <code>any</code>) =&gt; <code>void</code>) =&gt; <code>void</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_20">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/web3-provider.d.ts:3</p>
+<hr />
+<h3 id="formdataentryvalue">FormDataEntryValue</h3>
+<p>Ƭ <strong>FormDataEntryValue</strong>: <a href="./#file"><code>File</code></a> | <code>string</code></p>
+<h4 id="defined-in_21">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:18739</p>
+<hr />
+<h3 id="formatfunc">FormatFunc</h3>
+<p>Ƭ <strong>FormatFunc</strong>: (<code>value</code>: <code>any</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_5">Type declaration</h4>
+<p>▸ (<code>value</code>): <code>any</code></p>
+<h5 id="parameters_2">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>value</code></td>
+<td align="left"><code>any</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_2">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_22">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/formatter.d.ts:4</p>
+<hr />
+<h3 id="formatfuncs">FormatFuncs</h3>
+<p>Ƭ <strong>FormatFuncs</strong>: <code>Object</code></p>
+<h4 id="index-signature">Index signature</h4>
+<p>▪ [key: <code>string</code>]: <a href="./#formatfunc"><code>FormatFunc</code></a></p>
+<h4 id="defined-in_23">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/formatter.d.ts:5</p>
+<hr />
+<h3 id="formats">Formats</h3>
+<p>Ƭ <strong>Formats</strong>: <code>Object</code></p>
+<h4 id="type-declaration_6">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>block</code></td>
+<td align="left"><a href="./#formatfuncs"><code>FormatFuncs</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>blockWithTransactions</code></td>
+<td align="left"><a href="./#formatfuncs"><code>FormatFuncs</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>filter</code></td>
+<td align="left"><a href="./#formatfuncs"><code>FormatFuncs</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>filterLog</code></td>
+<td align="left"><a href="./#formatfuncs"><code>FormatFuncs</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>receipt</code></td>
+<td align="left"><a href="./#formatfuncs"><code>FormatFuncs</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>receiptLog</code></td>
+<td align="left"><a href="./#formatfuncs"><code>FormatFuncs</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>transaction</code></td>
+<td align="left"><a href="./#formatfuncs"><code>FormatFuncs</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>transactionRequest</code></td>
+<td align="left"><a href="./#formatfuncs"><code>FormatFuncs</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_24">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/formatter.d.ts:8</p>
+<hr />
+<h3 id="headersinit">HeadersInit</h3>
+<p>Ƭ <strong>HeadersInit</strong>: <code>string</code>[][] | <a href="./#record"><code>Record</code></a>&lt;<code>string</code>, <code>string</code>> | <a href="./#headers"><code>Headers</code></a></p>
+<h4 id="defined-in_25">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:18755</p>
+<hr />
+<h3 id="iquicklru">IQuickLRU</h3>
+<p>Ƭ <strong>IQuickLRU</strong>: <a href="../../classes/akashaproject_ui_app_loader._internal_.default/"><code>default</code></a>&lt;<code>string</code>, <code>any</code>></p>
+<h4 id="defined-in_26">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/sdk/src/stash/index.ts#L8">sdk/src/stash/index.ts:8</a></p>
+<hr />
+<h3 id="iteratorresult">IteratorResult</h3>
+<p>Ƭ <strong>IteratorResult</strong>&lt;<code>T</code>, <code>TReturn</code>>: <a href="../../interfaces/akashaproject_ui_app_loader._internal_.IteratorYieldResult/"><code>IteratorYieldResult</code></a>&lt;<code>T</code>> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.IteratorReturnResult/"><code>IteratorReturnResult</code></a>&lt;<code>TReturn</code>></p>
+<h4 id="type-parameters_1">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left"><code>T</code></td>
+</tr>
+<tr>
+<td align="left"><code>TReturn</code></td>
+<td align="left"><code>any</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_27">Defined in</h4>
+<p>node_modules/typescript/lib/lib.es2015.iterable.d.ts:41</p>
+<hr />
+<h3 id="jsonrpcfetchfunc">JsonRpcFetchFunc</h3>
+<p>Ƭ <strong>JsonRpcFetchFunc</strong>: (<code>method</code>: <code>string</code>, <code>params?</code>: <code>any</code>[]) =&gt; <code>Promise</code>&lt;<code>any</code>></p>
+<h4 id="type-declaration_7">Type declaration</h4>
+<p>▸ (<code>method</code>, <code>params?</code>): <code>Promise</code>&lt;<code>any</code>></p>
+<h5 id="parameters_3">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>method</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>params?</code></td>
+<td align="left"><code>any</code>[]</td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_3">Returns</h5>
+<p><code>Promise</code>&lt;<code>any</code>></p>
+<h4 id="defined-in_28">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/web3-provider.d.ts:21</p>
+<hr />
+<h3 id="listener">Listener</h3>
+<p>Ƭ <strong>Listener</strong>: (...<code>args</code>: <code>any</code>[]) =&gt; <code>void</code></p>
+<h4 id="type-declaration_8">Type declaration</h4>
+<p>▸ (...<code>args</code>): <code>void</code></p>
+<h5 id="parameters_4">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>...args</code></td>
+<td align="left"><code>any</code>[]</td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_4">Returns</h5>
+<p><code>void</code></p>
+<h4 id="defined-in_29">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/abstract-provider/lib/index.d.ts:120</p>
+<hr />
+<h3 id="messageeventsource">MessageEventSource</h3>
+<p>Ƭ <strong>MessageEventSource</strong>: <a href="./#windowproxy"><code>WindowProxy</code></a> | <a href="./#messageport"><code>MessagePort</code></a> | <a href="./#serviceworker"><code>ServiceWorker</code></a></p>
+<h4 id="defined-in_30">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:18762</p>
+<hr />
+<h3 id="navigationfn">NavigationFn</h3>
+<p>Ƭ <strong>NavigationFn</strong>: (<code>stringfyFn</code>: (<code>obj</code>: <code>unknown</code>) =&gt; <code>string</code>, <code>currentRedirect?</code>: <code>string</code>) =&gt; <code>string</code></p>
+<h4 id="type-declaration_9">Type declaration</h4>
+<p>▸ (<code>stringfyFn</code>, <code>currentRedirect?</code>): <code>string</code></p>
+<h5 id="parameters_5">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>stringfyFn</code></td>
+<td align="left">(<code>obj</code>: <code>unknown</code>) =&gt; <code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>currentRedirect?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_5">Returns</h5>
+<p><code>string</code></p>
+<h4 id="defined-in_31">Defined in</h4>
+<p>ui/typings/lib/index.d.ts:24</p>
+<hr />
+<h3 id="network">Network</h3>
+<p>Ƭ <strong>Network</strong>: <code>Object</code></p>
+<h4 id="type-declaration_10">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>chainId</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>ensAddress?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>name</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>_defaultProvider?</code></td>
+<td align="left">(<code>providers</code>: <code>any</code>, <code>options?</code>: <code>any</code>) =&gt; <code>any</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_32">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/networks/lib/types.d.ts:1</p>
+<hr />
+<h3 id="networkish">Networkish</h3>
+<p>Ƭ <strong>Networkish</strong>: <a href="./#network"><code>Network</code></a> | <code>string</code> | <code>number</code></p>
+<h4 id="defined-in_33">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/networks/lib/types.d.ts:7</p>
+<hr />
+<h3 id="nextlink">NextLink</h3>
+<p>Ƭ <strong>NextLink</strong>: (<code>operation</code>: <a href="../../interfaces/akashaproject_ui_app_loader._internal_.Operation/"><code>Operation</code></a>) =&gt; <a href="../../classes/akashaproject_ui_app_loader._internal_.Observable/"><code>Observable</code></a>&lt;<a href="../../interfaces/akashaproject_ui_app_loader._internal_.FetchResult/"><code>FetchResult</code></a>></p>
+<h4 id="type-declaration_11">Type declaration</h4>
+<p>▸ (<code>operation</code>): <a href="../../classes/akashaproject_ui_app_loader._internal_.Observable/"><code>Observable</code></a>&lt;<a href="../../interfaces/akashaproject_ui_app_loader._internal_.FetchResult/"><code>FetchResult</code></a>></p>
+<h5 id="parameters_6">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>operation</code></td>
+<td align="left"><a href="../../interfaces/akashaproject_ui_app_loader._internal_.Operation/"><code>Operation</code></a></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_6">Returns</h5>
+<p><a href="../../classes/akashaproject_ui_app_loader._internal_.Observable/"><code>Observable</code></a>&lt;<a href="../../interfaces/akashaproject_ui_app_loader._internal_.FetchResult/"><code>FetchResult</code></a>></p>
+<h4 id="defined-in_34">Defined in</h4>
+<p>sdk/node_modules/@apollo/client/link/core/types.d.ts:24</p>
+<hr />
+<h3 id="operationtypenode">OperationTypeNode</h3>
+<p>Ƭ <strong>OperationTypeNode</strong>: <code>"query"</code> | <code>"mutation"</code> | <code>"subscription"</code></p>
+<h4 id="defined-in_35">Defined in</h4>
+<p>sdk/node_modules/graphql/language/ast.d.ts:237</p>
+<hr />
+<h3 id="parcel">Parcel</h3>
+<p>Ƭ <strong>Parcel</strong>&lt;<code>ExtraProps</code>>: <code>Object</code></p>
+<h4 id="type-parameters_2">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ExtraProps</code></td>
+<td align="left"><a href="../../interfaces/akashaproject_ui_app_loader._internal_.CustomProps/"><code>CustomProps</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="type-declaration_12">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>bootstrapPromise</code></td>
+<td align="left"><code>Promise</code>&lt;<code>null</code>></td>
+</tr>
+<tr>
+<td align="left"><code>loadPromise</code></td>
+<td align="left"><code>Promise</code>&lt;<code>null</code>></td>
+</tr>
+<tr>
+<td align="left"><code>mountPromise</code></td>
+<td align="left"><code>Promise</code>&lt;<code>null</code>></td>
+</tr>
+<tr>
+<td align="left"><code>unmountPromise</code></td>
+<td align="left"><code>Promise</code>&lt;<code>null</code>></td>
+</tr>
+<tr>
+<td align="left"><code>getStatus</code></td>
+<td align="left">() =&gt; <code>"NOT_LOADED"</code> | <code>"LOADING_SOURCE_CODE"</code> | <code>"NOT_BOOTSTRAPPED"</code> | <code>"BOOTSTRAPPING"</code> | <code>"NOT_MOUNTED"</code> | <code>"MOUNTING"</code> | <code>"MOUNTED"</code> | <code>"UPDATING"</code> | <code>"UNMOUNTING"</code> | <code>"UNLOADING"</code> | <code>"SKIP_BECAUSE_BROKEN"</code> | <code>"LOAD_ERROR"</code></td>
+</tr>
+<tr>
+<td align="left"><code>mount</code></td>
+<td align="left">() =&gt; <code>Promise</code>&lt;<code>null</code>></td>
+</tr>
+<tr>
+<td align="left"><code>unmount</code></td>
+<td align="left">() =&gt; <code>Promise</code>&lt;<code>null</code>></td>
+</tr>
+<tr>
+<td align="left"><code>update?</code></td>
+<td align="left">(<code>customProps</code>: <code>ExtraProps</code>) =&gt; <code>Promise</code>&lt;<code>any</code>></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_36">Defined in</h4>
+<p>ui/typings/node_modules/single-spa/typings/single-spa.d.ts:30</p>
+<hr />
+<h3 id="pathnameselector">PathNameSelector</h3>
+<p>Ƭ <strong>PathNameSelector</strong>: (<code>appRoutes</code>: <a href="../../interfaces/akashaproject_ui_app_loader._internal_.IAppConfig/"><code>IAppConfig</code></a>[<code>"routes"</code>]) =&gt; <code>string</code></p>
+<h4 id="type-declaration_13">Type declaration</h4>
+<p>▸ (<code>appRoutes</code>): <code>string</code></p>
+<h5 id="parameters_7">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>appRoutes</code></td>
+<td align="left"><a href="../../interfaces/akashaproject_ui_app_loader._internal_.IAppConfig/"><code>IAppConfig</code></a>[<code>"routes"</code>]</td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_7">Returns</h5>
+<p><code>string</code></p>
+<h4 id="defined-in_37">Defined in</h4>
+<p>ui/typings/lib/index.d.ts:18</p>
+<hr />
+<h3 id="progresscallback">ProgressCallback</h3>
+<p>Ƭ <strong>ProgressCallback</strong>: (<code>percent</code>: <code>number</code>) =&gt; <code>void</code></p>
+<h4 id="type-declaration_14">Type declaration</h4>
+<p>▸ (<code>percent</code>): <code>void</code></p>
+<h5 id="parameters_8">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>percent</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_8">Returns</h5>
+<p><code>void</code></p>
+<h4 id="defined-in_38">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/json-wallets/lib/keystore.d.ts:18</p>
+<hr />
+<h3 id="readablestreamdefaultreadresult">ReadableStreamDefaultReadResult</h3>
+<p>Ƭ <strong>ReadableStreamDefaultReadResult</strong>&lt;<code>T</code>>: <a href="../../interfaces/akashaproject_ui_app_loader._internal_.ReadableStreamDefaultReadValueResult/"><code>ReadableStreamDefaultReadValueResult</code></a>&lt;<code>T</code>> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.ReadableStreamDefaultReadDoneResult/"><code>ReadableStreamDefaultReadDoneResult</code></a></p>
+<h4 id="type-parameters_3">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_39">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:18769</p>
+<hr />
+<h3 id="readonly">Readonly</h3>
+<p>Ƭ <strong>Readonly</strong>&lt;<code>T</code>>: { readonly [P in keyof T]: T[P] }</p>
+<p>Make all properties in T readonly</p>
+<h4 id="type-parameters_4">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_40">Defined in</h4>
+<p>node_modules/typescript/lib/lib.es5.d.ts:1485</p>
+<hr />
+<h3 id="record">Record</h3>
+<p>Ƭ <strong>Record</strong>&lt;<code>K</code>, <code>T</code>>: { [P in K]: T }</p>
+<p>Construct a type with a set of properties K of type T</p>
+<h4 id="type-parameters_5">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>K</code></td>
+<td align="left">extends keyof <code>any</code></td>
+</tr>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left"><code>T</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_41">Defined in</h4>
+<p>node_modules/typescript/lib/lib.es5.d.ts:1499</p>
+<hr />
+<h3 id="referrerpolicy">ReferrerPolicy</h3>
+<p>Ƭ <strong>ReferrerPolicy</strong>: <code>""</code> | <code>"no-referrer"</code> | <code>"no-referrer-when-downgrade"</code> | <code>"origin"</code> | <code>"origin-when-cross-origin"</code> | <code>"same-origin"</code> | <code>"strict-origin"</code> | <code>"strict-origin-when-cross-origin"</code> | <code>"unsafe-url"</code></p>
+<h4 id="defined-in_42">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:18893</p>
+<hr />
+<h3 id="requestcache">RequestCache</h3>
+<p>Ƭ <strong>RequestCache</strong>: <code>"default"</code> | <code>"force-cache"</code> | <code>"no-cache"</code> | <code>"no-store"</code> | <code>"only-if-cached"</code> | <code>"reload"</code></p>
+<h4 id="defined-in_43">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:18895</p>
+<hr />
+<h3 id="requestcredentials">RequestCredentials</h3>
+<p>Ƭ <strong>RequestCredentials</strong>: <code>"include"</code> | <code>"omit"</code> | <code>"same-origin"</code></p>
+<h4 id="defined-in_44">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:18896</p>
+<hr />
+<h3 id="requestdestination">RequestDestination</h3>
+<p>Ƭ <strong>RequestDestination</strong>: <code>""</code> | <code>"audio"</code> | <code>"audioworklet"</code> | <code>"document"</code> | <code>"embed"</code> | <code>"font"</code> | <code>"frame"</code> | <code>"iframe"</code> | <code>"image"</code> | <code>"manifest"</code> | <code>"object"</code> | <code>"paintworklet"</code> | <code>"report"</code> | <code>"script"</code> | <code>"sharedworker"</code> | <code>"style"</code> | <code>"track"</code> | <code>"video"</code> | <code>"worker"</code> | <code>"xslt"</code></p>
+<h4 id="defined-in_45">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:18897</p>
+<hr />
+<h3 id="requesthandler">RequestHandler</h3>
+<p>Ƭ <strong>RequestHandler</strong>: (<code>operation</code>: <a href="../../interfaces/akashaproject_ui_app_loader._internal_.Operation/"><code>Operation</code></a>, <code>forward</code>: <a href="./#nextlink"><code>NextLink</code></a>) =&gt; <a href="../../classes/akashaproject_ui_app_loader._internal_.Observable/"><code>Observable</code></a>&lt;<a href="../../interfaces/akashaproject_ui_app_loader._internal_.FetchResult/"><code>FetchResult</code></a>> | <code>null</code></p>
+<h4 id="type-declaration_15">Type declaration</h4>
+<p>▸ (<code>operation</code>, <code>forward</code>): <a href="../../classes/akashaproject_ui_app_loader._internal_.Observable/"><code>Observable</code></a>&lt;<a href="../../interfaces/akashaproject_ui_app_loader._internal_.FetchResult/"><code>FetchResult</code></a>> | <code>null</code></p>
+<h5 id="parameters_9">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>operation</code></td>
+<td align="left"><a href="../../interfaces/akashaproject_ui_app_loader._internal_.Operation/"><code>Operation</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>forward</code></td>
+<td align="left"><a href="./#nextlink"><code>NextLink</code></a></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_9">Returns</h5>
+<p><a href="../../classes/akashaproject_ui_app_loader._internal_.Observable/"><code>Observable</code></a>&lt;<a href="../../interfaces/akashaproject_ui_app_loader._internal_.FetchResult/"><code>FetchResult</code></a>> | <code>null</code></p>
+<h4 id="defined-in_46">Defined in</h4>
+<p>sdk/node_modules/@apollo/client/link/core/types.d.ts:25</p>
+<hr />
+<h3 id="requestinfo">RequestInfo</h3>
+<p>Ƭ <strong>RequestInfo</strong>: <a href="./#request"><code>Request</code></a> | <code>string</code></p>
+<h4 id="defined-in_47">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:18772</p>
+<hr />
+<h3 id="requestmode">RequestMode</h3>
+<p>Ƭ <strong>RequestMode</strong>: <code>"cors"</code> | <code>"navigate"</code> | <code>"no-cors"</code> | <code>"same-origin"</code></p>
+<h4 id="defined-in_48">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:18898</p>
+<hr />
+<h3 id="requestredirect">RequestRedirect</h3>
+<p>Ƭ <strong>RequestRedirect</strong>: <code>"error"</code> | <code>"follow"</code> | <code>"manual"</code></p>
+<h4 id="defined-in_49">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:18899</p>
+<hr />
+<h3 id="responsetype">ResponseType</h3>
+<p>Ƭ <strong>ResponseType</strong>: <code>"basic"</code> | <code>"cors"</code> | <code>"default"</code> | <code>"error"</code> | <code>"opaque"</code> | <code>"opaqueredirect"</code></p>
+<h4 id="defined-in_50">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:18903</p>
+<hr />
+<h3 id="selectionnode">SelectionNode</h3>
+<p>Ƭ <strong>SelectionNode</strong>: <a href="../../interfaces/akashaproject_ui_app_loader._internal_.FieldNode/"><code>FieldNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.FragmentSpreadNode/"><code>FragmentSpreadNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.InlineFragmentNode/"><code>InlineFragmentNode</code></a></p>
+<h4 id="defined-in_51">Defined in</h4>
+<p>sdk/node_modules/graphql/language/ast.d.ts:260</p>
+<hr />
+<h3 id="servicecallresult">ServiceCallResult</h3>
+<p>Ƭ <strong>ServiceCallResult</strong>&lt;<code>T</code>>: <code>Observable</code>&lt;{ <code>data</code>: <code>T</code>  }></p>
+<h4 id="type-parameters_6">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_52">Defined in</h4>
+<p>sdk/typings/lib/interfaces/responses.d.ts:3</p>
+<hr />
+<h3 id="serviceworkerstate">ServiceWorkerState</h3>
+<p>Ƭ <strong>ServiceWorkerState</strong>: <code>"activated"</code> | <code>"activating"</code> | <code>"installed"</code> | <code>"installing"</code> | <code>"parsed"</code> | <code>"redundant"</code></p>
+<h4 id="defined-in_53">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:18910</p>
+<hr />
+<h3 id="subscriber">Subscriber</h3>
+<p>Ƭ <strong>Subscriber</strong>&lt;<code>T</code>>: (<code>observer</code>: <a href="../../interfaces/akashaproject_ui_app_loader._internal_.SubscriptionObserver/"><code>SubscriptionObserver</code></a>&lt;<code>T</code>>) =&gt; <code>void</code> | () =&gt; <code>void</code> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.Subscription/"><code>Subscription</code></a></p>
+<h4 id="type-parameters_7">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="type-declaration_16">Type declaration</h4>
+<p>▸ (<code>observer</code>): <code>void</code> | () =&gt; <code>void</code> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.Subscription/"><code>Subscription</code></a></p>
+<h5 id="parameters_10">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>observer</code></td>
+<td align="left"><a href="../../interfaces/akashaproject_ui_app_loader._internal_.SubscriptionObserver/"><code>SubscriptionObserver</code></a>&lt;<code>T</code>></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_10">Returns</h5>
+<p><code>void</code> | () =&gt; <code>void</code> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.Subscription/"><code>Subscription</code></a></p>
+<h4 id="defined-in_54">Defined in</h4>
+<p>sdk/node_modules/zen-observable-ts/module.d.ts:20</p>
+<hr />
+<h3 id="tokenkindenum">TokenKindEnum</h3>
+<p>Ƭ <strong>TokenKindEnum</strong>: typeof <a href="./#tokenkind"><code>TokenKind</code></a>[keyof typeof <a href="./#tokenkind"><code>TokenKind</code></a>]</p>
+<p>The enum type representing the token kinds values.</p>
+<h4 id="defined-in_55">Defined in</h4>
+<p>sdk/node_modules/graphql/language/tokenKind.d.ts:33</p>
+<hr />
+<h3 id="transactionrequest">TransactionRequest</h3>
+<p>Ƭ <strong>TransactionRequest</strong>: <code>Object</code></p>
+<h4 id="type-declaration_17">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>accessList?</code></td>
+<td align="left"><a href="./#accesslistish"><code>AccessListish</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>chainId?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>customData?</code></td>
+<td align="left"><a href="./#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>></td>
+</tr>
+<tr>
+<td align="left"><code>data?</code></td>
+<td align="left"><a href="./#byteslike"><code>BytesLike</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>from?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>gasLimit?</code></td>
+<td align="left"><a href="./#bignumberish"><code>BigNumberish</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>gasPrice?</code></td>
+<td align="left"><a href="./#bignumberish"><code>BigNumberish</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>maxFeePerGas?</code></td>
+<td align="left"><a href="./#bignumberish"><code>BigNumberish</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>maxPriorityFeePerGas?</code></td>
+<td align="left"><a href="./#bignumberish"><code>BigNumberish</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>nonce?</code></td>
+<td align="left"><a href="./#bignumberish"><code>BigNumberish</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>to?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>type?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>value?</code></td>
+<td align="left"><a href="./#bignumberish"><code>BigNumberish</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_56">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/abstract-provider/lib/index.d.ts:7</p>
+<hr />
+<h3 id="transferable">Transferable</h3>
+<p>Ƭ <strong>Transferable</strong>: <code>ArrayBuffer</code> | <a href="./#messageport"><code>MessagePort</code></a> | <a href="./#imagebitmap"><code>ImageBitmap</code></a></p>
+<h4 id="defined-in_57">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:18775</p>
+<hr />
+<h3 id="typedefinitionnode">TypeDefinitionNode</h3>
+<p>Ƭ <strong>TypeDefinitionNode</strong>: <a href="../../interfaces/akashaproject_ui_app_loader._internal_.ScalarTypeDefinitionNode/"><code>ScalarTypeDefinitionNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.ObjectTypeDefinitionNode/"><code>ObjectTypeDefinitionNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.InterfaceTypeDefinitionNode/"><code>InterfaceTypeDefinitionNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.UnionTypeDefinitionNode/"><code>UnionTypeDefinitionNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.EnumTypeDefinitionNode/"><code>EnumTypeDefinitionNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.InputObjectTypeDefinitionNode/"><code>InputObjectTypeDefinitionNode</code></a></p>
+<h4 id="defined-in_58">Defined in</h4>
+<p>sdk/node_modules/graphql/language/ast.d.ts:431</p>
+<hr />
+<h3 id="typeextensionnode">TypeExtensionNode</h3>
+<p>Ƭ <strong>TypeExtensionNode</strong>: <a href="../../interfaces/akashaproject_ui_app_loader._internal_.ScalarTypeExtensionNode/"><code>ScalarTypeExtensionNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.ObjectTypeExtensionNode/"><code>ObjectTypeExtensionNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.InterfaceTypeExtensionNode/"><code>InterfaceTypeExtensionNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.UnionTypeExtensionNode/"><code>UnionTypeExtensionNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.EnumTypeExtensionNode/"><code>EnumTypeExtensionNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.InputObjectTypeExtensionNode/"><code>InputObjectTypeExtensionNode</code></a></p>
+<h4 id="defined-in_59">Defined in</h4>
+<p>sdk/node_modules/graphql/language/ast.d.ts:547</p>
+<hr />
+<h3 id="typenode">TypeNode</h3>
+<p>Ƭ <strong>TypeNode</strong>: <a href="../../interfaces/akashaproject_ui_app_loader._internal_.NamedTypeNode/"><code>NamedTypeNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.ListTypeNode/"><code>ListTypeNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.NonNullTypeNode/"><code>NonNullTypeNode</code></a></p>
+<h4 id="defined-in_60">Defined in</h4>
+<p>sdk/node_modules/graphql/language/ast.d.ts:387</p>
+<hr />
+<h3 id="typesystemdefinitionnode">TypeSystemDefinitionNode</h3>
+<p>Ƭ <strong>TypeSystemDefinitionNode</strong>: <a href="../../interfaces/akashaproject_ui_app_loader._internal_.SchemaDefinitionNode/"><code>SchemaDefinitionNode</code></a> | <a href="./#typedefinitionnode"><code>TypeDefinitionNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.DirectiveDefinitionNode/"><code>DirectiveDefinitionNode</code></a></p>
+<h4 id="defined-in_61">Defined in</h4>
+<p>sdk/node_modules/graphql/language/ast.d.ts:409</p>
+<hr />
+<h3 id="typesystemextensionnode">TypeSystemExtensionNode</h3>
+<p>Ƭ <strong>TypeSystemExtensionNode</strong>: <a href="../../interfaces/akashaproject_ui_app_loader._internal_.SchemaExtensionNode/"><code>SchemaExtensionNode</code></a> | <a href="./#typeextensionnode"><code>TypeExtensionNode</code></a></p>
+<h4 id="defined-in_62">Defined in</h4>
+<p>sdk/node_modules/graphql/language/ast.d.ts:536</p>
+<hr />
+<h3 id="valuenode">ValueNode</h3>
+<p>Ƭ <strong>ValueNode</strong>: <a href="../../interfaces/akashaproject_ui_app_loader._internal_.VariableNode/"><code>VariableNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.IntValueNode/"><code>IntValueNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.FloatValueNode/"><code>FloatValueNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.StringValueNode/"><code>StringValueNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.BooleanValueNode/"><code>BooleanValueNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.NullValueNode/"><code>NullValueNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.EnumValueNode/"><code>EnumValueNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.ListValueNode/"><code>ListValueNode</code></a> | <a href="../../interfaces/akashaproject_ui_app_loader._internal_.ObjectValueNode/"><code>ObjectValueNode</code></a></p>
+<h4 id="defined-in_63">Defined in</h4>
+<p>sdk/node_modules/graphql/language/ast.d.ts:310</p>
+<hr />
+<h3 id="windowproxy">WindowProxy</h3>
+<p>Ƭ <strong>WindowProxy</strong>: <code>Window</code></p>
+<h4 id="defined-in_64">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:18780</p>
+<hr />
+<h3 id="xmlhttprequestbodyinit">XMLHttpRequestBodyInit</h3>
+<p>Ƭ <strong>XMLHttpRequestBodyInit</strong>: <a href="./#blob"><code>Blob</code></a> | <a href="./#buffersource"><code>BufferSource</code></a> | <a href="./#formdata"><code>FormData</code></a> | <a href="./#urlsearchparams"><code>URLSearchParams</code></a> | <code>string</code></p>
+<h4 id="defined-in_65">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:18781</p>
+<h2 id="variables_1">Variables</h2>
+<h3 id="blob">Blob</h3>
+<p>• <strong>Blob</strong>: <code>Object</code></p>
+<h4 id="type-declaration_18">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>prototype</code></td>
+<td align="left"><a href="./#blob"><code>Blob</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_66">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:2428</p>
+<hr />
+<h3 id="broadcastchannel">BroadcastChannel</h3>
+<p>• <strong>BroadcastChannel</strong>: <code>Object</code></p>
+<h4 id="type-declaration_19">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>prototype</code></td>
+<td align="left"><a href="./#broadcastchannel"><code>BroadcastChannel</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_67">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:2479</p>
+<hr />
+<h3 id="customevent">CustomEvent</h3>
+<p>• <strong>CustomEvent</strong>: <code>Object</code></p>
+<h4 id="type-declaration_20">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>prototype</code></td>
+<td align="left"><a href="./#customevent"><code>CustomEvent</code></a>&lt;<code>any</code>></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_68">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3690</p>
+<hr />
+<h3 id="domstringlist">DOMStringList</h3>
+<p>• <strong>DOMStringList</strong>: <code>Object</code></p>
+<h4 id="type-declaration_21">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>prototype</code></td>
+<td align="left"><a href="./#domstringlist"><code>DOMStringList</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_69">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:4005</p>
+<hr />
+<h3 id="error">Error</h3>
+<p>• <strong>Error</strong>: <code>ErrorConstructor</code></p>
+<h4 id="defined-in_70">Defined in</h4>
+<p>node_modules/typescript/lib/lib.es5.d.ts:984</p>
+<hr />
+<h3 id="errorevent">ErrorEvent</h3>
+<p>• <strong>ErrorEvent</strong>: <code>Object</code></p>
+<h4 id="type-declaration_22">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>prototype</code></td>
+<td align="left"><a href="./#errorevent"><code>ErrorEvent</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_71">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5053</p>
+<hr />
+<h3 id="file">File</h3>
+<p>• <strong>File</strong>: <code>Object</code></p>
+<h4 id="type-declaration_23">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>prototype</code></td>
+<td align="left"><a href="./#file"><code>File</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_72">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5243</p>
+<hr />
+<h3 id="formdata">FormData</h3>
+<p>• <strong>FormData</strong>: <code>Object</code></p>
+<h4 id="type-declaration_24">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>prototype</code></td>
+<td align="left"><a href="./#formdata"><code>FormData</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_73">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5441</p>
+<hr />
+<h3 id="headers">Headers</h3>
+<p>• <strong>Headers</strong>: <code>Object</code></p>
+<h4 id="type-declaration_25">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>prototype</code></td>
+<td align="left"><a href="./#headers"><code>Headers</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_74">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:8920</p>
+<hr />
+<h3 id="imagebitmap">ImageBitmap</h3>
+<p>• <strong>ImageBitmap</strong>: <code>Object</code></p>
+<h4 id="type-declaration_26">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>prototype</code></td>
+<td align="left"><a href="./#imagebitmap"><code>ImageBitmap</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_75">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:9462</p>
+<hr />
+<h3 id="location">Location</h3>
+<p>• <strong>Location</strong>: <code>Object</code></p>
+<h4 id="type-declaration_27">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>prototype</code></td>
+<td align="left"><a href="./#location"><code>Location</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_76">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:9683</p>
+<hr />
+<h3 id="messageevent">MessageEvent</h3>
+<p>• <strong>MessageEvent</strong>: <code>Object</code></p>
+<h4 id="type-declaration_28">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>prototype</code></td>
+<td align="left"><a href="./#messageevent"><code>MessageEvent</code></a>&lt;<code>any</code>></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_77">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10154</p>
+<hr />
+<h3 id="messageport">MessagePort</h3>
+<p>• <strong>MessagePort</strong>: <code>Object</code></p>
+<h4 id="type-declaration_29">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>prototype</code></td>
+<td align="left"><a href="./#messageport"><code>MessagePort</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_78">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10189</p>
+<hr />
+<h3 id="readablestream">ReadableStream</h3>
+<p>• <strong>ReadableStream</strong>: <code>Object</code></p>
+<h4 id="type-declaration_30">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>prototype</code></td>
+<td align="left"><a href="./#readablestream"><code>ReadableStream</code></a>&lt;<code>any</code>></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_79">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:11989</p>
+<hr />
+<h3 id="readablestreamdefaultreader">ReadableStreamDefaultReader</h3>
+<p>• <strong>ReadableStreamDefaultReader</strong>: <code>Object</code></p>
+<h4 id="type-declaration_31">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>prototype</code></td>
+<td align="left"><a href="./#readablestreamdefaultreader"><code>ReadableStreamDefaultReader</code></a>&lt;<code>any</code>></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_80">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:12011</p>
+<hr />
+<h3 id="request">Request</h3>
+<p>• <strong>Request</strong>: <code>Object</code></p>
+<h4 id="type-declaration_32">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>prototype</code></td>
+<td align="left"><a href="./#request"><code>Request</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_81">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:12103</p>
+<hr />
+<h3 id="response">Response</h3>
+<p>• <strong>Response</strong>: <code>Object</code></p>
+<h4 id="type-declaration_33">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>prototype</code></td>
+<td align="left"><a href="./#response"><code>Response</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>error</code></td>
+<td align="left">() =&gt; <a href="./#response"><code>Response</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>redirect</code></td>
+<td align="left">(<code>url</code>: <code>string</code> | <a href="./#url"><code>URL</code></a>, <code>status?</code>: <code>number</code>) =&gt; <a href="./#response"><code>Response</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_82">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:12153</p>
+<hr />
+<h3 id="serviceworker">ServiceWorker</h3>
+<p>• <strong>ServiceWorker</strong>: <code>Object</code></p>
+<h4 id="type-declaration_34">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>prototype</code></td>
+<td align="left"><a href="./#serviceworker"><code>ServiceWorker</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_83">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:14013</p>
+<hr />
+<h3 id="textencoder">TextEncoder</h3>
+<p>• <strong>TextEncoder</strong>: <code>Object</code></p>
+<h4 id="type-declaration_35">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>prototype</code></td>
+<td align="left"><a href="./#textencoder"><code>TextEncoder</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_84">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:14548</p>
+<hr />
+<h3 id="tokenkind">TokenKind</h3>
+<p>• <strong>TokenKind</strong>: <code>Object</code></p>
+<p>An exported enum describing the different kinds of tokens that the
+lexer emits.</p>
+<h4 id="type-declaration_36">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>AMP</code></td>
+<td align="left"><code>"&amp;"</code></td>
+</tr>
+<tr>
+<td align="left"><code>AT</code></td>
+<td align="left"><code>"@"</code></td>
+</tr>
+<tr>
+<td align="left"><code>BANG</code></td>
+<td align="left"><code>"!"</code></td>
+</tr>
+<tr>
+<td align="left"><code>BLOCK_STRING</code></td>
+<td align="left"><code>"BlockString"</code></td>
+</tr>
+<tr>
+<td align="left"><code>BRACE_L</code></td>
+<td align="left"><code>"{"</code></td>
+</tr>
+<tr>
+<td align="left"><code>BRACE_R</code></td>
+<td align="left"><code>"}"</code></td>
+</tr>
+<tr>
+<td align="left"><code>BRACKET_L</code></td>
+<td align="left"><code>"["</code></td>
+</tr>
+<tr>
+<td align="left"><code>BRACKET_R</code></td>
+<td align="left"><code>"]"</code></td>
+</tr>
+<tr>
+<td align="left"><code>COLON</code></td>
+<td align="left"><code>":"</code></td>
+</tr>
+<tr>
+<td align="left"><code>COMMENT</code></td>
+<td align="left"><code>"Comment"</code></td>
+</tr>
+<tr>
+<td align="left"><code>DOLLAR</code></td>
+<td align="left"><code>"$"</code></td>
+</tr>
+<tr>
+<td align="left"><code>EOF</code></td>
+<td align="left"><code>"&lt;EOF&gt;"</code></td>
+</tr>
+<tr>
+<td align="left"><code>EQUALS</code></td>
+<td align="left"><code>"="</code></td>
+</tr>
+<tr>
+<td align="left"><code>FLOAT</code></td>
+<td align="left"><code>"Float"</code></td>
+</tr>
+<tr>
+<td align="left"><code>INT</code></td>
+<td align="left"><code>"Int"</code></td>
+</tr>
+<tr>
+<td align="left"><code>NAME</code></td>
+<td align="left"><code>"Name"</code></td>
+</tr>
+<tr>
+<td align="left"><code>PAREN_L</code></td>
+<td align="left"><code>"("</code></td>
+</tr>
+<tr>
+<td align="left"><code>PAREN_R</code></td>
+<td align="left"><code>")"</code></td>
+</tr>
+<tr>
+<td align="left"><code>PIPE</code></td>
+<td align="left"><code>"\|"</code></td>
+</tr>
+<tr>
+<td align="left"><code>SOF</code></td>
+<td align="left"><code>"&lt;SOF&gt;"</code></td>
+</tr>
+<tr>
+<td align="left"><code>SPREAD</code></td>
+<td align="left"><code>"..."</code></td>
+</tr>
+<tr>
+<td align="left"><code>STRING</code></td>
+<td align="left"><code>"String"</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_85">Defined in</h4>
+<p>sdk/node_modules/graphql/language/tokenKind.d.ts:5</p>
+<hr />
+<h3 id="url">URL</h3>
+<p>• <strong>URL</strong>: <code>Object</code></p>
+<h4 id="type-declaration_37">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>prototype</code></td>
+<td align="left"><a href="./#url"><code>URL</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>createObjectURL</code></td>
+<td align="left">(<code>object</code>: <code>any</code>) =&gt; <code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>revokeObjectURL</code></td>
+<td align="left">(<code>url</code>: <code>string</code>) =&gt; <code>void</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_86">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:14936</p>
+<hr />
+<h3 id="urlsearchparams">URLSearchParams</h3>
+<p>• <strong>URLSearchParams</strong>: <code>Object</code></p>
+<h4 id="type-declaration_38">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>prototype</code></td>
+<td align="left"><a href="./#urlsearchparams"><code>URLSearchParams</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>toString</code></td>
+<td align="left">() =&gt; <code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_87">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:14979</p>
+<hr />
+<h3 id="writablestream">WritableStream</h3>
+<p>• <strong>WritableStream</strong>: <code>Object</code></p>
+<h4 id="type-declaration_39">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>prototype</code></td>
+<td align="left"><a href="./#writablestream"><code>WritableStream</code></a>&lt;<code>any</code>></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_88">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:17478</p>
+<hr />
+<h3 id="writablestreamdefaultwriter">WritableStreamDefaultWriter</h3>
+<p>• <strong>WritableStreamDefaultWriter</strong>: <code>Object</code></p>
+<h4 id="type-declaration_40">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>prototype</code></td>
+<td align="left"><a href="./#writablestreamdefaultwriter"><code>WritableStreamDefaultWriter</code></a>&lt;<code>any</code>></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_89">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:17504</p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.22074ed6.min.js"}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.01de222e.min.js"></script>
+      
+    
+  </body>
+</html>

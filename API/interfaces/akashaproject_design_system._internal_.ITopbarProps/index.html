@@ -1,0 +1,1505 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.7">
+    
+    
+      
+        <title>akashaproject design system. internal .ITopbarProps - AKASHA World Framework docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.cd566b2a.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#interface-itopbarprops" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="AKASHA World Framework docs" class="md-header__button md-logo" aria-label="AKASHA World Framework docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AKASHA World Framework docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              akashaproject design system. internal .ITopbarProps
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="AKASHA World Framework docs" class="md-nav__button md-logo" aria-label="AKASHA World Framework docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    AKASHA World Framework docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modules/" class="md-nav__link">
+        API
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    Table of contents
+  </a>
+  
+    <nav class="md-nav" aria-label="Table of contents">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    Properties
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    Methods
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties_1" class="md-nav__link">
+    Properties
+  </a>
+  
+    <nav class="md-nav" aria-label="Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#brandlabel" class="md-nav__link">
+    brandLabel
+  </a>
+  
+    <nav class="md-nav" aria-label="brandLabel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#classname" class="md-nav__link">
+    className
+  </a>
+  
+    <nav class="md-nav" aria-label="className">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_1" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#currentlocation" class="md-nav__link">
+    currentLocation
+  </a>
+  
+    <nav class="md-nav" aria-label="currentLocation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_2" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dashboardinfolabel" class="md-nav__link">
+    dashboardInfoLabel
+  </a>
+  
+    <nav class="md-nav" aria-label="dashboardInfoLabel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_3" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dashboardlabel" class="md-nav__link">
+    dashboardLabel
+  </a>
+  
+    <nav class="md-nav" aria-label="dashboardLabel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_4" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#feedbackinfolabel" class="md-nav__link">
+    feedbackInfoLabel
+  </a>
+  
+    <nav class="md-nav" aria-label="feedbackInfoLabel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_5" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#feedbacklabel" class="md-nav__link">
+    feedbackLabel
+  </a>
+  
+    <nav class="md-nav" aria-label="feedbackLabel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_6" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hasnewnotifications" class="md-nav__link">
+    hasNewNotifications
+  </a>
+  
+    <nav class="md-nav" aria-label="hasNewNotifications">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_7" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#helplabel" class="md-nav__link">
+    helpLabel
+  </a>
+  
+    <nav class="md-nav" aria-label="helpLabel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_8" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ismoderator" class="md-nav__link">
+    isModerator
+  </a>
+  
+    <nav class="md-nav" aria-label="isModerator">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_9" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#legalcopyrightlabel" class="md-nav__link">
+    legalCopyRightLabel
+  </a>
+  
+    <nav class="md-nav" aria-label="legalCopyRightLabel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_10" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#legallabel" class="md-nav__link">
+    legalLabel
+  </a>
+  
+    <nav class="md-nav" aria-label="legalLabel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_11" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loggedprofiledata" class="md-nav__link">
+    loggedProfileData
+  </a>
+  
+    <nav class="md-nav" aria-label="loggedProfileData">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_12" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modalslotid" class="md-nav__link">
+    modalSlotId
+  </a>
+  
+    <nav class="md-nav" aria-label="modalSlotId">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_13" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#moderationinfolabel" class="md-nav__link">
+    moderationInfoLabel
+  </a>
+  
+    <nav class="md-nav" aria-label="moderationInfoLabel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_14" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#moderationlabel" class="md-nav__link">
+    moderationLabel
+  </a>
+  
+    <nav class="md-nav" aria-label="moderationLabel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_15" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#otherareaitems" class="md-nav__link">
+    otherAreaItems
+  </a>
+  
+    <nav class="md-nav" aria-label="otherAreaItems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_16" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quickaccessitems" class="md-nav__link">
+    quickAccessItems
+  </a>
+  
+    <nav class="md-nav" aria-label="quickAccessItems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_17" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#searchareaitem" class="md-nav__link">
+    searchAreaItem
+  </a>
+  
+    <nav class="md-nav" aria-label="searchAreaItem">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_18" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#searchbarlabel" class="md-nav__link">
+    searchBarLabel
+  </a>
+  
+    <nav class="md-nav" aria-label="searchBarLabel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_19" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#settingslabel" class="md-nav__link">
+    settingsLabel
+  </a>
+  
+    <nav class="md-nav" aria-label="settingsLabel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_20" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#signinlabel" class="md-nav__link">
+    signInLabel
+  </a>
+  
+    <nav class="md-nav" aria-label="signInLabel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_21" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#signoutlabel" class="md-nav__link">
+    signOutLabel
+  </a>
+  
+    <nav class="md-nav" aria-label="signOutLabel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_22" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#signuplabel" class="md-nav__link">
+    signUpLabel
+  </a>
+  
+    <nav class="md-nav" aria-label="signUpLabel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_23" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stucklabel" class="md-nav__link">
+    stuckLabel
+  </a>
+  
+    <nav class="md-nav" aria-label="stuckLabel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_24" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#versionlabel" class="md-nav__link">
+    versionLabel
+  </a>
+  
+    <nav class="md-nav" aria-label="versionLabel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_25" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#versionurl" class="md-nav__link">
+    versionURL
+  </a>
+  
+    <nav class="md-nav" aria-label="versionURL">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_26" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#writetous" class="md-nav__link">
+    writeToUs
+  </a>
+  
+    <nav class="md-nav" aria-label="writeToUs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_27" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#methods_1" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#onbrandclick" class="md-nav__link">
+    onBrandClick
+  </a>
+  
+    <nav class="md-nav" aria-label="onBrandClick">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_28" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ondashboardclick" class="md-nav__link">
+    onDashboardClick
+  </a>
+  
+    <nav class="md-nav" aria-label="onDashboardClick">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_1" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_29" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onfeedbackclick" class="md-nav__link">
+    onFeedbackClick
+  </a>
+  
+    <nav class="md-nav" aria-label="onFeedbackClick">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_2" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_30" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onloginclick" class="md-nav__link">
+    onLoginClick
+  </a>
+  
+    <nav class="md-nav" aria-label="onLoginClick">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_3" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_31" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onlogout" class="md-nav__link">
+    onLogout
+  </a>
+  
+    <nav class="md-nav" aria-label="onLogout">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_4" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_32" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onmoderationclick" class="md-nav__link">
+    onModerationClick
+  </a>
+  
+    <nav class="md-nav" aria-label="onModerationClick">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_5" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_33" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onnavigation" class="md-nav__link">
+    onNavigation
+  </a>
+  
+    <nav class="md-nav" aria-label="onNavigation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_6" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_34" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onsearch" class="md-nav__link">
+    onSearch
+  </a>
+  
+    <nav class="md-nav" aria-label="onSearch">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_1" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_7" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_35" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onsettingsclick" class="md-nav__link">
+    onSettingsClick
+  </a>
+  
+    <nav class="md-nav" aria-label="onSettingsClick">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_8" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_36" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onsidebartoggle" class="md-nav__link">
+    onSidebarToggle
+  </a>
+  
+    <nav class="md-nav" aria-label="onSidebarToggle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_2" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_9" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_37" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onsignupclick" class="md-nav__link">
+    onSignUpClick
+  </a>
+  
+    <nav class="md-nav" aria-label="onSignUpClick">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_10" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_38" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+<p><a href="../../">AWF</a> / <a href="../../modules/">Modules</a> / <a href="../../modules/akashaproject_design_system/">@akashaproject/design-system</a> / <a href="../../modules/akashaproject_design_system._internal_/">&lt;internal></a> / ITopbarProps</p>
+<h1 id="interface-itopbarprops">Interface: ITopbarProps</h1>
+<p><a href="../../modules/akashaproject_design_system/">@akashaproject/design-system</a>.<a href="../../modules/akashaproject_design_system._internal_/"><internal></a>.ITopbarProps</p>
+<h2 id="table-of-contents">Table of contents</h2>
+<h3 id="properties">Properties</h3>
+<ul>
+<li><a href="./#brandlabel">brandLabel</a></li>
+<li><a href="./#classname">className</a></li>
+<li><a href="./#currentlocation">currentLocation</a></li>
+<li><a href="./#dashboardinfolabel">dashboardInfoLabel</a></li>
+<li><a href="./#dashboardlabel">dashboardLabel</a></li>
+<li><a href="./#feedbackinfolabel">feedbackInfoLabel</a></li>
+<li><a href="./#feedbacklabel">feedbackLabel</a></li>
+<li><a href="./#hasnewnotifications">hasNewNotifications</a></li>
+<li><a href="./#helplabel">helpLabel</a></li>
+<li><a href="./#ismoderator">isModerator</a></li>
+<li><a href="./#legalcopyrightlabel">legalCopyRightLabel</a></li>
+<li><a href="./#legallabel">legalLabel</a></li>
+<li><a href="./#loggedprofiledata">loggedProfileData</a></li>
+<li><a href="./#modalslotid">modalSlotId</a></li>
+<li><a href="./#moderationinfolabel">moderationInfoLabel</a></li>
+<li><a href="./#moderationlabel">moderationLabel</a></li>
+<li><a href="./#otherareaitems">otherAreaItems</a></li>
+<li><a href="./#quickaccessitems">quickAccessItems</a></li>
+<li><a href="./#searchareaitem">searchAreaItem</a></li>
+<li><a href="./#searchbarlabel">searchBarLabel</a></li>
+<li><a href="./#settingslabel">settingsLabel</a></li>
+<li><a href="./#signinlabel">signInLabel</a></li>
+<li><a href="./#signoutlabel">signOutLabel</a></li>
+<li><a href="./#signuplabel">signUpLabel</a></li>
+<li><a href="./#stucklabel">stuckLabel</a></li>
+<li><a href="./#versionlabel">versionLabel</a></li>
+<li><a href="./#versionurl">versionURL</a></li>
+<li><a href="./#writetous">writeToUs</a></li>
+</ul>
+<h3 id="methods">Methods</h3>
+<ul>
+<li><a href="./#onbrandclick">onBrandClick</a></li>
+<li><a href="./#ondashboardclick">onDashboardClick</a></li>
+<li><a href="./#onfeedbackclick">onFeedbackClick</a></li>
+<li><a href="./#onloginclick">onLoginClick</a></li>
+<li><a href="./#onlogout">onLogout</a></li>
+<li><a href="./#onmoderationclick">onModerationClick</a></li>
+<li><a href="./#onnavigation">onNavigation</a></li>
+<li><a href="./#onsearch">onSearch</a></li>
+<li><a href="./#onsettingsclick">onSettingsClick</a></li>
+<li><a href="./#onsidebartoggle">onSidebarToggle</a></li>
+<li><a href="./#onsignupclick">onSignUpClick</a></li>
+</ul>
+<h2 id="properties_1">Properties</h2>
+<h3 id="brandlabel">brandLabel</h3>
+<p>• <strong>brandLabel</strong>: <code>string</code></p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/TopBar/index.tsx#L39">ui/design/src/components/TopBar/index.tsx:39</a></p>
+<hr />
+<h3 id="classname">className</h3>
+<p>• <code>Optional</code> <strong>className</strong>: <code>string</code></p>
+<h4 id="defined-in_1">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/TopBar/index.tsx#L68">ui/design/src/components/TopBar/index.tsx:68</a></p>
+<hr />
+<h3 id="currentlocation">currentLocation</h3>
+<p>• <code>Optional</code> <strong>currentLocation</strong>: <code>string</code></p>
+<h4 id="defined-in_2">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/TopBar/index.tsx#L37">ui/design/src/components/TopBar/index.tsx:37</a></p>
+<hr />
+<h3 id="dashboardinfolabel">dashboardInfoLabel</h3>
+<p>• <code>Optional</code> <strong>dashboardInfoLabel</strong>: <code>string</code></p>
+<h4 id="defined-in_3">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/TopBar/index.tsx#L58">ui/design/src/components/TopBar/index.tsx:58</a></p>
+<hr />
+<h3 id="dashboardlabel">dashboardLabel</h3>
+<p>• <code>Optional</code> <strong>dashboardLabel</strong>: <code>string</code></p>
+<h4 id="defined-in_4">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/TopBar/index.tsx#L57">ui/design/src/components/TopBar/index.tsx:57</a></p>
+<hr />
+<h3 id="feedbackinfolabel">feedbackInfoLabel</h3>
+<p>• <code>Optional</code> <strong>feedbackInfoLabel</strong>: <code>string</code></p>
+<h4 id="defined-in_5">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/TopBar/index.tsx#L47">ui/design/src/components/TopBar/index.tsx:47</a></p>
+<hr />
+<h3 id="feedbacklabel">feedbackLabel</h3>
+<p>• <code>Optional</code> <strong>feedbackLabel</strong>: <code>string</code></p>
+<h4 id="defined-in_6">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/TopBar/index.tsx#L46">ui/design/src/components/TopBar/index.tsx:46</a></p>
+<hr />
+<h3 id="hasnewnotifications">hasNewNotifications</h3>
+<p>• <code>Optional</code> <strong>hasNewNotifications</strong>: <code>boolean</code></p>
+<h4 id="defined-in_7">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/TopBar/index.tsx#L33">ui/design/src/components/TopBar/index.tsx:33</a></p>
+<hr />
+<h3 id="helplabel">helpLabel</h3>
+<p>• <code>Optional</code> <strong>helpLabel</strong>: <code>string</code></p>
+<h4 id="defined-in_8">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/TopBar/index.tsx#L53">ui/design/src/components/TopBar/index.tsx:53</a></p>
+<hr />
+<h3 id="ismoderator">isModerator</h3>
+<p>• <code>Optional</code> <strong>isModerator</strong>: <code>boolean</code></p>
+<h4 id="defined-in_9">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/TopBar/index.tsx#L56">ui/design/src/components/TopBar/index.tsx:56</a></p>
+<hr />
+<h3 id="legalcopyrightlabel">legalCopyRightLabel</h3>
+<p>• <code>Optional</code> <strong>legalCopyRightLabel</strong>: <code>string</code></p>
+<h4 id="defined-in_10">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/TopBar/index.tsx#L51">ui/design/src/components/TopBar/index.tsx:51</a></p>
+<hr />
+<h3 id="legallabel">legalLabel</h3>
+<p>• <code>Optional</code> <strong>legalLabel</strong>: <code>string</code></p>
+<h4 id="defined-in_11">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/TopBar/index.tsx#L45">ui/design/src/components/TopBar/index.tsx:45</a></p>
+<hr />
+<h3 id="loggedprofiledata">loggedProfileData</h3>
+<p>• <code>Optional</code> <strong>loggedProfileData</strong>: <a href="../../modules/akashaproject_design_system._internal_/#partial"><code>Partial</code></a>&lt;<a href="../akashaproject_design_system._internal_.IProfileData-1/"><code>IProfileData</code></a>></p>
+<h4 id="defined-in_12">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/TopBar/index.tsx#L31">ui/design/src/components/TopBar/index.tsx:31</a></p>
+<hr />
+<h3 id="modalslotid">modalSlotId</h3>
+<p>• <strong>modalSlotId</strong>: <code>string</code></p>
+<h4 id="defined-in_13">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/TopBar/index.tsx#L73">ui/design/src/components/TopBar/index.tsx:73</a></p>
+<hr />
+<h3 id="moderationinfolabel">moderationInfoLabel</h3>
+<p>• <code>Optional</code> <strong>moderationInfoLabel</strong>: <code>string</code></p>
+<h4 id="defined-in_14">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/TopBar/index.tsx#L50">ui/design/src/components/TopBar/index.tsx:50</a></p>
+<hr />
+<h3 id="moderationlabel">moderationLabel</h3>
+<p>• <code>Optional</code> <strong>moderationLabel</strong>: <code>string</code></p>
+<h4 id="defined-in_15">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/TopBar/index.tsx#L49">ui/design/src/components/TopBar/index.tsx:49</a></p>
+<hr />
+<h3 id="otherareaitems">otherAreaItems</h3>
+<p>• <code>Optional</code> <strong>otherAreaItems</strong>: <a href="../akashaproject_design_system._internal_.IMenuItem/"><code>IMenuItem</code></a>[]</p>
+<h4 id="defined-in_16">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/TopBar/index.tsx#L36">ui/design/src/components/TopBar/index.tsx:36</a></p>
+<hr />
+<h3 id="quickaccessitems">quickAccessItems</h3>
+<p>• <code>Optional</code> <strong>quickAccessItems</strong>: <a href="../akashaproject_design_system._internal_.IMenuItem/"><code>IMenuItem</code></a>[]</p>
+<h4 id="defined-in_17">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/TopBar/index.tsx#L34">ui/design/src/components/TopBar/index.tsx:34</a></p>
+<hr />
+<h3 id="searchareaitem">searchAreaItem</h3>
+<p>• <code>Optional</code> <strong>searchAreaItem</strong>: <a href="../akashaproject_design_system._internal_.IMenuItem/"><code>IMenuItem</code></a></p>
+<h4 id="defined-in_18">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/TopBar/index.tsx#L35">ui/design/src/components/TopBar/index.tsx:35</a></p>
+<hr />
+<h3 id="searchbarlabel">searchBarLabel</h3>
+<p>• <code>Optional</code> <strong>searchBarLabel</strong>: <code>string</code></p>
+<h4 id="defined-in_19">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/TopBar/index.tsx#L44">ui/design/src/components/TopBar/index.tsx:44</a></p>
+<hr />
+<h3 id="settingslabel">settingsLabel</h3>
+<p>• <code>Optional</code> <strong>settingsLabel</strong>: <code>string</code></p>
+<h4 id="defined-in_20">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/TopBar/index.tsx#L48">ui/design/src/components/TopBar/index.tsx:48</a></p>
+<hr />
+<h3 id="signinlabel">signInLabel</h3>
+<p>• <code>Optional</code> <strong>signInLabel</strong>: <code>string</code></p>
+<h4 id="defined-in_21">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/TopBar/index.tsx#L41">ui/design/src/components/TopBar/index.tsx:41</a></p>
+<hr />
+<h3 id="signoutlabel">signOutLabel</h3>
+<p>• <code>Optional</code> <strong>signOutLabel</strong>: <code>string</code></p>
+<h4 id="defined-in_22">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/TopBar/index.tsx#L43">ui/design/src/components/TopBar/index.tsx:43</a></p>
+<hr />
+<h3 id="signuplabel">signUpLabel</h3>
+<p>• <code>Optional</code> <strong>signUpLabel</strong>: <code>string</code></p>
+<h4 id="defined-in_23">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/TopBar/index.tsx#L42">ui/design/src/components/TopBar/index.tsx:42</a></p>
+<hr />
+<h3 id="stucklabel">stuckLabel</h3>
+<p>• <code>Optional</code> <strong>stuckLabel</strong>: <code>string</code></p>
+<h4 id="defined-in_24">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/TopBar/index.tsx#L52">ui/design/src/components/TopBar/index.tsx:52</a></p>
+<hr />
+<h3 id="versionlabel">versionLabel</h3>
+<p>• <code>Optional</code> <strong>versionLabel</strong>: <code>string</code></p>
+<h4 id="defined-in_25">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/TopBar/index.tsx#L40">ui/design/src/components/TopBar/index.tsx:40</a></p>
+<hr />
+<h3 id="versionurl">versionURL</h3>
+<p>• <code>Optional</code> <strong>versionURL</strong>: <code>string</code></p>
+<h4 id="defined-in_26">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/TopBar/index.tsx#L32">ui/design/src/components/TopBar/index.tsx:32</a></p>
+<hr />
+<h3 id="writetous">writeToUs</h3>
+<p>• <code>Optional</code> <strong>writeToUs</strong>: <code>string</code></p>
+<h4 id="defined-in_27">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/TopBar/index.tsx#L54">ui/design/src/components/TopBar/index.tsx:54</a></p>
+<h2 id="methods_1">Methods</h2>
+<h3 id="onbrandclick">onBrandClick</h3>
+<p>▸ <code>Optional</code> <strong>onBrandClick</strong>(): <code>void</code></p>
+<h4 id="returns">Returns</h4>
+<p><code>void</code></p>
+<h4 id="defined-in_28">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/TopBar/index.tsx#L72">ui/design/src/components/TopBar/index.tsx:72</a></p>
+<hr />
+<h3 id="ondashboardclick">onDashboardClick</h3>
+<p>▸ <strong>onDashboardClick</strong>(): <code>void</code></p>
+<h4 id="returns_1">Returns</h4>
+<p><code>void</code></p>
+<h4 id="defined-in_29">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/TopBar/index.tsx#L66">ui/design/src/components/TopBar/index.tsx:66</a></p>
+<hr />
+<h3 id="onfeedbackclick">onFeedbackClick</h3>
+<p>▸ <strong>onFeedbackClick</strong>(): <code>void</code></p>
+<h4 id="returns_2">Returns</h4>
+<p><code>void</code></p>
+<h4 id="defined-in_30">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/TopBar/index.tsx#L64">ui/design/src/components/TopBar/index.tsx:64</a></p>
+<hr />
+<h3 id="onloginclick">onLoginClick</h3>
+<p>▸ <strong>onLoginClick</strong>(): <code>void</code></p>
+<h4 id="returns_3">Returns</h4>
+<p><code>void</code></p>
+<h4 id="defined-in_31">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/TopBar/index.tsx#L69">ui/design/src/components/TopBar/index.tsx:69</a></p>
+<hr />
+<h3 id="onlogout">onLogout</h3>
+<p>▸ <strong>onLogout</strong>(): <code>void</code></p>
+<h4 id="returns_4">Returns</h4>
+<p><code>void</code></p>
+<h4 id="defined-in_32">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/TopBar/index.tsx#L71">ui/design/src/components/TopBar/index.tsx:71</a></p>
+<hr />
+<h3 id="onmoderationclick">onModerationClick</h3>
+<p>▸ <strong>onModerationClick</strong>(): <code>void</code></p>
+<h4 id="returns_5">Returns</h4>
+<p><code>void</code></p>
+<h4 id="defined-in_33">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/TopBar/index.tsx#L65">ui/design/src/components/TopBar/index.tsx:65</a></p>
+<hr />
+<h3 id="onnavigation">onNavigation</h3>
+<p>▸ <strong>onNavigation</strong>(<code>path</code>): <code>void</code></p>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>path</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_6">Returns</h4>
+<p><code>void</code></p>
+<h4 id="defined-in_34">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/TopBar/index.tsx#L60">ui/design/src/components/TopBar/index.tsx:60</a></p>
+<hr />
+<h3 id="onsearch">onSearch</h3>
+<p>▸ <strong>onSearch</strong>(<code>inputValue</code>): <code>void</code></p>
+<h4 id="parameters_1">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>inputValue</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_7">Returns</h4>
+<p><code>void</code></p>
+<h4 id="defined-in_35">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/TopBar/index.tsx#L62">ui/design/src/components/TopBar/index.tsx:62</a></p>
+<hr />
+<h3 id="onsettingsclick">onSettingsClick</h3>
+<p>▸ <strong>onSettingsClick</strong>(): <code>void</code></p>
+<h4 id="returns_8">Returns</h4>
+<p><code>void</code></p>
+<h4 id="defined-in_36">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/TopBar/index.tsx#L63">ui/design/src/components/TopBar/index.tsx:63</a></p>
+<hr />
+<h3 id="onsidebartoggle">onSidebarToggle</h3>
+<p>▸ <code>Optional</code> <strong>onSidebarToggle</strong>(<code>visibility</code>): <code>void</code></p>
+<h4 id="parameters_2">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>visibility</code></td>
+<td align="left"><code>boolean</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_9">Returns</h4>
+<p><code>void</code></p>
+<h4 id="defined-in_37">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/TopBar/index.tsx#L61">ui/design/src/components/TopBar/index.tsx:61</a></p>
+<hr />
+<h3 id="onsignupclick">onSignUpClick</h3>
+<p>▸ <strong>onSignUpClick</strong>(): <code>void</code></p>
+<h4 id="returns_10">Returns</h4>
+<p><code>void</code></p>
+<h4 id="defined-in_38">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/TopBar/index.tsx#L70">ui/design/src/components/TopBar/index.tsx:70</a></p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.22074ed6.min.js"}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.01de222e.min.js"></script>
+      
+    
+  </body>
+</html>

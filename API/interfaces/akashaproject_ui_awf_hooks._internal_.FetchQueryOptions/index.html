@@ -1,0 +1,1008 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.7">
+    
+    
+      
+        <title>akashaproject ui awf hooks. internal .FetchQueryOptions - AKASHA World Framework docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.cd566b2a.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#interface-fetchqueryoptionstqueryfndata-terror-tdata-tquerykey" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="AKASHA World Framework docs" class="md-header__button md-logo" aria-label="AKASHA World Framework docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AKASHA World Framework docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              akashaproject ui awf hooks. internal .FetchQueryOptions
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="AKASHA World Framework docs" class="md-nav__button md-logo" aria-label="AKASHA World Framework docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    AKASHA World Framework docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modules/" class="md-nav__link">
+        API
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#type-parameters" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hierarchy" class="md-nav__link">
+    Hierarchy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    Table of contents
+  </a>
+  
+    <nav class="md-nav" aria-label="Table of contents">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    Properties
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    Methods
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties_1" class="md-nav__link">
+    Properties
+  </a>
+  
+    <nav class="md-nav" aria-label="Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_defaulted" class="md-nav__link">
+    _defaulted
+  </a>
+  
+    <nav class="md-nav" aria-label="_defaulted">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#behavior" class="md-nav__link">
+    behavior
+  </a>
+  
+    <nav class="md-nav" aria-label="behavior">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_1" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_1" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cachetime" class="md-nav__link">
+    cacheTime
+  </a>
+  
+    <nav class="md-nav" aria-label="cacheTime">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_2" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_2" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getnextpageparam" class="md-nav__link">
+    getNextPageParam
+  </a>
+  
+    <nav class="md-nav" aria-label="getNextPageParam">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_3" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_3" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getpreviouspageparam" class="md-nav__link">
+    getPreviousPageParam
+  </a>
+  
+    <nav class="md-nav" aria-label="getPreviousPageParam">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_4" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_4" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#initialdata" class="md-nav__link">
+    initialData
+  </a>
+  
+    <nav class="md-nav" aria-label="initialData">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_5" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_5" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#initialdataupdatedat" class="md-nav__link">
+    initialDataUpdatedAt
+  </a>
+  
+    <nav class="md-nav" aria-label="initialDataUpdatedAt">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_6" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_6" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#meta" class="md-nav__link">
+    meta
+  </a>
+  
+    <nav class="md-nav" aria-label="meta">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_7" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_7" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#queryfn" class="md-nav__link">
+    queryFn
+  </a>
+  
+    <nav class="md-nav" aria-label="queryFn">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_8" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_8" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#queryhash" class="md-nav__link">
+    queryHash
+  </a>
+  
+    <nav class="md-nav" aria-label="queryHash">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_9" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_9" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#querykey" class="md-nav__link">
+    queryKey
+  </a>
+  
+    <nav class="md-nav" aria-label="queryKey">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_10" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_10" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#querykeyhashfn" class="md-nav__link">
+    queryKeyHashFn
+  </a>
+  
+    <nav class="md-nav" aria-label="queryKeyHashFn">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_11" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_11" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#retry" class="md-nav__link">
+    retry
+  </a>
+  
+    <nav class="md-nav" aria-label="retry">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_12" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_12" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#retrydelay" class="md-nav__link">
+    retryDelay
+  </a>
+  
+    <nav class="md-nav" aria-label="retryDelay">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_13" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_13" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#staletime" class="md-nav__link">
+    staleTime
+  </a>
+  
+    <nav class="md-nav" aria-label="staleTime">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_14" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#structuralsharing" class="md-nav__link">
+    structuralSharing
+  </a>
+  
+    <nav class="md-nav" aria-label="structuralSharing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_14" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_15" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#methods_1" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#isdataequal" class="md-nav__link">
+    isDataEqual
+  </a>
+  
+    <nav class="md-nav" aria-label="isDataEqual">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_15" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_16" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+<p><a href="../../">AWF</a> / <a href="../../modules/">Modules</a> / <a href="../../modules/akashaproject_ui_awf_hooks/">@akashaproject/ui-awf-hooks</a> / <a href="../../modules/akashaproject_ui_awf_hooks._internal_/">&lt;internal></a> / FetchQueryOptions</p>
+<h1 id="interface-fetchqueryoptionstqueryfndata-terror-tdata-tquerykey">Interface: FetchQueryOptions&lt;TQueryFnData, TError, TData, TQueryKey></h1>
+<p><a href="../../modules/akashaproject_ui_awf_hooks/">@akashaproject/ui-awf-hooks</a>.<a href="../../modules/akashaproject_ui_awf_hooks._internal_/"><internal></a>.FetchQueryOptions</p>
+<h2 id="type-parameters">Type parameters</h2>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>TQueryFnData</code></td>
+<td align="left"><code>unknown</code></td>
+</tr>
+<tr>
+<td align="left"><code>TError</code></td>
+<td align="left"><code>unknown</code></td>
+</tr>
+<tr>
+<td align="left"><code>TData</code></td>
+<td align="left"><code>TQueryFnData</code></td>
+</tr>
+<tr>
+<td align="left"><code>TQueryKey</code></td>
+<td align="left">extends <a href="../../modules/akashaproject_ui_awf_hooks._internal_/#querykey"><code>QueryKey</code></a> = <a href="../../modules/akashaproject_ui_awf_hooks._internal_/#querykey"><code>QueryKey</code></a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="hierarchy">Hierarchy</h2>
+<ul>
+<li><a href="../akashaproject_ui_awf_hooks._internal_.QueryOptions/"><code>QueryOptions</code></a>&lt;<code>TQueryFnData</code>, <code>TError</code>, <code>TData</code>, <code>TQueryKey</code>></li>
+</ul>
+<p>↳ <strong><code>FetchQueryOptions</code></strong></p>
+<p>↳↳ <a href="../akashaproject_ui_awf_hooks._internal_.FetchInfiniteQueryOptions/"><code>FetchInfiniteQueryOptions</code></a></p>
+<h2 id="table-of-contents">Table of contents</h2>
+<h3 id="properties">Properties</h3>
+<ul>
+<li><a href="./#_defaulted">_defaulted</a></li>
+<li><a href="./#behavior">behavior</a></li>
+<li><a href="./#cachetime">cacheTime</a></li>
+<li><a href="./#getnextpageparam">getNextPageParam</a></li>
+<li><a href="./#getpreviouspageparam">getPreviousPageParam</a></li>
+<li><a href="./#initialdata">initialData</a></li>
+<li><a href="./#initialdataupdatedat">initialDataUpdatedAt</a></li>
+<li><a href="./#meta">meta</a></li>
+<li><a href="./#queryfn">queryFn</a></li>
+<li><a href="./#queryhash">queryHash</a></li>
+<li><a href="./#querykey">queryKey</a></li>
+<li><a href="./#querykeyhashfn">queryKeyHashFn</a></li>
+<li><a href="./#retry">retry</a></li>
+<li><a href="./#retrydelay">retryDelay</a></li>
+<li><a href="./#staletime">staleTime</a></li>
+<li><a href="./#structuralsharing">structuralSharing</a></li>
+</ul>
+<h3 id="methods">Methods</h3>
+<ul>
+<li><a href="./#isdataequal">isDataEqual</a></li>
+</ul>
+<h2 id="properties_1">Properties</h2>
+<h3 id="_defaulted">_defaulted</h3>
+<p>• <code>Optional</code> <strong>_defaulted</strong>: <code>boolean</code></p>
+<h4 id="inherited-from">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_.QueryOptions/">QueryOptions</a>.<a href="../akashaproject_ui_awf_hooks._internal_.QueryOptions/#_defaulted">_defaulted</a></p>
+<h4 id="defined-in">Defined in</h4>
+<p>ui/hooks/node_modules/react-query/types/core/types.d.ts:57</p>
+<hr />
+<h3 id="behavior">behavior</h3>
+<p>• <code>Optional</code> <strong>behavior</strong>: <a href="../akashaproject_ui_awf_hooks._internal_.QueryBehavior/"><code>QueryBehavior</code></a>&lt;<code>TQueryFnData</code>, <code>TError</code>, <code>TData</code>, <a href="../../modules/akashaproject_ui_awf_hooks._internal_/#querykey"><code>QueryKey</code></a>></p>
+<h4 id="inherited-from_1">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_.QueryOptions/">QueryOptions</a>.<a href="../akashaproject_ui_awf_hooks._internal_.QueryOptions/#behavior">behavior</a></p>
+<h4 id="defined-in_1">Defined in</h4>
+<p>ui/hooks/node_modules/react-query/types/core/types.d.ts:41</p>
+<hr />
+<h3 id="cachetime">cacheTime</h3>
+<p>• <code>Optional</code> <strong>cacheTime</strong>: <code>number</code></p>
+<h4 id="inherited-from_2">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_.QueryOptions/">QueryOptions</a>.<a href="../akashaproject_ui_awf_hooks._internal_.QueryOptions/#cachetime">cacheTime</a></p>
+<h4 id="defined-in_2">Defined in</h4>
+<p>ui/hooks/node_modules/react-query/types/core/types.d.ts:33</p>
+<hr />
+<h3 id="getnextpageparam">getNextPageParam</h3>
+<p>• <code>Optional</code> <strong>getNextPageParam</strong>: <a href="../../modules/akashaproject_ui_awf_hooks._internal_/#getnextpageparamfunction"><code>GetNextPageParamFunction</code></a>&lt;<code>TQueryFnData</code>></p>
+<p>This function can be set to automatically get the next cursor for infinite queries.
+The result will also be used to determine the value of <code>hasNextPage</code>.</p>
+<h4 id="inherited-from_3">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_.QueryOptions/">QueryOptions</a>.<a href="../akashaproject_ui_awf_hooks._internal_.QueryOptions/#getnextpageparam">getNextPageParam</a></p>
+<h4 id="defined-in_3">Defined in</h4>
+<p>ui/hooks/node_modules/react-query/types/core/types.d.ts:56</p>
+<hr />
+<h3 id="getpreviouspageparam">getPreviousPageParam</h3>
+<p>• <code>Optional</code> <strong>getPreviousPageParam</strong>: <a href="../../modules/akashaproject_ui_awf_hooks._internal_/#getpreviouspageparamfunction"><code>GetPreviousPageParamFunction</code></a>&lt;<code>TQueryFnData</code>></p>
+<p>This function can be set to automatically get the previous cursor for infinite queries.
+The result will also be used to determine the value of <code>hasPreviousPage</code>.</p>
+<h4 id="inherited-from_4">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_.QueryOptions/">QueryOptions</a>.<a href="../akashaproject_ui_awf_hooks._internal_.QueryOptions/#getpreviouspageparam">getPreviousPageParam</a></p>
+<h4 id="defined-in_4">Defined in</h4>
+<p>ui/hooks/node_modules/react-query/types/core/types.d.ts:51</p>
+<hr />
+<h3 id="initialdata">initialData</h3>
+<p>• <code>Optional</code> <strong>initialData</strong>: <code>TData</code> | <a href="../../modules/akashaproject_ui_awf_hooks._internal_/#initialdatafunction"><code>InitialDataFunction</code></a>&lt;<code>TData</code>></p>
+<h4 id="inherited-from_5">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_.QueryOptions/">QueryOptions</a>.<a href="../akashaproject_ui_awf_hooks._internal_.QueryOptions/#initialdata">initialData</a></p>
+<h4 id="defined-in_5">Defined in</h4>
+<p>ui/hooks/node_modules/react-query/types/core/types.d.ts:39</p>
+<hr />
+<h3 id="initialdataupdatedat">initialDataUpdatedAt</h3>
+<p>• <code>Optional</code> <strong>initialDataUpdatedAt</strong>: <code>number</code> | () =&gt; <code>number</code></p>
+<h4 id="inherited-from_6">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_.QueryOptions/">QueryOptions</a>.<a href="../akashaproject_ui_awf_hooks._internal_.QueryOptions/#initialdataupdatedat">initialDataUpdatedAt</a></p>
+<h4 id="defined-in_6">Defined in</h4>
+<p>ui/hooks/node_modules/react-query/types/core/types.d.ts:40</p>
+<hr />
+<h3 id="meta">meta</h3>
+<p>• <code>Optional</code> <strong>meta</strong>: <a href="../../modules/akashaproject_ui_awf_hooks._internal_/#querymeta"><code>QueryMeta</code></a></p>
+<p>Additional payload to be stored on each query.
+Use this property to pass information that can be used in other places.</p>
+<h4 id="inherited-from_7">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_.QueryOptions/">QueryOptions</a>.<a href="../akashaproject_ui_awf_hooks._internal_.QueryOptions/#meta">meta</a></p>
+<h4 id="defined-in_7">Defined in</h4>
+<p>ui/hooks/node_modules/react-query/types/core/types.d.ts:62</p>
+<hr />
+<h3 id="queryfn">queryFn</h3>
+<p>• <code>Optional</code> <strong>queryFn</strong>: <a href="../../modules/akashaproject_ui_awf_hooks._internal_/#queryfunction"><code>QueryFunction</code></a>&lt;<code>TQueryFnData</code>, <code>TQueryKey</code>></p>
+<h4 id="inherited-from_8">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_.QueryOptions/">QueryOptions</a>.<a href="../akashaproject_ui_awf_hooks._internal_.QueryOptions/#queryfn">queryFn</a></p>
+<h4 id="defined-in_8">Defined in</h4>
+<p>ui/hooks/node_modules/react-query/types/core/types.d.ts:35</p>
+<hr />
+<h3 id="queryhash">queryHash</h3>
+<p>• <code>Optional</code> <strong>queryHash</strong>: <code>string</code></p>
+<h4 id="inherited-from_9">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_.QueryOptions/">QueryOptions</a>.<a href="../akashaproject_ui_awf_hooks._internal_.QueryOptions/#queryhash">queryHash</a></p>
+<h4 id="defined-in_9">Defined in</h4>
+<p>ui/hooks/node_modules/react-query/types/core/types.d.ts:36</p>
+<hr />
+<h3 id="querykey">queryKey</h3>
+<p>• <code>Optional</code> <strong>queryKey</strong>: <code>TQueryKey</code></p>
+<h4 id="inherited-from_10">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_.QueryOptions/">QueryOptions</a>.<a href="../akashaproject_ui_awf_hooks._internal_.QueryOptions/#querykey">queryKey</a></p>
+<h4 id="defined-in_10">Defined in</h4>
+<p>ui/hooks/node_modules/react-query/types/core/types.d.ts:37</p>
+<hr />
+<h3 id="querykeyhashfn">queryKeyHashFn</h3>
+<p>• <code>Optional</code> <strong>queryKeyHashFn</strong>: <a href="../../modules/akashaproject_ui_awf_hooks._internal_/#querykeyhashfunction"><code>QueryKeyHashFunction</code></a>&lt;<code>TQueryKey</code>></p>
+<h4 id="inherited-from_11">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_.QueryOptions/">QueryOptions</a>.<a href="../akashaproject_ui_awf_hooks._internal_.QueryOptions/#querykeyhashfn">queryKeyHashFn</a></p>
+<h4 id="defined-in_11">Defined in</h4>
+<p>ui/hooks/node_modules/react-query/types/core/types.d.ts:38</p>
+<hr />
+<h3 id="retry">retry</h3>
+<p>• <code>Optional</code> <strong>retry</strong>: <a href="../../modules/akashaproject_ui_awf_hooks._internal_/#retryvalue"><code>RetryValue</code></a>&lt;<code>TError</code>></p>
+<p>If <code>false</code>, failed queries will not retry by default.
+If <code>true</code>, failed queries will retry infinitely., failureCount: num
+If set to an integer number, e.g. 3, failed queries will retry until the failed query count meets that number.
+If set to a function <code>(failureCount, error) =&gt; boolean</code> failed queries will retry until the function returns false.</p>
+<h4 id="inherited-from_12">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_.QueryOptions/">QueryOptions</a>.<a href="../akashaproject_ui_awf_hooks._internal_.QueryOptions/#retry">retry</a></p>
+<h4 id="defined-in_12">Defined in</h4>
+<p>ui/hooks/node_modules/react-query/types/core/types.d.ts:31</p>
+<hr />
+<h3 id="retrydelay">retryDelay</h3>
+<p>• <code>Optional</code> <strong>retryDelay</strong>: <a href="../../modules/akashaproject_ui_awf_hooks._internal_/#retrydelayvalue"><code>RetryDelayValue</code></a>&lt;<code>TError</code>></p>
+<h4 id="inherited-from_13">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_.QueryOptions/">QueryOptions</a>.<a href="../akashaproject_ui_awf_hooks._internal_.QueryOptions/#retrydelay">retryDelay</a></p>
+<h4 id="defined-in_13">Defined in</h4>
+<p>ui/hooks/node_modules/react-query/types/core/types.d.ts:32</p>
+<hr />
+<h3 id="staletime">staleTime</h3>
+<p>• <code>Optional</code> <strong>staleTime</strong>: <code>number</code></p>
+<p>The time in milliseconds after data is considered stale.
+If the data is fresh it will be returned from the cache.</p>
+<h4 id="defined-in_14">Defined in</h4>
+<p>ui/hooks/node_modules/react-query/types/core/types.d.ts:176</p>
+<hr />
+<h3 id="structuralsharing">structuralSharing</h3>
+<p>• <code>Optional</code> <strong>structuralSharing</strong>: <code>boolean</code></p>
+<p>Set this to <code>false</code> to disable structural sharing between query results.
+Defaults to <code>true</code>.</p>
+<h4 id="inherited-from_14">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_.QueryOptions/">QueryOptions</a>.<a href="../akashaproject_ui_awf_hooks._internal_.QueryOptions/#structuralsharing">structuralSharing</a></p>
+<h4 id="defined-in_15">Defined in</h4>
+<p>ui/hooks/node_modules/react-query/types/core/types.d.ts:46</p>
+<h2 id="methods_1">Methods</h2>
+<h3 id="isdataequal">isDataEqual</h3>
+<p>▸ <code>Optional</code> <strong>isDataEqual</strong>(<code>oldData</code>, <code>newData</code>): <code>boolean</code></p>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>oldData</code></td>
+<td align="left"><code>TData</code></td>
+</tr>
+<tr>
+<td align="left"><code>newData</code></td>
+<td align="left"><code>TData</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><code>boolean</code></p>
+<h4 id="inherited-from_15">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_hooks._internal_.QueryOptions/">QueryOptions</a>.<a href="../akashaproject_ui_awf_hooks._internal_.QueryOptions/#isdataequal">isDataEqual</a></p>
+<h4 id="defined-in_16">Defined in</h4>
+<p>ui/hooks/node_modules/react-query/types/core/types.d.ts:34</p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.22074ed6.min.js"}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.01de222e.min.js"></script>
+      
+    
+  </body>
+</html>

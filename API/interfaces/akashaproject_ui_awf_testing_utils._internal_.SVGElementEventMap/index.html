@@ -1,0 +1,3788 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.7">
+    
+    
+      
+        <title>akashaproject ui awf testing utils. internal .SVGElementEventMap - AKASHA World Framework docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.cd566b2a.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#interface-svgelementeventmap" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="AKASHA World Framework docs" class="md-header__button md-logo" aria-label="AKASHA World Framework docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AKASHA World Framework docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              akashaproject ui awf testing utils. internal .SVGElementEventMap
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="AKASHA World Framework docs" class="md-nav__button md-logo" aria-label="AKASHA World Framework docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    AKASHA World Framework docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modules/" class="md-nav__link">
+        API
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hierarchy" class="md-nav__link">
+    Hierarchy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    Table of contents
+  </a>
+  
+    <nav class="md-nav" aria-label="Table of contents">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    Properties
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties_1" class="md-nav__link">
+    Properties
+  </a>
+  
+    <nav class="md-nav" aria-label="Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#abort" class="md-nav__link">
+    abort
+  </a>
+  
+    <nav class="md-nav" aria-label="abort">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#animationcancel" class="md-nav__link">
+    animationcancel
+  </a>
+  
+    <nav class="md-nav" aria-label="animationcancel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_1" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_1" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#animationend" class="md-nav__link">
+    animationend
+  </a>
+  
+    <nav class="md-nav" aria-label="animationend">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_2" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_2" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#animationiteration" class="md-nav__link">
+    animationiteration
+  </a>
+  
+    <nav class="md-nav" aria-label="animationiteration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_3" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_3" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#animationstart" class="md-nav__link">
+    animationstart
+  </a>
+  
+    <nav class="md-nav" aria-label="animationstart">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_4" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_4" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auxclick" class="md-nav__link">
+    auxclick
+  </a>
+  
+    <nav class="md-nav" aria-label="auxclick">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_5" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_5" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#beforeinput" class="md-nav__link">
+    beforeinput
+  </a>
+  
+    <nav class="md-nav" aria-label="beforeinput">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_6" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_6" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#blur" class="md-nav__link">
+    blur
+  </a>
+  
+    <nav class="md-nav" aria-label="blur">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_7" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_7" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#canplay" class="md-nav__link">
+    canplay
+  </a>
+  
+    <nav class="md-nav" aria-label="canplay">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_8" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_8" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#canplaythrough" class="md-nav__link">
+    canplaythrough
+  </a>
+  
+    <nav class="md-nav" aria-label="canplaythrough">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_9" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_9" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#change" class="md-nav__link">
+    change
+  </a>
+  
+    <nav class="md-nav" aria-label="change">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_10" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_10" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#click" class="md-nav__link">
+    click
+  </a>
+  
+    <nav class="md-nav" aria-label="click">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_11" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_11" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#close" class="md-nav__link">
+    close
+  </a>
+  
+    <nav class="md-nav" aria-label="close">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_12" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_12" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compositionend" class="md-nav__link">
+    compositionend
+  </a>
+  
+    <nav class="md-nav" aria-label="compositionend">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_13" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_13" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compositionstart" class="md-nav__link">
+    compositionstart
+  </a>
+  
+    <nav class="md-nav" aria-label="compositionstart">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_14" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_14" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compositionupdate" class="md-nav__link">
+    compositionupdate
+  </a>
+  
+    <nav class="md-nav" aria-label="compositionupdate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_15" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_15" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contextmenu" class="md-nav__link">
+    contextmenu
+  </a>
+  
+    <nav class="md-nav" aria-label="contextmenu">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_16" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_16" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copy" class="md-nav__link">
+    copy
+  </a>
+  
+    <nav class="md-nav" aria-label="copy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_17" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_17" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cuechange" class="md-nav__link">
+    cuechange
+  </a>
+  
+    <nav class="md-nav" aria-label="cuechange">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_18" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_18" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cut" class="md-nav__link">
+    cut
+  </a>
+  
+    <nav class="md-nav" aria-label="cut">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_19" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_19" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dblclick" class="md-nav__link">
+    dblclick
+  </a>
+  
+    <nav class="md-nav" aria-label="dblclick">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_20" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_20" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drag" class="md-nav__link">
+    drag
+  </a>
+  
+    <nav class="md-nav" aria-label="drag">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_21" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_21" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dragend" class="md-nav__link">
+    dragend
+  </a>
+  
+    <nav class="md-nav" aria-label="dragend">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_22" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_22" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dragenter" class="md-nav__link">
+    dragenter
+  </a>
+  
+    <nav class="md-nav" aria-label="dragenter">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_23" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_23" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dragleave" class="md-nav__link">
+    dragleave
+  </a>
+  
+    <nav class="md-nav" aria-label="dragleave">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_24" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_24" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dragover" class="md-nav__link">
+    dragover
+  </a>
+  
+    <nav class="md-nav" aria-label="dragover">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_25" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_25" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dragstart" class="md-nav__link">
+    dragstart
+  </a>
+  
+    <nav class="md-nav" aria-label="dragstart">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_26" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_26" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drop" class="md-nav__link">
+    drop
+  </a>
+  
+    <nav class="md-nav" aria-label="drop">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_27" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_27" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#durationchange" class="md-nav__link">
+    durationchange
+  </a>
+  
+    <nav class="md-nav" aria-label="durationchange">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_28" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_28" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#emptied" class="md-nav__link">
+    emptied
+  </a>
+  
+    <nav class="md-nav" aria-label="emptied">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_29" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_29" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ended" class="md-nav__link">
+    ended
+  </a>
+  
+    <nav class="md-nav" aria-label="ended">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_30" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_30" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#error" class="md-nav__link">
+    error
+  </a>
+  
+    <nav class="md-nav" aria-label="error">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_31" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_31" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#focus" class="md-nav__link">
+    focus
+  </a>
+  
+    <nav class="md-nav" aria-label="focus">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_32" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_32" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#focusin" class="md-nav__link">
+    focusin
+  </a>
+  
+    <nav class="md-nav" aria-label="focusin">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_33" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_33" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#focusout" class="md-nav__link">
+    focusout
+  </a>
+  
+    <nav class="md-nav" aria-label="focusout">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_34" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_34" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formdata" class="md-nav__link">
+    formdata
+  </a>
+  
+    <nav class="md-nav" aria-label="formdata">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_35" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_35" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fullscreenchange" class="md-nav__link">
+    fullscreenchange
+  </a>
+  
+    <nav class="md-nav" aria-label="fullscreenchange">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_36" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_36" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fullscreenerror" class="md-nav__link">
+    fullscreenerror
+  </a>
+  
+    <nav class="md-nav" aria-label="fullscreenerror">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_37" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_37" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gotpointercapture" class="md-nav__link">
+    gotpointercapture
+  </a>
+  
+    <nav class="md-nav" aria-label="gotpointercapture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_38" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_38" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#input" class="md-nav__link">
+    input
+  </a>
+  
+    <nav class="md-nav" aria-label="input">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_39" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_39" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#invalid" class="md-nav__link">
+    invalid
+  </a>
+  
+    <nav class="md-nav" aria-label="invalid">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_40" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_40" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#keydown" class="md-nav__link">
+    keydown
+  </a>
+  
+    <nav class="md-nav" aria-label="keydown">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_41" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_41" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#keypress" class="md-nav__link">
+    keypress
+  </a>
+  
+    <nav class="md-nav" aria-label="keypress">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_42" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_42" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#keyup" class="md-nav__link">
+    keyup
+  </a>
+  
+    <nav class="md-nav" aria-label="keyup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_43" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_43" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#load" class="md-nav__link">
+    load
+  </a>
+  
+    <nav class="md-nav" aria-label="load">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_44" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_44" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loadeddata" class="md-nav__link">
+    loadeddata
+  </a>
+  
+    <nav class="md-nav" aria-label="loadeddata">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_45" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_45" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loadedmetadata" class="md-nav__link">
+    loadedmetadata
+  </a>
+  
+    <nav class="md-nav" aria-label="loadedmetadata">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_46" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_46" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loadstart" class="md-nav__link">
+    loadstart
+  </a>
+  
+    <nav class="md-nav" aria-label="loadstart">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_47" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_47" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lostpointercapture" class="md-nav__link">
+    lostpointercapture
+  </a>
+  
+    <nav class="md-nav" aria-label="lostpointercapture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_48" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_48" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mousedown" class="md-nav__link">
+    mousedown
+  </a>
+  
+    <nav class="md-nav" aria-label="mousedown">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_49" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_49" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mouseenter" class="md-nav__link">
+    mouseenter
+  </a>
+  
+    <nav class="md-nav" aria-label="mouseenter">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_50" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_50" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mouseleave" class="md-nav__link">
+    mouseleave
+  </a>
+  
+    <nav class="md-nav" aria-label="mouseleave">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_51" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_51" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mousemove" class="md-nav__link">
+    mousemove
+  </a>
+  
+    <nav class="md-nav" aria-label="mousemove">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_52" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_52" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mouseout" class="md-nav__link">
+    mouseout
+  </a>
+  
+    <nav class="md-nav" aria-label="mouseout">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_53" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_53" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mouseover" class="md-nav__link">
+    mouseover
+  </a>
+  
+    <nav class="md-nav" aria-label="mouseover">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_54" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_54" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mouseup" class="md-nav__link">
+    mouseup
+  </a>
+  
+    <nav class="md-nav" aria-label="mouseup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_55" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_55" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paste" class="md-nav__link">
+    paste
+  </a>
+  
+    <nav class="md-nav" aria-label="paste">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_56" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_56" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pause" class="md-nav__link">
+    pause
+  </a>
+  
+    <nav class="md-nav" aria-label="pause">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_57" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_57" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#play" class="md-nav__link">
+    play
+  </a>
+  
+    <nav class="md-nav" aria-label="play">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_58" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_58" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#playing" class="md-nav__link">
+    playing
+  </a>
+  
+    <nav class="md-nav" aria-label="playing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_59" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_59" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pointercancel" class="md-nav__link">
+    pointercancel
+  </a>
+  
+    <nav class="md-nav" aria-label="pointercancel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_60" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_60" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pointerdown" class="md-nav__link">
+    pointerdown
+  </a>
+  
+    <nav class="md-nav" aria-label="pointerdown">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_61" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_61" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pointerenter" class="md-nav__link">
+    pointerenter
+  </a>
+  
+    <nav class="md-nav" aria-label="pointerenter">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_62" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_62" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pointerleave" class="md-nav__link">
+    pointerleave
+  </a>
+  
+    <nav class="md-nav" aria-label="pointerleave">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_63" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_63" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pointermove" class="md-nav__link">
+    pointermove
+  </a>
+  
+    <nav class="md-nav" aria-label="pointermove">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_64" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_64" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pointerout" class="md-nav__link">
+    pointerout
+  </a>
+  
+    <nav class="md-nav" aria-label="pointerout">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_65" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_65" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pointerover" class="md-nav__link">
+    pointerover
+  </a>
+  
+    <nav class="md-nav" aria-label="pointerover">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_66" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_66" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pointerup" class="md-nav__link">
+    pointerup
+  </a>
+  
+    <nav class="md-nav" aria-label="pointerup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_67" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_67" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#progress" class="md-nav__link">
+    progress
+  </a>
+  
+    <nav class="md-nav" aria-label="progress">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_68" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_68" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ratechange" class="md-nav__link">
+    ratechange
+  </a>
+  
+    <nav class="md-nav" aria-label="ratechange">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_69" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_69" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reset" class="md-nav__link">
+    reset
+  </a>
+  
+    <nav class="md-nav" aria-label="reset">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_70" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_70" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resize" class="md-nav__link">
+    resize
+  </a>
+  
+    <nav class="md-nav" aria-label="resize">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_71" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_71" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scroll" class="md-nav__link">
+    scroll
+  </a>
+  
+    <nav class="md-nav" aria-label="scroll">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_72" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_72" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#securitypolicyviolation" class="md-nav__link">
+    securitypolicyviolation
+  </a>
+  
+    <nav class="md-nav" aria-label="securitypolicyviolation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_73" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_73" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seeked" class="md-nav__link">
+    seeked
+  </a>
+  
+    <nav class="md-nav" aria-label="seeked">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_74" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_74" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seeking" class="md-nav__link">
+    seeking
+  </a>
+  
+    <nav class="md-nav" aria-label="seeking">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_75" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_75" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#select" class="md-nav__link">
+    select
+  </a>
+  
+    <nav class="md-nav" aria-label="select">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_76" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_76" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selectionchange" class="md-nav__link">
+    selectionchange
+  </a>
+  
+    <nav class="md-nav" aria-label="selectionchange">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_77" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_77" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selectstart" class="md-nav__link">
+    selectstart
+  </a>
+  
+    <nav class="md-nav" aria-label="selectstart">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_78" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_78" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stalled" class="md-nav__link">
+    stalled
+  </a>
+  
+    <nav class="md-nav" aria-label="stalled">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_79" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_79" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#submit" class="md-nav__link">
+    submit
+  </a>
+  
+    <nav class="md-nav" aria-label="submit">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_80" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_80" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#suspend" class="md-nav__link">
+    suspend
+  </a>
+  
+    <nav class="md-nav" aria-label="suspend">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_81" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_81" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#timeupdate" class="md-nav__link">
+    timeupdate
+  </a>
+  
+    <nav class="md-nav" aria-label="timeupdate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_82" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_82" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#toggle" class="md-nav__link">
+    toggle
+  </a>
+  
+    <nav class="md-nav" aria-label="toggle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_83" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_83" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#touchcancel" class="md-nav__link">
+    touchcancel
+  </a>
+  
+    <nav class="md-nav" aria-label="touchcancel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_84" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_84" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#touchend" class="md-nav__link">
+    touchend
+  </a>
+  
+    <nav class="md-nav" aria-label="touchend">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_85" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_85" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#touchmove" class="md-nav__link">
+    touchmove
+  </a>
+  
+    <nav class="md-nav" aria-label="touchmove">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_86" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_86" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#touchstart" class="md-nav__link">
+    touchstart
+  </a>
+  
+    <nav class="md-nav" aria-label="touchstart">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_87" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_87" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transitioncancel" class="md-nav__link">
+    transitioncancel
+  </a>
+  
+    <nav class="md-nav" aria-label="transitioncancel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_88" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_88" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transitionend" class="md-nav__link">
+    transitionend
+  </a>
+  
+    <nav class="md-nav" aria-label="transitionend">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_89" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_89" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transitionrun" class="md-nav__link">
+    transitionrun
+  </a>
+  
+    <nav class="md-nav" aria-label="transitionrun">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_90" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_90" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transitionstart" class="md-nav__link">
+    transitionstart
+  </a>
+  
+    <nav class="md-nav" aria-label="transitionstart">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_91" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_91" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#volumechange" class="md-nav__link">
+    volumechange
+  </a>
+  
+    <nav class="md-nav" aria-label="volumechange">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_92" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_92" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#waiting" class="md-nav__link">
+    waiting
+  </a>
+  
+    <nav class="md-nav" aria-label="waiting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_93" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_93" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#webkitanimationend" class="md-nav__link">
+    webkitanimationend
+  </a>
+  
+    <nav class="md-nav" aria-label="webkitanimationend">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_94" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_94" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#webkitanimationiteration" class="md-nav__link">
+    webkitanimationiteration
+  </a>
+  
+    <nav class="md-nav" aria-label="webkitanimationiteration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_95" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_95" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#webkitanimationstart" class="md-nav__link">
+    webkitanimationstart
+  </a>
+  
+    <nav class="md-nav" aria-label="webkitanimationstart">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_96" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_96" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#webkittransitionend" class="md-nav__link">
+    webkittransitionend
+  </a>
+  
+    <nav class="md-nav" aria-label="webkittransitionend">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_97" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_97" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wheel" class="md-nav__link">
+    wheel
+  </a>
+  
+    <nav class="md-nav" aria-label="wheel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_98" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_98" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+<p><a href="../../">AWF</a> / <a href="../../modules/">Modules</a> / <a href="../../modules/akashaproject_ui_awf_testing_utils/">@akashaproject/ui-awf-testing-utils</a> / <a href="../../modules/akashaproject_ui_awf_testing_utils._internal_/">&lt;internal></a> / SVGElementEventMap</p>
+<h1 id="interface-svgelementeventmap">Interface: SVGElementEventMap</h1>
+<p><a href="../../modules/akashaproject_ui_awf_testing_utils/">@akashaproject/ui-awf-testing-utils</a>.<a href="../../modules/akashaproject_ui_awf_testing_utils._internal_/"><internal></a>.SVGElementEventMap</p>
+<h2 id="hierarchy">Hierarchy</h2>
+<ul>
+<li>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.ElementEventMap/"><code>ElementEventMap</code></a></p>
+</li>
+<li>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.DocumentAndElementEventHandlersEventMap/"><code>DocumentAndElementEventHandlersEventMap</code></a></p>
+</li>
+<li>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/"><code>GlobalEventHandlersEventMap</code></a></p>
+</li>
+</ul>
+<p>↳ <strong><code>SVGElementEventMap</code></strong></p>
+<h2 id="table-of-contents">Table of contents</h2>
+<h3 id="properties">Properties</h3>
+<ul>
+<li><a href="./#abort">abort</a></li>
+<li><a href="./#animationcancel">animationcancel</a></li>
+<li><a href="./#animationend">animationend</a></li>
+<li><a href="./#animationiteration">animationiteration</a></li>
+<li><a href="./#animationstart">animationstart</a></li>
+<li><a href="./#auxclick">auxclick</a></li>
+<li><a href="./#beforeinput">beforeinput</a></li>
+<li><a href="./#blur">blur</a></li>
+<li><a href="./#canplay">canplay</a></li>
+<li><a href="./#canplaythrough">canplaythrough</a></li>
+<li><a href="./#change">change</a></li>
+<li><a href="./#click">click</a></li>
+<li><a href="./#close">close</a></li>
+<li><a href="./#compositionend">compositionend</a></li>
+<li><a href="./#compositionstart">compositionstart</a></li>
+<li><a href="./#compositionupdate">compositionupdate</a></li>
+<li><a href="./#contextmenu">contextmenu</a></li>
+<li><a href="./#copy">copy</a></li>
+<li><a href="./#cuechange">cuechange</a></li>
+<li><a href="./#cut">cut</a></li>
+<li><a href="./#dblclick">dblclick</a></li>
+<li><a href="./#drag">drag</a></li>
+<li><a href="./#dragend">dragend</a></li>
+<li><a href="./#dragenter">dragenter</a></li>
+<li><a href="./#dragleave">dragleave</a></li>
+<li><a href="./#dragover">dragover</a></li>
+<li><a href="./#dragstart">dragstart</a></li>
+<li><a href="./#drop">drop</a></li>
+<li><a href="./#durationchange">durationchange</a></li>
+<li><a href="./#emptied">emptied</a></li>
+<li><a href="./#ended">ended</a></li>
+<li><a href="./#error">error</a></li>
+<li><a href="./#focus">focus</a></li>
+<li><a href="./#focusin">focusin</a></li>
+<li><a href="./#focusout">focusout</a></li>
+<li><a href="./#formdata">formdata</a></li>
+<li><a href="./#fullscreenchange">fullscreenchange</a></li>
+<li><a href="./#fullscreenerror">fullscreenerror</a></li>
+<li><a href="./#gotpointercapture">gotpointercapture</a></li>
+<li><a href="./#input">input</a></li>
+<li><a href="./#invalid">invalid</a></li>
+<li><a href="./#keydown">keydown</a></li>
+<li><a href="./#keypress">keypress</a></li>
+<li><a href="./#keyup">keyup</a></li>
+<li><a href="./#load">load</a></li>
+<li><a href="./#loadeddata">loadeddata</a></li>
+<li><a href="./#loadedmetadata">loadedmetadata</a></li>
+<li><a href="./#loadstart">loadstart</a></li>
+<li><a href="./#lostpointercapture">lostpointercapture</a></li>
+<li><a href="./#mousedown">mousedown</a></li>
+<li><a href="./#mouseenter">mouseenter</a></li>
+<li><a href="./#mouseleave">mouseleave</a></li>
+<li><a href="./#mousemove">mousemove</a></li>
+<li><a href="./#mouseout">mouseout</a></li>
+<li><a href="./#mouseover">mouseover</a></li>
+<li><a href="./#mouseup">mouseup</a></li>
+<li><a href="./#paste">paste</a></li>
+<li><a href="./#pause">pause</a></li>
+<li><a href="./#play">play</a></li>
+<li><a href="./#playing">playing</a></li>
+<li><a href="./#pointercancel">pointercancel</a></li>
+<li><a href="./#pointerdown">pointerdown</a></li>
+<li><a href="./#pointerenter">pointerenter</a></li>
+<li><a href="./#pointerleave">pointerleave</a></li>
+<li><a href="./#pointermove">pointermove</a></li>
+<li><a href="./#pointerout">pointerout</a></li>
+<li><a href="./#pointerover">pointerover</a></li>
+<li><a href="./#pointerup">pointerup</a></li>
+<li><a href="./#progress">progress</a></li>
+<li><a href="./#ratechange">ratechange</a></li>
+<li><a href="./#reset">reset</a></li>
+<li><a href="./#resize">resize</a></li>
+<li><a href="./#scroll">scroll</a></li>
+<li><a href="./#securitypolicyviolation">securitypolicyviolation</a></li>
+<li><a href="./#seeked">seeked</a></li>
+<li><a href="./#seeking">seeking</a></li>
+<li><a href="./#select">select</a></li>
+<li><a href="./#selectionchange">selectionchange</a></li>
+<li><a href="./#selectstart">selectstart</a></li>
+<li><a href="./#stalled">stalled</a></li>
+<li><a href="./#submit">submit</a></li>
+<li><a href="./#suspend">suspend</a></li>
+<li><a href="./#timeupdate">timeupdate</a></li>
+<li><a href="./#toggle">toggle</a></li>
+<li><a href="./#touchcancel">touchcancel</a></li>
+<li><a href="./#touchend">touchend</a></li>
+<li><a href="./#touchmove">touchmove</a></li>
+<li><a href="./#touchstart">touchstart</a></li>
+<li><a href="./#transitioncancel">transitioncancel</a></li>
+<li><a href="./#transitionend">transitionend</a></li>
+<li><a href="./#transitionrun">transitionrun</a></li>
+<li><a href="./#transitionstart">transitionstart</a></li>
+<li><a href="./#volumechange">volumechange</a></li>
+<li><a href="./#waiting">waiting</a></li>
+<li><a href="./#webkitanimationend">webkitanimationend</a></li>
+<li><a href="./#webkitanimationiteration">webkitanimationiteration</a></li>
+<li><a href="./#webkitanimationstart">webkitanimationstart</a></li>
+<li><a href="./#webkittransitionend">webkittransitionend</a></li>
+<li><a href="./#wheel">wheel</a></li>
+</ul>
+<h2 id="properties_1">Properties</h2>
+<h3 id="abort">abort</h3>
+<p>• <strong>abort</strong>: <code>UIEvent</code></p>
+<h4 id="inherited-from">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#abort">abort</a></p>
+<h4 id="defined-in">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5576</p>
+<hr />
+<h3 id="animationcancel">animationcancel</h3>
+<p>• <strong>animationcancel</strong>: <code>AnimationEvent</code></p>
+<h4 id="inherited-from_1">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#animationcancel">animationcancel</a></p>
+<h4 id="defined-in_1">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5577</p>
+<hr />
+<h3 id="animationend">animationend</h3>
+<p>• <strong>animationend</strong>: <code>AnimationEvent</code></p>
+<h4 id="inherited-from_2">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#animationend">animationend</a></p>
+<h4 id="defined-in_2">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5578</p>
+<hr />
+<h3 id="animationiteration">animationiteration</h3>
+<p>• <strong>animationiteration</strong>: <code>AnimationEvent</code></p>
+<h4 id="inherited-from_3">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#animationiteration">animationiteration</a></p>
+<h4 id="defined-in_3">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5579</p>
+<hr />
+<h3 id="animationstart">animationstart</h3>
+<p>• <strong>animationstart</strong>: <code>AnimationEvent</code></p>
+<h4 id="inherited-from_4">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#animationstart">animationstart</a></p>
+<h4 id="defined-in_4">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5580</p>
+<hr />
+<h3 id="auxclick">auxclick</h3>
+<p>• <strong>auxclick</strong>: <code>MouseEvent</code></p>
+<h4 id="inherited-from_5">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#auxclick">auxclick</a></p>
+<h4 id="defined-in_5">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5581</p>
+<hr />
+<h3 id="beforeinput">beforeinput</h3>
+<p>• <strong>beforeinput</strong>: <a href="../../modules/akashaproject_ui_awf_testing_utils._internal_/#inputevent"><code>InputEvent</code></a></p>
+<h4 id="inherited-from_6">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#beforeinput">beforeinput</a></p>
+<h4 id="defined-in_6">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5582</p>
+<hr />
+<h3 id="blur">blur</h3>
+<p>• <strong>blur</strong>: <code>FocusEvent</code></p>
+<h4 id="inherited-from_7">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#blur">blur</a></p>
+<h4 id="defined-in_7">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5583</p>
+<hr />
+<h3 id="canplay">canplay</h3>
+<p>• <strong>canplay</strong>: <code>Event</code></p>
+<h4 id="inherited-from_8">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#canplay">canplay</a></p>
+<h4 id="defined-in_8">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5584</p>
+<hr />
+<h3 id="canplaythrough">canplaythrough</h3>
+<p>• <strong>canplaythrough</strong>: <code>Event</code></p>
+<h4 id="inherited-from_9">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#canplaythrough">canplaythrough</a></p>
+<h4 id="defined-in_9">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5585</p>
+<hr />
+<h3 id="change">change</h3>
+<p>• <strong>change</strong>: <code>Event</code></p>
+<h4 id="inherited-from_10">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#change">change</a></p>
+<h4 id="defined-in_10">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5586</p>
+<hr />
+<h3 id="click">click</h3>
+<p>• <strong>click</strong>: <code>MouseEvent</code></p>
+<h4 id="inherited-from_11">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#click">click</a></p>
+<h4 id="defined-in_11">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5587</p>
+<hr />
+<h3 id="close">close</h3>
+<p>• <strong>close</strong>: <code>Event</code></p>
+<h4 id="inherited-from_12">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#close">close</a></p>
+<h4 id="defined-in_12">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5588</p>
+<hr />
+<h3 id="compositionend">compositionend</h3>
+<p>• <strong>compositionend</strong>: <code>CompositionEvent</code></p>
+<h4 id="inherited-from_13">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#compositionend">compositionend</a></p>
+<h4 id="defined-in_13">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5589</p>
+<hr />
+<h3 id="compositionstart">compositionstart</h3>
+<p>• <strong>compositionstart</strong>: <code>CompositionEvent</code></p>
+<h4 id="inherited-from_14">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#compositionstart">compositionstart</a></p>
+<h4 id="defined-in_14">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5590</p>
+<hr />
+<h3 id="compositionupdate">compositionupdate</h3>
+<p>• <strong>compositionupdate</strong>: <code>CompositionEvent</code></p>
+<h4 id="inherited-from_15">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#compositionupdate">compositionupdate</a></p>
+<h4 id="defined-in_15">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5591</p>
+<hr />
+<h3 id="contextmenu">contextmenu</h3>
+<p>• <strong>contextmenu</strong>: <code>MouseEvent</code></p>
+<h4 id="inherited-from_16">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#contextmenu">contextmenu</a></p>
+<h4 id="defined-in_16">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5592</p>
+<hr />
+<h3 id="copy">copy</h3>
+<p>• <strong>copy</strong>: <code>ClipboardEvent</code></p>
+<h4 id="inherited-from_17">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.DocumentAndElementEventHandlersEventMap/">DocumentAndElementEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.DocumentAndElementEventHandlersEventMap/#copy">copy</a></p>
+<h4 id="defined-in_17">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:4724</p>
+<hr />
+<h3 id="cuechange">cuechange</h3>
+<p>• <strong>cuechange</strong>: <code>Event</code></p>
+<h4 id="inherited-from_18">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#cuechange">cuechange</a></p>
+<h4 id="defined-in_18">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5593</p>
+<hr />
+<h3 id="cut">cut</h3>
+<p>• <strong>cut</strong>: <code>ClipboardEvent</code></p>
+<h4 id="inherited-from_19">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.DocumentAndElementEventHandlersEventMap/">DocumentAndElementEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.DocumentAndElementEventHandlersEventMap/#cut">cut</a></p>
+<h4 id="defined-in_19">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:4725</p>
+<hr />
+<h3 id="dblclick">dblclick</h3>
+<p>• <strong>dblclick</strong>: <code>MouseEvent</code></p>
+<h4 id="inherited-from_20">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#dblclick">dblclick</a></p>
+<h4 id="defined-in_20">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5594</p>
+<hr />
+<h3 id="drag">drag</h3>
+<p>• <strong>drag</strong>: <code>DragEvent</code></p>
+<h4 id="inherited-from_21">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#drag">drag</a></p>
+<h4 id="defined-in_21">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5595</p>
+<hr />
+<h3 id="dragend">dragend</h3>
+<p>• <strong>dragend</strong>: <code>DragEvent</code></p>
+<h4 id="inherited-from_22">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#dragend">dragend</a></p>
+<h4 id="defined-in_22">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5596</p>
+<hr />
+<h3 id="dragenter">dragenter</h3>
+<p>• <strong>dragenter</strong>: <code>DragEvent</code></p>
+<h4 id="inherited-from_23">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#dragenter">dragenter</a></p>
+<h4 id="defined-in_23">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5597</p>
+<hr />
+<h3 id="dragleave">dragleave</h3>
+<p>• <strong>dragleave</strong>: <code>DragEvent</code></p>
+<h4 id="inherited-from_24">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#dragleave">dragleave</a></p>
+<h4 id="defined-in_24">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5598</p>
+<hr />
+<h3 id="dragover">dragover</h3>
+<p>• <strong>dragover</strong>: <code>DragEvent</code></p>
+<h4 id="inherited-from_25">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#dragover">dragover</a></p>
+<h4 id="defined-in_25">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5599</p>
+<hr />
+<h3 id="dragstart">dragstart</h3>
+<p>• <strong>dragstart</strong>: <code>DragEvent</code></p>
+<h4 id="inherited-from_26">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#dragstart">dragstart</a></p>
+<h4 id="defined-in_26">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5600</p>
+<hr />
+<h3 id="drop">drop</h3>
+<p>• <strong>drop</strong>: <code>DragEvent</code></p>
+<h4 id="inherited-from_27">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#drop">drop</a></p>
+<h4 id="defined-in_27">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5601</p>
+<hr />
+<h3 id="durationchange">durationchange</h3>
+<p>• <strong>durationchange</strong>: <code>Event</code></p>
+<h4 id="inherited-from_28">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#durationchange">durationchange</a></p>
+<h4 id="defined-in_28">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5602</p>
+<hr />
+<h3 id="emptied">emptied</h3>
+<p>• <strong>emptied</strong>: <code>Event</code></p>
+<h4 id="inherited-from_29">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#emptied">emptied</a></p>
+<h4 id="defined-in_29">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5603</p>
+<hr />
+<h3 id="ended">ended</h3>
+<p>• <strong>ended</strong>: <code>Event</code></p>
+<h4 id="inherited-from_30">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#ended">ended</a></p>
+<h4 id="defined-in_30">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5604</p>
+<hr />
+<h3 id="error">error</h3>
+<p>• <strong>error</strong>: <a href="../../modules/akashaproject_ui_awf_testing_utils._internal_/#errorevent"><code>ErrorEvent</code></a></p>
+<h4 id="inherited-from_31">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#error">error</a></p>
+<h4 id="defined-in_31">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5605</p>
+<hr />
+<h3 id="focus">focus</h3>
+<p>• <strong>focus</strong>: <code>FocusEvent</code></p>
+<h4 id="inherited-from_32">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#focus">focus</a></p>
+<h4 id="defined-in_32">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5606</p>
+<hr />
+<h3 id="focusin">focusin</h3>
+<p>• <strong>focusin</strong>: <code>FocusEvent</code></p>
+<h4 id="inherited-from_33">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#focusin">focusin</a></p>
+<h4 id="defined-in_33">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5607</p>
+<hr />
+<h3 id="focusout">focusout</h3>
+<p>• <strong>focusout</strong>: <code>FocusEvent</code></p>
+<h4 id="inherited-from_34">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#focusout">focusout</a></p>
+<h4 id="defined-in_34">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5608</p>
+<hr />
+<h3 id="formdata">formdata</h3>
+<p>• <strong>formdata</strong>: <a href="../../modules/akashaproject_ui_awf_testing_utils._internal_/#formdataevent"><code>FormDataEvent</code></a></p>
+<h4 id="inherited-from_35">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#formdata">formdata</a></p>
+<h4 id="defined-in_35">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5609</p>
+<hr />
+<h3 id="fullscreenchange">fullscreenchange</h3>
+<p>• <strong>fullscreenchange</strong>: <code>Event</code></p>
+<h4 id="inherited-from_36">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.ElementEventMap/">ElementEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.ElementEventMap/#fullscreenchange">fullscreenchange</a></p>
+<h4 id="defined-in_36">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:4867</p>
+<hr />
+<h3 id="fullscreenerror">fullscreenerror</h3>
+<p>• <strong>fullscreenerror</strong>: <code>Event</code></p>
+<h4 id="inherited-from_37">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.ElementEventMap/">ElementEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.ElementEventMap/#fullscreenerror">fullscreenerror</a></p>
+<h4 id="defined-in_37">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:4868</p>
+<hr />
+<h3 id="gotpointercapture">gotpointercapture</h3>
+<p>• <strong>gotpointercapture</strong>: <code>PointerEvent</code></p>
+<h4 id="inherited-from_38">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#gotpointercapture">gotpointercapture</a></p>
+<h4 id="defined-in_38">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5610</p>
+<hr />
+<h3 id="input">input</h3>
+<p>• <strong>input</strong>: <code>Event</code></p>
+<h4 id="inherited-from_39">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#input">input</a></p>
+<h4 id="defined-in_39">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5611</p>
+<hr />
+<h3 id="invalid">invalid</h3>
+<p>• <strong>invalid</strong>: <code>Event</code></p>
+<h4 id="inherited-from_40">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#invalid">invalid</a></p>
+<h4 id="defined-in_40">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5612</p>
+<hr />
+<h3 id="keydown">keydown</h3>
+<p>• <strong>keydown</strong>: <code>KeyboardEvent</code></p>
+<h4 id="inherited-from_41">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#keydown">keydown</a></p>
+<h4 id="defined-in_41">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5613</p>
+<hr />
+<h3 id="keypress">keypress</h3>
+<p>• <strong>keypress</strong>: <code>KeyboardEvent</code></p>
+<h4 id="inherited-from_42">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#keypress">keypress</a></p>
+<h4 id="defined-in_42">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5614</p>
+<hr />
+<h3 id="keyup">keyup</h3>
+<p>• <strong>keyup</strong>: <code>KeyboardEvent</code></p>
+<h4 id="inherited-from_43">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#keyup">keyup</a></p>
+<h4 id="defined-in_43">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5615</p>
+<hr />
+<h3 id="load">load</h3>
+<p>• <strong>load</strong>: <code>Event</code></p>
+<h4 id="inherited-from_44">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#load">load</a></p>
+<h4 id="defined-in_44">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5616</p>
+<hr />
+<h3 id="loadeddata">loadeddata</h3>
+<p>• <strong>loadeddata</strong>: <code>Event</code></p>
+<h4 id="inherited-from_45">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#loadeddata">loadeddata</a></p>
+<h4 id="defined-in_45">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5617</p>
+<hr />
+<h3 id="loadedmetadata">loadedmetadata</h3>
+<p>• <strong>loadedmetadata</strong>: <code>Event</code></p>
+<h4 id="inherited-from_46">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#loadedmetadata">loadedmetadata</a></p>
+<h4 id="defined-in_46">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5618</p>
+<hr />
+<h3 id="loadstart">loadstart</h3>
+<p>• <strong>loadstart</strong>: <code>Event</code></p>
+<h4 id="inherited-from_47">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#loadstart">loadstart</a></p>
+<h4 id="defined-in_47">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5619</p>
+<hr />
+<h3 id="lostpointercapture">lostpointercapture</h3>
+<p>• <strong>lostpointercapture</strong>: <code>PointerEvent</code></p>
+<h4 id="inherited-from_48">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#lostpointercapture">lostpointercapture</a></p>
+<h4 id="defined-in_48">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5620</p>
+<hr />
+<h3 id="mousedown">mousedown</h3>
+<p>• <strong>mousedown</strong>: <code>MouseEvent</code></p>
+<h4 id="inherited-from_49">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#mousedown">mousedown</a></p>
+<h4 id="defined-in_49">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5621</p>
+<hr />
+<h3 id="mouseenter">mouseenter</h3>
+<p>• <strong>mouseenter</strong>: <code>MouseEvent</code></p>
+<h4 id="inherited-from_50">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#mouseenter">mouseenter</a></p>
+<h4 id="defined-in_50">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5622</p>
+<hr />
+<h3 id="mouseleave">mouseleave</h3>
+<p>• <strong>mouseleave</strong>: <code>MouseEvent</code></p>
+<h4 id="inherited-from_51">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#mouseleave">mouseleave</a></p>
+<h4 id="defined-in_51">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5623</p>
+<hr />
+<h3 id="mousemove">mousemove</h3>
+<p>• <strong>mousemove</strong>: <code>MouseEvent</code></p>
+<h4 id="inherited-from_52">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#mousemove">mousemove</a></p>
+<h4 id="defined-in_52">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5624</p>
+<hr />
+<h3 id="mouseout">mouseout</h3>
+<p>• <strong>mouseout</strong>: <code>MouseEvent</code></p>
+<h4 id="inherited-from_53">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#mouseout">mouseout</a></p>
+<h4 id="defined-in_53">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5625</p>
+<hr />
+<h3 id="mouseover">mouseover</h3>
+<p>• <strong>mouseover</strong>: <code>MouseEvent</code></p>
+<h4 id="inherited-from_54">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#mouseover">mouseover</a></p>
+<h4 id="defined-in_54">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5626</p>
+<hr />
+<h3 id="mouseup">mouseup</h3>
+<p>• <strong>mouseup</strong>: <code>MouseEvent</code></p>
+<h4 id="inherited-from_55">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#mouseup">mouseup</a></p>
+<h4 id="defined-in_55">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5627</p>
+<hr />
+<h3 id="paste">paste</h3>
+<p>• <strong>paste</strong>: <code>ClipboardEvent</code></p>
+<h4 id="inherited-from_56">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.DocumentAndElementEventHandlersEventMap/">DocumentAndElementEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.DocumentAndElementEventHandlersEventMap/#paste">paste</a></p>
+<h4 id="defined-in_56">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:4726</p>
+<hr />
+<h3 id="pause">pause</h3>
+<p>• <strong>pause</strong>: <code>Event</code></p>
+<h4 id="inherited-from_57">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#pause">pause</a></p>
+<h4 id="defined-in_57">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5628</p>
+<hr />
+<h3 id="play">play</h3>
+<p>• <strong>play</strong>: <code>Event</code></p>
+<h4 id="inherited-from_58">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#play">play</a></p>
+<h4 id="defined-in_58">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5629</p>
+<hr />
+<h3 id="playing">playing</h3>
+<p>• <strong>playing</strong>: <code>Event</code></p>
+<h4 id="inherited-from_59">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#playing">playing</a></p>
+<h4 id="defined-in_59">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5630</p>
+<hr />
+<h3 id="pointercancel">pointercancel</h3>
+<p>• <strong>pointercancel</strong>: <code>PointerEvent</code></p>
+<h4 id="inherited-from_60">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#pointercancel">pointercancel</a></p>
+<h4 id="defined-in_60">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5631</p>
+<hr />
+<h3 id="pointerdown">pointerdown</h3>
+<p>• <strong>pointerdown</strong>: <code>PointerEvent</code></p>
+<h4 id="inherited-from_61">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#pointerdown">pointerdown</a></p>
+<h4 id="defined-in_61">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5632</p>
+<hr />
+<h3 id="pointerenter">pointerenter</h3>
+<p>• <strong>pointerenter</strong>: <code>PointerEvent</code></p>
+<h4 id="inherited-from_62">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#pointerenter">pointerenter</a></p>
+<h4 id="defined-in_62">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5633</p>
+<hr />
+<h3 id="pointerleave">pointerleave</h3>
+<p>• <strong>pointerleave</strong>: <code>PointerEvent</code></p>
+<h4 id="inherited-from_63">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#pointerleave">pointerleave</a></p>
+<h4 id="defined-in_63">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5634</p>
+<hr />
+<h3 id="pointermove">pointermove</h3>
+<p>• <strong>pointermove</strong>: <code>PointerEvent</code></p>
+<h4 id="inherited-from_64">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#pointermove">pointermove</a></p>
+<h4 id="defined-in_64">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5635</p>
+<hr />
+<h3 id="pointerout">pointerout</h3>
+<p>• <strong>pointerout</strong>: <code>PointerEvent</code></p>
+<h4 id="inherited-from_65">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#pointerout">pointerout</a></p>
+<h4 id="defined-in_65">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5636</p>
+<hr />
+<h3 id="pointerover">pointerover</h3>
+<p>• <strong>pointerover</strong>: <code>PointerEvent</code></p>
+<h4 id="inherited-from_66">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#pointerover">pointerover</a></p>
+<h4 id="defined-in_66">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5637</p>
+<hr />
+<h3 id="pointerup">pointerup</h3>
+<p>• <strong>pointerup</strong>: <code>PointerEvent</code></p>
+<h4 id="inherited-from_67">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#pointerup">pointerup</a></p>
+<h4 id="defined-in_67">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5638</p>
+<hr />
+<h3 id="progress">progress</h3>
+<p>• <strong>progress</strong>: <a href="../../modules/akashaproject_ui_awf_testing_utils._internal_/#progressevent"><code>ProgressEvent</code></a>&lt;<code>EventTarget</code>></p>
+<h4 id="inherited-from_68">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#progress">progress</a></p>
+<h4 id="defined-in_68">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5639</p>
+<hr />
+<h3 id="ratechange">ratechange</h3>
+<p>• <strong>ratechange</strong>: <code>Event</code></p>
+<h4 id="inherited-from_69">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#ratechange">ratechange</a></p>
+<h4 id="defined-in_69">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5640</p>
+<hr />
+<h3 id="reset">reset</h3>
+<p>• <strong>reset</strong>: <code>Event</code></p>
+<h4 id="inherited-from_70">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#reset">reset</a></p>
+<h4 id="defined-in_70">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5641</p>
+<hr />
+<h3 id="resize">resize</h3>
+<p>• <strong>resize</strong>: <code>UIEvent</code></p>
+<h4 id="inherited-from_71">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#resize">resize</a></p>
+<h4 id="defined-in_71">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5642</p>
+<hr />
+<h3 id="scroll">scroll</h3>
+<p>• <strong>scroll</strong>: <code>Event</code></p>
+<h4 id="inherited-from_72">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#scroll">scroll</a></p>
+<h4 id="defined-in_72">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5643</p>
+<hr />
+<h3 id="securitypolicyviolation">securitypolicyviolation</h3>
+<p>• <strong>securitypolicyviolation</strong>: <a href="../../modules/akashaproject_ui_awf_testing_utils._internal_/#securitypolicyviolationevent"><code>SecurityPolicyViolationEvent</code></a></p>
+<h4 id="inherited-from_73">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#securitypolicyviolation">securitypolicyviolation</a></p>
+<h4 id="defined-in_73">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5644</p>
+<hr />
+<h3 id="seeked">seeked</h3>
+<p>• <strong>seeked</strong>: <code>Event</code></p>
+<h4 id="inherited-from_74">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#seeked">seeked</a></p>
+<h4 id="defined-in_74">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5645</p>
+<hr />
+<h3 id="seeking">seeking</h3>
+<p>• <strong>seeking</strong>: <code>Event</code></p>
+<h4 id="inherited-from_75">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#seeking">seeking</a></p>
+<h4 id="defined-in_75">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5646</p>
+<hr />
+<h3 id="select">select</h3>
+<p>• <strong>select</strong>: <code>Event</code></p>
+<h4 id="inherited-from_76">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#select">select</a></p>
+<h4 id="defined-in_76">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5647</p>
+<hr />
+<h3 id="selectionchange">selectionchange</h3>
+<p>• <strong>selectionchange</strong>: <code>Event</code></p>
+<h4 id="inherited-from_77">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#selectionchange">selectionchange</a></p>
+<h4 id="defined-in_77">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5648</p>
+<hr />
+<h3 id="selectstart">selectstart</h3>
+<p>• <strong>selectstart</strong>: <code>Event</code></p>
+<h4 id="inherited-from_78">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#selectstart">selectstart</a></p>
+<h4 id="defined-in_78">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5649</p>
+<hr />
+<h3 id="stalled">stalled</h3>
+<p>• <strong>stalled</strong>: <code>Event</code></p>
+<h4 id="inherited-from_79">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#stalled">stalled</a></p>
+<h4 id="defined-in_79">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5650</p>
+<hr />
+<h3 id="submit">submit</h3>
+<p>• <strong>submit</strong>: <code>Event</code></p>
+<h4 id="inherited-from_80">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#submit">submit</a></p>
+<h4 id="defined-in_80">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5651</p>
+<hr />
+<h3 id="suspend">suspend</h3>
+<p>• <strong>suspend</strong>: <code>Event</code></p>
+<h4 id="inherited-from_81">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#suspend">suspend</a></p>
+<h4 id="defined-in_81">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5652</p>
+<hr />
+<h3 id="timeupdate">timeupdate</h3>
+<p>• <strong>timeupdate</strong>: <code>Event</code></p>
+<h4 id="inherited-from_82">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#timeupdate">timeupdate</a></p>
+<h4 id="defined-in_82">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5653</p>
+<hr />
+<h3 id="toggle">toggle</h3>
+<p>• <strong>toggle</strong>: <code>Event</code></p>
+<h4 id="inherited-from_83">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#toggle">toggle</a></p>
+<h4 id="defined-in_83">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5654</p>
+<hr />
+<h3 id="touchcancel">touchcancel</h3>
+<p>• <strong>touchcancel</strong>: <code>TouchEvent</code></p>
+<h4 id="inherited-from_84">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#touchcancel">touchcancel</a></p>
+<h4 id="defined-in_84">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5655</p>
+<hr />
+<h3 id="touchend">touchend</h3>
+<p>• <strong>touchend</strong>: <code>TouchEvent</code></p>
+<h4 id="inherited-from_85">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#touchend">touchend</a></p>
+<h4 id="defined-in_85">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5656</p>
+<hr />
+<h3 id="touchmove">touchmove</h3>
+<p>• <strong>touchmove</strong>: <code>TouchEvent</code></p>
+<h4 id="inherited-from_86">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#touchmove">touchmove</a></p>
+<h4 id="defined-in_86">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5657</p>
+<hr />
+<h3 id="touchstart">touchstart</h3>
+<p>• <strong>touchstart</strong>: <code>TouchEvent</code></p>
+<h4 id="inherited-from_87">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#touchstart">touchstart</a></p>
+<h4 id="defined-in_87">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5658</p>
+<hr />
+<h3 id="transitioncancel">transitioncancel</h3>
+<p>• <strong>transitioncancel</strong>: <code>TransitionEvent</code></p>
+<h4 id="inherited-from_88">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#transitioncancel">transitioncancel</a></p>
+<h4 id="defined-in_88">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5659</p>
+<hr />
+<h3 id="transitionend">transitionend</h3>
+<p>• <strong>transitionend</strong>: <code>TransitionEvent</code></p>
+<h4 id="inherited-from_89">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#transitionend">transitionend</a></p>
+<h4 id="defined-in_89">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5660</p>
+<hr />
+<h3 id="transitionrun">transitionrun</h3>
+<p>• <strong>transitionrun</strong>: <code>TransitionEvent</code></p>
+<h4 id="inherited-from_90">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#transitionrun">transitionrun</a></p>
+<h4 id="defined-in_90">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5661</p>
+<hr />
+<h3 id="transitionstart">transitionstart</h3>
+<p>• <strong>transitionstart</strong>: <code>TransitionEvent</code></p>
+<h4 id="inherited-from_91">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#transitionstart">transitionstart</a></p>
+<h4 id="defined-in_91">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5662</p>
+<hr />
+<h3 id="volumechange">volumechange</h3>
+<p>• <strong>volumechange</strong>: <code>Event</code></p>
+<h4 id="inherited-from_92">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#volumechange">volumechange</a></p>
+<h4 id="defined-in_92">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5663</p>
+<hr />
+<h3 id="waiting">waiting</h3>
+<p>• <strong>waiting</strong>: <code>Event</code></p>
+<h4 id="inherited-from_93">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#waiting">waiting</a></p>
+<h4 id="defined-in_93">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5664</p>
+<hr />
+<h3 id="webkitanimationend">webkitanimationend</h3>
+<p>• <strong>webkitanimationend</strong>: <code>Event</code></p>
+<h4 id="inherited-from_94">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#webkitanimationend">webkitanimationend</a></p>
+<h4 id="defined-in_94">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5665</p>
+<hr />
+<h3 id="webkitanimationiteration">webkitanimationiteration</h3>
+<p>• <strong>webkitanimationiteration</strong>: <code>Event</code></p>
+<h4 id="inherited-from_95">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#webkitanimationiteration">webkitanimationiteration</a></p>
+<h4 id="defined-in_95">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5666</p>
+<hr />
+<h3 id="webkitanimationstart">webkitanimationstart</h3>
+<p>• <strong>webkitanimationstart</strong>: <code>Event</code></p>
+<h4 id="inherited-from_96">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#webkitanimationstart">webkitanimationstart</a></p>
+<h4 id="defined-in_96">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5667</p>
+<hr />
+<h3 id="webkittransitionend">webkittransitionend</h3>
+<p>• <strong>webkittransitionend</strong>: <code>Event</code></p>
+<h4 id="inherited-from_97">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#webkittransitionend">webkittransitionend</a></p>
+<h4 id="defined-in_97">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5668</p>
+<hr />
+<h3 id="wheel">wheel</h3>
+<p>• <strong>wheel</strong>: <code>WheelEvent</code></p>
+<h4 id="inherited-from_98">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/">GlobalEventHandlersEventMap</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.GlobalEventHandlersEventMap/#wheel">wheel</a></p>
+<h4 id="defined-in_98">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5669</p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.22074ed6.min.js"}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.01de222e.min.js"></script>
+      
+    
+  </body>
+</html>

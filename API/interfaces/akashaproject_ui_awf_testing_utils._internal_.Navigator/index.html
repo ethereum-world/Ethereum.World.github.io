@@ -1,0 +1,1714 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.7">
+    
+    
+      
+        <title>akashaproject ui awf testing utils. internal .Navigator - AKASHA World Framework docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.cd566b2a.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#interface-navigator" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="AKASHA World Framework docs" class="md-header__button md-logo" aria-label="AKASHA World Framework docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AKASHA World Framework docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              akashaproject ui awf testing utils. internal .Navigator
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="AKASHA World Framework docs" class="md-nav__button md-logo" aria-label="AKASHA World Framework docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    AKASHA World Framework docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modules/" class="md-nav__link">
+        API
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hierarchy" class="md-nav__link">
+    Hierarchy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    Table of contents
+  </a>
+  
+    <nav class="md-nav" aria-label="Table of contents">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    Properties
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    Methods
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties_1" class="md-nav__link">
+    Properties
+  </a>
+  
+    <nav class="md-nav" aria-label="Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#appcodename" class="md-nav__link">
+    appCodeName
+  </a>
+  
+    <nav class="md-nav" aria-label="appCodeName">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#appname" class="md-nav__link">
+    appName
+  </a>
+  
+    <nav class="md-nav" aria-label="appName">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_1" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_1" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#appversion" class="md-nav__link">
+    appVersion
+  </a>
+  
+    <nav class="md-nav" aria-label="appVersion">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_2" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_2" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clipboard" class="md-nav__link">
+    clipboard
+  </a>
+  
+    <nav class="md-nav" aria-label="clipboard">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_3" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connection" class="md-nav__link">
+    connection
+  </a>
+  
+    <nav class="md-nav" aria-label="connection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_3" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_4" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cookieenabled" class="md-nav__link">
+    cookieEnabled
+  </a>
+  
+    <nav class="md-nav" aria-label="cookieEnabled">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_4" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_5" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#credentials" class="md-nav__link">
+    credentials
+  </a>
+  
+    <nav class="md-nav" aria-label="credentials">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_6" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#donottrack" class="md-nav__link">
+    doNotTrack
+  </a>
+  
+    <nav class="md-nav" aria-label="doNotTrack">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_7" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#geolocation" class="md-nav__link">
+    geolocation
+  </a>
+  
+    <nav class="md-nav" aria-label="geolocation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_8" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hardwareconcurrency" class="md-nav__link">
+    hardwareConcurrency
+  </a>
+  
+    <nav class="md-nav" aria-label="hardwareConcurrency">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_5" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_9" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#language" class="md-nav__link">
+    language
+  </a>
+  
+    <nav class="md-nav" aria-label="language">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_6" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_10" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#languages" class="md-nav__link">
+    languages
+  </a>
+  
+    <nav class="md-nav" aria-label="languages">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_7" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_11" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maxtouchpoints" class="md-nav__link">
+    maxTouchPoints
+  </a>
+  
+    <nav class="md-nav" aria-label="maxTouchPoints">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_12" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mediacapabilities" class="md-nav__link">
+    mediaCapabilities
+  </a>
+  
+    <nav class="md-nav" aria-label="mediaCapabilities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_13" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mediadevices" class="md-nav__link">
+    mediaDevices
+  </a>
+  
+    <nav class="md-nav" aria-label="mediaDevices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_14" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mediasession" class="md-nav__link">
+    mediaSession
+  </a>
+  
+    <nav class="md-nav" aria-label="mediaSession">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_15" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mimetypes" class="md-nav__link">
+    mimeTypes
+  </a>
+  
+    <nav class="md-nav" aria-label="mimeTypes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_8" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_16" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#online" class="md-nav__link">
+    onLine
+  </a>
+  
+    <nav class="md-nav" aria-label="onLine">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_9" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_17" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#permissions" class="md-nav__link">
+    permissions
+  </a>
+  
+    <nav class="md-nav" aria-label="permissions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_18" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#platform" class="md-nav__link">
+    platform
+  </a>
+  
+    <nav class="md-nav" aria-label="platform">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_10" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_19" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plugins" class="md-nav__link">
+    plugins
+  </a>
+  
+    <nav class="md-nav" aria-label="plugins">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_11" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_20" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pointerenabled" class="md-nav__link">
+    pointerEnabled
+  </a>
+  
+    <nav class="md-nav" aria-label="pointerEnabled">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_21" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#product" class="md-nav__link">
+    product
+  </a>
+  
+    <nav class="md-nav" aria-label="product">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_12" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_22" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#productsub" class="md-nav__link">
+    productSub
+  </a>
+  
+    <nav class="md-nav" aria-label="productSub">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_13" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_23" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#serviceworker" class="md-nav__link">
+    serviceWorker
+  </a>
+  
+    <nav class="md-nav" aria-label="serviceWorker">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_24" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storage" class="md-nav__link">
+    storage
+  </a>
+  
+    <nav class="md-nav" aria-label="storage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_14" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_25" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#useragent" class="md-nav__link">
+    userAgent
+  </a>
+  
+    <nav class="md-nav" aria-label="userAgent">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_15" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_26" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vendor" class="md-nav__link">
+    vendor
+  </a>
+  
+    <nav class="md-nav" aria-label="vendor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_16" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_27" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vendorsub" class="md-nav__link">
+    vendorSub
+  </a>
+  
+    <nav class="md-nav" aria-label="vendorSub">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_17" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_28" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#webdriver" class="md-nav__link">
+    webdriver
+  </a>
+  
+    <nav class="md-nav" aria-label="webdriver">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_18" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_29" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#methods_1" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getgamepads" class="md-nav__link">
+    getGamepads
+  </a>
+  
+    <nav class="md-nav" aria-label="getGamepads">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_30" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#javaenabled" class="md-nav__link">
+    javaEnabled
+  </a>
+  
+    <nav class="md-nav" aria-label="javaEnabled">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_1" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_19" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_31" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#registerprotocolhandler" class="md-nav__link">
+    registerProtocolHandler
+  </a>
+  
+    <nav class="md-nav" aria-label="registerProtocolHandler">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_2" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_20" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_32" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#requestmediakeysystemaccess" class="md-nav__link">
+    requestMediaKeySystemAccess
+  </a>
+  
+    <nav class="md-nav" aria-label="requestMediaKeySystemAccess">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_1" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_3" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_33" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sendbeacon" class="md-nav__link">
+    sendBeacon
+  </a>
+  
+    <nav class="md-nav" aria-label="sendBeacon">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_2" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_4" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_34" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#share" class="md-nav__link">
+    share
+  </a>
+  
+    <nav class="md-nav" aria-label="share">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_3" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_5" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_35" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vibrate" class="md-nav__link">
+    vibrate
+  </a>
+  
+    <nav class="md-nav" aria-label="vibrate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_4" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_6" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_36" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+<p><a href="../../">AWF</a> / <a href="../../modules/">Modules</a> / <a href="../../modules/akashaproject_ui_awf_testing_utils/">@akashaproject/ui-awf-testing-utils</a> / <a href="../../modules/akashaproject_ui_awf_testing_utils._internal_/">&lt;internal></a> / Navigator</p>
+<h1 id="interface-navigator">Interface: Navigator</h1>
+<p><a href="../../modules/akashaproject_ui_awf_testing_utils/">@akashaproject/ui-awf-testing-utils</a>.<a href="../../modules/akashaproject_ui_awf_testing_utils._internal_/"><internal></a>.Navigator</p>
+<p>The state and the identity of the user agent. It allows scripts to query it and to register themselves to carry on some activities.</p>
+<h2 id="hierarchy">Hierarchy</h2>
+<ul>
+<li>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.NavigatorAutomationInformation/"><code>NavigatorAutomationInformation</code></a></p>
+</li>
+<li>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.NavigatorConcurrentHardware/"><code>NavigatorConcurrentHardware</code></a></p>
+</li>
+<li>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.NavigatorContentUtils/"><code>NavigatorContentUtils</code></a></p>
+</li>
+<li>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.NavigatorCookies/"><code>NavigatorCookies</code></a></p>
+</li>
+<li>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.NavigatorID/"><code>NavigatorID</code></a></p>
+</li>
+<li>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.NavigatorLanguage/"><code>NavigatorLanguage</code></a></p>
+</li>
+<li>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.NavigatorNetworkInformation/"><code>NavigatorNetworkInformation</code></a></p>
+</li>
+<li>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.NavigatorOnLine/"><code>NavigatorOnLine</code></a></p>
+</li>
+<li>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.NavigatorPlugins/"><code>NavigatorPlugins</code></a></p>
+</li>
+<li>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.NavigatorStorage/"><code>NavigatorStorage</code></a></p>
+</li>
+</ul>
+<p>↳ <strong><code>Navigator</code></strong></p>
+<h2 id="table-of-contents">Table of contents</h2>
+<h3 id="properties">Properties</h3>
+<ul>
+<li><a href="./#appcodename">appCodeName</a></li>
+<li><a href="./#appname">appName</a></li>
+<li><a href="./#appversion">appVersion</a></li>
+<li><a href="./#clipboard">clipboard</a></li>
+<li><a href="./#connection">connection</a></li>
+<li><a href="./#cookieenabled">cookieEnabled</a></li>
+<li><a href="./#credentials">credentials</a></li>
+<li><a href="./#donottrack">doNotTrack</a></li>
+<li><a href="./#geolocation">geolocation</a></li>
+<li><a href="./#hardwareconcurrency">hardwareConcurrency</a></li>
+<li><a href="./#language">language</a></li>
+<li><a href="./#languages">languages</a></li>
+<li><a href="./#maxtouchpoints">maxTouchPoints</a></li>
+<li><a href="./#mediacapabilities">mediaCapabilities</a></li>
+<li><a href="./#mediadevices">mediaDevices</a></li>
+<li><a href="./#mediasession">mediaSession</a></li>
+<li><a href="./#mimetypes">mimeTypes</a></li>
+<li><a href="./#online">onLine</a></li>
+<li><a href="./#permissions">permissions</a></li>
+<li><a href="./#platform">platform</a></li>
+<li><a href="./#plugins">plugins</a></li>
+<li><a href="./#pointerenabled">pointerEnabled</a></li>
+<li><a href="./#product">product</a></li>
+<li><a href="./#productsub">productSub</a></li>
+<li><a href="./#serviceworker">serviceWorker</a></li>
+<li><a href="./#storage">storage</a></li>
+<li><a href="./#useragent">userAgent</a></li>
+<li><a href="./#vendor">vendor</a></li>
+<li><a href="./#vendorsub">vendorSub</a></li>
+<li><a href="./#webdriver">webdriver</a></li>
+</ul>
+<h3 id="methods">Methods</h3>
+<ul>
+<li><a href="./#getgamepads">getGamepads</a></li>
+<li><a href="./#javaenabled">javaEnabled</a></li>
+<li><a href="./#registerprotocolhandler">registerProtocolHandler</a></li>
+<li><a href="./#requestmediakeysystemaccess">requestMediaKeySystemAccess</a></li>
+<li><a href="./#sendbeacon">sendBeacon</a></li>
+<li><a href="./#share">share</a></li>
+<li><a href="./#vibrate">vibrate</a></li>
+</ul>
+<h2 id="properties_1">Properties</h2>
+<h3 id="appcodename">appCodeName</h3>
+<p>• <code>Readonly</code> <strong>appCodeName</strong>: <code>string</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="inherited-from">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.NavigatorID/">NavigatorID</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.NavigatorID/#appcodename">appCodeName</a></p>
+<h4 id="defined-in">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10438</p>
+<hr />
+<h3 id="appname">appName</h3>
+<p>• <code>Readonly</code> <strong>appName</strong>: <code>string</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="inherited-from_1">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.NavigatorID/">NavigatorID</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.NavigatorID/#appname">appName</a></p>
+<h4 id="defined-in_1">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10440</p>
+<hr />
+<h3 id="appversion">appVersion</h3>
+<p>• <code>Readonly</code> <strong>appVersion</strong>: <code>string</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="inherited-from_2">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.NavigatorID/">NavigatorID</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.NavigatorID/#appversion">appVersion</a></p>
+<h4 id="defined-in_2">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10442</p>
+<hr />
+<h3 id="clipboard">clipboard</h3>
+<p>• <code>Readonly</code> <strong>clipboard</strong>: <a href="../../modules/akashaproject_ui_awf_testing_utils._internal_/#clipboard"><code>Clipboard</code></a></p>
+<h4 id="defined-in_3">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10397</p>
+<hr />
+<h3 id="connection">connection</h3>
+<p>• <code>Readonly</code> <strong>connection</strong>: <a href="../../modules/akashaproject_ui_awf_testing_utils._internal_/#networkinformation"><code>NetworkInformation</code></a></p>
+<h4 id="inherited-from_3">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.NavigatorNetworkInformation/">NavigatorNetworkInformation</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.NavigatorNetworkInformation/#connection">connection</a></p>
+<h4 id="defined-in_4">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10461</p>
+<hr />
+<h3 id="cookieenabled">cookieEnabled</h3>
+<p>• <code>Readonly</code> <strong>cookieEnabled</strong>: <code>boolean</code></p>
+<h4 id="inherited-from_4">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.NavigatorCookies/">NavigatorCookies</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.NavigatorCookies/#cookieenabled">cookieEnabled</a></p>
+<h4 id="defined-in_5">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10433</p>
+<hr />
+<h3 id="credentials">credentials</h3>
+<p>• <code>Readonly</code> <strong>credentials</strong>: <a href="../../modules/akashaproject_ui_awf_testing_utils._internal_/#credentialscontainer"><code>CredentialsContainer</code></a></p>
+<h4 id="defined-in_6">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10398</p>
+<hr />
+<h3 id="donottrack">doNotTrack</h3>
+<p>• <code>Readonly</code> <strong>doNotTrack</strong>: <code>string</code></p>
+<h4 id="defined-in_7">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10399</p>
+<hr />
+<h3 id="geolocation">geolocation</h3>
+<p>• <code>Readonly</code> <strong>geolocation</strong>: <a href="../../modules/akashaproject_ui_awf_testing_utils._internal_/#geolocation"><code>Geolocation</code></a></p>
+<h4 id="defined-in_8">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10400</p>
+<hr />
+<h3 id="hardwareconcurrency">hardwareConcurrency</h3>
+<p>• <code>Readonly</code> <strong>hardwareConcurrency</strong>: <code>number</code></p>
+<h4 id="inherited-from_5">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.NavigatorConcurrentHardware/">NavigatorConcurrentHardware</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.NavigatorConcurrentHardware/#hardwareconcurrency">hardwareConcurrency</a></p>
+<h4 id="defined-in_9">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10425</p>
+<hr />
+<h3 id="language">language</h3>
+<p>• <code>Readonly</code> <strong>language</strong>: <code>string</code></p>
+<h4 id="inherited-from_6">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.NavigatorLanguage/">NavigatorLanguage</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.NavigatorLanguage/#language">language</a></p>
+<h4 id="defined-in_10">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10456</p>
+<hr />
+<h3 id="languages">languages</h3>
+<p>• <code>Readonly</code> <strong>languages</strong>: readonly <code>string</code>[]</p>
+<h4 id="inherited-from_7">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.NavigatorLanguage/">NavigatorLanguage</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.NavigatorLanguage/#languages">languages</a></p>
+<h4 id="defined-in_11">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10457</p>
+<hr />
+<h3 id="maxtouchpoints">maxTouchPoints</h3>
+<p>• <code>Readonly</code> <strong>maxTouchPoints</strong>: <code>number</code></p>
+<h4 id="defined-in_12">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10401</p>
+<hr />
+<h3 id="mediacapabilities">mediaCapabilities</h3>
+<p>• <code>Readonly</code> <strong>mediaCapabilities</strong>: <a href="../../modules/akashaproject_ui_awf_testing_utils._internal_/#mediacapabilities"><code>MediaCapabilities</code></a></p>
+<h4 id="defined-in_13">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10402</p>
+<hr />
+<h3 id="mediadevices">mediaDevices</h3>
+<p>• <code>Readonly</code> <strong>mediaDevices</strong>: <a href="../../modules/akashaproject_ui_awf_testing_utils._internal_/#mediadevices"><code>MediaDevices</code></a></p>
+<h4 id="defined-in_14">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10403</p>
+<hr />
+<h3 id="mediasession">mediaSession</h3>
+<p>• <code>Readonly</code> <strong>mediaSession</strong>: <a href="../../modules/akashaproject_ui_awf_testing_utils._internal_/#mediasession"><code>MediaSession</code></a></p>
+<h4 id="defined-in_15">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10404</p>
+<hr />
+<h3 id="mimetypes">mimeTypes</h3>
+<p>• <code>Readonly</code> <strong>mimeTypes</strong>: <a href="../../modules/akashaproject_ui_awf_testing_utils._internal_/#mimetypearray"><code>MimeTypeArray</code></a></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="inherited-from_8">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.NavigatorPlugins/">NavigatorPlugins</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.NavigatorPlugins/#mimetypes">mimeTypes</a></p>
+<h4 id="defined-in_16">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10470</p>
+<hr />
+<h3 id="online">onLine</h3>
+<p>• <code>Readonly</code> <strong>onLine</strong>: <code>boolean</code></p>
+<h4 id="inherited-from_9">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.NavigatorOnLine/">NavigatorOnLine</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.NavigatorOnLine/#online">onLine</a></p>
+<h4 id="defined-in_17">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10465</p>
+<hr />
+<h3 id="permissions">permissions</h3>
+<p>• <code>Readonly</code> <strong>permissions</strong>: <a href="../../modules/akashaproject_ui_awf_testing_utils._internal_/#permissions"><code>Permissions</code></a></p>
+<h4 id="defined-in_18">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10405</p>
+<hr />
+<h3 id="platform">platform</h3>
+<p>• <code>Readonly</code> <strong>platform</strong>: <code>string</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="inherited-from_10">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.NavigatorID/">NavigatorID</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.NavigatorID/#platform">platform</a></p>
+<h4 id="defined-in_19">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10444</p>
+<hr />
+<h3 id="plugins">plugins</h3>
+<p>• <code>Readonly</code> <strong>plugins</strong>: <a href="../../modules/akashaproject_ui_awf_testing_utils._internal_/#pluginarray"><code>PluginArray</code></a></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="inherited-from_11">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.NavigatorPlugins/">NavigatorPlugins</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.NavigatorPlugins/#plugins">plugins</a></p>
+<h4 id="defined-in_20">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10472</p>
+<hr />
+<h3 id="pointerenabled">pointerEnabled</h3>
+<p>• <code>Readonly</code> <strong>pointerEnabled</strong>: <code>boolean</code></p>
+<h4 id="defined-in_21">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10406</p>
+<hr />
+<h3 id="product">product</h3>
+<p>• <code>Readonly</code> <strong>product</strong>: <code>string</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="inherited-from_12">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.NavigatorID/">NavigatorID</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.NavigatorID/#product">product</a></p>
+<h4 id="defined-in_22">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10446</p>
+<hr />
+<h3 id="productsub">productSub</h3>
+<p>• <code>Readonly</code> <strong>productSub</strong>: <code>string</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="inherited-from_13">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.NavigatorID/">NavigatorID</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.NavigatorID/#productsub">productSub</a></p>
+<h4 id="defined-in_23">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10448</p>
+<hr />
+<h3 id="serviceworker">serviceWorker</h3>
+<p>• <code>Readonly</code> <strong>serviceWorker</strong>: <a href="../../modules/akashaproject_ui_awf_testing_utils._internal_/#serviceworkercontainer"><code>ServiceWorkerContainer</code></a></p>
+<h4 id="defined-in_24">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10407</p>
+<hr />
+<h3 id="storage">storage</h3>
+<p>• <code>Readonly</code> <strong>storage</strong>: <a href="../../modules/akashaproject_ui_awf_testing_utils._internal_/#storagemanager"><code>StorageManager</code></a></p>
+<h4 id="inherited-from_14">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.NavigatorStorage/">NavigatorStorage</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.NavigatorStorage/#storage">storage</a></p>
+<h4 id="defined-in_25">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10478</p>
+<hr />
+<h3 id="useragent">userAgent</h3>
+<p>• <code>Readonly</code> <strong>userAgent</strong>: <code>string</code></p>
+<h4 id="inherited-from_15">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.NavigatorID/">NavigatorID</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.NavigatorID/#useragent">userAgent</a></p>
+<h4 id="defined-in_26">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10449</p>
+<hr />
+<h3 id="vendor">vendor</h3>
+<p>• <code>Readonly</code> <strong>vendor</strong>: <code>string</code></p>
+<h4 id="inherited-from_16">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.NavigatorID/">NavigatorID</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.NavigatorID/#vendor">vendor</a></p>
+<h4 id="defined-in_27">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10450</p>
+<hr />
+<h3 id="vendorsub">vendorSub</h3>
+<p>• <code>Readonly</code> <strong>vendorSub</strong>: <code>string</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="inherited-from_17">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.NavigatorID/">NavigatorID</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.NavigatorID/#vendorsub">vendorSub</a></p>
+<h4 id="defined-in_28">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10452</p>
+<hr />
+<h3 id="webdriver">webdriver</h3>
+<p>• <code>Readonly</code> <strong>webdriver</strong>: <code>boolean</code></p>
+<h4 id="inherited-from_18">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.NavigatorAutomationInformation/">NavigatorAutomationInformation</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.NavigatorAutomationInformation/#webdriver">webdriver</a></p>
+<h4 id="defined-in_29">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10421</p>
+<h2 id="methods_1">Methods</h2>
+<h3 id="getgamepads">getGamepads</h3>
+<p>▸ <strong>getGamepads</strong>(): <a href="../../modules/akashaproject_ui_awf_testing_utils._internal_/#gamepad"><code>Gamepad</code></a>[]</p>
+<h4 id="returns">Returns</h4>
+<p><a href="../../modules/akashaproject_ui_awf_testing_utils._internal_/#gamepad"><code>Gamepad</code></a>[]</p>
+<h4 id="defined-in_30">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10408</p>
+<hr />
+<h3 id="javaenabled">javaEnabled</h3>
+<p>▸ <strong>javaEnabled</strong>(): <code>boolean</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="returns_1">Returns</h4>
+<p><code>boolean</code></p>
+<h4 id="inherited-from_19">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.NavigatorPlugins/">NavigatorPlugins</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.NavigatorPlugins/#javaenabled">javaEnabled</a></p>
+<h4 id="defined-in_31">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10474</p>
+<hr />
+<h3 id="registerprotocolhandler">registerProtocolHandler</h3>
+<p>▸ <strong>registerProtocolHandler</strong>(<code>scheme</code>, <code>url</code>): <code>void</code></p>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>scheme</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>url</code></td>
+<td align="left"><code>string</code> | <a href="../../modules/akashaproject_ui_awf_testing_utils._internal_/#url"><code>URL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_2">Returns</h4>
+<p><code>void</code></p>
+<h4 id="inherited-from_20">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.NavigatorContentUtils/">NavigatorContentUtils</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.NavigatorContentUtils/#registerprotocolhandler">registerProtocolHandler</a></p>
+<h4 id="defined-in_32">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10429</p>
+<hr />
+<h3 id="requestmediakeysystemaccess">requestMediaKeySystemAccess</h3>
+<p>▸ <strong>requestMediaKeySystemAccess</strong>(<code>keySystem</code>, <code>supportedConfigurations</code>): <code>Promise</code>&lt;<a href="../../modules/akashaproject_ui_awf_testing_utils._internal_/#mediakeysystemaccess"><code>MediaKeySystemAccess</code></a>></p>
+<h4 id="parameters_1">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>keySystem</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>supportedConfigurations</code></td>
+<td align="left"><a href="../akashaproject_ui_awf_testing_utils._internal_.MediaKeySystemConfiguration/"><code>MediaKeySystemConfiguration</code></a>[]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_3">Returns</h4>
+<p><code>Promise</code>&lt;<a href="../../modules/akashaproject_ui_awf_testing_utils._internal_/#mediakeysystemaccess"><code>MediaKeySystemAccess</code></a>></p>
+<h4 id="defined-in_33">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10409</p>
+<hr />
+<h3 id="sendbeacon">sendBeacon</h3>
+<p>▸ <strong>sendBeacon</strong>(<code>url</code>, <code>data?</code>): <code>boolean</code></p>
+<h4 id="parameters_2">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>url</code></td>
+<td align="left"><code>string</code> | <a href="../../modules/akashaproject_ui_awf_testing_utils._internal_/#url"><code>URL</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>data?</code></td>
+<td align="left"><a href="../../modules/akashaproject_ui_awf_testing_utils._internal_/#bodyinit"><code>BodyInit</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_4">Returns</h4>
+<p><code>boolean</code></p>
+<h4 id="defined-in_34">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10410</p>
+<hr />
+<h3 id="share">share</h3>
+<p>▸ <strong>share</strong>(<code>data?</code>): <code>Promise</code>&lt;<code>void</code>></p>
+<h4 id="parameters_3">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>data?</code></td>
+<td align="left"><a href="../akashaproject_ui_awf_testing_utils._internal_.ShareData/"><code>ShareData</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_5">Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>></p>
+<h4 id="defined-in_35">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10411</p>
+<hr />
+<h3 id="vibrate">vibrate</h3>
+<p>▸ <strong>vibrate</strong>(<code>pattern</code>): <code>boolean</code></p>
+<h4 id="parameters_4">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>pattern</code></td>
+<td align="left"><a href="../../modules/akashaproject_ui_awf_testing_utils._internal_/#vibratepattern"><code>VibratePattern</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_6">Returns</h4>
+<p><code>boolean</code></p>
+<h4 id="defined-in_36">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10412</p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.22074ed6.min.js"}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.01de222e.min.js"></script>
+      
+    
+  </body>
+</html>

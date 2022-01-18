@@ -1,0 +1,3540 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.7">
+    
+    
+      
+        <title>akashaproject design system. internal .ObsoletePropertiesFallback - AKASHA World Framework docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.cd566b2a.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#interface-obsoletepropertiesfallbacktlength" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="AKASHA World Framework docs" class="md-header__button md-logo" aria-label="AKASHA World Framework docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AKASHA World Framework docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              akashaproject design system. internal .ObsoletePropertiesFallback
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="AKASHA World Framework docs" class="md-nav__button md-logo" aria-label="AKASHA World Framework docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    AKASHA World Framework docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modules/" class="md-nav__link">
+        API
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#type-parameters" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hierarchy" class="md-nav__link">
+    Hierarchy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    Table of contents
+  </a>
+  
+    <nav class="md-nav" aria-label="Table of contents">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    Properties
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties_1" class="md-nav__link">
+    Properties
+  </a>
+  
+    <nav class="md-nav" aria-label="Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#khtmlboxalign" class="md-nav__link">
+    KhtmlBoxAlign
+  </a>
+  
+    <nav class="md-nav" aria-label="KhtmlBoxAlign">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#khtmlboxdirection" class="md-nav__link">
+    KhtmlBoxDirection
+  </a>
+  
+    <nav class="md-nav" aria-label="KhtmlBoxDirection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_1" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#khtmlboxflex" class="md-nav__link">
+    KhtmlBoxFlex
+  </a>
+  
+    <nav class="md-nav" aria-label="KhtmlBoxFlex">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_2" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#khtmlboxflexgroup" class="md-nav__link">
+    KhtmlBoxFlexGroup
+  </a>
+  
+    <nav class="md-nav" aria-label="KhtmlBoxFlexGroup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_3" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#khtmlboxlines" class="md-nav__link">
+    KhtmlBoxLines
+  </a>
+  
+    <nav class="md-nav" aria-label="KhtmlBoxLines">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_4" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#khtmlboxordinalgroup" class="md-nav__link">
+    KhtmlBoxOrdinalGroup
+  </a>
+  
+    <nav class="md-nav" aria-label="KhtmlBoxOrdinalGroup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_5" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#khtmlboxorient" class="md-nav__link">
+    KhtmlBoxOrient
+  </a>
+  
+    <nav class="md-nav" aria-label="KhtmlBoxOrient">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_6" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#khtmlboxpack" class="md-nav__link">
+    KhtmlBoxPack
+  </a>
+  
+    <nav class="md-nav" aria-label="KhtmlBoxPack">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_7" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#khtmllinebreak" class="md-nav__link">
+    KhtmlLineBreak
+  </a>
+  
+    <nav class="md-nav" aria-label="KhtmlLineBreak">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_8" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#khtmlopacity" class="md-nav__link">
+    KhtmlOpacity
+  </a>
+  
+    <nav class="md-nav" aria-label="KhtmlOpacity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_9" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#khtmluserselect" class="md-nav__link">
+    KhtmlUserSelect
+  </a>
+  
+    <nav class="md-nav" aria-label="KhtmlUserSelect">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_10" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mozbackgroundclip" class="md-nav__link">
+    MozBackgroundClip
+  </a>
+  
+    <nav class="md-nav" aria-label="MozBackgroundClip">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_11" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mozbackgroundinlinepolicy" class="md-nav__link">
+    MozBackgroundInlinePolicy
+  </a>
+  
+    <nav class="md-nav" aria-label="MozBackgroundInlinePolicy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_12" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mozbackgroundorigin" class="md-nav__link">
+    MozBackgroundOrigin
+  </a>
+  
+    <nav class="md-nav" aria-label="MozBackgroundOrigin">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_13" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mozbackgroundsize" class="md-nav__link">
+    MozBackgroundSize
+  </a>
+  
+    <nav class="md-nav" aria-label="MozBackgroundSize">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_14" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mozbinding" class="md-nav__link">
+    MozBinding
+  </a>
+  
+    <nav class="md-nav" aria-label="MozBinding">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_15" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mozborderradius" class="md-nav__link">
+    MozBorderRadius
+  </a>
+  
+    <nav class="md-nav" aria-label="MozBorderRadius">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_16" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mozborderradiusbottomleft" class="md-nav__link">
+    MozBorderRadiusBottomleft
+  </a>
+  
+    <nav class="md-nav" aria-label="MozBorderRadiusBottomleft">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_17" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mozborderradiusbottomright" class="md-nav__link">
+    MozBorderRadiusBottomright
+  </a>
+  
+    <nav class="md-nav" aria-label="MozBorderRadiusBottomright">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_18" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mozborderradiustopleft" class="md-nav__link">
+    MozBorderRadiusTopleft
+  </a>
+  
+    <nav class="md-nav" aria-label="MozBorderRadiusTopleft">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_19" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mozborderradiustopright" class="md-nav__link">
+    MozBorderRadiusTopright
+  </a>
+  
+    <nav class="md-nav" aria-label="MozBorderRadiusTopright">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_20" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mozboxalign" class="md-nav__link">
+    MozBoxAlign
+  </a>
+  
+    <nav class="md-nav" aria-label="MozBoxAlign">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_21" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mozboxdirection" class="md-nav__link">
+    MozBoxDirection
+  </a>
+  
+    <nav class="md-nav" aria-label="MozBoxDirection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_22" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mozboxflex" class="md-nav__link">
+    MozBoxFlex
+  </a>
+  
+    <nav class="md-nav" aria-label="MozBoxFlex">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_23" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mozboxordinalgroup" class="md-nav__link">
+    MozBoxOrdinalGroup
+  </a>
+  
+    <nav class="md-nav" aria-label="MozBoxOrdinalGroup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_24" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mozboxorient" class="md-nav__link">
+    MozBoxOrient
+  </a>
+  
+    <nav class="md-nav" aria-label="MozBoxOrient">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_25" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mozboxpack" class="md-nav__link">
+    MozBoxPack
+  </a>
+  
+    <nav class="md-nav" aria-label="MozBoxPack">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_26" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mozboxshadow" class="md-nav__link">
+    MozBoxShadow
+  </a>
+  
+    <nav class="md-nav" aria-label="MozBoxShadow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_27" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mozfloatedge" class="md-nav__link">
+    MozFloatEdge
+  </a>
+  
+    <nav class="md-nav" aria-label="MozFloatEdge">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_28" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mozforcebrokenimageicon" class="md-nav__link">
+    MozForceBrokenImageIcon
+  </a>
+  
+    <nav class="md-nav" aria-label="MozForceBrokenImageIcon">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_29" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mozopacity" class="md-nav__link">
+    MozOpacity
+  </a>
+  
+    <nav class="md-nav" aria-label="MozOpacity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_30" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mozoutline" class="md-nav__link">
+    MozOutline
+  </a>
+  
+    <nav class="md-nav" aria-label="MozOutline">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_31" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mozoutlinecolor" class="md-nav__link">
+    MozOutlineColor
+  </a>
+  
+    <nav class="md-nav" aria-label="MozOutlineColor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_32" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mozoutlineradius" class="md-nav__link">
+    MozOutlineRadius
+  </a>
+  
+    <nav class="md-nav" aria-label="MozOutlineRadius">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_33" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mozoutlineradiusbottomleft" class="md-nav__link">
+    MozOutlineRadiusBottomleft
+  </a>
+  
+    <nav class="md-nav" aria-label="MozOutlineRadiusBottomleft">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_34" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mozoutlineradiusbottomright" class="md-nav__link">
+    MozOutlineRadiusBottomright
+  </a>
+  
+    <nav class="md-nav" aria-label="MozOutlineRadiusBottomright">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_35" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mozoutlineradiustopleft" class="md-nav__link">
+    MozOutlineRadiusTopleft
+  </a>
+  
+    <nav class="md-nav" aria-label="MozOutlineRadiusTopleft">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_36" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mozoutlineradiustopright" class="md-nav__link">
+    MozOutlineRadiusTopright
+  </a>
+  
+    <nav class="md-nav" aria-label="MozOutlineRadiusTopright">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_37" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mozoutlinestyle" class="md-nav__link">
+    MozOutlineStyle
+  </a>
+  
+    <nav class="md-nav" aria-label="MozOutlineStyle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_38" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mozoutlinewidth" class="md-nav__link">
+    MozOutlineWidth
+  </a>
+  
+    <nav class="md-nav" aria-label="MozOutlineWidth">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_39" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#moztextalignlast" class="md-nav__link">
+    MozTextAlignLast
+  </a>
+  
+    <nav class="md-nav" aria-label="MozTextAlignLast">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_40" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#moztextdecorationcolor" class="md-nav__link">
+    MozTextDecorationColor
+  </a>
+  
+    <nav class="md-nav" aria-label="MozTextDecorationColor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_41" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#moztextdecorationline" class="md-nav__link">
+    MozTextDecorationLine
+  </a>
+  
+    <nav class="md-nav" aria-label="MozTextDecorationLine">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_42" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#moztextdecorationstyle" class="md-nav__link">
+    MozTextDecorationStyle
+  </a>
+  
+    <nav class="md-nav" aria-label="MozTextDecorationStyle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_43" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mozuserinput" class="md-nav__link">
+    MozUserInput
+  </a>
+  
+    <nav class="md-nav" aria-label="MozUserInput">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_44" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oanimation" class="md-nav__link">
+    OAnimation
+  </a>
+  
+    <nav class="md-nav" aria-label="OAnimation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_45" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oanimationdelay" class="md-nav__link">
+    OAnimationDelay
+  </a>
+  
+    <nav class="md-nav" aria-label="OAnimationDelay">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_46" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oanimationdirection" class="md-nav__link">
+    OAnimationDirection
+  </a>
+  
+    <nav class="md-nav" aria-label="OAnimationDirection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_47" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oanimationduration" class="md-nav__link">
+    OAnimationDuration
+  </a>
+  
+    <nav class="md-nav" aria-label="OAnimationDuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_48" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oanimationfillmode" class="md-nav__link">
+    OAnimationFillMode
+  </a>
+  
+    <nav class="md-nav" aria-label="OAnimationFillMode">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_49" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oanimationiterationcount" class="md-nav__link">
+    OAnimationIterationCount
+  </a>
+  
+    <nav class="md-nav" aria-label="OAnimationIterationCount">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_50" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oanimationname" class="md-nav__link">
+    OAnimationName
+  </a>
+  
+    <nav class="md-nav" aria-label="OAnimationName">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_51" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oanimationplaystate" class="md-nav__link">
+    OAnimationPlayState
+  </a>
+  
+    <nav class="md-nav" aria-label="OAnimationPlayState">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_52" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oanimationtimingfunction" class="md-nav__link">
+    OAnimationTimingFunction
+  </a>
+  
+    <nav class="md-nav" aria-label="OAnimationTimingFunction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_53" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#obackgroundsize" class="md-nav__link">
+    OBackgroundSize
+  </a>
+  
+    <nav class="md-nav" aria-label="OBackgroundSize">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_54" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oborderimage" class="md-nav__link">
+    OBorderImage
+  </a>
+  
+    <nav class="md-nav" aria-label="OBorderImage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_55" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oobjectfit" class="md-nav__link">
+    OObjectFit
+  </a>
+  
+    <nav class="md-nav" aria-label="OObjectFit">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_56" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oobjectposition" class="md-nav__link">
+    OObjectPosition
+  </a>
+  
+    <nav class="md-nav" aria-label="OObjectPosition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_57" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#otabsize" class="md-nav__link">
+    OTabSize
+  </a>
+  
+    <nav class="md-nav" aria-label="OTabSize">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_58" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#otextoverflow" class="md-nav__link">
+    OTextOverflow
+  </a>
+  
+    <nav class="md-nav" aria-label="OTextOverflow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_59" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#otransform" class="md-nav__link">
+    OTransform
+  </a>
+  
+    <nav class="md-nav" aria-label="OTransform">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_60" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#otransformorigin" class="md-nav__link">
+    OTransformOrigin
+  </a>
+  
+    <nav class="md-nav" aria-label="OTransformOrigin">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_61" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#otransition" class="md-nav__link">
+    OTransition
+  </a>
+  
+    <nav class="md-nav" aria-label="OTransition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_62" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#otransitiondelay" class="md-nav__link">
+    OTransitionDelay
+  </a>
+  
+    <nav class="md-nav" aria-label="OTransitionDelay">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_63" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#otransitionduration" class="md-nav__link">
+    OTransitionDuration
+  </a>
+  
+    <nav class="md-nav" aria-label="OTransitionDuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_64" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#otransitionproperty" class="md-nav__link">
+    OTransitionProperty
+  </a>
+  
+    <nav class="md-nav" aria-label="OTransitionProperty">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_65" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#otransitiontimingfunction" class="md-nav__link">
+    OTransitionTimingFunction
+  </a>
+  
+    <nav class="md-nav" aria-label="OTransitionTimingFunction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_66" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#webkitboxalign" class="md-nav__link">
+    WebkitBoxAlign
+  </a>
+  
+    <nav class="md-nav" aria-label="WebkitBoxAlign">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_67" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#webkitboxdirection" class="md-nav__link">
+    WebkitBoxDirection
+  </a>
+  
+    <nav class="md-nav" aria-label="WebkitBoxDirection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_68" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#webkitboxflex" class="md-nav__link">
+    WebkitBoxFlex
+  </a>
+  
+    <nav class="md-nav" aria-label="WebkitBoxFlex">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_69" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#webkitboxflexgroup" class="md-nav__link">
+    WebkitBoxFlexGroup
+  </a>
+  
+    <nav class="md-nav" aria-label="WebkitBoxFlexGroup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_70" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#webkitboxlines" class="md-nav__link">
+    WebkitBoxLines
+  </a>
+  
+    <nav class="md-nav" aria-label="WebkitBoxLines">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_71" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#webkitboxordinalgroup" class="md-nav__link">
+    WebkitBoxOrdinalGroup
+  </a>
+  
+    <nav class="md-nav" aria-label="WebkitBoxOrdinalGroup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_72" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#webkitboxorient" class="md-nav__link">
+    WebkitBoxOrient
+  </a>
+  
+    <nav class="md-nav" aria-label="WebkitBoxOrient">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_73" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#webkitboxpack" class="md-nav__link">
+    WebkitBoxPack
+  </a>
+  
+    <nav class="md-nav" aria-label="WebkitBoxPack">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_74" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#webkitscrollsnappointsx" class="md-nav__link">
+    WebkitScrollSnapPointsX
+  </a>
+  
+    <nav class="md-nav" aria-label="WebkitScrollSnapPointsX">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_75" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#webkitscrollsnappointsy" class="md-nav__link">
+    WebkitScrollSnapPointsY
+  </a>
+  
+    <nav class="md-nav" aria-label="WebkitScrollSnapPointsY">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_76" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#azimuth" class="md-nav__link">
+    azimuth
+  </a>
+  
+    <nav class="md-nav" aria-label="azimuth">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_77" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boxalign" class="md-nav__link">
+    boxAlign
+  </a>
+  
+    <nav class="md-nav" aria-label="boxAlign">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_78" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boxdirection" class="md-nav__link">
+    boxDirection
+  </a>
+  
+    <nav class="md-nav" aria-label="boxDirection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_79" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boxflex" class="md-nav__link">
+    boxFlex
+  </a>
+  
+    <nav class="md-nav" aria-label="boxFlex">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_80" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boxflexgroup" class="md-nav__link">
+    boxFlexGroup
+  </a>
+  
+    <nav class="md-nav" aria-label="boxFlexGroup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_81" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boxlines" class="md-nav__link">
+    boxLines
+  </a>
+  
+    <nav class="md-nav" aria-label="boxLines">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_82" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boxordinalgroup" class="md-nav__link">
+    boxOrdinalGroup
+  </a>
+  
+    <nav class="md-nav" aria-label="boxOrdinalGroup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_83" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boxorient" class="md-nav__link">
+    boxOrient
+  </a>
+  
+    <nav class="md-nav" aria-label="boxOrient">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_84" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boxpack" class="md-nav__link">
+    boxPack
+  </a>
+  
+    <nav class="md-nav" aria-label="boxPack">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_85" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clip" class="md-nav__link">
+    clip
+  </a>
+  
+    <nav class="md-nav" aria-label="clip">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_86" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fontvariantalternates" class="md-nav__link">
+    fontVariantAlternates
+  </a>
+  
+    <nav class="md-nav" aria-label="fontVariantAlternates">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_87" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gridcolumngap" class="md-nav__link">
+    gridColumnGap
+  </a>
+  
+    <nav class="md-nav" aria-label="gridColumnGap">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_88" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gridgap" class="md-nav__link">
+    gridGap
+  </a>
+  
+    <nav class="md-nav" aria-label="gridGap">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_89" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gridrowgap" class="md-nav__link">
+    gridRowGap
+  </a>
+  
+    <nav class="md-nav" aria-label="gridRowGap">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_90" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#imemode" class="md-nav__link">
+    imeMode
+  </a>
+  
+    <nav class="md-nav" aria-label="imeMode">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_91" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msimemode" class="md-nav__link">
+    msImeMode
+  </a>
+  
+    <nav class="md-nav" aria-label="msImeMode">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_92" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msscrollbartrackcolor" class="md-nav__link">
+    msScrollbarTrackColor
+  </a>
+  
+    <nav class="md-nav" aria-label="msScrollbarTrackColor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_93" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#offsetblock" class="md-nav__link">
+    offsetBlock
+  </a>
+  
+    <nav class="md-nav" aria-label="offsetBlock">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_94" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#offsetblockend" class="md-nav__link">
+    offsetBlockEnd
+  </a>
+  
+    <nav class="md-nav" aria-label="offsetBlockEnd">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_95" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#offsetblockstart" class="md-nav__link">
+    offsetBlockStart
+  </a>
+  
+    <nav class="md-nav" aria-label="offsetBlockStart">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_96" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#offsetinline" class="md-nav__link">
+    offsetInline
+  </a>
+  
+    <nav class="md-nav" aria-label="offsetInline">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_97" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#offsetinlineend" class="md-nav__link">
+    offsetInlineEnd
+  </a>
+  
+    <nav class="md-nav" aria-label="offsetInlineEnd">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_98" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#offsetinlinestart" class="md-nav__link">
+    offsetInlineStart
+  </a>
+  
+    <nav class="md-nav" aria-label="offsetInlineStart">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_99" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scrollsnapcoordinate" class="md-nav__link">
+    scrollSnapCoordinate
+  </a>
+  
+    <nav class="md-nav" aria-label="scrollSnapCoordinate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_100" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scrollsnapdestination" class="md-nav__link">
+    scrollSnapDestination
+  </a>
+  
+    <nav class="md-nav" aria-label="scrollSnapDestination">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_101" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scrollsnappointsx" class="md-nav__link">
+    scrollSnapPointsX
+  </a>
+  
+    <nav class="md-nav" aria-label="scrollSnapPointsX">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_102" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scrollsnappointsy" class="md-nav__link">
+    scrollSnapPointsY
+  </a>
+  
+    <nav class="md-nav" aria-label="scrollSnapPointsY">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_103" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scrollsnaptypex" class="md-nav__link">
+    scrollSnapTypeX
+  </a>
+  
+    <nav class="md-nav" aria-label="scrollSnapTypeX">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_104" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scrollsnaptypey" class="md-nav__link">
+    scrollSnapTypeY
+  </a>
+  
+    <nav class="md-nav" aria-label="scrollSnapTypeY">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_105" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scrollbartrackcolor" class="md-nav__link">
+    scrollbarTrackColor
+  </a>
+  
+    <nav class="md-nav" aria-label="scrollbarTrackColor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_106" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+<p><a href="../../">AWF</a> / <a href="../../modules/">Modules</a> / <a href="../../modules/akashaproject_design_system/">@akashaproject/design-system</a> / <a href="../../modules/akashaproject_design_system._internal_/">&lt;internal></a> / ObsoletePropertiesFallback</p>
+<h1 id="interface-obsoletepropertiesfallbacktlength">Interface: ObsoletePropertiesFallback&lt;TLength></h1>
+<p><a href="../../modules/akashaproject_design_system/">@akashaproject/design-system</a>.<a href="../../modules/akashaproject_design_system._internal_/"><internal></a>.ObsoletePropertiesFallback</p>
+<h2 id="type-parameters">Type parameters</h2>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>TLength</code></td>
+<td align="left"><code>string</code> | <code>0</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="hierarchy">Hierarchy</h2>
+<ul>
+<li><strong><code>ObsoletePropertiesFallback</code></strong></li>
+</ul>
+<p>↳ <a href="../akashaproject_design_system._internal_.PropertiesFallback/"><code>PropertiesFallback</code></a></p>
+<h2 id="table-of-contents">Table of contents</h2>
+<h3 id="properties">Properties</h3>
+<ul>
+<li><a href="./#khtmlboxalign">KhtmlBoxAlign</a></li>
+<li><a href="./#khtmlboxdirection">KhtmlBoxDirection</a></li>
+<li><a href="./#khtmlboxflex">KhtmlBoxFlex</a></li>
+<li><a href="./#khtmlboxflexgroup">KhtmlBoxFlexGroup</a></li>
+<li><a href="./#khtmlboxlines">KhtmlBoxLines</a></li>
+<li><a href="./#khtmlboxordinalgroup">KhtmlBoxOrdinalGroup</a></li>
+<li><a href="./#khtmlboxorient">KhtmlBoxOrient</a></li>
+<li><a href="./#khtmlboxpack">KhtmlBoxPack</a></li>
+<li><a href="./#khtmllinebreak">KhtmlLineBreak</a></li>
+<li><a href="./#khtmlopacity">KhtmlOpacity</a></li>
+<li><a href="./#khtmluserselect">KhtmlUserSelect</a></li>
+<li><a href="./#mozbackgroundclip">MozBackgroundClip</a></li>
+<li><a href="./#mozbackgroundinlinepolicy">MozBackgroundInlinePolicy</a></li>
+<li><a href="./#mozbackgroundorigin">MozBackgroundOrigin</a></li>
+<li><a href="./#mozbackgroundsize">MozBackgroundSize</a></li>
+<li><a href="./#mozbinding">MozBinding</a></li>
+<li><a href="./#mozborderradius">MozBorderRadius</a></li>
+<li><a href="./#mozborderradiusbottomleft">MozBorderRadiusBottomleft</a></li>
+<li><a href="./#mozborderradiusbottomright">MozBorderRadiusBottomright</a></li>
+<li><a href="./#mozborderradiustopleft">MozBorderRadiusTopleft</a></li>
+<li><a href="./#mozborderradiustopright">MozBorderRadiusTopright</a></li>
+<li><a href="./#mozboxalign">MozBoxAlign</a></li>
+<li><a href="./#mozboxdirection">MozBoxDirection</a></li>
+<li><a href="./#mozboxflex">MozBoxFlex</a></li>
+<li><a href="./#mozboxordinalgroup">MozBoxOrdinalGroup</a></li>
+<li><a href="./#mozboxorient">MozBoxOrient</a></li>
+<li><a href="./#mozboxpack">MozBoxPack</a></li>
+<li><a href="./#mozboxshadow">MozBoxShadow</a></li>
+<li><a href="./#mozfloatedge">MozFloatEdge</a></li>
+<li><a href="./#mozforcebrokenimageicon">MozForceBrokenImageIcon</a></li>
+<li><a href="./#mozopacity">MozOpacity</a></li>
+<li><a href="./#mozoutline">MozOutline</a></li>
+<li><a href="./#mozoutlinecolor">MozOutlineColor</a></li>
+<li><a href="./#mozoutlineradius">MozOutlineRadius</a></li>
+<li><a href="./#mozoutlineradiusbottomleft">MozOutlineRadiusBottomleft</a></li>
+<li><a href="./#mozoutlineradiusbottomright">MozOutlineRadiusBottomright</a></li>
+<li><a href="./#mozoutlineradiustopleft">MozOutlineRadiusTopleft</a></li>
+<li><a href="./#mozoutlineradiustopright">MozOutlineRadiusTopright</a></li>
+<li><a href="./#mozoutlinestyle">MozOutlineStyle</a></li>
+<li><a href="./#mozoutlinewidth">MozOutlineWidth</a></li>
+<li><a href="./#moztextalignlast">MozTextAlignLast</a></li>
+<li><a href="./#moztextdecorationcolor">MozTextDecorationColor</a></li>
+<li><a href="./#moztextdecorationline">MozTextDecorationLine</a></li>
+<li><a href="./#moztextdecorationstyle">MozTextDecorationStyle</a></li>
+<li><a href="./#mozuserinput">MozUserInput</a></li>
+<li><a href="./#oanimation">OAnimation</a></li>
+<li><a href="./#oanimationdelay">OAnimationDelay</a></li>
+<li><a href="./#oanimationdirection">OAnimationDirection</a></li>
+<li><a href="./#oanimationduration">OAnimationDuration</a></li>
+<li><a href="./#oanimationfillmode">OAnimationFillMode</a></li>
+<li><a href="./#oanimationiterationcount">OAnimationIterationCount</a></li>
+<li><a href="./#oanimationname">OAnimationName</a></li>
+<li><a href="./#oanimationplaystate">OAnimationPlayState</a></li>
+<li><a href="./#oanimationtimingfunction">OAnimationTimingFunction</a></li>
+<li><a href="./#obackgroundsize">OBackgroundSize</a></li>
+<li><a href="./#oborderimage">OBorderImage</a></li>
+<li><a href="./#oobjectfit">OObjectFit</a></li>
+<li><a href="./#oobjectposition">OObjectPosition</a></li>
+<li><a href="./#otabsize">OTabSize</a></li>
+<li><a href="./#otextoverflow">OTextOverflow</a></li>
+<li><a href="./#otransform">OTransform</a></li>
+<li><a href="./#otransformorigin">OTransformOrigin</a></li>
+<li><a href="./#otransition">OTransition</a></li>
+<li><a href="./#otransitiondelay">OTransitionDelay</a></li>
+<li><a href="./#otransitionduration">OTransitionDuration</a></li>
+<li><a href="./#otransitionproperty">OTransitionProperty</a></li>
+<li><a href="./#otransitiontimingfunction">OTransitionTimingFunction</a></li>
+<li><a href="./#webkitboxalign">WebkitBoxAlign</a></li>
+<li><a href="./#webkitboxdirection">WebkitBoxDirection</a></li>
+<li><a href="./#webkitboxflex">WebkitBoxFlex</a></li>
+<li><a href="./#webkitboxflexgroup">WebkitBoxFlexGroup</a></li>
+<li><a href="./#webkitboxlines">WebkitBoxLines</a></li>
+<li><a href="./#webkitboxordinalgroup">WebkitBoxOrdinalGroup</a></li>
+<li><a href="./#webkitboxorient">WebkitBoxOrient</a></li>
+<li><a href="./#webkitboxpack">WebkitBoxPack</a></li>
+<li><a href="./#webkitscrollsnappointsx">WebkitScrollSnapPointsX</a></li>
+<li><a href="./#webkitscrollsnappointsy">WebkitScrollSnapPointsY</a></li>
+<li><a href="./#azimuth">azimuth</a></li>
+<li><a href="./#boxalign">boxAlign</a></li>
+<li><a href="./#boxdirection">boxDirection</a></li>
+<li><a href="./#boxflex">boxFlex</a></li>
+<li><a href="./#boxflexgroup">boxFlexGroup</a></li>
+<li><a href="./#boxlines">boxLines</a></li>
+<li><a href="./#boxordinalgroup">boxOrdinalGroup</a></li>
+<li><a href="./#boxorient">boxOrient</a></li>
+<li><a href="./#boxpack">boxPack</a></li>
+<li><a href="./#clip">clip</a></li>
+<li><a href="./#fontvariantalternates">fontVariantAlternates</a></li>
+<li><a href="./#gridcolumngap">gridColumnGap</a></li>
+<li><a href="./#gridgap">gridGap</a></li>
+<li><a href="./#gridrowgap">gridRowGap</a></li>
+<li><a href="./#imemode">imeMode</a></li>
+<li><a href="./#msimemode">msImeMode</a></li>
+<li><a href="./#msscrollbartrackcolor">msScrollbarTrackColor</a></li>
+<li><a href="./#offsetblock">offsetBlock</a></li>
+<li><a href="./#offsetblockend">offsetBlockEnd</a></li>
+<li><a href="./#offsetblockstart">offsetBlockStart</a></li>
+<li><a href="./#offsetinline">offsetInline</a></li>
+<li><a href="./#offsetinlineend">offsetInlineEnd</a></li>
+<li><a href="./#offsetinlinestart">offsetInlineStart</a></li>
+<li><a href="./#scrollsnapcoordinate">scrollSnapCoordinate</a></li>
+<li><a href="./#scrollsnapdestination">scrollSnapDestination</a></li>
+<li><a href="./#scrollsnappointsx">scrollSnapPointsX</a></li>
+<li><a href="./#scrollsnappointsy">scrollSnapPointsY</a></li>
+<li><a href="./#scrollsnaptypex">scrollSnapTypeX</a></li>
+<li><a href="./#scrollsnaptypey">scrollSnapTypeY</a></li>
+<li><a href="./#scrollbartrackcolor">scrollbarTrackColor</a></li>
+</ul>
+<h2 id="properties_1">Properties</h2>
+<h3 id="khtmlboxalign">KhtmlBoxAlign</h3>
+<p>• <code>Optional</code> <strong>KhtmlBoxAlign</strong>: <a href="../../modules/akashaproject_design_system._internal_/#boxalignproperty"><code>BoxAlignProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#boxalignproperty"><code>BoxAlignProperty</code></a>[]</p>
+<p>The <strong><code>box-align</code></strong> CSS property specifies how an element aligns its contents across its layout in a perpendicular direction. The effect of the property is only visible if there is extra space in the box.</p>
+<p><strong>Syntax</strong>: <code>start | center | end | baseline | stretch</code></p>
+<p><strong>Initial value</strong>: <code>stretch</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25584</p>
+<hr />
+<h3 id="khtmlboxdirection">KhtmlBoxDirection</h3>
+<p>• <code>Optional</code> <strong>KhtmlBoxDirection</strong>: <a href="../../modules/akashaproject_design_system._internal_/#boxdirectionproperty"><code>BoxDirectionProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#boxdirectionproperty"><code>BoxDirectionProperty</code></a>[]</p>
+<p>The <strong><code>box-direction</code></strong> CSS property specifies whether a box lays out its contents normally (from the top or left edge), or in reverse (from the bottom or right edge).</p>
+<p><strong>Syntax</strong>: <code>normal | reverse | inherit</code></p>
+<p><strong>Initial value</strong>: <code>normal</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_1">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25594</p>
+<hr />
+<h3 id="khtmlboxflex">KhtmlBoxFlex</h3>
+<p>• <code>Optional</code> <strong>KhtmlBoxFlex</strong>: <a href="../../modules/akashaproject_design_system._internal_/#globalsnumber"><code>GlobalsNumber</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#globalsnumber"><code>GlobalsNumber</code></a>[]</p>
+<p>The <strong><code>-moz-box-flex</code></strong> and <strong><code>-webkit-box-flex</code></strong> CSS properties specify how a <code>-moz-box</code> or <code>-webkit-box</code> grows to fill the box that contains it, in the direction of the containing box's layout.</p>
+<p><strong>Syntax</strong>: <code>&lt;number&gt;</code></p>
+<p><strong>Initial value</strong>: <code>0</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_2">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25604</p>
+<hr />
+<h3 id="khtmlboxflexgroup">KhtmlBoxFlexGroup</h3>
+<p>• <code>Optional</code> <strong>KhtmlBoxFlexGroup</strong>: <a href="../../modules/akashaproject_design_system._internal_/#globalsnumber"><code>GlobalsNumber</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#globalsnumber"><code>GlobalsNumber</code></a>[]</p>
+<p>The <strong><code>box-flex-group</code></strong> CSS property assigns the flexbox's child elements to a flex group.</p>
+<p><strong>Syntax</strong>: <code>&lt;integer&gt;</code></p>
+<p><strong>Initial value</strong>: <code>1</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_3">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25614</p>
+<hr />
+<h3 id="khtmlboxlines">KhtmlBoxLines</h3>
+<p>• <code>Optional</code> <strong>KhtmlBoxLines</strong>: <a href="../../modules/akashaproject_design_system._internal_/#boxlinesproperty"><code>BoxLinesProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#boxlinesproperty"><code>BoxLinesProperty</code></a>[]</p>
+<p>The <strong><code>box-lines</code></strong> CSS property determines whether the box may have a single or multiple lines (rows for horizontally oriented boxes, columns for vertically oriented boxes).</p>
+<p><strong>Syntax</strong>: <code>single | multiple</code></p>
+<p><strong>Initial value</strong>: <code>single</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_4">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25624</p>
+<hr />
+<h3 id="khtmlboxordinalgroup">KhtmlBoxOrdinalGroup</h3>
+<p>• <code>Optional</code> <strong>KhtmlBoxOrdinalGroup</strong>: <a href="../../modules/akashaproject_design_system._internal_/#globalsnumber"><code>GlobalsNumber</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#globalsnumber"><code>GlobalsNumber</code></a>[]</p>
+<p>The <strong><code>box-ordinal-group</code></strong> CSS property assigns the flexbox's child elements to an ordinal group.</p>
+<p><strong>Syntax</strong>: <code>&lt;integer&gt;</code></p>
+<p><strong>Initial value</strong>: <code>1</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_5">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25634</p>
+<hr />
+<h3 id="khtmlboxorient">KhtmlBoxOrient</h3>
+<p>• <code>Optional</code> <strong>KhtmlBoxOrient</strong>: <a href="../../modules/akashaproject_design_system._internal_/#boxorientproperty"><code>BoxOrientProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#boxorientproperty"><code>BoxOrientProperty</code></a>[]</p>
+<p>The <strong><code>box-orient</code></strong> CSS property specifies whether an element lays out its contents horizontally or vertically.</p>
+<p><strong>Syntax</strong>: <code>horizontal | vertical | inline-axis | block-axis | inherit</code></p>
+<p><strong>Initial value</strong>: <code>inline-axis</code> (<code>horizontal</code> in XUL)</p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_6">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25644</p>
+<hr />
+<h3 id="khtmlboxpack">KhtmlBoxPack</h3>
+<p>• <code>Optional</code> <strong>KhtmlBoxPack</strong>: <a href="../../modules/akashaproject_design_system._internal_/#boxpackproperty"><code>BoxPackProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#boxpackproperty"><code>BoxPackProperty</code></a>[]</p>
+<p>The <strong><code>-moz-box-pack</code></strong> and <strong><code>-webkit-box-pack</code></strong> CSS properties specify how a <code>-moz-box</code> or <code>-webkit-box</code> packs its contents in the direction of its layout. The effect of this is only visible if there is extra space in the box.</p>
+<p><strong>Syntax</strong>: <code>start | center | end | justify</code></p>
+<p><strong>Initial value</strong>: <code>start</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_7">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25654</p>
+<hr />
+<h3 id="khtmllinebreak">KhtmlLineBreak</h3>
+<p>• <code>Optional</code> <strong>KhtmlLineBreak</strong>: <a href="../../modules/akashaproject_design_system._internal_/#linebreakproperty"><code>LineBreakProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#linebreakproperty"><code>LineBreakProperty</code></a>[]</p>
+<p>The <strong><code>line-break</code></strong> CSS property sets how to break lines of Chinese, Japanese, or Korean (CJK) text when working with punctuation and symbols.</p>
+<p><strong>Syntax</strong>: <code>auto | loose | normal | strict | anywhere</code></p>
+<p><strong>Initial value</strong>: <code>auto</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_8">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25664</p>
+<hr />
+<h3 id="khtmlopacity">KhtmlOpacity</h3>
+<p>• <code>Optional</code> <strong>KhtmlOpacity</strong>: <a href="../../modules/akashaproject_design_system._internal_/#opacityproperty"><code>OpacityProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#opacityproperty"><code>OpacityProperty</code></a>[]</p>
+<p>The <strong><code>opacity</code></strong> CSS property sets the transparency of an element or the degree to which content behind an element is visible.</p>
+<p><strong>Syntax</strong>: <code>&lt;alpha-value&gt;</code></p>
+<p><strong>Initial value</strong>: <code>1.0</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_9">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25674</p>
+<hr />
+<h3 id="khtmluserselect">KhtmlUserSelect</h3>
+<p>• <code>Optional</code> <strong>KhtmlUserSelect</strong>: <a href="../../modules/akashaproject_design_system._internal_/#userselectproperty"><code>UserSelectProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#userselectproperty"><code>UserSelectProperty</code></a>[]</p>
+<p>The <code>**user-select**</code> CSS property controls whether the user can select text. This doesn't have any effect on content loaded as chrome, except in textboxes.</p>
+<p><strong>Syntax</strong>: <code>auto | text | none | contain | all</code></p>
+<p><strong>Initial value</strong>: <code>auto</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_10">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25684</p>
+<hr />
+<h3 id="mozbackgroundclip">MozBackgroundClip</h3>
+<p>• <code>Optional</code> <strong>MozBackgroundClip</strong>: <code>string</code> | <code>string</code>[]</p>
+<p>The <strong><code>background-clip</code></strong> CSS property sets whether an element's background <code>&lt;color&gt;</code> or <code>&lt;image&gt;</code> extends underneath its border.</p>
+<p><strong>Syntax</strong>: <code>&lt;box&gt;#</code></p>
+<p><strong>Initial value</strong>: <code>border-box</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_11">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25694</p>
+<hr />
+<h3 id="mozbackgroundinlinepolicy">MozBackgroundInlinePolicy</h3>
+<p>• <code>Optional</code> <strong>MozBackgroundInlinePolicy</strong>: <a href="../../modules/akashaproject_design_system._internal_/#boxdecorationbreakproperty"><code>BoxDecorationBreakProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#boxdecorationbreakproperty"><code>BoxDecorationBreakProperty</code></a>[]</p>
+<p>The <strong><code>box-decoration-break</code></strong> CSS property specifies how an element's fragments should be rendered when broken across multiple lines, columns, or pages.</p>
+<p><strong>Syntax</strong>: <code>slice | clone</code></p>
+<p><strong>Initial value</strong>: <code>slice</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_12">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25704</p>
+<hr />
+<h3 id="mozbackgroundorigin">MozBackgroundOrigin</h3>
+<p>• <code>Optional</code> <strong>MozBackgroundOrigin</strong>: <code>string</code> | <code>string</code>[]</p>
+<p>The <strong><code>background-origin</code></strong> CSS property sets the <em>background positioning area</em>. In other words, it sets the origin position of an image set with the <code>background-image</code> property.</p>
+<p><strong>Syntax</strong>: <code>&lt;box&gt;#</code></p>
+<p><strong>Initial value</strong>: <code>padding-box</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_13">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25714</p>
+<hr />
+<h3 id="mozbackgroundsize">MozBackgroundSize</h3>
+<p>• <code>Optional</code> <strong>MozBackgroundSize</strong>: <a href="../../modules/akashaproject_design_system._internal_/#backgroundsizeproperty"><code>BackgroundSizeProperty</code></a>&lt;<code>TLength</code>> | <a href="../../modules/akashaproject_design_system._internal_/#backgroundsizeproperty"><code>BackgroundSizeProperty</code></a>&lt;<code>TLength</code>>[]</p>
+<p>The <strong><code>background-size</code></strong> CSS property sets the size of the element's background image. The image can be left to its natural size, stretched, or constrained to fit the available space.</p>
+<p><strong>Syntax</strong>: <code>&lt;bg-size&gt;#</code></p>
+<p><strong>Initial value</strong>: <code>auto auto</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_14">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25724</p>
+<hr />
+<h3 id="mozbinding">MozBinding</h3>
+<p>• <code>Optional</code> <strong>MozBinding</strong>: <code>string</code> | <code>string</code>[]</p>
+<p>The <strong><code>-moz-binding</code></strong> CSS property is used by Mozilla-based applications to attach an XBL binding to a DOM element.</p>
+<p><strong>Syntax</strong>: <code>&lt;url&gt; | none</code></p>
+<p><strong>Initial value</strong>: <code>none</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_15">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25734</p>
+<hr />
+<h3 id="mozborderradius">MozBorderRadius</h3>
+<p>• <code>Optional</code> <strong>MozBorderRadius</strong>: <a href="../../modules/akashaproject_design_system._internal_/#borderradiusproperty"><code>BorderRadiusProperty</code></a>&lt;<code>TLength</code>> | <a href="../../modules/akashaproject_design_system._internal_/#borderradiusproperty"><code>BorderRadiusProperty</code></a>&lt;<code>TLength</code>>[]</p>
+<p>The <strong><code>border-radius</code></strong> CSS property rounds the corners of an element's outer border edge. You can set a single radius to make circular corners, or two radii to make elliptical corners.</p>
+<p><strong>Syntax</strong>: <code>&lt;length-percentage&gt;{1,4} [ / &lt;length-percentage&gt;{1,4} ]?</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_16">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25742</p>
+<hr />
+<h3 id="mozborderradiusbottomleft">MozBorderRadiusBottomleft</h3>
+<p>• <code>Optional</code> <strong>MozBorderRadiusBottomleft</strong>: <a href="../../modules/akashaproject_design_system._internal_/#borderbottomleftradiusproperty"><code>BorderBottomLeftRadiusProperty</code></a>&lt;<code>TLength</code>> | <a href="../../modules/akashaproject_design_system._internal_/#borderbottomleftradiusproperty"><code>BorderBottomLeftRadiusProperty</code></a>&lt;<code>TLength</code>>[]</p>
+<p>The <strong><code>border-bottom-left-radius</code></strong> CSS property rounds the bottom-left corner of an element.</p>
+<p><strong>Syntax</strong>: <code>&lt;length-percentage&gt;{1,2}</code></p>
+<p><strong>Initial value</strong>: <code>0</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_17">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25752</p>
+<hr />
+<h3 id="mozborderradiusbottomright">MozBorderRadiusBottomright</h3>
+<p>• <code>Optional</code> <strong>MozBorderRadiusBottomright</strong>: <a href="../../modules/akashaproject_design_system._internal_/#borderbottomrightradiusproperty"><code>BorderBottomRightRadiusProperty</code></a>&lt;<code>TLength</code>> | <a href="../../modules/akashaproject_design_system._internal_/#borderbottomrightradiusproperty"><code>BorderBottomRightRadiusProperty</code></a>&lt;<code>TLength</code>>[]</p>
+<p>The <strong><code>border-bottom-right-radius</code></strong> CSS property rounds the bottom-right corner of an element.</p>
+<p><strong>Syntax</strong>: <code>&lt;length-percentage&gt;{1,2}</code></p>
+<p><strong>Initial value</strong>: <code>0</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_18">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25762</p>
+<hr />
+<h3 id="mozborderradiustopleft">MozBorderRadiusTopleft</h3>
+<p>• <code>Optional</code> <strong>MozBorderRadiusTopleft</strong>: <a href="../../modules/akashaproject_design_system._internal_/#bordertopleftradiusproperty"><code>BorderTopLeftRadiusProperty</code></a>&lt;<code>TLength</code>> | <a href="../../modules/akashaproject_design_system._internal_/#bordertopleftradiusproperty"><code>BorderTopLeftRadiusProperty</code></a>&lt;<code>TLength</code>>[]</p>
+<p>The <strong><code>border-top-left-radius</code></strong> CSS property rounds the top-left corner of an element.</p>
+<p><strong>Syntax</strong>: <code>&lt;length-percentage&gt;{1,2}</code></p>
+<p><strong>Initial value</strong>: <code>0</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_19">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25772</p>
+<hr />
+<h3 id="mozborderradiustopright">MozBorderRadiusTopright</h3>
+<p>• <code>Optional</code> <strong>MozBorderRadiusTopright</strong>: <a href="../../modules/akashaproject_design_system._internal_/#bordertoprightradiusproperty"><code>BorderTopRightRadiusProperty</code></a>&lt;<code>TLength</code>> | <a href="../../modules/akashaproject_design_system._internal_/#bordertoprightradiusproperty"><code>BorderTopRightRadiusProperty</code></a>&lt;<code>TLength</code>>[]</p>
+<p>The <strong><code>border-top-right-radius</code></strong> CSS property rounds the top-right corner of an element.</p>
+<p><strong>Syntax</strong>: <code>&lt;length-percentage&gt;{1,2}</code></p>
+<p><strong>Initial value</strong>: <code>0</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_20">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25782</p>
+<hr />
+<h3 id="mozboxalign">MozBoxAlign</h3>
+<p>• <code>Optional</code> <strong>MozBoxAlign</strong>: <a href="../../modules/akashaproject_design_system._internal_/#boxalignproperty"><code>BoxAlignProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#boxalignproperty"><code>BoxAlignProperty</code></a>[]</p>
+<p>The <strong><code>box-align</code></strong> CSS property specifies how an element aligns its contents across its layout in a perpendicular direction. The effect of the property is only visible if there is extra space in the box.</p>
+<p><strong>Syntax</strong>: <code>start | center | end | baseline | stretch</code></p>
+<p><strong>Initial value</strong>: <code>stretch</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_21">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25792</p>
+<hr />
+<h3 id="mozboxdirection">MozBoxDirection</h3>
+<p>• <code>Optional</code> <strong>MozBoxDirection</strong>: <a href="../../modules/akashaproject_design_system._internal_/#boxdirectionproperty"><code>BoxDirectionProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#boxdirectionproperty"><code>BoxDirectionProperty</code></a>[]</p>
+<p>The <strong><code>box-direction</code></strong> CSS property specifies whether a box lays out its contents normally (from the top or left edge), or in reverse (from the bottom or right edge).</p>
+<p><strong>Syntax</strong>: <code>normal | reverse | inherit</code></p>
+<p><strong>Initial value</strong>: <code>normal</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_22">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25802</p>
+<hr />
+<h3 id="mozboxflex">MozBoxFlex</h3>
+<p>• <code>Optional</code> <strong>MozBoxFlex</strong>: <a href="../../modules/akashaproject_design_system._internal_/#globalsnumber"><code>GlobalsNumber</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#globalsnumber"><code>GlobalsNumber</code></a>[]</p>
+<p>The <strong><code>-moz-box-flex</code></strong> and <strong><code>-webkit-box-flex</code></strong> CSS properties specify how a <code>-moz-box</code> or <code>-webkit-box</code> grows to fill the box that contains it, in the direction of the containing box's layout.</p>
+<p><strong>Syntax</strong>: <code>&lt;number&gt;</code></p>
+<p><strong>Initial value</strong>: <code>0</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_23">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25812</p>
+<hr />
+<h3 id="mozboxordinalgroup">MozBoxOrdinalGroup</h3>
+<p>• <code>Optional</code> <strong>MozBoxOrdinalGroup</strong>: <a href="../../modules/akashaproject_design_system._internal_/#globalsnumber"><code>GlobalsNumber</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#globalsnumber"><code>GlobalsNumber</code></a>[]</p>
+<p>The <strong><code>box-ordinal-group</code></strong> CSS property assigns the flexbox's child elements to an ordinal group.</p>
+<p><strong>Syntax</strong>: <code>&lt;integer&gt;</code></p>
+<p><strong>Initial value</strong>: <code>1</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_24">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25822</p>
+<hr />
+<h3 id="mozboxorient">MozBoxOrient</h3>
+<p>• <code>Optional</code> <strong>MozBoxOrient</strong>: <a href="../../modules/akashaproject_design_system._internal_/#boxorientproperty"><code>BoxOrientProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#boxorientproperty"><code>BoxOrientProperty</code></a>[]</p>
+<p>The <strong><code>box-orient</code></strong> CSS property specifies whether an element lays out its contents horizontally or vertically.</p>
+<p><strong>Syntax</strong>: <code>horizontal | vertical | inline-axis | block-axis | inherit</code></p>
+<p><strong>Initial value</strong>: <code>inline-axis</code> (<code>horizontal</code> in XUL)</p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_25">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25832</p>
+<hr />
+<h3 id="mozboxpack">MozBoxPack</h3>
+<p>• <code>Optional</code> <strong>MozBoxPack</strong>: <a href="../../modules/akashaproject_design_system._internal_/#boxpackproperty"><code>BoxPackProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#boxpackproperty"><code>BoxPackProperty</code></a>[]</p>
+<p>The <strong><code>-moz-box-pack</code></strong> and <strong><code>-webkit-box-pack</code></strong> CSS properties specify how a <code>-moz-box</code> or <code>-webkit-box</code> packs its contents in the direction of its layout. The effect of this is only visible if there is extra space in the box.</p>
+<p><strong>Syntax</strong>: <code>start | center | end | justify</code></p>
+<p><strong>Initial value</strong>: <code>start</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_26">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25842</p>
+<hr />
+<h3 id="mozboxshadow">MozBoxShadow</h3>
+<p>• <code>Optional</code> <strong>MozBoxShadow</strong>: <code>string</code> | <code>string</code>[]</p>
+<p>The <strong><code>box-shadow</code></strong> CSS property adds shadow effects around an element's frame. You can set multiple effects separated by commas. A box shadow is described by X and Y offsets relative to the element, blur and spread radii, and color.</p>
+<p><strong>Syntax</strong>: <code>none | &lt;shadow&gt;#</code></p>
+<p><strong>Initial value</strong>: <code>none</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_27">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25852</p>
+<hr />
+<h3 id="mozfloatedge">MozFloatEdge</h3>
+<p>• <code>Optional</code> <strong>MozFloatEdge</strong>: <a href="../../modules/akashaproject_design_system._internal_/#mozfloatedgeproperty"><code>MozFloatEdgeProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#mozfloatedgeproperty"><code>MozFloatEdgeProperty</code></a>[]</p>
+<p>The non-standard <strong><code>-moz-float-edge</code></strong> CSS property specifies whether the height and width properties of the element include the margin, border, or padding thickness.</p>
+<p><strong>Syntax</strong>: <code>border-box | content-box | margin-box | padding-box</code></p>
+<p><strong>Initial value</strong>: <code>content-box</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_28">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25862</p>
+<hr />
+<h3 id="mozforcebrokenimageicon">MozForceBrokenImageIcon</h3>
+<p>• <code>Optional</code> <strong>MozForceBrokenImageIcon</strong>: <a href="../../modules/akashaproject_design_system._internal_/#mozforcebrokenimageiconproperty"><code>MozForceBrokenImageIconProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#mozforcebrokenimageiconproperty"><code>MozForceBrokenImageIconProperty</code></a>[]</p>
+<p>The <strong><code>-moz-force-broken-image-icon</code></strong> extended CSS property can be used to force the broken image icon to be shown even when a broken image has an <code>alt</code> attribute.</p>
+<p><strong>Syntax</strong>: <code>0 | 1</code></p>
+<p><strong>Initial value</strong>: <code>0</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_29">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25872</p>
+<hr />
+<h3 id="mozopacity">MozOpacity</h3>
+<p>• <code>Optional</code> <strong>MozOpacity</strong>: <a href="../../modules/akashaproject_design_system._internal_/#opacityproperty"><code>OpacityProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#opacityproperty"><code>OpacityProperty</code></a>[]</p>
+<p>The <strong><code>opacity</code></strong> CSS property sets the transparency of an element or the degree to which content behind an element is visible.</p>
+<p><strong>Syntax</strong>: <code>&lt;alpha-value&gt;</code></p>
+<p><strong>Initial value</strong>: <code>1.0</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_30">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25882</p>
+<hr />
+<h3 id="mozoutline">MozOutline</h3>
+<p>• <code>Optional</code> <strong>MozOutline</strong>: <a href="../../modules/akashaproject_design_system._internal_/#outlineproperty"><code>OutlineProperty</code></a>&lt;<code>TLength</code>> | <a href="../../modules/akashaproject_design_system._internal_/#outlineproperty"><code>OutlineProperty</code></a>&lt;<code>TLength</code>>[]</p>
+<p>The <strong><code>outline</code></strong> CSS property is a shorthand to set various outline properties in a single declaration: <code>outline-style</code>, <code>outline-width</code>, and <code>outline-color</code>.</p>
+<p><strong>Syntax</strong>: <code>[ &lt;'outline-color'&gt; || &lt;'outline-style'&gt; || &lt;'outline-width'&gt; ]</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_31">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25890</p>
+<hr />
+<h3 id="mozoutlinecolor">MozOutlineColor</h3>
+<p>• <code>Optional</code> <strong>MozOutlineColor</strong>: <code>string</code> | <code>string</code>[]</p>
+<p>The <strong><code>outline-color</code></strong> CSS property sets the color of an element's outline.</p>
+<p><strong>Syntax</strong>: <code>&lt;color&gt; | invert</code></p>
+<p><strong>Initial value</strong>: <code>invert</code>, for browsers supporting it, <code>currentColor</code> for the other</p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_32">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25900</p>
+<hr />
+<h3 id="mozoutlineradius">MozOutlineRadius</h3>
+<p>• <code>Optional</code> <strong>MozOutlineRadius</strong>: <a href="../../modules/akashaproject_design_system._internal_/#mozoutlineradiusproperty"><code>MozOutlineRadiusProperty</code></a>&lt;<code>TLength</code>> | <a href="../../modules/akashaproject_design_system._internal_/#mozoutlineradiusproperty"><code>MozOutlineRadiusProperty</code></a>&lt;<code>TLength</code>>[]</p>
+<p>In Mozilla applications like Firefox, the <strong><code>-moz-outline-radius</code></strong> CSS property can be used to give an element's <code>outline</code> rounded corners.</p>
+<p><strong>Syntax</strong>: <code>&lt;outline-radius&gt;{1,4} [ / &lt;outline-radius&gt;{1,4} ]?</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_33">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25908</p>
+<hr />
+<h3 id="mozoutlineradiusbottomleft">MozOutlineRadiusBottomleft</h3>
+<p>• <code>Optional</code> <strong>MozOutlineRadiusBottomleft</strong>: <a href="../../modules/akashaproject_design_system._internal_/#mozoutlineradiusbottomleftproperty"><code>MozOutlineRadiusBottomleftProperty</code></a>&lt;<code>TLength</code>> | <a href="../../modules/akashaproject_design_system._internal_/#mozoutlineradiusbottomleftproperty"><code>MozOutlineRadiusBottomleftProperty</code></a>&lt;<code>TLength</code>>[]</p>
+<p>In Mozilla applications, the <strong><code>-moz-outline-radius-bottomleft</code></strong> CSS property can be used to round the bottom-left corner of an element's <code>outline</code>.</p>
+<p><strong>Syntax</strong>: <code>&lt;outline-radius&gt;</code></p>
+<p><strong>Initial value</strong>: <code>0</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_34">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25918</p>
+<hr />
+<h3 id="mozoutlineradiusbottomright">MozOutlineRadiusBottomright</h3>
+<p>• <code>Optional</code> <strong>MozOutlineRadiusBottomright</strong>: <a href="../../modules/akashaproject_design_system._internal_/#mozoutlineradiusbottomrightproperty"><code>MozOutlineRadiusBottomrightProperty</code></a>&lt;<code>TLength</code>> | <a href="../../modules/akashaproject_design_system._internal_/#mozoutlineradiusbottomrightproperty"><code>MozOutlineRadiusBottomrightProperty</code></a>&lt;<code>TLength</code>>[]</p>
+<p>In Mozilla applications, the <strong><code>-moz-outline-radius-bottomright</code></strong> CSS property can be used to round the bottom-right corner of an element's <code>outline</code>.</p>
+<p><strong>Syntax</strong>: <code>&lt;outline-radius&gt;</code></p>
+<p><strong>Initial value</strong>: <code>0</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_35">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25928</p>
+<hr />
+<h3 id="mozoutlineradiustopleft">MozOutlineRadiusTopleft</h3>
+<p>• <code>Optional</code> <strong>MozOutlineRadiusTopleft</strong>: <a href="../../modules/akashaproject_design_system._internal_/#mozoutlineradiustopleftproperty"><code>MozOutlineRadiusTopleftProperty</code></a>&lt;<code>TLength</code>> | <a href="../../modules/akashaproject_design_system._internal_/#mozoutlineradiustopleftproperty"><code>MozOutlineRadiusTopleftProperty</code></a>&lt;<code>TLength</code>>[]</p>
+<p>In Mozilla applications, the <strong><code>-moz-outline-radius-topleft</code></strong> CSS property can be used to round the top-left corner of an element's <code>outline</code>.</p>
+<p><strong>Syntax</strong>: <code>&lt;outline-radius&gt;</code></p>
+<p><strong>Initial value</strong>: <code>0</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_36">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25938</p>
+<hr />
+<h3 id="mozoutlineradiustopright">MozOutlineRadiusTopright</h3>
+<p>• <code>Optional</code> <strong>MozOutlineRadiusTopright</strong>: <a href="../../modules/akashaproject_design_system._internal_/#mozoutlineradiustoprightproperty"><code>MozOutlineRadiusToprightProperty</code></a>&lt;<code>TLength</code>> | <a href="../../modules/akashaproject_design_system._internal_/#mozoutlineradiustoprightproperty"><code>MozOutlineRadiusToprightProperty</code></a>&lt;<code>TLength</code>>[]</p>
+<p>In Mozilla applications, the <strong><code>-moz-outline-radius-topright</code></strong> CSS property can be used to round the top-right corner of an element's <code>outline</code>.</p>
+<p><strong>Syntax</strong>: <code>&lt;outline-radius&gt;</code></p>
+<p><strong>Initial value</strong>: <code>0</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_37">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25948</p>
+<hr />
+<h3 id="mozoutlinestyle">MozOutlineStyle</h3>
+<p>• <code>Optional</code> <strong>MozOutlineStyle</strong>: <code>string</code> | <code>string</code>[]</p>
+<p>The <strong><code>outline-style</code></strong> CSS property sets the style of an element's outline. An outline is a line that is drawn around an element, outside the <code>border</code>.</p>
+<p><strong>Syntax</strong>: <code>auto | &lt;'border-style'&gt;</code></p>
+<p><strong>Initial value</strong>: <code>none</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_38">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25958</p>
+<hr />
+<h3 id="mozoutlinewidth">MozOutlineWidth</h3>
+<p>• <code>Optional</code> <strong>MozOutlineWidth</strong>: <a href="../../modules/akashaproject_design_system._internal_/#outlinewidthproperty"><code>OutlineWidthProperty</code></a>&lt;<code>TLength</code>> | <a href="../../modules/akashaproject_design_system._internal_/#outlinewidthproperty"><code>OutlineWidthProperty</code></a>&lt;<code>TLength</code>>[]</p>
+<p>The <strong><code>outline-width</code></strong> CSS property sets the thickness of an element's outline. An outline is a line that is drawn around an element, outside the <code>border</code>.</p>
+<p><strong>Syntax</strong>: <code>&lt;line-width&gt;</code></p>
+<p><strong>Initial value</strong>: <code>medium</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_39">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25968</p>
+<hr />
+<h3 id="moztextalignlast">MozTextAlignLast</h3>
+<p>• <code>Optional</code> <strong>MozTextAlignLast</strong>: <a href="../../modules/akashaproject_design_system._internal_/#textalignlastproperty"><code>TextAlignLastProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#textalignlastproperty"><code>TextAlignLastProperty</code></a>[]</p>
+<p>The <strong><code>text-align-last</code></strong> CSS property sets how the last line of a block or a line, right before a forced line break, is aligned.</p>
+<p><strong>Syntax</strong>: <code>auto | start | end | left | right | center | justify</code></p>
+<p><strong>Initial value</strong>: <code>auto</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_40">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25978</p>
+<hr />
+<h3 id="moztextdecorationcolor">MozTextDecorationColor</h3>
+<p>• <code>Optional</code> <strong>MozTextDecorationColor</strong>: <code>string</code> | <code>string</code>[]</p>
+<p>The <strong><code>text-decoration-color</code></strong> CSS property sets the color of decorations added to text by <code>text-decoration-line</code>.</p>
+<p><strong>Syntax</strong>: <code>&lt;color&gt;</code></p>
+<p><strong>Initial value</strong>: <code>currentcolor</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_41">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25988</p>
+<hr />
+<h3 id="moztextdecorationline">MozTextDecorationLine</h3>
+<p>• <code>Optional</code> <strong>MozTextDecorationLine</strong>: <code>string</code> | <code>string</code>[]</p>
+<p>The <strong><code>text-decoration-line</code></strong> CSS property sets the kind of decoration that is used on text in an element, such as an underline or overline.</p>
+<p><strong>Syntax</strong>: <code>none | [ underline || overline || line-through || blink ] | spelling-error | grammar-error</code></p>
+<p><strong>Initial value</strong>: <code>none</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_42">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25998</p>
+<hr />
+<h3 id="moztextdecorationstyle">MozTextDecorationStyle</h3>
+<p>• <code>Optional</code> <strong>MozTextDecorationStyle</strong>: <a href="../../modules/akashaproject_design_system._internal_/#textdecorationstyleproperty"><code>TextDecorationStyleProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#textdecorationstyleproperty"><code>TextDecorationStyleProperty</code></a>[]</p>
+<p>The <strong><code>text-decoration-style</code></strong> CSS property sets the style of the lines specified by <code>text-decoration-line</code>. The style applies to all lines that are set with <code>text-decoration-line</code>.</p>
+<p><strong>Syntax</strong>: <code>solid | double | dotted | dashed | wavy</code></p>
+<p><strong>Initial value</strong>: <code>solid</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_43">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26008</p>
+<hr />
+<h3 id="mozuserinput">MozUserInput</h3>
+<p>• <code>Optional</code> <strong>MozUserInput</strong>: <a href="../../modules/akashaproject_design_system._internal_/#mozuserinputproperty"><code>MozUserInputProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#mozuserinputproperty"><code>MozUserInputProperty</code></a>[]</p>
+<p>In Mozilla applications, <strong><code>-moz-user-input</code></strong> determines if an element will accept user input.</p>
+<p><strong>Syntax</strong>: <code>auto | none | enabled | disabled</code></p>
+<p><strong>Initial value</strong>: <code>auto</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_44">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26018</p>
+<hr />
+<h3 id="oanimation">OAnimation</h3>
+<p>• <code>Optional</code> <strong>OAnimation</strong>: <a href="../../modules/akashaproject_design_system._internal_/#animationproperty"><code>AnimationProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#animationproperty"><code>AnimationProperty</code></a>[]</p>
+<p>The <strong><code>animation</code></strong> shorthand CSS property sets an animated transition between styles. It is a shorthand for <code>animation-name</code>, <code>animation-duration</code>, <code>animation-timing-function</code>, <code>animation-delay</code>, <code>animation-iteration-count</code>, <code>animation-direction</code>, <code>animation-fill-mode</code>, and <code>animation-play-state</code>.</p>
+<p><strong>Syntax</strong>: <code>&lt;single-animation&gt;#</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_45">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26046</p>
+<hr />
+<h3 id="oanimationdelay">OAnimationDelay</h3>
+<p>• <code>Optional</code> <strong>OAnimationDelay</strong>: <code>string</code> | <code>string</code>[]</p>
+<p>The <strong><code>animation-delay</code></strong> CSS property sets when an animation starts. The animation can start later, immediately from its beginning, or immediately and partway through the animation.</p>
+<p><strong>Syntax</strong>: <code>&lt;time&gt;#</code></p>
+<p><strong>Initial value</strong>: <code>0s</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_46">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26056</p>
+<hr />
+<h3 id="oanimationdirection">OAnimationDirection</h3>
+<p>• <code>Optional</code> <strong>OAnimationDirection</strong>: <code>string</code> | <code>string</code>[]</p>
+<p>The <strong><code>animation-direction</code></strong> CSS property sets whether an animation should play forwards, backwards, or alternating back and forth.</p>
+<p><strong>Syntax</strong>: <code>&lt;single-animation-direction&gt;#</code></p>
+<p><strong>Initial value</strong>: <code>normal</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_47">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26066</p>
+<hr />
+<h3 id="oanimationduration">OAnimationDuration</h3>
+<p>• <code>Optional</code> <strong>OAnimationDuration</strong>: <code>string</code> | <code>string</code>[]</p>
+<p>The <strong><code>animation-duration</code></strong> CSS property sets the length of time that an animation takes to complete one cycle.</p>
+<p><strong>Syntax</strong>: <code>&lt;time&gt;#</code></p>
+<p><strong>Initial value</strong>: <code>0s</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_48">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26076</p>
+<hr />
+<h3 id="oanimationfillmode">OAnimationFillMode</h3>
+<p>• <code>Optional</code> <strong>OAnimationFillMode</strong>: <code>string</code> | <code>string</code>[]</p>
+<p>The <strong><code>animation-fill-mode</code></strong> CSS property sets how a CSS animation applies styles to its target before and after its execution.</p>
+<p><strong>Syntax</strong>: <code>&lt;single-animation-fill-mode&gt;#</code></p>
+<p><strong>Initial value</strong>: <code>none</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_49">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26086</p>
+<hr />
+<h3 id="oanimationiterationcount">OAnimationIterationCount</h3>
+<p>• <code>Optional</code> <strong>OAnimationIterationCount</strong>: <a href="../../modules/akashaproject_design_system._internal_/#animationiterationcountproperty"><code>AnimationIterationCountProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#animationiterationcountproperty"><code>AnimationIterationCountProperty</code></a>[]</p>
+<p>The <strong><code>animation-iteration-count</code></strong> CSS property sets the number of times an animation cycle should be played before stopping.</p>
+<p><strong>Syntax</strong>: <code>&lt;single-animation-iteration-count&gt;#</code></p>
+<p><strong>Initial value</strong>: <code>1</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_50">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26096</p>
+<hr />
+<h3 id="oanimationname">OAnimationName</h3>
+<p>• <code>Optional</code> <strong>OAnimationName</strong>: <code>string</code> | <code>string</code>[]</p>
+<p>The <strong><code>animation-name</code></strong> CSS property sets one or more animations to apply to an element. Each name is an <code>@keyframes</code> at-rule that sets the property values for the animation sequence.</p>
+<p><strong>Syntax</strong>: <code>[ none | &lt;keyframes-name&gt; ]#</code></p>
+<p><strong>Initial value</strong>: <code>none</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_51">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26106</p>
+<hr />
+<h3 id="oanimationplaystate">OAnimationPlayState</h3>
+<p>• <code>Optional</code> <strong>OAnimationPlayState</strong>: <code>string</code> | <code>string</code>[]</p>
+<p>The <strong><code>animation-play-state</code></strong> CSS property sets whether an animation is running or paused.</p>
+<p><strong>Syntax</strong>: <code>&lt;single-animation-play-state&gt;#</code></p>
+<p><strong>Initial value</strong>: <code>running</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_52">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26116</p>
+<hr />
+<h3 id="oanimationtimingfunction">OAnimationTimingFunction</h3>
+<p>• <code>Optional</code> <strong>OAnimationTimingFunction</strong>: <code>string</code> | <code>string</code>[]</p>
+<p>The <code>**animation-timing-function**</code> CSS property sets how an animation progresses through the duration of each cycle.</p>
+<p><strong>Syntax</strong>: <code>&lt;easing-function&gt;#</code></p>
+<p><strong>Initial value</strong>: <code>ease</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_53">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26126</p>
+<hr />
+<h3 id="obackgroundsize">OBackgroundSize</h3>
+<p>• <code>Optional</code> <strong>OBackgroundSize</strong>: <a href="../../modules/akashaproject_design_system._internal_/#backgroundsizeproperty"><code>BackgroundSizeProperty</code></a>&lt;<code>TLength</code>> | <a href="../../modules/akashaproject_design_system._internal_/#backgroundsizeproperty"><code>BackgroundSizeProperty</code></a>&lt;<code>TLength</code>>[]</p>
+<p>The <strong><code>background-size</code></strong> CSS property sets the size of the element's background image. The image can be left to its natural size, stretched, or constrained to fit the available space.</p>
+<p><strong>Syntax</strong>: <code>&lt;bg-size&gt;#</code></p>
+<p><strong>Initial value</strong>: <code>auto auto</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_54">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26136</p>
+<hr />
+<h3 id="oborderimage">OBorderImage</h3>
+<p>• <code>Optional</code> <strong>OBorderImage</strong>: <a href="../../modules/akashaproject_design_system._internal_/#borderimageproperty"><code>BorderImageProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#borderimageproperty"><code>BorderImageProperty</code></a>[]</p>
+<p>The <strong><code>border-image</code></strong> CSS property draws an image in place of an element's <code>border-style</code>.</p>
+<p><strong>Syntax</strong>: <code>&lt;'border-image-source'&gt; || &lt;'border-image-slice'&gt; [ / &lt;'border-image-width'&gt; | / &lt;'border-image-width'&gt;? / &lt;'border-image-outset'&gt; ]? || &lt;'border-image-repeat'&gt;</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_55">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26144</p>
+<hr />
+<h3 id="oobjectfit">OObjectFit</h3>
+<p>• <code>Optional</code> <strong>OObjectFit</strong>: <a href="../../modules/akashaproject_design_system._internal_/#objectfitproperty"><code>ObjectFitProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#objectfitproperty"><code>ObjectFitProperty</code></a>[]</p>
+<p>The <strong><code>object-fit</code></strong> CSS property sets how the content of a replaced element, such as an <code>&lt;img&gt;</code> or <code>&lt;video&gt;</code>, should be resized to fit its container.</p>
+<p><strong>Syntax</strong>: <code>fill | contain | cover | none | scale-down</code></p>
+<p><strong>Initial value</strong>: <code>fill</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_56">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26154</p>
+<hr />
+<h3 id="oobjectposition">OObjectPosition</h3>
+<p>• <code>Optional</code> <strong>OObjectPosition</strong>: <a href="../../modules/akashaproject_design_system._internal_/#objectpositionproperty"><code>ObjectPositionProperty</code></a>&lt;<code>TLength</code>> | <a href="../../modules/akashaproject_design_system._internal_/#objectpositionproperty"><code>ObjectPositionProperty</code></a>&lt;<code>TLength</code>>[]</p>
+<p>The <strong><code>object-position</code></strong> CSS property specifies the alignment of the selected replaced element's contents within the element's box. Areas of the box which aren't covered by the replaced element's object will show the element's background.</p>
+<p><strong>Syntax</strong>: <code>&lt;position&gt;</code></p>
+<p><strong>Initial value</strong>: <code>50% 50%</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_57">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26164</p>
+<hr />
+<h3 id="otabsize">OTabSize</h3>
+<p>• <code>Optional</code> <strong>OTabSize</strong>: <a href="../../modules/akashaproject_design_system._internal_/#tabsizeproperty"><code>TabSizeProperty</code></a>&lt;<code>TLength</code>> | <a href="../../modules/akashaproject_design_system._internal_/#tabsizeproperty"><code>TabSizeProperty</code></a>&lt;<code>TLength</code>>[]</p>
+<p>The <strong><code>tab-size</code></strong> CSS property is used to customize the width of a tab (<code>U+0009</code>) character.</p>
+<p><strong>Syntax</strong>: <code>&lt;integer&gt; | &lt;length&gt;</code></p>
+<p><strong>Initial value</strong>: <code>8</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_58">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26174</p>
+<hr />
+<h3 id="otextoverflow">OTextOverflow</h3>
+<p>• <code>Optional</code> <strong>OTextOverflow</strong>: <code>string</code> | <code>string</code>[]</p>
+<p>The <strong><code>text-overflow</code></strong> CSS property sets how hidden overflow content is signaled to users. It can be clipped, display an ellipsis ('<code>…</code>'), or display a custom string.</p>
+<p><strong>Syntax</strong>: <code>[ clip | ellipsis | &lt;string&gt; ]{1,2}</code></p>
+<p><strong>Initial value</strong>: <code>clip</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_59">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26184</p>
+<hr />
+<h3 id="otransform">OTransform</h3>
+<p>• <code>Optional</code> <strong>OTransform</strong>: <code>string</code> | <code>string</code>[]</p>
+<p>The <strong><code>transform</code></strong> CSS property lets you rotate, scale, skew, or translate an element. It modifies the coordinate space of the CSS visual formatting model.</p>
+<p><strong>Syntax</strong>: <code>none | &lt;transform-list&gt;</code></p>
+<p><strong>Initial value</strong>: <code>none</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_60">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26194</p>
+<hr />
+<h3 id="otransformorigin">OTransformOrigin</h3>
+<p>• <code>Optional</code> <strong>OTransformOrigin</strong>: <a href="../../modules/akashaproject_design_system._internal_/#transformoriginproperty"><code>TransformOriginProperty</code></a>&lt;<code>TLength</code>> | <a href="../../modules/akashaproject_design_system._internal_/#transformoriginproperty"><code>TransformOriginProperty</code></a>&lt;<code>TLength</code>>[]</p>
+<p>The <strong><code>transform-origin</code></strong> CSS property sets the origin for an element's transformations.</p>
+<p><strong>Syntax</strong>: <code>[ &lt;length-percentage&gt; | left | center | right | top | bottom ] | [ [ &lt;length-percentage&gt; | left | center | right ] &amp;&amp; [ &lt;length-percentage&gt; | top | center | bottom ] ] &lt;length&gt;?</code></p>
+<p><strong>Initial value</strong>: <code>50% 50% 0</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_61">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26204</p>
+<hr />
+<h3 id="otransition">OTransition</h3>
+<p>• <code>Optional</code> <strong>OTransition</strong>: <code>string</code> | <code>string</code>[]</p>
+<p>The <strong><code>transition</code></strong> CSS property is a shorthand property for <code>transition-property</code>, <code>transition-duration</code>, <code>transition-timing-function</code>, and <code>transition-delay</code>.</p>
+<p><strong>Syntax</strong>: <code>&lt;single-transition&gt;#</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_62">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26212</p>
+<hr />
+<h3 id="otransitiondelay">OTransitionDelay</h3>
+<p>• <code>Optional</code> <strong>OTransitionDelay</strong>: <code>string</code> | <code>string</code>[]</p>
+<p>The <strong><code>transition-delay</code></strong> CSS property specifies the duration to wait before starting a property's transition effect when its value changes.</p>
+<p><strong>Syntax</strong>: <code>&lt;time&gt;#</code></p>
+<p><strong>Initial value</strong>: <code>0s</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_63">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26222</p>
+<hr />
+<h3 id="otransitionduration">OTransitionDuration</h3>
+<p>• <code>Optional</code> <strong>OTransitionDuration</strong>: <code>string</code> | <code>string</code>[]</p>
+<p>The <strong><code>transition-duration</code></strong> CSS property sets the length of time a transition animation should take to complete. By default, the value is <code>0s</code>, meaning that no animation will occur.</p>
+<p><strong>Syntax</strong>: <code>&lt;time&gt;#</code></p>
+<p><strong>Initial value</strong>: <code>0s</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_64">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26232</p>
+<hr />
+<h3 id="otransitionproperty">OTransitionProperty</h3>
+<p>• <code>Optional</code> <strong>OTransitionProperty</strong>: <code>string</code> | <code>string</code>[]</p>
+<p>The <strong><code>transition-property</code></strong> CSS property sets the CSS properties to which a transition effect should be applied.</p>
+<p><strong>Syntax</strong>: <code>none | &lt;single-transition-property&gt;#</code></p>
+<p><strong>Initial value</strong>: all</p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_65">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26242</p>
+<hr />
+<h3 id="otransitiontimingfunction">OTransitionTimingFunction</h3>
+<p>• <code>Optional</code> <strong>OTransitionTimingFunction</strong>: <code>string</code> | <code>string</code>[]</p>
+<p>The <strong><code>transition-timing-function</code></strong> CSS property sets how intermediate values are calculated for CSS properties being affected by a transition effect.</p>
+<p><strong>Syntax</strong>: <code>&lt;easing-function&gt;#</code></p>
+<p><strong>Initial value</strong>: <code>ease</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_66">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26252</p>
+<hr />
+<h3 id="webkitboxalign">WebkitBoxAlign</h3>
+<p>• <code>Optional</code> <strong>WebkitBoxAlign</strong>: <a href="../../modules/akashaproject_design_system._internal_/#boxalignproperty"><code>BoxAlignProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#boxalignproperty"><code>BoxAlignProperty</code></a>[]</p>
+<p>The <strong><code>box-align</code></strong> CSS property specifies how an element aligns its contents across its layout in a perpendicular direction. The effect of the property is only visible if there is extra space in the box.</p>
+<p><strong>Syntax</strong>: <code>start | center | end | baseline | stretch</code></p>
+<p><strong>Initial value</strong>: <code>stretch</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_67">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26262</p>
+<hr />
+<h3 id="webkitboxdirection">WebkitBoxDirection</h3>
+<p>• <code>Optional</code> <strong>WebkitBoxDirection</strong>: <a href="../../modules/akashaproject_design_system._internal_/#boxdirectionproperty"><code>BoxDirectionProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#boxdirectionproperty"><code>BoxDirectionProperty</code></a>[]</p>
+<p>The <strong><code>box-direction</code></strong> CSS property specifies whether a box lays out its contents normally (from the top or left edge), or in reverse (from the bottom or right edge).</p>
+<p><strong>Syntax</strong>: <code>normal | reverse | inherit</code></p>
+<p><strong>Initial value</strong>: <code>normal</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_68">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26272</p>
+<hr />
+<h3 id="webkitboxflex">WebkitBoxFlex</h3>
+<p>• <code>Optional</code> <strong>WebkitBoxFlex</strong>: <a href="../../modules/akashaproject_design_system._internal_/#globalsnumber"><code>GlobalsNumber</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#globalsnumber"><code>GlobalsNumber</code></a>[]</p>
+<p>The <strong><code>-moz-box-flex</code></strong> and <strong><code>-webkit-box-flex</code></strong> CSS properties specify how a <code>-moz-box</code> or <code>-webkit-box</code> grows to fill the box that contains it, in the direction of the containing box's layout.</p>
+<p><strong>Syntax</strong>: <code>&lt;number&gt;</code></p>
+<p><strong>Initial value</strong>: <code>0</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_69">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26282</p>
+<hr />
+<h3 id="webkitboxflexgroup">WebkitBoxFlexGroup</h3>
+<p>• <code>Optional</code> <strong>WebkitBoxFlexGroup</strong>: <a href="../../modules/akashaproject_design_system._internal_/#globalsnumber"><code>GlobalsNumber</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#globalsnumber"><code>GlobalsNumber</code></a>[]</p>
+<p>The <strong><code>box-flex-group</code></strong> CSS property assigns the flexbox's child elements to a flex group.</p>
+<p><strong>Syntax</strong>: <code>&lt;integer&gt;</code></p>
+<p><strong>Initial value</strong>: <code>1</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_70">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26292</p>
+<hr />
+<h3 id="webkitboxlines">WebkitBoxLines</h3>
+<p>• <code>Optional</code> <strong>WebkitBoxLines</strong>: <a href="../../modules/akashaproject_design_system._internal_/#boxlinesproperty"><code>BoxLinesProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#boxlinesproperty"><code>BoxLinesProperty</code></a>[]</p>
+<p>The <strong><code>box-lines</code></strong> CSS property determines whether the box may have a single or multiple lines (rows for horizontally oriented boxes, columns for vertically oriented boxes).</p>
+<p><strong>Syntax</strong>: <code>single | multiple</code></p>
+<p><strong>Initial value</strong>: <code>single</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_71">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26302</p>
+<hr />
+<h3 id="webkitboxordinalgroup">WebkitBoxOrdinalGroup</h3>
+<p>• <code>Optional</code> <strong>WebkitBoxOrdinalGroup</strong>: <a href="../../modules/akashaproject_design_system._internal_/#globalsnumber"><code>GlobalsNumber</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#globalsnumber"><code>GlobalsNumber</code></a>[]</p>
+<p>The <strong><code>box-ordinal-group</code></strong> CSS property assigns the flexbox's child elements to an ordinal group.</p>
+<p><strong>Syntax</strong>: <code>&lt;integer&gt;</code></p>
+<p><strong>Initial value</strong>: <code>1</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_72">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26312</p>
+<hr />
+<h3 id="webkitboxorient">WebkitBoxOrient</h3>
+<p>• <code>Optional</code> <strong>WebkitBoxOrient</strong>: <a href="../../modules/akashaproject_design_system._internal_/#boxorientproperty"><code>BoxOrientProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#boxorientproperty"><code>BoxOrientProperty</code></a>[]</p>
+<p>The <strong><code>box-orient</code></strong> CSS property specifies whether an element lays out its contents horizontally or vertically.</p>
+<p><strong>Syntax</strong>: <code>horizontal | vertical | inline-axis | block-axis | inherit</code></p>
+<p><strong>Initial value</strong>: <code>inline-axis</code> (<code>horizontal</code> in XUL)</p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_73">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26322</p>
+<hr />
+<h3 id="webkitboxpack">WebkitBoxPack</h3>
+<p>• <code>Optional</code> <strong>WebkitBoxPack</strong>: <a href="../../modules/akashaproject_design_system._internal_/#boxpackproperty"><code>BoxPackProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#boxpackproperty"><code>BoxPackProperty</code></a>[]</p>
+<p>The <strong><code>-moz-box-pack</code></strong> and <strong><code>-webkit-box-pack</code></strong> CSS properties specify how a <code>-moz-box</code> or <code>-webkit-box</code> packs its contents in the direction of its layout. The effect of this is only visible if there is extra space in the box.</p>
+<p><strong>Syntax</strong>: <code>start | center | end | justify</code></p>
+<p><strong>Initial value</strong>: <code>start</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_74">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26332</p>
+<hr />
+<h3 id="webkitscrollsnappointsx">WebkitScrollSnapPointsX</h3>
+<p>• <code>Optional</code> <strong>WebkitScrollSnapPointsX</strong>: <code>string</code> | <code>string</code>[]</p>
+<p>The <strong><code>scroll-snap-points-x</code></strong> CSS property defines the horizontal positioning of snap points within the content of the scroll container they are applied to.</p>
+<p><strong>Syntax</strong>: <code>none | repeat( &lt;length-percentage&gt; )</code></p>
+<p><strong>Initial value</strong>: <code>none</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_75">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26342</p>
+<hr />
+<h3 id="webkitscrollsnappointsy">WebkitScrollSnapPointsY</h3>
+<p>• <code>Optional</code> <strong>WebkitScrollSnapPointsY</strong>: <code>string</code> | <code>string</code>[]</p>
+<p>The <strong><code>scroll-snap-points-y</code></strong> CSS property defines the vertical positioning of snap points within the content of the scroll container they are applied to.</p>
+<p><strong>Syntax</strong>: <code>none | repeat( &lt;length-percentage&gt; )</code></p>
+<p><strong>Initial value</strong>: <code>none</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_76">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26352</p>
+<hr />
+<h3 id="azimuth">azimuth</h3>
+<p>• <code>Optional</code> <strong>azimuth</strong>: <code>string</code> | <code>string</code>[]</p>
+<p>In combination with <code>elevation</code>, the <strong><code>azimuth</code></strong> CSS property enables different audio sources to be positioned spatially for aural presentation. This is important in that it provides a natural way to tell several voices apart, as each can be positioned to originate at a different location on the sound stage. Stereo output produce a lateral sound stage, while binaural headphones and multi-speaker setups allow for a fully three-dimensional stage.</p>
+<p><strong>Syntax</strong>: <code>&lt;angle&gt; | [ [ left-side | far-left | left | center-left | center | center-right | right | far-right | right-side ] || behind ] | leftwards | rightwards</code></p>
+<p><strong>Initial value</strong>: <code>center</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_77">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25306</p>
+<hr />
+<h3 id="boxalign">boxAlign</h3>
+<p>• <code>Optional</code> <strong>boxAlign</strong>: <a href="../../modules/akashaproject_design_system._internal_/#boxalignproperty"><code>BoxAlignProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#boxalignproperty"><code>BoxAlignProperty</code></a>[]</p>
+<p>The <strong><code>box-align</code></strong> CSS property specifies how an element aligns its contents across its layout in a perpendicular direction. The effect of the property is only visible if there is extra space in the box.</p>
+<p><strong>Syntax</strong>: <code>start | center | end | baseline | stretch</code></p>
+<p><strong>Initial value</strong>: <code>stretch</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_78">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25316</p>
+<hr />
+<h3 id="boxdirection">boxDirection</h3>
+<p>• <code>Optional</code> <strong>boxDirection</strong>: <a href="../../modules/akashaproject_design_system._internal_/#boxdirectionproperty"><code>BoxDirectionProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#boxdirectionproperty"><code>BoxDirectionProperty</code></a>[]</p>
+<p>The <strong><code>box-direction</code></strong> CSS property specifies whether a box lays out its contents normally (from the top or left edge), or in reverse (from the bottom or right edge).</p>
+<p><strong>Syntax</strong>: <code>normal | reverse | inherit</code></p>
+<p><strong>Initial value</strong>: <code>normal</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_79">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25326</p>
+<hr />
+<h3 id="boxflex">boxFlex</h3>
+<p>• <code>Optional</code> <strong>boxFlex</strong>: <a href="../../modules/akashaproject_design_system._internal_/#globalsnumber"><code>GlobalsNumber</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#globalsnumber"><code>GlobalsNumber</code></a>[]</p>
+<p>The <strong><code>-moz-box-flex</code></strong> and <strong><code>-webkit-box-flex</code></strong> CSS properties specify how a <code>-moz-box</code> or <code>-webkit-box</code> grows to fill the box that contains it, in the direction of the containing box's layout.</p>
+<p><strong>Syntax</strong>: <code>&lt;number&gt;</code></p>
+<p><strong>Initial value</strong>: <code>0</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_80">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25336</p>
+<hr />
+<h3 id="boxflexgroup">boxFlexGroup</h3>
+<p>• <code>Optional</code> <strong>boxFlexGroup</strong>: <a href="../../modules/akashaproject_design_system._internal_/#globalsnumber"><code>GlobalsNumber</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#globalsnumber"><code>GlobalsNumber</code></a>[]</p>
+<p>The <strong><code>box-flex-group</code></strong> CSS property assigns the flexbox's child elements to a flex group.</p>
+<p><strong>Syntax</strong>: <code>&lt;integer&gt;</code></p>
+<p><strong>Initial value</strong>: <code>1</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_81">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25346</p>
+<hr />
+<h3 id="boxlines">boxLines</h3>
+<p>• <code>Optional</code> <strong>boxLines</strong>: <a href="../../modules/akashaproject_design_system._internal_/#boxlinesproperty"><code>BoxLinesProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#boxlinesproperty"><code>BoxLinesProperty</code></a>[]</p>
+<p>The <strong><code>box-lines</code></strong> CSS property determines whether the box may have a single or multiple lines (rows for horizontally oriented boxes, columns for vertically oriented boxes).</p>
+<p><strong>Syntax</strong>: <code>single | multiple</code></p>
+<p><strong>Initial value</strong>: <code>single</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_82">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25356</p>
+<hr />
+<h3 id="boxordinalgroup">boxOrdinalGroup</h3>
+<p>• <code>Optional</code> <strong>boxOrdinalGroup</strong>: <a href="../../modules/akashaproject_design_system._internal_/#globalsnumber"><code>GlobalsNumber</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#globalsnumber"><code>GlobalsNumber</code></a>[]</p>
+<p>The <strong><code>box-ordinal-group</code></strong> CSS property assigns the flexbox's child elements to an ordinal group.</p>
+<p><strong>Syntax</strong>: <code>&lt;integer&gt;</code></p>
+<p><strong>Initial value</strong>: <code>1</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_83">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25366</p>
+<hr />
+<h3 id="boxorient">boxOrient</h3>
+<p>• <code>Optional</code> <strong>boxOrient</strong>: <a href="../../modules/akashaproject_design_system._internal_/#boxorientproperty"><code>BoxOrientProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#boxorientproperty"><code>BoxOrientProperty</code></a>[]</p>
+<p>The <strong><code>box-orient</code></strong> CSS property specifies whether an element lays out its contents horizontally or vertically.</p>
+<p><strong>Syntax</strong>: <code>horizontal | vertical | inline-axis | block-axis | inherit</code></p>
+<p><strong>Initial value</strong>: <code>inline-axis</code> (<code>horizontal</code> in XUL)</p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_84">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25376</p>
+<hr />
+<h3 id="boxpack">boxPack</h3>
+<p>• <code>Optional</code> <strong>boxPack</strong>: <a href="../../modules/akashaproject_design_system._internal_/#boxpackproperty"><code>BoxPackProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#boxpackproperty"><code>BoxPackProperty</code></a>[]</p>
+<p>The <strong><code>-moz-box-pack</code></strong> and <strong><code>-webkit-box-pack</code></strong> CSS properties specify how a <code>-moz-box</code> or <code>-webkit-box</code> packs its contents in the direction of its layout. The effect of this is only visible if there is extra space in the box.</p>
+<p><strong>Syntax</strong>: <code>start | center | end | justify</code></p>
+<p><strong>Initial value</strong>: <code>start</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_85">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25386</p>
+<hr />
+<h3 id="clip">clip</h3>
+<p>• <code>Optional</code> <strong>clip</strong>: <code>string</code> | <code>string</code>[]</p>
+<p>The <strong><code>clip</code></strong> CSS property defines what portion of an element is visible. The <code>clip</code> property applies only to absolutely positioned elements, that is elements with <code>position:absolute</code> or <code>position:fixed</code>.</p>
+<p><strong>Syntax</strong>: <code>&lt;shape&gt; | auto</code></p>
+<p><strong>Initial value</strong>: <code>auto</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_86">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25396</p>
+<hr />
+<h3 id="fontvariantalternates">fontVariantAlternates</h3>
+<p>• <code>Optional</code> <strong>fontVariantAlternates</strong>: <code>string</code> | <code>string</code>[]</p>
+<p>The <strong><code>font-variant-alternates</code></strong> CSS property controls the usage of alternate glyphs. These alternate glyphs may be referenced by alternative names defined in <code>@font-feature-values</code>.</p>
+<p><strong>Syntax</strong>: <code>normal | [ stylistic( &lt;feature-value-name&gt; ) || historical-forms || styleset( &lt;feature-value-name&gt;# ) || character-variant( &lt;feature-value-name&gt;# ) || swash( &lt;feature-value-name&gt; ) || ornaments( &lt;feature-value-name&gt; ) || annotation( &lt;feature-value-name&gt; ) ]</code></p>
+<p><strong>Initial value</strong>: <code>normal</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_87">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25406</p>
+<hr />
+<h3 id="gridcolumngap">gridColumnGap</h3>
+<p>• <code>Optional</code> <strong>gridColumnGap</strong>: <a href="../../modules/akashaproject_design_system._internal_/#gridcolumngapproperty"><code>GridColumnGapProperty</code></a>&lt;<code>TLength</code>> | <a href="../../modules/akashaproject_design_system._internal_/#gridcolumngapproperty"><code>GridColumnGapProperty</code></a>&lt;<code>TLength</code>>[]</p>
+<p>The <strong><code>column-gap</code></strong> CSS property sets the size of the gap (gutter) between an element's columns.</p>
+<p><strong>Syntax</strong>: <code>&lt;length-percentage&gt;</code></p>
+<p><strong>Initial value</strong>: <code>0</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_88">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25416</p>
+<hr />
+<h3 id="gridgap">gridGap</h3>
+<p>• <code>Optional</code> <strong>gridGap</strong>: <a href="../../modules/akashaproject_design_system._internal_/#gridgapproperty"><code>GridGapProperty</code></a>&lt;<code>TLength</code>> | <a href="../../modules/akashaproject_design_system._internal_/#gridgapproperty"><code>GridGapProperty</code></a>&lt;<code>TLength</code>>[]</p>
+<p>The <strong><code>gap</code></strong> CSS property sets the gaps (gutters) between rows and columns. It is a shorthand for <code>row-gap</code> and <code>column-gap</code>.</p>
+<p><strong>Syntax</strong>: <code>&lt;'grid-row-gap'&gt; &lt;'grid-column-gap'&gt;?</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_89">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25424</p>
+<hr />
+<h3 id="gridrowgap">gridRowGap</h3>
+<p>• <code>Optional</code> <strong>gridRowGap</strong>: <a href="../../modules/akashaproject_design_system._internal_/#gridrowgapproperty"><code>GridRowGapProperty</code></a>&lt;<code>TLength</code>> | <a href="../../modules/akashaproject_design_system._internal_/#gridrowgapproperty"><code>GridRowGapProperty</code></a>&lt;<code>TLength</code>>[]</p>
+<p>The <strong><code>row-gap</code></strong> CSS property sets the size of the gap (gutter) between an element's grid rows.</p>
+<p><strong>Syntax</strong>: <code>&lt;length-percentage&gt;</code></p>
+<p><strong>Initial value</strong>: <code>0</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_90">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25434</p>
+<hr />
+<h3 id="imemode">imeMode</h3>
+<p>• <code>Optional</code> <strong>imeMode</strong>: <a href="../../modules/akashaproject_design_system._internal_/#imemodeproperty"><code>ImeModeProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#imemodeproperty"><code>ImeModeProperty</code></a>[]</p>
+<p>The <strong><code>ime-mode</code></strong> CSS property controls the state of the input method editor (IME) for text fields. This property is obsolete.</p>
+<p><strong>Syntax</strong>: <code>auto | normal | active | inactive | disabled</code></p>
+<p><strong>Initial value</strong>: <code>auto</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_91">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25444</p>
+<hr />
+<h3 id="msimemode">msImeMode</h3>
+<p>• <code>Optional</code> <strong>msImeMode</strong>: <a href="../../modules/akashaproject_design_system._internal_/#imemodeproperty"><code>ImeModeProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#imemodeproperty"><code>ImeModeProperty</code></a>[]</p>
+<p>The <strong><code>ime-mode</code></strong> CSS property controls the state of the input method editor (IME) for text fields. This property is obsolete.</p>
+<p><strong>Syntax</strong>: <code>auto | normal | active | inactive | disabled</code></p>
+<p><strong>Initial value</strong>: <code>auto</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_92">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26028</p>
+<hr />
+<h3 id="msscrollbartrackcolor">msScrollbarTrackColor</h3>
+<p>• <code>Optional</code> <strong>msScrollbarTrackColor</strong>: <code>string</code> | <code>string</code>[]</p>
+<p>The <strong><code>-ms-scrollbar-track-color</code></strong> CSS property is a Microsoft extension that specifies the color of the track element of a scrollbar.</p>
+<p><strong>Syntax</strong>: <code>&lt;color&gt;</code></p>
+<p><strong>Initial value</strong>: <code>Scrollbar</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_93">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:26038</p>
+<hr />
+<h3 id="offsetblock">offsetBlock</h3>
+<p>• <code>Optional</code> <strong>offsetBlock</strong>: <a href="../../modules/akashaproject_design_system._internal_/#insetblockproperty"><code>InsetBlockProperty</code></a>&lt;<code>TLength</code>> | <a href="../../modules/akashaproject_design_system._internal_/#insetblockproperty"><code>InsetBlockProperty</code></a>&lt;<code>TLength</code>>[]</p>
+<p>The <strong><code>inset-block</code></strong> CSS property defines the logical block start and end offsets of an element, which maps to physical offsets depending on the element's writing mode, directionality, and text orientation. It corresponds to the <code>top</code> and <code>bottom</code>, or <code>right</code> and <code>left</code> properties depending on the values defined for <code>writing-mode</code>, <code>direction</code>, and <code>text-orientation</code>.</p>
+<p><strong>Syntax</strong>: <code>&lt;'top'&gt;{1,2}</code></p>
+<p><strong>Initial value</strong>: <code>auto</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_94">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25454</p>
+<hr />
+<h3 id="offsetblockend">offsetBlockEnd</h3>
+<p>• <code>Optional</code> <strong>offsetBlockEnd</strong>: <a href="../../modules/akashaproject_design_system._internal_/#insetblockendproperty"><code>InsetBlockEndProperty</code></a>&lt;<code>TLength</code>> | <a href="../../modules/akashaproject_design_system._internal_/#insetblockendproperty"><code>InsetBlockEndProperty</code></a>&lt;<code>TLength</code>>[]</p>
+<p>The <strong><code>inset-block-end</code></strong> CSS property defines the logical block end offset of an element, which maps to a physical inset depending on the element's writing mode, directionality, and text orientation. It corresponds to the <code>top</code>, <code>right</code>, <code>bottom</code>, or <code>left</code> property depending on the values defined for <code>writing-mode</code>, <code>direction</code>, and <code>text-orientation</code>.</p>
+<p><strong>Syntax</strong>: <code>&lt;'top'&gt;</code></p>
+<p><strong>Initial value</strong>: <code>auto</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_95">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25464</p>
+<hr />
+<h3 id="offsetblockstart">offsetBlockStart</h3>
+<p>• <code>Optional</code> <strong>offsetBlockStart</strong>: <a href="../../modules/akashaproject_design_system._internal_/#insetblockstartproperty"><code>InsetBlockStartProperty</code></a>&lt;<code>TLength</code>> | <a href="../../modules/akashaproject_design_system._internal_/#insetblockstartproperty"><code>InsetBlockStartProperty</code></a>&lt;<code>TLength</code>>[]</p>
+<p>The <strong><code>inset-block-start</code></strong> CSS property defines the logical block start offset of an element, which maps to a physical inset depending on the element's writing mode, directionality, and text orientation. It corresponds to the <code>top</code>, <code>right</code>, <code>bottom</code>, or <code>left</code> property depending on the values defined for <code>writing-mode</code>, <code>direction</code>, and <code>text-orientation</code>.</p>
+<p><strong>Syntax</strong>: <code>&lt;'top'&gt;</code></p>
+<p><strong>Initial value</strong>: <code>auto</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_96">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25474</p>
+<hr />
+<h3 id="offsetinline">offsetInline</h3>
+<p>• <code>Optional</code> <strong>offsetInline</strong>: <a href="../../modules/akashaproject_design_system._internal_/#insetinlineproperty"><code>InsetInlineProperty</code></a>&lt;<code>TLength</code>> | <a href="../../modules/akashaproject_design_system._internal_/#insetinlineproperty"><code>InsetInlineProperty</code></a>&lt;<code>TLength</code>>[]</p>
+<p>The <strong><code>inset-inline</code></strong> CSS property defines the logical block start and end offsets of an element, which maps to physical offsets depending on the element's writing mode, directionality, and text orientation. It corresponds to the <code>top</code> and <code>bottom</code>, or <code>right</code> and <code>left</code> properties depending on the values defined for <code>writing-mode</code>, <code>direction</code>, and <code>text-orientation</code>.</p>
+<p><strong>Syntax</strong>: <code>&lt;'top'&gt;{1,2}</code></p>
+<p><strong>Initial value</strong>: <code>auto</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_97">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25484</p>
+<hr />
+<h3 id="offsetinlineend">offsetInlineEnd</h3>
+<p>• <code>Optional</code> <strong>offsetInlineEnd</strong>: <a href="../../modules/akashaproject_design_system._internal_/#insetinlineendproperty"><code>InsetInlineEndProperty</code></a>&lt;<code>TLength</code>> | <a href="../../modules/akashaproject_design_system._internal_/#insetinlineendproperty"><code>InsetInlineEndProperty</code></a>&lt;<code>TLength</code>>[]</p>
+<p>The <strong><code>inset-inline-end</code></strong> CSS property defines the logical inline end inset of an element, which maps to a physical inset depending on the element's writing mode, directionality, and text orientation. It corresponds to the <code>top</code>, <code>right</code>, <code>bottom</code>, or <code>left</code> property depending on the values defined for <code>writing-mode</code>, <code>direction</code>, and <code>text-orientation</code>.</p>
+<p><strong>Syntax</strong>: <code>&lt;'top'&gt;</code></p>
+<p><strong>Initial value</strong>: <code>auto</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_98">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25494</p>
+<hr />
+<h3 id="offsetinlinestart">offsetInlineStart</h3>
+<p>• <code>Optional</code> <strong>offsetInlineStart</strong>: <a href="../../modules/akashaproject_design_system._internal_/#insetinlinestartproperty"><code>InsetInlineStartProperty</code></a>&lt;<code>TLength</code>> | <a href="../../modules/akashaproject_design_system._internal_/#insetinlinestartproperty"><code>InsetInlineStartProperty</code></a>&lt;<code>TLength</code>>[]</p>
+<p>The <strong><code>inset-inline-start</code></strong> CSS property defines the logical inline start inset of an element, which maps to a physical offset depending on the element's writing mode, directionality, and text orientation. It corresponds to the <code>top</code>, <code>right</code>, <code>bottom</code>, or <code>left</code> property depending on the values defined for <code>writing-mode</code>, <code>direction</code>, and <code>text-orientation</code>.</p>
+<p><strong>Syntax</strong>: <code>&lt;'top'&gt;</code></p>
+<p><strong>Initial value</strong>: <code>auto</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_99">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25504</p>
+<hr />
+<h3 id="scrollsnapcoordinate">scrollSnapCoordinate</h3>
+<p>• <code>Optional</code> <strong>scrollSnapCoordinate</strong>: <a href="../../modules/akashaproject_design_system._internal_/#scrollsnapcoordinateproperty"><code>ScrollSnapCoordinateProperty</code></a>&lt;<code>TLength</code>> | <a href="../../modules/akashaproject_design_system._internal_/#scrollsnapcoordinateproperty"><code>ScrollSnapCoordinateProperty</code></a>&lt;<code>TLength</code>>[]</p>
+<p>The <strong><code>scroll-snap-coordinate</code></strong> CSS property defines the x and y coordinate positions within an element that will align with its nearest ancestor scroll container's <code>scroll-snap-destination</code> for each respective axis.</p>
+<p><strong>Syntax</strong>: <code>none | &lt;position&gt;#</code></p>
+<p><strong>Initial value</strong>: <code>none</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_100">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25514</p>
+<hr />
+<h3 id="scrollsnapdestination">scrollSnapDestination</h3>
+<p>• <code>Optional</code> <strong>scrollSnapDestination</strong>: <a href="../../modules/akashaproject_design_system._internal_/#scrollsnapdestinationproperty"><code>ScrollSnapDestinationProperty</code></a>&lt;<code>TLength</code>> | <a href="../../modules/akashaproject_design_system._internal_/#scrollsnapdestinationproperty"><code>ScrollSnapDestinationProperty</code></a>&lt;<code>TLength</code>>[]</p>
+<p>The <strong><code>scroll-snap-destination</code></strong> CSS property defines the position in x and y coordinates within the scroll container's visual viewport which element snap points align with.</p>
+<p><strong>Syntax</strong>: <code>&lt;position&gt;</code></p>
+<p><strong>Initial value</strong>: <code>0px 0px</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_101">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25524</p>
+<hr />
+<h3 id="scrollsnappointsx">scrollSnapPointsX</h3>
+<p>• <code>Optional</code> <strong>scrollSnapPointsX</strong>: <code>string</code> | <code>string</code>[]</p>
+<p>The <strong><code>scroll-snap-points-x</code></strong> CSS property defines the horizontal positioning of snap points within the content of the scroll container they are applied to.</p>
+<p><strong>Syntax</strong>: <code>none | repeat( &lt;length-percentage&gt; )</code></p>
+<p><strong>Initial value</strong>: <code>none</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_102">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25534</p>
+<hr />
+<h3 id="scrollsnappointsy">scrollSnapPointsY</h3>
+<p>• <code>Optional</code> <strong>scrollSnapPointsY</strong>: <code>string</code> | <code>string</code>[]</p>
+<p>The <strong><code>scroll-snap-points-y</code></strong> CSS property defines the vertical positioning of snap points within the content of the scroll container they are applied to.</p>
+<p><strong>Syntax</strong>: <code>none | repeat( &lt;length-percentage&gt; )</code></p>
+<p><strong>Initial value</strong>: <code>none</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_103">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25544</p>
+<hr />
+<h3 id="scrollsnaptypex">scrollSnapTypeX</h3>
+<p>• <code>Optional</code> <strong>scrollSnapTypeX</strong>: <a href="../../modules/akashaproject_design_system._internal_/#scrollsnaptypexproperty"><code>ScrollSnapTypeXProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#scrollsnaptypexproperty"><code>ScrollSnapTypeXProperty</code></a>[]</p>
+<p>The <strong><code>scroll-snap-type-x</code></strong> CSS property defines how strictly snap points are enforced on the horizontal axis of the scroll container in case there is one.</p>
+<p><strong>Syntax</strong>: <code>none | mandatory | proximity</code></p>
+<p><strong>Initial value</strong>: <code>none</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_104">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25554</p>
+<hr />
+<h3 id="scrollsnaptypey">scrollSnapTypeY</h3>
+<p>• <code>Optional</code> <strong>scrollSnapTypeY</strong>: <a href="../../modules/akashaproject_design_system._internal_/#scrollsnaptypeyproperty"><code>ScrollSnapTypeYProperty</code></a> | <a href="../../modules/akashaproject_design_system._internal_/#scrollsnaptypeyproperty"><code>ScrollSnapTypeYProperty</code></a>[]</p>
+<p>The <strong><code>scroll-snap-type-y</code></strong> CSS property defines how strictly snap points are enforced on the vertical axis of the scroll container in case there is one.</p>
+<p><strong>Syntax</strong>: <code>none | mandatory | proximity</code></p>
+<p><strong>Initial value</strong>: <code>none</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_105">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25564</p>
+<hr />
+<h3 id="scrollbartrackcolor">scrollbarTrackColor</h3>
+<p>• <code>Optional</code> <strong>scrollbarTrackColor</strong>: <code>string</code> | <code>string</code>[]</p>
+<p>The <strong><code>-ms-scrollbar-track-color</code></strong> CSS property is a Microsoft extension that specifies the color of the track element of a scrollbar.</p>
+<p><strong>Syntax</strong>: <code>&lt;color&gt;</code></p>
+<p><strong>Initial value</strong>: <code>Scrollbar</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="defined-in_106">Defined in</h4>
+<p>ui/design/node_modules/csstype/index.d.ts:25574</p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.22074ed6.min.js"}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.01de222e.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,1972 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.7">
+    
+    
+      
+        <title>akashaproject ui app loader. internal .BigNumber - AKASHA World Framework docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.cd566b2a.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#class-bignumber" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="AKASHA World Framework docs" class="md-header__button md-logo" aria-label="AKASHA World Framework docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AKASHA World Framework docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              akashaproject ui app loader. internal .BigNumber
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="AKASHA World Framework docs" class="md-nav__button md-logo" aria-label="AKASHA World Framework docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    AKASHA World Framework docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modules/" class="md-nav__link">
+        API
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#implements" class="md-nav__link">
+    Implements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    Table of contents
+  </a>
+  
+    <nav class="md-nav" aria-label="Table of contents">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#constructors" class="md-nav__link">
+    Constructors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    Properties
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    Methods
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constructors_1" class="md-nav__link">
+    Constructors
+  </a>
+  
+    <nav class="md-nav" aria-label="Constructors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#constructor" class="md-nav__link">
+    constructor
+  </a>
+  
+    <nav class="md-nav" aria-label="constructor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties_1" class="md-nav__link">
+    Properties
+  </a>
+  
+    <nav class="md-nav" aria-label="Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_hex" class="md-nav__link">
+    _hex
+  </a>
+  
+    <nav class="md-nav" aria-label="_hex">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_1" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_isbignumber" class="md-nav__link">
+    _isBigNumber
+  </a>
+  
+    <nav class="md-nav" aria-label="_isBigNumber">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_2" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#methods_1" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#abs" class="md-nav__link">
+    abs
+  </a>
+  
+    <nav class="md-nav" aria-label="abs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_3" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add" class="md-nav__link">
+    add
+  </a>
+  
+    <nav class="md-nav" aria-label="add">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_1" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_1" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_4" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#and" class="md-nav__link">
+    and
+  </a>
+  
+    <nav class="md-nav" aria-label="and">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_2" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_2" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_5" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#div" class="md-nav__link">
+    div
+  </a>
+  
+    <nav class="md-nav" aria-label="div">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_3" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_3" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_6" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eq" class="md-nav__link">
+    eq
+  </a>
+  
+    <nav class="md-nav" aria-label="eq">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_4" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_4" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_7" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fromtwos" class="md-nav__link">
+    fromTwos
+  </a>
+  
+    <nav class="md-nav" aria-label="fromTwos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_5" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_5" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_8" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gt" class="md-nav__link">
+    gt
+  </a>
+  
+    <nav class="md-nav" aria-label="gt">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_6" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_6" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_9" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gte" class="md-nav__link">
+    gte
+  </a>
+  
+    <nav class="md-nav" aria-label="gte">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_7" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_7" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_10" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isnegative" class="md-nav__link">
+    isNegative
+  </a>
+  
+    <nav class="md-nav" aria-label="isNegative">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_8" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_11" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iszero" class="md-nav__link">
+    isZero
+  </a>
+  
+    <nav class="md-nav" aria-label="isZero">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_9" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_12" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lt" class="md-nav__link">
+    lt
+  </a>
+  
+    <nav class="md-nav" aria-label="lt">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_8" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_10" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_13" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lte" class="md-nav__link">
+    lte
+  </a>
+  
+    <nav class="md-nav" aria-label="lte">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_9" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_11" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_14" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mask" class="md-nav__link">
+    mask
+  </a>
+  
+    <nav class="md-nav" aria-label="mask">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_10" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_12" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_15" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mod" class="md-nav__link">
+    mod
+  </a>
+  
+    <nav class="md-nav" aria-label="mod">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_11" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_13" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_16" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mul" class="md-nav__link">
+    mul
+  </a>
+  
+    <nav class="md-nav" aria-label="mul">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_12" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_14" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_17" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#or" class="md-nav__link">
+    or
+  </a>
+  
+    <nav class="md-nav" aria-label="or">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_13" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_15" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_18" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pow" class="md-nav__link">
+    pow
+  </a>
+  
+    <nav class="md-nav" aria-label="pow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_14" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_16" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_19" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shl" class="md-nav__link">
+    shl
+  </a>
+  
+    <nav class="md-nav" aria-label="shl">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_15" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_17" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_20" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shr" class="md-nav__link">
+    shr
+  </a>
+  
+    <nav class="md-nav" aria-label="shr">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_16" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_18" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_21" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sub" class="md-nav__link">
+    sub
+  </a>
+  
+    <nav class="md-nav" aria-label="sub">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_17" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_19" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_22" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tobigint" class="md-nav__link">
+    toBigInt
+  </a>
+  
+    <nav class="md-nav" aria-label="toBigInt">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_20" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_23" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tohexstring" class="md-nav__link">
+    toHexString
+  </a>
+  
+    <nav class="md-nav" aria-label="toHexString">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_21" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#implementation-of" class="md-nav__link">
+    Implementation of
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_24" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tojson" class="md-nav__link">
+    toJSON
+  </a>
+  
+    <nav class="md-nav" aria-label="toJSON">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_18" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_22" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_25" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tonumber" class="md-nav__link">
+    toNumber
+  </a>
+  
+    <nav class="md-nav" aria-label="toNumber">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_23" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_26" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tostring" class="md-nav__link">
+    toString
+  </a>
+  
+    <nav class="md-nav" aria-label="toString">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_24" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_27" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#totwos" class="md-nav__link">
+    toTwos
+  </a>
+  
+    <nav class="md-nav" aria-label="toTwos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_19" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_25" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_28" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#xor" class="md-nav__link">
+    xor
+  </a>
+  
+    <nav class="md-nav" aria-label="xor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_20" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_26" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_29" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#from" class="md-nav__link">
+    from
+  </a>
+  
+    <nav class="md-nav" aria-label="from">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_21" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_27" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_30" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isbignumber" class="md-nav__link">
+    isBigNumber
+  </a>
+  
+    <nav class="md-nav" aria-label="isBigNumber">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_22" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_28" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_31" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+<p><a href="../../">AWF</a> / <a href="../../modules/">Modules</a> / <a href="../../modules/akashaproject_ui_app_loader/">@akashaproject/ui-app-loader</a> / <a href="../../modules/akashaproject_ui_app_loader._internal_/">&lt;internal></a> / BigNumber</p>
+<h1 id="class-bignumber">Class: BigNumber</h1>
+<p><a href="../../modules/akashaproject_ui_app_loader/">@akashaproject/ui-app-loader</a>.<a href="../../modules/akashaproject_ui_app_loader._internal_/"><internal></a>.BigNumber</p>
+<h2 id="implements">Implements</h2>
+<ul>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.Hexable/"><code>Hexable</code></a></li>
+</ul>
+<h2 id="table-of-contents">Table of contents</h2>
+<h3 id="constructors">Constructors</h3>
+<ul>
+<li><a href="./#constructor">constructor</a></li>
+</ul>
+<h3 id="properties">Properties</h3>
+<ul>
+<li><a href="./#_hex">_hex</a></li>
+<li><a href="./#_isbignumber">_isBigNumber</a></li>
+</ul>
+<h3 id="methods">Methods</h3>
+<ul>
+<li><a href="./#abs">abs</a></li>
+<li><a href="./#add">add</a></li>
+<li><a href="./#and">and</a></li>
+<li><a href="./#div">div</a></li>
+<li><a href="./#eq">eq</a></li>
+<li><a href="./#fromtwos">fromTwos</a></li>
+<li><a href="./#gt">gt</a></li>
+<li><a href="./#gte">gte</a></li>
+<li><a href="./#isnegative">isNegative</a></li>
+<li><a href="./#iszero">isZero</a></li>
+<li><a href="./#lt">lt</a></li>
+<li><a href="./#lte">lte</a></li>
+<li><a href="./#mask">mask</a></li>
+<li><a href="./#mod">mod</a></li>
+<li><a href="./#mul">mul</a></li>
+<li><a href="./#or">or</a></li>
+<li><a href="./#pow">pow</a></li>
+<li><a href="./#shl">shl</a></li>
+<li><a href="./#shr">shr</a></li>
+<li><a href="./#sub">sub</a></li>
+<li><a href="./#tobigint">toBigInt</a></li>
+<li><a href="./#tohexstring">toHexString</a></li>
+<li><a href="./#tojson">toJSON</a></li>
+<li><a href="./#tonumber">toNumber</a></li>
+<li><a href="./#tostring">toString</a></li>
+<li><a href="./#totwos">toTwos</a></li>
+<li><a href="./#xor">xor</a></li>
+<li><a href="./#from">from</a></li>
+<li><a href="./#isbignumber">isBigNumber</a></li>
+</ul>
+<h2 id="constructors_1">Constructors</h2>
+<h3 id="constructor">constructor</h3>
+<p>• <strong>new BigNumber</strong>(<code>constructorGuard</code>, <code>hex</code>)</p>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>constructorGuard</code></td>
+<td align="left"><code>any</code></td>
+</tr>
+<tr>
+<td align="left"><code>hex</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/bignumber/lib/bignumber.d.ts:7</p>
+<h2 id="properties_1">Properties</h2>
+<h3 id="_hex">_hex</h3>
+<p>• <code>Readonly</code> <strong>_hex</strong>: <code>string</code></p>
+<h4 id="defined-in_1">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/bignumber/lib/bignumber.d.ts:5</p>
+<hr />
+<h3 id="_isbignumber">_isBigNumber</h3>
+<p>• <code>Readonly</code> <strong>_isBigNumber</strong>: <code>boolean</code></p>
+<h4 id="defined-in_2">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/bignumber/lib/bignumber.d.ts:6</p>
+<h2 id="methods_1">Methods</h2>
+<h3 id="abs">abs</h3>
+<p>▸ <strong>abs</strong>(): <a href="./"><code>BigNumber</code></a></p>
+<h4 id="returns">Returns</h4>
+<p><a href="./"><code>BigNumber</code></a></p>
+<h4 id="defined-in_3">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/bignumber/lib/bignumber.d.ts:10</p>
+<hr />
+<h3 id="add">add</h3>
+<p>▸ <strong>add</strong>(<code>other</code>): <a href="./"><code>BigNumber</code></a></p>
+<h4 id="parameters_1">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>other</code></td>
+<td align="left"><a href="../../modules/akashaproject_ui_app_loader._internal_/#bignumberish"><code>BigNumberish</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_1">Returns</h4>
+<p><a href="./"><code>BigNumber</code></a></p>
+<h4 id="defined-in_4">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/bignumber/lib/bignumber.d.ts:11</p>
+<hr />
+<h3 id="and">and</h3>
+<p>▸ <strong>and</strong>(<code>other</code>): <a href="./"><code>BigNumber</code></a></p>
+<h4 id="parameters_2">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>other</code></td>
+<td align="left"><a href="../../modules/akashaproject_ui_app_loader._internal_/#bignumberish"><code>BigNumberish</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_2">Returns</h4>
+<p><a href="./"><code>BigNumber</code></a></p>
+<h4 id="defined-in_5">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/bignumber/lib/bignumber.d.ts:17</p>
+<hr />
+<h3 id="div">div</h3>
+<p>▸ <strong>div</strong>(<code>other</code>): <a href="./"><code>BigNumber</code></a></p>
+<h4 id="parameters_3">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>other</code></td>
+<td align="left"><a href="../../modules/akashaproject_ui_app_loader._internal_/#bignumberish"><code>BigNumberish</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_3">Returns</h4>
+<p><a href="./"><code>BigNumber</code></a></p>
+<h4 id="defined-in_6">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/bignumber/lib/bignumber.d.ts:13</p>
+<hr />
+<h3 id="eq">eq</h3>
+<p>▸ <strong>eq</strong>(<code>other</code>): <code>boolean</code></p>
+<h4 id="parameters_4">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>other</code></td>
+<td align="left"><a href="../../modules/akashaproject_ui_app_loader._internal_/#bignumberish"><code>BigNumberish</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_4">Returns</h4>
+<p><code>boolean</code></p>
+<h4 id="defined-in_7">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/bignumber/lib/bignumber.d.ts:23</p>
+<hr />
+<h3 id="fromtwos">fromTwos</h3>
+<p>▸ <strong>fromTwos</strong>(<code>value</code>): <a href="./"><code>BigNumber</code></a></p>
+<h4 id="parameters_5">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>value</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_5">Returns</h4>
+<p><a href="./"><code>BigNumber</code></a></p>
+<h4 id="defined-in_8">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/bignumber/lib/bignumber.d.ts:8</p>
+<hr />
+<h3 id="gt">gt</h3>
+<p>▸ <strong>gt</strong>(<code>other</code>): <code>boolean</code></p>
+<h4 id="parameters_6">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>other</code></td>
+<td align="left"><a href="../../modules/akashaproject_ui_app_loader._internal_/#bignumberish"><code>BigNumberish</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_6">Returns</h4>
+<p><code>boolean</code></p>
+<h4 id="defined-in_9">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/bignumber/lib/bignumber.d.ts:26</p>
+<hr />
+<h3 id="gte">gte</h3>
+<p>▸ <strong>gte</strong>(<code>other</code>): <code>boolean</code></p>
+<h4 id="parameters_7">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>other</code></td>
+<td align="left"><a href="../../modules/akashaproject_ui_app_loader._internal_/#bignumberish"><code>BigNumberish</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_7">Returns</h4>
+<p><code>boolean</code></p>
+<h4 id="defined-in_10">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/bignumber/lib/bignumber.d.ts:27</p>
+<hr />
+<h3 id="isnegative">isNegative</h3>
+<p>▸ <strong>isNegative</strong>(): <code>boolean</code></p>
+<h4 id="returns_8">Returns</h4>
+<p><code>boolean</code></p>
+<h4 id="defined-in_11">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/bignumber/lib/bignumber.d.ts:28</p>
+<hr />
+<h3 id="iszero">isZero</h3>
+<p>▸ <strong>isZero</strong>(): <code>boolean</code></p>
+<h4 id="returns_9">Returns</h4>
+<p><code>boolean</code></p>
+<h4 id="defined-in_12">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/bignumber/lib/bignumber.d.ts:29</p>
+<hr />
+<h3 id="lt">lt</h3>
+<p>▸ <strong>lt</strong>(<code>other</code>): <code>boolean</code></p>
+<h4 id="parameters_8">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>other</code></td>
+<td align="left"><a href="../../modules/akashaproject_ui_app_loader._internal_/#bignumberish"><code>BigNumberish</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_10">Returns</h4>
+<p><code>boolean</code></p>
+<h4 id="defined-in_13">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/bignumber/lib/bignumber.d.ts:24</p>
+<hr />
+<h3 id="lte">lte</h3>
+<p>▸ <strong>lte</strong>(<code>other</code>): <code>boolean</code></p>
+<h4 id="parameters_9">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>other</code></td>
+<td align="left"><a href="../../modules/akashaproject_ui_app_loader._internal_/#bignumberish"><code>BigNumberish</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_11">Returns</h4>
+<p><code>boolean</code></p>
+<h4 id="defined-in_14">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/bignumber/lib/bignumber.d.ts:25</p>
+<hr />
+<h3 id="mask">mask</h3>
+<p>▸ <strong>mask</strong>(<code>value</code>): <a href="./"><code>BigNumber</code></a></p>
+<h4 id="parameters_10">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>value</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_12">Returns</h4>
+<p><a href="./"><code>BigNumber</code></a></p>
+<h4 id="defined-in_15">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/bignumber/lib/bignumber.d.ts:20</p>
+<hr />
+<h3 id="mod">mod</h3>
+<p>▸ <strong>mod</strong>(<code>other</code>): <a href="./"><code>BigNumber</code></a></p>
+<h4 id="parameters_11">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>other</code></td>
+<td align="left"><a href="../../modules/akashaproject_ui_app_loader._internal_/#bignumberish"><code>BigNumberish</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_13">Returns</h4>
+<p><a href="./"><code>BigNumber</code></a></p>
+<h4 id="defined-in_16">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/bignumber/lib/bignumber.d.ts:15</p>
+<hr />
+<h3 id="mul">mul</h3>
+<p>▸ <strong>mul</strong>(<code>other</code>): <a href="./"><code>BigNumber</code></a></p>
+<h4 id="parameters_12">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>other</code></td>
+<td align="left"><a href="../../modules/akashaproject_ui_app_loader._internal_/#bignumberish"><code>BigNumberish</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_14">Returns</h4>
+<p><a href="./"><code>BigNumber</code></a></p>
+<h4 id="defined-in_17">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/bignumber/lib/bignumber.d.ts:14</p>
+<hr />
+<h3 id="or">or</h3>
+<p>▸ <strong>or</strong>(<code>other</code>): <a href="./"><code>BigNumber</code></a></p>
+<h4 id="parameters_13">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>other</code></td>
+<td align="left"><a href="../../modules/akashaproject_ui_app_loader._internal_/#bignumberish"><code>BigNumberish</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_15">Returns</h4>
+<p><a href="./"><code>BigNumber</code></a></p>
+<h4 id="defined-in_18">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/bignumber/lib/bignumber.d.ts:18</p>
+<hr />
+<h3 id="pow">pow</h3>
+<p>▸ <strong>pow</strong>(<code>other</code>): <a href="./"><code>BigNumber</code></a></p>
+<h4 id="parameters_14">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>other</code></td>
+<td align="left"><a href="../../modules/akashaproject_ui_app_loader._internal_/#bignumberish"><code>BigNumberish</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_16">Returns</h4>
+<p><a href="./"><code>BigNumber</code></a></p>
+<h4 id="defined-in_19">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/bignumber/lib/bignumber.d.ts:16</p>
+<hr />
+<h3 id="shl">shl</h3>
+<p>▸ <strong>shl</strong>(<code>value</code>): <a href="./"><code>BigNumber</code></a></p>
+<h4 id="parameters_15">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>value</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_17">Returns</h4>
+<p><a href="./"><code>BigNumber</code></a></p>
+<h4 id="defined-in_20">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/bignumber/lib/bignumber.d.ts:21</p>
+<hr />
+<h3 id="shr">shr</h3>
+<p>▸ <strong>shr</strong>(<code>value</code>): <a href="./"><code>BigNumber</code></a></p>
+<h4 id="parameters_16">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>value</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_18">Returns</h4>
+<p><a href="./"><code>BigNumber</code></a></p>
+<h4 id="defined-in_21">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/bignumber/lib/bignumber.d.ts:22</p>
+<hr />
+<h3 id="sub">sub</h3>
+<p>▸ <strong>sub</strong>(<code>other</code>): <a href="./"><code>BigNumber</code></a></p>
+<h4 id="parameters_17">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>other</code></td>
+<td align="left"><a href="../../modules/akashaproject_ui_app_loader._internal_/#bignumberish"><code>BigNumberish</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_19">Returns</h4>
+<p><a href="./"><code>BigNumber</code></a></p>
+<h4 id="defined-in_22">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/bignumber/lib/bignumber.d.ts:12</p>
+<hr />
+<h3 id="tobigint">toBigInt</h3>
+<p>▸ <strong>toBigInt</strong>(): <code>bigint</code></p>
+<h4 id="returns_20">Returns</h4>
+<p><code>bigint</code></p>
+<h4 id="defined-in_23">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/bignumber/lib/bignumber.d.ts:31</p>
+<hr />
+<h3 id="tohexstring">toHexString</h3>
+<p>▸ <strong>toHexString</strong>(): <code>string</code></p>
+<h4 id="returns_21">Returns</h4>
+<p><code>string</code></p>
+<h4 id="implementation-of">Implementation of</h4>
+<p><a href="../../interfaces/akashaproject_ui_app_loader._internal_.Hexable/">Hexable</a>.<a href="../../interfaces/akashaproject_ui_app_loader._internal_.Hexable/#tohexstring">toHexString</a></p>
+<h4 id="defined-in_24">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/bignumber/lib/bignumber.d.ts:33</p>
+<hr />
+<h3 id="tojson">toJSON</h3>
+<p>▸ <strong>toJSON</strong>(<code>key?</code>): <code>any</code></p>
+<h4 id="parameters_18">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>key?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_22">Returns</h4>
+<p><code>any</code></p>
+<h4 id="defined-in_25">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/bignumber/lib/bignumber.d.ts:34</p>
+<hr />
+<h3 id="tonumber">toNumber</h3>
+<p>▸ <strong>toNumber</strong>(): <code>number</code></p>
+<h4 id="returns_23">Returns</h4>
+<p><code>number</code></p>
+<h4 id="defined-in_26">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/bignumber/lib/bignumber.d.ts:30</p>
+<hr />
+<h3 id="tostring">toString</h3>
+<p>▸ <strong>toString</strong>(): <code>string</code></p>
+<h4 id="returns_24">Returns</h4>
+<p><code>string</code></p>
+<h4 id="defined-in_27">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/bignumber/lib/bignumber.d.ts:32</p>
+<hr />
+<h3 id="totwos">toTwos</h3>
+<p>▸ <strong>toTwos</strong>(<code>value</code>): <a href="./"><code>BigNumber</code></a></p>
+<h4 id="parameters_19">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>value</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_25">Returns</h4>
+<p><a href="./"><code>BigNumber</code></a></p>
+<h4 id="defined-in_28">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/bignumber/lib/bignumber.d.ts:9</p>
+<hr />
+<h3 id="xor">xor</h3>
+<p>▸ <strong>xor</strong>(<code>other</code>): <a href="./"><code>BigNumber</code></a></p>
+<h4 id="parameters_20">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>other</code></td>
+<td align="left"><a href="../../modules/akashaproject_ui_app_loader._internal_/#bignumberish"><code>BigNumberish</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_26">Returns</h4>
+<p><a href="./"><code>BigNumber</code></a></p>
+<h4 id="defined-in_29">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/bignumber/lib/bignumber.d.ts:19</p>
+<hr />
+<h3 id="from">from</h3>
+<p>▸ <code>Static</code> <strong>from</strong>(<code>value</code>): <a href="./"><code>BigNumber</code></a></p>
+<h4 id="parameters_21">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>value</code></td>
+<td align="left"><code>any</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_27">Returns</h4>
+<p><a href="./"><code>BigNumber</code></a></p>
+<h4 id="defined-in_30">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/bignumber/lib/bignumber.d.ts:35</p>
+<hr />
+<h3 id="isbignumber">isBigNumber</h3>
+<p>▸ <code>Static</code> <strong>isBigNumber</strong>(<code>value</code>): value is BigNumber</p>
+<h4 id="parameters_22">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>value</code></td>
+<td align="left"><code>any</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_28">Returns</h4>
+<p>value is BigNumber</p>
+<h4 id="defined-in_31">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/bignumber/lib/bignumber.d.ts:36</p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.22074ed6.min.js"}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.01de222e.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,1344 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.7">
+    
+    
+      
+        <title>akashaproject design system. internal .MediaStreamTrack - AKASHA World Framework docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.cd566b2a.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#interface-mediastreamtrack" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="AKASHA World Framework docs" class="md-header__button md-logo" aria-label="AKASHA World Framework docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AKASHA World Framework docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              akashaproject design system. internal .MediaStreamTrack
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="AKASHA World Framework docs" class="md-nav__button md-logo" aria-label="AKASHA World Framework docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    AKASHA World Framework docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modules/" class="md-nav__link">
+        API
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hierarchy" class="md-nav__link">
+    Hierarchy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    Table of contents
+  </a>
+  
+    <nav class="md-nav" aria-label="Table of contents">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    Properties
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    Methods
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties_1" class="md-nav__link">
+    Properties
+  </a>
+  
+    <nav class="md-nav" aria-label="Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#contenthint" class="md-nav__link">
+    contentHint
+  </a>
+  
+    <nav class="md-nav" aria-label="contentHint">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enabled" class="md-nav__link">
+    enabled
+  </a>
+  
+    <nav class="md-nav" aria-label="enabled">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_1" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#id" class="md-nav__link">
+    id
+  </a>
+  
+    <nav class="md-nav" aria-label="id">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_2" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kind" class="md-nav__link">
+    kind
+  </a>
+  
+    <nav class="md-nav" aria-label="kind">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_3" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#label" class="md-nav__link">
+    label
+  </a>
+  
+    <nav class="md-nav" aria-label="label">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_4" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#muted" class="md-nav__link">
+    muted
+  </a>
+  
+    <nav class="md-nav" aria-label="muted">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_5" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onended" class="md-nav__link">
+    onended
+  </a>
+  
+    <nav class="md-nav" aria-label="onended">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_6" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onmute" class="md-nav__link">
+    onmute
+  </a>
+  
+    <nav class="md-nav" aria-label="onmute">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_1" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_1" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_1" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_7" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onunmute" class="md-nav__link">
+    onunmute
+  </a>
+  
+    <nav class="md-nav" aria-label="onunmute">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_2" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_2" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_2" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_8" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#readystate" class="md-nav__link">
+    readyState
+  </a>
+  
+    <nav class="md-nav" aria-label="readyState">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_9" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#methods_1" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#addeventlistener" class="md-nav__link">
+    addEventListener
+  </a>
+  
+    <nav class="md-nav" aria-label="addEventListener">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_3" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_3" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#overrides" class="md-nav__link">
+    Overrides
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_10" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_4" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_4" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#overrides_1" class="md-nav__link">
+    Overrides
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_11" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#applyconstraints" class="md-nav__link">
+    applyConstraints
+  </a>
+  
+    <nav class="md-nav" aria-label="applyConstraints">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_5" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_5" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_12" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clone" class="md-nav__link">
+    clone
+  </a>
+  
+    <nav class="md-nav" aria-label="clone">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_6" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_13" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dispatchevent" class="md-nav__link">
+    dispatchEvent
+  </a>
+  
+    <nav class="md-nav" aria-label="dispatchEvent">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_6" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_7" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_14" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getcapabilities" class="md-nav__link">
+    getCapabilities
+  </a>
+  
+    <nav class="md-nav" aria-label="getCapabilities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_8" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_15" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getconstraints" class="md-nav__link">
+    getConstraints
+  </a>
+  
+    <nav class="md-nav" aria-label="getConstraints">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_9" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_16" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getsettings" class="md-nav__link">
+    getSettings
+  </a>
+  
+    <nav class="md-nav" aria-label="getSettings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_10" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_17" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removeeventlistener" class="md-nav__link">
+    removeEventListener
+  </a>
+  
+    <nav class="md-nav" aria-label="removeEventListener">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_1" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_7" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_11" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#overrides_2" class="md-nav__link">
+    Overrides
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_18" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_8" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_12" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#overrides_3" class="md-nav__link">
+    Overrides
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_19" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stop" class="md-nav__link">
+    stop
+  </a>
+  
+    <nav class="md-nav" aria-label="stop">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_13" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_20" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+<p><a href="../../">AWF</a> / <a href="../../modules/">Modules</a> / <a href="../../modules/akashaproject_design_system/">@akashaproject/design-system</a> / <a href="../../modules/akashaproject_design_system._internal_/">&lt;internal></a> / MediaStreamTrack</p>
+<h1 id="interface-mediastreamtrack">Interface: MediaStreamTrack</h1>
+<p><a href="../../modules/akashaproject_design_system/">@akashaproject/design-system</a>.<a href="../../modules/akashaproject_design_system._internal_/"><internal></a>.MediaStreamTrack</p>
+<p>A single media track within a stream; typically, these are audio or video tracks, but other track types may exist as well.</p>
+<h2 id="hierarchy">Hierarchy</h2>
+<ul>
+<li><code>EventTarget</code></li>
+</ul>
+<p>↳ <strong><code>MediaStreamTrack</code></strong></p>
+<h2 id="table-of-contents">Table of contents</h2>
+<h3 id="properties">Properties</h3>
+<ul>
+<li><a href="./#contenthint">contentHint</a></li>
+<li><a href="./#enabled">enabled</a></li>
+<li><a href="./#id">id</a></li>
+<li><a href="./#kind">kind</a></li>
+<li><a href="./#label">label</a></li>
+<li><a href="./#muted">muted</a></li>
+<li><a href="./#onended">onended</a></li>
+<li><a href="./#onmute">onmute</a></li>
+<li><a href="./#onunmute">onunmute</a></li>
+<li><a href="./#readystate">readyState</a></li>
+</ul>
+<h3 id="methods">Methods</h3>
+<ul>
+<li><a href="./#addeventlistener">addEventListener</a></li>
+<li><a href="./#applyconstraints">applyConstraints</a></li>
+<li><a href="./#clone">clone</a></li>
+<li><a href="./#dispatchevent">dispatchEvent</a></li>
+<li><a href="./#getcapabilities">getCapabilities</a></li>
+<li><a href="./#getconstraints">getConstraints</a></li>
+<li><a href="./#getsettings">getSettings</a></li>
+<li><a href="./#removeeventlistener">removeEventListener</a></li>
+<li><a href="./#stop">stop</a></li>
+</ul>
+<h2 id="properties_1">Properties</h2>
+<h3 id="contenthint">contentHint</h3>
+<p>• <strong>contentHint</strong>: <code>string</code></p>
+<h4 id="defined-in">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10074</p>
+<hr />
+<h3 id="enabled">enabled</h3>
+<p>• <strong>enabled</strong>: <code>boolean</code></p>
+<h4 id="defined-in_1">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10075</p>
+<hr />
+<h3 id="id">id</h3>
+<p>• <code>Readonly</code> <strong>id</strong>: <code>string</code></p>
+<h4 id="defined-in_2">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10076</p>
+<hr />
+<h3 id="kind">kind</h3>
+<p>• <code>Readonly</code> <strong>kind</strong>: <code>string</code></p>
+<h4 id="defined-in_3">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10077</p>
+<hr />
+<h3 id="label">label</h3>
+<p>• <code>Readonly</code> <strong>label</strong>: <code>string</code></p>
+<h4 id="defined-in_4">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10078</p>
+<hr />
+<h3 id="muted">muted</h3>
+<p>• <code>Readonly</code> <strong>muted</strong>: <code>boolean</code></p>
+<h4 id="defined-in_5">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10079</p>
+<hr />
+<h3 id="onended">onended</h3>
+<p>• <strong>onended</strong>: (<code>ev</code>: <code>Event</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<h5 id="parameters">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>Event</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_6">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10080</p>
+<hr />
+<h3 id="onmute">onmute</h3>
+<p>• <strong>onmute</strong>: (<code>ev</code>: <code>Event</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_1">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<h5 id="parameters_1">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>Event</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_1">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_7">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10081</p>
+<hr />
+<h3 id="onunmute">onunmute</h3>
+<p>• <strong>onunmute</strong>: (<code>ev</code>: <code>Event</code>) =&gt; <code>any</code></p>
+<h4 id="type-declaration_2">Type declaration</h4>
+<p>▸ (<code>ev</code>): <code>any</code></p>
+<h5 id="parameters_2">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ev</code></td>
+<td align="left"><code>Event</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_2">Returns</h5>
+<p><code>any</code></p>
+<h4 id="defined-in_8">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10082</p>
+<hr />
+<h3 id="readystate">readyState</h3>
+<p>• <code>Readonly</code> <strong>readyState</strong>: <a href="../../modules/akashaproject_design_system._internal_/#mediastreamtrackstate"><code>MediaStreamTrackState</code></a></p>
+<h4 id="defined-in_9">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10083</p>
+<h2 id="methods_1">Methods</h2>
+<h3 id="addeventlistener">addEventListener</h3>
+<p>▸ <strong>addEventListener</strong>&lt;<code>K</code>>(<code>type</code>, <code>listener</code>, <code>options?</code>): <code>void</code></p>
+<h4 id="type-parameters">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>K</code></td>
+<td align="left">extends keyof <a href="../akashaproject_design_system._internal_.MediaStreamTrackEventMap/"><code>MediaStreamTrackEventMap</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_3">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>type</code></td>
+<td align="left"><code>K</code></td>
+</tr>
+<tr>
+<td align="left"><code>listener</code></td>
+<td align="left">(<code>ev</code>: <a href="../akashaproject_design_system._internal_.MediaStreamTrackEventMap/"><code>MediaStreamTrackEventMap</code></a>[<code>K</code>]) =&gt; <code>any</code></td>
+</tr>
+<tr>
+<td align="left"><code>options?</code></td>
+<td align="left"><code>boolean</code> | <a href="../akashaproject_design_system._internal_.AddEventListenerOptions/"><code>AddEventListenerOptions</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_3">Returns</h4>
+<p><code>void</code></p>
+<h4 id="overrides">Overrides</h4>
+<p>EventTarget.addEventListener</p>
+<h4 id="defined-in_10">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10090</p>
+<p>▸ <strong>addEventListener</strong>(<code>type</code>, <code>listener</code>, <code>options?</code>): <code>void</code></p>
+<h4 id="parameters_4">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>type</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>listener</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#eventlisteneroreventlistenerobject"><code>EventListenerOrEventListenerObject</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>options?</code></td>
+<td align="left"><code>boolean</code> | <a href="../akashaproject_design_system._internal_.AddEventListenerOptions/"><code>AddEventListenerOptions</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_4">Returns</h4>
+<p><code>void</code></p>
+<h4 id="overrides_1">Overrides</h4>
+<p>EventTarget.addEventListener</p>
+<h4 id="defined-in_11">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10091</p>
+<hr />
+<h3 id="applyconstraints">applyConstraints</h3>
+<p>▸ <strong>applyConstraints</strong>(<code>constraints?</code>): <code>Promise</code>&lt;<code>void</code>></p>
+<h4 id="parameters_5">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>constraints?</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_.MediaTrackConstraints/"><code>MediaTrackConstraints</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_5">Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>></p>
+<h4 id="defined-in_12">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10084</p>
+<hr />
+<h3 id="clone">clone</h3>
+<p>▸ <strong>clone</strong>(): <a href="../../modules/akashaproject_design_system._internal_/#mediastreamtrack"><code>MediaStreamTrack</code></a></p>
+<h4 id="returns_6">Returns</h4>
+<p><a href="../../modules/akashaproject_design_system._internal_/#mediastreamtrack"><code>MediaStreamTrack</code></a></p>
+<h4 id="defined-in_13">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10085</p>
+<hr />
+<h3 id="dispatchevent">dispatchEvent</h3>
+<p>▸ <strong>dispatchEvent</strong>(<code>event</code>): <code>boolean</code></p>
+<p>Dispatches a synthetic event event to target and returns true if either event's cancelable attribute value is false or its preventDefault() method was not invoked, and false otherwise.</p>
+<h4 id="parameters_6">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>event</code></td>
+<td align="left"><code>Event</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_7">Returns</h4>
+<p><code>boolean</code></p>
+<h4 id="inherited-from">Inherited from</h4>
+<p>EventTarget.dispatchEvent</p>
+<h4 id="defined-in_14">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5210</p>
+<hr />
+<h3 id="getcapabilities">getCapabilities</h3>
+<p>▸ <strong>getCapabilities</strong>(): <a href="../akashaproject_design_system._internal_.MediaTrackCapabilities/"><code>MediaTrackCapabilities</code></a></p>
+<h4 id="returns_8">Returns</h4>
+<p><a href="../akashaproject_design_system._internal_.MediaTrackCapabilities/"><code>MediaTrackCapabilities</code></a></p>
+<h4 id="defined-in_15">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10086</p>
+<hr />
+<h3 id="getconstraints">getConstraints</h3>
+<p>▸ <strong>getConstraints</strong>(): <a href="../akashaproject_design_system._internal_.MediaTrackConstraints/"><code>MediaTrackConstraints</code></a></p>
+<h4 id="returns_9">Returns</h4>
+<p><a href="../akashaproject_design_system._internal_.MediaTrackConstraints/"><code>MediaTrackConstraints</code></a></p>
+<h4 id="defined-in_16">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10087</p>
+<hr />
+<h3 id="getsettings">getSettings</h3>
+<p>▸ <strong>getSettings</strong>(): <a href="../akashaproject_design_system._internal_.MediaTrackSettings/"><code>MediaTrackSettings</code></a></p>
+<h4 id="returns_10">Returns</h4>
+<p><a href="../akashaproject_design_system._internal_.MediaTrackSettings/"><code>MediaTrackSettings</code></a></p>
+<h4 id="defined-in_17">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10088</p>
+<hr />
+<h3 id="removeeventlistener">removeEventListener</h3>
+<p>▸ <strong>removeEventListener</strong>&lt;<code>K</code>>(<code>type</code>, <code>listener</code>, <code>options?</code>): <code>void</code></p>
+<h4 id="type-parameters_1">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>K</code></td>
+<td align="left">extends keyof <a href="../akashaproject_design_system._internal_.MediaStreamTrackEventMap/"><code>MediaStreamTrackEventMap</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_7">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>type</code></td>
+<td align="left"><code>K</code></td>
+</tr>
+<tr>
+<td align="left"><code>listener</code></td>
+<td align="left">(<code>ev</code>: <a href="../akashaproject_design_system._internal_.MediaStreamTrackEventMap/"><code>MediaStreamTrackEventMap</code></a>[<code>K</code>]) =&gt; <code>any</code></td>
+</tr>
+<tr>
+<td align="left"><code>options?</code></td>
+<td align="left"><code>boolean</code> | <a href="../akashaproject_design_system._internal_.EventListenerOptions/"><code>EventListenerOptions</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_11">Returns</h4>
+<p><code>void</code></p>
+<h4 id="overrides_2">Overrides</h4>
+<p>EventTarget.removeEventListener</p>
+<h4 id="defined-in_18">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10092</p>
+<p>▸ <strong>removeEventListener</strong>(<code>type</code>, <code>listener</code>, <code>options?</code>): <code>void</code></p>
+<h4 id="parameters_8">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>type</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>listener</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#eventlisteneroreventlistenerobject"><code>EventListenerOrEventListenerObject</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>options?</code></td>
+<td align="left"><code>boolean</code> | <a href="../akashaproject_design_system._internal_.EventListenerOptions/"><code>EventListenerOptions</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_12">Returns</h4>
+<p><code>void</code></p>
+<h4 id="overrides_3">Overrides</h4>
+<p>EventTarget.removeEventListener</p>
+<h4 id="defined-in_19">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10093</p>
+<hr />
+<h3 id="stop">stop</h3>
+<p>▸ <strong>stop</strong>(): <code>void</code></p>
+<h4 id="returns_13">Returns</h4>
+<p><code>void</code></p>
+<h4 id="defined-in_20">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10089</p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.22074ed6.min.js"}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.01de222e.min.js"></script>
+      
+    
+  </body>
+</html>

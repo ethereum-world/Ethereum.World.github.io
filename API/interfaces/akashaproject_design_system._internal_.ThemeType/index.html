@@ -1,0 +1,5765 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.7">
+    
+    
+      
+        <title>akashaproject design system. internal .ThemeType - AKASHA World Framework docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.cd566b2a.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#interface-themetype" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="AKASHA World Framework docs" class="md-header__button md-logo" aria-label="AKASHA World Framework docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AKASHA World Framework docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              akashaproject design system. internal .ThemeType
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="AKASHA World Framework docs" class="md-nav__button md-logo" aria-label="AKASHA World Framework docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    AKASHA World Framework docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modules/" class="md-nav__link">
+        API
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hierarchy" class="md-nav__link">
+    Hierarchy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    Table of contents
+  </a>
+  
+    <nav class="md-nav" aria-label="Table of contents">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    Properties
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties_1" class="md-nav__link">
+    Properties
+  </a>
+  
+    <nav class="md-nav" aria-label="Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#accordion" class="md-nav__link">
+    accordion
+  </a>
+  
+    <nav class="md-nav" aria-label="accordion">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anchor" class="md-nav__link">
+    anchor
+  </a>
+  
+    <nav class="md-nav" aria-label="anchor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_1" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_1" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#avatar" class="md-nav__link">
+    avatar
+  </a>
+  
+    <nav class="md-nav" aria-label="avatar">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_2" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_2" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#box" class="md-nav__link">
+    box
+  </a>
+  
+    <nav class="md-nav" aria-label="box">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_3" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_3" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#button" class="md-nav__link">
+    button
+  </a>
+  
+    <nav class="md-nav" aria-label="button">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_4" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calendar" class="md-nav__link">
+    calendar
+  </a>
+  
+    <nav class="md-nav" aria-label="calendar">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_4" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_5" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#card" class="md-nav__link">
+    card
+  </a>
+  
+    <nav class="md-nav" aria-label="card">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_5" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_6" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#carousel" class="md-nav__link">
+    carousel
+  </a>
+  
+    <nav class="md-nav" aria-label="carousel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_6" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_7" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chart" class="md-nav__link">
+    chart
+  </a>
+  
+    <nav class="md-nav" aria-label="chart">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_7" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_8" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checkbox" class="md-nav__link">
+    checkBox
+  </a>
+  
+    <nav class="md-nav" aria-label="checkBox">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_8" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_9" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checkboxgroup" class="md-nav__link">
+    checkBoxGroup
+  </a>
+  
+    <nav class="md-nav" aria-label="checkBoxGroup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_9" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_10" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clock" class="md-nav__link">
+    clock
+  </a>
+  
+    <nav class="md-nav" aria-label="clock">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_10" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_11" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#collapsible" class="md-nav__link">
+    collapsible
+  </a>
+  
+    <nav class="md-nav" aria-label="collapsible">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_11" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_12" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#datatable" class="md-nav__link">
+    dataTable
+  </a>
+  
+    <nav class="md-nav" aria-label="dataTable">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_12" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_13" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dateinput" class="md-nav__link">
+    dateInput
+  </a>
+  
+    <nav class="md-nav" aria-label="dateInput">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_13" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_14" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diagram" class="md-nav__link">
+    diagram
+  </a>
+  
+    <nav class="md-nav" aria-label="diagram">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_14" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_15" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drop" class="md-nav__link">
+    drop
+  </a>
+  
+    <nav class="md-nav" aria-label="drop">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_15" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_16" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fileinput" class="md-nav__link">
+    fileInput
+  </a>
+  
+    <nav class="md-nav" aria-label="fileInput">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_16" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_17" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formfield" class="md-nav__link">
+    formField
+  </a>
+  
+    <nav class="md-nav" aria-label="formField">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_17" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_18" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#global" class="md-nav__link">
+    global
+  </a>
+  
+    <nav class="md-nav" aria-label="global">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_18" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_19" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grommet" class="md-nav__link">
+    grommet
+  </a>
+  
+    <nav class="md-nav" aria-label="grommet">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_19" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_20" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#heading" class="md-nav__link">
+    heading
+  </a>
+  
+    <nav class="md-nav" aria-label="heading">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_20" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_21" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#icon" class="md-nav__link">
+    icon
+  </a>
+  
+    <nav class="md-nav" aria-label="icon">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_21" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_22" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#layer" class="md-nav__link">
+    layer
+  </a>
+  
+    <nav class="md-nav" aria-label="layer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_22" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_23" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#list" class="md-nav__link">
+    list
+  </a>
+  
+    <nav class="md-nav" aria-label="list">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_23" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_24" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maskedinput" class="md-nav__link">
+    maskedInput
+  </a>
+  
+    <nav class="md-nav" aria-label="maskedInput">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_24" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_25" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#menu" class="md-nav__link">
+    menu
+  </a>
+  
+    <nav class="md-nav" aria-label="menu">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_25" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_26" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#meter" class="md-nav__link">
+    meter
+  </a>
+  
+    <nav class="md-nav" aria-label="meter">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_26" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_27" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pagination" class="md-nav__link">
+    pagination
+  </a>
+  
+    <nav class="md-nav" aria-label="pagination">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_27" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_28" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paragraph" class="md-nav__link">
+    paragraph
+  </a>
+  
+    <nav class="md-nav" aria-label="paragraph">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_28" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_29" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#radiobutton" class="md-nav__link">
+    radioButton
+  </a>
+  
+    <nav class="md-nav" aria-label="radioButton">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_29" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_30" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#radiobuttongroup" class="md-nav__link">
+    radioButtonGroup
+  </a>
+  
+    <nav class="md-nav" aria-label="radioButtonGroup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_30" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_31" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rangeinput" class="md-nav__link">
+    rangeInput
+  </a>
+  
+    <nav class="md-nav" aria-label="rangeInput">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_31" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_32" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rangeselector" class="md-nav__link">
+    rangeSelector
+  </a>
+  
+    <nav class="md-nav" aria-label="rangeSelector">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_32" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_33" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#select" class="md-nav__link">
+    select
+  </a>
+  
+    <nav class="md-nav" aria-label="select">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_33" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_34" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skiplinks" class="md-nav__link">
+    skipLinks
+  </a>
+  
+    <nav class="md-nav" aria-label="skipLinks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_34" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_35" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spinner" class="md-nav__link">
+    spinner
+  </a>
+  
+    <nav class="md-nav" aria-label="spinner">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_35" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_36" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tab" class="md-nav__link">
+    tab
+  </a>
+  
+    <nav class="md-nav" aria-label="tab">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_36" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_37" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#table" class="md-nav__link">
+    table
+  </a>
+  
+    <nav class="md-nav" aria-label="table">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_37" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_38" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tabs" class="md-nav__link">
+    tabs
+  </a>
+  
+    <nav class="md-nav" aria-label="tabs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_38" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_39" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#text" class="md-nav__link">
+    text
+  </a>
+  
+    <nav class="md-nav" aria-label="text">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_39" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_40" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#textarea" class="md-nav__link">
+    textArea
+  </a>
+  
+    <nav class="md-nav" aria-label="textArea">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_40" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_41" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#textinput" class="md-nav__link">
+    textInput
+  </a>
+  
+    <nav class="md-nav" aria-label="textInput">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_41" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_42" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tip" class="md-nav__link">
+    tip
+  </a>
+  
+    <nav class="md-nav" aria-label="tip">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_42" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_43" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#video" class="md-nav__link">
+    video
+  </a>
+  
+    <nav class="md-nav" aria-label="video">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_43" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_44" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#worldmap" class="md-nav__link">
+    worldMap
+  </a>
+  
+    <nav class="md-nav" aria-label="worldMap">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_44" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_45" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+<p><a href="../../">AWF</a> / <a href="../../modules/">Modules</a> / <a href="../../modules/akashaproject_design_system/">@akashaproject/design-system</a> / <a href="../../modules/akashaproject_design_system._internal_/">&lt;internal></a> / ThemeType</p>
+<h1 id="interface-themetype">Interface: ThemeType</h1>
+<p><a href="../../modules/akashaproject_design_system/">@akashaproject/design-system</a>.<a href="../../modules/akashaproject_design_system._internal_/"><internal></a>.ThemeType</p>
+<h2 id="hierarchy">Hierarchy</h2>
+<ul>
+<li><strong><code>ThemeType</code></strong></li>
+</ul>
+<p>↳ <a href="../akashaproject_design_system._internal_.DefaultTheme-1/"><code>DefaultTheme</code></a></p>
+<h2 id="table-of-contents">Table of contents</h2>
+<h3 id="properties">Properties</h3>
+<ul>
+<li><a href="./#accordion">accordion</a></li>
+<li><a href="./#anchor">anchor</a></li>
+<li><a href="./#avatar">avatar</a></li>
+<li><a href="./#box">box</a></li>
+<li><a href="./#button">button</a></li>
+<li><a href="./#calendar">calendar</a></li>
+<li><a href="./#card">card</a></li>
+<li><a href="./#carousel">carousel</a></li>
+<li><a href="./#chart">chart</a></li>
+<li><a href="./#checkbox">checkBox</a></li>
+<li><a href="./#checkboxgroup">checkBoxGroup</a></li>
+<li><a href="./#clock">clock</a></li>
+<li><a href="./#collapsible">collapsible</a></li>
+<li><a href="./#datatable">dataTable</a></li>
+<li><a href="./#dateinput">dateInput</a></li>
+<li><a href="./#diagram">diagram</a></li>
+<li><a href="./#drop">drop</a></li>
+<li><a href="./#fileinput">fileInput</a></li>
+<li><a href="./#formfield">formField</a></li>
+<li><a href="./#global">global</a></li>
+<li><a href="./#grommet">grommet</a></li>
+<li><a href="./#heading">heading</a></li>
+<li><a href="./#icon">icon</a></li>
+<li><a href="./#layer">layer</a></li>
+<li><a href="./#list">list</a></li>
+<li><a href="./#maskedinput">maskedInput</a></li>
+<li><a href="./#menu">menu</a></li>
+<li><a href="./#meter">meter</a></li>
+<li><a href="./#pagination">pagination</a></li>
+<li><a href="./#paragraph">paragraph</a></li>
+<li><a href="./#radiobutton">radioButton</a></li>
+<li><a href="./#radiobuttongroup">radioButtonGroup</a></li>
+<li><a href="./#rangeinput">rangeInput</a></li>
+<li><a href="./#rangeselector">rangeSelector</a></li>
+<li><a href="./#select">select</a></li>
+<li><a href="./#skiplinks">skipLinks</a></li>
+<li><a href="./#spinner">spinner</a></li>
+<li><a href="./#tab">tab</a></li>
+<li><a href="./#table">table</a></li>
+<li><a href="./#tabs">tabs</a></li>
+<li><a href="./#text">text</a></li>
+<li><a href="./#textarea">textArea</a></li>
+<li><a href="./#textinput">textInput</a></li>
+<li><a href="./#tip">tip</a></li>
+<li><a href="./#video">video</a></li>
+<li><a href="./#worldmap">worldMap</a></li>
+</ul>
+<h2 id="properties_1">Properties</h2>
+<h3 id="accordion">accordion</h3>
+<p>• <code>Optional</code> <strong>accordion</strong>: <code>Object</code></p>
+<h4 id="type-declaration">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>border?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#bordertype"><code>BorderType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>heading?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>heading.level?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>heading.margin?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#edgetype"><code>EdgeType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>hover?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>hover.color?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>hover.heading?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>hover.heading.color?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>icons?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>icons.collapse?</code></td>
+<td align="left"><code>any</code></td>
+</tr>
+<tr>
+<td align="left"><code>icons.color?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>icons.expand?</code></td>
+<td align="left"><code>any</code></td>
+</tr>
+<tr>
+<td align="left"><code>panel?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>panel.border?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#bordertype"><code>BorderType</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in">Defined in</h4>
+<p>ui/design/node_modules/grommet/themes/base.d.ts:408</p>
+<hr />
+<h3 id="anchor">anchor</h3>
+<p>• <code>Optional</code> <strong>anchor</strong>: <code>Object</code></p>
+<h4 id="type-declaration_1">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>color?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>extend?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../akashaproject_design_system._internal_.AnchorExtendedProps/"><code>AnchorExtendedProps</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>fontWeight?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>hover?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>hover.extend?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../akashaproject_design_system._internal_.AnchorExtendedProps/"><code>AnchorExtendedProps</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>hover.textDecoration?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>textDecoration?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_1">Defined in</h4>
+<p>ui/design/node_modules/grommet/themes/base.d.ts:429</p>
+<hr />
+<h3 id="avatar">avatar</h3>
+<p>• <code>Optional</code> <strong>avatar</strong>: <code>Object</code></p>
+<h4 id="type-declaration_2">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>extend?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>>></td>
+</tr>
+<tr>
+<td align="left"><code>size?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>size.large?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>size.medium?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>size.small?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>size.xlarge?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>size.xsmall?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>text?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>text.extend?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>>></td>
+</tr>
+<tr>
+<td align="left"><code>text.fontWeight?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>text.size?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>text.size.large?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>text.size.medium?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>text.size.small?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>text.size.xlarge?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>text.size.xsmall?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_2">Defined in</h4>
+<p>ui/design/node_modules/grommet/themes/base.d.ts:439</p>
+<hr />
+<h3 id="box">box</h3>
+<p>• <code>Optional</code> <strong>box</strong>: <code>Object</code></p>
+<h4 id="type-declaration_3">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>extend?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>>></td>
+</tr>
+<tr>
+<td align="left"><code>responsiveBreakpoint?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_3">Defined in</h4>
+<p>ui/design/node_modules/grommet/themes/base.d.ts:462</p>
+<hr />
+<h3 id="button">button</h3>
+<p>• <code>Optional</code> <strong>button</strong>: <a href="../akashaproject_design_system._internal_.ButtonType/"><code>ButtonType</code></a></p>
+<h4 id="defined-in_4">Defined in</h4>
+<p>ui/design/node_modules/grommet/themes/base.d.ts:466</p>
+<hr />
+<h3 id="calendar">calendar</h3>
+<p>• <code>Optional</code> <strong>calendar</strong>: <code>Object</code></p>
+<h4 id="type-declaration_4">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>day?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>day.extend?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>>></td>
+</tr>
+<tr>
+<td align="left"><code>extend?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>>></td>
+</tr>
+<tr>
+<td align="left"><code>heading?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>heading.level?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>icons?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>icons.next?</code></td>
+<td align="left"><code>any</code></td>
+</tr>
+<tr>
+<td align="left"><code>icons.previous?</code></td>
+<td align="left"><code>any</code></td>
+</tr>
+<tr>
+<td align="left"><code>icons.small?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>icons.small.next?</code></td>
+<td align="left"><code>any</code></td>
+</tr>
+<tr>
+<td align="left"><code>icons.small.previous?</code></td>
+<td align="left"><code>any</code></td>
+</tr>
+<tr>
+<td align="left"><code>large?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>large.daySize?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>large.fontSize?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>large.lineHeight?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>large.slideDuration?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>medium?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>medium.daySize?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>medium.fontSize?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>medium.lineHeight?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>medium.slideDuration?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>small?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>small.daySize?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>small.fontSize?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>small.lineHeight?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>small.slideDuration?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_5">Defined in</h4>
+<p>ui/design/node_modules/grommet/themes/base.d.ts:467</p>
+<hr />
+<h3 id="card">card</h3>
+<p>• <code>Optional</code> <strong>card</strong>: <code>Object</code></p>
+<h4 id="type-declaration_5">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>body?</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_.BoxProps/"><code>BoxProps</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>container?</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_.BoxProps/"><code>BoxProps</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>footer?</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_.BoxProps/"><code>BoxProps</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>header?</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_.BoxProps/"><code>BoxProps</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_6">Defined in</h4>
+<p>ui/design/node_modules/grommet/themes/base.d.ts:502</p>
+<hr />
+<h3 id="carousel">carousel</h3>
+<p>• <code>Optional</code> <strong>carousel</strong>: <code>Object</code></p>
+<h4 id="type-declaration_6">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>animation?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>animation.duration?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>disabled?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>disabled.icons?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>disabled.icons.color?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>icons?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>icons.color?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>icons.current?</code></td>
+<td align="left"><code>any</code></td>
+</tr>
+<tr>
+<td align="left"><code>icons.next?</code></td>
+<td align="left"><code>any</code></td>
+</tr>
+<tr>
+<td align="left"><code>icons.previous?</code></td>
+<td align="left"><code>any</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_7">Defined in</h4>
+<p>ui/design/node_modules/grommet/themes/base.d.ts:508</p>
+<hr />
+<h3 id="chart">chart</h3>
+<p>• <code>Optional</code> <strong>chart</strong>: <code>Object</code></p>
+<h4 id="type-declaration_7">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>color?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>extend?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>>></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_8">Defined in</h4>
+<p>ui/design/node_modules/grommet/themes/base.d.ts:524</p>
+<hr />
+<h3 id="checkbox">checkBox</h3>
+<p>• <code>Optional</code> <strong>checkBox</strong>: <code>Object</code></p>
+<h4 id="type-declaration_8">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>border?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>border.color?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>border.width?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>check?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>check.extend?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>>></td>
+</tr>
+<tr>
+<td align="left"><code>check.radius?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>check.thickness?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>color?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>extend?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>>></td>
+</tr>
+<tr>
+<td align="left"><code>gap?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>hover?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>hover.background?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>hover.background.color?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>hover.border?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>hover.border.color?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>icon?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>icon.extend?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>>></td>
+</tr>
+<tr>
+<td align="left"><code>icon.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>icons?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>icons.checked?</code></td>
+<td align="left"><code>any</code></td>
+</tr>
+<tr>
+<td align="left"><code>icons.indeterminate?</code></td>
+<td align="left"><code>any</code></td>
+</tr>
+<tr>
+<td align="left"><code>label?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>label.align?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>pad?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#edgetype"><code>EdgeType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>toggle?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>toggle.background?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#backgroundtype"><code>BackgroundType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>toggle.color?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>toggle.extend?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>>></td>
+</tr>
+<tr>
+<td align="left"><code>toggle.knob?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>toggle.knob.extend?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>>></td>
+</tr>
+<tr>
+<td align="left"><code>toggle.radius?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>toggle.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_9">Defined in</h4>
+<p>ui/design/node_modules/grommet/themes/base.d.ts:528</p>
+<hr />
+<h3 id="checkboxgroup">checkBoxGroup</h3>
+<p>• <code>Optional</code> <strong>checkBoxGroup</strong>: <code>Object</code></p>
+<h4 id="type-declaration_9">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>container?</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_.BoxProps/"><code>BoxProps</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_10">Defined in</h4>
+<p>ui/design/node_modules/grommet/themes/base.d.ts:573</p>
+<hr />
+<h3 id="clock">clock</h3>
+<p>• <code>Optional</code> <strong>clock</strong>: <code>Object</code></p>
+<h4 id="type-declaration_10">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>analog?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>analog.extend?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>>></td>
+</tr>
+<tr>
+<td align="left"><code>analog.hour?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>analog.hour.color?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>analog.hour.shape?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>analog.hour.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>analog.hour.width?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>analog.minute?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>analog.minute.color?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>analog.minute.shape?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>analog.minute.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>analog.minute.width?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>analog.second?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>analog.second.color?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>analog.second.shape?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>analog.second.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>analog.second.width?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>analog.size?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>analog.size.huge?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>analog.size.large?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>analog.size.medium?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>analog.size.small?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>analog.size.xlarge?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>digital?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>digital.text?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>digital.text.large?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>digital.text.large.height?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>digital.text.large.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>digital.text.medium?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>digital.text.medium.height?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>digital.text.medium.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>digital.text.small?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>digital.text.small.height?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>digital.text.small.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>digital.text.xlarge?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>digital.text.xlarge.height?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>digital.text.xlarge.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>digital.text.xsmall?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>digital.text.xsmall.height?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>digital.text.xsmall.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>digital.text.xxlarge?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>digital.text.xxlarge.height?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>digital.text.xxlarge.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_11">Defined in</h4>
+<p>ui/design/node_modules/grommet/themes/base.d.ts:576</p>
+<hr />
+<h3 id="collapsible">collapsible</h3>
+<p>• <code>Optional</code> <strong>collapsible</strong>: <code>Object</code></p>
+<h4 id="type-declaration_11">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>baseline?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>minSpeed?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_12">Defined in</h4>
+<p>ui/design/node_modules/grommet/themes/base.d.ts:634</p>
+<hr />
+<h3 id="datatable">dataTable</h3>
+<p>• <code>Optional</code> <strong>dataTable</strong>: <code>Object</code></p>
+<h4 id="type-declaration_12">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>body?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>body.extend?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>>></td>
+</tr>
+<tr>
+<td align="left"><code>container?</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_.BoxProps/"><code>BoxProps</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>groupEnd?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>groupEnd.border?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>groupEnd.border.side?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>groupEnd.border.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>groupHeader?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>groupHeader.background?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#backgroundtype"><code>BackgroundType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>groupHeader.border?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>groupHeader.border.side?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>groupHeader.border.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>groupHeader.fill?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>groupHeader.pad?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#edgetype"><code>EdgeType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>header?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>header.background?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#backgroundtype"><code>BackgroundType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>header.border?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#bordertype"><code>BorderType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>header.color?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>header.extend?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>>></td>
+</tr>
+<tr>
+<td align="left"><code>header.font?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>header.font.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>header.font.weight?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>header.gap?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>header.hover?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>header.hover.background?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#backgroundtype"><code>BackgroundType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>header.pad?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#edgetype"><code>EdgeType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>header.units?</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_.TextProps/"><code>TextProps</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>icons?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>icons.ascending?</code></td>
+<td align="left"><code>any</code></td>
+</tr>
+<tr>
+<td align="left"><code>icons.contract?</code></td>
+<td align="left"><code>any</code></td>
+</tr>
+<tr>
+<td align="left"><code>icons.descending?</code></td>
+<td align="left"><code>any</code></td>
+</tr>
+<tr>
+<td align="left"><code>icons.expand?</code></td>
+<td align="left"><code>any</code></td>
+</tr>
+<tr>
+<td align="left"><code>icons.sortable?</code></td>
+<td align="left"><code>any</code></td>
+</tr>
+<tr>
+<td align="left"><code>pinned?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>pinned.body?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>pinned.body.background?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#backgroundtype"><code>BackgroundType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>pinned.body.extend?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>>></td>
+</tr>
+<tr>
+<td align="left"><code>pinned.footer?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>pinned.footer.background?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#backgroundtype"><code>BackgroundType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>pinned.footer.extend?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>>></td>
+</tr>
+<tr>
+<td align="left"><code>pinned.header?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>pinned.header.background?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#backgroundtype"><code>BackgroundType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>pinned.header.extend?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>>></td>
+</tr>
+<tr>
+<td align="left"><code>primary?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>primary.weight?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>resize?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>resize.border?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>resize.border.color?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>resize.border.side?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>resize.hover?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>resize.hover.border?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>resize.hover.border.color?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>resize.hover.border.side</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>resize.hover.border.size</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_13">Defined in</h4>
+<p>ui/design/node_modules/grommet/themes/base.d.ts:643</p>
+<hr />
+<h3 id="dateinput">dateInput</h3>
+<p>• <code>Optional</code> <strong>dateInput</strong>: <code>Object</code></p>
+<h4 id="type-declaration_13">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>icon?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>icon.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_14">Defined in</h4>
+<p>ui/design/node_modules/grommet/themes/base.d.ts:638</p>
+<hr />
+<h3 id="diagram">diagram</h3>
+<p>• <code>Optional</code> <strong>diagram</strong>: <code>Object</code></p>
+<h4 id="type-declaration_14">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>extend?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>>></td>
+</tr>
+<tr>
+<td align="left"><code>line?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>line.color?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_15">Defined in</h4>
+<p>ui/design/node_modules/grommet/themes/base.d.ts:717</p>
+<hr />
+<h3 id="drop">drop</h3>
+<p>• <code>Optional</code> <strong>drop</strong>: <code>Object</code></p>
+<h4 id="type-declaration_15">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>extend?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>>></td>
+</tr>
+<tr>
+<td align="left"><code>maxHeight?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_16">Defined in</h4>
+<p>ui/design/node_modules/grommet/themes/base.d.ts:723</p>
+<hr />
+<h3 id="fileinput">fileInput</h3>
+<p>• <code>Optional</code> <strong>fileInput</strong>: <code>Object</code></p>
+<h4 id="type-declaration_16">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>background?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#backgroundtype"><code>BackgroundType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>border?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#bordertype"><code>BorderType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>dragOver?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>dragOver.background?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#backgroundtype"><code>BackgroundType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>dragOver.border?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#bordertype"><code>BorderType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>dragOver.extend?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>>></td>
+</tr>
+<tr>
+<td align="left"><code>dragOver.pad?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#edgetype"><code>EdgeType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>extend?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>>></td>
+</tr>
+<tr>
+<td align="left"><code>hover?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>hover.background?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#backgroundtype"><code>BackgroundType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>hover.border?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#bordertype"><code>BorderType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>hover.extend?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>>></td>
+</tr>
+<tr>
+<td align="left"><code>hover.pad?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#edgetype"><code>EdgeType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>icons?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>icons.remove?</code></td>
+<td align="left"><code>any</code></td>
+</tr>
+<tr>
+<td align="left"><code>label?</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_.TextProps/"><code>TextProps</code></a> &amp; { <code>extend?</code>: <a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>>>  }</td>
+</tr>
+<tr>
+<td align="left"><code>margin?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#edgetype"><code>EdgeType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>message?</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_.TextProps/"><code>TextProps</code></a> &amp; { <code>extend?</code>: <a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>>>  }</td>
+</tr>
+<tr>
+<td align="left"><code>pad?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#edgetype"><code>EdgeType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>round?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#roundtype"><code>RoundType</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_17">Defined in</h4>
+<p>ui/design/node_modules/grommet/themes/base.d.ts:727</p>
+<hr />
+<h3 id="formfield">formField</h3>
+<p>• <code>Optional</code> <strong>formField</strong>: <code>Object</code></p>
+<h4 id="type-declaration_17">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>border?</code></td>
+<td align="left"><code>false</code> &amp; { <code>error?</code>: { <code>color?</code>: <a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a>  }  } &amp; <code>true</code> &amp; { <code>error?</code>: { <code>color?</code>: <a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a>  }  } &amp; <code>"end"</code> &amp; { <code>error?</code>: { <code>color?</code>: <a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a>  }  } &amp; <code>"start"</code> &amp; { <code>error?</code>: { <code>color?</code>: <a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a>  }  } &amp; <code>"left"</code> &amp; { <code>error?</code>: { <code>color?</code>: <a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a>  }  } &amp; <code>"right"</code> &amp; { <code>error?</code>: { <code>color?</code>: <a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a>  }  } &amp; <code>"top"</code> &amp; { <code>error?</code>: { <code>color?</code>: <a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a>  }  } &amp; <code>"bottom"</code> &amp; { <code>error?</code>: { <code>color?</code>: <a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a>  }  } &amp; <code>"horizontal"</code> &amp; { <code>error?</code>: { <code>color?</code>: <a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a>  }  } &amp; <code>"vertical"</code> &amp; { <code>error?</code>: { <code>color?</code>: <a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a>  }  } &amp; <code>"all"</code> &amp; { <code>error?</code>: { <code>color?</code>: <a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a>  }  } &amp; <code>"between"</code> &amp; { <code>error?</code>: { <code>color?</code>: <a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a>  }  } &amp; { <code>color?</code>: <a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a> ; <code>error?</code>: { <code>color?</code>: <a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a>  } ; <code>position?</code>: <code>string</code> ; <code>side?</code>: <a href="../../modules/akashaproject_design_system._internal_/#boxsidetype"><code>BoxSideType</code></a> ; <code>size?</code>: <code>string</code> ; <code>style?</code>: <a href="../../modules/akashaproject_design_system._internal_/#boxstyletype"><code>BoxStyleType</code></a>  } &amp; { <code>error?</code>: { <code>color?</code>: <a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a>  }  } &amp; { <code>color?</code>: <a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a> ; <code>error?</code>: { <code>color?</code>: <a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a>  } ; <code>position?</code>: <code>string</code> ; <code>side?</code>: <a href="../../modules/akashaproject_design_system._internal_/#boxsidetype"><code>BoxSideType</code></a> ; <code>size?</code>: <code>string</code> ; <code>style?</code>: <a href="../../modules/akashaproject_design_system._internal_/#boxstyletype"><code>BoxStyleType</code></a>  }[] &amp; { <code>error?</code>: { <code>color?</code>: <a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a>  }  }</td>
+</tr>
+<tr>
+<td align="left"><code>content?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>content.margin?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#edgetype"><code>EdgeType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>content.pad?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#edgetype"><code>EdgeType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>disabled?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>disabled.background?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#backgroundtype"><code>BackgroundType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>disabled.border?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>disabled.border.color?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>disabled.label?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>disabled.label.color?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>error?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>error.background?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#backgroundtype"><code>BackgroundType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>error.border?</code></td>
+<td align="left"><code>false</code> &amp; { <code>error?</code>: { <code>color?</code>: <a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a>  }  } &amp; <code>true</code> &amp; { <code>error?</code>: { <code>color?</code>: <a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a>  }  } &amp; <code>"end"</code> &amp; { <code>error?</code>: { <code>color?</code>: <a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a>  }  } &amp; <code>"start"</code> &amp; { <code>error?</code>: { <code>color?</code>: <a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a>  }  } &amp; <code>"left"</code> &amp; { <code>error?</code>: { <code>color?</code>: <a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a>  }  } &amp; <code>"right"</code> &amp; { <code>error?</code>: { <code>color?</code>: <a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a>  }  } &amp; <code>"top"</code> &amp; { <code>error?</code>: { <code>color?</code>: <a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a>  }  } &amp; <code>"bottom"</code> &amp; { <code>error?</code>: { <code>color?</code>: <a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a>  }  } &amp; <code>"horizontal"</code> &amp; { <code>error?</code>: { <code>color?</code>: <a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a>  }  } &amp; <code>"vertical"</code> &amp; { <code>error?</code>: { <code>color?</code>: <a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a>  }  } &amp; <code>"all"</code> &amp; { <code>error?</code>: { <code>color?</code>: <a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a>  }  } &amp; <code>"between"</code> &amp; { <code>error?</code>: { <code>color?</code>: <a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a>  }  } &amp; { <code>color?</code>: <a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a> ; <code>error?</code>: { <code>color?</code>: <a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a>  } ; <code>position?</code>: <code>string</code> ; <code>side?</code>: <a href="../../modules/akashaproject_design_system._internal_/#boxsidetype"><code>BoxSideType</code></a> ; <code>size?</code>: <code>string</code> ; <code>style?</code>: <a href="../../modules/akashaproject_design_system._internal_/#boxstyletype"><code>BoxStyleType</code></a>  } &amp; { <code>error?</code>: { <code>color?</code>: <a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a>  }  } &amp; { <code>color?</code>: <a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a> ; <code>error?</code>: { <code>color?</code>: <a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a>  } ; <code>position?</code>: <code>string</code> ; <code>side?</code>: <a href="../../modules/akashaproject_design_system._internal_/#boxsidetype"><code>BoxSideType</code></a> ; <code>size?</code>: <code>string</code> ; <code>style?</code>: <a href="../../modules/akashaproject_design_system._internal_/#boxstyletype"><code>BoxStyleType</code></a>  }[] &amp; { <code>error?</code>: { <code>color?</code>: <a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a>  }  }</td>
+</tr>
+<tr>
+<td align="left"><code>error.color?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>error.container?</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_.BoxProps/"><code>BoxProps</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>error.icon?</code></td>
+<td align="left"><code>any</code></td>
+</tr>
+<tr>
+<td align="left"><code>error.margin?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#edgetype"><code>EdgeType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>extend?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>>></td>
+</tr>
+<tr>
+<td align="left"><code>focus?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>focus.background?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#backgroundtype"><code>BackgroundType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>focus.border?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>focus.border.color?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>help?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>help.color?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>help.margin?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#edgetype"><code>EdgeType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>info?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>info.color?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>info.container?</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_.BoxProps/"><code>BoxProps</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>info.icon?</code></td>
+<td align="left"><code>any</code></td>
+</tr>
+<tr>
+<td align="left"><code>info.margin?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#edgetype"><code>EdgeType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>label?</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_.FormFieldLabelType/"><code>FormFieldLabelType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>margin?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#edgetype"><code>EdgeType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>round?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#roundtype"><code>RoundType</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_18">Defined in</h4>
+<p>ui/design/node_modules/grommet/themes/base.d.ts:752</p>
+<hr />
+<h3 id="global">global</h3>
+<p>• <code>Optional</code> <strong>global</strong>: <code>Object</code></p>
+<h4 id="type-declaration_18">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>active?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>active.background?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a> | { <code>color?</code>: <a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a> ; <code>opacity?</code>: <a href="../../modules/akashaproject_design_system._internal_/#opacitytype"><code>OpacityType</code></a>  }</td>
+</tr>
+<tr>
+<td align="left"><code>active.color?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>animation?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>animation.duration?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>animation.jiggle?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>animation.jiggle.duration?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>borderSize?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>borderSize.large?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>borderSize.medium?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>borderSize.small?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>borderSize.xlarge?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>borderSize.xsmall?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.large?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.large.borderSize?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.large.borderSize.large?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.large.borderSize.medium?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.large.borderSize.small?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.large.borderSize.xlarge?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.large.borderSize.xsmall?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.large.edgeSize?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.large.edgeSize.hair?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.large.edgeSize.large?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.large.edgeSize.medium?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.large.edgeSize.none?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.large.edgeSize.small?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.large.edgeSize.xlarge?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.large.edgeSize.xsmall?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.large.edgeSize.xxsmall?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.large.size?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.large.size.full?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.large.size.large?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.large.size.medium?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.large.size.small?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.large.size.xlarge?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.large.size.xsmall?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.large.size.xxsmall?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.large.value?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.medium?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.medium.borderSize?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.medium.borderSize.large?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.medium.borderSize.medium?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.medium.borderSize.small?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.medium.borderSize.xlarge?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.medium.borderSize.xsmall?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.medium.edgeSize?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.medium.edgeSize.hair?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.medium.edgeSize.large?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.medium.edgeSize.medium?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.medium.edgeSize.none?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.medium.edgeSize.small?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.medium.edgeSize.xlarge?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.medium.edgeSize.xsmall?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.medium.edgeSize.xxsmall?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.medium.size?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.medium.size.full?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.medium.size.large?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.medium.size.medium?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.medium.size.small?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.medium.size.xlarge?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.medium.size.xsmall?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.medium.size.xxsmall?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.medium.value?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.small?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.small.borderSize?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.small.borderSize.large?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.small.borderSize.medium?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.small.borderSize.small?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.small.borderSize.xlarge?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.small.borderSize.xsmall?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.small.edgeSize?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.small.edgeSize.hair?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.small.edgeSize.large?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.small.edgeSize.medium?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.small.edgeSize.none?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.small.edgeSize.small?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.small.edgeSize.xlarge?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.small.edgeSize.xsmall?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.small.edgeSize.xxsmall?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.small.size?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.small.size.full?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.small.size.large?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.small.size.medium?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.small.size.small?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.small.size.xlarge?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.small.size.xsmall?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.small.size.xxsmall?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoints.small.value?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>colors?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colors"><code>Colors</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>control?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>control.border?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>control.border.color?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>control.border.radius?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>control.border.width?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>control.disabled?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>control.disabled.opacity</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#opacitytype"><code>OpacityType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>debounceDelay?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>deviceBreakpoints?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>deviceBreakpoints.computer?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>deviceBreakpoints.phone?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>deviceBreakpoints.tablet?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>drop?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>drop.background?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#backgroundtype"><code>BackgroundType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>drop.border?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>drop.border.radius?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>drop.border.width?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>drop.intelligentMargin?</code></td>
+<td align="left"><code>boolean</code></td>
+</tr>
+<tr>
+<td align="left"><code>drop.margin?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#edgetype"><code>EdgeType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>drop.shadowSize?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>drop.zIndex?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>edgeSize?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>edgeSize.hair?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>edgeSize.large?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>edgeSize.medium?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>edgeSize.none?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>edgeSize.responsiveBreakpoint?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>edgeSize.small?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>edgeSize.xlarge?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>edgeSize.xsmall?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>edgeSize.xxsmall?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>elevation?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>elevation.dark?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>elevation.dark.large?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>elevation.dark.medium?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>elevation.dark.none?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>elevation.dark.small?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>elevation.dark.xlarge?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>elevation.dark.xsmall?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>elevation.light?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>elevation.light.large?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>elevation.light.medium?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>elevation.light.none?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>elevation.light.small?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>elevation.light.xlarge?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>elevation.light.xsmall?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>focus?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>focus.border?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>focus.border.color?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>focus.outline?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>focus.outline.color?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>focus.outline.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>focus.shadow?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>focus.shadow.color?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>focus.shadow.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>font?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>font.face?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>font.family?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>font.height?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>font.maxWidth?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>font.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>font.weight?</code></td>
+<td align="left"><code>string</code> | <code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>graph?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>graph.colors?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#graphcolorstype"><code>GraphColorsType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>hover?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>hover.background?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#backgroundtype"><code>BackgroundType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>hover.color?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>input?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>input.extend?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>>></td>
+</tr>
+<tr>
+<td align="left"><code>input.font?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>input.font.height?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>input.font.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>input.font.weight?</code></td>
+<td align="left"><code>string</code> | <code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>input.padding?</code></td>
+<td align="left"><code>string</code> | { <code>bottom?</code>: <code>string</code> ; <code>horizontal?</code>: <code>string</code> ; <code>left?</code>: <code>string</code> ; <code>right?</code>: <code>string</code> ; <code>top?</code>: <code>string</code> ; <code>vertical?</code>: <code>string</code>  }</td>
+</tr>
+<tr>
+<td align="left"><code>input.weight?</code></td>
+<td align="left"><code>string</code> | <code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>opacity?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>opacity.medium?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>opacity.strong?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>opacity.weak?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>selected?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>selected.background?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#backgroundtype"><code>BackgroundType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>selected.color?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>size?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>size.full?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>size.large?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>size.medium?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>size.small?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>size.xlarge?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>size.xsmall?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>size.xxlarge?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>size.xxsmall?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>spacing?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_19">Defined in</h4>
+<p>ui/design/node_modules/grommet/themes/base.d.ts:231</p>
+<hr />
+<h3 id="grommet">grommet</h3>
+<p>• <code>Optional</code> <strong>grommet</strong>: <code>Object</code></p>
+<h4 id="type-declaration_19">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>extend?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>>></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_20">Defined in</h4>
+<p>ui/design/node_modules/grommet/themes/base.d.ts:804</p>
+<hr />
+<h3 id="heading">heading</h3>
+<p>• <code>Optional</code> <strong>heading</strong>: <code>Object</code></p>
+<h4 id="type-declaration_20">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>color?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>extend?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>>></td>
+</tr>
+<tr>
+<td align="left"><code>font?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>level?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.1?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.1.font?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.1.large?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.1.large.height?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.1.large.maxWidth?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.1.large.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.1.medium?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.1.medium.height?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.1.medium.maxWidth?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.1.medium.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.1.small?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.1.small.height?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.1.small.maxWidth?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.1.small.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.1.xlarge?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.1.xlarge.height?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.1.xlarge.maxWidth?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.1.xlarge.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.2?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.2.font?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.2.large?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.2.large.height?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.2.large.maxWidth?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.2.large.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.2.medium?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.2.medium.height?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.2.medium.maxWidth?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.2.medium.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.2.small?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.2.small.height?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.2.small.maxWidth?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.2.small.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.2.xlarge?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.2.xlarge.height?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.2.xlarge.maxWidth?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.2.xlarge.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.3?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.3.font?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.3.large?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.3.large.height?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.3.large.maxWidth?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.3.large.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.3.medium?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.3.medium.height?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.3.medium.maxWidth?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.3.medium.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.3.small?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.3.small.height?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.3.small.maxWidth?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.3.small.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.3.xlarge?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.3.xlarge.height?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.3.xlarge.maxWidth?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.3.xlarge.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.4?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.4.font?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.4.large?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.4.large.height?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.4.large.maxWidth?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.4.large.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.4.medium?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.4.medium.height?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.4.medium.maxWidth?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.4.medium.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.4.small?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.4.small.height?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.4.small.maxWidth?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.4.small.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.4.xlarge?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.4.xlarge.height?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.4.xlarge.maxWidth?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.4.xlarge.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.5?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.5.font?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.5.large?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.5.large.height?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.5.large.maxWidth?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.5.large.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.5.medium?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.5.medium.height?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.5.medium.maxWidth?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.5.medium.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.5.small?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.5.small.height?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.5.small.maxWidth?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.5.small.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.5.xlarge?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.5.xlarge.height?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.5.xlarge.maxWidth?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.5.xlarge.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.6?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.6.font?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.6.large?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.6.large.height?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.6.large.maxWidth?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.6.large.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.6.medium?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.6.medium.height?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.6.medium.maxWidth?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.6.medium.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.6.small?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.6.small.height?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.6.small.maxWidth?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.6.small.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.6.xlarge?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.6.xlarge.height?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.6.xlarge.maxWidth?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>level.6.xlarge.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>responsiveBreakpoint?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>weight?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_21">Defined in</h4>
+<p>ui/design/node_modules/grommet/themes/base.d.ts:807</p>
+<hr />
+<h3 id="icon">icon</h3>
+<p>• <code>Optional</code> <strong>icon</strong>: <code>Object</code></p>
+<h4 id="type-declaration_21">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>extend?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>>></td>
+</tr>
+<tr>
+<td align="left"><code>size?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>size.large?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>size.medium?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>size.small?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>size.xlarge?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_22">Defined in</h4>
+<p>ui/design/node_modules/grommet/themes/base.d.ts:954</p>
+<hr />
+<h3 id="layer">layer</h3>
+<p>• <code>Optional</code> <strong>layer</strong>: <code>Object</code></p>
+<h4 id="type-declaration_22">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>background?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#backgroundtype"><code>BackgroundType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>border?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>border.intelligentRounding?</code></td>
+<td align="left"><code>boolean</code></td>
+</tr>
+<tr>
+<td align="left"><code>border.radius?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>container?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>container.elevation?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>container.extend?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>>></td>
+</tr>
+<tr>
+<td align="left"><code>container.zIndex?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>extend?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>>></td>
+</tr>
+<tr>
+<td align="left"><code>overlay?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>overlay.background?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#backgroundtype"><code>BackgroundType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>responsiveBreakpoint?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>zIndex?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_23">Defined in</h4>
+<p>ui/design/node_modules/grommet/themes/base.d.ts:964</p>
+<hr />
+<h3 id="list">list</h3>
+<p>• <code>Optional</code> <strong>list</strong>: <code>Object</code></p>
+<h4 id="type-declaration_23">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>container?</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_.BoxProps/"><code>BoxProps</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>extend?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>>></td>
+</tr>
+<tr>
+<td align="left"><code>icons?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>icons.down?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#reactnode"><code>ReactNode</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>icons.up?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#reactnode"><code>ReactNode</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>item?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>item.background?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#backgroundtype"><code>BackgroundType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>item.border?</code></td>
+<td align="left"><code>string</code> | { <code>color?</code>: <a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a> ; <code>side?</code>: <code>string</code> ; <code>size?</code>: <code>string</code>  }</td>
+</tr>
+<tr>
+<td align="left"><code>item.extend?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>>></td>
+</tr>
+<tr>
+<td align="left"><code>item.pad?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#edgetype"><code>EdgeType</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_24">Defined in</h4>
+<p>ui/design/node_modules/grommet/themes/base.d.ts:982</p>
+<hr />
+<h3 id="maskedinput">maskedInput</h3>
+<p>• <code>Optional</code> <strong>maskedInput</strong>: <code>Object</code></p>
+<h4 id="type-declaration_24">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>container?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>container.extend?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>>></td>
+</tr>
+<tr>
+<td align="left"><code>disabled?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>disabled.opacity?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#opacitytype"><code>OpacityType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>extend?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>>></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_25">Defined in</h4>
+<p>ui/design/node_modules/grommet/themes/base.d.ts:1002</p>
+<hr />
+<h3 id="menu">menu</h3>
+<p>• <code>Optional</code> <strong>menu</strong>: <code>Object</code></p>
+<h4 id="type-declaration_25">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>background?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#backgroundtype"><code>BackgroundType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>drop?</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_.DropProps/"><code>DropProps</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>extend?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>>></td>
+</tr>
+<tr>
+<td align="left"><code>icons?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>icons.color?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>icons.down?</code></td>
+<td align="left"><code>any</code></td>
+</tr>
+<tr>
+<td align="left"><code>icons.up?</code></td>
+<td align="left"><code>any</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_26">Defined in</h4>
+<p>ui/design/node_modules/grommet/themes/base.d.ts:1011</p>
+<hr />
+<h3 id="meter">meter</h3>
+<p>• <code>Optional</code> <strong>meter</strong>: <code>Object</code></p>
+<h4 id="type-declaration_26">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>color?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>colors?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#graphcolorstype"><code>GraphColorsType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>extend?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>>></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_27">Defined in</h4>
+<p>ui/design/node_modules/grommet/themes/base.d.ts:1021</p>
+<hr />
+<h3 id="pagination">pagination</h3>
+<p>• <code>Optional</code> <strong>pagination</strong>: <code>Object</code></p>
+<h4 id="type-declaration_27">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>button?</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_.ButtonType/"><code>ButtonType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>container?</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_.BoxProps/"><code>BoxProps</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>controls?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>controls.align?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>controls.direction?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#directiontype"><code>DirectionType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>controls.gap?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>controls.margin?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#edgetype"><code>EdgeType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>controls.pad?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#edgetype"><code>EdgeType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>icons?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>icons.color?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>icons.next?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#reactnode"><code>ReactNode</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>icons.previous?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#reactnode"><code>ReactNode</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_28">Defined in</h4>
+<p>ui/design/node_modules/grommet/themes/base.d.ts:1026</p>
+<hr />
+<h3 id="paragraph">paragraph</h3>
+<p>• <code>Optional</code> <strong>paragraph</strong>: <code>Object</code></p>
+<h4 id="type-declaration_28">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>extend?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>>></td>
+</tr>
+<tr>
+<td align="left"><code>large?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>large.height?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>large.maxWidth?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>large.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>medium?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>medium.height?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>medium.maxWidth?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>medium.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>small?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>small.height?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>small.maxWidth?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>small.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>xlarge?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>xlarge.height?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>xlarge.maxWidth?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>xlarge.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>xxlarge?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>xxlarge.height?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>xxlarge.maxWidth?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>xxlarge.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_29">Defined in</h4>
+<p>ui/design/node_modules/grommet/themes/base.d.ts:1042</p>
+<hr />
+<h3 id="radiobutton">radioButton</h3>
+<p>• <code>Optional</code> <strong>radioButton</strong>: <code>Object</code></p>
+<h4 id="type-declaration_29">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>border?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>border.color?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>border.width?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>check?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>check.background?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>check.background.color?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>check.radius?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>color?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>font?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>font.weight?</code></td>
+<td align="left"><code>string</code> | <code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>gap?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>hover?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>hover.background?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>hover.background.color?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>hover.border?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>hover.border.color?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>icon?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>icon.extend?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>>></td>
+</tr>
+<tr>
+<td align="left"><code>icon.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>icons?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>icons.circle?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_30">Defined in</h4>
+<p>ui/design/node_modules/grommet/themes/base.d.ts:1070</p>
+<hr />
+<h3 id="radiobuttongroup">radioButtonGroup</h3>
+<p>• <code>Optional</code> <strong>radioButtonGroup</strong>: <code>Object</code></p>
+<h4 id="type-declaration_30">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>container?</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_.BoxProps/"><code>BoxProps</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_31">Defined in</h4>
+<p>ui/design/node_modules/grommet/themes/base.d.ts:1103</p>
+<hr />
+<h3 id="rangeinput">rangeInput</h3>
+<p>• <code>Optional</code> <strong>rangeInput</strong>: <code>Object</code></p>
+<h4 id="type-declaration_31">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>extend?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>>></td>
+</tr>
+<tr>
+<td align="left"><code>thumb?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>thumb.color?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>track?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>track.color?</code></td>
+<td align="left"><code>any</code></td>
+</tr>
+<tr>
+<td align="left"><code>track.extend?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>>></td>
+</tr>
+<tr>
+<td align="left"><code>track.height?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>track.lower?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>track.lower.color?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>track.lower.opacity?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#opacitytype"><code>OpacityType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>track.opacity?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#opacitytype"><code>OpacityType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>track.upper?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>track.upper.color?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>track.upper.opacity?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#opacitytype"><code>OpacityType</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_32">Defined in</h4>
+<p>ui/design/node_modules/grommet/themes/base.d.ts:1106</p>
+<hr />
+<h3 id="rangeselector">rangeSelector</h3>
+<p>• <code>Optional</code> <strong>rangeSelector</strong>: <code>Object</code></p>
+<h4 id="type-declaration_32">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>background?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>background.invert?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>background.invert.color?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>edge?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>edge.type?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_33">Defined in</h4>
+<p>ui/design/node_modules/grommet/themes/base.d.ts:1126</p>
+<hr />
+<h3 id="select">select</h3>
+<p>• <code>Optional</code> <strong>select</strong>: <code>Object</code></p>
+<h4 id="type-declaration_33">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>background?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#backgroundtype"><code>BackgroundType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>clear?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>clear.container?</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_.BoxProps/"><code>BoxProps</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>clear.text?</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_.TextProps/"><code>TextProps</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>container?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>container.extend?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>>></td>
+</tr>
+<tr>
+<td align="left"><code>control?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>control.extend?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>>></td>
+</tr>
+<tr>
+<td align="left"><code>control.open?</code></td>
+<td align="left"><code>string</code> | <code>object</code></td>
+</tr>
+<tr>
+<td align="left"><code>extend?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>>></td>
+</tr>
+<tr>
+<td align="left"><code>icons?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>icons.color?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>icons.down?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#reactnode"><code>ReactNode</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>icons.margin?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#edgetype"><code>EdgeType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>icons.up?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#reactnode"><code>ReactNode</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>options?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>options.container?</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_.BoxExtendedProps/"><code>BoxExtendedProps</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>options.text?</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_.TextExtendedProps/"><code>TextExtendedProps</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>searchInput?</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_.ReactComponentElement/"><code>ReactComponentElement</code></a>&lt;<code>any</code>, <a href="../../modules/akashaproject_design_system._internal_/#pick"><code>Pick</code></a>&lt;<code>any</code>, <code>string</code> | <code>number</code> | <code>symbol</code>>></td>
+</tr>
+<tr>
+<td align="left"><code>step?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_34">Defined in</h4>
+<p>ui/design/node_modules/grommet/themes/base.d.ts:1136</p>
+<hr />
+<h3 id="skiplinks">skipLinks</h3>
+<p>• <code>Optional</code> <strong>skipLinks</strong>: <code>Object</code></p>
+<h4 id="type-declaration_34">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>container?</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_.BoxProps/"><code>BoxProps</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>label?</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_.TextProps/"><code>TextProps</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>position?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#layerpositiontype"><code>LayerPositionType</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_35">Defined in</h4>
+<p>ui/design/node_modules/grommet/themes/base.d.ts:1164</p>
+<hr />
+<h3 id="spinner">spinner</h3>
+<p>• <code>Optional</code> <strong>spinner</strong>: <code>Object</code></p>
+<h4 id="type-declaration_35">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>container?</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_.BoxProps/"><code>BoxProps</code></a> | { <code>color?</code>: <a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a>  } | { <code>size?</code>: <code>string</code>  }</td>
+</tr>
+<tr>
+<td align="left"><code>icon?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#reactnode"><code>ReactNode</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_36">Defined in</h4>
+<p>ui/design/node_modules/grommet/themes/base.d.ts:1169</p>
+<hr />
+<h3 id="tab">tab</h3>
+<p>• <code>Optional</code> <strong>tab</strong>: <code>Object</code></p>
+<h4 id="type-declaration_36">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>active?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>active.background?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#backgroundtype"><code>BackgroundType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>active.color?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>background?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#backgroundtype"><code>BackgroundType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>border?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>border.active?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>border.active.color?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>border.color?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>border.disabled?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>border.disabled.color?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>border.hover?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>border.hover.color?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>border.hover.extend?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>>></td>
+</tr>
+<tr>
+<td align="left"><code>border.side?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>border.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>color?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>disabled?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>disabled.color?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>extend?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>>></td>
+</tr>
+<tr>
+<td align="left"><code>hover?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>hover.background?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#backgroundtype"><code>BackgroundType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>hover.color?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>hover.extend?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>>></td>
+</tr>
+<tr>
+<td align="left"><code>margin?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#edgetype"><code>EdgeType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>pad?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#edgetype"><code>EdgeType</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_37">Defined in</h4>
+<p>ui/design/node_modules/grommet/themes/base.d.ts:1177</p>
+<hr />
+<h3 id="table">table</h3>
+<p>• <code>Optional</code> <strong>table</strong>: <code>Object</code></p>
+<h4 id="type-declaration_37">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>body?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>body.align?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>body.background?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#backgroundtype"><code>BackgroundType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>body.border?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>body.extend?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>>></td>
+</tr>
+<tr>
+<td align="left"><code>body.pad?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#edgetype"><code>EdgeType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>footer?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>footer.align?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>footer.background?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#backgroundtype"><code>BackgroundType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>footer.border?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>footer.extend?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>>></td>
+</tr>
+<tr>
+<td align="left"><code>footer.fill?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>footer.pad?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#edgetype"><code>EdgeType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>footer.verticalAlign?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>header?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>header.align?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>header.background?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#backgroundtype"><code>BackgroundType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>header.border?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>header.extend?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>>></td>
+</tr>
+<tr>
+<td align="left"><code>header.fill?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>header.pad?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#edgetype"><code>EdgeType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>header.verticalAlign?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>row?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>row.hover?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>row.hover.background?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#backgroundtype"><code>BackgroundType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>row.hover.extend?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>>></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_38">Defined in</h4>
+<p>ui/design/node_modules/grommet/themes/base.d.ts:1229</p>
+<hr />
+<h3 id="tabs">tabs</h3>
+<p>• <code>Optional</code> <strong>tabs</strong>: <code>Object</code></p>
+<h4 id="type-declaration_38">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>background?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#backgroundtype"><code>BackgroundType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>extend?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>>></td>
+</tr>
+<tr>
+<td align="left"><code>gap?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>header?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>header.background?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#backgroundtype"><code>BackgroundType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>header.border?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>header.border.color?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>header.border.side?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>header.border.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>header.border.style?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>header.extend?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>>></td>
+</tr>
+<tr>
+<td align="left"><code>panel?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>panel.extend?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>>></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_39">Defined in</h4>
+<p>ui/design/node_modules/grommet/themes/base.d.ts:1211</p>
+<hr />
+<h3 id="text">text</h3>
+<p>• <code>Optional</code> <strong>text</strong>: <code>Object</code></p>
+<h4 id="type-declaration_39">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>2xl?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>2xl.height?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>2xl.maxWidth?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>2xl.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>3xl?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>3xl.height?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>3xl.maxWidth?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>3xl.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>4xl?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>4xl.height?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>4xl.maxWidth?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>4xl.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>5xl?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>5xl.height?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>5xl.maxWidth?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>5xl.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>6xl?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>6xl.height?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>6xl.maxWidth?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>6xl.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>extend?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>>></td>
+</tr>
+<tr>
+<td align="left"><code>large?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>large.height?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>large.maxWidth?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>large.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>medium?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>medium.height?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>medium.maxWidth?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>medium.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>small?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>small.height?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>small.maxWidth?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>small.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>xlarge?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>xlarge.height?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>xlarge.maxWidth?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>xlarge.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>xsmall?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>xsmall.height?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>xsmall.maxWidth?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>xsmall.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>xxlarge?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>xxlarge.height?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>xxlarge.maxWidth?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>xxlarge.size?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_40">Defined in</h4>
+<p>ui/design/node_modules/grommet/themes/base.d.ts:1262</p>
+<hr />
+<h3 id="textarea">textArea</h3>
+<p>• <code>Optional</code> <strong>textArea</strong>: <code>Object</code></p>
+<h4 id="type-declaration_40">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>disabled?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#opacitytype"><code>OpacityType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>extend?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>>></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_41">Defined in</h4>
+<p>ui/design/node_modules/grommet/themes/base.d.ts:1320</p>
+<hr />
+<h3 id="textinput">textInput</h3>
+<p>• <code>Optional</code> <strong>textInput</strong>: <code>Object</code></p>
+<h4 id="type-declaration_41">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>container?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>container.extend?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>>></td>
+</tr>
+<tr>
+<td align="left"><code>disabled?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#opacitytype"><code>OpacityType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>extend?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>>></td>
+</tr>
+<tr>
+<td align="left"><code>placeholder?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>placeholder.extend?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>>></td>
+</tr>
+<tr>
+<td align="left"><code>suggestions?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>suggestions.extend?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#extendtype"><code>ExtendType</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>any</code>>></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_42">Defined in</h4>
+<p>ui/design/node_modules/grommet/themes/base.d.ts:1324</p>
+<hr />
+<h3 id="tip">tip</h3>
+<p>• <code>Optional</code> <strong>tip</strong>: <code>Object</code></p>
+<h4 id="type-declaration_42">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>content?</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_.BoxProps/"><code>BoxProps</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>drop?</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_.DropProps/"><code>DropProps</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_43">Defined in</h4>
+<p>ui/design/node_modules/grommet/themes/base.d.ts:1337</p>
+<hr />
+<h3 id="video">video</h3>
+<p>• <code>Optional</code> <strong>video</strong>: <code>Object</code></p>
+<h4 id="type-declaration_43">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>captions?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>captions.background?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#backgroundtype"><code>BackgroundType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>controls?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>controls.background?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#backgroundtype"><code>BackgroundType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>icons?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>icons.closedCaption?</code></td>
+<td align="left"><code>any</code></td>
+</tr>
+<tr>
+<td align="left"><code>icons.color?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>icons.configure?</code></td>
+<td align="left"><code>any</code></td>
+</tr>
+<tr>
+<td align="left"><code>icons.fullScreen?</code></td>
+<td align="left"><code>any</code></td>
+</tr>
+<tr>
+<td align="left"><code>icons.pause?</code></td>
+<td align="left"><code>any</code></td>
+</tr>
+<tr>
+<td align="left"><code>icons.play?</code></td>
+<td align="left"><code>any</code></td>
+</tr>
+<tr>
+<td align="left"><code>icons.reduceVolume?</code></td>
+<td align="left"><code>any</code></td>
+</tr>
+<tr>
+<td align="left"><code>icons.volume?</code></td>
+<td align="left"><code>any</code></td>
+</tr>
+<tr>
+<td align="left"><code>scrubber?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>scrubber.color?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_44">Defined in</h4>
+<p>ui/design/node_modules/grommet/themes/base.d.ts:1341</p>
+<hr />
+<h3 id="worldmap">worldMap</h3>
+<p>• <code>Optional</code> <strong>worldMap</strong>: <code>Object</code></p>
+<h4 id="type-declaration_44">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>color?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>continent?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>continent.active?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>continent.base?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>hover?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>hover.color?</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#colortype"><code>ColorType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>place?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>place.active?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>place.base?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_45">Defined in</h4>
+<p>ui/design/node_modules/grommet/themes/base.d.ts:1362</p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.22074ed6.min.js"}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.01de222e.min.js"></script>
+      
+    
+  </body>
+</html>

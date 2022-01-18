@@ -1,0 +1,1305 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.7">
+    
+    
+      
+        <title>akashaproject ui awf testing utils. internal .DeviceOrientationEvent - AKASHA World Framework docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.cd566b2a.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#interface-deviceorientationevent" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="AKASHA World Framework docs" class="md-header__button md-logo" aria-label="AKASHA World Framework docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AKASHA World Framework docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              akashaproject ui awf testing utils. internal .DeviceOrientationEvent
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="AKASHA World Framework docs" class="md-nav__button md-logo" aria-label="AKASHA World Framework docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    AKASHA World Framework docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modules/" class="md-nav__link">
+        API
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hierarchy" class="md-nav__link">
+    Hierarchy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    Table of contents
+  </a>
+  
+    <nav class="md-nav" aria-label="Table of contents">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    Properties
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    Methods
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties_1" class="md-nav__link">
+    Properties
+  </a>
+  
+    <nav class="md-nav" aria-label="Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#at_target" class="md-nav__link">
+    AT_TARGET
+  </a>
+  
+    <nav class="md-nav" aria-label="AT_TARGET">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bubbling_phase" class="md-nav__link">
+    BUBBLING_PHASE
+  </a>
+  
+    <nav class="md-nav" aria-label="BUBBLING_PHASE">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_1" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_1" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#capturing_phase" class="md-nav__link">
+    CAPTURING_PHASE
+  </a>
+  
+    <nav class="md-nav" aria-label="CAPTURING_PHASE">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_2" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_2" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#none" class="md-nav__link">
+    NONE
+  </a>
+  
+    <nav class="md-nav" aria-label="NONE">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_3" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_3" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#absolute" class="md-nav__link">
+    absolute
+  </a>
+  
+    <nav class="md-nav" aria-label="absolute">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_4" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alpha" class="md-nav__link">
+    alpha
+  </a>
+  
+    <nav class="md-nav" aria-label="alpha">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_5" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#beta" class="md-nav__link">
+    beta
+  </a>
+  
+    <nav class="md-nav" aria-label="beta">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_6" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bubbles" class="md-nav__link">
+    bubbles
+  </a>
+  
+    <nav class="md-nav" aria-label="bubbles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_4" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_7" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cancelbubble" class="md-nav__link">
+    cancelBubble
+  </a>
+  
+    <nav class="md-nav" aria-label="cancelBubble">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_5" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_8" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cancelable" class="md-nav__link">
+    cancelable
+  </a>
+  
+    <nav class="md-nav" aria-label="cancelable">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_6" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_9" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#composed" class="md-nav__link">
+    composed
+  </a>
+  
+    <nav class="md-nav" aria-label="composed">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_7" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_10" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#currenttarget" class="md-nav__link">
+    currentTarget
+  </a>
+  
+    <nav class="md-nav" aria-label="currentTarget">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_8" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_11" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defaultprevented" class="md-nav__link">
+    defaultPrevented
+  </a>
+  
+    <nav class="md-nav" aria-label="defaultPrevented">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_9" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_12" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eventphase" class="md-nav__link">
+    eventPhase
+  </a>
+  
+    <nav class="md-nav" aria-label="eventPhase">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_10" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_13" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gamma" class="md-nav__link">
+    gamma
+  </a>
+  
+    <nav class="md-nav" aria-label="gamma">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_14" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#istrusted" class="md-nav__link">
+    isTrusted
+  </a>
+  
+    <nav class="md-nav" aria-label="isTrusted">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_11" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_15" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returnvalue" class="md-nav__link">
+    returnValue
+  </a>
+  
+    <nav class="md-nav" aria-label="returnValue">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_12" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_16" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#srcelement" class="md-nav__link">
+    srcElement
+  </a>
+  
+    <nav class="md-nav" aria-label="srcElement">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_13" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_17" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#target" class="md-nav__link">
+    target
+  </a>
+  
+    <nav class="md-nav" aria-label="target">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_14" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_18" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#timestamp" class="md-nav__link">
+    timeStamp
+  </a>
+  
+    <nav class="md-nav" aria-label="timeStamp">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_15" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_19" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type" class="md-nav__link">
+    type
+  </a>
+  
+    <nav class="md-nav" aria-label="type">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_16" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_20" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#methods_1" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#composedpath" class="md-nav__link">
+    composedPath
+  </a>
+  
+    <nav class="md-nav" aria-label="composedPath">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_17" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_21" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#initevent" class="md-nav__link">
+    initEvent
+  </a>
+  
+    <nav class="md-nav" aria-label="initEvent">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_1" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_18" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_22" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#preventdefault" class="md-nav__link">
+    preventDefault
+  </a>
+  
+    <nav class="md-nav" aria-label="preventDefault">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_2" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_19" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_23" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stopimmediatepropagation" class="md-nav__link">
+    stopImmediatePropagation
+  </a>
+  
+    <nav class="md-nav" aria-label="stopImmediatePropagation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_3" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_20" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_24" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stoppropagation" class="md-nav__link">
+    stopPropagation
+  </a>
+  
+    <nav class="md-nav" aria-label="stopPropagation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_4" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_21" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_25" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+<p><a href="../../">AWF</a> / <a href="../../modules/">Modules</a> / <a href="../../modules/akashaproject_ui_awf_testing_utils/">@akashaproject/ui-awf-testing-utils</a> / <a href="../../modules/akashaproject_ui_awf_testing_utils._internal_/">&lt;internal></a> / DeviceOrientationEvent</p>
+<h1 id="interface-deviceorientationevent">Interface: DeviceOrientationEvent</h1>
+<p><a href="../../modules/akashaproject_ui_awf_testing_utils/">@akashaproject/ui-awf-testing-utils</a>.<a href="../../modules/akashaproject_ui_awf_testing_utils._internal_/"><internal></a>.DeviceOrientationEvent</p>
+<p>The DeviceOrientationEvent provides web developers with information from the physical orientation of the device running the web page.</p>
+<h2 id="hierarchy">Hierarchy</h2>
+<ul>
+<li><code>Event</code></li>
+</ul>
+<p>↳ <strong><code>DeviceOrientationEvent</code></strong></p>
+<h2 id="table-of-contents">Table of contents</h2>
+<h3 id="properties">Properties</h3>
+<ul>
+<li><a href="./#at_target">AT_TARGET</a></li>
+<li><a href="./#bubbling_phase">BUBBLING_PHASE</a></li>
+<li><a href="./#capturing_phase">CAPTURING_PHASE</a></li>
+<li><a href="./#none">NONE</a></li>
+<li><a href="./#absolute">absolute</a></li>
+<li><a href="./#alpha">alpha</a></li>
+<li><a href="./#beta">beta</a></li>
+<li><a href="./#bubbles">bubbles</a></li>
+<li><a href="./#cancelbubble">cancelBubble</a></li>
+<li><a href="./#cancelable">cancelable</a></li>
+<li><a href="./#composed">composed</a></li>
+<li><a href="./#currenttarget">currentTarget</a></li>
+<li><a href="./#defaultprevented">defaultPrevented</a></li>
+<li><a href="./#eventphase">eventPhase</a></li>
+<li><a href="./#gamma">gamma</a></li>
+<li><a href="./#istrusted">isTrusted</a></li>
+<li><a href="./#returnvalue">returnValue</a></li>
+<li><a href="./#srcelement">srcElement</a></li>
+<li><a href="./#target">target</a></li>
+<li><a href="./#timestamp">timeStamp</a></li>
+<li><a href="./#type">type</a></li>
+</ul>
+<h3 id="methods">Methods</h3>
+<ul>
+<li><a href="./#composedpath">composedPath</a></li>
+<li><a href="./#initevent">initEvent</a></li>
+<li><a href="./#preventdefault">preventDefault</a></li>
+<li><a href="./#stopimmediatepropagation">stopImmediatePropagation</a></li>
+<li><a href="./#stoppropagation">stopPropagation</a></li>
+</ul>
+<h2 id="properties_1">Properties</h2>
+<h3 id="at_target">AT_TARGET</h3>
+<p>• <code>Readonly</code> <strong>AT_TARGET</strong>: <code>number</code></p>
+<h4 id="inherited-from">Inherited from</h4>
+<p>Event.AT_TARGET</p>
+<h4 id="defined-in">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5123</p>
+<hr />
+<h3 id="bubbling_phase">BUBBLING_PHASE</h3>
+<p>• <code>Readonly</code> <strong>BUBBLING_PHASE</strong>: <code>number</code></p>
+<h4 id="inherited-from_1">Inherited from</h4>
+<p>Event.BUBBLING_PHASE</p>
+<h4 id="defined-in_1">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5124</p>
+<hr />
+<h3 id="capturing_phase">CAPTURING_PHASE</h3>
+<p>• <code>Readonly</code> <strong>CAPTURING_PHASE</strong>: <code>number</code></p>
+<h4 id="inherited-from_2">Inherited from</h4>
+<p>Event.CAPTURING_PHASE</p>
+<h4 id="defined-in_2">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5125</p>
+<hr />
+<h3 id="none">NONE</h3>
+<p>• <code>Readonly</code> <strong>NONE</strong>: <code>number</code></p>
+<h4 id="inherited-from_3">Inherited from</h4>
+<p>Event.NONE</p>
+<h4 id="defined-in_3">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5126</p>
+<hr />
+<h3 id="absolute">absolute</h3>
+<p>• <code>Readonly</code> <strong>absolute</strong>: <code>boolean</code></p>
+<h4 id="defined-in_4">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:4235</p>
+<hr />
+<h3 id="alpha">alpha</h3>
+<p>• <code>Readonly</code> <strong>alpha</strong>: <code>number</code></p>
+<h4 id="defined-in_5">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:4236</p>
+<hr />
+<h3 id="beta">beta</h3>
+<p>• <code>Readonly</code> <strong>beta</strong>: <code>number</code></p>
+<h4 id="defined-in_6">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:4237</p>
+<hr />
+<h3 id="bubbles">bubbles</h3>
+<p>• <code>Readonly</code> <strong>bubbles</strong>: <code>boolean</code></p>
+<p>Returns true or false depending on how event was initialized. True if event goes through its target's ancestors in reverse tree order, and false otherwise.</p>
+<h4 id="inherited-from_4">Inherited from</h4>
+<p>Event.bubbles</p>
+<h4 id="defined-in_7">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5063</p>
+<hr />
+<h3 id="cancelbubble">cancelBubble</h3>
+<p>• <strong>cancelBubble</strong>: <code>boolean</code></p>
+<h4 id="inherited-from_5">Inherited from</h4>
+<p>Event.cancelBubble</p>
+<h4 id="defined-in_8">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5064</p>
+<hr />
+<h3 id="cancelable">cancelable</h3>
+<p>• <code>Readonly</code> <strong>cancelable</strong>: <code>boolean</code></p>
+<p>Returns true or false depending on how event was initialized. Its return value does not always carry meaning, but true can indicate that part of the operation during which event was dispatched, can be canceled by invoking the preventDefault() method.</p>
+<h4 id="inherited-from_6">Inherited from</h4>
+<p>Event.cancelable</p>
+<h4 id="defined-in_9">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5068</p>
+<hr />
+<h3 id="composed">composed</h3>
+<p>• <code>Readonly</code> <strong>composed</strong>: <code>boolean</code></p>
+<p>Returns true or false depending on how event was initialized. True if event invokes listeners past a ShadowRoot node that is the root of its target, and false otherwise.</p>
+<h4 id="inherited-from_7">Inherited from</h4>
+<p>Event.composed</p>
+<h4 id="defined-in_10">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5072</p>
+<hr />
+<h3 id="currenttarget">currentTarget</h3>
+<p>• <code>Readonly</code> <strong>currentTarget</strong>: <code>EventTarget</code></p>
+<p>Returns the object whose event listener's callback is currently being invoked.</p>
+<h4 id="inherited-from_8">Inherited from</h4>
+<p>Event.currentTarget</p>
+<h4 id="defined-in_11">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5076</p>
+<hr />
+<h3 id="defaultprevented">defaultPrevented</h3>
+<p>• <code>Readonly</code> <strong>defaultPrevented</strong>: <code>boolean</code></p>
+<p>Returns true if preventDefault() was invoked successfully to indicate cancelation, and false otherwise.</p>
+<h4 id="inherited-from_9">Inherited from</h4>
+<p>Event.defaultPrevented</p>
+<h4 id="defined-in_12">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5080</p>
+<hr />
+<h3 id="eventphase">eventPhase</h3>
+<p>• <code>Readonly</code> <strong>eventPhase</strong>: <code>number</code></p>
+<p>Returns the event's phase, which is one of NONE, CAPTURING_PHASE, AT_TARGET, and BUBBLING_PHASE.</p>
+<h4 id="inherited-from_10">Inherited from</h4>
+<p>Event.eventPhase</p>
+<h4 id="defined-in_13">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5084</p>
+<hr />
+<h3 id="gamma">gamma</h3>
+<p>• <code>Readonly</code> <strong>gamma</strong>: <code>number</code></p>
+<h4 id="defined-in_14">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:4238</p>
+<hr />
+<h3 id="istrusted">isTrusted</h3>
+<p>• <code>Readonly</code> <strong>isTrusted</strong>: <code>boolean</code></p>
+<p>Returns true if event was dispatched by the user agent, and false otherwise.</p>
+<h4 id="inherited-from_11">Inherited from</h4>
+<p>Event.isTrusted</p>
+<h4 id="defined-in_15">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5088</p>
+<hr />
+<h3 id="returnvalue">returnValue</h3>
+<p>• <strong>returnValue</strong>: <code>boolean</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="inherited-from_12">Inherited from</h4>
+<p>Event.returnValue</p>
+<h4 id="defined-in_16">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5090</p>
+<hr />
+<h3 id="srcelement">srcElement</h3>
+<p>• <code>Readonly</code> <strong>srcElement</strong>: <code>EventTarget</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="inherited-from_13">Inherited from</h4>
+<p>Event.srcElement</p>
+<h4 id="defined-in_17">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5092</p>
+<hr />
+<h3 id="target">target</h3>
+<p>• <code>Readonly</code> <strong>target</strong>: <code>EventTarget</code></p>
+<p>Returns the object to which event is dispatched (its target).</p>
+<h4 id="inherited-from_14">Inherited from</h4>
+<p>Event.target</p>
+<h4 id="defined-in_18">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5096</p>
+<hr />
+<h3 id="timestamp">timeStamp</h3>
+<p>• <code>Readonly</code> <strong>timeStamp</strong>: <code>number</code></p>
+<p>Returns the event's timestamp as the number of milliseconds measured relative to the time origin.</p>
+<h4 id="inherited-from_15">Inherited from</h4>
+<p>Event.timeStamp</p>
+<h4 id="defined-in_19">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5100</p>
+<hr />
+<h3 id="type">type</h3>
+<p>• <code>Readonly</code> <strong>type</strong>: <code>string</code></p>
+<p>Returns the type of event, e.g. "click", "hashchange", or "submit".</p>
+<h4 id="inherited-from_16">Inherited from</h4>
+<p>Event.type</p>
+<h4 id="defined-in_20">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5104</p>
+<h2 id="methods_1">Methods</h2>
+<h3 id="composedpath">composedPath</h3>
+<p>▸ <strong>composedPath</strong>(): <code>EventTarget</code>[]</p>
+<p>Returns the invocation target objects of event's path (objects on which listeners will be invoked), except for any nodes in shadow trees of which the shadow root's mode is "closed" that are not reachable from event's currentTarget.</p>
+<h4 id="returns">Returns</h4>
+<p><code>EventTarget</code>[]</p>
+<h4 id="inherited-from_17">Inherited from</h4>
+<p>Event.composedPath</p>
+<h4 id="defined-in_21">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5108</p>
+<hr />
+<h3 id="initevent">initEvent</h3>
+<p>▸ <strong>initEvent</strong>(<code>type</code>, <code>bubbles?</code>, <code>cancelable?</code>): <code>void</code></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>type</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>bubbles?</code></td>
+<td align="left"><code>boolean</code></td>
+</tr>
+<tr>
+<td align="left"><code>cancelable?</code></td>
+<td align="left"><code>boolean</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_1">Returns</h4>
+<p><code>void</code></p>
+<h4 id="inherited-from_18">Inherited from</h4>
+<p>Event.initEvent</p>
+<h4 id="defined-in_22">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5110</p>
+<hr />
+<h3 id="preventdefault">preventDefault</h3>
+<p>▸ <strong>preventDefault</strong>(): <code>void</code></p>
+<p>If invoked when the cancelable attribute value is true, and while executing a listener for the event with passive set to false, signals to the operation that caused event to be dispatched that it needs to be canceled.</p>
+<h4 id="returns_2">Returns</h4>
+<p><code>void</code></p>
+<h4 id="inherited-from_19">Inherited from</h4>
+<p>Event.preventDefault</p>
+<h4 id="defined-in_23">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5114</p>
+<hr />
+<h3 id="stopimmediatepropagation">stopImmediatePropagation</h3>
+<p>▸ <strong>stopImmediatePropagation</strong>(): <code>void</code></p>
+<p>Invoking this method prevents event from reaching any registered event listeners after the current one finishes running and, when dispatched in a tree, also prevents event from reaching any other objects.</p>
+<h4 id="returns_3">Returns</h4>
+<p><code>void</code></p>
+<h4 id="inherited-from_20">Inherited from</h4>
+<p>Event.stopImmediatePropagation</p>
+<h4 id="defined-in_24">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5118</p>
+<hr />
+<h3 id="stoppropagation">stopPropagation</h3>
+<p>▸ <strong>stopPropagation</strong>(): <code>void</code></p>
+<p>When dispatched in a tree, invoking this method prevents event from reaching any objects other than the current object.</p>
+<h4 id="returns_4">Returns</h4>
+<p><code>void</code></p>
+<h4 id="inherited-from_21">Inherited from</h4>
+<p>Event.stopPropagation</p>
+<h4 id="defined-in_25">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5122</p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.22074ed6.min.js"}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.01de222e.min.js"></script>
+      
+    
+  </body>
+</html>

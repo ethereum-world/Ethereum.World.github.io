@@ -1,0 +1,5486 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.7">
+    
+    
+      
+        <title>akashaproject awf sdk. internal .Web3Provider - AKASHA World Framework docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.cd566b2a.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#class-web3provider" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="AKASHA World Framework docs" class="md-header__button md-logo" aria-label="AKASHA World Framework docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AKASHA World Framework docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              akashaproject awf sdk. internal .Web3Provider
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="AKASHA World Framework docs" class="md-nav__button md-logo" aria-label="AKASHA World Framework docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    AKASHA World Framework docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modules/" class="md-nav__link">
+        API
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hierarchy" class="md-nav__link">
+    Hierarchy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    Table of contents
+  </a>
+  
+    <nav class="md-nav" aria-label="Table of contents">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#constructors" class="md-nav__link">
+    Constructors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    Properties
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accessors" class="md-nav__link">
+    Accessors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    Methods
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constructors_1" class="md-nav__link">
+    Constructors
+  </a>
+  
+    <nav class="md-nav" aria-label="Constructors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#constructor" class="md-nav__link">
+    constructor
+  </a>
+  
+    <nav class="md-nav" aria-label="constructor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#overrides" class="md-nav__link">
+    Overrides
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties_1" class="md-nav__link">
+    Properties
+  </a>
+  
+    <nav class="md-nav" aria-label="Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_bootstrappoll" class="md-nav__link">
+    _bootstrapPoll
+  </a>
+  
+    <nav class="md-nav" aria-label="_bootstrapPoll">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_1" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_emitted" class="md-nav__link">
+    _emitted
+  </a>
+  
+    <nav class="md-nav" aria-label="_emitted">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#index-signature" class="md-nav__link">
+    Index signature
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_1" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_2" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_eventloopcache" class="md-nav__link">
+    _eventLoopCache
+  </a>
+  
+    <nav class="md-nav" aria-label="_eventLoopCache">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_2" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_3" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_events" class="md-nav__link">
+    _events
+  </a>
+  
+    <nav class="md-nav" aria-label="_events">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_3" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_4" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_fastblocknumber" class="md-nav__link">
+    _fastBlockNumber
+  </a>
+  
+    <nav class="md-nav" aria-label="_fastBlockNumber">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_4" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_5" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_fastblocknumberpromise" class="md-nav__link">
+    _fastBlockNumberPromise
+  </a>
+  
+    <nav class="md-nav" aria-label="_fastBlockNumberPromise">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_5" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_6" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_fastquerydate" class="md-nav__link">
+    _fastQueryDate
+  </a>
+  
+    <nav class="md-nav" aria-label="_fastQueryDate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_6" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_7" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_internalblocknumber" class="md-nav__link">
+    _internalBlockNumber
+  </a>
+  
+    <nav class="md-nav" aria-label="_internalBlockNumber">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_7" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_8" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_isprovider" class="md-nav__link">
+    _isProvider
+  </a>
+  
+    <nav class="md-nav" aria-label="_isProvider">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_8" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_9" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_lastblocknumber" class="md-nav__link">
+    _lastBlockNumber
+  </a>
+  
+    <nav class="md-nav" aria-label="_lastBlockNumber">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_9" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_10" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_maxinternalblocknumber" class="md-nav__link">
+    _maxInternalBlockNumber
+  </a>
+  
+    <nav class="md-nav" aria-label="_maxInternalBlockNumber">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_10" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_11" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_network" class="md-nav__link">
+    _network
+  </a>
+  
+    <nav class="md-nav" aria-label="_network">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_11" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_12" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_networkpromise" class="md-nav__link">
+    _networkPromise
+  </a>
+  
+    <nav class="md-nav" aria-label="_networkPromise">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_12" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_13" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_nextid" class="md-nav__link">
+    _nextId
+  </a>
+  
+    <nav class="md-nav" aria-label="_nextId">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_13" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_14" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_pendingfilter" class="md-nav__link">
+    _pendingFilter
+  </a>
+  
+    <nav class="md-nav" aria-label="_pendingFilter">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_14" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_15" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_poller" class="md-nav__link">
+    _poller
+  </a>
+  
+    <nav class="md-nav" aria-label="_poller">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_15" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_16" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_pollinginterval" class="md-nav__link">
+    _pollingInterval
+  </a>
+  
+    <nav class="md-nav" aria-label="_pollingInterval">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_16" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_17" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anynetwork" class="md-nav__link">
+    anyNetwork
+  </a>
+  
+    <nav class="md-nav" aria-label="anyNetwork">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_17" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_18" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connection" class="md-nav__link">
+    connection
+  </a>
+  
+    <nav class="md-nav" aria-label="connection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_18" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_19" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formatter" class="md-nav__link">
+    formatter
+  </a>
+  
+    <nav class="md-nav" aria-label="formatter">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_19" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_20" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jsonrpcfetchfunc" class="md-nav__link">
+    jsonRpcFetchFunc
+  </a>
+  
+    <nav class="md-nav" aria-label="jsonRpcFetchFunc">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_21" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#provider" class="md-nav__link">
+    provider
+  </a>
+  
+    <nav class="md-nav" aria-label="provider">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_22" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accessors_1" class="md-nav__link">
+    Accessors
+  </a>
+  
+    <nav class="md-nav" aria-label="Accessors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_cache" class="md-nav__link">
+    _cache
+  </a>
+  
+    <nav class="md-nav" aria-label="_cache">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_20" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_23" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#blocknumber" class="md-nav__link">
+    blockNumber
+  </a>
+  
+    <nav class="md-nav" aria-label="blockNumber">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_1" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_21" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_24" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#network" class="md-nav__link">
+    network
+  </a>
+  
+    <nav class="md-nav" aria-label="network">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_2" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_22" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_25" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#polling" class="md-nav__link">
+    polling
+  </a>
+  
+    <nav class="md-nav" aria-label="polling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_3" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_23" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_26" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_1" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_4" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_24" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_27" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pollinginterval" class="md-nav__link">
+    pollingInterval
+  </a>
+  
+    <nav class="md-nav" aria-label="pollingInterval">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_5" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_25" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_28" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_2" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_6" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_26" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_29" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ready" class="md-nav__link">
+    ready
+  </a>
+  
+    <nav class="md-nav" aria-label="ready">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_7" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_27" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_30" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#methods_1" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_addeventlistener" class="md-nav__link">
+    _addEventListener
+  </a>
+  
+    <nav class="md-nav" aria-label="_addEventListener">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_3" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_8" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_28" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_31" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_getaddress" class="md-nav__link">
+    _getAddress
+  </a>
+  
+    <nav class="md-nav" aria-label="_getAddress">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_4" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_9" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_29" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_32" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_getblock" class="md-nav__link">
+    _getBlock
+  </a>
+  
+    <nav class="md-nav" aria-label="_getBlock">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_5" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_10" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_30" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_33" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_getblocktag" class="md-nav__link">
+    _getBlockTag
+  </a>
+  
+    <nav class="md-nav" aria-label="_getBlockTag">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_6" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_11" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_31" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_34" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_getfastblocknumber" class="md-nav__link">
+    _getFastBlockNumber
+  </a>
+  
+    <nav class="md-nav" aria-label="_getFastBlockNumber">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_12" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_32" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_35" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_getfilter" class="md-nav__link">
+    _getFilter
+  </a>
+  
+    <nav class="md-nav" aria-label="_getFilter">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_7" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_13" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_33" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_36" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_getinternalblocknumber" class="md-nav__link">
+    _getInternalBlockNumber
+  </a>
+  
+    <nav class="md-nav" aria-label="_getInternalBlockNumber">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_8" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_14" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_34" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_37" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_getresolver" class="md-nav__link">
+    _getResolver
+  </a>
+  
+    <nav class="md-nav" aria-label="_getResolver">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_9" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_15" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_35" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_38" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_gettransactionrequest" class="md-nav__link">
+    _getTransactionRequest
+  </a>
+  
+    <nav class="md-nav" aria-label="_getTransactionRequest">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_10" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_16" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_36" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_39" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_ready" class="md-nav__link">
+    _ready
+  </a>
+  
+    <nav class="md-nav" aria-label="_ready">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_17" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_37" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_40" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_setfastblocknumber" class="md-nav__link">
+    _setFastBlockNumber
+  </a>
+  
+    <nav class="md-nav" aria-label="_setFastBlockNumber">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_11" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_18" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_38" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_41" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_startevent" class="md-nav__link">
+    _startEvent
+  </a>
+  
+    <nav class="md-nav" aria-label="_startEvent">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_12" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_19" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_39" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_42" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_startpending" class="md-nav__link">
+    _startPending
+  </a>
+  
+    <nav class="md-nav" aria-label="_startPending">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_20" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_40" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_43" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_stopevent" class="md-nav__link">
+    _stopEvent
+  </a>
+  
+    <nav class="md-nav" aria-label="_stopEvent">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_13" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_21" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_41" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_44" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_uncacheddetectnetwork" class="md-nav__link">
+    _uncachedDetectNetwork
+  </a>
+  
+    <nav class="md-nav" aria-label="_uncachedDetectNetwork">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_22" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_42" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_45" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_waitfortransaction" class="md-nav__link">
+    _waitForTransaction
+  </a>
+  
+    <nav class="md-nav" aria-label="_waitForTransaction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_14" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_23" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_43" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_46" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_wraptransaction" class="md-nav__link">
+    _wrapTransaction
+  </a>
+  
+    <nav class="md-nav" aria-label="_wrapTransaction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_15" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_24" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_44" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_47" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addlistener" class="md-nav__link">
+    addListener
+  </a>
+  
+    <nav class="md-nav" aria-label="addListener">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_16" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_25" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_45" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_48" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#call" class="md-nav__link">
+    call
+  </a>
+  
+    <nav class="md-nav" aria-label="call">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_17" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_26" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_46" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_49" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#detectnetwork" class="md-nav__link">
+    detectNetwork
+  </a>
+  
+    <nav class="md-nav" aria-label="detectNetwork">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_27" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_47" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_50" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#emit" class="md-nav__link">
+    emit
+  </a>
+  
+    <nav class="md-nav" aria-label="emit">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_18" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_28" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_48" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_51" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#estimategas" class="md-nav__link">
+    estimateGas
+  </a>
+  
+    <nav class="md-nav" aria-label="estimateGas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_19" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_29" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_49" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_52" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getavatar" class="md-nav__link">
+    getAvatar
+  </a>
+  
+    <nav class="md-nav" aria-label="getAvatar">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_20" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_30" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_50" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_53" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getbalance" class="md-nav__link">
+    getBalance
+  </a>
+  
+    <nav class="md-nav" aria-label="getBalance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_21" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_31" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_51" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_54" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getblock" class="md-nav__link">
+    getBlock
+  </a>
+  
+    <nav class="md-nav" aria-label="getBlock">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_22" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_32" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_52" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_55" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getblocknumber" class="md-nav__link">
+    getBlockNumber
+  </a>
+  
+    <nav class="md-nav" aria-label="getBlockNumber">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_33" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_53" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_56" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getblockwithtransactions" class="md-nav__link">
+    getBlockWithTransactions
+  </a>
+  
+    <nav class="md-nav" aria-label="getBlockWithTransactions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_23" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_34" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_54" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_57" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getcode" class="md-nav__link">
+    getCode
+  </a>
+  
+    <nav class="md-nav" aria-label="getCode">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_24" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_35" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_55" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_58" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getetherprice" class="md-nav__link">
+    getEtherPrice
+  </a>
+  
+    <nav class="md-nav" aria-label="getEtherPrice">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_36" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_56" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_59" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getfeedata" class="md-nav__link">
+    getFeeData
+  </a>
+  
+    <nav class="md-nav" aria-label="getFeeData">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_37" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_57" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_60" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getgasprice" class="md-nav__link">
+    getGasPrice
+  </a>
+  
+    <nav class="md-nav" aria-label="getGasPrice">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_38" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_58" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_61" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getlogs" class="md-nav__link">
+    getLogs
+  </a>
+  
+    <nav class="md-nav" aria-label="getLogs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_25" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_39" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_59" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_62" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getnetwork" class="md-nav__link">
+    getNetwork
+  </a>
+  
+    <nav class="md-nav" aria-label="getNetwork">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_40" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_60" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_63" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getresolver" class="md-nav__link">
+    getResolver
+  </a>
+  
+    <nav class="md-nav" aria-label="getResolver">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_26" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_41" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_61" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_64" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getsigner" class="md-nav__link">
+    getSigner
+  </a>
+  
+    <nav class="md-nav" aria-label="getSigner">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_27" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_42" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_62" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_65" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getstorageat" class="md-nav__link">
+    getStorageAt
+  </a>
+  
+    <nav class="md-nav" aria-label="getStorageAt">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_28" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_43" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_63" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_66" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gettransaction" class="md-nav__link">
+    getTransaction
+  </a>
+  
+    <nav class="md-nav" aria-label="getTransaction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_29" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_44" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_64" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_67" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gettransactioncount" class="md-nav__link">
+    getTransactionCount
+  </a>
+  
+    <nav class="md-nav" aria-label="getTransactionCount">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_30" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_45" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_65" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_68" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gettransactionreceipt" class="md-nav__link">
+    getTransactionReceipt
+  </a>
+  
+    <nav class="md-nav" aria-label="getTransactionReceipt">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_31" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_46" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_66" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_69" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getuncheckedsigner" class="md-nav__link">
+    getUncheckedSigner
+  </a>
+  
+    <nav class="md-nav" aria-label="getUncheckedSigner">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_32" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_47" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_67" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_70" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listaccounts" class="md-nav__link">
+    listAccounts
+  </a>
+  
+    <nav class="md-nav" aria-label="listAccounts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_48" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_68" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_71" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listenercount" class="md-nav__link">
+    listenerCount
+  </a>
+  
+    <nav class="md-nav" aria-label="listenerCount">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_33" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_49" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_69" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_72" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listeners" class="md-nav__link">
+    listeners
+  </a>
+  
+    <nav class="md-nav" aria-label="listeners">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_34" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_50" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_70" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_73" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lookupaddress" class="md-nav__link">
+    lookupAddress
+  </a>
+  
+    <nav class="md-nav" aria-label="lookupAddress">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_35" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_51" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_71" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_74" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#off" class="md-nav__link">
+    off
+  </a>
+  
+    <nav class="md-nav" aria-label="off">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_36" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_52" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_72" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_75" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#on" class="md-nav__link">
+    on
+  </a>
+  
+    <nav class="md-nav" aria-label="on">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_37" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_53" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_73" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_76" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#once" class="md-nav__link">
+    once
+  </a>
+  
+    <nav class="md-nav" aria-label="once">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_38" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_54" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_74" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_77" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#perform" class="md-nav__link">
+    perform
+  </a>
+  
+    <nav class="md-nav" aria-label="perform">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_39" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_55" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_75" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_78" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#poll" class="md-nav__link">
+    poll
+  </a>
+  
+    <nav class="md-nav" aria-label="poll">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_56" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_76" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_79" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#preparerequest" class="md-nav__link">
+    prepareRequest
+  </a>
+  
+    <nav class="md-nav" aria-label="prepareRequest">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_40" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_57" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_77" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_80" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removealllisteners" class="md-nav__link">
+    removeAllListeners
+  </a>
+  
+    <nav class="md-nav" aria-label="removeAllListeners">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_41" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_58" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_78" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_81" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removelistener" class="md-nav__link">
+    removeListener
+  </a>
+  
+    <nav class="md-nav" aria-label="removeListener">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_42" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_59" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_79" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_82" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reseteventsblock" class="md-nav__link">
+    resetEventsBlock
+  </a>
+  
+    <nav class="md-nav" aria-label="resetEventsBlock">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_43" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_60" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_80" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_83" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resolvename" class="md-nav__link">
+    resolveName
+  </a>
+  
+    <nav class="md-nav" aria-label="resolveName">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_44" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_61" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_81" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_84" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#send" class="md-nav__link">
+    send
+  </a>
+  
+    <nav class="md-nav" aria-label="send">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_45" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_62" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#overrides_1" class="md-nav__link">
+    Overrides
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_85" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sendtransaction" class="md-nav__link">
+    sendTransaction
+  </a>
+  
+    <nav class="md-nav" aria-label="sendTransaction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_46" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_63" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_82" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_86" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#waitfortransaction" class="md-nav__link">
+    waitForTransaction
+  </a>
+  
+    <nav class="md-nav" aria-label="waitForTransaction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_47" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_64" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_83" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_87" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defaulturl" class="md-nav__link">
+    defaultUrl
+  </a>
+  
+    <nav class="md-nav" aria-label="defaultUrl">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_65" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_84" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_88" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getformatter" class="md-nav__link">
+    getFormatter
+  </a>
+  
+    <nav class="md-nav" aria-label="getFormatter">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_66" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_85" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_89" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getnetwork_1" class="md-nav__link">
+    getNetwork
+  </a>
+  
+    <nav class="md-nav" aria-label="getNetwork">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_48" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_67" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_86" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_90" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hexlifytransaction" class="md-nav__link">
+    hexlifyTransaction
+  </a>
+  
+    <nav class="md-nav" aria-label="hexlifyTransaction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_49" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_68" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_87" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_91" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isprovider" class="md-nav__link">
+    isProvider
+  </a>
+  
+    <nav class="md-nav" aria-label="isProvider">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_50" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_69" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_88" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_92" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+<p><a href="../../">AWF</a> / <a href="../../modules/">Modules</a> / <a href="../../modules/akashaproject_awf_sdk/">@akashaproject/awf-sdk</a> / <a href="../../modules/akashaproject_awf_sdk._internal_/">&lt;internal></a> / Web3Provider</p>
+<h1 id="class-web3provider">Class: Web3Provider</h1>
+<p><a href="../../modules/akashaproject_awf_sdk/">@akashaproject/awf-sdk</a>.<a href="../../modules/akashaproject_awf_sdk._internal_/"><internal></a>.Web3Provider</p>
+<h2 id="hierarchy">Hierarchy</h2>
+<ul>
+<li><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/"><code>JsonRpcProvider</code></a></li>
+</ul>
+<p>↳ <strong><code>Web3Provider</code></strong></p>
+<h2 id="table-of-contents">Table of contents</h2>
+<h3 id="constructors">Constructors</h3>
+<ul>
+<li><a href="./#constructor">constructor</a></li>
+</ul>
+<h3 id="properties">Properties</h3>
+<ul>
+<li><a href="./#_bootstrappoll">_bootstrapPoll</a></li>
+<li><a href="./#_emitted">_emitted</a></li>
+<li><a href="./#_eventloopcache">_eventLoopCache</a></li>
+<li><a href="./#_events">_events</a></li>
+<li><a href="./#_fastblocknumber">_fastBlockNumber</a></li>
+<li><a href="./#_fastblocknumberpromise">_fastBlockNumberPromise</a></li>
+<li><a href="./#_fastquerydate">_fastQueryDate</a></li>
+<li><a href="./#_internalblocknumber">_internalBlockNumber</a></li>
+<li><a href="./#_isprovider">_isProvider</a></li>
+<li><a href="./#_lastblocknumber">_lastBlockNumber</a></li>
+<li><a href="./#_maxinternalblocknumber">_maxInternalBlockNumber</a></li>
+<li><a href="./#_network">_network</a></li>
+<li><a href="./#_networkpromise">_networkPromise</a></li>
+<li><a href="./#_nextid">_nextId</a></li>
+<li><a href="./#_pendingfilter">_pendingFilter</a></li>
+<li><a href="./#_poller">_poller</a></li>
+<li><a href="./#_pollinginterval">_pollingInterval</a></li>
+<li><a href="./#anynetwork">anyNetwork</a></li>
+<li><a href="./#connection">connection</a></li>
+<li><a href="./#formatter">formatter</a></li>
+<li><a href="./#jsonrpcfetchfunc">jsonRpcFetchFunc</a></li>
+<li><a href="./#provider">provider</a></li>
+</ul>
+<h3 id="accessors">Accessors</h3>
+<ul>
+<li><a href="./#_cache">_cache</a></li>
+<li><a href="./#blocknumber">blockNumber</a></li>
+<li><a href="./#network">network</a></li>
+<li><a href="./#polling">polling</a></li>
+<li><a href="./#pollinginterval">pollingInterval</a></li>
+<li><a href="./#ready">ready</a></li>
+</ul>
+<h3 id="methods">Methods</h3>
+<ul>
+<li><a href="./#_addeventlistener">_addEventListener</a></li>
+<li><a href="./#_getaddress">_getAddress</a></li>
+<li><a href="./#_getblock">_getBlock</a></li>
+<li><a href="./#_getblocktag">_getBlockTag</a></li>
+<li><a href="./#_getfastblocknumber">_getFastBlockNumber</a></li>
+<li><a href="./#_getfilter">_getFilter</a></li>
+<li><a href="./#_getinternalblocknumber">_getInternalBlockNumber</a></li>
+<li><a href="./#_getresolver">_getResolver</a></li>
+<li><a href="./#_gettransactionrequest">_getTransactionRequest</a></li>
+<li><a href="./#_ready">_ready</a></li>
+<li><a href="./#_setfastblocknumber">_setFastBlockNumber</a></li>
+<li><a href="./#_startevent">_startEvent</a></li>
+<li><a href="./#_startpending">_startPending</a></li>
+<li><a href="./#_stopevent">_stopEvent</a></li>
+<li><a href="./#_uncacheddetectnetwork">_uncachedDetectNetwork</a></li>
+<li><a href="./#_waitfortransaction">_waitForTransaction</a></li>
+<li><a href="./#_wraptransaction">_wrapTransaction</a></li>
+<li><a href="./#addlistener">addListener</a></li>
+<li><a href="./#call">call</a></li>
+<li><a href="./#detectnetwork">detectNetwork</a></li>
+<li><a href="./#emit">emit</a></li>
+<li><a href="./#estimategas">estimateGas</a></li>
+<li><a href="./#getavatar">getAvatar</a></li>
+<li><a href="./#getbalance">getBalance</a></li>
+<li><a href="./#getblock">getBlock</a></li>
+<li><a href="./#getblocknumber">getBlockNumber</a></li>
+<li><a href="./#getblockwithtransactions">getBlockWithTransactions</a></li>
+<li><a href="./#getcode">getCode</a></li>
+<li><a href="./#getetherprice">getEtherPrice</a></li>
+<li><a href="./#getfeedata">getFeeData</a></li>
+<li><a href="./#getgasprice">getGasPrice</a></li>
+<li><a href="./#getlogs">getLogs</a></li>
+<li><a href="./#getnetwork">getNetwork</a></li>
+<li><a href="./#getresolver">getResolver</a></li>
+<li><a href="./#getsigner">getSigner</a></li>
+<li><a href="./#getstorageat">getStorageAt</a></li>
+<li><a href="./#gettransaction">getTransaction</a></li>
+<li><a href="./#gettransactioncount">getTransactionCount</a></li>
+<li><a href="./#gettransactionreceipt">getTransactionReceipt</a></li>
+<li><a href="./#getuncheckedsigner">getUncheckedSigner</a></li>
+<li><a href="./#listaccounts">listAccounts</a></li>
+<li><a href="./#listenercount">listenerCount</a></li>
+<li><a href="./#listeners">listeners</a></li>
+<li><a href="./#lookupaddress">lookupAddress</a></li>
+<li><a href="./#off">off</a></li>
+<li><a href="./#on">on</a></li>
+<li><a href="./#once">once</a></li>
+<li><a href="./#perform">perform</a></li>
+<li><a href="./#poll">poll</a></li>
+<li><a href="./#preparerequest">prepareRequest</a></li>
+<li><a href="./#removealllisteners">removeAllListeners</a></li>
+<li><a href="./#removelistener">removeListener</a></li>
+<li><a href="./#reseteventsblock">resetEventsBlock</a></li>
+<li><a href="./#resolvename">resolveName</a></li>
+<li><a href="./#send">send</a></li>
+<li><a href="./#sendtransaction">sendTransaction</a></li>
+<li><a href="./#waitfortransaction">waitForTransaction</a></li>
+<li><a href="./#defaulturl">defaultUrl</a></li>
+<li><a href="./#getformatter">getFormatter</a></li>
+<li><a href="./#getnetwork">getNetwork</a></li>
+<li><a href="./#hexlifytransaction">hexlifyTransaction</a></li>
+<li><a href="./#isprovider">isProvider</a></li>
+</ul>
+<h2 id="constructors_1">Constructors</h2>
+<h3 id="constructor">constructor</h3>
+<p>• <strong>new Web3Provider</strong>(<code>provider</code>, <code>network?</code>)</p>
+<p>ready</p>
+<p>A Promise<Network> that resolves only once the provider is ready.</p>
+<p>Sub-classes that call the super with a network without a chainId
+ MUST set this. Standard named networks have a known chainId.</p>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>provider</code></td>
+<td align="left"><a href="../../modules/akashaproject_awf_sdk._internal_/#externalprovider"><code>ExternalProvider</code></a> | <a href="../../modules/akashaproject_awf_sdk._internal_/#jsonrpcfetchfunc"><code>JsonRpcFetchFunc</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>network?</code></td>
+<td align="left"><a href="../../modules/akashaproject_awf_sdk._internal_/#networkish"><code>Networkish</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="overrides">Overrides</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#constructor">constructor</a></p>
+<h4 id="defined-in">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/web3-provider.d.ts:25</p>
+<h2 id="properties_1">Properties</h2>
+<h3 id="_bootstrappoll">_bootstrapPoll</h3>
+<p>• <strong>_bootstrapPoll</strong>: <a href="../../interfaces/akashaproject_awf_sdk._internal_.Timer/"><code>Timer</code></a></p>
+<h4 id="inherited-from">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#_bootstrappoll">_bootstrapPoll</a></p>
+<h4 id="defined-in_1">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:61</p>
+<hr />
+<h3 id="_emitted">_emitted</h3>
+<p>• <strong>_emitted</strong>: <code>Object</code></p>
+<h4 id="index-signature">Index signature</h4>
+<p>▪ [eventName: <code>string</code>]: <code>number</code> | <code>"pending"</code></p>
+<h4 id="inherited-from_1">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#_emitted">_emitted</a></p>
+<h4 id="defined-in_2">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:56</p>
+<hr />
+<h3 id="_eventloopcache">_eventLoopCache</h3>
+<p>• <strong>_eventLoopCache</strong>: <a href="../../modules/akashaproject_awf_sdk._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>Promise</code>&lt;<code>any</code>>></p>
+<h4 id="inherited-from_2">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#_eventloopcache">_eventLoopCache</a></p>
+<h4 id="defined-in_3">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/json-rpc-provider.d.ts:32</p>
+<hr />
+<h3 id="_events">_events</h3>
+<p>• <strong>_events</strong>: <a href="../akashaproject_awf_sdk._internal_.Event/"><code>Event</code></a>[]</p>
+<h4 id="inherited-from_3">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#_events">_events</a></p>
+<h4 id="defined-in_4">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:54</p>
+<hr />
+<h3 id="_fastblocknumber">_fastBlockNumber</h3>
+<p>• <strong>_fastBlockNumber</strong>: <code>number</code></p>
+<h4 id="inherited-from_4">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#_fastblocknumber">_fastBlockNumber</a></p>
+<h4 id="defined-in_5">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:63</p>
+<hr />
+<h3 id="_fastblocknumberpromise">_fastBlockNumberPromise</h3>
+<p>• <strong>_fastBlockNumberPromise</strong>: <code>Promise</code>&lt;<code>number</code>></p>
+<h4 id="inherited-from_5">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#_fastblocknumberpromise">_fastBlockNumberPromise</a></p>
+<h4 id="defined-in_6">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:64</p>
+<hr />
+<h3 id="_fastquerydate">_fastQueryDate</h3>
+<p>• <strong>_fastQueryDate</strong>: <code>number</code></p>
+<h4 id="inherited-from_6">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#_fastquerydate">_fastQueryDate</a></p>
+<h4 id="defined-in_7">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:65</p>
+<hr />
+<h3 id="_internalblocknumber">_internalBlockNumber</h3>
+<p>• <strong>_internalBlockNumber</strong>: <code>Promise</code>&lt;{ <code>blockNumber</code>: <code>number</code> ; <code>reqTime</code>: <code>number</code> ; <code>respTime</code>: <code>number</code>  }></p>
+<h4 id="inherited-from_7">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#_internalblocknumber">_internalBlockNumber</a></p>
+<h4 id="defined-in_8">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:67</p>
+<hr />
+<h3 id="_isprovider">_isProvider</h3>
+<p>• <code>Readonly</code> <strong>_isProvider</strong>: <code>boolean</code></p>
+<h4 id="inherited-from_8">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#_isprovider">_isProvider</a></p>
+<h4 id="defined-in_9">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/abstract-provider/lib/index.d.ts:150</p>
+<hr />
+<h3 id="_lastblocknumber">_lastBlockNumber</h3>
+<p>• <strong>_lastBlockNumber</strong>: <code>number</code></p>
+<h4 id="inherited-from_9">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#_lastblocknumber">_lastBlockNumber</a></p>
+<h4 id="defined-in_10">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:62</p>
+<hr />
+<h3 id="_maxinternalblocknumber">_maxInternalBlockNumber</h3>
+<p>• <strong>_maxInternalBlockNumber</strong>: <code>number</code></p>
+<h4 id="inherited-from_10">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#_maxinternalblocknumber">_maxInternalBlockNumber</a></p>
+<h4 id="defined-in_11">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:66</p>
+<hr />
+<h3 id="_network">_network</h3>
+<p>• <strong>_network</strong>: <a href="../../modules/akashaproject_awf_sdk._internal_/#network"><code>Network</code></a></p>
+<h4 id="inherited-from_11">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#_network">_network</a></p>
+<h4 id="defined-in_12">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:53</p>
+<hr />
+<h3 id="_networkpromise">_networkPromise</h3>
+<p>• <strong>_networkPromise</strong>: <code>Promise</code>&lt;<a href="../../modules/akashaproject_awf_sdk._internal_/#network"><code>Network</code></a>></p>
+<h4 id="inherited-from_12">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#_networkpromise">_networkPromise</a></p>
+<h4 id="defined-in_13">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:52</p>
+<hr />
+<h3 id="_nextid">_nextId</h3>
+<p>• <strong>_nextId</strong>: <code>number</code></p>
+<h4 id="inherited-from_13">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#_nextid">_nextId</a></p>
+<h4 id="defined-in_14">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/json-rpc-provider.d.ts:31</p>
+<hr />
+<h3 id="_pendingfilter">_pendingFilter</h3>
+<p>• <strong>_pendingFilter</strong>: <code>Promise</code>&lt;<code>number</code>></p>
+<h4 id="inherited-from_14">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#_pendingfilter">_pendingFilter</a></p>
+<h4 id="defined-in_15">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/json-rpc-provider.d.ts:30</p>
+<hr />
+<h3 id="_poller">_poller</h3>
+<p>• <strong>_poller</strong>: <a href="../../interfaces/akashaproject_awf_sdk._internal_.Timer/"><code>Timer</code></a></p>
+<h4 id="inherited-from_15">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#_poller">_poller</a></p>
+<h4 id="defined-in_16">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:60</p>
+<hr />
+<h3 id="_pollinginterval">_pollingInterval</h3>
+<p>• <strong>_pollingInterval</strong>: <code>number</code></p>
+<h4 id="inherited-from_16">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#_pollinginterval">_pollingInterval</a></p>
+<h4 id="defined-in_17">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:59</p>
+<hr />
+<h3 id="anynetwork">anyNetwork</h3>
+<p>• <code>Readonly</code> <strong>anyNetwork</strong>: <code>boolean</code></p>
+<h4 id="inherited-from_17">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#anynetwork">anyNetwork</a></p>
+<h4 id="defined-in_18">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:72</p>
+<hr />
+<h3 id="connection">connection</h3>
+<p>• <code>Readonly</code> <strong>connection</strong>: <a href="../../modules/akashaproject_awf_sdk._internal_/#connectioninfo"><code>ConnectionInfo</code></a></p>
+<h4 id="inherited-from_18">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#connection">connection</a></p>
+<h4 id="defined-in_19">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/json-rpc-provider.d.ts:29</p>
+<hr />
+<h3 id="formatter">formatter</h3>
+<p>• <strong>formatter</strong>: <a href="../akashaproject_awf_sdk._internal_.Formatter/"><code>Formatter</code></a></p>
+<h4 id="inherited-from_19">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#formatter">formatter</a></p>
+<h4 id="defined-in_20">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:55</p>
+<hr />
+<h3 id="jsonrpcfetchfunc">jsonRpcFetchFunc</h3>
+<p>• <code>Readonly</code> <strong>jsonRpcFetchFunc</strong>: <a href="../../modules/akashaproject_awf_sdk._internal_/#jsonrpcfetchfunc"><code>JsonRpcFetchFunc</code></a></p>
+<h4 id="defined-in_21">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/web3-provider.d.ts:24</p>
+<hr />
+<h3 id="provider">provider</h3>
+<p>• <code>Readonly</code> <strong>provider</strong>: <a href="../../modules/akashaproject_awf_sdk._internal_/#externalprovider"><code>ExternalProvider</code></a></p>
+<h4 id="defined-in_22">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/web3-provider.d.ts:23</p>
+<h2 id="accessors_1">Accessors</h2>
+<h3 id="_cache">_cache</h3>
+<p>• <code>get</code> <strong>_cache</strong>(): <a href="../../modules/akashaproject_awf_sdk._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>Promise</code>&lt;<code>any</code>>></p>
+<h4 id="returns">Returns</h4>
+<p><a href="../../modules/akashaproject_awf_sdk._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>Promise</code>&lt;<code>any</code>>></p>
+<h4 id="inherited-from_20">Inherited from</h4>
+<p>JsonRpcProvider._cache</p>
+<h4 id="defined-in_23">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/json-rpc-provider.d.ts:33</p>
+<hr />
+<h3 id="blocknumber">blockNumber</h3>
+<p>• <code>get</code> <strong>blockNumber</strong>(): <code>number</code></p>
+<h4 id="returns_1">Returns</h4>
+<p><code>number</code></p>
+<h4 id="inherited-from_21">Inherited from</h4>
+<p>JsonRpcProvider.blockNumber</p>
+<h4 id="defined-in_24">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:93</p>
+<hr />
+<h3 id="network">network</h3>
+<p>• <code>get</code> <strong>network</strong>(): <a href="../../modules/akashaproject_awf_sdk._internal_/#network"><code>Network</code></a></p>
+<h4 id="returns_2">Returns</h4>
+<p><a href="../../modules/akashaproject_awf_sdk._internal_/#network"><code>Network</code></a></p>
+<h4 id="inherited-from_22">Inherited from</h4>
+<p>JsonRpcProvider.network</p>
+<h4 id="defined-in_25">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:90</p>
+<hr />
+<h3 id="polling">polling</h3>
+<p>• <code>get</code> <strong>polling</strong>(): <code>boolean</code></p>
+<h4 id="returns_3">Returns</h4>
+<p><code>boolean</code></p>
+<h4 id="inherited-from_23">Inherited from</h4>
+<p>JsonRpcProvider.polling</p>
+<h4 id="defined-in_26">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:94</p>
+<p>• <code>set</code> <strong>polling</strong>(<code>value</code>): <code>void</code></p>
+<h4 id="parameters_1">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>value</code></td>
+<td align="left"><code>boolean</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_4">Returns</h4>
+<p><code>void</code></p>
+<h4 id="inherited-from_24">Inherited from</h4>
+<p>JsonRpcProvider.polling</p>
+<h4 id="defined-in_27">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:95</p>
+<hr />
+<h3 id="pollinginterval">pollingInterval</h3>
+<p>• <code>get</code> <strong>pollingInterval</strong>(): <code>number</code></p>
+<h4 id="returns_5">Returns</h4>
+<p><code>number</code></p>
+<h4 id="inherited-from_25">Inherited from</h4>
+<p>JsonRpcProvider.pollingInterval</p>
+<h4 id="defined-in_28">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:96</p>
+<p>• <code>set</code> <strong>pollingInterval</strong>(<code>value</code>): <code>void</code></p>
+<h4 id="parameters_2">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>value</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_6">Returns</h4>
+<p><code>void</code></p>
+<h4 id="inherited-from_26">Inherited from</h4>
+<p>JsonRpcProvider.pollingInterval</p>
+<h4 id="defined-in_29">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:97</p>
+<hr />
+<h3 id="ready">ready</h3>
+<p>• <code>get</code> <strong>ready</strong>(): <code>Promise</code>&lt;<a href="../../modules/akashaproject_awf_sdk._internal_/#network"><code>Network</code></a>></p>
+<h4 id="returns_7">Returns</h4>
+<p><code>Promise</code>&lt;<a href="../../modules/akashaproject_awf_sdk._internal_/#network"><code>Network</code></a>></p>
+<h4 id="inherited-from_27">Inherited from</h4>
+<p>JsonRpcProvider.ready</p>
+<h4 id="defined-in_30">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:84</p>
+<h2 id="methods_1">Methods</h2>
+<h3 id="_addeventlistener">_addEventListener</h3>
+<p>▸ <strong>_addEventListener</strong>(<code>eventName</code>, <code>listener</code>, <code>once</code>): <a href="./"><code>Web3Provider</code></a></p>
+<h4 id="parameters_3">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>eventName</code></td>
+<td align="left"><a href="../../modules/akashaproject_awf_sdk._internal_/#eventtype"><code>EventType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>listener</code></td>
+<td align="left"><a href="../../modules/akashaproject_awf_sdk._internal_/#listener"><code>Listener</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>once</code></td>
+<td align="left"><code>boolean</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_8">Returns</h4>
+<p><a href="./"><code>Web3Provider</code></a></p>
+<h4 id="inherited-from_28">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#_addeventlistener">_addEventListener</a></p>
+<h4 id="defined-in_31">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:138</p>
+<hr />
+<h3 id="_getaddress">_getAddress</h3>
+<p>▸ <strong>_getAddress</strong>(<code>addressOrName</code>): <code>Promise</code>&lt;<code>string</code>></p>
+<h4 id="parameters_4">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>addressOrName</code></td>
+<td align="left"><code>string</code> | <code>Promise</code>&lt;<code>string</code>></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_9">Returns</h4>
+<p><code>Promise</code>&lt;<code>string</code>></p>
+<h4 id="inherited-from_29">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#_getaddress">_getAddress</a></p>
+<h4 id="defined-in_32">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:121</p>
+<hr />
+<h3 id="_getblock">_getBlock</h3>
+<p>▸ <strong>_getBlock</strong>(<code>blockHashOrBlockTag</code>, <code>includeTransactions?</code>): <code>Promise</code>&lt;<a href="../../interfaces/akashaproject_awf_sdk._internal_.Block/"><code>Block</code></a> | <a href="../../interfaces/akashaproject_awf_sdk._internal_.BlockWithTransactions/"><code>BlockWithTransactions</code></a>></p>
+<h4 id="parameters_5">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>blockHashOrBlockTag</code></td>
+<td align="left"><a href="../../modules/akashaproject_awf_sdk._internal_/#blocktag"><code>BlockTag</code></a> | <code>Promise</code>&lt;<a href="../../modules/akashaproject_awf_sdk._internal_/#blocktag"><code>BlockTag</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>includeTransactions?</code></td>
+<td align="left"><code>boolean</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_10">Returns</h4>
+<p><code>Promise</code>&lt;<a href="../../interfaces/akashaproject_awf_sdk._internal_.Block/"><code>Block</code></a> | <a href="../../interfaces/akashaproject_awf_sdk._internal_.BlockWithTransactions/"><code>BlockWithTransactions</code></a>></p>
+<h4 id="inherited-from_30">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#_getblock">_getBlock</a></p>
+<h4 id="defined-in_33">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:122</p>
+<hr />
+<h3 id="_getblocktag">_getBlockTag</h3>
+<p>▸ <strong>_getBlockTag</strong>(<code>blockTag</code>): <code>Promise</code>&lt;<a href="../../modules/akashaproject_awf_sdk._internal_/#blocktag"><code>BlockTag</code></a>></p>
+<h4 id="parameters_6">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>blockTag</code></td>
+<td align="left"><a href="../../modules/akashaproject_awf_sdk._internal_/#blocktag"><code>BlockTag</code></a> | <code>Promise</code>&lt;<a href="../../modules/akashaproject_awf_sdk._internal_/#blocktag"><code>BlockTag</code></a>></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_11">Returns</h4>
+<p><code>Promise</code>&lt;<a href="../../modules/akashaproject_awf_sdk._internal_/#blocktag"><code>BlockTag</code></a>></p>
+<h4 id="inherited-from_31">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#_getblocktag">_getBlockTag</a></p>
+<h4 id="defined-in_34">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:129</p>
+<hr />
+<h3 id="_getfastblocknumber">_getFastBlockNumber</h3>
+<p>▸ <strong>_getFastBlockNumber</strong>(): <code>Promise</code>&lt;<code>number</code>></p>
+<h4 id="returns_12">Returns</h4>
+<p><code>Promise</code>&lt;<code>number</code>></p>
+<h4 id="inherited-from_32">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#_getfastblocknumber">_getFastBlockNumber</a></p>
+<h4 id="defined-in_35">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:98</p>
+<hr />
+<h3 id="_getfilter">_getFilter</h3>
+<p>▸ <strong>_getFilter</strong>(<code>filter</code>): <code>Promise</code>&lt;<a href="../../interfaces/akashaproject_awf_sdk._internal_.Filter/"><code>Filter</code></a> | <a href="../../interfaces/akashaproject_awf_sdk._internal_.FilterByBlockHash/"><code>FilterByBlockHash</code></a>></p>
+<h4 id="parameters_7">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>filter</code></td>
+<td align="left"><a href="../../interfaces/akashaproject_awf_sdk._internal_.Filter/"><code>Filter</code></a> | <a href="../../interfaces/akashaproject_awf_sdk._internal_.FilterByBlockHash/"><code>FilterByBlockHash</code></a> | <code>Promise</code>&lt;<a href="../../interfaces/akashaproject_awf_sdk._internal_.Filter/"><code>Filter</code></a> | <a href="../../interfaces/akashaproject_awf_sdk._internal_.FilterByBlockHash/"><code>FilterByBlockHash</code></a>></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_13">Returns</h4>
+<p><code>Promise</code>&lt;<a href="../../interfaces/akashaproject_awf_sdk._internal_.Filter/"><code>Filter</code></a> | <a href="../../interfaces/akashaproject_awf_sdk._internal_.FilterByBlockHash/"><code>FilterByBlockHash</code></a>></p>
+<h4 id="inherited-from_33">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#_getfilter">_getFilter</a></p>
+<h4 id="defined-in_36">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:118</p>
+<hr />
+<h3 id="_getinternalblocknumber">_getInternalBlockNumber</h3>
+<p>▸ <strong>_getInternalBlockNumber</strong>(<code>maxAge</code>): <code>Promise</code>&lt;<code>number</code>></p>
+<h4 id="parameters_8">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>maxAge</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_14">Returns</h4>
+<p><code>Promise</code>&lt;<code>number</code>></p>
+<h4 id="inherited-from_34">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#_getinternalblocknumber">_getInternalBlockNumber</a></p>
+<h4 id="defined-in_37">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:87</p>
+<hr />
+<h3 id="_getresolver">_getResolver</h3>
+<p>▸ <strong>_getResolver</strong>(<code>name</code>): <code>Promise</code>&lt;<code>string</code>></p>
+<h4 id="parameters_9">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>name</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_15">Returns</h4>
+<p><code>Promise</code>&lt;<code>string</code>></p>
+<h4 id="inherited-from_35">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#_getresolver">_getResolver</a></p>
+<h4 id="defined-in_38">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:131</p>
+<hr />
+<h3 id="_gettransactionrequest">_getTransactionRequest</h3>
+<p>▸ <strong>_getTransactionRequest</strong>(<code>transaction</code>): <code>Promise</code>&lt;<a href="../../interfaces/akashaproject_awf_sdk._internal_.Transaction/"><code>Transaction</code></a>></p>
+<h4 id="parameters_10">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>transaction</code></td>
+<td align="left"><a href="../../modules/akashaproject_awf_sdk._internal_/#deferrable"><code>Deferrable</code></a>&lt;<a href="../../modules/akashaproject_awf_sdk._internal_/#transactionrequest"><code>TransactionRequest</code></a>></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_16">Returns</h4>
+<p><code>Promise</code>&lt;<a href="../../interfaces/akashaproject_awf_sdk._internal_.Transaction/"><code>Transaction</code></a>></p>
+<h4 id="inherited-from_36">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#_gettransactionrequest">_getTransactionRequest</a></p>
+<h4 id="defined-in_39">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:117</p>
+<hr />
+<h3 id="_ready">_ready</h3>
+<p>▸ <strong>_ready</strong>(): <code>Promise</code>&lt;<a href="../../modules/akashaproject_awf_sdk._internal_/#network"><code>Network</code></a>></p>
+<h4 id="returns_17">Returns</h4>
+<p><code>Promise</code>&lt;<a href="../../modules/akashaproject_awf_sdk._internal_/#network"><code>Network</code></a>></p>
+<h4 id="inherited-from_37">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#_ready">_ready</a></p>
+<h4 id="defined-in_40">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:83</p>
+<hr />
+<h3 id="_setfastblocknumber">_setFastBlockNumber</h3>
+<p>▸ <strong>_setFastBlockNumber</strong>(<code>blockNumber</code>): <code>void</code></p>
+<h4 id="parameters_11">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>blockNumber</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_18">Returns</h4>
+<p><code>void</code></p>
+<h4 id="inherited-from_38">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#_setfastblocknumber">_setFastBlockNumber</a></p>
+<h4 id="defined-in_41">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:99</p>
+<hr />
+<h3 id="_startevent">_startEvent</h3>
+<p>▸ <strong>_startEvent</strong>(<code>event</code>): <code>void</code></p>
+<h4 id="parameters_12">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>event</code></td>
+<td align="left"><a href="../akashaproject_awf_sdk._internal_.Event/"><code>Event</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_19">Returns</h4>
+<p><code>void</code></p>
+<h4 id="inherited-from_39">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#_startevent">_startEvent</a></p>
+<h4 id="defined-in_42">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/json-rpc-provider.d.ts:44</p>
+<hr />
+<h3 id="_startpending">_startPending</h3>
+<p>▸ <strong>_startPending</strong>(): <code>void</code></p>
+<h4 id="returns_20">Returns</h4>
+<p><code>void</code></p>
+<h4 id="inherited-from_40">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#_startpending">_startPending</a></p>
+<h4 id="defined-in_43">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/json-rpc-provider.d.ts:45</p>
+<hr />
+<h3 id="_stopevent">_stopEvent</h3>
+<p>▸ <strong>_stopEvent</strong>(<code>event</code>): <code>void</code></p>
+<h4 id="parameters_13">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>event</code></td>
+<td align="left"><a href="../akashaproject_awf_sdk._internal_.Event/"><code>Event</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_21">Returns</h4>
+<p><code>void</code></p>
+<h4 id="inherited-from_41">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#_stopevent">_stopEvent</a></p>
+<h4 id="defined-in_44">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/json-rpc-provider.d.ts:46</p>
+<hr />
+<h3 id="_uncacheddetectnetwork">_uncachedDetectNetwork</h3>
+<p>▸ <strong>_uncachedDetectNetwork</strong>(): <code>Promise</code>&lt;<a href="../../modules/akashaproject_awf_sdk._internal_/#network"><code>Network</code></a>></p>
+<h4 id="returns_22">Returns</h4>
+<p><code>Promise</code>&lt;<a href="../../modules/akashaproject_awf_sdk._internal_/#network"><code>Network</code></a>></p>
+<h4 id="inherited-from_42">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#_uncacheddetectnetwork">_uncachedDetectNetwork</a></p>
+<h4 id="defined-in_45">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/json-rpc-provider.d.ts:37</p>
+<hr />
+<h3 id="_waitfortransaction">_waitForTransaction</h3>
+<p>▸ <strong>_waitForTransaction</strong>(<code>transactionHash</code>, <code>confirmations</code>, <code>timeout</code>, <code>replaceable</code>): <code>Promise</code>&lt;<a href="../../interfaces/akashaproject_awf_sdk._internal_.TransactionReceipt/"><code>TransactionReceipt</code></a>></p>
+<h4 id="parameters_14">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>transactionHash</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>confirmations</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>timeout</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>replaceable</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>replaceable.data</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>replaceable.from</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>replaceable.nonce</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>replaceable.startBlock</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>replaceable.to</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>replaceable.value</code></td>
+<td align="left"><a href="../akashaproject_awf_sdk._internal_.BigNumber/"><code>BigNumber</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_23">Returns</h4>
+<p><code>Promise</code>&lt;<a href="../../interfaces/akashaproject_awf_sdk._internal_.TransactionReceipt/"><code>TransactionReceipt</code></a>></p>
+<h4 id="inherited-from_43">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#_waitfortransaction">_waitForTransaction</a></p>
+<h4 id="defined-in_46">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:101</p>
+<hr />
+<h3 id="_wraptransaction">_wrapTransaction</h3>
+<p>▸ <strong>_wrapTransaction</strong>(<code>tx</code>, <code>hash?</code>, <code>startBlock?</code>): <a href="../../interfaces/akashaproject_awf_sdk._internal_.TransactionResponse/"><code>TransactionResponse</code></a></p>
+<h4 id="parameters_15">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>tx</code></td>
+<td align="left"><a href="../../interfaces/akashaproject_awf_sdk._internal_.Transaction/"><code>Transaction</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>hash?</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>startBlock?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_24">Returns</h4>
+<p><a href="../../interfaces/akashaproject_awf_sdk._internal_.TransactionResponse/"><code>TransactionResponse</code></a></p>
+<h4 id="inherited-from_44">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#_wraptransaction">_wrapTransaction</a></p>
+<h4 id="defined-in_47">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:115</p>
+<hr />
+<h3 id="addlistener">addListener</h3>
+<p>▸ <strong>addListener</strong>(<code>eventName</code>, <code>listener</code>): <a href="../akashaproject_awf_sdk._internal_.Provider/"><code>Provider</code></a></p>
+<h4 id="parameters_16">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>eventName</code></td>
+<td align="left"><a href="../../modules/akashaproject_awf_sdk._internal_/#eventtype"><code>EventType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>listener</code></td>
+<td align="left"><a href="../../modules/akashaproject_awf_sdk._internal_/#listener"><code>Listener</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_25">Returns</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.Provider/"><code>Provider</code></a></p>
+<h4 id="inherited-from_45">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#addlistener">addListener</a></p>
+<h4 id="defined-in_48">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/abstract-provider/lib/index.d.ts:147</p>
+<hr />
+<h3 id="call">call</h3>
+<p>▸ <strong>call</strong>(<code>transaction</code>, <code>blockTag?</code>): <code>Promise</code>&lt;<code>string</code>></p>
+<h4 id="parameters_17">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>transaction</code></td>
+<td align="left"><a href="../../modules/akashaproject_awf_sdk._internal_/#deferrable"><code>Deferrable</code></a>&lt;<a href="../../modules/akashaproject_awf_sdk._internal_/#transactionrequest"><code>TransactionRequest</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>blockTag?</code></td>
+<td align="left"><a href="../../modules/akashaproject_awf_sdk._internal_/#blocktag"><code>BlockTag</code></a> | <code>Promise</code>&lt;<a href="../../modules/akashaproject_awf_sdk._internal_/#blocktag"><code>BlockTag</code></a>></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_26">Returns</h4>
+<p><code>Promise</code>&lt;<code>string</code>></p>
+<h4 id="inherited-from_46">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#call">call</a></p>
+<h4 id="defined-in_49">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:119</p>
+<hr />
+<h3 id="detectnetwork">detectNetwork</h3>
+<p>▸ <strong>detectNetwork</strong>(): <code>Promise</code>&lt;<a href="../../modules/akashaproject_awf_sdk._internal_/#network"><code>Network</code></a>></p>
+<h4 id="returns_27">Returns</h4>
+<p><code>Promise</code>&lt;<a href="../../modules/akashaproject_awf_sdk._internal_/#network"><code>Network</code></a>></p>
+<h4 id="inherited-from_47">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#detectnetwork">detectNetwork</a></p>
+<h4 id="defined-in_50">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/json-rpc-provider.d.ts:36</p>
+<hr />
+<h3 id="emit">emit</h3>
+<p>▸ <strong>emit</strong>(<code>eventName</code>, ...<code>args</code>): <code>boolean</code></p>
+<h4 id="parameters_18">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>eventName</code></td>
+<td align="left"><a href="../../modules/akashaproject_awf_sdk._internal_/#eventtype"><code>EventType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>...args</code></td>
+<td align="left"><code>any</code>[]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_28">Returns</h4>
+<p><code>boolean</code></p>
+<h4 id="inherited-from_48">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#emit">emit</a></p>
+<h4 id="defined-in_51">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:141</p>
+<hr />
+<h3 id="estimategas">estimateGas</h3>
+<p>▸ <strong>estimateGas</strong>(<code>transaction</code>): <code>Promise</code>&lt;<a href="../akashaproject_awf_sdk._internal_.BigNumber/"><code>BigNumber</code></a>></p>
+<h4 id="parameters_19">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>transaction</code></td>
+<td align="left"><a href="../../modules/akashaproject_awf_sdk._internal_/#deferrable"><code>Deferrable</code></a>&lt;<a href="../../modules/akashaproject_awf_sdk._internal_/#transactionrequest"><code>TransactionRequest</code></a>></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_29">Returns</h4>
+<p><code>Promise</code>&lt;<a href="../akashaproject_awf_sdk._internal_.BigNumber/"><code>BigNumber</code></a>></p>
+<h4 id="inherited-from_49">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#estimategas">estimateGas</a></p>
+<h4 id="defined-in_52">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:120</p>
+<hr />
+<h3 id="getavatar">getAvatar</h3>
+<p>▸ <strong>getAvatar</strong>(<code>nameOrAddress</code>): <code>Promise</code>&lt;<code>string</code>></p>
+<h4 id="parameters_20">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>nameOrAddress</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_30">Returns</h4>
+<p><code>Promise</code>&lt;<code>string</code>></p>
+<h4 id="inherited-from_50">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#getavatar">getAvatar</a></p>
+<h4 id="defined-in_53">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:134</p>
+<hr />
+<h3 id="getbalance">getBalance</h3>
+<p>▸ <strong>getBalance</strong>(<code>addressOrName</code>, <code>blockTag?</code>): <code>Promise</code>&lt;<a href="../akashaproject_awf_sdk._internal_.BigNumber/"><code>BigNumber</code></a>></p>
+<h4 id="parameters_21">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>addressOrName</code></td>
+<td align="left"><code>string</code> | <code>Promise</code>&lt;<code>string</code>></td>
+</tr>
+<tr>
+<td align="left"><code>blockTag?</code></td>
+<td align="left"><a href="../../modules/akashaproject_awf_sdk._internal_/#blocktag"><code>BlockTag</code></a> | <code>Promise</code>&lt;<a href="../../modules/akashaproject_awf_sdk._internal_/#blocktag"><code>BlockTag</code></a>></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_31">Returns</h4>
+<p><code>Promise</code>&lt;<a href="../akashaproject_awf_sdk._internal_.BigNumber/"><code>BigNumber</code></a>></p>
+<h4 id="inherited-from_51">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#getbalance">getBalance</a></p>
+<h4 id="defined-in_54">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:111</p>
+<hr />
+<h3 id="getblock">getBlock</h3>
+<p>▸ <strong>getBlock</strong>(<code>blockHashOrBlockTag</code>): <code>Promise</code>&lt;<a href="../../interfaces/akashaproject_awf_sdk._internal_.Block/"><code>Block</code></a>></p>
+<h4 id="parameters_22">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>blockHashOrBlockTag</code></td>
+<td align="left"><a href="../../modules/akashaproject_awf_sdk._internal_/#blocktag"><code>BlockTag</code></a> | <code>Promise</code>&lt;<a href="../../modules/akashaproject_awf_sdk._internal_/#blocktag"><code>BlockTag</code></a>></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_32">Returns</h4>
+<p><code>Promise</code>&lt;<a href="../../interfaces/akashaproject_awf_sdk._internal_.Block/"><code>Block</code></a>></p>
+<h4 id="inherited-from_52">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#getblock">getBlock</a></p>
+<h4 id="defined-in_55">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:123</p>
+<hr />
+<h3 id="getblocknumber">getBlockNumber</h3>
+<p>▸ <strong>getBlockNumber</strong>(): <code>Promise</code>&lt;<code>number</code>></p>
+<h4 id="returns_33">Returns</h4>
+<p><code>Promise</code>&lt;<code>number</code>></p>
+<h4 id="inherited-from_53">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#getblocknumber">getBlockNumber</a></p>
+<h4 id="defined-in_56">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:109</p>
+<hr />
+<h3 id="getblockwithtransactions">getBlockWithTransactions</h3>
+<p>▸ <strong>getBlockWithTransactions</strong>(<code>blockHashOrBlockTag</code>): <code>Promise</code>&lt;<a href="../../interfaces/akashaproject_awf_sdk._internal_.BlockWithTransactions/"><code>BlockWithTransactions</code></a>></p>
+<h4 id="parameters_23">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>blockHashOrBlockTag</code></td>
+<td align="left"><a href="../../modules/akashaproject_awf_sdk._internal_/#blocktag"><code>BlockTag</code></a> | <code>Promise</code>&lt;<a href="../../modules/akashaproject_awf_sdk._internal_/#blocktag"><code>BlockTag</code></a>></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_34">Returns</h4>
+<p><code>Promise</code>&lt;<a href="../../interfaces/akashaproject_awf_sdk._internal_.BlockWithTransactions/"><code>BlockWithTransactions</code></a>></p>
+<h4 id="inherited-from_54">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#getblockwithtransactions">getBlockWithTransactions</a></p>
+<h4 id="defined-in_57">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:124</p>
+<hr />
+<h3 id="getcode">getCode</h3>
+<p>▸ <strong>getCode</strong>(<code>addressOrName</code>, <code>blockTag?</code>): <code>Promise</code>&lt;<code>string</code>></p>
+<h4 id="parameters_24">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>addressOrName</code></td>
+<td align="left"><code>string</code> | <code>Promise</code>&lt;<code>string</code>></td>
+</tr>
+<tr>
+<td align="left"><code>blockTag?</code></td>
+<td align="left"><a href="../../modules/akashaproject_awf_sdk._internal_/#blocktag"><code>BlockTag</code></a> | <code>Promise</code>&lt;<a href="../../modules/akashaproject_awf_sdk._internal_/#blocktag"><code>BlockTag</code></a>></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_35">Returns</h4>
+<p><code>Promise</code>&lt;<code>string</code>></p>
+<h4 id="inherited-from_55">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#getcode">getCode</a></p>
+<h4 id="defined-in_58">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:113</p>
+<hr />
+<h3 id="getetherprice">getEtherPrice</h3>
+<p>▸ <strong>getEtherPrice</strong>(): <code>Promise</code>&lt;<code>number</code>></p>
+<h4 id="returns_36">Returns</h4>
+<p><code>Promise</code>&lt;<code>number</code>></p>
+<h4 id="inherited-from_56">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#getetherprice">getEtherPrice</a></p>
+<h4 id="defined-in_59">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:128</p>
+<hr />
+<h3 id="getfeedata">getFeeData</h3>
+<p>▸ <strong>getFeeData</strong>(): <code>Promise</code>&lt;<a href="../../interfaces/akashaproject_awf_sdk._internal_.FeeData/"><code>FeeData</code></a>></p>
+<h4 id="returns_37">Returns</h4>
+<p><code>Promise</code>&lt;<a href="../../interfaces/akashaproject_awf_sdk._internal_.FeeData/"><code>FeeData</code></a>></p>
+<h4 id="inherited-from_57">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#getfeedata">getFeeData</a></p>
+<h4 id="defined-in_60">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/abstract-provider/lib/index.d.ts:125</p>
+<hr />
+<h3 id="getgasprice">getGasPrice</h3>
+<p>▸ <strong>getGasPrice</strong>(): <code>Promise</code>&lt;<a href="../akashaproject_awf_sdk._internal_.BigNumber/"><code>BigNumber</code></a>></p>
+<h4 id="returns_38">Returns</h4>
+<p><code>Promise</code>&lt;<a href="../akashaproject_awf_sdk._internal_.BigNumber/"><code>BigNumber</code></a>></p>
+<h4 id="inherited-from_58">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#getgasprice">getGasPrice</a></p>
+<h4 id="defined-in_61">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:110</p>
+<hr />
+<h3 id="getlogs">getLogs</h3>
+<p>▸ <strong>getLogs</strong>(<code>filter</code>): <code>Promise</code>&lt;<a href="../../interfaces/akashaproject_awf_sdk._internal_.Log/"><code>Log</code></a>[]></p>
+<h4 id="parameters_25">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>filter</code></td>
+<td align="left"><a href="../../interfaces/akashaproject_awf_sdk._internal_.Filter/"><code>Filter</code></a> | <a href="../../interfaces/akashaproject_awf_sdk._internal_.FilterByBlockHash/"><code>FilterByBlockHash</code></a> | <code>Promise</code>&lt;<a href="../../interfaces/akashaproject_awf_sdk._internal_.Filter/"><code>Filter</code></a> | <a href="../../interfaces/akashaproject_awf_sdk._internal_.FilterByBlockHash/"><code>FilterByBlockHash</code></a>></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_39">Returns</h4>
+<p><code>Promise</code>&lt;<a href="../../interfaces/akashaproject_awf_sdk._internal_.Log/"><code>Log</code></a>[]></p>
+<h4 id="inherited-from_59">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#getlogs">getLogs</a></p>
+<h4 id="defined-in_62">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:127</p>
+<hr />
+<h3 id="getnetwork">getNetwork</h3>
+<p>▸ <strong>getNetwork</strong>(): <code>Promise</code>&lt;<a href="../../modules/akashaproject_awf_sdk._internal_/#network"><code>Network</code></a>></p>
+<h4 id="returns_40">Returns</h4>
+<p><code>Promise</code>&lt;<a href="../../modules/akashaproject_awf_sdk._internal_/#network"><code>Network</code></a>></p>
+<h4 id="inherited-from_60">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#getnetwork">getNetwork</a></p>
+<h4 id="defined-in_63">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:92</p>
+<hr />
+<h3 id="getresolver">getResolver</h3>
+<p>▸ <strong>getResolver</strong>(<code>name</code>): <code>Promise</code>&lt;<a href="../akashaproject_awf_sdk._internal_.Resolver/"><code>Resolver</code></a>></p>
+<h4 id="parameters_26">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>name</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_41">Returns</h4>
+<p><code>Promise</code>&lt;<a href="../akashaproject_awf_sdk._internal_.Resolver/"><code>Resolver</code></a>></p>
+<h4 id="inherited-from_61">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#getresolver">getResolver</a></p>
+<h4 id="defined-in_64">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:130</p>
+<hr />
+<h3 id="getsigner">getSigner</h3>
+<p>▸ <strong>getSigner</strong>(<code>addressOrIndex?</code>): <a href="../akashaproject_awf_sdk._internal_.JsonRpcSigner/"><code>JsonRpcSigner</code></a></p>
+<h4 id="parameters_27">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>addressOrIndex?</code></td>
+<td align="left"><code>string</code> | <code>number</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_42">Returns</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcSigner/"><code>JsonRpcSigner</code></a></p>
+<h4 id="inherited-from_62">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#getsigner">getSigner</a></p>
+<h4 id="defined-in_65">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/json-rpc-provider.d.ts:38</p>
+<hr />
+<h3 id="getstorageat">getStorageAt</h3>
+<p>▸ <strong>getStorageAt</strong>(<code>addressOrName</code>, <code>position</code>, <code>blockTag?</code>): <code>Promise</code>&lt;<code>string</code>></p>
+<h4 id="parameters_28">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>addressOrName</code></td>
+<td align="left"><code>string</code> | <code>Promise</code>&lt;<code>string</code>></td>
+</tr>
+<tr>
+<td align="left"><code>position</code></td>
+<td align="left"><a href="../../modules/akashaproject_awf_sdk._internal_/#bignumberish"><code>BigNumberish</code></a> | <code>Promise</code>&lt;<a href="../../modules/akashaproject_awf_sdk._internal_/#bignumberish"><code>BigNumberish</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>blockTag?</code></td>
+<td align="left"><a href="../../modules/akashaproject_awf_sdk._internal_/#blocktag"><code>BlockTag</code></a> | <code>Promise</code>&lt;<a href="../../modules/akashaproject_awf_sdk._internal_/#blocktag"><code>BlockTag</code></a>></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_43">Returns</h4>
+<p><code>Promise</code>&lt;<code>string</code>></p>
+<h4 id="inherited-from_63">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#getstorageat">getStorageAt</a></p>
+<h4 id="defined-in_66">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:114</p>
+<hr />
+<h3 id="gettransaction">getTransaction</h3>
+<p>▸ <strong>getTransaction</strong>(<code>transactionHash</code>): <code>Promise</code>&lt;<a href="../../interfaces/akashaproject_awf_sdk._internal_.TransactionResponse/"><code>TransactionResponse</code></a>></p>
+<h4 id="parameters_29">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>transactionHash</code></td>
+<td align="left"><code>string</code> | <code>Promise</code>&lt;<code>string</code>></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_44">Returns</h4>
+<p><code>Promise</code>&lt;<a href="../../interfaces/akashaproject_awf_sdk._internal_.TransactionResponse/"><code>TransactionResponse</code></a>></p>
+<h4 id="inherited-from_64">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#gettransaction">getTransaction</a></p>
+<h4 id="defined-in_67">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:125</p>
+<hr />
+<h3 id="gettransactioncount">getTransactionCount</h3>
+<p>▸ <strong>getTransactionCount</strong>(<code>addressOrName</code>, <code>blockTag?</code>): <code>Promise</code>&lt;<code>number</code>></p>
+<h4 id="parameters_30">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>addressOrName</code></td>
+<td align="left"><code>string</code> | <code>Promise</code>&lt;<code>string</code>></td>
+</tr>
+<tr>
+<td align="left"><code>blockTag?</code></td>
+<td align="left"><a href="../../modules/akashaproject_awf_sdk._internal_/#blocktag"><code>BlockTag</code></a> | <code>Promise</code>&lt;<a href="../../modules/akashaproject_awf_sdk._internal_/#blocktag"><code>BlockTag</code></a>></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_45">Returns</h4>
+<p><code>Promise</code>&lt;<code>number</code>></p>
+<h4 id="inherited-from_65">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#gettransactioncount">getTransactionCount</a></p>
+<h4 id="defined-in_68">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:112</p>
+<hr />
+<h3 id="gettransactionreceipt">getTransactionReceipt</h3>
+<p>▸ <strong>getTransactionReceipt</strong>(<code>transactionHash</code>): <code>Promise</code>&lt;<a href="../../interfaces/akashaproject_awf_sdk._internal_.TransactionReceipt/"><code>TransactionReceipt</code></a>></p>
+<h4 id="parameters_31">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>transactionHash</code></td>
+<td align="left"><code>string</code> | <code>Promise</code>&lt;<code>string</code>></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_46">Returns</h4>
+<p><code>Promise</code>&lt;<a href="../../interfaces/akashaproject_awf_sdk._internal_.TransactionReceipt/"><code>TransactionReceipt</code></a>></p>
+<h4 id="inherited-from_66">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#gettransactionreceipt">getTransactionReceipt</a></p>
+<h4 id="defined-in_69">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:126</p>
+<hr />
+<h3 id="getuncheckedsigner">getUncheckedSigner</h3>
+<p>▸ <strong>getUncheckedSigner</strong>(<code>addressOrIndex?</code>): <a href="../akashaproject_awf_sdk._internal_.UncheckedJsonRpcSigner/"><code>UncheckedJsonRpcSigner</code></a></p>
+<h4 id="parameters_32">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>addressOrIndex?</code></td>
+<td align="left"><code>string</code> | <code>number</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_47">Returns</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.UncheckedJsonRpcSigner/"><code>UncheckedJsonRpcSigner</code></a></p>
+<h4 id="inherited-from_67">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#getuncheckedsigner">getUncheckedSigner</a></p>
+<h4 id="defined-in_70">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/json-rpc-provider.d.ts:39</p>
+<hr />
+<h3 id="listaccounts">listAccounts</h3>
+<p>▸ <strong>listAccounts</strong>(): <code>Promise</code>&lt;<code>string</code>[]></p>
+<h4 id="returns_48">Returns</h4>
+<p><code>Promise</code>&lt;<code>string</code>[]></p>
+<h4 id="inherited-from_68">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#listaccounts">listAccounts</a></p>
+<h4 id="defined-in_71">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/json-rpc-provider.d.ts:40</p>
+<hr />
+<h3 id="listenercount">listenerCount</h3>
+<p>▸ <strong>listenerCount</strong>(<code>eventName?</code>): <code>number</code></p>
+<h4 id="parameters_33">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>eventName?</code></td>
+<td align="left"><a href="../../modules/akashaproject_awf_sdk._internal_/#eventtype"><code>EventType</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_49">Returns</h4>
+<p><code>number</code></p>
+<h4 id="inherited-from_69">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#listenercount">listenerCount</a></p>
+<h4 id="defined-in_72">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:142</p>
+<hr />
+<h3 id="listeners">listeners</h3>
+<p>▸ <strong>listeners</strong>(<code>eventName?</code>): <a href="../../modules/akashaproject_awf_sdk._internal_/#listener"><code>Listener</code></a>[]</p>
+<h4 id="parameters_34">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>eventName?</code></td>
+<td align="left"><a href="../../modules/akashaproject_awf_sdk._internal_/#eventtype"><code>EventType</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_50">Returns</h4>
+<p><a href="../../modules/akashaproject_awf_sdk._internal_/#listener"><code>Listener</code></a>[]</p>
+<h4 id="inherited-from_70">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#listeners">listeners</a></p>
+<h4 id="defined-in_73">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:143</p>
+<hr />
+<h3 id="lookupaddress">lookupAddress</h3>
+<p>▸ <strong>lookupAddress</strong>(<code>address</code>): <code>Promise</code>&lt;<code>string</code>></p>
+<h4 id="parameters_35">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>address</code></td>
+<td align="left"><code>string</code> | <code>Promise</code>&lt;<code>string</code>></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_51">Returns</h4>
+<p><code>Promise</code>&lt;<code>string</code>></p>
+<h4 id="inherited-from_71">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#lookupaddress">lookupAddress</a></p>
+<h4 id="defined-in_74">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:133</p>
+<hr />
+<h3 id="off">off</h3>
+<p>▸ <strong>off</strong>(<code>eventName</code>, <code>listener?</code>): <a href="./"><code>Web3Provider</code></a></p>
+<h4 id="parameters_36">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>eventName</code></td>
+<td align="left"><a href="../../modules/akashaproject_awf_sdk._internal_/#eventtype"><code>EventType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>listener?</code></td>
+<td align="left"><a href="../../modules/akashaproject_awf_sdk._internal_/#listener"><code>Listener</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_52">Returns</h4>
+<p><a href="./"><code>Web3Provider</code></a></p>
+<h4 id="inherited-from_72">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#off">off</a></p>
+<h4 id="defined-in_75">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:144</p>
+<hr />
+<h3 id="on">on</h3>
+<p>▸ <strong>on</strong>(<code>eventName</code>, <code>listener</code>): <a href="./"><code>Web3Provider</code></a></p>
+<h4 id="parameters_37">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>eventName</code></td>
+<td align="left"><a href="../../modules/akashaproject_awf_sdk._internal_/#eventtype"><code>EventType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>listener</code></td>
+<td align="left"><a href="../../modules/akashaproject_awf_sdk._internal_/#listener"><code>Listener</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_53">Returns</h4>
+<p><a href="./"><code>Web3Provider</code></a></p>
+<h4 id="inherited-from_73">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#on">on</a></p>
+<h4 id="defined-in_76">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:139</p>
+<hr />
+<h3 id="once">once</h3>
+<p>▸ <strong>once</strong>(<code>eventName</code>, <code>listener</code>): <a href="./"><code>Web3Provider</code></a></p>
+<h4 id="parameters_38">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>eventName</code></td>
+<td align="left"><a href="../../modules/akashaproject_awf_sdk._internal_/#eventtype"><code>EventType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>listener</code></td>
+<td align="left"><a href="../../modules/akashaproject_awf_sdk._internal_/#listener"><code>Listener</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_54">Returns</h4>
+<p><a href="./"><code>Web3Provider</code></a></p>
+<h4 id="inherited-from_74">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#once">once</a></p>
+<h4 id="defined-in_77">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:140</p>
+<hr />
+<h3 id="perform">perform</h3>
+<p>▸ <strong>perform</strong>(<code>method</code>, <code>params</code>): <code>Promise</code>&lt;<code>any</code>></p>
+<h4 id="parameters_39">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>method</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>params</code></td>
+<td align="left"><code>any</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_55">Returns</h4>
+<p><code>Promise</code>&lt;<code>any</code>></p>
+<h4 id="inherited-from_75">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#perform">perform</a></p>
+<h4 id="defined-in_78">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/json-rpc-provider.d.ts:43</p>
+<hr />
+<h3 id="poll">poll</h3>
+<p>▸ <strong>poll</strong>(): <code>Promise</code>&lt;<code>void</code>></p>
+<h4 id="returns_56">Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>></p>
+<h4 id="inherited-from_76">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#poll">poll</a></p>
+<h4 id="defined-in_79">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:88</p>
+<hr />
+<h3 id="preparerequest">prepareRequest</h3>
+<p>▸ <strong>prepareRequest</strong>(<code>method</code>, <code>params</code>): [<code>string</code>, <code>any</code>[]]</p>
+<h4 id="parameters_40">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>method</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>params</code></td>
+<td align="left"><code>any</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_57">Returns</h4>
+<p>[<code>string</code>, <code>any</code>[]]</p>
+<h4 id="inherited-from_77">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#preparerequest">prepareRequest</a></p>
+<h4 id="defined-in_80">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/json-rpc-provider.d.ts:42</p>
+<hr />
+<h3 id="removealllisteners">removeAllListeners</h3>
+<p>▸ <strong>removeAllListeners</strong>(<code>eventName?</code>): <a href="./"><code>Web3Provider</code></a></p>
+<h4 id="parameters_41">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>eventName?</code></td>
+<td align="left"><a href="../../modules/akashaproject_awf_sdk._internal_/#eventtype"><code>EventType</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_58">Returns</h4>
+<p><a href="./"><code>Web3Provider</code></a></p>
+<h4 id="inherited-from_78">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#removealllisteners">removeAllListeners</a></p>
+<h4 id="defined-in_81">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:145</p>
+<hr />
+<h3 id="removelistener">removeListener</h3>
+<p>▸ <strong>removeListener</strong>(<code>eventName</code>, <code>listener</code>): <a href="../akashaproject_awf_sdk._internal_.Provider/"><code>Provider</code></a></p>
+<h4 id="parameters_42">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>eventName</code></td>
+<td align="left"><a href="../../modules/akashaproject_awf_sdk._internal_/#eventtype"><code>EventType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>listener</code></td>
+<td align="left"><a href="../../modules/akashaproject_awf_sdk._internal_/#listener"><code>Listener</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_59">Returns</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.Provider/"><code>Provider</code></a></p>
+<h4 id="inherited-from_79">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#removelistener">removeListener</a></p>
+<h4 id="defined-in_82">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/abstract-provider/lib/index.d.ts:148</p>
+<hr />
+<h3 id="reseteventsblock">resetEventsBlock</h3>
+<p>▸ <strong>resetEventsBlock</strong>(<code>blockNumber</code>): <code>void</code></p>
+<h4 id="parameters_43">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>blockNumber</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_60">Returns</h4>
+<p><code>void</code></p>
+<h4 id="inherited-from_80">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#reseteventsblock">resetEventsBlock</a></p>
+<h4 id="defined-in_83">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:89</p>
+<hr />
+<h3 id="resolvename">resolveName</h3>
+<p>▸ <strong>resolveName</strong>(<code>name</code>): <code>Promise</code>&lt;<code>string</code>></p>
+<h4 id="parameters_44">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>name</code></td>
+<td align="left"><code>string</code> | <code>Promise</code>&lt;<code>string</code>></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_61">Returns</h4>
+<p><code>Promise</code>&lt;<code>string</code>></p>
+<h4 id="inherited-from_81">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#resolvename">resolveName</a></p>
+<h4 id="defined-in_84">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:132</p>
+<hr />
+<h3 id="send">send</h3>
+<p>▸ <strong>send</strong>(<code>method</code>, <code>params</code>): <code>Promise</code>&lt;<code>any</code>></p>
+<h4 id="parameters_45">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>method</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>params</code></td>
+<td align="left"><code>any</code>[]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_62">Returns</h4>
+<p><code>Promise</code>&lt;<code>any</code>></p>
+<h4 id="overrides_1">Overrides</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#send">send</a></p>
+<h4 id="defined-in_85">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/web3-provider.d.ts:26</p>
+<hr />
+<h3 id="sendtransaction">sendTransaction</h3>
+<p>▸ <strong>sendTransaction</strong>(<code>signedTransaction</code>): <code>Promise</code>&lt;<a href="../../interfaces/akashaproject_awf_sdk._internal_.TransactionResponse/"><code>TransactionResponse</code></a>></p>
+<h4 id="parameters_46">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>signedTransaction</code></td>
+<td align="left"><code>string</code> | <code>Promise</code>&lt;<code>string</code>></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_63">Returns</h4>
+<p><code>Promise</code>&lt;<a href="../../interfaces/akashaproject_awf_sdk._internal_.TransactionResponse/"><code>TransactionResponse</code></a>></p>
+<h4 id="inherited-from_82">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#sendtransaction">sendTransaction</a></p>
+<h4 id="defined-in_86">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:116</p>
+<hr />
+<h3 id="waitfortransaction">waitForTransaction</h3>
+<p>▸ <strong>waitForTransaction</strong>(<code>transactionHash</code>, <code>confirmations?</code>, <code>timeout?</code>): <code>Promise</code>&lt;<a href="../../interfaces/akashaproject_awf_sdk._internal_.TransactionReceipt/"><code>TransactionReceipt</code></a>></p>
+<h4 id="parameters_47">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>transactionHash</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>confirmations?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>timeout?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_64">Returns</h4>
+<p><code>Promise</code>&lt;<a href="../../interfaces/akashaproject_awf_sdk._internal_.TransactionReceipt/"><code>TransactionReceipt</code></a>></p>
+<h4 id="inherited-from_83">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#waitfortransaction">waitForTransaction</a></p>
+<h4 id="defined-in_87">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:100</p>
+<hr />
+<h3 id="defaulturl">defaultUrl</h3>
+<p>▸ <code>Static</code> <strong>defaultUrl</strong>(): <code>string</code></p>
+<h4 id="returns_65">Returns</h4>
+<p><code>string</code></p>
+<h4 id="inherited-from_84">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#defaulturl">defaultUrl</a></p>
+<h4 id="defined-in_88">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/json-rpc-provider.d.ts:35</p>
+<hr />
+<h3 id="getformatter">getFormatter</h3>
+<p>▸ <code>Static</code> <strong>getFormatter</strong>(): <a href="../akashaproject_awf_sdk._internal_.Formatter/"><code>Formatter</code></a></p>
+<h4 id="returns_66">Returns</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.Formatter/"><code>Formatter</code></a></p>
+<h4 id="inherited-from_85">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#getformatter">getFormatter</a></p>
+<h4 id="defined-in_89">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:85</p>
+<hr />
+<h3 id="getnetwork_1">getNetwork</h3>
+<p>▸ <code>Static</code> <strong>getNetwork</strong>(<code>network</code>): <a href="../../modules/akashaproject_awf_sdk._internal_/#network"><code>Network</code></a></p>
+<h4 id="parameters_48">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>network</code></td>
+<td align="left"><a href="../../modules/akashaproject_awf_sdk._internal_/#networkish"><code>Networkish</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_67">Returns</h4>
+<p><a href="../../modules/akashaproject_awf_sdk._internal_/#network"><code>Network</code></a></p>
+<h4 id="inherited-from_86">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#getnetwork">getNetwork</a></p>
+<h4 id="defined-in_90">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/base-provider.d.ts:86</p>
+<hr />
+<h3 id="hexlifytransaction">hexlifyTransaction</h3>
+<p>▸ <code>Static</code> <strong>hexlifyTransaction</strong>(<code>transaction</code>, <code>allowExtra?</code>): <code>Object</code></p>
+<h4 id="parameters_49">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>transaction</code></td>
+<td align="left"><a href="../../modules/akashaproject_awf_sdk._internal_/#transactionrequest"><code>TransactionRequest</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>allowExtra?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_68">Returns</h4>
+<p><code>Object</code></p>
+<h4 id="inherited-from_87">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#hexlifytransaction">hexlifyTransaction</a></p>
+<h4 id="defined-in_91">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/providers/lib/json-rpc-provider.d.ts:47</p>
+<hr />
+<h3 id="isprovider">isProvider</h3>
+<p>▸ <code>Static</code> <strong>isProvider</strong>(<code>value</code>): value is Provider</p>
+<h4 id="parameters_50">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>value</code></td>
+<td align="left"><code>any</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_69">Returns</h4>
+<p>value is Provider</p>
+<h4 id="inherited-from_88">Inherited from</h4>
+<p><a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/">JsonRpcProvider</a>.<a href="../akashaproject_awf_sdk._internal_.JsonRpcProvider/#isprovider">isProvider</a></p>
+<h4 id="defined-in_92">Defined in</h4>
+<p>sdk/node_modules/@ethersproject/abstract-provider/lib/index.d.ts:152</p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.22074ed6.min.js"}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.01de222e.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,2012 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.7">
+    
+    
+      
+        <title>akashaproject design system. internal .IStatModal - AKASHA World Framework docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.cd566b2a.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#interface-istatmodal" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="AKASHA World Framework docs" class="md-header__button md-logo" aria-label="AKASHA World Framework docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AKASHA World Framework docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              akashaproject design system. internal .IStatModal
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="AKASHA World Framework docs" class="md-nav__button md-logo" aria-label="AKASHA World Framework docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    AKASHA World Framework docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modules/" class="md-nav__link">
+        API
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hierarchy" class="md-nav__link">
+    Hierarchy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    Table of contents
+  </a>
+  
+    <nav class="md-nav" aria-label="Table of contents">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    Properties
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    Methods
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties_1" class="md-nav__link">
+    Properties
+  </a>
+  
+    <nav class="md-nav" aria-label="Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#activeindex" class="md-nav__link">
+    activeIndex
+  </a>
+  
+    <nav class="md-nav" aria-label="activeIndex">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buttonlabel" class="md-nav__link">
+    buttonLabel
+  </a>
+  
+    <nav class="md-nav" aria-label="buttonLabel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_1" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#classname" class="md-nav__link">
+    className
+  </a>
+  
+    <nav class="md-nav" aria-label="className">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_2" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#errorsubtitlelabel" class="md-nav__link">
+    errorSubtitleLabel
+  </a>
+  
+    <nav class="md-nav" aria-label="errorSubtitleLabel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_3" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#errortitlelabel" class="md-nav__link">
+    errorTitleLabel
+  </a>
+  
+    <nav class="md-nav" aria-label="errorTitleLabel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_4" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#followlabel" class="md-nav__link">
+    followLabel
+  </a>
+  
+    <nav class="md-nav" aria-label="followLabel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_5" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#followedprofiles" class="md-nav__link">
+    followedProfiles
+  </a>
+  
+    <nav class="md-nav" aria-label="followedProfiles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_1" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_6" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#followers" class="md-nav__link">
+    followers
+  </a>
+  
+    <nav class="md-nav" aria-label="followers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_7" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#followerspages" class="md-nav__link">
+    followersPages
+  </a>
+  
+    <nav class="md-nav" aria-label="followersPages">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_8" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#followersreqstatus" class="md-nav__link">
+    followersReqStatus
+  </a>
+  
+    <nav class="md-nav" aria-label="followersReqStatus">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_9" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#following" class="md-nav__link">
+    following
+  </a>
+  
+    <nav class="md-nav" aria-label="following">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_10" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#followinglabel" class="md-nav__link">
+    followingLabel
+  </a>
+  
+    <nav class="md-nav" aria-label="followingLabel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_2" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_11" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#followingpages" class="md-nav__link">
+    followingPages
+  </a>
+  
+    <nav class="md-nav" aria-label="followingPages">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_12" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#followingreqstatus" class="md-nav__link">
+    followingReqStatus
+  </a>
+  
+    <nav class="md-nav" aria-label="followingReqStatus">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_13" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hasnextpage" class="md-nav__link">
+    hasNextPage
+  </a>
+  
+    <nav class="md-nav" aria-label="hasNextPage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_3" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_14" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interests" class="md-nav__link">
+    interests
+  </a>
+  
+    <nav class="md-nav" aria-label="interests">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_15" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interestsreqstatus" class="md-nav__link">
+    interestsReqStatus
+  </a>
+  
+    <nav class="md-nav" aria-label="interestsReqStatus">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_16" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ipfsgateway" class="md-nav__link">
+    ipfsGateway
+  </a>
+  
+    <nav class="md-nav" aria-label="ipfsGateway">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_4" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_17" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loadingmorelabel" class="md-nav__link">
+    loadingMoreLabel
+  </a>
+  
+    <nav class="md-nav" aria-label="loadingMoreLabel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_5" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_18" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loggeduser" class="md-nav__link">
+    loggedUser
+  </a>
+  
+    <nav class="md-nav" aria-label="loggedUser">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_6" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_19" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pages" class="md-nav__link">
+    pages
+  </a>
+  
+    <nav class="md-nav" aria-label="pages">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_7" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_20" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#placeholdersubtitlelabel" class="md-nav__link">
+    placeholderSubtitleLabel
+  </a>
+  
+    <nav class="md-nav" aria-label="placeholderSubtitleLabel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_21" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#placeholdertitlelabel" class="md-nav__link">
+    placeholderTitleLabel
+  </a>
+  
+    <nav class="md-nav" aria-label="placeholderTitleLabel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_22" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#profileanchorlink" class="md-nav__link">
+    profileAnchorLink
+  </a>
+  
+    <nav class="md-nav" aria-label="profileAnchorLink">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_8" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_23" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setactiveindex" class="md-nav__link">
+    setActiveIndex
+  </a>
+  
+    <nav class="md-nav" aria-label="setActiveIndex">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_24" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stats" class="md-nav__link">
+    stats
+  </a>
+  
+    <nav class="md-nav" aria-label="stats">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_25" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#status" class="md-nav__link">
+    status
+  </a>
+  
+    <nav class="md-nav" aria-label="status">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_9" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_26" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subscribelabel" class="md-nav__link">
+    subscribeLabel
+  </a>
+  
+    <nav class="md-nav" aria-label="subscribeLabel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_10" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_27" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subscribedlabel" class="md-nav__link">
+    subscribedLabel
+  </a>
+  
+    <nav class="md-nav" aria-label="subscribedLabel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_11" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_28" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subscribedtags" class="md-nav__link">
+    subscribedTags
+  </a>
+  
+    <nav class="md-nav" aria-label="subscribedTags">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_12" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_29" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tablabelsarr" class="md-nav__link">
+    tabLabelsArr
+  </a>
+  
+    <nav class="md-nav" aria-label="tabLabelsArr">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_30" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#taganchorlink" class="md-nav__link">
+    tagAnchorLink
+  </a>
+  
+    <nav class="md-nav" aria-label="tagAnchorLink">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_13" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_31" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tags" class="md-nav__link">
+    tags
+  </a>
+  
+    <nav class="md-nav" aria-label="tags">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_14" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_32" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#titlelabel" class="md-nav__link">
+    titleLabel
+  </a>
+  
+    <nav class="md-nav" aria-label="titleLabel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_33" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unfollowlabel" class="md-nav__link">
+    unfollowLabel
+  </a>
+  
+    <nav class="md-nav" aria-label="unfollowLabel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_15" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_34" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unsubscribelabel" class="md-nav__link">
+    unsubscribeLabel
+  </a>
+  
+    <nav class="md-nav" aria-label="unsubscribeLabel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_16" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_35" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#methods_1" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#closemodal" class="md-nav__link">
+    closeModal
+  </a>
+  
+    <nav class="md-nav" aria-label="closeModal">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_36" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#handlebuttonclick" class="md-nav__link">
+    handleButtonClick
+  </a>
+  
+    <nav class="md-nav" aria-label="handleButtonClick">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_1" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_37" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#handlefollowprofile" class="md-nav__link">
+    handleFollowProfile
+  </a>
+  
+    <nav class="md-nav" aria-label="handleFollowProfile">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_2" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_17" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_38" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#handlesubscribetag" class="md-nav__link">
+    handleSubscribeTag
+  </a>
+  
+    <nav class="md-nav" aria-label="handleSubscribeTag">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_1" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_3" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_18" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_39" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#handleunfollowprofile" class="md-nav__link">
+    handleUnfollowProfile
+  </a>
+  
+    <nav class="md-nav" aria-label="handleUnfollowProfile">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_2" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_4" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_19" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_40" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#handleunsubscribetag" class="md-nav__link">
+    handleUnsubscribeTag
+  </a>
+  
+    <nav class="md-nav" aria-label="handleUnsubscribeTag">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_3" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_5" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_20" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_41" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loadmorefollowers" class="md-nav__link">
+    loadMoreFollowers
+  </a>
+  
+    <nav class="md-nav" aria-label="loadMoreFollowers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_6" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_42" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loadmorefollowing" class="md-nav__link">
+    loadMoreFollowing
+  </a>
+  
+    <nav class="md-nav" aria-label="loadMoreFollowing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_7" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_43" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onclickprofile" class="md-nav__link">
+    onClickProfile
+  </a>
+  
+    <nav class="md-nav" aria-label="onClickProfile">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_4" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_8" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_21" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_44" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onclicktag" class="md-nav__link">
+    onClickTag
+  </a>
+  
+    <nav class="md-nav" aria-label="onClickTag">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_5" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_9" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_22" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_45" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onloadmore" class="md-nav__link">
+    onLoadMore
+  </a>
+  
+    <nav class="md-nav" aria-label="onLoadMore">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_10" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_23" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_46" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+<p><a href="../../">AWF</a> / <a href="../../modules/">Modules</a> / <a href="../../modules/akashaproject_design_system/">@akashaproject/design-system</a> / <a href="../../modules/akashaproject_design_system._internal_/">&lt;internal></a> / IStatModal</p>
+<h1 id="interface-istatmodal">Interface: IStatModal</h1>
+<p><a href="../../modules/akashaproject_design_system/">@akashaproject/design-system</a>.<a href="../../modules/akashaproject_design_system._internal_/"><internal></a>.IStatModal</p>
+<h2 id="hierarchy">Hierarchy</h2>
+<ul>
+<li>
+<p><a href="../akashaproject_design_system._internal_.IProfileEntry/"><code>IProfileEntry</code></a></p>
+</li>
+<li>
+<p><a href="../akashaproject_design_system._internal_.ITagEntry/"><code>ITagEntry</code></a></p>
+</li>
+</ul>
+<p>↳ <strong><code>IStatModal</code></strong></p>
+<h2 id="table-of-contents">Table of contents</h2>
+<h3 id="properties">Properties</h3>
+<ul>
+<li><a href="./#activeindex">activeIndex</a></li>
+<li><a href="./#buttonlabel">buttonLabel</a></li>
+<li><a href="./#classname">className</a></li>
+<li><a href="./#errorsubtitlelabel">errorSubtitleLabel</a></li>
+<li><a href="./#errortitlelabel">errorTitleLabel</a></li>
+<li><a href="./#followlabel">followLabel</a></li>
+<li><a href="./#followedprofiles">followedProfiles</a></li>
+<li><a href="./#followers">followers</a></li>
+<li><a href="./#followerspages">followersPages</a></li>
+<li><a href="./#followersreqstatus">followersReqStatus</a></li>
+<li><a href="./#following">following</a></li>
+<li><a href="./#followinglabel">followingLabel</a></li>
+<li><a href="./#followingpages">followingPages</a></li>
+<li><a href="./#followingreqstatus">followingReqStatus</a></li>
+<li><a href="./#hasnextpage">hasNextPage</a></li>
+<li><a href="./#interests">interests</a></li>
+<li><a href="./#interestsreqstatus">interestsReqStatus</a></li>
+<li><a href="./#ipfsgateway">ipfsGateway</a></li>
+<li><a href="./#loadingmorelabel">loadingMoreLabel</a></li>
+<li><a href="./#loggeduser">loggedUser</a></li>
+<li><a href="./#pages">pages</a></li>
+<li><a href="./#placeholdersubtitlelabel">placeholderSubtitleLabel</a></li>
+<li><a href="./#placeholdertitlelabel">placeholderTitleLabel</a></li>
+<li><a href="./#profileanchorlink">profileAnchorLink</a></li>
+<li><a href="./#setactiveindex">setActiveIndex</a></li>
+<li><a href="./#stats">stats</a></li>
+<li><a href="./#status">status</a></li>
+<li><a href="./#subscribelabel">subscribeLabel</a></li>
+<li><a href="./#subscribedlabel">subscribedLabel</a></li>
+<li><a href="./#subscribedtags">subscribedTags</a></li>
+<li><a href="./#tablabelsarr">tabLabelsArr</a></li>
+<li><a href="./#taganchorlink">tagAnchorLink</a></li>
+<li><a href="./#tags">tags</a></li>
+<li><a href="./#titlelabel">titleLabel</a></li>
+<li><a href="./#unfollowlabel">unfollowLabel</a></li>
+<li><a href="./#unsubscribelabel">unsubscribeLabel</a></li>
+</ul>
+<h3 id="methods">Methods</h3>
+<ul>
+<li><a href="./#closemodal">closeModal</a></li>
+<li><a href="./#handlebuttonclick">handleButtonClick</a></li>
+<li><a href="./#handlefollowprofile">handleFollowProfile</a></li>
+<li><a href="./#handlesubscribetag">handleSubscribeTag</a></li>
+<li><a href="./#handleunfollowprofile">handleUnfollowProfile</a></li>
+<li><a href="./#handleunsubscribetag">handleUnsubscribeTag</a></li>
+<li><a href="./#loadmorefollowers">loadMoreFollowers</a></li>
+<li><a href="./#loadmorefollowing">loadMoreFollowing</a></li>
+<li><a href="./#onclickprofile">onClickProfile</a></li>
+<li><a href="./#onclicktag">onClickTag</a></li>
+<li><a href="./#onloadmore">onLoadMore</a></li>
+</ul>
+<h2 id="properties_1">Properties</h2>
+<h3 id="activeindex">activeIndex</h3>
+<p>• <strong>activeIndex</strong>: <code>number</code></p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/StatModal/index.tsx#L23">ui/design/src/components/StatModal/index.tsx:23</a></p>
+<hr />
+<h3 id="buttonlabel">buttonLabel</h3>
+<p>• <strong>buttonLabel</strong>: <code>string</code></p>
+<h4 id="defined-in_1">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/StatModal/index.tsx#L34">ui/design/src/components/StatModal/index.tsx:34</a></p>
+<hr />
+<h3 id="classname">className</h3>
+<p>• <code>Optional</code> <strong>className</strong>: <code>string</code></p>
+<h4 id="defined-in_2">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/StatModal/index.tsx#L22">ui/design/src/components/StatModal/index.tsx:22</a></p>
+<hr />
+<h3 id="errorsubtitlelabel">errorSubtitleLabel</h3>
+<p>• <strong>errorSubtitleLabel</strong>: <code>string</code></p>
+<h4 id="defined-in_3">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/StatModal/index.tsx#L31">ui/design/src/components/StatModal/index.tsx:31</a></p>
+<hr />
+<h3 id="errortitlelabel">errorTitleLabel</h3>
+<p>• <strong>errorTitleLabel</strong>: <code>string</code></p>
+<h4 id="defined-in_4">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/StatModal/index.tsx#L30">ui/design/src/components/StatModal/index.tsx:30</a></p>
+<hr />
+<h3 id="followlabel">followLabel</h3>
+<p>• <strong>followLabel</strong>: <code>string</code></p>
+<h4 id="inherited-from">Inherited from</h4>
+<p><a href="../akashaproject_design_system._internal_.IProfileEntry/">IProfileEntry</a>.<a href="../akashaproject_design_system._internal_.IProfileEntry/#followlabel">followLabel</a></p>
+<h4 id="defined-in_5">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/StatModal/profile-entry.tsx#L19">ui/design/src/components/StatModal/profile-entry.tsx:19</a></p>
+<hr />
+<h3 id="followedprofiles">followedProfiles</h3>
+<p>• <code>Optional</code> <strong>followedProfiles</strong>: <code>string</code>[]</p>
+<h4 id="inherited-from_1">Inherited from</h4>
+<p><a href="../akashaproject_design_system._internal_.IProfileEntry/">IProfileEntry</a>.<a href="../akashaproject_design_system._internal_.IProfileEntry/#followedprofiles">followedProfiles</a></p>
+<h4 id="defined-in_6">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/StatModal/profile-entry.tsx#L17">ui/design/src/components/StatModal/profile-entry.tsx:17</a></p>
+<hr />
+<h3 id="followers">followers</h3>
+<p>• <code>Optional</code> <strong>followers</strong>: <a href="../akashaproject_design_system._internal_.IProfileData/"><code>IProfileData</code></a>[]</p>
+<h4 id="defined-in_7">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/StatModal/index.tsx#L36">ui/design/src/components/StatModal/index.tsx:36</a></p>
+<hr />
+<h3 id="followerspages">followersPages</h3>
+<p>• <strong>followersPages</strong>: <a href="../akashaproject_design_system._internal_.UserFollowers_Response/"><code>UserFollowers_Response</code></a>[]</p>
+<h4 id="defined-in_8">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/StatModal/index.tsx#L44">ui/design/src/components/StatModal/index.tsx:44</a></p>
+<hr />
+<h3 id="followersreqstatus">followersReqStatus</h3>
+<p>• <strong>followersReqStatus</strong>: <a href="../../modules/akashaproject_design_system._internal_/#querystatus"><code>QueryStatus</code></a></p>
+<h4 id="defined-in_9">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/StatModal/index.tsx#L40">ui/design/src/components/StatModal/index.tsx:40</a></p>
+<hr />
+<h3 id="following">following</h3>
+<p>• <code>Optional</code> <strong>following</strong>: <a href="../akashaproject_design_system._internal_.IProfileData/"><code>IProfileData</code></a>[]</p>
+<h4 id="defined-in_10">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/StatModal/index.tsx#L37">ui/design/src/components/StatModal/index.tsx:37</a></p>
+<hr />
+<h3 id="followinglabel">followingLabel</h3>
+<p>• <strong>followingLabel</strong>: <code>string</code></p>
+<h4 id="inherited-from_2">Inherited from</h4>
+<p><a href="../akashaproject_design_system._internal_.IProfileEntry/">IProfileEntry</a>.<a href="../akashaproject_design_system._internal_.IProfileEntry/#followinglabel">followingLabel</a></p>
+<h4 id="defined-in_11">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/StatModal/profile-entry.tsx#L21">ui/design/src/components/StatModal/profile-entry.tsx:21</a></p>
+<hr />
+<h3 id="followingpages">followingPages</h3>
+<p>• <strong>followingPages</strong>: <a href="../akashaproject_design_system._internal_.UserFollowers_Response/"><code>UserFollowers_Response</code></a>[]</p>
+<h4 id="defined-in_12">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/StatModal/index.tsx#L45">ui/design/src/components/StatModal/index.tsx:45</a></p>
+<hr />
+<h3 id="followingreqstatus">followingReqStatus</h3>
+<p>• <strong>followingReqStatus</strong>: <a href="../../modules/akashaproject_design_system._internal_/#querystatus"><code>QueryStatus</code></a></p>
+<h4 id="defined-in_13">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/StatModal/index.tsx#L41">ui/design/src/components/StatModal/index.tsx:41</a></p>
+<hr />
+<h3 id="hasnextpage">hasNextPage</h3>
+<p>• <code>Optional</code> <strong>hasNextPage</strong>: <code>boolean</code></p>
+<h4 id="inherited-from_3">Inherited from</h4>
+<p><a href="../akashaproject_design_system._internal_.IProfileEntry/">IProfileEntry</a>.<a href="../akashaproject_design_system._internal_.IProfileEntry/#hasnextpage">hasNextPage</a></p>
+<h4 id="defined-in_14">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/StatModal/profile-entry.tsx#L29">ui/design/src/components/StatModal/profile-entry.tsx:29</a></p>
+<hr />
+<h3 id="interests">interests</h3>
+<p>• <code>Optional</code> <strong>interests</strong>: <a href="../akashaproject_design_system._internal_.ITag/"><code>ITag</code></a>[]</p>
+<h4 id="defined-in_15">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/StatModal/index.tsx#L38">ui/design/src/components/StatModal/index.tsx:38</a></p>
+<hr />
+<h3 id="interestsreqstatus">interestsReqStatus</h3>
+<p>• <strong>interestsReqStatus</strong>: <a href="../../modules/akashaproject_design_system._internal_/#querystatus"><code>QueryStatus</code></a></p>
+<h4 id="defined-in_16">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/StatModal/index.tsx#L42">ui/design/src/components/StatModal/index.tsx:42</a></p>
+<hr />
+<h3 id="ipfsgateway">ipfsGateway</h3>
+<p>• <code>Optional</code> <strong>ipfsGateway</strong>: <code>string</code></p>
+<h4 id="inherited-from_4">Inherited from</h4>
+<p><a href="../akashaproject_design_system._internal_.IProfileEntry/">IProfileEntry</a>.<a href="../akashaproject_design_system._internal_.IProfileEntry/#ipfsgateway">ipfsGateway</a></p>
+<h4 id="defined-in_17">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/StatModal/profile-entry.tsx#L12">ui/design/src/components/StatModal/profile-entry.tsx:12</a></p>
+<hr />
+<h3 id="loadingmorelabel">loadingMoreLabel</h3>
+<p>• <code>Optional</code> <strong>loadingMoreLabel</strong>: <code>string</code></p>
+<h4 id="inherited-from_5">Inherited from</h4>
+<p><a href="../akashaproject_design_system._internal_.IProfileEntry/">IProfileEntry</a>.<a href="../akashaproject_design_system._internal_.IProfileEntry/#loadingmorelabel">loadingMoreLabel</a></p>
+<h4 id="defined-in_18">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/StatModal/profile-entry.tsx#L30">ui/design/src/components/StatModal/profile-entry.tsx:30</a></p>
+<hr />
+<h3 id="loggeduser">loggedUser</h3>
+<p>• <code>Optional</code> <strong>loggedUser</strong>: <code>string</code></p>
+<h4 id="inherited-from_6">Inherited from</h4>
+<p><a href="../akashaproject_design_system._internal_.IProfileEntry/">IProfileEntry</a>.<a href="../akashaproject_design_system._internal_.IProfileEntry/#loggeduser">loggedUser</a></p>
+<h4 id="defined-in_19">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/StatModal/profile-entry.tsx#L15">ui/design/src/components/StatModal/profile-entry.tsx:15</a></p>
+<hr />
+<h3 id="pages">pages</h3>
+<p>• <code>Optional</code> <strong>pages</strong>: <a href="../akashaproject_design_system._internal_.UserFollowers_Response/"><code>UserFollowers_Response</code></a>[]</p>
+<h4 id="inherited-from_7">Inherited from</h4>
+<p><a href="../akashaproject_design_system._internal_.IProfileEntry/">IProfileEntry</a>.<a href="../akashaproject_design_system._internal_.IProfileEntry/#pages">pages</a></p>
+<h4 id="defined-in_20">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/StatModal/profile-entry.tsx#L27">ui/design/src/components/StatModal/profile-entry.tsx:27</a></p>
+<hr />
+<h3 id="placeholdersubtitlelabel">placeholderSubtitleLabel</h3>
+<p>• <strong>placeholderSubtitleLabel</strong>: <code>string</code></p>
+<h4 id="defined-in_21">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/StatModal/index.tsx#L33">ui/design/src/components/StatModal/index.tsx:33</a></p>
+<hr />
+<h3 id="placeholdertitlelabel">placeholderTitleLabel</h3>
+<p>• <strong>placeholderTitleLabel</strong>: <code>string</code></p>
+<h4 id="defined-in_22">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/StatModal/index.tsx#L32">ui/design/src/components/StatModal/index.tsx:32</a></p>
+<hr />
+<h3 id="profileanchorlink">profileAnchorLink</h3>
+<p>• <strong>profileAnchorLink</strong>: <code>string</code></p>
+<h4 id="inherited-from_8">Inherited from</h4>
+<p><a href="../akashaproject_design_system._internal_.IProfileEntry/">IProfileEntry</a>.<a href="../akashaproject_design_system._internal_.IProfileEntry/#profileanchorlink">profileAnchorLink</a></p>
+<h4 id="defined-in_23">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/StatModal/profile-entry.tsx#L24">ui/design/src/components/StatModal/profile-entry.tsx:24</a></p>
+<hr />
+<h3 id="setactiveindex">setActiveIndex</h3>
+<p>• <strong>setActiveIndex</strong>: <a href="../../modules/akashaproject_design_system._internal_/#dispatch"><code>Dispatch</code></a>&lt;<a href="../../modules/akashaproject_design_system._internal_/#setstateaction"><code>SetStateAction</code></a>&lt;<code>number</code>>></p>
+<h4 id="defined-in_24">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/StatModal/index.tsx#L24">ui/design/src/components/StatModal/index.tsx:24</a></p>
+<hr />
+<h3 id="stats">stats</h3>
+<p>• <strong>stats</strong>: (<code>string</code> | <code>number</code>)[]</p>
+<h4 id="defined-in_25">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/StatModal/index.tsx#L26">ui/design/src/components/StatModal/index.tsx:26</a></p>
+<hr />
+<h3 id="status">status</h3>
+<p>• <code>Optional</code> <strong>status</strong>: <code>"error"</code> | <code>"loading"</code> | <code>"success"</code> | <code>"idle"</code></p>
+<h4 id="inherited-from_9">Inherited from</h4>
+<p><a href="../akashaproject_design_system._internal_.IProfileEntry/">IProfileEntry</a>.<a href="../akashaproject_design_system._internal_.IProfileEntry/#status">status</a></p>
+<h4 id="defined-in_26">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/StatModal/profile-entry.tsx#L28">ui/design/src/components/StatModal/profile-entry.tsx:28</a></p>
+<hr />
+<h3 id="subscribelabel">subscribeLabel</h3>
+<p>• <strong>subscribeLabel</strong>: <code>string</code></p>
+<h4 id="inherited-from_10">Inherited from</h4>
+<p><a href="../akashaproject_design_system._internal_.ITagEntry/">ITagEntry</a>.<a href="../akashaproject_design_system._internal_.ITagEntry/#subscribelabel">subscribeLabel</a></p>
+<h4 id="defined-in_27">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/StatModal/tag-entry.tsx#L14">ui/design/src/components/StatModal/tag-entry.tsx:14</a></p>
+<hr />
+<h3 id="subscribedlabel">subscribedLabel</h3>
+<p>• <strong>subscribedLabel</strong>: <code>string</code></p>
+<h4 id="inherited-from_11">Inherited from</h4>
+<p><a href="../akashaproject_design_system._internal_.ITagEntry/">ITagEntry</a>.<a href="../akashaproject_design_system._internal_.ITagEntry/#subscribedlabel">subscribedLabel</a></p>
+<h4 id="defined-in_28">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/StatModal/tag-entry.tsx#L16">ui/design/src/components/StatModal/tag-entry.tsx:16</a></p>
+<hr />
+<h3 id="subscribedtags">subscribedTags</h3>
+<p>• <code>Optional</code> <strong>subscribedTags</strong>: <code>string</code>[]</p>
+<h4 id="inherited-from_12">Inherited from</h4>
+<p><a href="../akashaproject_design_system._internal_.ITagEntry/">ITagEntry</a>.<a href="../akashaproject_design_system._internal_.ITagEntry/#subscribedtags">subscribedTags</a></p>
+<h4 id="defined-in_29">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/StatModal/tag-entry.tsx#L12">ui/design/src/components/StatModal/tag-entry.tsx:12</a></p>
+<hr />
+<h3 id="tablabelsarr">tabLabelsArr</h3>
+<p>• <strong>tabLabelsArr</strong>: <code>string</code>[]</p>
+<h4 id="defined-in_30">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/StatModal/index.tsx#L29">ui/design/src/components/StatModal/index.tsx:29</a></p>
+<hr />
+<h3 id="taganchorlink">tagAnchorLink</h3>
+<p>• <strong>tagAnchorLink</strong>: <code>string</code></p>
+<h4 id="inherited-from_13">Inherited from</h4>
+<p><a href="../akashaproject_design_system._internal_.ITagEntry/">ITagEntry</a>.<a href="../akashaproject_design_system._internal_.ITagEntry/#taganchorlink">tagAnchorLink</a></p>
+<h4 id="defined-in_31">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/StatModal/tag-entry.tsx#L19">ui/design/src/components/StatModal/tag-entry.tsx:19</a></p>
+<hr />
+<h3 id="tags">tags</h3>
+<p>• <code>Optional</code> <strong>tags</strong>: <a href="../akashaproject_design_system._internal_.ITag/"><code>ITag</code></a>[]</p>
+<h4 id="inherited-from_14">Inherited from</h4>
+<p><a href="../akashaproject_design_system._internal_.ITagEntry/">ITagEntry</a>.<a href="../akashaproject_design_system._internal_.ITagEntry/#tags">tags</a></p>
+<h4 id="defined-in_32">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/StatModal/tag-entry.tsx#L11">ui/design/src/components/StatModal/tag-entry.tsx:11</a></p>
+<hr />
+<h3 id="titlelabel">titleLabel</h3>
+<p>• <strong>titleLabel</strong>: <code>string</code></p>
+<h4 id="defined-in_33">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/StatModal/index.tsx#L28">ui/design/src/components/StatModal/index.tsx:28</a></p>
+<hr />
+<h3 id="unfollowlabel">unfollowLabel</h3>
+<p>• <strong>unfollowLabel</strong>: <code>string</code></p>
+<h4 id="inherited-from_15">Inherited from</h4>
+<p><a href="../akashaproject_design_system._internal_.IProfileEntry/">IProfileEntry</a>.<a href="../akashaproject_design_system._internal_.IProfileEntry/#unfollowlabel">unfollowLabel</a></p>
+<h4 id="defined-in_34">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/StatModal/profile-entry.tsx#L20">ui/design/src/components/StatModal/profile-entry.tsx:20</a></p>
+<hr />
+<h3 id="unsubscribelabel">unsubscribeLabel</h3>
+<p>• <strong>unsubscribeLabel</strong>: <code>string</code></p>
+<h4 id="inherited-from_16">Inherited from</h4>
+<p><a href="../akashaproject_design_system._internal_.ITagEntry/">ITagEntry</a>.<a href="../akashaproject_design_system._internal_.ITagEntry/#unsubscribelabel">unsubscribeLabel</a></p>
+<h4 id="defined-in_35">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/StatModal/tag-entry.tsx#L15">ui/design/src/components/StatModal/tag-entry.tsx:15</a></p>
+<h2 id="methods_1">Methods</h2>
+<h3 id="closemodal">closeModal</h3>
+<p>▸ <strong>closeModal</strong>(): <code>void</code></p>
+<h4 id="returns">Returns</h4>
+<p><code>void</code></p>
+<h4 id="defined-in_36">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/StatModal/index.tsx#L51">ui/design/src/components/StatModal/index.tsx:51</a></p>
+<hr />
+<h3 id="handlebuttonclick">handleButtonClick</h3>
+<p>▸ <strong>handleButtonClick</strong>(): <code>void</code></p>
+<h4 id="returns_1">Returns</h4>
+<p><code>void</code></p>
+<h4 id="defined-in_37">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/StatModal/index.tsx#L50">ui/design/src/components/StatModal/index.tsx:50</a></p>
+<hr />
+<h3 id="handlefollowprofile">handleFollowProfile</h3>
+<p>▸ <strong>handleFollowProfile</strong>(<code>ethAddress</code>): <code>void</code></p>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ethAddress</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_2">Returns</h4>
+<p><code>void</code></p>
+<h4 id="inherited-from_17">Inherited from</h4>
+<p><a href="../akashaproject_design_system._internal_.IProfileEntry/">IProfileEntry</a>.<a href="../akashaproject_design_system._internal_.IProfileEntry/#handlefollowprofile">handleFollowProfile</a></p>
+<h4 id="defined-in_38">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/StatModal/profile-entry.tsx#L35">ui/design/src/components/StatModal/profile-entry.tsx:35</a></p>
+<hr />
+<h3 id="handlesubscribetag">handleSubscribeTag</h3>
+<p>▸ <strong>handleSubscribeTag</strong>(<code>tagName</code>): <code>void</code></p>
+<h4 id="parameters_1">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>tagName</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_3">Returns</h4>
+<p><code>void</code></p>
+<h4 id="inherited-from_18">Inherited from</h4>
+<p><a href="../akashaproject_design_system._internal_.ITagEntry/">ITagEntry</a>.<a href="../akashaproject_design_system._internal_.ITagEntry/#handlesubscribetag">handleSubscribeTag</a></p>
+<h4 id="defined-in_39">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/StatModal/tag-entry.tsx#L23">ui/design/src/components/StatModal/tag-entry.tsx:23</a></p>
+<hr />
+<h3 id="handleunfollowprofile">handleUnfollowProfile</h3>
+<p>▸ <strong>handleUnfollowProfile</strong>(<code>ethAddress</code>): <code>void</code></p>
+<h4 id="parameters_2">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ethAddress</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_4">Returns</h4>
+<p><code>void</code></p>
+<h4 id="inherited-from_19">Inherited from</h4>
+<p><a href="../akashaproject_design_system._internal_.IProfileEntry/">IProfileEntry</a>.<a href="../akashaproject_design_system._internal_.IProfileEntry/#handleunfollowprofile">handleUnfollowProfile</a></p>
+<h4 id="defined-in_40">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/StatModal/profile-entry.tsx#L36">ui/design/src/components/StatModal/profile-entry.tsx:36</a></p>
+<hr />
+<h3 id="handleunsubscribetag">handleUnsubscribeTag</h3>
+<p>▸ <strong>handleUnsubscribeTag</strong>(<code>tagName</code>): <code>void</code></p>
+<h4 id="parameters_3">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>tagName</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_5">Returns</h4>
+<p><code>void</code></p>
+<h4 id="inherited-from_20">Inherited from</h4>
+<p><a href="../akashaproject_design_system._internal_.ITagEntry/">ITagEntry</a>.<a href="../akashaproject_design_system._internal_.ITagEntry/#handleunsubscribetag">handleUnsubscribeTag</a></p>
+<h4 id="defined-in_41">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/StatModal/tag-entry.tsx#L24">ui/design/src/components/StatModal/tag-entry.tsx:24</a></p>
+<hr />
+<h3 id="loadmorefollowers">loadMoreFollowers</h3>
+<p>▸ <strong>loadMoreFollowers</strong>(): <code>void</code></p>
+<h4 id="returns_6">Returns</h4>
+<p><code>void</code></p>
+<h4 id="defined-in_42">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/StatModal/index.tsx#L47">ui/design/src/components/StatModal/index.tsx:47</a></p>
+<hr />
+<h3 id="loadmorefollowing">loadMoreFollowing</h3>
+<p>▸ <strong>loadMoreFollowing</strong>(): <code>void</code></p>
+<h4 id="returns_7">Returns</h4>
+<p><code>void</code></p>
+<h4 id="defined-in_43">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/StatModal/index.tsx#L48">ui/design/src/components/StatModal/index.tsx:48</a></p>
+<hr />
+<h3 id="onclickprofile">onClickProfile</h3>
+<p>▸ <strong>onClickProfile</strong>(<code>ethAddress</code>): <code>void</code></p>
+<h4 id="parameters_4">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ethAddress</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_8">Returns</h4>
+<p><code>void</code></p>
+<h4 id="inherited-from_21">Inherited from</h4>
+<p><a href="../akashaproject_design_system._internal_.IProfileEntry/">IProfileEntry</a>.<a href="../akashaproject_design_system._internal_.IProfileEntry/#onclickprofile">onClickProfile</a></p>
+<h4 id="defined-in_44">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/StatModal/profile-entry.tsx#L34">ui/design/src/components/StatModal/profile-entry.tsx:34</a></p>
+<hr />
+<h3 id="onclicktag">onClickTag</h3>
+<p>▸ <strong>onClickTag</strong>(<code>tagName</code>): <code>void</code></p>
+<h4 id="parameters_5">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>tagName</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_9">Returns</h4>
+<p><code>void</code></p>
+<h4 id="inherited-from_22">Inherited from</h4>
+<p><a href="../akashaproject_design_system._internal_.ITagEntry/">ITagEntry</a>.<a href="../akashaproject_design_system._internal_.ITagEntry/#onclicktag">onClickTag</a></p>
+<h4 id="defined-in_45">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/StatModal/tag-entry.tsx#L22">ui/design/src/components/StatModal/tag-entry.tsx:22</a></p>
+<hr />
+<h3 id="onloadmore">onLoadMore</h3>
+<p>▸ <code>Optional</code> <strong>onLoadMore</strong>(): <code>void</code></p>
+<h4 id="returns_10">Returns</h4>
+<p><code>void</code></p>
+<h4 id="inherited-from_23">Inherited from</h4>
+<p><a href="../akashaproject_design_system._internal_.IProfileEntry/">IProfileEntry</a>.<a href="../akashaproject_design_system._internal_.IProfileEntry/#onloadmore">onLoadMore</a></p>
+<h4 id="defined-in_46">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/components/StatModal/profile-entry.tsx#L31">ui/design/src/components/StatModal/profile-entry.tsx:31</a></p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.22074ed6.min.js"}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.01de222e.min.js"></script>
+      
+    
+  </body>
+</html>

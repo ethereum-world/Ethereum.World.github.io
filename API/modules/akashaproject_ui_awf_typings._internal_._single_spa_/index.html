@@ -1,0 +1,2614 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.7">
+    
+    
+      
+        <title>Akashaproject ui awf typings. internal . single spa - AKASHA World Framework docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.cd566b2a.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#namespace-single-spa" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="AKASHA World Framework docs" class="md-header__button md-logo" aria-label="AKASHA World Framework docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AKASHA World Framework docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Akashaproject ui awf typings. internal . single spa 
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="AKASHA World Framework docs" class="md-nav__button md-logo" aria-label="AKASHA World Framework docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    AKASHA World Framework docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        API
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    Table of contents
+  </a>
+  
+    <nav class="md-nav" aria-label="Table of contents">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#interfaces" class="md-nav__link">
+    Interfaces
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-aliases" class="md-nav__link">
+    Type aliases
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variables" class="md-nav__link">
+    Variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#functions" class="md-nav__link">
+    Functions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#type-aliases_1" class="md-nav__link">
+    Type aliases
+  </a>
+  
+    <nav class="md-nav" aria-label="Type aliases">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#activity" class="md-nav__link">
+    Activity
+  </a>
+  
+    <nav class="md-nav" aria-label="Activity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activityfn" class="md-nav__link">
+    ActivityFn
+  </a>
+  
+    <nav class="md-nav" aria-label="ActivityFn">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_1" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apperror" class="md-nav__link">
+    AppError
+  </a>
+  
+    <nav class="md-nav" aria-label="AppError">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_2" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#appprops" class="md-nav__link">
+    AppProps
+  </a>
+  
+    <nav class="md-nav" aria-label="AppProps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_1" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_3" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#application" class="md-nav__link">
+    Application
+  </a>
+  
+    <nav class="md-nav" aria-label="Application">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_4" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custompropsfn" class="md-nav__link">
+    CustomPropsFn
+  </a>
+  
+    <nav class="md-nav" aria-label="CustomPropsFn">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_1" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_2" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_1" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_1" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_5" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lifecyclefn" class="md-nav__link">
+    LifeCycleFn
+  </a>
+  
+    <nav class="md-nav" aria-label="LifeCycleFn">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_2" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_3" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_2" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_2" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_6" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lifecycles" class="md-nav__link">
+    LifeCycles
+  </a>
+  
+    <nav class="md-nav" aria-label="LifeCycles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_3" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_4" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_7" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parcel" class="md-nav__link">
+    Parcel
+  </a>
+  
+    <nav class="md-nav" aria-label="Parcel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_4" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_5" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_8" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parcelconfig" class="md-nav__link">
+    ParcelConfig
+  </a>
+  
+    <nav class="md-nav" aria-label="ParcelConfig">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_5" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_9" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parcelconfigobject" class="md-nav__link">
+    ParcelConfigObject
+  </a>
+  
+    <nav class="md-nav" aria-label="ParcelConfigObject">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_6" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_10" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parcelprops" class="md-nav__link">
+    ParcelProps
+  </a>
+  
+    <nav class="md-nav" aria-label="ParcelProps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_6" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_11" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#registerapplicationconfig" class="md-nav__link">
+    RegisterApplicationConfig
+  </a>
+  
+    <nav class="md-nav" aria-label="RegisterApplicationConfig">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_7" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_7" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_12" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#singlespacustomeventdetail" class="md-nav__link">
+    SingleSpaCustomEventDetail
+  </a>
+  
+    <nav class="md-nav" aria-label="SingleSpaCustomEventDetail">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_8" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_13" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#startopts" class="md-nav__link">
+    StartOpts
+  </a>
+  
+    <nav class="md-nav" aria-label="StartOpts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_9" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_14" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variables_1" class="md-nav__link">
+    Variables
+  </a>
+  
+    <nav class="md-nav" aria-label="Variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bootstrapping" class="md-nav__link">
+    BOOTSTRAPPING
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loading_source_code" class="md-nav__link">
+    LOADING_SOURCE_CODE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#load_error" class="md-nav__link">
+    LOAD_ERROR
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mounted" class="md-nav__link">
+    MOUNTED
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mounting" class="md-nav__link">
+    MOUNTING
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#not_bootstrapped" class="md-nav__link">
+    NOT_BOOTSTRAPPED
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#not_loaded" class="md-nav__link">
+    NOT_LOADED
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#not_mounted" class="md-nav__link">
+    NOT_MOUNTED
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skip_because_broken" class="md-nav__link">
+    SKIP_BECAUSE_BROKEN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unloading" class="md-nav__link">
+    UNLOADING
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unmounting" class="md-nav__link">
+    UNMOUNTING
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#updating" class="md-nav__link">
+    UPDATING
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#functions_1" class="md-nav__link">
+    Functions
+  </a>
+  
+    <nav class="md-nav" aria-label="Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#adderrorhandler" class="md-nav__link">
+    addErrorHandler
+  </a>
+  
+    <nav class="md-nav" aria-label="addErrorHandler">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_3" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_3" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_15" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checkactivityfunctions" class="md-nav__link">
+    checkActivityFunctions
+  </a>
+  
+    <nav class="md-nav" aria-label="checkActivityFunctions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_4" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_4" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_16" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ensurejquerysupport" class="md-nav__link">
+    ensureJQuerySupport
+  </a>
+  
+    <nav class="md-nav" aria-label="ensureJQuerySupport">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_5" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_5" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_17" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getappnames" class="md-nav__link">
+    getAppNames
+  </a>
+  
+    <nav class="md-nav" aria-label="getAppNames">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_6" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_18" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getappstatus" class="md-nav__link">
+    getAppStatus
+  </a>
+  
+    <nav class="md-nav" aria-label="getAppStatus">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_6" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_7" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_19" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getmountedapps" class="md-nav__link">
+    getMountedApps
+  </a>
+  
+    <nav class="md-nav" aria-label="getMountedApps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_8" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_20" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mountrootparcel" class="md-nav__link">
+    mountRootParcel
+  </a>
+  
+    <nav class="md-nav" aria-label="mountRootParcel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_8" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_7" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_9" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_21" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#navigatetourl" class="md-nav__link">
+    navigateToUrl
+  </a>
+  
+    <nav class="md-nav" aria-label="navigateToUrl">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_8" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_10" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_22" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pathtoactivewhen" class="md-nav__link">
+    pathToActiveWhen
+  </a>
+  
+    <nav class="md-nav" aria-label="pathToActiveWhen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_9" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_11" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_23" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#registerapplication" class="md-nav__link">
+    registerApplication
+  </a>
+  
+    <nav class="md-nav" aria-label="registerApplication">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_9" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_10" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_12" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_24" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_10" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_11" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_13" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_25" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removeerrorhandler" class="md-nav__link">
+    removeErrorHandler
+  </a>
+  
+    <nav class="md-nav" aria-label="removeErrorHandler">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_12" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_14" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_26" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setbootstrapmaxtime" class="md-nav__link">
+    setBootstrapMaxTime
+  </a>
+  
+    <nav class="md-nav" aria-label="setBootstrapMaxTime">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_13" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_15" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_27" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setmountmaxtime" class="md-nav__link">
+    setMountMaxTime
+  </a>
+  
+    <nav class="md-nav" aria-label="setMountMaxTime">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_14" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_16" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_28" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setunloadmaxtime" class="md-nav__link">
+    setUnloadMaxTime
+  </a>
+  
+    <nav class="md-nav" aria-label="setUnloadMaxTime">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_15" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_17" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_29" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setunmountmaxtime" class="md-nav__link">
+    setUnmountMaxTime
+  </a>
+  
+    <nav class="md-nav" aria-label="setUnmountMaxTime">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_16" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_18" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_30" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#start" class="md-nav__link">
+    start
+  </a>
+  
+    <nav class="md-nav" aria-label="start">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_17" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_19" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_31" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#triggerappchange" class="md-nav__link">
+    triggerAppChange
+  </a>
+  
+    <nav class="md-nav" aria-label="triggerAppChange">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_20" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_32" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unloadapplication" class="md-nav__link">
+    unloadApplication
+  </a>
+  
+    <nav class="md-nav" aria-label="unloadApplication">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_18" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_21" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_33" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unregisterapplication" class="md-nav__link">
+    unregisterApplication
+  </a>
+  
+    <nav class="md-nav" aria-label="unregisterApplication">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_19" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_22" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_34" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+<p><a href="../../">AWF</a> / <a href="../">Modules</a> / <a href="../akashaproject_ui_awf_typings/">@akashaproject/ui-awf-typings</a> / <a href="../akashaproject_ui_awf_typings._internal_/">&lt;internal></a> / "single-spa"</p>
+<h1 id="namespace-single-spa">Namespace: "single-spa"</h1>
+<p><a href="../akashaproject_ui_awf_typings/">@akashaproject/ui-awf-typings</a>.<a href="../akashaproject_ui_awf_typings._internal_/"><internal></a>."single-spa"</p>
+<h2 id="table-of-contents">Table of contents</h2>
+<h3 id="interfaces">Interfaces</h3>
+<ul>
+<li><a href="../../interfaces/akashaproject_ui_awf_typings._internal_._single_spa_.CustomProps/">CustomProps</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_typings._internal_._single_spa_.SingleSpaAppsByNewStatus/">SingleSpaAppsByNewStatus</a></li>
+<li><a href="../../interfaces/akashaproject_ui_awf_typings._internal_._single_spa_.SingleSpaNewAppStatus/">SingleSpaNewAppStatus</a></li>
+</ul>
+<h3 id="type-aliases">Type aliases</h3>
+<ul>
+<li><a href="./#activity">Activity</a></li>
+<li><a href="./#activityfn">ActivityFn</a></li>
+<li><a href="./#apperror">AppError</a></li>
+<li><a href="./#appprops">AppProps</a></li>
+<li><a href="./#application">Application</a></li>
+<li><a href="./#custompropsfn">CustomPropsFn</a></li>
+<li><a href="./#lifecyclefn">LifeCycleFn</a></li>
+<li><a href="./#lifecycles">LifeCycles</a></li>
+<li><a href="./#parcel">Parcel</a></li>
+<li><a href="./#parcelconfig">ParcelConfig</a></li>
+<li><a href="./#parcelconfigobject">ParcelConfigObject</a></li>
+<li><a href="./#parcelprops">ParcelProps</a></li>
+<li><a href="./#registerapplicationconfig">RegisterApplicationConfig</a></li>
+<li><a href="./#singlespacustomeventdetail">SingleSpaCustomEventDetail</a></li>
+<li><a href="./#startopts">StartOpts</a></li>
+</ul>
+<h3 id="variables">Variables</h3>
+<ul>
+<li><a href="./#bootstrapping">BOOTSTRAPPING</a></li>
+<li><a href="./#loading_source_code">LOADING_SOURCE_CODE</a></li>
+<li><a href="./#load_error">LOAD_ERROR</a></li>
+<li><a href="./#mounted">MOUNTED</a></li>
+<li><a href="./#mounting">MOUNTING</a></li>
+<li><a href="./#not_bootstrapped">NOT_BOOTSTRAPPED</a></li>
+<li><a href="./#not_loaded">NOT_LOADED</a></li>
+<li><a href="./#not_mounted">NOT_MOUNTED</a></li>
+<li><a href="./#skip_because_broken">SKIP_BECAUSE_BROKEN</a></li>
+<li><a href="./#unloading">UNLOADING</a></li>
+<li><a href="./#unmounting">UNMOUNTING</a></li>
+<li><a href="./#updating">UPDATING</a></li>
+</ul>
+<h3 id="functions">Functions</h3>
+<ul>
+<li><a href="./#adderrorhandler">addErrorHandler</a></li>
+<li><a href="./#checkactivityfunctions">checkActivityFunctions</a></li>
+<li><a href="./#ensurejquerysupport">ensureJQuerySupport</a></li>
+<li><a href="./#getappnames">getAppNames</a></li>
+<li><a href="./#getappstatus">getAppStatus</a></li>
+<li><a href="./#getmountedapps">getMountedApps</a></li>
+<li><a href="./#mountrootparcel">mountRootParcel</a></li>
+<li><a href="./#navigatetourl">navigateToUrl</a></li>
+<li><a href="./#pathtoactivewhen">pathToActiveWhen</a></li>
+<li><a href="./#registerapplication">registerApplication</a></li>
+<li><a href="./#removeerrorhandler">removeErrorHandler</a></li>
+<li><a href="./#setbootstrapmaxtime">setBootstrapMaxTime</a></li>
+<li><a href="./#setmountmaxtime">setMountMaxTime</a></li>
+<li><a href="./#setunloadmaxtime">setUnloadMaxTime</a></li>
+<li><a href="./#setunmountmaxtime">setUnmountMaxTime</a></li>
+<li><a href="./#start">start</a></li>
+<li><a href="./#triggerappchange">triggerAppChange</a></li>
+<li><a href="./#unloadapplication">unloadApplication</a></li>
+<li><a href="./#unregisterapplication">unregisterApplication</a></li>
+</ul>
+<h2 id="type-aliases_1">Type aliases</h2>
+<h3 id="activity">Activity</h3>
+<p>Ƭ <strong>Activity</strong>: <a href="./#activityfn"><code>ActivityFn</code></a> | <code>string</code> | (<a href="./#activityfn"><code>ActivityFn</code></a> | <code>string</code>)[]</p>
+<h4 id="defined-in">Defined in</h4>
+<p>ui/typings/node_modules/single-spa/typings/single-spa.d.ts:88</p>
+<hr />
+<h3 id="activityfn">ActivityFn</h3>
+<p>Ƭ <strong>ActivityFn</strong>: (<code>location</code>: <a href="../akashaproject_ui_awf_typings._internal_/#location"><code>Location</code></a>) =&gt; <code>boolean</code></p>
+<h4 id="type-declaration">Type declaration</h4>
+<p>▸ (<code>location</code>): <code>boolean</code></p>
+<h5 id="parameters">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>location</code></td>
+<td align="left"><a href="../akashaproject_ui_awf_typings._internal_/#location"><code>Location</code></a></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns">Returns</h5>
+<p><code>boolean</code></p>
+<h4 id="defined-in_1">Defined in</h4>
+<p>ui/typings/node_modules/single-spa/typings/single-spa.d.ts:86</p>
+<hr />
+<h3 id="apperror">AppError</h3>
+<p>Ƭ <strong>AppError</strong>: <a href="../akashaproject_ui_awf_typings._internal_/#error"><code>Error</code></a> &amp; { <code>appOrParcelName</code>: <code>string</code>  }</p>
+<h4 id="defined-in_2">Defined in</h4>
+<p>ui/typings/node_modules/single-spa/typings/single-spa.d.ts:179</p>
+<hr />
+<h3 id="appprops">AppProps</h3>
+<p>Ƭ <strong>AppProps</strong>: <code>Object</code></p>
+<h4 id="type-declaration_1">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>name</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>singleSpa</code></td>
+<td align="left"><code>any</code></td>
+</tr>
+<tr>
+<td align="left"><code>mountParcel</code></td>
+<td align="left">(<code>parcelConfig</code>: <a href="./#parcelconfig"><code>ParcelConfig</code></a>&lt;<a href="../../interfaces/akashaproject_ui_awf_typings._internal_._single_spa_.CustomProps/"><code>CustomProps</code></a>>, <code>customProps</code>: <a href="./#parcelprops"><code>ParcelProps</code></a> &amp; <a href="../../interfaces/akashaproject_ui_awf_typings._internal_._single_spa_.CustomProps/"><code>CustomProps</code></a>) =&gt; <a href="./#parcel"><code>Parcel</code></a>&lt;<a href="../../interfaces/akashaproject_ui_awf_typings._internal_._single_spa_.CustomProps/"><code>CustomProps</code></a>></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_3">Defined in</h4>
+<p>ui/typings/node_modules/single-spa/typings/single-spa.d.ts:12</p>
+<hr />
+<h3 id="application">Application</h3>
+<p>Ƭ <strong>Application</strong>&lt;<code>ExtraProps</code>>: <a href="./#lifecycles"><code>LifeCycles</code></a>&lt;<code>ExtraProps</code>> | (<code>config</code>: <code>ExtraProps</code> &amp; <a href="./#appprops"><code>AppProps</code></a>) =&gt; <code>Promise</code>&lt;<a href="./#lifecycles"><code>LifeCycles</code></a>&lt;<code>ExtraProps</code>>></p>
+<h4 id="type-parameters">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ExtraProps</code></td>
+<td align="left">{}</td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_4">Defined in</h4>
+<p>ui/typings/node_modules/single-spa/typings/single-spa.d.ts:82</p>
+<hr />
+<h3 id="custompropsfn">CustomPropsFn</h3>
+<p>Ƭ <strong>CustomPropsFn</strong>&lt;<code>ExtraProps</code>>: (<code>name</code>: <code>string</code>, <code>location</code>: <a href="../akashaproject_ui_awf_typings._internal_/#location"><code>Location</code></a>) =&gt; <code>ExtraProps</code></p>
+<h4 id="type-parameters_1">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ExtraProps</code></td>
+<td align="left">extends <a href="../../interfaces/akashaproject_ui_awf_typings._internal_._single_spa_.CustomProps/"><code>CustomProps</code></a> = <a href="../../interfaces/akashaproject_ui_awf_typings._internal_._single_spa_.CustomProps/"><code>CustomProps</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="type-declaration_2">Type declaration</h4>
+<p>▸ (<code>name</code>, <code>location</code>): <code>ExtraProps</code></p>
+<h5 id="parameters_1">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>name</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>location</code></td>
+<td align="left"><a href="../akashaproject_ui_awf_typings._internal_/#location"><code>Location</code></a></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_1">Returns</h5>
+<p><code>ExtraProps</code></p>
+<h4 id="defined-in_5">Defined in</h4>
+<p>ui/typings/node_modules/single-spa/typings/single-spa.d.ts:7</p>
+<hr />
+<h3 id="lifecyclefn">LifeCycleFn</h3>
+<p>Ƭ <strong>LifeCycleFn</strong>&lt;<code>ExtraProps</code>>: (<code>config</code>: <code>ExtraProps</code> &amp; <a href="./#appprops"><code>AppProps</code></a>) =&gt; <code>Promise</code>&lt;<code>any</code>></p>
+<h4 id="type-parameters_2">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ExtraProps</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="type-declaration_3">Type declaration</h4>
+<p>▸ (<code>config</code>): <code>Promise</code>&lt;<code>any</code>></p>
+<h5 id="parameters_2">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>config</code></td>
+<td align="left"><code>ExtraProps</code> &amp; <a href="./#appprops"><code>AppProps</code></a></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_2">Returns</h5>
+<p><code>Promise</code>&lt;<code>any</code>></p>
+<h4 id="defined-in_6">Defined in</h4>
+<p>ui/typings/node_modules/single-spa/typings/single-spa.d.ts:53</p>
+<hr />
+<h3 id="lifecycles">LifeCycles</h3>
+<p>Ƭ <strong>LifeCycles</strong>&lt;<code>ExtraProps</code>>: <code>Object</code></p>
+<h4 id="type-parameters_3">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ExtraProps</code></td>
+<td align="left">{}</td>
+</tr>
+</tbody>
+</table>
+<h4 id="type-declaration_4">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>bootstrap</code></td>
+<td align="left"><a href="./#lifecyclefn"><code>LifeCycleFn</code></a>&lt;<code>ExtraProps</code>> | <a href="./#lifecyclefn"><code>LifeCycleFn</code></a>&lt;<code>ExtraProps</code>>[]</td>
+</tr>
+<tr>
+<td align="left"><code>mount</code></td>
+<td align="left"><a href="./#lifecyclefn"><code>LifeCycleFn</code></a>&lt;<code>ExtraProps</code>> | <a href="./#lifecyclefn"><code>LifeCycleFn</code></a>&lt;<code>ExtraProps</code>>[]</td>
+</tr>
+<tr>
+<td align="left"><code>unmount</code></td>
+<td align="left"><a href="./#lifecyclefn"><code>LifeCycleFn</code></a>&lt;<code>ExtraProps</code>> | <a href="./#lifecyclefn"><code>LifeCycleFn</code></a>&lt;<code>ExtraProps</code>>[]</td>
+</tr>
+<tr>
+<td align="left"><code>update?</code></td>
+<td align="left"><a href="./#lifecyclefn"><code>LifeCycleFn</code></a>&lt;<code>ExtraProps</code>> | <a href="./#lifecyclefn"><code>LifeCycleFn</code></a>&lt;<code>ExtraProps</code>>[]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_7">Defined in</h4>
+<p>ui/typings/node_modules/single-spa/typings/single-spa.d.ts:56</p>
+<hr />
+<h3 id="parcel">Parcel</h3>
+<p>Ƭ <strong>Parcel</strong>&lt;<code>ExtraProps</code>>: <code>Object</code></p>
+<h4 id="type-parameters_4">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ExtraProps</code></td>
+<td align="left"><a href="../../interfaces/akashaproject_ui_awf_typings._internal_._single_spa_.CustomProps/"><code>CustomProps</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="type-declaration_5">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>bootstrapPromise</code></td>
+<td align="left"><code>Promise</code>&lt;<code>null</code>></td>
+</tr>
+<tr>
+<td align="left"><code>loadPromise</code></td>
+<td align="left"><code>Promise</code>&lt;<code>null</code>></td>
+</tr>
+<tr>
+<td align="left"><code>mountPromise</code></td>
+<td align="left"><code>Promise</code>&lt;<code>null</code>></td>
+</tr>
+<tr>
+<td align="left"><code>unmountPromise</code></td>
+<td align="left"><code>Promise</code>&lt;<code>null</code>></td>
+</tr>
+<tr>
+<td align="left"><code>getStatus</code></td>
+<td align="left">() =&gt; <code>"NOT_LOADED"</code> | <code>"LOADING_SOURCE_CODE"</code> | <code>"NOT_BOOTSTRAPPED"</code> | <code>"BOOTSTRAPPING"</code> | <code>"NOT_MOUNTED"</code> | <code>"MOUNTING"</code> | <code>"MOUNTED"</code> | <code>"UPDATING"</code> | <code>"UNMOUNTING"</code> | <code>"UNLOADING"</code> | <code>"SKIP_BECAUSE_BROKEN"</code> | <code>"LOAD_ERROR"</code></td>
+</tr>
+<tr>
+<td align="left"><code>mount</code></td>
+<td align="left">() =&gt; <code>Promise</code>&lt;<code>null</code>></td>
+</tr>
+<tr>
+<td align="left"><code>unmount</code></td>
+<td align="left">() =&gt; <code>Promise</code>&lt;<code>null</code>></td>
+</tr>
+<tr>
+<td align="left"><code>update?</code></td>
+<td align="left">(<code>customProps</code>: <code>ExtraProps</code>) =&gt; <code>Promise</code>&lt;<code>any</code>></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_8">Defined in</h4>
+<p>ui/typings/node_modules/single-spa/typings/single-spa.d.ts:30</p>
+<hr />
+<h3 id="parcelconfig">ParcelConfig</h3>
+<p>Ƭ <strong>ParcelConfig</strong>&lt;<code>ExtraProps</code>>: <a href="./#parcelconfigobject"><code>ParcelConfigObject</code></a>&lt;<code>ExtraProps</code>> | () =&gt; <code>Promise</code>&lt;<a href="./#parcelconfigobject"><code>ParcelConfigObject</code></a>&lt;<code>ExtraProps</code>>></p>
+<h4 id="type-parameters_5">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ExtraProps</code></td>
+<td align="left"><a href="../../interfaces/akashaproject_ui_awf_typings._internal_._single_spa_.CustomProps/"><code>CustomProps</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_9">Defined in</h4>
+<p>ui/typings/node_modules/single-spa/typings/single-spa.d.ts:21</p>
+<hr />
+<h3 id="parcelconfigobject">ParcelConfigObject</h3>
+<p>Ƭ <strong>ParcelConfigObject</strong>&lt;<code>ExtraProps</code>>: { <code>name?</code>: <code>string</code>  } &amp; <a href="./#lifecycles"><code>LifeCycles</code></a>&lt;<code>ExtraProps</code>></p>
+<h4 id="type-parameters_6">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ExtraProps</code></td>
+<td align="left"><a href="../../interfaces/akashaproject_ui_awf_typings._internal_._single_spa_.CustomProps/"><code>CustomProps</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_10">Defined in</h4>
+<p>ui/typings/node_modules/single-spa/typings/single-spa.d.ts:26</p>
+<hr />
+<h3 id="parcelprops">ParcelProps</h3>
+<p>Ƭ <strong>ParcelProps</strong>: <code>Object</code></p>
+<h4 id="type-declaration_6">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>domElement</code></td>
+<td align="left"><code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_11">Defined in</h4>
+<p>ui/typings/node_modules/single-spa/typings/single-spa.d.ts:25</p>
+<hr />
+<h3 id="registerapplicationconfig">RegisterApplicationConfig</h3>
+<p>Ƭ <strong>RegisterApplicationConfig</strong>&lt;<code>ExtraProps</code>>: <code>Object</code></p>
+<h4 id="type-parameters_7">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ExtraProps</code></td>
+<td align="left">extends <a href="../../interfaces/akashaproject_ui_awf_typings._internal_._single_spa_.CustomProps/"><code>CustomProps</code></a> = {}</td>
+</tr>
+</tbody>
+</table>
+<h4 id="type-declaration_7">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>activeWhen</code></td>
+<td align="left"><a href="./#activity"><code>Activity</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>app</code></td>
+<td align="left"><a href="./#application"><code>Application</code></a>&lt;<code>ExtraProps</code>></td>
+</tr>
+<tr>
+<td align="left"><code>customProps?</code></td>
+<td align="left"><code>ExtraProps</code> | <a href="./#custompropsfn"><code>CustomPropsFn</code></a>&lt;<code>ExtraProps</code>></td>
+</tr>
+<tr>
+<td align="left"><code>name</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_12">Defined in</h4>
+<p>ui/typings/node_modules/single-spa/typings/single-spa.d.ts:90</p>
+<hr />
+<h3 id="singlespacustomeventdetail">SingleSpaCustomEventDetail</h3>
+<p>Ƭ <strong>SingleSpaCustomEventDetail</strong>: <code>Object</code></p>
+<h4 id="type-declaration_8">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>appsByNewStatus</code></td>
+<td align="left"><a href="../../interfaces/akashaproject_ui_awf_typings._internal_._single_spa_.SingleSpaAppsByNewStatus/"><code>SingleSpaAppsByNewStatus</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>navigationIsCanceled</code></td>
+<td align="left"><code>boolean</code></td>
+</tr>
+<tr>
+<td align="left"><code>newAppStatuses</code></td>
+<td align="left"><a href="../../interfaces/akashaproject_ui_awf_typings._internal_._single_spa_.SingleSpaNewAppStatus/"><code>SingleSpaNewAppStatus</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>newUrl</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>oldUrl</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>originalEvent?</code></td>
+<td align="left"><code>Event</code></td>
+</tr>
+<tr>
+<td align="left"><code>totalAppChanges</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>cancelNavigation?</code></td>
+<td align="left">() =&gt; <code>void</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_13">Defined in</h4>
+<p>ui/typings/node_modules/single-spa/typings/single-spa.d.ts:110</p>
+<hr />
+<h3 id="startopts">StartOpts</h3>
+<p>Ƭ <strong>StartOpts</strong>: <code>Object</code></p>
+<h4 id="type-declaration_9">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>urlRerouteOnly?</code></td>
+<td align="left"><code>boolean</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_14">Defined in</h4>
+<p>ui/typings/node_modules/single-spa/typings/single-spa.d.ts:63</p>
+<h2 id="variables_1">Variables</h2>
+<h3 id="bootstrapping">BOOTSTRAPPING</h3>
+<p>• <strong>BOOTSTRAPPING</strong>: <code>"BOOTSTRAPPING"</code></p>
+<hr />
+<h3 id="loading_source_code">LOADING_SOURCE_CODE</h3>
+<p>• <strong>LOADING_SOURCE_CODE</strong>: <code>"LOADING_SOURCE_CODE"</code></p>
+<hr />
+<h3 id="load_error">LOAD_ERROR</h3>
+<p>• <strong>LOAD_ERROR</strong>: <code>"LOAD_ERROR"</code></p>
+<hr />
+<h3 id="mounted">MOUNTED</h3>
+<p>• <strong>MOUNTED</strong>: <code>"MOUNTED"</code></p>
+<hr />
+<h3 id="mounting">MOUNTING</h3>
+<p>• <strong>MOUNTING</strong>: <code>"MOUNTING"</code></p>
+<hr />
+<h3 id="not_bootstrapped">NOT_BOOTSTRAPPED</h3>
+<p>• <strong>NOT_BOOTSTRAPPED</strong>: <code>"NOT_BOOTSTRAPPED"</code></p>
+<hr />
+<h3 id="not_loaded">NOT_LOADED</h3>
+<p>• <strong>NOT_LOADED</strong>: <code>"NOT_LOADED"</code></p>
+<hr />
+<h3 id="not_mounted">NOT_MOUNTED</h3>
+<p>• <strong>NOT_MOUNTED</strong>: <code>"NOT_MOUNTED"</code></p>
+<hr />
+<h3 id="skip_because_broken">SKIP_BECAUSE_BROKEN</h3>
+<p>• <strong>SKIP_BECAUSE_BROKEN</strong>: <code>"SKIP_BECAUSE_BROKEN"</code></p>
+<hr />
+<h3 id="unloading">UNLOADING</h3>
+<p>• <strong>UNLOADING</strong>: <code>"UNLOADING"</code></p>
+<hr />
+<h3 id="unmounting">UNMOUNTING</h3>
+<p>• <strong>UNMOUNTING</strong>: <code>"UNMOUNTING"</code></p>
+<hr />
+<h3 id="updating">UPDATING</h3>
+<p>• <strong>UPDATING</strong>: <code>"UPDATING"</code></p>
+<h2 id="functions_1">Functions</h2>
+<h3 id="adderrorhandler">addErrorHandler</h3>
+<p>▸ <strong>addErrorHandler</strong>(<code>handler</code>): <code>void</code></p>
+<h4 id="parameters_3">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>handler</code></td>
+<td align="left">(<code>error</code>: <a href="./#apperror"><code>AppError</code></a>) =&gt; <code>void</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_3">Returns</h4>
+<p><code>void</code></p>
+<h4 id="defined-in_15">Defined in</h4>
+<p>ui/typings/node_modules/single-spa/typings/single-spa.d.ts:182</p>
+<hr />
+<h3 id="checkactivityfunctions">checkActivityFunctions</h3>
+<p>▸ <strong>checkActivityFunctions</strong>(<code>location</code>): <code>string</code>[]</p>
+<h4 id="parameters_4">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>location</code></td>
+<td align="left"><a href="../akashaproject_ui_awf_typings._internal_/#location"><code>Location</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_4">Returns</h4>
+<p><code>string</code>[]</p>
+<h4 id="defined-in_16">Defined in</h4>
+<p>ui/typings/node_modules/single-spa/typings/single-spa.d.ts:159</p>
+<hr />
+<h3 id="ensurejquerysupport">ensureJQuerySupport</h3>
+<p>▸ <strong>ensureJQuerySupport</strong>(<code>jQuery?</code>): <code>void</code></p>
+<h4 id="parameters_5">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>jQuery?</code></td>
+<td align="left"><code>any</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_5">Returns</h4>
+<p><code>void</code></p>
+<h4 id="defined-in_17">Defined in</h4>
+<p>ui/typings/node_modules/single-spa/typings/single-spa.d.ts:71</p>
+<hr />
+<h3 id="getappnames">getAppNames</h3>
+<p>▸ <strong>getAppNames</strong>(): <code>string</code>[]</p>
+<h4 id="returns_6">Returns</h4>
+<p><code>string</code>[]</p>
+<h4 id="defined-in_18">Defined in</h4>
+<p>ui/typings/node_modules/single-spa/typings/single-spa.d.ts:160</p>
+<hr />
+<h3 id="getappstatus">getAppStatus</h3>
+<p>▸ <strong>getAppStatus</strong>(<code>appName</code>): <code>string</code> | <code>null</code></p>
+<h4 id="parameters_6">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>appName</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_7">Returns</h4>
+<p><code>string</code> | <code>null</code></p>
+<h4 id="defined-in_19">Defined in</h4>
+<p>ui/typings/node_modules/single-spa/typings/single-spa.d.ts:152</p>
+<hr />
+<h3 id="getmountedapps">getMountedApps</h3>
+<p>▸ <strong>getMountedApps</strong>(): <code>string</code>[]</p>
+<h4 id="returns_8">Returns</h4>
+<p><code>string</code>[]</p>
+<h4 id="defined-in_20">Defined in</h4>
+<p>ui/typings/node_modules/single-spa/typings/single-spa.d.ts:135</p>
+<hr />
+<h3 id="mountrootparcel">mountRootParcel</h3>
+<p>▸ <strong>mountRootParcel</strong>&lt;<code>ExtraProps</code>>(<code>parcelConfig</code>, <code>parcelProps</code>): <a href="./#parcel"><code>Parcel</code></a>&lt;<code>ExtraProps</code>></p>
+<h4 id="type-parameters_8">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ExtraProps</code></td>
+<td align="left"><a href="../../interfaces/akashaproject_ui_awf_typings._internal_._single_spa_.CustomProps/"><code>CustomProps</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_7">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>parcelConfig</code></td>
+<td align="left"><a href="./#parcelconfig"><code>ParcelConfig</code></a>&lt;<code>ExtraProps</code>></td>
+</tr>
+<tr>
+<td align="left"><code>parcelProps</code></td>
+<td align="left"><a href="./#parcelprops"><code>ParcelProps</code></a> &amp; <code>ExtraProps</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_9">Returns</h4>
+<p><a href="./#parcel"><code>Parcel</code></a>&lt;<code>ExtraProps</code>></p>
+<h4 id="defined-in_21">Defined in</h4>
+<p>ui/typings/node_modules/single-spa/typings/single-spa.d.ts:186</p>
+<hr />
+<h3 id="navigatetourl">navigateToUrl</h3>
+<p>▸ <strong>navigateToUrl</strong>(<code>obj</code>, <code>opts?</code>): <code>void</code></p>
+<h4 id="parameters_8">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>obj</code></td>
+<td align="left"><code>string</code> | { <code>currentTarget</code>: { <code>href</code>: <code>string</code>  } ; <code>preventDefault</code>: <code>any</code>  }</td>
+</tr>
+<tr>
+<td align="left"><code>opts?</code></td>
+<td align="left"><a href="../akashaproject_ui_awf_typings._internal_/#object"><code>Object</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_10">Returns</h4>
+<p><code>void</code></p>
+<h4 id="defined-in_22">Defined in</h4>
+<p>ui/typings/node_modules/single-spa/typings/single-spa.d.ts:163</p>
+<hr />
+<h3 id="pathtoactivewhen">pathToActiveWhen</h3>
+<p>▸ <strong>pathToActiveWhen</strong>(<code>path</code>, <code>exactMatch?</code>): <a href="./#activityfn"><code>ActivityFn</code></a></p>
+<h4 id="parameters_9">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>path</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>exactMatch?</code></td>
+<td align="left"><code>boolean</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_11">Returns</h4>
+<p><a href="./#activityfn"><code>ActivityFn</code></a></p>
+<h4 id="defined-in_23">Defined in</h4>
+<p>ui/typings/node_modules/single-spa/typings/single-spa.d.ts:191</p>
+<hr />
+<h3 id="registerapplication">registerApplication</h3>
+<p>▸ <strong>registerApplication</strong>&lt;<code>ExtraProps</code>>(<code>appName</code>, <code>applicationOrLoadingFn</code>, <code>activityFn</code>, <code>customProps?</code>): <code>void</code></p>
+<h4 id="type-parameters_9">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ExtraProps</code></td>
+<td align="left">extends <a href="../../interfaces/akashaproject_ui_awf_typings._internal_._single_spa_.CustomProps/"><code>CustomProps</code></a> = {}</td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_10">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>appName</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>applicationOrLoadingFn</code></td>
+<td align="left"><a href="./#application"><code>Application</code></a>&lt;<code>ExtraProps</code>></td>
+</tr>
+<tr>
+<td align="left"><code>activityFn</code></td>
+<td align="left"><a href="./#activityfn"><code>ActivityFn</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>customProps?</code></td>
+<td align="left"><code>ExtraProps</code> | <a href="./#custompropsfn"><code>CustomPropsFn</code></a>&lt;<code>ExtraProps</code>></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_12">Returns</h4>
+<p><code>void</code></p>
+<h4 id="defined-in_24">Defined in</h4>
+<p>ui/typings/node_modules/single-spa/typings/single-spa.d.ts:122</p>
+<p>▸ <strong>registerApplication</strong>&lt;<code>ExtraProps</code>>(<code>config</code>): <code>void</code></p>
+<h4 id="type-parameters_10">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ExtraProps</code></td>
+<td align="left">extends <a href="../../interfaces/akashaproject_ui_awf_typings._internal_._single_spa_.CustomProps/"><code>CustomProps</code></a> = {}</td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_11">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>config</code></td>
+<td align="left"><a href="./#registerapplicationconfig"><code>RegisterApplicationConfig</code></a>&lt;<code>ExtraProps</code>></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_13">Returns</h4>
+<p><code>void</code></p>
+<h4 id="defined-in_25">Defined in</h4>
+<p>ui/typings/node_modules/single-spa/typings/single-spa.d.ts:129</p>
+<hr />
+<h3 id="removeerrorhandler">removeErrorHandler</h3>
+<p>▸ <strong>removeErrorHandler</strong>(<code>handler</code>): <code>void</code></p>
+<h4 id="parameters_12">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>handler</code></td>
+<td align="left">(<code>error</code>: <a href="./#apperror"><code>AppError</code></a>) =&gt; <code>void</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_14">Returns</h4>
+<p><code>void</code></p>
+<h4 id="defined-in_26">Defined in</h4>
+<p>ui/typings/node_modules/single-spa/typings/single-spa.d.ts:183</p>
+<hr />
+<h3 id="setbootstrapmaxtime">setBootstrapMaxTime</h3>
+<p>▸ <strong>setBootstrapMaxTime</strong>(<code>time</code>, <code>dieOnTimeout?</code>): <code>void</code></p>
+<h4 id="parameters_13">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>time</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>dieOnTimeout?</code></td>
+<td align="left"><code>boolean</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_15">Returns</h4>
+<p><code>void</code></p>
+<h4 id="defined-in_27">Defined in</h4>
+<p>ui/typings/node_modules/single-spa/typings/single-spa.d.ts:74</p>
+<hr />
+<h3 id="setmountmaxtime">setMountMaxTime</h3>
+<p>▸ <strong>setMountMaxTime</strong>(<code>time</code>, <code>dieOnTimeout?</code>): <code>void</code></p>
+<h4 id="parameters_14">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>time</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>dieOnTimeout?</code></td>
+<td align="left"><code>boolean</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_16">Returns</h4>
+<p><code>void</code></p>
+<h4 id="defined-in_28">Defined in</h4>
+<p>ui/typings/node_modules/single-spa/typings/single-spa.d.ts:78</p>
+<hr />
+<h3 id="setunloadmaxtime">setUnloadMaxTime</h3>
+<p>▸ <strong>setUnloadMaxTime</strong>(<code>time</code>, <code>dieOnTimeout?</code>): <code>void</code></p>
+<h4 id="parameters_15">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>time</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>dieOnTimeout?</code></td>
+<td align="left"><code>boolean</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_17">Returns</h4>
+<p><code>void</code></p>
+<h4 id="defined-in_29">Defined in</h4>
+<p>ui/typings/node_modules/single-spa/typings/single-spa.d.ts:80</p>
+<hr />
+<h3 id="setunmountmaxtime">setUnmountMaxTime</h3>
+<p>▸ <strong>setUnmountMaxTime</strong>(<code>time</code>, <code>dieOnTimeout?</code>): <code>void</code></p>
+<h4 id="parameters_16">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>time</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>dieOnTimeout?</code></td>
+<td align="left"><code>boolean</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_18">Returns</h4>
+<p><code>void</code></p>
+<h4 id="defined-in_30">Defined in</h4>
+<p>ui/typings/node_modules/single-spa/typings/single-spa.d.ts:79</p>
+<hr />
+<h3 id="start">start</h3>
+<p>▸ <strong>start</strong>(<code>opts?</code>): <code>void</code></p>
+<h4 id="parameters_17">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>opts?</code></td>
+<td align="left"><a href="./#startopts"><code>StartOpts</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_19">Returns</h4>
+<p><code>void</code></p>
+<h4 id="defined-in_31">Defined in</h4>
+<p>ui/typings/node_modules/single-spa/typings/single-spa.d.ts:68</p>
+<hr />
+<h3 id="triggerappchange">triggerAppChange</h3>
+<p>▸ <strong>triggerAppChange</strong>(): <code>Promise</code>&lt;<code>any</code>></p>
+<h4 id="returns_20">Returns</h4>
+<p><code>Promise</code>&lt;<code>any</code>></p>
+<h4 id="defined-in_32">Defined in</h4>
+<p>ui/typings/node_modules/single-spa/typings/single-spa.d.ts:176</p>
+<hr />
+<h3 id="unloadapplication">unloadApplication</h3>
+<p>▸ <strong>unloadApplication</strong>(<code>appName</code>, <code>opts?</code>): <code>Promise</code>&lt;<code>any</code>></p>
+<h4 id="parameters_18">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>appName</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>opts?</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>opts.waitForUnmount</code></td>
+<td align="left"><code>boolean</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_21">Returns</h4>
+<p><code>Promise</code>&lt;<code>any</code>></p>
+<h4 id="defined-in_33">Defined in</h4>
+<p>ui/typings/node_modules/single-spa/typings/single-spa.d.ts:154</p>
+<hr />
+<h3 id="unregisterapplication">unregisterApplication</h3>
+<p>▸ <strong>unregisterApplication</strong>(<code>appName</code>): <code>Promise</code>&lt;<code>any</code>></p>
+<h4 id="parameters_19">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>appName</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_22">Returns</h4>
+<p><code>Promise</code>&lt;<code>any</code>></p>
+<h4 id="defined-in_34">Defined in</h4>
+<p>ui/typings/node_modules/single-spa/typings/single-spa.d.ts:133</p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.22074ed6.min.js"}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.01de222e.min.js"></script>
+      
+    
+  </body>
+</html>

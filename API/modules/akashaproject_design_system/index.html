@@ -1,0 +1,981 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.7">
+    
+    
+      
+        <title>Akashaproject design system - AKASHA World Framework docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.cd566b2a.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#module-akashaprojectdesign-system" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="AKASHA World Framework docs" class="md-header__button md-logo" aria-label="AKASHA World Framework docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AKASHA World Framework docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Akashaproject design system
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="AKASHA World Framework docs" class="md-nav__button md-logo" aria-label="AKASHA World Framework docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    AKASHA World Framework docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        API
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    Table of contents
+  </a>
+  
+    <nav class="md-nav" aria-label="Table of contents">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#namespaces" class="md-nav__link">
+    Namespaces
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variables" class="md-nav__link">
+    Variables
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variables_1" class="md-nav__link">
+    Variables
+  </a>
+  
+    <nav class="md-nav" aria-label="Variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#default" class="md-nav__link">
+    default
+  </a>
+  
+    <nav class="md-nav" aria-label="default">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration" class="md-nav__link">
+    Type declaration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+<p><a href="../../">AWF</a> / <a href="../">Modules</a> / @akashaproject/design-system</p>
+<h1 id="module-akashaprojectdesign-system">Module: @akashaproject/design-system</h1>
+<h2 id="table-of-contents">Table of contents</h2>
+<h3 id="namespaces">Namespaces</h3>
+<ul>
+<li><a href="../akashaproject_design_system._internal_/">&lt;internal\&gt;</a></li>
+</ul>
+<h3 id="variables">Variables</h3>
+<ul>
+<li><a href="./#default">default</a></li>
+</ul>
+<h2 id="variables_1">Variables</h2>
+<h3 id="default">default</h3>
+<p>• <strong>default</strong>: <code>Object</code></p>
+<h4 id="type-declaration">Type declaration</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>AppIcon</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.IAppIcon/"><code>IAppIcon</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>AppInfoWidgetCard</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.IAppsWidgetCardProps/"><code>IAppsWidgetCardProps</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>AppsWidgetCard</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.IAppsWidgetCardProps-1/"><code>IAppsWidgetCardProps</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>AreaChart</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.IAreaChart/"><code>IAreaChart</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>Autosizer</code></td>
+<td align="left">typeof <a href="../../classes/akashaproject_design_system._internal_.default/"><code>default</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>Avatar</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.AvatarProps/"><code>AvatarProps</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>BasicCardBox</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.IBasicCardBox/"><code>IBasicCardBox</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>BookmarkPill</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.IBookmarkPill/"><code>IBookmarkPill</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>Box</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.BoxExtendedProps/"><code>BoxExtendedProps</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>BoxFormCard</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.IBoxFormCardProps/"><code>IBoxFormCardProps</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>Button</code></td>
+<td align="left">(<code>props</code>: <a href="../../interfaces/akashaproject_design_system._internal_.IButtonProps/"><code>IButtonProps</code></a>) =&gt; <code>Element</code></td>
+</tr>
+<tr>
+<td align="left"><code>CTAAnchor</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#styledcomponent"><code>StyledComponent</code></a>&lt;<a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.AnchorExtendedProps/"><code>AnchorExtendedProps</code></a>>, <code>any</code>, { <code>isBold?</code>: <code>boolean</code>  }, <code>never</code>></td>
+</tr>
+<tr>
+<td align="left"><code>Carousel</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.CarouselExtendedProps/"><code>CarouselExtendedProps</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>Checkbox</code></td>
+<td align="left">(<code>props</code>: <a href="../../interfaces/akashaproject_design_system._internal_.CheckboxPropsExtended/"><code>CheckboxPropsExtended</code></a>) =&gt; <code>Element</code></td>
+</tr>
+<tr>
+<td align="left"><code>CommentEditor</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../akashaproject_design_system._internal_/#omit"><code>Omit</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.IEditorBox/"><code>IEditorBox</code></a>, <code>"setEditorState"</code>> &amp; { <code>isShown?</code>: <code>boolean</code>  }></td>
+</tr>
+<tr>
+<td align="left"><code>CommentInput</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.ICommentInput/"><code>ICommentInput</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>ConfirmationModal</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.ConfirmationModalProps/"><code>ConfirmationModalProps</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>CookieWidgetCard</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.ICookieWidgetCard/"><code>ICookieWidgetCard</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>CustomizeFeedCard</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.ICustomizeFeedCardProps/"><code>ICustomizeFeedCardProps</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>DropSearchInput</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.ICustomSearchInput/"><code>ICustomSearchInput</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>DuplexButton</code></td>
+<td align="left">(<code>props</code>: <a href="../../interfaces/akashaproject_design_system._internal_.IDuplexButtonProps/"><code>IDuplexButtonProps</code></a>) =&gt; <code>Element</code></td>
+</tr>
+<tr>
+<td align="left"><code>DuplexButton.defaultProps</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>DuplexButton.defaultProps.active</code></td>
+<td align="left"><code>boolean</code></td>
+</tr>
+<tr>
+<td align="left"><code>DuplexButton.defaultProps.activeHoverLabel</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>DuplexButton.defaultProps.activeLabel</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>DuplexButton.defaultProps.inactiveLabel</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>EditableAvatar</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.EditableAvatarProps/"><code>EditableAvatarProps</code></a> &amp; <a href="../akashaproject_design_system._internal_/#partial"><code>Partial</code></a>&lt;{ <code>seed</code>: <code>string</code> = '0x0000000000000000000000000000000'; <code>size</code>: <a href="../akashaproject_design_system._internal_/#avatarsize"><code>AvatarSize</code></a> ; <code>withBorder</code>: <code>boolean</code> = false }>></td>
+</tr>
+<tr>
+<td align="left"><code>EditorBox</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.IEditorBox/"><code>IEditorBox</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>EditorCard</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.IEditorCard/"><code>IEditorCard</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>EditorMeter</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.IEditorMeter/"><code>IEditorMeter</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>EditorModal</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.IEditorModal/"><code>IEditorModal</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>EditorPlaceholder</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.IEditorPlaceholder/"><code>IEditorPlaceholder</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>EnsFormCard</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.IEnsFormCardProps/"><code>IEnsFormCardProps</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>EntryBox</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.IEntryBoxProps/"><code>IEntryBoxProps</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>EntryCard</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.IEntryCardProps/"><code>IEntryCardProps</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>EntryCardHidden</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.IEntryCardHiddenProps/"><code>IEntryCardHiddenProps</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>EntryCardLoading</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.IPlaceholderProps/"><code>IPlaceholderProps</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>EntryList</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#memoexoticcomponent"><code>MemoExoticComponent</code></a>&lt;(<code>props</code>: <a href="../../interfaces/akashaproject_design_system._internal_.EntryListProps/"><code>EntryListProps</code></a>) =&gt; <code>Element</code>></td>
+</tr>
+<tr>
+<td align="left"><code>EntryPublishErrorCard</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.PublishErrorCardProps/"><code>PublishErrorCardProps</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>ErrorInfoCard</code></td>
+<td align="left">(<code>__namedParameters</code>: { <code>error?</code>: <a href="../akashaproject_design_system._internal_/#error"><code>Error</code></a> ; <code>children</code>: (<code>message</code>: <a href="../../interfaces/akashaproject_design_system._internal_.ReactElement/"><code>ReactElement</code></a>&lt;<code>any</code>, <code>string</code> | <a href="../akashaproject_design_system._internal_/#jsxelementconstructor"><code>JSXElementConstructor</code></a>&lt;<code>any</code>>>) =&gt; <a href="../../interfaces/akashaproject_design_system._internal_.ReactElement/"><code>ReactElement</code></a>&lt;<code>any</code>, <code>string</code> | <a href="../akashaproject_design_system._internal_/#jsxelementconstructor"><code>JSXElementConstructor</code></a>&lt;<code>any</code>>>  }) =&gt; <a href="../../interfaces/akashaproject_design_system._internal_.ReactElement/"><code>ReactElement</code></a>&lt;<code>any</code>, <code>string</code> | <a href="../akashaproject_design_system._internal_/#jsxelementconstructor"><code>JSXElementConstructor</code></a>&lt;<code>any</code>>></td>
+</tr>
+<tr>
+<td align="left"><code>ErrorLoader</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.ErrorLoaderProps/"><code>ErrorLoaderProps</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>EthProviderListModal</code></td>
+<td align="left">(<code>props</code>: { <code>inputPlaceholder?</code>: <code>string</code> ; <code>providers</code>: <a href="../../interfaces/akashaproject_design_system._internal_.IProviderInfo/"><code>IProviderInfo</code></a>[] ; <code>showSignUp?</code>: { <code>inviteToken</code>: <code>string</code> ; <code>status</code>: <code>boolean</code>  } ; <code>titleLabel</code>: <code>string</code> ; <code>onModalClose</code>: () =&gt; <code>void</code> ; <code>onProviderClick</code>: (<code>providerId</code>: <code>string</code>) =&gt; <code>void</code>  }) =&gt; <code>Element</code></td>
+</tr>
+<tr>
+<td align="left"><code>EthProviderModal</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.IProviderModalProps/"><code>IProviderModalProps</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>ExtensionPoint</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.ExtensionPointProps/"><code>ExtensionPointProps</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>FeedbackModal</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.IFeedbackModalProps/"><code>IFeedbackModalProps</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>FilterCard</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.IFilterCard/"><code>IFilterCard</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>Grid</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.GridExtendedProps/"><code>GridExtendedProps</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>Grommet</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.GrommetExtendedProps/"><code>GrommetExtendedProps</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>Heading</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.HeadingExtendedProps/"><code>HeadingExtendedProps</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>Helmet</code></td>
+<td align="left"><code>any</code></td>
+</tr>
+<tr>
+<td align="left"><code>HorizontalDivider</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;{}></td>
+</tr>
+<tr>
+<td align="left"><code>Icon</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.IconProps/"><code>IconProps</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>IconButton</code></td>
+<td align="left">(<code>props</code>: <a href="../../interfaces/akashaproject_design_system._internal_.IIconButtonProps/"><code>IIconButtonProps</code></a>) =&gt; <code>Element</code></td>
+</tr>
+<tr>
+<td align="left"><code>IconLink</code></td>
+<td align="left"><a href="../../interfaces/akashaproject_design_system._internal_.ForwardRefExoticComponent/"><code>ForwardRefExoticComponent</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.ILinkIconButtonProps/"><code>ILinkIconButtonProps</code></a> &amp; <a href="../../interfaces/akashaproject_design_system._internal_.RefAttributes/"><code>RefAttributes</code></a>&lt;<code>unknown</code>>></td>
+</tr>
+<tr>
+<td align="left"><code>Image</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.ImageExtendedProps/"><code>ImageExtendedProps</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>LineChart</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.ILineChart/"><code>ILineChart</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>LinkInput</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.ILinkInput/"><code>ILinkInput</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>LoginCTAWidgetCard</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.ILoginWidgetCardProps/"><code>ILoginWidgetCardProps</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>MainAreaCardBox</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#styledcomponent"><code>StyledComponent</code></a>&lt;<a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.IBasicCardBox/"><code>IBasicCardBox</code></a>>, <code>any</code>, { <code>borderedShadow?</code>: <code>boolean</code> ; <code>verticalFill?</code>: <code>boolean</code>  }, <code>never</code>></td>
+</tr>
+<tr>
+<td align="left"><code>MdCard</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.IMdCard/"><code>IMdCard</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>MenuItemButton</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.IMenuItemButton/"><code>IMenuItemButton</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>MiniInfoWidgetCard</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.IMiniInfoCardProps/"><code>IMiniInfoCardProps</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>MobileListModal</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.IMobileListModal/"><code>IMobileListModal</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>ModalCard</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#styledcomponent"><code>StyledComponent</code></a>&lt;<a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.IBasicCardBox/"><code>IBasicCardBox</code></a>>, <code>any</code>, {}, <code>never</code>></td>
+</tr>
+<tr>
+<td align="left"><code>ModalCardLogin</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#styledcomponent"><code>StyledComponent</code></a>&lt;<a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.IBasicCardBox/"><code>IBasicCardBox</code></a>>, <code>any</code>, {}, <code>never</code>></td>
+</tr>
+<tr>
+<td align="left"><code>ModalContainer</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.IModalContainerProps/"><code>IModalContainerProps</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>ModalRenderer</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;{ <code>slotId?</code>: <code>string</code>  }></td>
+</tr>
+<tr>
+<td align="left"><code>ModerateModal</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.IModerateModalProps/"><code>IModerateModalProps</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>ModerationAppErrorCard</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.IModerationAppErrorCardProps/"><code>IModerationAppErrorCardProps</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>NewPostsPill</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.INewPostsPill/"><code>INewPostsPill</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>Notification</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#styledcomponent"><code>StyledComponent</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.FunctionComponent/"><code>FunctionComponent</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.NotificationProps/"><code>NotificationProps</code></a>>, <code>any</code>, {}, <code>never</code>></td>
+</tr>
+<tr>
+<td align="left"><code>NotificationsCard</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.INotificationsCard/"><code>INotificationsCard</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>NotificationsPopover</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.INotificationsPopover/"><code>INotificationsPopover</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>ProfileAvatarButton</code></td>
+<td align="left"><a href="../../interfaces/akashaproject_design_system._internal_.ForwardRefExoticComponent/"><code>ForwardRefExoticComponent</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.ProfileAvatarButtonProps/"><code>ProfileAvatarButtonProps</code></a> &amp; <a href="../../interfaces/akashaproject_design_system._internal_.RefAttributes/"><code>RefAttributes</code></a>&lt;<code>HTMLElement</code>>></td>
+</tr>
+<tr>
+<td align="left"><code>ProfileCard</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.IProfileCardProps/"><code>IProfileCardProps</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>ProfileCompletedModal</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.IProfileCompletedModalProps/"><code>IProfileCompletedModalProps</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>ProfileDelistedCard</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.IProfileDelistedCard/"><code>IProfileDelistedCard</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>ProfileMiniCard</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.IProfileMiniCard/"><code>IProfileMiniCard</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>ProfileSearchCard</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.IProfileWidgetCard/"><code>IProfileWidgetCard</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>ProfileWidgetCard</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.IProfileWidgetCard/"><code>IProfileWidgetCard</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>ReportModal</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.IReportModalProps/"><code>IReportModalProps</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>ResponsiveChart</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;{ <code>data</code>: <a href="../../interfaces/akashaproject_design_system._internal_.IMentionData/"><code>IMentionData</code></a>[]  }></td>
+</tr>
+<tr>
+<td align="left"><code>ResponsiveContext</code></td>
+<td align="left"><a href="../../interfaces/akashaproject_design_system._internal_.Context/"><code>Context</code></a>&lt;<code>string</code>></td>
+</tr>
+<tr>
+<td align="left"><code>SearchInput</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.ISearchInput/"><code>ISearchInput</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>SelectPopover</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.ISelectPopover/"><code>ISelectPopover</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>ShareModal</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.IShareModal/"><code>IShareModal</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>Sidebar</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.ISidebarProps/"><code>ISidebarProps</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>SignInModal</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.SignInModalProps/"><code>SignInModalProps</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>SignUpCard</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.ISignUpCardProps/"><code>ISignUpCardProps</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>SignUpModal</code></td>
+<td align="left">(<code>props</code>: { <code>acceptedTerms?</code>: <code>boolean</code> ; <code>checkedTermsValues?</code>: <code>string</code>[] ; <code>errorMsg?</code>: <code>string</code> ; <code>hasError?</code>: <code>boolean</code> ; <code>headerLabel?</code>: <code>string</code> ; <code>inputPlaceholder?</code>: <code>string</code> ; <code>inviteToken</code>: <code>string</code> ; <code>submitted?</code>: <code>boolean</code> ; <code>submitting?</code>: <code>boolean</code> ; <code>subtitleLabel?</code>: <code>string</code> ; <code>success?</code>: <code>boolean</code> ; <code>waitForCheckTerms?</code>: <code>boolean</code> ; <code>onAcceptTerms?</code>: (<code>ev</code>: <a href="../../interfaces/akashaproject_design_system._internal_.MouseEvent/"><code>MouseEvent</code></a>&lt;<code>HTMLButtonElement</code>, <code>MouseEvent</code>>) =&gt; <code>void</code> ; <code>onChange</code>: (<code>ev</code>: <a href="../../interfaces/akashaproject_design_system._internal_.ChangeEvent/"><code>ChangeEvent</code></a>&lt;<code>HTMLInputElement</code>>) =&gt; <code>void</code> ; <code>onCheckedTermsValues?</code>: (<code>ev</code>: <code>any</code>) =&gt; <code>void</code> ; <code>onModalClose</code>: () =&gt; <code>void</code> ; <code>validateTokenFn?</code>: (<code>ev</code>: <code>Event</code>) =&gt; <code>void</code>  }) =&gt; <code>Element</code></td>
+</tr>
+<tr>
+<td align="left"><code>SourcesWidgetCard</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.ISourceWidgetCardProps/"><code>ISourceWidgetCardProps</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>Spinner</code></td>
+<td align="left"><a href="../../interfaces/akashaproject_design_system._internal_.ForwardRefExoticComponent/"><code>ForwardRefExoticComponent</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.SpinnerProps/"><code>SpinnerProps</code></a> &amp; <a href="../../interfaces/akashaproject_design_system._internal_.RefAttributes/"><code>RefAttributes</code></a>&lt;<code>HTMLDivElement</code>>></td>
+</tr>
+<tr>
+<td align="left"><code>StatModal</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.IStatModal/"><code>IStatModal</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>StepIndicator</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.IStepIndicatorProps/"><code>IStepIndicatorProps</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>StyledLayer</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#styledcomponent"><code>StyledComponent</code></a>&lt;<a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.LayerExtendedProps/"><code>LayerExtendedProps</code></a>>, <code>any</code>, {}, <code>never</code>></td>
+</tr>
+<tr>
+<td align="left"><code>StyledSelectBox</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#styledcomponent"><code>StyledComponent</code></a>&lt;<a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.BoxExtendedProps/"><code>BoxExtendedProps</code></a>>, <code>any</code>, {}, <code>never</code>></td>
+</tr>
+<tr>
+<td align="left"><code>StyledSwitchCardButton</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#styledcomponent"><code>StyledComponent</code></a>&lt;(<code>props</code>: <a href="../../interfaces/akashaproject_design_system._internal_.IButtonProps/"><code>IButtonProps</code></a>) =&gt; <code>Element</code>, <code>any</code>, <a href="../../interfaces/akashaproject_design_system._internal_.ISwitchCardButtonProps/"><code>ISwitchCardButtonProps</code></a>, <code>never</code>></td>
+</tr>
+<tr>
+<td align="left"><code>SubtitleTextIcon</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.ISubtitleTextIcon/"><code>ISubtitleTextIcon</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>SwitchCard</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.ISwitchCard/"><code>ISwitchCard</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>TabsToolbar</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#styledcomponent"><code>StyledComponent</code></a>&lt;<a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.ISwitchCard/"><code>ISwitchCard</code></a>>, <code>any</code>, { <code>noMarginBottom?</code>: <code>boolean</code>  }, <code>never</code>></td>
+</tr>
+<tr>
+<td align="left"><code>Tag</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.ITagProps/"><code>ITagProps</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>TagCard</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.ITagCard/"><code>ITagCard</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>TagDetailCard</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.ITagDetailCard/"><code>ITagDetailCard</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>TagProfileCard</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.ITagProfileCard/"><code>ITagProfileCard</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>TagSearchCard</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.ITagSearchCard/"><code>ITagSearchCard</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>Text</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.TextExtendedProps/"><code>TextExtendedProps</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>TextIcon</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.ITextIconProps/"><code>ITextIconProps</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>TextInputField</code></td>
+<td align="left"><a href="../../interfaces/akashaproject_design_system._internal_.ForwardRefExoticComponent/"><code>ForwardRefExoticComponent</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.ITextInputFieldProps/"><code>ITextInputFieldProps</code></a> &amp; <a href="../../interfaces/akashaproject_design_system._internal_.RefAttributes/"><code>RefAttributes</code></a>&lt;<code>any</code>>></td>
+</tr>
+<tr>
+<td align="left"><code>ThemeContext</code></td>
+<td align="left"><a href="../../interfaces/akashaproject_design_system._internal_.ThemeContextI/"><code>ThemeContextI</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>ThemeSelector</code></td>
+<td align="left">(<code>props</code>: <a href="../../interfaces/akashaproject_design_system._internal_.IThemeSelector/"><code>IThemeSelector</code></a> &amp; <a href="../../interfaces/akashaproject_design_system._internal_.GrommetProps/"><code>GrommetProps</code></a>) =&gt; <code>Element</code></td>
+</tr>
+<tr>
+<td align="left"><code>Topbar</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.ITopbarProps/"><code>ITopbarProps</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>TopicsWidgetCard</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.ITopicsCardWidgetProps/"><code>ITopicsCardWidgetProps</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>TransparencyLogBanner</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.ITransparencyLogBannerProps/"><code>ITransparencyLogBannerProps</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>TransparencyLogDetailCard</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.ITransparencyLogDetailCardProps/"><code>ITransparencyLogDetailCardProps</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>TransparencyLogMiniCard</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.ITransparencyLogMiniCardProps/"><code>ITransparencyLogMiniCardProps</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>TrendingWidgetCard</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.ITrendingWidgetCardProps/"><code>ITrendingWidgetCardProps</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>TutorialWidgetCard</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.ITutorialWidgetCardProps/"><code>ITutorialWidgetCardProps</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>VariableIconButton</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.IVariableIconButtonProps/"><code>IVariableIconButtonProps</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>ViewportSizeProvider</code></td>
+<td align="left">(<code>__namedParameters</code>: <a href="../../interfaces/akashaproject_design_system._internal_.IViewportDimProps/"><code>IViewportDimProps</code></a>) =&gt; <code>Element</code></td>
+</tr>
+<tr>
+<td align="left"><code>VoteIconButton</code></td>
+<td align="left">(<code>props</code>: <a href="../../interfaces/akashaproject_design_system._internal_.IVoteIconProps/"><code>IVoteIconProps</code></a>) =&gt; <code>Element</code></td>
+</tr>
+<tr>
+<td align="left"><code>WalletRequestStep</code></td>
+<td align="left">(<code>props</code>: <a href="../../interfaces/akashaproject_design_system._internal_.WalletRequestStepProps/"><code>WalletRequestStepProps</code></a>) =&gt; <code>Element</code></td>
+</tr>
+<tr>
+<td align="left"><code>Web3ConnectButton</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.IWeb3ConnectButtonProps/"><code>IWeb3ConnectButtonProps</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>WelcomeCard</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.IWelcomeCardProps/"><code>IWelcomeCardProps</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>WidgetAreaCardBox</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#styledcomponent"><code>StyledComponent</code></a>&lt;<a href="../akashaproject_design_system._internal_/#fc"><code>FC</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.IBasicCardBox/"><code>IBasicCardBox</code></a>>, <code>any</code>, {}, <code>never</code>></td>
+</tr>
+<tr>
+<td align="left"><code>createGlobalStyle</code></td>
+<td align="left">&lt;P>(<code>first</code>: <a href="../../interfaces/akashaproject_design_system._internal_.TemplateStringsArray/"><code>TemplateStringsArray</code></a> | <a href="../../interfaces/akashaproject_design_system._internal_.CSSObject/"><code>CSSObject</code></a> | <a href="../akashaproject_design_system._internal_/#interpolationfunction"><code>InterpolationFunction</code></a>&lt;<a href="../akashaproject_design_system._internal_/#themedstyledprops"><code>ThemedStyledProps</code></a>&lt;<code>P</code>, <a href="../../interfaces/akashaproject_design_system._internal_.DefaultTheme/"><code>DefaultTheme</code></a>>>, ...<code>interpolations</code>: <a href="../akashaproject_design_system._internal_/#interpolation"><code>Interpolation</code></a>&lt;<a href="../akashaproject_design_system._internal_/#themedstyledprops"><code>ThemedStyledProps</code></a>&lt;<code>P</code>, <a href="../../interfaces/akashaproject_design_system._internal_.DefaultTheme/"><code>DefaultTheme</code></a>>>[]) =&gt; <a href="../../interfaces/akashaproject_design_system._internal_.GlobalStyleComponent/"><code>GlobalStyleComponent</code></a>&lt;<code>P</code>, <a href="../../interfaces/akashaproject_design_system._internal_.DefaultTheme/"><code>DefaultTheme</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>createTheme</code></td>
+<td align="left">(<code>overrides?</code>: <a href="../akashaproject_design_system._internal_/#record"><code>Record</code></a>&lt;<code>string</code>, <code>unknown</code>>) =&gt; <a href="../../interfaces/akashaproject_design_system._internal_.DefaultTheme-1/"><code>DefaultTheme</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>css</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#themedcssfunction"><code>ThemedCssFunction</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.DefaultTheme/"><code>DefaultTheme</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>darkTheme</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>darkTheme.name</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>darkTheme.theme</code></td>
+<td align="left"><code>Promise</code>&lt;<a href="../akashaproject_design_system._internal_.__Users_mariusdarila_go_src_akasha_world_framework_ui_design_src_styles_themes_dark_dark_theme_/"><code>"/Users/mariusdarila/go/src/akasha-world-framework/ui/design/src/styles/themes/dark/dark-theme"</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>editorDefaultValue</code></td>
+<td align="left"><code>Descendant</code>[]</td>
+</tr>
+<tr>
+<td align="left"><code>formatImageSrc</code></td>
+<td align="left">(<code>src?</code>: <code>string</code>, <code>isUrl?</code>: <code>boolean</code>, <code>ipfsUrlPrefix?</code>: <code>string</code>) =&gt; { <code>isUrl</code>: <code>boolean</code> ; <code>prefix</code>: <code>string</code> = ipfsUrlPrefix; <code>src</code>: <code>string</code>  }</td>
+</tr>
+<tr>
+<td align="left"><code>formatRelativeTime</code></td>
+<td align="left">(<code>date</code>: <code>any</code>, <code>locale?</code>: <a href="../akashaproject_design_system._internal_/#ilocale"><code>ILocale</code></a>) =&gt; <code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>grommet</code></td>
+<td align="left"><a href="../../interfaces/akashaproject_design_system._internal_.ThemeType/"><code>ThemeType</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>iconTypes</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#icontype"><code>IconType</code></a>[]</td>
+</tr>
+<tr>
+<td align="left"><code>isBase64</code></td>
+<td align="left">(<code>str</code>: <code>string</code>) =&gt; <code>boolean</code></td>
+</tr>
+<tr>
+<td align="left"><code>lightTheme</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>lightTheme.name</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>lightTheme.theme</code></td>
+<td align="left"><code>Promise</code>&lt;<a href="../akashaproject_design_system._internal_.__Users_mariusdarila_go_src_akasha_world_framework_ui_design_src_styles_themes_light_light_theme_/"><code>"/Users/mariusdarila/go/src/akasha-world-framework/ui/design/src/styles/themes/light/light-theme"</code></a>></td>
+</tr>
+<tr>
+<td align="left"><code>notify</code></td>
+<td align="left">(<code>content</code>: <code>ToastContent</code>, <code>options?</code>: <code>ToastOptions</code>) =&gt; <a href="../akashaproject_design_system._internal_/#reacttext"><code>ReactText</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>responsiveBreakpoints</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>responsiveBreakpoints.global</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>responsiveBreakpoints.global.breakpoints</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>responsiveBreakpoints.global.breakpoints.large</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>responsiveBreakpoints.global.breakpoints.large.value</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>responsiveBreakpoints.global.breakpoints.medium</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>responsiveBreakpoints.global.breakpoints.medium.value</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>responsiveBreakpoints.global.breakpoints.small</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>responsiveBreakpoints.global.breakpoints.small.value</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>responsiveBreakpoints.global.breakpoints.xlarge</code></td>
+<td align="left"><code>Object</code></td>
+</tr>
+<tr>
+<td align="left"><code>responsiveBreakpoints.global.breakpoints.xlarge.value</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>styled</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#styledinterface"><code>StyledInterface</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>truncateMiddle</code></td>
+<td align="left">(<code>str</code>: <code>string</code>, <code>startChars</code>: <code>number</code>, <code>endChars</code>: <code>number</code>) =&gt; <code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>useIntersectionObserver</code></td>
+<td align="left">(<code>__namedParameters</code>: <code>Object</code>) =&gt; <code>void</code></td>
+</tr>
+<tr>
+<td align="left"><code>useViewportSize</code></td>
+<td align="left">() =&gt; { <code>dimensions</code>: { <code>height</code>: <code>number</code> = 0; <code>width</code>: <code>number</code> = 0 } ; <code>size</code>: <code>string</code> = '' }</td>
+</tr>
+<tr>
+<td align="left"><code>withTheme</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_/#withthemefninterface"><code>WithThemeFnInterface</code></a>&lt;<a href="../../interfaces/akashaproject_design_system._internal_.DefaultTheme/"><code>DefaultTheme</code></a>></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/ui/design/src/index.ts#L169">ui/design/src/index.ts:169</a></p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.22074ed6.min.js"}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.01de222e.min.js"></script>
+      
+    
+  </body>
+</html>

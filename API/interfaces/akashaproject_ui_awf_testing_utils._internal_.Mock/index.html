@@ -1,0 +1,2048 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.7">
+    
+    
+      
+        <title>akashaproject ui awf testing utils. internal .Mock - AKASHA World Framework docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.cd566b2a.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#interface-mockt-y" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="AKASHA World Framework docs" class="md-header__button md-logo" aria-label="AKASHA World Framework docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AKASHA World Framework docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              akashaproject ui awf testing utils. internal .Mock
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="AKASHA World Framework docs" class="md-nav__button md-logo" aria-label="AKASHA World Framework docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    AKASHA World Framework docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modules/" class="md-nav__link">
+        API
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#type-parameters" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hierarchy" class="md-nav__link">
+    Hierarchy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#callable" class="md-nav__link">
+    Callable
+  </a>
+  
+    <nav class="md-nav" aria-label="Callable">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mock" class="md-nav__link">
+    Mock
+  </a>
+  
+    <nav class="md-nav" aria-label="Mock">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    Table of contents
+  </a>
+  
+    <nav class="md-nav" aria-label="Table of contents">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#constructors" class="md-nav__link">
+    Constructors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    Properties
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    Methods
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constructors_1" class="md-nav__link">
+    Constructors
+  </a>
+  
+    <nav class="md-nav" aria-label="Constructors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#constructor" class="md-nav__link">
+    constructor
+  </a>
+  
+    <nav class="md-nav" aria-label="constructor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_1" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_1" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties_1" class="md-nav__link">
+    Properties
+  </a>
+  
+    <nav class="md-nav" aria-label="Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arguments" class="md-nav__link">
+    arguments
+  </a>
+  
+    <nav class="md-nav" aria-label="arguments">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_1" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_2" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#caller" class="md-nav__link">
+    caller
+  </a>
+  
+    <nav class="md-nav" aria-label="caller">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_2" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_3" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#length" class="md-nav__link">
+    length
+  </a>
+  
+    <nav class="md-nav" aria-label="length">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_3" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_4" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mock_1" class="md-nav__link">
+    mock
+  </a>
+  
+    <nav class="md-nav" aria-label="mock">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_4" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_5" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#name" class="md-nav__link">
+    name
+  </a>
+  
+    <nav class="md-nav" aria-label="name">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_5" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_6" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prototype" class="md-nav__link">
+    prototype
+  </a>
+  
+    <nav class="md-nav" aria-label="prototype">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_6" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_7" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#methods_1" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hasinstance" class="md-nav__link">
+    [hasInstance]
+  </a>
+  
+    <nav class="md-nav" aria-label="[hasInstance]">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_2" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_1" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_7" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_8" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apply" class="md-nav__link">
+    apply
+  </a>
+  
+    <nav class="md-nav" aria-label="apply">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_3" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_2" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_8" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_9" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bind" class="md-nav__link">
+    bind
+  </a>
+  
+    <nav class="md-nav" aria-label="bind">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_4" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_3" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_9" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_10" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#call" class="md-nav__link">
+    call
+  </a>
+  
+    <nav class="md-nav" aria-label="call">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_5" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_4" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_10" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_11" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getmockimplementation" class="md-nav__link">
+    getMockImplementation
+  </a>
+  
+    <nav class="md-nav" aria-label="getMockImplementation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_5" class="md-nav__link">
+    Returns
+  </a>
+  
+    <nav class="md-nav" aria-label="Returns">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_6" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_6" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_11" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_12" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getmockname" class="md-nav__link">
+    getMockName
+  </a>
+  
+    <nav class="md-nav" aria-label="getMockName">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_7" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_12" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_13" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mockclear" class="md-nav__link">
+    mockClear
+  </a>
+  
+    <nav class="md-nav" aria-label="mockClear">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_8" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_13" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_14" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mockimplementation" class="md-nav__link">
+    mockImplementation
+  </a>
+  
+    <nav class="md-nav" aria-label="mockImplementation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_7" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_9" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_14" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_15" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mockimplementationonce" class="md-nav__link">
+    mockImplementationOnce
+  </a>
+  
+    <nav class="md-nav" aria-label="mockImplementationOnce">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_8" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_10" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_15" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_16" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mockname" class="md-nav__link">
+    mockName
+  </a>
+  
+    <nav class="md-nav" aria-label="mockName">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_9" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_11" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_16" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_17" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mockrejectedvalue" class="md-nav__link">
+    mockRejectedValue
+  </a>
+  
+    <nav class="md-nav" aria-label="mockRejectedValue">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_10" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_12" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_17" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_18" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mockrejectedvalueonce" class="md-nav__link">
+    mockRejectedValueOnce
+  </a>
+  
+    <nav class="md-nav" aria-label="mockRejectedValueOnce">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_11" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_13" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_18" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_19" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mockreset" class="md-nav__link">
+    mockReset
+  </a>
+  
+    <nav class="md-nav" aria-label="mockReset">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_14" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_19" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_20" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mockresolvedvalue" class="md-nav__link">
+    mockResolvedValue
+  </a>
+  
+    <nav class="md-nav" aria-label="mockResolvedValue">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_12" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_15" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_20" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_21" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mockresolvedvalueonce" class="md-nav__link">
+    mockResolvedValueOnce
+  </a>
+  
+    <nav class="md-nav" aria-label="mockResolvedValueOnce">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_13" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_16" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_21" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_22" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mockrestore" class="md-nav__link">
+    mockRestore
+  </a>
+  
+    <nav class="md-nav" aria-label="mockRestore">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_17" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_22" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_23" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mockreturnthis" class="md-nav__link">
+    mockReturnThis
+  </a>
+  
+    <nav class="md-nav" aria-label="mockReturnThis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_18" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_23" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_24" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mockreturnvalue" class="md-nav__link">
+    mockReturnValue
+  </a>
+  
+    <nav class="md-nav" aria-label="mockReturnValue">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_14" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_19" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_24" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_25" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mockreturnvalueonce" class="md-nav__link">
+    mockReturnValueOnce
+  </a>
+  
+    <nav class="md-nav" aria-label="mockReturnValueOnce">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_15" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_20" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_25" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_26" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tostring" class="md-nav__link">
+    toString
+  </a>
+  
+    <nav class="md-nav" aria-label="toString">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_21" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_26" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_27" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+<p><a href="../../">AWF</a> / <a href="../../modules/">Modules</a> / <a href="../../modules/akashaproject_ui_awf_testing_utils/">@akashaproject/ui-awf-testing-utils</a> / <a href="../../modules/akashaproject_ui_awf_testing_utils._internal_/">&lt;internal></a> / Mock</p>
+<h1 id="interface-mockt-y">Interface: Mock&lt;T, Y></h1>
+<p><a href="../../modules/akashaproject_ui_awf_testing_utils/">@akashaproject/ui-awf-testing-utils</a>.<a href="../../modules/akashaproject_ui_awf_testing_utils._internal_/"><internal></a>.Mock</p>
+<h2 id="type-parameters">Type parameters</h2>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left"><code>any</code></td>
+</tr>
+<tr>
+<td align="left"><code>Y</code></td>
+<td align="left">extends <code>any</code>[] = <code>any</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="hierarchy">Hierarchy</h2>
+<ul>
+<li>
+<p><code>Function</code></p>
+</li>
+<li>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.MockInstance/"><code>MockInstance</code></a>&lt;<code>T</code>, <code>Y</code>></p>
+</li>
+</ul>
+<p>↳ <strong><code>Mock</code></strong></p>
+<h2 id="callable">Callable</h2>
+<h3 id="mock">Mock</h3>
+<p>▸ <strong>Mock</strong>(...<code>args</code>): <code>T</code></p>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>...args</code></td>
+<td align="left"><code>Y</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><code>T</code></p>
+<h4 id="defined-in">Defined in</h4>
+<p>node_modules/@types/jest/index.d.ts:1078</p>
+<h2 id="table-of-contents">Table of contents</h2>
+<h3 id="constructors">Constructors</h3>
+<ul>
+<li><a href="./#constructor">constructor</a></li>
+</ul>
+<h3 id="properties">Properties</h3>
+<ul>
+<li><a href="./#arguments">arguments</a></li>
+<li><a href="./#caller">caller</a></li>
+<li><a href="./#length">length</a></li>
+<li><a href="./#mock">mock</a></li>
+<li><a href="./#name">name</a></li>
+<li><a href="./#prototype">prototype</a></li>
+</ul>
+<h3 id="methods">Methods</h3>
+<ul>
+<li><a href="./#[hasinstance]">[hasInstance]</a></li>
+<li><a href="./#apply">apply</a></li>
+<li><a href="./#bind">bind</a></li>
+<li><a href="./#call">call</a></li>
+<li><a href="./#getmockimplementation">getMockImplementation</a></li>
+<li><a href="./#getmockname">getMockName</a></li>
+<li><a href="./#mockclear">mockClear</a></li>
+<li><a href="./#mockimplementation">mockImplementation</a></li>
+<li><a href="./#mockimplementationonce">mockImplementationOnce</a></li>
+<li><a href="./#mockname">mockName</a></li>
+<li><a href="./#mockrejectedvalue">mockRejectedValue</a></li>
+<li><a href="./#mockrejectedvalueonce">mockRejectedValueOnce</a></li>
+<li><a href="./#mockreset">mockReset</a></li>
+<li><a href="./#mockresolvedvalue">mockResolvedValue</a></li>
+<li><a href="./#mockresolvedvalueonce">mockResolvedValueOnce</a></li>
+<li><a href="./#mockrestore">mockRestore</a></li>
+<li><a href="./#mockreturnthis">mockReturnThis</a></li>
+<li><a href="./#mockreturnvalue">mockReturnValue</a></li>
+<li><a href="./#mockreturnvalueonce">mockReturnValueOnce</a></li>
+<li><a href="./#tostring">toString</a></li>
+</ul>
+<h2 id="constructors_1">Constructors</h2>
+<h3 id="constructor">constructor</h3>
+<p>• <strong>new Mock</strong>(...<code>args</code>)</p>
+<h4 id="parameters_1">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>...args</code></td>
+<td align="left"><code>Y</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="inherited-from">Inherited from</h4>
+<p>Function.constructor</p>
+<h4 id="defined-in_1">Defined in</h4>
+<p>node_modules/@types/jest/index.d.ts:1077</p>
+<h2 id="properties_1">Properties</h2>
+<h3 id="arguments">arguments</h3>
+<p>• <strong>arguments</strong>: <code>any</code></p>
+<h4 id="inherited-from_1">Inherited from</h4>
+<p>Function.arguments</p>
+<h4 id="defined-in_2">Defined in</h4>
+<p>node_modules/typescript/lib/lib.es5.d.ts:302</p>
+<hr />
+<h3 id="caller">caller</h3>
+<p>• <strong>caller</strong>: <code>Function</code></p>
+<h4 id="inherited-from_2">Inherited from</h4>
+<p>Function.caller</p>
+<h4 id="defined-in_3">Defined in</h4>
+<p>node_modules/typescript/lib/lib.es5.d.ts:303</p>
+<hr />
+<h3 id="length">length</h3>
+<p>• <code>Readonly</code> <strong>length</strong>: <code>number</code></p>
+<h4 id="inherited-from_3">Inherited from</h4>
+<p>Function.length</p>
+<h4 id="defined-in_4">Defined in</h4>
+<p>node_modules/typescript/lib/lib.es5.d.ts:299</p>
+<hr />
+<h3 id="mock_1">mock</h3>
+<p>• <strong>mock</strong>: <a href="../akashaproject_ui_awf_testing_utils._internal_.MockContext/"><code>MockContext</code></a>&lt;<code>T</code>, <code>Y</code>></p>
+<p>Provides access to the mock's metadata</p>
+<h4 id="inherited-from_4">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.MockInstance/">MockInstance</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.MockInstance/#mock">mock</a></p>
+<h4 id="defined-in_5">Defined in</h4>
+<p>node_modules/@types/jest/index.d.ts:1146</p>
+<hr />
+<h3 id="name">name</h3>
+<p>• <code>Readonly</code> <strong>name</strong>: <code>string</code></p>
+<p>Returns the name of the function. Function names are read-only and can not be changed.</p>
+<h4 id="inherited-from_5">Inherited from</h4>
+<p>Function.name</p>
+<h4 id="defined-in_6">Defined in</h4>
+<p>node_modules/typescript/lib/lib.es2015.core.d.ts:97</p>
+<hr />
+<h3 id="prototype">prototype</h3>
+<p>• <strong>prototype</strong>: <code>any</code></p>
+<h4 id="inherited-from_6">Inherited from</h4>
+<p>Function.prototype</p>
+<h4 id="defined-in_7">Defined in</h4>
+<p>node_modules/typescript/lib/lib.es5.d.ts:298</p>
+<h2 id="methods_1">Methods</h2>
+<h3 id="hasinstance">[hasInstance]</h3>
+<p>▸ <strong>[hasInstance]</strong>(<code>value</code>): <code>boolean</code></p>
+<p>Determines whether the given value inherits from this function if this function was used
+as a constructor function.</p>
+<p>A constructor function can control which objects are recognized as its instances by
+'instanceof' by overriding this method.</p>
+<h4 id="parameters_2">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>value</code></td>
+<td align="left"><code>any</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_1">Returns</h4>
+<p><code>boolean</code></p>
+<h4 id="inherited-from_7">Inherited from</h4>
+<p>Function.__@hasInstance@97703</p>
+<h4 id="defined-in_8">Defined in</h4>
+<p>node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts:162</p>
+<hr />
+<h3 id="apply">apply</h3>
+<p>▸ <strong>apply</strong>(<code>thisArg</code>, <code>argArray?</code>): <code>any</code></p>
+<p>Calls the function, substituting the specified object for the this value of the function, and the specified array for the arguments of the function.</p>
+<h4 id="parameters_3">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>thisArg</code></td>
+<td align="left"><code>any</code></td>
+<td align="left">The object to be used as the this object.</td>
+</tr>
+<tr>
+<td align="left"><code>argArray?</code></td>
+<td align="left"><code>any</code></td>
+<td align="left">A set of arguments to be passed to the function.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_2">Returns</h4>
+<p><code>any</code></p>
+<h4 id="inherited-from_8">Inherited from</h4>
+<p>Function.apply</p>
+<h4 id="defined-in_9">Defined in</h4>
+<p>node_modules/typescript/lib/lib.es5.d.ts:278</p>
+<hr />
+<h3 id="bind">bind</h3>
+<p>▸ <strong>bind</strong>(<code>thisArg</code>, ...<code>argArray</code>): <code>any</code></p>
+<p>For a given function, creates a bound function that has the same body as the original function.
+The this object of the bound function is associated with the specified object, and has the specified initial parameters.</p>
+<h4 id="parameters_4">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>thisArg</code></td>
+<td align="left"><code>any</code></td>
+<td align="left">An object to which the this keyword can refer inside the new function.</td>
+</tr>
+<tr>
+<td align="left"><code>...argArray</code></td>
+<td align="left"><code>any</code>[]</td>
+<td align="left">A list of arguments to be passed to the new function.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_3">Returns</h4>
+<p><code>any</code></p>
+<h4 id="inherited-from_9">Inherited from</h4>
+<p>Function.bind</p>
+<h4 id="defined-in_10">Defined in</h4>
+<p>node_modules/typescript/lib/lib.es5.d.ts:293</p>
+<hr />
+<h3 id="call">call</h3>
+<p>▸ <strong>call</strong>(<code>thisArg</code>, ...<code>argArray</code>): <code>any</code></p>
+<p>Calls a method of an object, substituting another object for the current object.</p>
+<h4 id="parameters_5">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>thisArg</code></td>
+<td align="left"><code>any</code></td>
+<td align="left">The object to be used as the current object.</td>
+</tr>
+<tr>
+<td align="left"><code>...argArray</code></td>
+<td align="left"><code>any</code>[]</td>
+<td align="left">A list of arguments to be passed to the method.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_4">Returns</h4>
+<p><code>any</code></p>
+<h4 id="inherited-from_10">Inherited from</h4>
+<p>Function.call</p>
+<h4 id="defined-in_11">Defined in</h4>
+<p>node_modules/typescript/lib/lib.es5.d.ts:285</p>
+<hr />
+<h3 id="getmockimplementation">getMockImplementation</h3>
+<p>▸ <strong>getMockImplementation</strong>(): (...<code>args</code>: <code>Y</code>) =&gt; <code>T</code></p>
+<p>Returns the function that was set as the implementation of the mock (using mockImplementation).</p>
+<h4 id="returns_5">Returns</h4>
+<p><code>fn</code></p>
+<p>▸ (...<code>args</code>): <code>T</code></p>
+<h5 id="parameters_6">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>...args</code></td>
+<td align="left"><code>Y</code></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_6">Returns</h5>
+<p><code>T</code></p>
+<h4 id="inherited-from_11">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.MockInstance/">MockInstance</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.MockInstance/#getmockimplementation">getMockImplementation</a></p>
+<h4 id="defined-in_12">Defined in</h4>
+<p>node_modules/@types/jest/index.d.ts:1182</p>
+<hr />
+<h3 id="getmockname">getMockName</h3>
+<p>▸ <strong>getMockName</strong>(): <code>string</code></p>
+<p>Returns the mock name string set by calling <code>mockFn.mockName(value)</code>.</p>
+<h4 id="returns_7">Returns</h4>
+<p><code>string</code></p>
+<h4 id="inherited-from_12">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.MockInstance/">MockInstance</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.MockInstance/#getmockname">getMockName</a></p>
+<h4 id="defined-in_13">Defined in</h4>
+<p>node_modules/@types/jest/index.d.ts:1144</p>
+<hr />
+<h3 id="mockclear">mockClear</h3>
+<p>▸ <strong>mockClear</strong>(): <a href="./"><code>Mock</code></a>&lt;<code>T</code>, <code>Y</code>></p>
+<p>Resets all information stored in the mockFn.mock.calls and mockFn.mock.instances arrays.</p>
+<p>Often this is useful when you want to clean up a mock's usage data between two assertions.</p>
+<p>Beware that <code>mockClear</code> will replace <code>mockFn.mock</code>, not just <code>mockFn.mock.calls</code> and <code>mockFn.mock.instances</code>.
+You should therefore avoid assigning mockFn.mock to other variables, temporary or not, to make sure you
+don't access stale data.</p>
+<h4 id="returns_8">Returns</h4>
+<p><a href="./"><code>Mock</code></a>&lt;<code>T</code>, <code>Y</code>></p>
+<h4 id="inherited-from_13">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.MockInstance/">MockInstance</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.MockInstance/#mockclear">mockClear</a></p>
+<h4 id="defined-in_14">Defined in</h4>
+<p>node_modules/@types/jest/index.d.ts:1156</p>
+<hr />
+<h3 id="mockimplementation">mockImplementation</h3>
+<p>▸ <strong>mockImplementation</strong>(<code>fn?</code>): <a href="./"><code>Mock</code></a>&lt;<code>T</code>, <code>Y</code>></p>
+<p>Accepts a function that should be used as the implementation of the mock. The mock itself will still record
+all calls that go into and instances that come from itself – the only difference is that the implementation
+will also be executed when the mock is called.</p>
+<p>Note: <code>jest.fn(implementation)</code> is a shorthand for <code>jest.fn().mockImplementation(implementation)</code>.</p>
+<h4 id="parameters_7">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>fn?</code></td>
+<td align="left">(...<code>args</code>: <code>Y</code>) =&gt; <code>T</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_9">Returns</h4>
+<p><a href="./"><code>Mock</code></a>&lt;<code>T</code>, <code>Y</code>></p>
+<h4 id="inherited-from_14">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.MockInstance/">MockInstance</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.MockInstance/#mockimplementation">mockImplementation</a></p>
+<h4 id="defined-in_15">Defined in</h4>
+<p>node_modules/@types/jest/index.d.ts:1190</p>
+<hr />
+<h3 id="mockimplementationonce">mockImplementationOnce</h3>
+<p>▸ <strong>mockImplementationOnce</strong>(<code>fn</code>): <a href="./"><code>Mock</code></a>&lt;<code>T</code>, <code>Y</code>></p>
+<p>Accepts a function that will be used as an implementation of the mock for one call to the mocked function.
+Can be chained so that multiple function calls produce different results.</p>
+<p><strong><code>example</code></strong></p>
+<p>const myMockFn = jest
+  .fn()
+   .mockImplementationOnce(cb =&gt; cb(null, true))
+   .mockImplementationOnce(cb =&gt; cb(null, false));</p>
+<p>myMockFn((err, val) =&gt; console.log(val)); // true</p>
+<p>myMockFn((err, val) =&gt; console.log(val)); // false</p>
+<h4 id="parameters_8">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>fn</code></td>
+<td align="left">(...<code>args</code>: <code>Y</code>) =&gt; <code>T</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_10">Returns</h4>
+<p><a href="./"><code>Mock</code></a>&lt;<code>T</code>, <code>Y</code>></p>
+<h4 id="inherited-from_15">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.MockInstance/">MockInstance</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.MockInstance/#mockimplementationonce">mockImplementationOnce</a></p>
+<h4 id="defined-in_16">Defined in</h4>
+<p>node_modules/@types/jest/index.d.ts:1206</p>
+<hr />
+<h3 id="mockname">mockName</h3>
+<p>▸ <strong>mockName</strong>(<code>name</code>): <a href="./"><code>Mock</code></a>&lt;<code>T</code>, <code>Y</code>></p>
+<p>Sets the name of the mock`.</p>
+<h4 id="parameters_9">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>name</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_11">Returns</h4>
+<p><a href="./"><code>Mock</code></a>&lt;<code>T</code>, <code>Y</code>></p>
+<h4 id="inherited-from_16">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.MockInstance/">MockInstance</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.MockInstance/#mockname">mockName</a></p>
+<h4 id="defined-in_17">Defined in</h4>
+<p>node_modules/@types/jest/index.d.ts:1208</p>
+<hr />
+<h3 id="mockrejectedvalue">mockRejectedValue</h3>
+<p>▸ <strong>mockRejectedValue</strong>(<code>value</code>): <a href="./"><code>Mock</code></a>&lt;<code>T</code>, <code>Y</code>></p>
+<p>Simple sugar function for: <code>jest.fn().mockImplementation(() =&gt; Promise.reject(value));</code></p>
+<p><strong><code>example</code></strong></p>
+<p>test('async test', async () =&gt; {
+  const asyncMock = jest.fn().mockRejectedValue(new Error('Async error'));</p>
+<p>await asyncMock(); // throws "Async error"
+});</p>
+<h4 id="parameters_10">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>value</code></td>
+<td align="left"><a href="../../modules/akashaproject_ui_awf_testing_utils._internal_/#rejectedvalue"><code>RejectedValue</code></a>&lt;<code>T</code>></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_12">Returns</h4>
+<p><a href="./"><code>Mock</code></a>&lt;<code>T</code>, <code>Y</code>></p>
+<h4 id="inherited-from_17">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.MockInstance/">MockInstance</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.MockInstance/#mockrejectedvalue">mockRejectedValue</a></p>
+<h4 id="defined-in_18">Defined in</h4>
+<p>node_modules/@types/jest/index.d.ts:1283</p>
+<hr />
+<h3 id="mockrejectedvalueonce">mockRejectedValueOnce</h3>
+<p>▸ <strong>mockRejectedValueOnce</strong>(<code>value</code>): <a href="./"><code>Mock</code></a>&lt;<code>T</code>, <code>Y</code>></p>
+<p>Simple sugar function for: <code>jest.fn().mockImplementationOnce(() =&gt; Promise.reject(value));</code></p>
+<p><strong><code>example</code></strong></p>
+<p>test('async test', async () =&gt; {
+ const asyncMock = jest
+   .fn()
+   .mockResolvedValueOnce('first call')
+   .mockRejectedValueOnce(new Error('Async error'));</p>
+<p>await asyncMock(); // first call
+ await asyncMock(); // throws "Async error"
+});</p>
+<h4 id="parameters_11">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>value</code></td>
+<td align="left"><a href="../../modules/akashaproject_ui_awf_testing_utils._internal_/#rejectedvalue"><code>RejectedValue</code></a>&lt;<code>T</code>></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_13">Returns</h4>
+<p><a href="./"><code>Mock</code></a>&lt;<code>T</code>, <code>Y</code>></p>
+<h4 id="inherited-from_18">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.MockInstance/">MockInstance</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.MockInstance/#mockrejectedvalueonce">mockRejectedValueOnce</a></p>
+<h4 id="defined-in_19">Defined in</h4>
+<p>node_modules/@types/jest/index.d.ts:1301</p>
+<hr />
+<h3 id="mockreset">mockReset</h3>
+<p>▸ <strong>mockReset</strong>(): <a href="./"><code>Mock</code></a>&lt;<code>T</code>, <code>Y</code>></p>
+<p>Resets all information stored in the mock, including any initial implementation and mock name given.</p>
+<p>This is useful when you want to completely restore a mock back to its initial state.</p>
+<p>Beware that <code>mockReset</code> will replace <code>mockFn.mock</code>, not just <code>mockFn.mock.calls</code> and <code>mockFn.mock.instances</code>.
+You should therefore avoid assigning mockFn.mock to other variables, temporary or not, to make sure you
+don't access stale data.</p>
+<h4 id="returns_14">Returns</h4>
+<p><a href="./"><code>Mock</code></a>&lt;<code>T</code>, <code>Y</code>></p>
+<h4 id="inherited-from_19">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.MockInstance/">MockInstance</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.MockInstance/#mockreset">mockReset</a></p>
+<h4 id="defined-in_20">Defined in</h4>
+<p>node_modules/@types/jest/index.d.ts:1166</p>
+<hr />
+<h3 id="mockresolvedvalue">mockResolvedValue</h3>
+<p>▸ <strong>mockResolvedValue</strong>(<code>value</code>): <a href="./"><code>Mock</code></a>&lt;<code>T</code>, <code>Y</code>></p>
+<p>Simple sugar function for: <code>jest.fn().mockImplementation(() =&gt; Promise.resolve(value));</code></p>
+<h4 id="parameters_12">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>value</code></td>
+<td align="left"><a href="../../modules/akashaproject_ui_awf_testing_utils._internal_/#resolvedvalue"><code>ResolvedValue</code></a>&lt;<code>T</code>></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_15">Returns</h4>
+<p><a href="./"><code>Mock</code></a>&lt;<code>T</code>, <code>Y</code>></p>
+<h4 id="inherited-from_20">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.MockInstance/">MockInstance</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.MockInstance/#mockresolvedvalue">mockResolvedValue</a></p>
+<h4 id="defined-in_21">Defined in</h4>
+<p>node_modules/@types/jest/index.d.ts:1251</p>
+<hr />
+<h3 id="mockresolvedvalueonce">mockResolvedValueOnce</h3>
+<p>▸ <strong>mockResolvedValueOnce</strong>(<code>value</code>): <a href="./"><code>Mock</code></a>&lt;<code>T</code>, <code>Y</code>></p>
+<p>Simple sugar function for: <code>jest.fn().mockImplementationOnce(() =&gt; Promise.resolve(value));</code></p>
+<p><strong><code>example</code></strong></p>
+<p>test('async test', async () =&gt; {
+ const asyncMock = jest
+   .fn()
+   .mockResolvedValue('default')
+   .mockResolvedValueOnce('first call')
+   .mockResolvedValueOnce('second call');</p>
+<p>await asyncMock(); // first call
+ await asyncMock(); // second call
+ await asyncMock(); // default
+ await asyncMock(); // default
+});</p>
+<h4 id="parameters_13">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>value</code></td>
+<td align="left"><a href="../../modules/akashaproject_ui_awf_testing_utils._internal_/#resolvedvalue"><code>ResolvedValue</code></a>&lt;<code>T</code>></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_16">Returns</h4>
+<p><a href="./"><code>Mock</code></a>&lt;<code>T</code>, <code>Y</code>></p>
+<h4 id="inherited-from_21">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.MockInstance/">MockInstance</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.MockInstance/#mockresolvedvalueonce">mockResolvedValueOnce</a></p>
+<h4 id="defined-in_22">Defined in</h4>
+<p>node_modules/@types/jest/index.d.ts:1271</p>
+<hr />
+<h3 id="mockrestore">mockRestore</h3>
+<p>▸ <strong>mockRestore</strong>(): <code>void</code></p>
+<p>Does everything that <code>mockFn.mockReset()</code> does, and also restores the original (non-mocked) implementation.</p>
+<p>This is useful when you want to mock functions in certain test cases and restore the original implementation in others.</p>
+<p>Beware that <code>mockFn.mockRestore</code> only works when mock was created with <code>jest.spyOn</code>. Thus you have to take care of restoration
+yourself when manually assigning <code>jest.fn()</code>.</p>
+<p>The <a href="https://jestjs.io/docs/en/configuration.html#restoremocks-boolean"><code>restoreMocks</code></a> configuration option is available
+to restore mocks automatically between tests.</p>
+<h4 id="returns_17">Returns</h4>
+<p><code>void</code></p>
+<h4 id="inherited-from_22">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.MockInstance/">MockInstance</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.MockInstance/#mockrestore">mockRestore</a></p>
+<h4 id="defined-in_23">Defined in</h4>
+<p>node_modules/@types/jest/index.d.ts:1178</p>
+<hr />
+<h3 id="mockreturnthis">mockReturnThis</h3>
+<p>▸ <strong>mockReturnThis</strong>(): <a href="./"><code>Mock</code></a>&lt;<code>T</code>, <code>Y</code>></p>
+<p>Just a simple sugar function for:</p>
+<p><strong><code>example</code></strong></p>
+<p>jest.fn(function() {
+    return this;
+  });</p>
+<h4 id="returns_18">Returns</h4>
+<p><a href="./"><code>Mock</code></a>&lt;<code>T</code>, <code>Y</code>></p>
+<h4 id="inherited-from_23">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.MockInstance/">MockInstance</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.MockInstance/#mockreturnthis">mockReturnThis</a></p>
+<h4 id="defined-in_24">Defined in</h4>
+<p>node_modules/@types/jest/index.d.ts:1218</p>
+<hr />
+<h3 id="mockreturnvalue">mockReturnValue</h3>
+<p>▸ <strong>mockReturnValue</strong>(<code>value</code>): <a href="./"><code>Mock</code></a>&lt;<code>T</code>, <code>Y</code>></p>
+<p>Accepts a value that will be returned whenever the mock function is called.</p>
+<p><strong><code>example</code></strong></p>
+<p>const mock = jest.fn();
+mock.mockReturnValue(42);
+mock(); // 42
+mock.mockReturnValue(43);
+mock(); // 43</p>
+<h4 id="parameters_14">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>value</code></td>
+<td align="left"><code>T</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_19">Returns</h4>
+<p><a href="./"><code>Mock</code></a>&lt;<code>T</code>, <code>Y</code>></p>
+<h4 id="inherited-from_24">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.MockInstance/">MockInstance</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.MockInstance/#mockreturnvalue">mockReturnValue</a></p>
+<h4 id="defined-in_25">Defined in</h4>
+<p>node_modules/@types/jest/index.d.ts:1230</p>
+<hr />
+<h3 id="mockreturnvalueonce">mockReturnValueOnce</h3>
+<p>▸ <strong>mockReturnValueOnce</strong>(<code>value</code>): <a href="./"><code>Mock</code></a>&lt;<code>T</code>, <code>Y</code>></p>
+<p>Accepts a value that will be returned for one call to the mock function. Can be chained so that
+successive calls to the mock function return different values. When there are no more
+<code>mockReturnValueOnce</code> values to use, calls will return a value specified by <code>mockReturnValue</code>.</p>
+<p><strong><code>example</code></strong></p>
+<p>const myMockFn = jest.fn()
+  .mockReturnValue('default')
+  .mockReturnValueOnce('first call')
+  .mockReturnValueOnce('second call');</p>
+<p>// 'first call', 'second call', 'default', 'default'
+console.log(myMockFn(), myMockFn(), myMockFn(), myMockFn());</p>
+<h4 id="parameters_15">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>value</code></td>
+<td align="left"><code>T</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_20">Returns</h4>
+<p><a href="./"><code>Mock</code></a>&lt;<code>T</code>, <code>Y</code>></p>
+<h4 id="inherited-from_25">Inherited from</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_.MockInstance/">MockInstance</a>.<a href="../akashaproject_ui_awf_testing_utils._internal_.MockInstance/#mockreturnvalueonce">mockReturnValueOnce</a></p>
+<h4 id="defined-in_26">Defined in</h4>
+<p>node_modules/@types/jest/index.d.ts:1247</p>
+<hr />
+<h3 id="tostring">toString</h3>
+<p>▸ <strong>toString</strong>(): <code>string</code></p>
+<p>Returns a string representation of a function.</p>
+<h4 id="returns_21">Returns</h4>
+<p><code>string</code></p>
+<h4 id="inherited-from_26">Inherited from</h4>
+<p>Function.toString</p>
+<h4 id="defined-in_27">Defined in</h4>
+<p>node_modules/typescript/lib/lib.es5.d.ts:296</p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.22074ed6.min.js"}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.01de222e.min.js"></script>
+      
+    
+  </body>
+</html>

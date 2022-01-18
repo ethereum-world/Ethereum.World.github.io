@@ -1,0 +1,2751 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.7">
+    
+    
+      
+        <title>akashaproject design system. internal .StandardShorthandProperties - AKASHA World Framework docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.cd566b2a.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#interface-standardshorthandpropertiestlength-ttime" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="AKASHA World Framework docs" class="md-header__button md-logo" aria-label="AKASHA World Framework docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AKASHA World Framework docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              akashaproject design system. internal .StandardShorthandProperties
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="AKASHA World Framework docs" class="md-nav__button md-logo" aria-label="AKASHA World Framework docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    AKASHA World Framework docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modules/" class="md-nav__link">
+        API
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#type-parameters" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hierarchy" class="md-nav__link">
+    Hierarchy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    Table of contents
+  </a>
+  
+    <nav class="md-nav" aria-label="Table of contents">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    Properties
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties_1" class="md-nav__link">
+    Properties
+  </a>
+  
+    <nav class="md-nav" aria-label="Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#all" class="md-nav__link">
+    all
+  </a>
+  
+    <nav class="md-nav" aria-label="all">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#animation" class="md-nav__link">
+    animation
+  </a>
+  
+    <nav class="md-nav" aria-label="animation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_1" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#background" class="md-nav__link">
+    background
+  </a>
+  
+    <nav class="md-nav" aria-label="background">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_2" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backgroundposition" class="md-nav__link">
+    backgroundPosition
+  </a>
+  
+    <nav class="md-nav" aria-label="backgroundPosition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_3" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#border" class="md-nav__link">
+    border
+  </a>
+  
+    <nav class="md-nav" aria-label="border">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_4" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#borderblock" class="md-nav__link">
+    borderBlock
+  </a>
+  
+    <nav class="md-nav" aria-label="borderBlock">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_5" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#borderblockend" class="md-nav__link">
+    borderBlockEnd
+  </a>
+  
+    <nav class="md-nav" aria-label="borderBlockEnd">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_6" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#borderblockstart" class="md-nav__link">
+    borderBlockStart
+  </a>
+  
+    <nav class="md-nav" aria-label="borderBlockStart">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_7" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#borderbottom" class="md-nav__link">
+    borderBottom
+  </a>
+  
+    <nav class="md-nav" aria-label="borderBottom">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_8" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bordercolor" class="md-nav__link">
+    borderColor
+  </a>
+  
+    <nav class="md-nav" aria-label="borderColor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_9" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#borderimage" class="md-nav__link">
+    borderImage
+  </a>
+  
+    <nav class="md-nav" aria-label="borderImage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_10" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#borderinline" class="md-nav__link">
+    borderInline
+  </a>
+  
+    <nav class="md-nav" aria-label="borderInline">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_11" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#borderinlineend" class="md-nav__link">
+    borderInlineEnd
+  </a>
+  
+    <nav class="md-nav" aria-label="borderInlineEnd">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_12" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#borderinlinestart" class="md-nav__link">
+    borderInlineStart
+  </a>
+  
+    <nav class="md-nav" aria-label="borderInlineStart">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_13" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#borderleft" class="md-nav__link">
+    borderLeft
+  </a>
+  
+    <nav class="md-nav" aria-label="borderLeft">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_14" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#borderradius" class="md-nav__link">
+    borderRadius
+  </a>
+  
+    <nav class="md-nav" aria-label="borderRadius">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_15" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#borderright" class="md-nav__link">
+    borderRight
+  </a>
+  
+    <nav class="md-nav" aria-label="borderRight">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_16" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#borderstyle" class="md-nav__link">
+    borderStyle
+  </a>
+  
+    <nav class="md-nav" aria-label="borderStyle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_17" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bordertop" class="md-nav__link">
+    borderTop
+  </a>
+  
+    <nav class="md-nav" aria-label="borderTop">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_18" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#borderwidth" class="md-nav__link">
+    borderWidth
+  </a>
+  
+    <nav class="md-nav" aria-label="borderWidth">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_19" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#columnrule" class="md-nav__link">
+    columnRule
+  </a>
+  
+    <nav class="md-nav" aria-label="columnRule">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_20" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#columns" class="md-nav__link">
+    columns
+  </a>
+  
+    <nav class="md-nav" aria-label="columns">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_21" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flex" class="md-nav__link">
+    flex
+  </a>
+  
+    <nav class="md-nav" aria-label="flex">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_22" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flexflow" class="md-nav__link">
+    flexFlow
+  </a>
+  
+    <nav class="md-nav" aria-label="flexFlow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_23" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#font" class="md-nav__link">
+    font
+  </a>
+  
+    <nav class="md-nav" aria-label="font">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_24" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gap" class="md-nav__link">
+    gap
+  </a>
+  
+    <nav class="md-nav" aria-label="gap">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_25" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grid" class="md-nav__link">
+    grid
+  </a>
+  
+    <nav class="md-nav" aria-label="grid">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_26" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gridarea" class="md-nav__link">
+    gridArea
+  </a>
+  
+    <nav class="md-nav" aria-label="gridArea">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_27" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gridcolumn" class="md-nav__link">
+    gridColumn
+  </a>
+  
+    <nav class="md-nav" aria-label="gridColumn">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_28" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gridrow" class="md-nav__link">
+    gridRow
+  </a>
+  
+    <nav class="md-nav" aria-label="gridRow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_29" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gridtemplate" class="md-nav__link">
+    gridTemplate
+  </a>
+  
+    <nav class="md-nav" aria-label="gridTemplate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_30" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lineclamp" class="md-nav__link">
+    lineClamp
+  </a>
+  
+    <nav class="md-nav" aria-label="lineClamp">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_31" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#liststyle" class="md-nav__link">
+    listStyle
+  </a>
+  
+    <nav class="md-nav" aria-label="listStyle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_32" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#margin" class="md-nav__link">
+    margin
+  </a>
+  
+    <nav class="md-nav" aria-label="margin">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_33" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mask" class="md-nav__link">
+    mask
+  </a>
+  
+    <nav class="md-nav" aria-label="mask">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_34" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maskborder" class="md-nav__link">
+    maskBorder
+  </a>
+  
+    <nav class="md-nav" aria-label="maskBorder">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_35" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#motion" class="md-nav__link">
+    motion
+  </a>
+  
+    <nav class="md-nav" aria-label="motion">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_36" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#offset" class="md-nav__link">
+    offset
+  </a>
+  
+    <nav class="md-nav" aria-label="offset">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_37" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#outline" class="md-nav__link">
+    outline
+  </a>
+  
+    <nav class="md-nav" aria-label="outline">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_38" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#overflow" class="md-nav__link">
+    overflow
+  </a>
+  
+    <nav class="md-nav" aria-label="overflow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_39" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#overscrollbehavior" class="md-nav__link">
+    overscrollBehavior
+  </a>
+  
+    <nav class="md-nav" aria-label="overscrollBehavior">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_40" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#padding" class="md-nav__link">
+    padding
+  </a>
+  
+    <nav class="md-nav" aria-label="padding">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_41" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#placeitems" class="md-nav__link">
+    placeItems
+  </a>
+  
+    <nav class="md-nav" aria-label="placeItems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_42" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#placeself" class="md-nav__link">
+    placeSelf
+  </a>
+  
+    <nav class="md-nav" aria-label="placeSelf">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_43" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#textdecoration" class="md-nav__link">
+    textDecoration
+  </a>
+  
+    <nav class="md-nav" aria-label="textDecoration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_44" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#textemphasis" class="md-nav__link">
+    textEmphasis
+  </a>
+  
+    <nav class="md-nav" aria-label="textEmphasis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_45" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transition" class="md-nav__link">
+    transition
+  </a>
+  
+    <nav class="md-nav" aria-label="transition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_46" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+<p><a href="../../">AWF</a> / <a href="../../modules/">Modules</a> / <a href="../../modules/akashaproject_design_system/">@akashaproject/design-system</a> / <a href="../../modules/akashaproject_design_system._internal_/">&lt;internal></a> / StandardShorthandProperties</p>
+<h1 id="interface-standardshorthandpropertiestlength-ttime">Interface: StandardShorthandProperties&lt;TLength, TTime></h1>
+<p><a href="../../modules/akashaproject_design_system/">@akashaproject/design-system</a>.<a href="../../modules/akashaproject_design_system._internal_/"><internal></a>.StandardShorthandProperties</p>
+<h2 id="type-parameters">Type parameters</h2>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>TLength</code></td>
+<td align="left"><code>string</code> &amp; {} | <code>0</code></td>
+</tr>
+<tr>
+<td align="left"><code>TTime</code></td>
+<td align="left"><code>string</code> &amp; {}</td>
+</tr>
+</tbody>
+</table>
+<h2 id="hierarchy">Hierarchy</h2>
+<ul>
+<li><strong><code>StandardShorthandProperties</code></strong></li>
+</ul>
+<p>↳ <a href="../akashaproject_design_system._internal_.StandardProperties/"><code>StandardProperties</code></a></p>
+<h2 id="table-of-contents">Table of contents</h2>
+<h3 id="properties">Properties</h3>
+<ul>
+<li><a href="./#all">all</a></li>
+<li><a href="./#animation">animation</a></li>
+<li><a href="./#background">background</a></li>
+<li><a href="./#backgroundposition">backgroundPosition</a></li>
+<li><a href="./#border">border</a></li>
+<li><a href="./#borderblock">borderBlock</a></li>
+<li><a href="./#borderblockend">borderBlockEnd</a></li>
+<li><a href="./#borderblockstart">borderBlockStart</a></li>
+<li><a href="./#borderbottom">borderBottom</a></li>
+<li><a href="./#bordercolor">borderColor</a></li>
+<li><a href="./#borderimage">borderImage</a></li>
+<li><a href="./#borderinline">borderInline</a></li>
+<li><a href="./#borderinlineend">borderInlineEnd</a></li>
+<li><a href="./#borderinlinestart">borderInlineStart</a></li>
+<li><a href="./#borderleft">borderLeft</a></li>
+<li><a href="./#borderradius">borderRadius</a></li>
+<li><a href="./#borderright">borderRight</a></li>
+<li><a href="./#borderstyle">borderStyle</a></li>
+<li><a href="./#bordertop">borderTop</a></li>
+<li><a href="./#borderwidth">borderWidth</a></li>
+<li><a href="./#columnrule">columnRule</a></li>
+<li><a href="./#columns">columns</a></li>
+<li><a href="./#flex">flex</a></li>
+<li><a href="./#flexflow">flexFlow</a></li>
+<li><a href="./#font">font</a></li>
+<li><a href="./#gap">gap</a></li>
+<li><a href="./#grid">grid</a></li>
+<li><a href="./#gridarea">gridArea</a></li>
+<li><a href="./#gridcolumn">gridColumn</a></li>
+<li><a href="./#gridrow">gridRow</a></li>
+<li><a href="./#gridtemplate">gridTemplate</a></li>
+<li><a href="./#lineclamp">lineClamp</a></li>
+<li><a href="./#liststyle">listStyle</a></li>
+<li><a href="./#margin">margin</a></li>
+<li><a href="./#mask">mask</a></li>
+<li><a href="./#maskborder">maskBorder</a></li>
+<li><a href="./#motion">motion</a></li>
+<li><a href="./#offset">offset</a></li>
+<li><a href="./#outline">outline</a></li>
+<li><a href="./#overflow">overflow</a></li>
+<li><a href="./#overscrollbehavior">overscrollBehavior</a></li>
+<li><a href="./#padding">padding</a></li>
+<li><a href="./#placeitems">placeItems</a></li>
+<li><a href="./#placeself">placeSelf</a></li>
+<li><a href="./#textdecoration">textDecoration</a></li>
+<li><a href="./#textemphasis">textEmphasis</a></li>
+<li><a href="./#transition">transition</a></li>
+</ul>
+<h2 id="properties_1">Properties</h2>
+<h3 id="all">all</h3>
+<p>• <code>Optional</code> <strong>all</strong>: <a href="../../modules/akashaproject_design_system._internal_/#globals"><code>Globals</code></a></p>
+<p>The <code>**all**</code> shorthand CSS property resets all of an element's properties except <code>unicode-bidi</code>, <code>direction</code>, and CSS Custom Properties. It can set properties to their initial or inherited values, or to the values specified in another stylesheet origin.</p>
+<p><strong>Syntax</strong>: <code>initial | inherit | unset | revert</code></p>
+<p><strong>Initial value</strong>: There is no practical initial value for it.</p>
+<table>
+<thead>
+<tr>
+<th align="center">Chrome</th>
+<th align="center">Firefox</th>
+<th align="center">Safari</th>
+<th align="center">Edge</th>
+<th align="center">IE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>37</strong></td>
+<td align="center"><strong>27</strong></td>
+<td align="center"><strong>9.1</strong></td>
+<td align="center"><strong>79</strong></td>
+<td align="center">No</td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>see</code></strong> https://developer.mozilla.org/docs/Web/CSS/all</p>
+<h4 id="defined-in">Defined in</h4>
+<p>ui/design/node_modules/@types/react/node_modules/csstype/index.d.ts:5146</p>
+<hr />
+<h3 id="animation">animation</h3>
+<p>• <code>Optional</code> <strong>animation</strong>: <a href="../../modules/akashaproject_design_system._internal_/#animation"><code>Animation</code></a>&lt;<code>TTime</code>></p>
+<p>The <strong><code>animation</code></strong> shorthand CSS property applies an animation between styles. It is a shorthand for <code>animation-name</code>, <code>animation-duration</code>, <code>animation-timing-function</code>, <code>animation-delay</code>, <code>animation-iteration-count</code>, <code>animation-direction</code>, <code>animation-fill-mode</code>, and <code>animation-play-state</code>.</p>
+<p><strong>Syntax</strong>: <code>&lt;single-animation&gt;#</code></p>
+<table>
+<thead>
+<tr>
+<th align="center">Chrome</th>
+<th align="center">Firefox</th>
+<th align="center">Safari</th>
+<th align="center">Edge</th>
+<th align="center">IE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>43</strong></td>
+<td align="center"><strong>16</strong></td>
+<td align="center"><strong>9</strong></td>
+<td align="center"><strong>12</strong></td>
+<td align="center"><strong>10</strong></td>
+</tr>
+<tr>
+<td align="center">3 <em>-x-</em></td>
+<td align="center">5 <em>-x-</em></td>
+<td align="center">4 <em>-x-</em></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>see</code></strong> https://developer.mozilla.org/docs/Web/CSS/animation</p>
+<h4 id="defined-in_1">Defined in</h4>
+<p>ui/design/node_modules/@types/react/node_modules/csstype/index.d.ts:5159</p>
+<hr />
+<h3 id="background">background</h3>
+<p>• <code>Optional</code> <strong>background</strong>: <a href="../../modules/akashaproject_design_system._internal_/#background"><code>Background</code></a>&lt;<code>TLength</code>></p>
+<p>The <strong><code>background</code></strong> shorthand CSS property sets all background style properties at once, such as color, image, origin and size, or repeat method.</p>
+<p><strong>Syntax</strong>: <code>[ &lt;bg-layer&gt; , ]* &lt;final-bg-layer&gt;</code></p>
+<table>
+<thead>
+<tr>
+<th align="center">Chrome</th>
+<th align="center">Firefox</th>
+<th align="center">Safari</th>
+<th align="center">Edge</th>
+<th align="center">IE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>1</strong></td>
+<td align="center"><strong>1</strong></td>
+<td align="center"><strong>1</strong></td>
+<td align="center"><strong>12</strong></td>
+<td align="center"><strong>4</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>see</code></strong> https://developer.mozilla.org/docs/Web/CSS/background</p>
+<h4 id="defined-in_2">Defined in</h4>
+<p>ui/design/node_modules/@types/react/node_modules/csstype/index.d.ts:5171</p>
+<hr />
+<h3 id="backgroundposition">backgroundPosition</h3>
+<p>• <code>Optional</code> <strong>backgroundPosition</strong>: <a href="../../modules/akashaproject_design_system._internal_/#backgroundposition"><code>BackgroundPosition</code></a>&lt;<code>TLength</code>></p>
+<p>The <strong><code>background-position</code></strong> CSS property sets the initial position for each background image. The position is relative to the position layer set by <code>background-origin</code>.</p>
+<p><strong>Syntax</strong>: <code>&lt;bg-position&gt;#</code></p>
+<p><strong>Initial value</strong>: <code>0% 0%</code></p>
+<table>
+<thead>
+<tr>
+<th align="center">Chrome</th>
+<th align="center">Firefox</th>
+<th align="center">Safari</th>
+<th align="center">Edge</th>
+<th align="center">IE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>1</strong></td>
+<td align="center"><strong>1</strong></td>
+<td align="center"><strong>1</strong></td>
+<td align="center"><strong>12</strong></td>
+<td align="center"><strong>4</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>see</code></strong> https://developer.mozilla.org/docs/Web/CSS/background-position</p>
+<h4 id="defined-in_3">Defined in</h4>
+<p>ui/design/node_modules/@types/react/node_modules/csstype/index.d.ts:5185</p>
+<hr />
+<h3 id="border">border</h3>
+<p>• <code>Optional</code> <strong>border</strong>: <a href="../../modules/akashaproject_design_system._internal_/#border"><code>Border</code></a>&lt;<code>TLength</code>></p>
+<p>The <strong><code>border</code></strong> shorthand CSS property sets an element's border. It sets the values of <code>border-width</code>, <code>border-style</code>, and <code>border-color</code>.</p>
+<p><strong>Syntax</strong>: <code>&lt;line-width&gt; || &lt;line-style&gt; || &lt;color&gt;</code></p>
+<table>
+<thead>
+<tr>
+<th align="center">Chrome</th>
+<th align="center">Firefox</th>
+<th align="center">Safari</th>
+<th align="center">Edge</th>
+<th align="center">IE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>1</strong></td>
+<td align="center"><strong>1</strong></td>
+<td align="center"><strong>1</strong></td>
+<td align="center"><strong>12</strong></td>
+<td align="center"><strong>4</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>see</code></strong> https://developer.mozilla.org/docs/Web/CSS/border</p>
+<h4 id="defined-in_4">Defined in</h4>
+<p>ui/design/node_modules/@types/react/node_modules/csstype/index.d.ts:5197</p>
+<hr />
+<h3 id="borderblock">borderBlock</h3>
+<p>• <code>Optional</code> <strong>borderBlock</strong>: <a href="../../modules/akashaproject_design_system._internal_/#borderblock"><code>BorderBlock</code></a>&lt;<code>TLength</code>></p>
+<p>The <strong><code>border-block</code></strong> CSS property is a shorthand property for setting the individual logical block border property values in a single place in the style sheet.</p>
+<p><strong>Syntax</strong>: <code>&lt;'border-top-width'&gt; || &lt;'border-top-style'&gt; || &lt;color&gt;</code></p>
+<table>
+<thead>
+<tr>
+<th align="center">Chrome</th>
+<th align="center">Firefox</th>
+<th align="center">Safari</th>
+<th align="center">Edge</th>
+<th align="center">IE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>87</strong></td>
+<td align="center"><strong>66</strong></td>
+<td align="center"><strong>14.1</strong></td>
+<td align="center"><strong>87</strong></td>
+<td align="center">No</td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>see</code></strong> https://developer.mozilla.org/docs/Web/CSS/border-block</p>
+<h4 id="defined-in_5">Defined in</h4>
+<p>ui/design/node_modules/@types/react/node_modules/csstype/index.d.ts:5209</p>
+<hr />
+<h3 id="borderblockend">borderBlockEnd</h3>
+<p>• <code>Optional</code> <strong>borderBlockEnd</strong>: <a href="../../modules/akashaproject_design_system._internal_/#borderblockend"><code>BorderBlockEnd</code></a>&lt;<code>TLength</code>></p>
+<p>The <strong><code>border-block-end</code></strong> CSS property is a shorthand property for setting the individual logical block-end border property values in a single place in the style sheet.</p>
+<p><strong>Syntax</strong>: <code>&lt;'border-top-width'&gt; || &lt;'border-top-style'&gt; || &lt;color&gt;</code></p>
+<table>
+<thead>
+<tr>
+<th align="center">Chrome</th>
+<th align="center">Firefox</th>
+<th align="center">Safari</th>
+<th align="center">Edge</th>
+<th align="center">IE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>69</strong></td>
+<td align="center"><strong>41</strong></td>
+<td align="center"><strong>12.1</strong></td>
+<td align="center"><strong>79</strong></td>
+<td align="center">No</td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>see</code></strong> https://developer.mozilla.org/docs/Web/CSS/border-block-end</p>
+<h4 id="defined-in_6">Defined in</h4>
+<p>ui/design/node_modules/@types/react/node_modules/csstype/index.d.ts:5221</p>
+<hr />
+<h3 id="borderblockstart">borderBlockStart</h3>
+<p>• <code>Optional</code> <strong>borderBlockStart</strong>: <a href="../../modules/akashaproject_design_system._internal_/#borderblockstart"><code>BorderBlockStart</code></a>&lt;<code>TLength</code>></p>
+<p>The <strong><code>border-block-start</code></strong> CSS property is a shorthand property for setting the individual logical block-start border property values in a single place in the style sheet.</p>
+<p><strong>Syntax</strong>: <code>&lt;'border-top-width'&gt; || &lt;'border-top-style'&gt; || &lt;color&gt;</code></p>
+<table>
+<thead>
+<tr>
+<th align="center">Chrome</th>
+<th align="center">Firefox</th>
+<th align="center">Safari</th>
+<th align="center">Edge</th>
+<th align="center">IE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>69</strong></td>
+<td align="center"><strong>41</strong></td>
+<td align="center"><strong>12.1</strong></td>
+<td align="center"><strong>79</strong></td>
+<td align="center">No</td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>see</code></strong> https://developer.mozilla.org/docs/Web/CSS/border-block-start</p>
+<h4 id="defined-in_7">Defined in</h4>
+<p>ui/design/node_modules/@types/react/node_modules/csstype/index.d.ts:5233</p>
+<hr />
+<h3 id="borderbottom">borderBottom</h3>
+<p>• <code>Optional</code> <strong>borderBottom</strong>: <a href="../../modules/akashaproject_design_system._internal_/#borderbottom"><code>BorderBottom</code></a>&lt;<code>TLength</code>></p>
+<p>The <strong><code>border-bottom</code></strong> shorthand CSS property sets an element's bottom border. It sets the values of <code>border-bottom-width</code>, <code>border-bottom-style</code> and <code>border-bottom-color</code>.</p>
+<p><strong>Syntax</strong>: <code>&lt;line-width&gt; || &lt;line-style&gt; || &lt;color&gt;</code></p>
+<table>
+<thead>
+<tr>
+<th align="center">Chrome</th>
+<th align="center">Firefox</th>
+<th align="center">Safari</th>
+<th align="center">Edge</th>
+<th align="center">IE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>1</strong></td>
+<td align="center"><strong>1</strong></td>
+<td align="center"><strong>1</strong></td>
+<td align="center"><strong>12</strong></td>
+<td align="center"><strong>4</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>see</code></strong> https://developer.mozilla.org/docs/Web/CSS/border-bottom</p>
+<h4 id="defined-in_8">Defined in</h4>
+<p>ui/design/node_modules/@types/react/node_modules/csstype/index.d.ts:5245</p>
+<hr />
+<h3 id="bordercolor">borderColor</h3>
+<p>• <code>Optional</code> <strong>borderColor</strong>: <a href="../../modules/akashaproject_design_system._internal_/#bordercolor"><code>BorderColor</code></a></p>
+<p>The <strong><code>border-color</code></strong> shorthand CSS property sets the color of an element's border.</p>
+<p><strong>Syntax</strong>: <code>&lt;color&gt;{1,4}</code></p>
+<table>
+<thead>
+<tr>
+<th align="center">Chrome</th>
+<th align="center">Firefox</th>
+<th align="center">Safari</th>
+<th align="center">Edge</th>
+<th align="center">IE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>1</strong></td>
+<td align="center"><strong>1</strong></td>
+<td align="center"><strong>1</strong></td>
+<td align="center"><strong>12</strong></td>
+<td align="center"><strong>4</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>see</code></strong> https://developer.mozilla.org/docs/Web/CSS/border-color</p>
+<h4 id="defined-in_9">Defined in</h4>
+<p>ui/design/node_modules/@types/react/node_modules/csstype/index.d.ts:5257</p>
+<hr />
+<h3 id="borderimage">borderImage</h3>
+<p>• <code>Optional</code> <strong>borderImage</strong>: <a href="../../modules/akashaproject_design_system._internal_/#borderimage"><code>BorderImage</code></a></p>
+<p>The <strong><code>border-image</code></strong> CSS property draws an image around a given element. It replaces the element's regular border.</p>
+<p><strong>Syntax</strong>: <code>&lt;'border-image-source'&gt; || &lt;'border-image-slice'&gt; [ / &lt;'border-image-width'&gt; | / &lt;'border-image-width'&gt;? / &lt;'border-image-outset'&gt; ]? || &lt;'border-image-repeat'&gt;</code></p>
+<table>
+<thead>
+<tr>
+<th align="center">Chrome</th>
+<th align="center">Firefox</th>
+<th align="center">Safari</th>
+<th align="center">Edge</th>
+<th align="center">IE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>16</strong></td>
+<td align="center"><strong>15</strong></td>
+<td align="center"><strong>6</strong></td>
+<td align="center"><strong>12</strong></td>
+<td align="center"><strong>11</strong></td>
+</tr>
+<tr>
+<td align="center">7 <em>-x-</em></td>
+<td align="center">3.5 <em>-x-</em></td>
+<td align="center">3 <em>-x-</em></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>see</code></strong> https://developer.mozilla.org/docs/Web/CSS/border-image</p>
+<h4 id="defined-in_10">Defined in</h4>
+<p>ui/design/node_modules/@types/react/node_modules/csstype/index.d.ts:5270</p>
+<hr />
+<h3 id="borderinline">borderInline</h3>
+<p>• <code>Optional</code> <strong>borderInline</strong>: <a href="../../modules/akashaproject_design_system._internal_/#borderinline"><code>BorderInline</code></a>&lt;<code>TLength</code>></p>
+<p>The <strong><code>border-inline</code></strong> CSS property is a shorthand property for setting the individual logical inline border property values in a single place in the style sheet.</p>
+<p><strong>Syntax</strong>: <code>&lt;'border-top-width'&gt; || &lt;'border-top-style'&gt; || &lt;color&gt;</code></p>
+<table>
+<thead>
+<tr>
+<th align="center">Chrome</th>
+<th align="center">Firefox</th>
+<th align="center">Safari</th>
+<th align="center">Edge</th>
+<th align="center">IE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>87</strong></td>
+<td align="center"><strong>66</strong></td>
+<td align="center"><strong>14.1</strong></td>
+<td align="center"><strong>87</strong></td>
+<td align="center">No</td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>see</code></strong> https://developer.mozilla.org/docs/Web/CSS/border-inline</p>
+<h4 id="defined-in_11">Defined in</h4>
+<p>ui/design/node_modules/@types/react/node_modules/csstype/index.d.ts:5282</p>
+<hr />
+<h3 id="borderinlineend">borderInlineEnd</h3>
+<p>• <code>Optional</code> <strong>borderInlineEnd</strong>: <a href="../../modules/akashaproject_design_system._internal_/#borderinlineend"><code>BorderInlineEnd</code></a>&lt;<code>TLength</code>></p>
+<p>The <strong><code>border-inline-end</code></strong> CSS property is a shorthand property for setting the individual logical inline-end border property values in a single place in the style sheet.</p>
+<p><strong>Syntax</strong>: <code>&lt;'border-top-width'&gt; || &lt;'border-top-style'&gt; || &lt;color&gt;</code></p>
+<table>
+<thead>
+<tr>
+<th align="center">Chrome</th>
+<th align="center">Firefox</th>
+<th align="center">Safari</th>
+<th align="center">Edge</th>
+<th align="center">IE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>69</strong></td>
+<td align="center"><strong>41</strong></td>
+<td align="center"><strong>12.1</strong></td>
+<td align="center"><strong>79</strong></td>
+<td align="center">No</td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>see</code></strong> https://developer.mozilla.org/docs/Web/CSS/border-inline-end</p>
+<h4 id="defined-in_12">Defined in</h4>
+<p>ui/design/node_modules/@types/react/node_modules/csstype/index.d.ts:5294</p>
+<hr />
+<h3 id="borderinlinestart">borderInlineStart</h3>
+<p>• <code>Optional</code> <strong>borderInlineStart</strong>: <a href="../../modules/akashaproject_design_system._internal_/#borderinlinestart"><code>BorderInlineStart</code></a>&lt;<code>TLength</code>></p>
+<p>The <strong><code>border-inline-start</code></strong> CSS property is a shorthand property for setting the individual logical inline-start border property values in a single place in the style sheet.</p>
+<p><strong>Syntax</strong>: <code>&lt;'border-top-width'&gt; || &lt;'border-top-style'&gt; || &lt;color&gt;</code></p>
+<table>
+<thead>
+<tr>
+<th align="center">Chrome</th>
+<th align="center">Firefox</th>
+<th align="center">Safari</th>
+<th align="center">Edge</th>
+<th align="center">IE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>69</strong></td>
+<td align="center"><strong>41</strong></td>
+<td align="center"><strong>12.1</strong></td>
+<td align="center"><strong>79</strong></td>
+<td align="center">No</td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>see</code></strong> https://developer.mozilla.org/docs/Web/CSS/border-inline-start</p>
+<h4 id="defined-in_13">Defined in</h4>
+<p>ui/design/node_modules/@types/react/node_modules/csstype/index.d.ts:5306</p>
+<hr />
+<h3 id="borderleft">borderLeft</h3>
+<p>• <code>Optional</code> <strong>borderLeft</strong>: <a href="../../modules/akashaproject_design_system._internal_/#borderleft"><code>BorderLeft</code></a>&lt;<code>TLength</code>></p>
+<p>The <strong><code>border-left</code></strong> shorthand CSS property sets all the properties of an element's left border.</p>
+<p><strong>Syntax</strong>: <code>&lt;line-width&gt; || &lt;line-style&gt; || &lt;color&gt;</code></p>
+<table>
+<thead>
+<tr>
+<th align="center">Chrome</th>
+<th align="center">Firefox</th>
+<th align="center">Safari</th>
+<th align="center">Edge</th>
+<th align="center">IE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>1</strong></td>
+<td align="center"><strong>1</strong></td>
+<td align="center"><strong>1</strong></td>
+<td align="center"><strong>12</strong></td>
+<td align="center"><strong>4</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>see</code></strong> https://developer.mozilla.org/docs/Web/CSS/border-left</p>
+<h4 id="defined-in_14">Defined in</h4>
+<p>ui/design/node_modules/@types/react/node_modules/csstype/index.d.ts:5318</p>
+<hr />
+<h3 id="borderradius">borderRadius</h3>
+<p>• <code>Optional</code> <strong>borderRadius</strong>: <a href="../../modules/akashaproject_design_system._internal_/#borderradius"><code>BorderRadius</code></a>&lt;<code>TLength</code>></p>
+<p>The <strong><code>border-radius</code></strong> CSS property rounds the corners of an element's outer border edge. You can set a single radius to make circular corners, or two radii to make elliptical corners.</p>
+<p><strong>Syntax</strong>: <code>&lt;length-percentage&gt;{1,4} [ / &lt;length-percentage&gt;{1,4} ]?</code></p>
+<table>
+<thead>
+<tr>
+<th align="center">Chrome</th>
+<th align="center">Firefox</th>
+<th align="center">Safari</th>
+<th align="center">Edge</th>
+<th align="center">IE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>4</strong></td>
+<td align="center"><strong>4</strong></td>
+<td align="center"><strong>5</strong></td>
+<td align="center"><strong>12</strong></td>
+<td align="center"><strong>9</strong></td>
+</tr>
+<tr>
+<td align="center">1 <em>-x-</em></td>
+<td align="center"></td>
+<td align="center">3 <em>-x-</em></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>see</code></strong> https://developer.mozilla.org/docs/Web/CSS/border-radius</p>
+<h4 id="defined-in_15">Defined in</h4>
+<p>ui/design/node_modules/@types/react/node_modules/csstype/index.d.ts:5331</p>
+<hr />
+<h3 id="borderright">borderRight</h3>
+<p>• <code>Optional</code> <strong>borderRight</strong>: <a href="../../modules/akashaproject_design_system._internal_/#borderright"><code>BorderRight</code></a>&lt;<code>TLength</code>></p>
+<p>The <strong><code>border-right</code></strong> shorthand CSS property sets all the properties of an element's right border.</p>
+<p><strong>Syntax</strong>: <code>&lt;line-width&gt; || &lt;line-style&gt; || &lt;color&gt;</code></p>
+<table>
+<thead>
+<tr>
+<th align="center">Chrome</th>
+<th align="center">Firefox</th>
+<th align="center">Safari</th>
+<th align="center">Edge</th>
+<th align="center">IE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>1</strong></td>
+<td align="center"><strong>1</strong></td>
+<td align="center"><strong>1</strong></td>
+<td align="center"><strong>12</strong></td>
+<td align="center"><strong>5.5</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>see</code></strong> https://developer.mozilla.org/docs/Web/CSS/border-right</p>
+<h4 id="defined-in_16">Defined in</h4>
+<p>ui/design/node_modules/@types/react/node_modules/csstype/index.d.ts:5343</p>
+<hr />
+<h3 id="borderstyle">borderStyle</h3>
+<p>• <code>Optional</code> <strong>borderStyle</strong>: <a href="../../modules/akashaproject_design_system._internal_/#borderstyle"><code>BorderStyle</code></a></p>
+<p>The <strong><code>border-style</code></strong> shorthand CSS property sets the line style for all four sides of an element's border.</p>
+<p><strong>Syntax</strong>: <code>&lt;line-style&gt;{1,4}</code></p>
+<table>
+<thead>
+<tr>
+<th align="center">Chrome</th>
+<th align="center">Firefox</th>
+<th align="center">Safari</th>
+<th align="center">Edge</th>
+<th align="center">IE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>1</strong></td>
+<td align="center"><strong>1</strong></td>
+<td align="center"><strong>1</strong></td>
+<td align="center"><strong>12</strong></td>
+<td align="center"><strong>4</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>see</code></strong> https://developer.mozilla.org/docs/Web/CSS/border-style</p>
+<h4 id="defined-in_17">Defined in</h4>
+<p>ui/design/node_modules/@types/react/node_modules/csstype/index.d.ts:5355</p>
+<hr />
+<h3 id="bordertop">borderTop</h3>
+<p>• <code>Optional</code> <strong>borderTop</strong>: <a href="../../modules/akashaproject_design_system._internal_/#bordertop"><code>BorderTop</code></a>&lt;<code>TLength</code>></p>
+<p>The <strong><code>border-top</code></strong> shorthand CSS property sets all the properties of an element's top border.</p>
+<p><strong>Syntax</strong>: <code>&lt;line-width&gt; || &lt;line-style&gt; || &lt;color&gt;</code></p>
+<table>
+<thead>
+<tr>
+<th align="center">Chrome</th>
+<th align="center">Firefox</th>
+<th align="center">Safari</th>
+<th align="center">Edge</th>
+<th align="center">IE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>1</strong></td>
+<td align="center"><strong>1</strong></td>
+<td align="center"><strong>1</strong></td>
+<td align="center"><strong>12</strong></td>
+<td align="center"><strong>4</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>see</code></strong> https://developer.mozilla.org/docs/Web/CSS/border-top</p>
+<h4 id="defined-in_18">Defined in</h4>
+<p>ui/design/node_modules/@types/react/node_modules/csstype/index.d.ts:5367</p>
+<hr />
+<h3 id="borderwidth">borderWidth</h3>
+<p>• <code>Optional</code> <strong>borderWidth</strong>: <a href="../../modules/akashaproject_design_system._internal_/#borderwidth"><code>BorderWidth</code></a>&lt;<code>TLength</code>></p>
+<p>The <strong><code>border-width</code></strong> shorthand CSS property sets the width of an element's border.</p>
+<p><strong>Syntax</strong>: <code>&lt;line-width&gt;{1,4}</code></p>
+<table>
+<thead>
+<tr>
+<th align="center">Chrome</th>
+<th align="center">Firefox</th>
+<th align="center">Safari</th>
+<th align="center">Edge</th>
+<th align="center">IE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>1</strong></td>
+<td align="center"><strong>1</strong></td>
+<td align="center"><strong>1</strong></td>
+<td align="center"><strong>12</strong></td>
+<td align="center"><strong>4</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>see</code></strong> https://developer.mozilla.org/docs/Web/CSS/border-width</p>
+<h4 id="defined-in_19">Defined in</h4>
+<p>ui/design/node_modules/@types/react/node_modules/csstype/index.d.ts:5379</p>
+<hr />
+<h3 id="columnrule">columnRule</h3>
+<p>• <code>Optional</code> <strong>columnRule</strong>: <a href="../../modules/akashaproject_design_system._internal_/#columnrule"><code>ColumnRule</code></a>&lt;<code>TLength</code>></p>
+<p>The <strong><code>column-rule</code></strong> shorthand CSS property sets the width, style, and color of the line drawn between columns in a multi-column layout.</p>
+<p><strong>Syntax</strong>: <code>&lt;'column-rule-width'&gt; || &lt;'column-rule-style'&gt; || &lt;'column-rule-color'&gt;</code></p>
+<table>
+<thead>
+<tr>
+<th align="center">Chrome</th>
+<th align="center">Firefox</th>
+<th align="center">Safari</th>
+<th align="center">Edge</th>
+<th align="center">IE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>50</strong></td>
+<td align="center"><strong>52</strong></td>
+<td align="center"><strong>9</strong></td>
+<td align="center"><strong>12</strong></td>
+<td align="center"><strong>10</strong></td>
+</tr>
+<tr>
+<td align="center">1 <em>-x-</em></td>
+<td align="center"></td>
+<td align="center">3 <em>-x-</em></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>see</code></strong> https://developer.mozilla.org/docs/Web/CSS/column-rule</p>
+<h4 id="defined-in_20">Defined in</h4>
+<p>ui/design/node_modules/@types/react/node_modules/csstype/index.d.ts:5392</p>
+<hr />
+<h3 id="columns">columns</h3>
+<p>• <code>Optional</code> <strong>columns</strong>: <a href="../../modules/akashaproject_design_system._internal_/#columns"><code>Columns</code></a>&lt;<code>TLength</code>></p>
+<p>The <strong><code>columns</code></strong> CSS shorthand property sets the number of columns to use when drawing an element's contents, as well as those columns' widths.</p>
+<p><strong>Syntax</strong>: <code>&lt;'column-width'&gt; || &lt;'column-count'&gt;</code></p>
+<table>
+<thead>
+<tr>
+<th align="center">Chrome</th>
+<th align="center">Firefox</th>
+<th align="center">Safari</th>
+<th align="center">Edge</th>
+<th align="center">IE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>50</strong></td>
+<td align="center"><strong>52</strong></td>
+<td align="center"><strong>9</strong></td>
+<td align="center"><strong>12</strong></td>
+<td align="center"><strong>10</strong></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">3 <em>-x-</em></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>see</code></strong> https://developer.mozilla.org/docs/Web/CSS/columns</p>
+<h4 id="defined-in_21">Defined in</h4>
+<p>ui/design/node_modules/@types/react/node_modules/csstype/index.d.ts:5405</p>
+<hr />
+<h3 id="flex">flex</h3>
+<p>• <code>Optional</code> <strong>flex</strong>: <a href="../../modules/akashaproject_design_system._internal_/#flex"><code>Flex</code></a>&lt;<code>TLength</code>></p>
+<p>The <strong><code>flex</code></strong> CSS shorthand property sets how a flex <em>item</em> will grow or shrink to fit the space available in its flex container.</p>
+<p><strong>Syntax</strong>: <code>none | [ &lt;'flex-grow'&gt; &lt;'flex-shrink'&gt;? || &lt;'flex-basis'&gt; ]</code></p>
+<table>
+<thead>
+<tr>
+<th align="center">Chrome</th>
+<th align="center">Firefox</th>
+<th align="center">Safari</th>
+<th align="center">Edge</th>
+<th align="center">IE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>29</strong></td>
+<td align="center"><strong>20</strong></td>
+<td align="center"><strong>9</strong></td>
+<td align="center"><strong>12</strong></td>
+<td align="center"><strong>11</strong></td>
+</tr>
+<tr>
+<td align="center">21 <em>-x-</em></td>
+<td align="center"></td>
+<td align="center">7 <em>-x-</em></td>
+<td align="center"></td>
+<td align="center">10 <em>-x-</em></td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>see</code></strong> https://developer.mozilla.org/docs/Web/CSS/flex</p>
+<h4 id="defined-in_22">Defined in</h4>
+<p>ui/design/node_modules/@types/react/node_modules/csstype/index.d.ts:5418</p>
+<hr />
+<h3 id="flexflow">flexFlow</h3>
+<p>• <code>Optional</code> <strong>flexFlow</strong>: <a href="../../modules/akashaproject_design_system._internal_/#flexflow"><code>FlexFlow</code></a></p>
+<p>The <strong><code>flex-flow</code></strong> CSS shorthand property specifies the direction of a flex container, as well as its wrapping behavior.</p>
+<p><strong>Syntax</strong>: <code>&lt;'flex-direction'&gt; || &lt;'flex-wrap'&gt;</code></p>
+<table>
+<thead>
+<tr>
+<th align="center">Chrome</th>
+<th align="center">Firefox</th>
+<th align="center">Safari</th>
+<th align="center">Edge</th>
+<th align="center">IE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>29</strong></td>
+<td align="center"><strong>28</strong></td>
+<td align="center"><strong>9</strong></td>
+<td align="center"><strong>12</strong></td>
+<td align="center"><strong>11</strong></td>
+</tr>
+<tr>
+<td align="center">21 <em>-x-</em></td>
+<td align="center"></td>
+<td align="center">7 <em>-x-</em></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>see</code></strong> https://developer.mozilla.org/docs/Web/CSS/flex-flow</p>
+<h4 id="defined-in_23">Defined in</h4>
+<p>ui/design/node_modules/@types/react/node_modules/csstype/index.d.ts:5431</p>
+<hr />
+<h3 id="font">font</h3>
+<p>• <code>Optional</code> <strong>font</strong>: <a href="../../modules/akashaproject_design_system._internal_/#font"><code>Font</code></a></p>
+<p>The <strong><code>font</code></strong> CSS shorthand property sets all the different properties of an element's font. Alternatively, it sets an element's font to a system font.</p>
+<p><strong>Syntax</strong>: <code>[ [ &lt;'font-style'&gt; || &lt;font-variant-css21&gt; || &lt;'font-weight'&gt; || &lt;'font-stretch'&gt; ]? &lt;'font-size'&gt; [ / &lt;'line-height'&gt; ]? &lt;'font-family'&gt; ] | caption | icon | menu | message-box | small-caption | status-bar</code></p>
+<table>
+<thead>
+<tr>
+<th align="center">Chrome</th>
+<th align="center">Firefox</th>
+<th align="center">Safari</th>
+<th align="center">Edge</th>
+<th align="center">IE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>1</strong></td>
+<td align="center"><strong>1</strong></td>
+<td align="center"><strong>1</strong></td>
+<td align="center"><strong>12</strong></td>
+<td align="center"><strong>3</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>see</code></strong> https://developer.mozilla.org/docs/Web/CSS/font</p>
+<h4 id="defined-in_24">Defined in</h4>
+<p>ui/design/node_modules/@types/react/node_modules/csstype/index.d.ts:5443</p>
+<hr />
+<h3 id="gap">gap</h3>
+<p>• <code>Optional</code> <strong>gap</strong>: <a href="../../modules/akashaproject_design_system._internal_/#gap"><code>Gap</code></a>&lt;<code>TLength</code>></p>
+<p>The <strong><code>gap</code></strong> CSS property sets the gaps (gutters) between rows and columns. It is a shorthand for <code>row-gap</code> and <code>column-gap</code>.</p>
+<p><strong>Syntax</strong>: <code>&lt;'row-gap'&gt; &lt;'column-gap'&gt;?</code></p>
+<hr />
+<p><em>Supported in Flex Layout</em></p>
+<table>
+<thead>
+<tr>
+<th align="center">Chrome</th>
+<th align="center">Firefox</th>
+<th align="center">Safari</th>
+<th align="center">Edge</th>
+<th align="center">IE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>84</strong></td>
+<td align="center"><strong>63</strong></td>
+<td align="center"><strong>14.1</strong></td>
+<td align="center"><strong>84</strong></td>
+<td align="center">No</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>Supported in Grid Layout</em></p>
+<table>
+<thead>
+<tr>
+<th align="center">Chrome</th>
+<th align="center">Firefox</th>
+<th align="center">Safari</th>
+<th align="center">Edge</th>
+<th align="center">IE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>66</strong></td>
+<td align="center"><strong>61</strong></td>
+<td align="center"><strong>12</strong></td>
+<td align="center"><strong>16</strong></td>
+<td align="center">No</td>
+</tr>
+<tr>
+<td align="center">57 <em>(grid-gap)</em></td>
+<td align="center">52 <em>(grid-gap)</em></td>
+<td align="center">10.1 <em>(grid-gap)</em></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>Supported in Multi-column Layout</em></p>
+<table>
+<thead>
+<tr>
+<th align="center">Chrome</th>
+<th align="center">Firefox</th>
+<th align="center">Safari</th>
+<th align="center">Edge</th>
+<th align="center">IE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>66</strong></td>
+<td align="center"><strong>61</strong></td>
+<td align="center">No</td>
+<td align="center"><strong>16</strong></td>
+<td align="center">No</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong><code>see</code></strong> https://developer.mozilla.org/docs/Web/CSS/gap</p>
+<h4 id="defined-in_25">Defined in</h4>
+<p>ui/design/node_modules/@types/react/node_modules/csstype/index.d.ts:5478</p>
+<hr />
+<h3 id="grid">grid</h3>
+<p>• <code>Optional</code> <strong>grid</strong>: <a href="../../modules/akashaproject_design_system._internal_/#grid"><code>Grid</code></a></p>
+<p>The <strong><code>grid</code></strong> CSS property is a shorthand property that sets all of the explicit and implicit grid properties in a single declaration.</p>
+<p><strong>Syntax</strong>: <code>&lt;'grid-template'&gt; | &lt;'grid-template-rows'&gt; / [ auto-flow &amp;&amp; dense? ] &lt;'grid-auto-columns'&gt;? | [ auto-flow &amp;&amp; dense? ] &lt;'grid-auto-rows'&gt;? / &lt;'grid-template-columns'&gt;</code></p>
+<table>
+<thead>
+<tr>
+<th align="center">Chrome</th>
+<th align="center">Firefox</th>
+<th align="center">Safari</th>
+<th align="center">Edge</th>
+<th align="center">IE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>57</strong></td>
+<td align="center"><strong>52</strong></td>
+<td align="center"><strong>10.1</strong></td>
+<td align="center"><strong>16</strong></td>
+<td align="center">No</td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>see</code></strong> https://developer.mozilla.org/docs/Web/CSS/grid</p>
+<h4 id="defined-in_26">Defined in</h4>
+<p>ui/design/node_modules/@types/react/node_modules/csstype/index.d.ts:5490</p>
+<hr />
+<h3 id="gridarea">gridArea</h3>
+<p>• <code>Optional</code> <strong>gridArea</strong>: <a href="../../modules/akashaproject_design_system._internal_/#gridarea"><code>GridArea</code></a></p>
+<p>The <strong><code>grid-area</code></strong> CSS shorthand property specifies a grid item’s size and location within a grid by contributing a line, a span, or nothing (automatic) to its grid placement, thereby specifying the edges of its grid area.</p>
+<p><strong>Syntax</strong>: <code>&lt;grid-line&gt; [ / &lt;grid-line&gt; ]{0,3}</code></p>
+<table>
+<thead>
+<tr>
+<th align="center">Chrome</th>
+<th align="center">Firefox</th>
+<th align="center">Safari</th>
+<th align="center">Edge</th>
+<th align="center">IE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>57</strong></td>
+<td align="center"><strong>52</strong></td>
+<td align="center"><strong>10.1</strong></td>
+<td align="center"><strong>16</strong></td>
+<td align="center">No</td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>see</code></strong> https://developer.mozilla.org/docs/Web/CSS/grid-area</p>
+<h4 id="defined-in_27">Defined in</h4>
+<p>ui/design/node_modules/@types/react/node_modules/csstype/index.d.ts:5502</p>
+<hr />
+<h3 id="gridcolumn">gridColumn</h3>
+<p>• <code>Optional</code> <strong>gridColumn</strong>: <a href="../../modules/akashaproject_design_system._internal_/#gridcolumn"><code>GridColumn</code></a></p>
+<p>The <strong><code>grid-column</code></strong> CSS shorthand property specifies a grid item's size and location within a grid column by contributing a line, a span, or nothing (automatic) to its grid placement, thereby specifying the inline-start and inline-end edge of its grid area.</p>
+<p><strong>Syntax</strong>: <code>&lt;grid-line&gt; [ / &lt;grid-line&gt; ]?</code></p>
+<table>
+<thead>
+<tr>
+<th align="center">Chrome</th>
+<th align="center">Firefox</th>
+<th align="center">Safari</th>
+<th align="center">Edge</th>
+<th align="center">IE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>57</strong></td>
+<td align="center"><strong>52</strong></td>
+<td align="center"><strong>10.1</strong></td>
+<td align="center"><strong>16</strong></td>
+<td align="center">No</td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>see</code></strong> https://developer.mozilla.org/docs/Web/CSS/grid-column</p>
+<h4 id="defined-in_28">Defined in</h4>
+<p>ui/design/node_modules/@types/react/node_modules/csstype/index.d.ts:5514</p>
+<hr />
+<h3 id="gridrow">gridRow</h3>
+<p>• <code>Optional</code> <strong>gridRow</strong>: <a href="../../modules/akashaproject_design_system._internal_/#gridrow"><code>GridRow</code></a></p>
+<p>The <strong><code>grid-row</code></strong> CSS shorthand property specifies a grid item’s size and location within the grid row by contributing a line, a span, or nothing (automatic) to its grid placement, thereby specifying the inline-start and inline-end edge of its grid area.</p>
+<p><strong>Syntax</strong>: <code>&lt;grid-line&gt; [ / &lt;grid-line&gt; ]?</code></p>
+<table>
+<thead>
+<tr>
+<th align="center">Chrome</th>
+<th align="center">Firefox</th>
+<th align="center">Safari</th>
+<th align="center">Edge</th>
+<th align="center">IE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>57</strong></td>
+<td align="center"><strong>52</strong></td>
+<td align="center"><strong>10.1</strong></td>
+<td align="center"><strong>16</strong></td>
+<td align="center">No</td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>see</code></strong> https://developer.mozilla.org/docs/Web/CSS/grid-row</p>
+<h4 id="defined-in_29">Defined in</h4>
+<p>ui/design/node_modules/@types/react/node_modules/csstype/index.d.ts:5526</p>
+<hr />
+<h3 id="gridtemplate">gridTemplate</h3>
+<p>• <code>Optional</code> <strong>gridTemplate</strong>: <a href="../../modules/akashaproject_design_system._internal_/#gridtemplate"><code>GridTemplate</code></a></p>
+<p>The <strong><code>grid-template</code></strong> CSS property is a shorthand property for defining grid columns, rows, and areas.</p>
+<p><strong>Syntax</strong>: <code>none | [ &lt;'grid-template-rows'&gt; / &lt;'grid-template-columns'&gt; ] | [ &lt;line-names&gt;? &lt;string&gt; &lt;track-size&gt;? &lt;line-names&gt;? ]+ [ / &lt;explicit-track-list&gt; ]?</code></p>
+<table>
+<thead>
+<tr>
+<th align="center">Chrome</th>
+<th align="center">Firefox</th>
+<th align="center">Safari</th>
+<th align="center">Edge</th>
+<th align="center">IE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>57</strong></td>
+<td align="center"><strong>52</strong></td>
+<td align="center"><strong>10.1</strong></td>
+<td align="center"><strong>16</strong></td>
+<td align="center">No</td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>see</code></strong> https://developer.mozilla.org/docs/Web/CSS/grid-template</p>
+<h4 id="defined-in_30">Defined in</h4>
+<p>ui/design/node_modules/@types/react/node_modules/csstype/index.d.ts:5538</p>
+<hr />
+<h3 id="lineclamp">lineClamp</h3>
+<p>• <code>Optional</code> <strong>lineClamp</strong>: <a href="../../modules/akashaproject_design_system._internal_/#lineclamp"><code>LineClamp</code></a></p>
+<p><strong>Syntax</strong>: <code>none | &lt;integer&gt;</code></p>
+<p><strong>Initial value</strong>: <code>none</code></p>
+<h4 id="defined-in_31">Defined in</h4>
+<p>ui/design/node_modules/@types/react/node_modules/csstype/index.d.ts:5544</p>
+<hr />
+<h3 id="liststyle">listStyle</h3>
+<p>• <code>Optional</code> <strong>listStyle</strong>: <a href="../../modules/akashaproject_design_system._internal_/#liststyle"><code>ListStyle</code></a></p>
+<p>The <strong><code>list-style</code></strong> CSS shorthand property allows you set all the list style properties at once.</p>
+<p><strong>Syntax</strong>: <code>&lt;'list-style-type'&gt; || &lt;'list-style-position'&gt; || &lt;'list-style-image'&gt;</code></p>
+<table>
+<thead>
+<tr>
+<th align="center">Chrome</th>
+<th align="center">Firefox</th>
+<th align="center">Safari</th>
+<th align="center">Edge</th>
+<th align="center">IE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>1</strong></td>
+<td align="center"><strong>1</strong></td>
+<td align="center"><strong>1</strong></td>
+<td align="center"><strong>12</strong></td>
+<td align="center"><strong>4</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>see</code></strong> https://developer.mozilla.org/docs/Web/CSS/list-style</p>
+<h4 id="defined-in_32">Defined in</h4>
+<p>ui/design/node_modules/@types/react/node_modules/csstype/index.d.ts:5556</p>
+<hr />
+<h3 id="margin">margin</h3>
+<p>• <code>Optional</code> <strong>margin</strong>: <a href="../../modules/akashaproject_design_system._internal_/#margin"><code>Margin</code></a>&lt;<code>TLength</code>></p>
+<p>The <strong><code>margin</code></strong> CSS property sets the margin area on all four sides of an element. It is a shorthand for <code>margin-top</code>, <code>margin-right</code>, <code>margin-bottom</code>, and <code>margin-left</code>.</p>
+<p><strong>Syntax</strong>: <code>[ &lt;length&gt; | &lt;percentage&gt; | auto ]{1,4}</code></p>
+<table>
+<thead>
+<tr>
+<th align="center">Chrome</th>
+<th align="center">Firefox</th>
+<th align="center">Safari</th>
+<th align="center">Edge</th>
+<th align="center">IE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>1</strong></td>
+<td align="center"><strong>1</strong></td>
+<td align="center"><strong>1</strong></td>
+<td align="center"><strong>12</strong></td>
+<td align="center"><strong>3</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>see</code></strong> https://developer.mozilla.org/docs/Web/CSS/margin</p>
+<h4 id="defined-in_33">Defined in</h4>
+<p>ui/design/node_modules/@types/react/node_modules/csstype/index.d.ts:5568</p>
+<hr />
+<h3 id="mask">mask</h3>
+<p>• <code>Optional</code> <strong>mask</strong>: <a href="../../modules/akashaproject_design_system._internal_/#mask"><code>Mask</code></a>&lt;<code>TLength</code>></p>
+<p>The <strong><code>mask</code></strong> CSS shorthand property hides an element (partially or fully) by masking or clipping the image at specific points.</p>
+<p><strong>Syntax</strong>: <code>&lt;mask-layer&gt;#</code></p>
+<table>
+<thead>
+<tr>
+<th align="center">Chrome</th>
+<th align="center">Firefox</th>
+<th align="center">Safari</th>
+<th align="center">Edge</th>
+<th align="center">IE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>1</strong></td>
+<td align="center"><strong>2</strong></td>
+<td align="center"><strong>3.1</strong></td>
+<td align="center">12-79</td>
+<td align="center">No</td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>see</code></strong> https://developer.mozilla.org/docs/Web/CSS/mask</p>
+<h4 id="defined-in_34">Defined in</h4>
+<p>ui/design/node_modules/@types/react/node_modules/csstype/index.d.ts:5580</p>
+<hr />
+<h3 id="maskborder">maskBorder</h3>
+<p>• <code>Optional</code> <strong>maskBorder</strong>: <a href="../../modules/akashaproject_design_system._internal_/#maskborder"><code>MaskBorder</code></a></p>
+<p>The <strong><code>mask-border</code></strong> CSS shorthand property lets you create a mask along the edge of an element's border.</p>
+<p><strong>Syntax</strong>: <code>&lt;'mask-border-source'&gt; || &lt;'mask-border-slice'&gt; [ / &lt;'mask-border-width'&gt;? [ / &lt;'mask-border-outset'&gt; ]? ]? || &lt;'mask-border-repeat'&gt; || &lt;'mask-border-mode'&gt;</code></p>
+<table>
+<thead>
+<tr>
+<th align="center">Chrome</th>
+<th align="center">Firefox</th>
+<th align="center">Safari</th>
+<th align="center">Edge</th>
+<th align="center">IE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>1</strong> <em>(-webkit-mask-box-image)</em></td>
+<td align="center">No</td>
+<td align="center"><strong>3.1</strong> <em>(-webkit-mask-box-image)</em></td>
+<td align="center"><strong>79</strong> <em>(-webkit-mask-box-image)</em></td>
+<td align="center">No</td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>see</code></strong> https://developer.mozilla.org/docs/Web/CSS/mask-border</p>
+<h4 id="defined-in_35">Defined in</h4>
+<p>ui/design/node_modules/@types/react/node_modules/csstype/index.d.ts:5592</p>
+<hr />
+<h3 id="motion">motion</h3>
+<p>• <code>Optional</code> <strong>motion</strong>: <a href="../../modules/akashaproject_design_system._internal_/#offset"><code>Offset</code></a>&lt;<code>TLength</code>></p>
+<p>The <strong><code>offset</code></strong> CSS shorthand property sets all the properties required for animating an element along a defined path.</p>
+<p><strong>Syntax</strong>: <code>[ &lt;'offset-position'&gt;? [ &lt;'offset-path'&gt; [ &lt;'offset-distance'&gt; || &lt;'offset-rotate'&gt; ]? ]? ]! [ / &lt;'offset-anchor'&gt; ]?</code></p>
+<table>
+<thead>
+<tr>
+<th align="center">Chrome</th>
+<th align="center">Firefox</th>
+<th align="center">Safari</th>
+<th align="center">Edge</th>
+<th align="center">IE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>55</strong></td>
+<td align="center"><strong>72</strong></td>
+<td align="center">No</td>
+<td align="center"><strong>79</strong></td>
+<td align="center">No</td>
+</tr>
+<tr>
+<td align="center">46 <em>(motion)</em></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>see</code></strong> https://developer.mozilla.org/docs/Web/CSS/offset</p>
+<h4 id="defined-in_36">Defined in</h4>
+<p>ui/design/node_modules/@types/react/node_modules/csstype/index.d.ts:5605</p>
+<hr />
+<h3 id="offset">offset</h3>
+<p>• <code>Optional</code> <strong>offset</strong>: <a href="../../modules/akashaproject_design_system._internal_/#offset"><code>Offset</code></a>&lt;<code>TLength</code>></p>
+<p>The <strong><code>offset</code></strong> CSS shorthand property sets all the properties required for animating an element along a defined path.</p>
+<p><strong>Syntax</strong>: <code>[ &lt;'offset-position'&gt;? [ &lt;'offset-path'&gt; [ &lt;'offset-distance'&gt; || &lt;'offset-rotate'&gt; ]? ]? ]! [ / &lt;'offset-anchor'&gt; ]?</code></p>
+<table>
+<thead>
+<tr>
+<th align="center">Chrome</th>
+<th align="center">Firefox</th>
+<th align="center">Safari</th>
+<th align="center">Edge</th>
+<th align="center">IE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>55</strong></td>
+<td align="center"><strong>72</strong></td>
+<td align="center">No</td>
+<td align="center"><strong>79</strong></td>
+<td align="center">No</td>
+</tr>
+<tr>
+<td align="center">46 <em>(motion)</em></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>see</code></strong> https://developer.mozilla.org/docs/Web/CSS/offset</p>
+<h4 id="defined-in_37">Defined in</h4>
+<p>ui/design/node_modules/@types/react/node_modules/csstype/index.d.ts:5618</p>
+<hr />
+<h3 id="outline">outline</h3>
+<p>• <code>Optional</code> <strong>outline</strong>: <a href="../../modules/akashaproject_design_system._internal_/#outline"><code>Outline</code></a>&lt;<code>TLength</code>></p>
+<p>The <strong><code>outline</code></strong> CSS shorthand property set all the outline properties in a single declaration.</p>
+<p><strong>Syntax</strong>: <code>[ &lt;'outline-color'&gt; || &lt;'outline-style'&gt; || &lt;'outline-width'&gt; ]</code></p>
+<table>
+<thead>
+<tr>
+<th align="center">Chrome</th>
+<th align="center">Firefox</th>
+<th align="center">Safari</th>
+<th align="center">Edge</th>
+<th align="center">IE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>1</strong></td>
+<td align="center"><strong>1.5</strong></td>
+<td align="center"><strong>1.2</strong></td>
+<td align="center"><strong>12</strong></td>
+<td align="center"><strong>8</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>see</code></strong> https://developer.mozilla.org/docs/Web/CSS/outline</p>
+<h4 id="defined-in_38">Defined in</h4>
+<p>ui/design/node_modules/@types/react/node_modules/csstype/index.d.ts:5630</p>
+<hr />
+<h3 id="overflow">overflow</h3>
+<p>• <code>Optional</code> <strong>overflow</strong>: <a href="../../modules/akashaproject_design_system._internal_/#overflow"><code>Overflow</code></a></p>
+<p>The <strong><code>overflow</code></strong> CSS shorthand property sets the desired behavior for an element's overflow — i.e. when an element's content is too big to fit in its block formatting context — in both directions.</p>
+<p><strong>Syntax</strong>: <code>[ visible | hidden | clip | scroll | auto ]{1,2}</code></p>
+<p><strong>Initial value</strong>: <code>visible</code></p>
+<table>
+<thead>
+<tr>
+<th align="center">Chrome</th>
+<th align="center">Firefox</th>
+<th align="center">Safari</th>
+<th align="center">Edge</th>
+<th align="center">IE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>1</strong></td>
+<td align="center"><strong>1</strong></td>
+<td align="center"><strong>1</strong></td>
+<td align="center"><strong>12</strong></td>
+<td align="center"><strong>4</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>see</code></strong> https://developer.mozilla.org/docs/Web/CSS/overflow</p>
+<h4 id="defined-in_39">Defined in</h4>
+<p>ui/design/node_modules/@types/react/node_modules/csstype/index.d.ts:5644</p>
+<hr />
+<h3 id="overscrollbehavior">overscrollBehavior</h3>
+<p>• <code>Optional</code> <strong>overscrollBehavior</strong>: <a href="../../modules/akashaproject_design_system._internal_/#overscrollbehavior"><code>OverscrollBehavior</code></a></p>
+<p>The <strong><code>overscroll-behavior</code></strong> CSS property sets what a browser does when reaching the boundary of a scrolling area. It's a shorthand for <code>overscroll-behavior-x</code> and <code>overscroll-behavior-y</code>.</p>
+<p><strong>Syntax</strong>: <code>[ contain | none | auto ]{1,2}</code></p>
+<p><strong>Initial value</strong>: <code>auto</code></p>
+<table>
+<thead>
+<tr>
+<th align="center">Chrome</th>
+<th align="center">Firefox</th>
+<th align="center">Safari</th>
+<th align="center">Edge</th>
+<th align="center">IE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>63</strong></td>
+<td align="center"><strong>59</strong></td>
+<td align="center">No</td>
+<td align="center"><strong>18</strong></td>
+<td align="center">No</td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>see</code></strong> https://developer.mozilla.org/docs/Web/CSS/overscroll-behavior</p>
+<h4 id="defined-in_40">Defined in</h4>
+<p>ui/design/node_modules/@types/react/node_modules/csstype/index.d.ts:5658</p>
+<hr />
+<h3 id="padding">padding</h3>
+<p>• <code>Optional</code> <strong>padding</strong>: <a href="../../modules/akashaproject_design_system._internal_/#padding"><code>Padding</code></a>&lt;<code>TLength</code>></p>
+<p>The <strong><code>padding</code></strong> CSS shorthand property sets the padding area on all four sides of an element at once.</p>
+<p><strong>Syntax</strong>: <code>[ &lt;length&gt; | &lt;percentage&gt; ]{1,4}</code></p>
+<table>
+<thead>
+<tr>
+<th align="center">Chrome</th>
+<th align="center">Firefox</th>
+<th align="center">Safari</th>
+<th align="center">Edge</th>
+<th align="center">IE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>1</strong></td>
+<td align="center"><strong>1</strong></td>
+<td align="center"><strong>1</strong></td>
+<td align="center"><strong>12</strong></td>
+<td align="center"><strong>4</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>see</code></strong> https://developer.mozilla.org/docs/Web/CSS/padding</p>
+<h4 id="defined-in_41">Defined in</h4>
+<p>ui/design/node_modules/@types/react/node_modules/csstype/index.d.ts:5670</p>
+<hr />
+<h3 id="placeitems">placeItems</h3>
+<p>• <code>Optional</code> <strong>placeItems</strong>: <a href="../../modules/akashaproject_design_system._internal_/#placeitems"><code>PlaceItems</code></a></p>
+<p>The CSS <strong><code>place-items</code></strong> shorthand property allows you to align items along both the block and inline directions at once (i.e. the <code>align-items</code> and <code>justify-items</code> properties) in a relevant layout system such as Grid or Flexbox. If the second value is not set, the first value is also used for it.</p>
+<p><strong>Syntax</strong>: <code>&lt;'align-items'&gt; &lt;'justify-items'&gt;?</code></p>
+<table>
+<thead>
+<tr>
+<th align="center">Chrome</th>
+<th align="center">Firefox</th>
+<th align="center">Safari</th>
+<th align="center">Edge</th>
+<th align="center">IE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>59</strong></td>
+<td align="center"><strong>45</strong></td>
+<td align="center"><strong>11</strong></td>
+<td align="center"><strong>79</strong></td>
+<td align="center">No</td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>see</code></strong> https://developer.mozilla.org/docs/Web/CSS/place-items</p>
+<h4 id="defined-in_42">Defined in</h4>
+<p>ui/design/node_modules/@types/react/node_modules/csstype/index.d.ts:5682</p>
+<hr />
+<h3 id="placeself">placeSelf</h3>
+<p>• <code>Optional</code> <strong>placeSelf</strong>: <a href="../../modules/akashaproject_design_system._internal_/#placeself"><code>PlaceSelf</code></a></p>
+<p>The <strong><code>place-self</code></strong> CSS shorthand property allows you to align an individual item in both the block and inline directions at once (i.e. the <code>align-self</code> and <code>justify-self</code> properties) in a relevant layout system such as Grid or Flexbox. If the second value is not present, the first value is also used for it.</p>
+<p><strong>Syntax</strong>: <code>&lt;'align-self'&gt; &lt;'justify-self'&gt;?</code></p>
+<table>
+<thead>
+<tr>
+<th align="center">Chrome</th>
+<th align="center">Firefox</th>
+<th align="center">Safari</th>
+<th align="center">Edge</th>
+<th align="center">IE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>59</strong></td>
+<td align="center"><strong>45</strong></td>
+<td align="center"><strong>11</strong></td>
+<td align="center"><strong>79</strong></td>
+<td align="center">No</td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>see</code></strong> https://developer.mozilla.org/docs/Web/CSS/place-self</p>
+<h4 id="defined-in_43">Defined in</h4>
+<p>ui/design/node_modules/@types/react/node_modules/csstype/index.d.ts:5694</p>
+<hr />
+<h3 id="textdecoration">textDecoration</h3>
+<p>• <code>Optional</code> <strong>textDecoration</strong>: <a href="../../modules/akashaproject_design_system._internal_/#textdecoration"><code>TextDecoration</code></a>&lt;<code>TLength</code>></p>
+<p>The <strong><code>text-decoration</code></strong> shorthand CSS property sets the appearance of decorative lines on text. It is a shorthand for <code>text-decoration-line</code>, <code>text-decoration-color</code>, <code>text-decoration-style</code>, and the newer <code>text-decoration-thickness</code> property.</p>
+<p><strong>Syntax</strong>: <code>&lt;'text-decoration-line'&gt; || &lt;'text-decoration-style'&gt; || &lt;'text-decoration-color'&gt; || &lt;'text-decoration-thickness'&gt;</code></p>
+<table>
+<thead>
+<tr>
+<th align="center">Chrome</th>
+<th align="center">Firefox</th>
+<th align="center">Safari</th>
+<th align="center">Edge</th>
+<th align="center">IE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>1</strong></td>
+<td align="center"><strong>1</strong></td>
+<td align="center"><strong>1</strong></td>
+<td align="center"><strong>12</strong></td>
+<td align="center"><strong>3</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>see</code></strong> https://developer.mozilla.org/docs/Web/CSS/text-decoration</p>
+<h4 id="defined-in_44">Defined in</h4>
+<p>ui/design/node_modules/@types/react/node_modules/csstype/index.d.ts:5706</p>
+<hr />
+<h3 id="textemphasis">textEmphasis</h3>
+<p>• <code>Optional</code> <strong>textEmphasis</strong>: <a href="../../modules/akashaproject_design_system._internal_/#textemphasis"><code>TextEmphasis</code></a></p>
+<p>The <strong><code>text-emphasis</code></strong> CSS property applies emphasis marks to text (except spaces and control characters). It is a shorthand for <code>text-emphasis-style</code> and <code>text-emphasis-color</code>.</p>
+<p><strong>Syntax</strong>: <code>&lt;'text-emphasis-style'&gt; || &lt;'text-emphasis-color'&gt;</code></p>
+<table>
+<thead>
+<tr>
+<th align="center">Chrome</th>
+<th align="center">Firefox</th>
+<th align="center">Safari</th>
+<th align="center">Edge</th>
+<th align="center">IE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>25</strong> <em>-x-</em></td>
+<td align="center"><strong>46</strong></td>
+<td align="center"><strong>7</strong></td>
+<td align="center"><strong>79</strong> <em>-x-</em></td>
+<td align="center">No</td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>see</code></strong> https://developer.mozilla.org/docs/Web/CSS/text-emphasis</p>
+<h4 id="defined-in_45">Defined in</h4>
+<p>ui/design/node_modules/@types/react/node_modules/csstype/index.d.ts:5718</p>
+<hr />
+<h3 id="transition">transition</h3>
+<p>• <code>Optional</code> <strong>transition</strong>: <a href="../../modules/akashaproject_design_system._internal_/#transition"><code>Transition</code></a>&lt;<code>TTime</code>></p>
+<p>The <strong><code>transition</code></strong> CSS property is a shorthand property for <code>transition-property</code>, <code>transition-duration</code>, <code>transition-timing-function</code>, and <code>transition-delay</code>.</p>
+<p><strong>Syntax</strong>: <code>&lt;single-transition&gt;#</code></p>
+<table>
+<thead>
+<tr>
+<th align="center">Chrome</th>
+<th align="center">Firefox</th>
+<th align="center">Safari</th>
+<th align="center">Edge</th>
+<th align="center">IE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>26</strong></td>
+<td align="center"><strong>16</strong></td>
+<td align="center"><strong>9</strong></td>
+<td align="center"><strong>12</strong></td>
+<td align="center"><strong>10</strong></td>
+</tr>
+<tr>
+<td align="center">1 <em>-x-</em></td>
+<td align="center">4 <em>-x-</em></td>
+<td align="center">3.1 <em>-x-</em></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>see</code></strong> https://developer.mozilla.org/docs/Web/CSS/transition</p>
+<h4 id="defined-in_46">Defined in</h4>
+<p>ui/design/node_modules/@types/react/node_modules/csstype/index.d.ts:5731</p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.22074ed6.min.js"}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.01de222e.min.js"></script>
+      
+    
+  </body>
+</html>

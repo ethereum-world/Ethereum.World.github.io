@@ -1,0 +1,1381 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.7">
+    
+    
+      
+        <title>akashaproject ui app loader. internal .AWF ENS - AKASHA World Framework docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.cd566b2a.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#class-awf_ens" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="AKASHA World Framework docs" class="md-header__button md-logo" aria-label="AKASHA World Framework docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AKASHA World Framework docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              akashaproject ui app loader. internal .AWF ENS
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="AKASHA World Framework docs" class="md-nav__button md-logo" aria-label="AKASHA World Framework docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    AKASHA World Framework docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modules/" class="md-nav__link">
+        API
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#implements" class="md-nav__link">
+    Implements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    Table of contents
+  </a>
+  
+    <nav class="md-nav" aria-label="Table of contents">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#constructors" class="md-nav__link">
+    Constructors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    Properties
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    Methods
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constructors_1" class="md-nav__link">
+    Constructors
+  </a>
+  
+    <nav class="md-nav" aria-label="Constructors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#constructor" class="md-nav__link">
+    constructor
+  </a>
+  
+    <nav class="md-nav" aria-label="constructor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties_1" class="md-nav__link">
+    Properties
+  </a>
+  
+    <nav class="md-nav" aria-label="Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ens_address" class="md-nav__link">
+    ENS_ADDRESS
+  </a>
+  
+    <nav class="md-nav" aria-label="ENS_ADDRESS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_1" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#integration_registry_address" class="md-nav__link">
+    INTEGRATION_REGISTRY_ADDRESS
+  </a>
+  
+    <nav class="md-nav" aria-label="INTEGRATION_REGISTRY_ADDRESS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_2" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#registrar_address" class="md-nav__link">
+    REGISTRAR_ADDRESS
+  </a>
+  
+    <nav class="md-nav" aria-label="REGISTRAR_ADDRESS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_3" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resolver_address" class="md-nav__link">
+    RESOLVER_ADDRESS
+  </a>
+  
+    <nav class="md-nav" aria-label="RESOLVER_ADDRESS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_4" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reverse_string" class="md-nav__link">
+    REVERSE_STRING
+  </a>
+  
+    <nav class="md-nav" aria-label="REVERSE_STRING">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_5" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#methods_1" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#claimname" class="md-nav__link">
+    claimName
+  </a>
+  
+    <nav class="md-nav" aria-label="claimName">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_1" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#implementation-of" class="md-nav__link">
+    Implementation of
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_6" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getallintegrationsids" class="md-nav__link">
+    getAllIntegrationsIds
+  </a>
+  
+    <nav class="md-nav" aria-label="getAllIntegrationsIds">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_2" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_1" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_7" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getcontracts" class="md-nav__link">
+    getContracts
+  </a>
+  
+    <nav class="md-nav" aria-label="getContracts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_2" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_8" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getintegrationid" class="md-nav__link">
+    getIntegrationId
+  </a>
+  
+    <nav class="md-nav" aria-label="getIntegrationId">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_3" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_3" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_9" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getintegrationinfo" class="md-nav__link">
+    getIntegrationInfo
+  </a>
+  
+    <nav class="md-nav" aria-label="getIntegrationInfo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_4" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_4" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_10" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getintegrationreleaseid" class="md-nav__link">
+    getIntegrationReleaseId
+  </a>
+  
+    <nav class="md-nav" aria-label="getIntegrationReleaseId">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_5" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_5" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_11" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getintegrationreleaseinfo" class="md-nav__link">
+    getIntegrationReleaseInfo
+  </a>
+  
+    <nav class="md-nav" aria-label="getIntegrationReleaseInfo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_6" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_6" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_12" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getintegrationscount" class="md-nav__link">
+    getIntegrationsCount
+  </a>
+  
+    <nav class="md-nav" aria-label="getIntegrationsCount">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_7" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_13" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isavailable" class="md-nav__link">
+    isAvailable
+  </a>
+  
+    <nav class="md-nav" aria-label="isAvailable">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_7" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_8" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#implementation-of_1" class="md-nav__link">
+    Implementation of
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_14" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#registername" class="md-nav__link">
+    registerName
+  </a>
+  
+    <nav class="md-nav" aria-label="registerName">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_8" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_9" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#implementation-of_2" class="md-nav__link">
+    Implementation of
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_15" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resolveaddress" class="md-nav__link">
+    resolveAddress
+  </a>
+  
+    <nav class="md-nav" aria-label="resolveAddress">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_9" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_10" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#implementation-of_3" class="md-nav__link">
+    Implementation of
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_16" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resolvename" class="md-nav__link">
+    resolveName
+  </a>
+  
+    <nav class="md-nav" aria-label="resolveName">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_10" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_11" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#implementation-of_4" class="md-nav__link">
+    Implementation of
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_17" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setupcontracts" class="md-nav__link">
+    setupContracts
+  </a>
+  
+    <nav class="md-nav" aria-label="setupContracts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_12" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_18" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#userisownerof" class="md-nav__link">
+    userIsOwnerOf
+  </a>
+  
+    <nav class="md-nav" aria-label="userIsOwnerOf">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_11" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_13" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#implementation-of_5" class="md-nav__link">
+    Implementation of
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_19" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+<p><a href="../../">AWF</a> / <a href="../../modules/">Modules</a> / <a href="../../modules/akashaproject_ui_app_loader/">@akashaproject/ui-app-loader</a> / <a href="../../modules/akashaproject_ui_app_loader._internal_/">&lt;internal></a> / AWF_ENS</p>
+<h1 id="class-awf_ens">Class: AWF_ENS</h1>
+<p><a href="../../modules/akashaproject_ui_app_loader/">@akashaproject/ui-app-loader</a>.<a href="../../modules/akashaproject_ui_app_loader._internal_/"><internal></a>.AWF_ENS</p>
+<h2 id="implements">Implements</h2>
+<ul>
+<li><a href="../../interfaces/akashaproject_ui_app_loader._internal_.AWF_IENS/"><code>AWF_IENS</code></a></li>
+</ul>
+<h2 id="table-of-contents">Table of contents</h2>
+<h3 id="constructors">Constructors</h3>
+<ul>
+<li><a href="./#constructor">constructor</a></li>
+</ul>
+<h3 id="properties">Properties</h3>
+<ul>
+<li><a href="./#ens_address">ENS_ADDRESS</a></li>
+<li><a href="./#integration_registry_address">INTEGRATION_REGISTRY_ADDRESS</a></li>
+<li><a href="./#registrar_address">REGISTRAR_ADDRESS</a></li>
+<li><a href="./#resolver_address">RESOLVER_ADDRESS</a></li>
+<li><a href="./#reverse_string">REVERSE_STRING</a></li>
+</ul>
+<h3 id="methods">Methods</h3>
+<ul>
+<li><a href="./#claimname">claimName</a></li>
+<li><a href="./#getallintegrationsids">getAllIntegrationsIds</a></li>
+<li><a href="./#getcontracts">getContracts</a></li>
+<li><a href="./#getintegrationid">getIntegrationId</a></li>
+<li><a href="./#getintegrationinfo">getIntegrationInfo</a></li>
+<li><a href="./#getintegrationreleaseid">getIntegrationReleaseId</a></li>
+<li><a href="./#getintegrationreleaseinfo">getIntegrationReleaseInfo</a></li>
+<li><a href="./#getintegrationscount">getIntegrationsCount</a></li>
+<li><a href="./#isavailable">isAvailable</a></li>
+<li><a href="./#registername">registerName</a></li>
+<li><a href="./#resolveaddress">resolveAddress</a></li>
+<li><a href="./#resolvename">resolveName</a></li>
+<li><a href="./#setupcontracts">setupContracts</a></li>
+<li><a href="./#userisownerof">userIsOwnerOf</a></li>
+</ul>
+<h2 id="constructors_1">Constructors</h2>
+<h3 id="constructor">constructor</h3>
+<p>• <strong>new AWF_ENS</strong>(<code>log</code>, <code>gql</code>, <code>auth</code>, <code>settings</code>, <code>globalChannel</code>, <code>web3</code>)</p>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>log</code></td>
+<td align="left"><a href="../akashaproject_ui_app_loader._internal_.Logging/"><code>Logging</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>gql</code></td>
+<td align="left"><a href="../akashaproject_ui_app_loader._internal_.Gql/"><code>Gql</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>auth</code></td>
+<td align="left"><a href="../akashaproject_ui_app_loader._internal_.AWF_Auth/"><code>AWF_Auth</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>settings</code></td>
+<td align="left"><a href="../akashaproject_ui_app_loader._internal_.Settings/"><code>Settings</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>globalChannel</code></td>
+<td align="left"><a href="../akashaproject_ui_app_loader._internal_.EventBus/"><code>EventBus</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>web3</code></td>
+<td align="left"><a href="../akashaproject_ui_app_loader._internal_.Web3Connector/"><code>Web3Connector</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/sdk/src/registry/index.ts#L58">sdk/src/registry/index.ts:58</a></p>
+<h2 id="properties_1">Properties</h2>
+<h3 id="ens_address">ENS_ADDRESS</h3>
+<p>• <code>Readonly</code> <strong>ENS_ADDRESS</strong>: <code>"0x00000000000c2e074ec69a0dfb2997ba6c7d2e1e"</code></p>
+<h4 id="defined-in_1">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/sdk/src/registry/index.ts#L53">sdk/src/registry/index.ts:53</a></p>
+<hr />
+<h3 id="integration_registry_address">INTEGRATION_REGISTRY_ADDRESS</h3>
+<p>• <code>Readonly</code> <strong>INTEGRATION_REGISTRY_ADDRESS</strong>: <code>"0x5E49595D7B3593a61Ed8e947c2cC23091cAB8BfC"</code></p>
+<h4 id="defined-in_2">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/sdk/src/registry/index.ts#L57">sdk/src/registry/index.ts:57</a></p>
+<hr />
+<h3 id="registrar_address">REGISTRAR_ADDRESS</h3>
+<p>• <code>Readonly</code> <strong>REGISTRAR_ADDRESS</strong>: <code>"0x9005a15eb865e8378e5cb9f45e8849ef1eC4F90B"</code></p>
+<h4 id="defined-in_3">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/sdk/src/registry/index.ts#L51">sdk/src/registry/index.ts:51</a></p>
+<hr />
+<h3 id="resolver_address">RESOLVER_ADDRESS</h3>
+<p>• <code>Readonly</code> <strong>RESOLVER_ADDRESS</strong>: <code>"0xf6305c19e814d2a75429Fd637d01F7ee0E77d615"</code></p>
+<h4 id="defined-in_4">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/sdk/src/registry/index.ts#L52">sdk/src/registry/index.ts:52</a></p>
+<hr />
+<h3 id="reverse_string">REVERSE_STRING</h3>
+<p>• <code>Readonly</code> <strong>REVERSE_STRING</strong>: <code>"0x91d1777781884d03a6757a803996e38de2a42967fb37eeaca72729271025a9e2"</code></p>
+<h4 id="defined-in_5">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/sdk/src/registry/index.ts#L54">sdk/src/registry/index.ts:54</a></p>
+<h2 id="methods_1">Methods</h2>
+<h3 id="claimname">claimName</h3>
+<p>▸ <strong>claimName</strong>(<code>name</code>): <code>Observable</code>&lt;{ <code>data</code>: <code>any</code>  }></p>
+<h4 id="parameters_1">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>name</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><code>Observable</code>&lt;{ <code>data</code>: <code>any</code>  }></p>
+<h4 id="implementation-of">Implementation of</h4>
+<p><a href="../../interfaces/akashaproject_ui_app_loader._internal_.AWF_IENS/">AWF_IENS</a>.<a href="../../interfaces/akashaproject_ui_app_loader._internal_.AWF_IENS/#claimname">claimName</a></p>
+<h4 id="defined-in_6">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/sdk/src/registry/index.ts#L101">sdk/src/registry/index.ts:101</a></p>
+<hr />
+<h3 id="getallintegrationsids">getAllIntegrationsIds</h3>
+<p>▸ <strong>getAllIntegrationsIds</strong>(<code>offset?</code>, <code>limit?</code>): <code>Promise</code>&lt;{ <code>data</code>: { <code>integrationIds</code>: <code>any</code> = data.packageIds; <code>nextIndex</code>: <code>any</code> = data.pointer }  }></p>
+<h4 id="parameters_2">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Default value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>offset</code></td>
+<td align="left"><code>number</code></td>
+<td align="left"><code>0</code></td>
+</tr>
+<tr>
+<td align="left"><code>limit</code></td>
+<td align="left"><code>number</code></td>
+<td align="left"><code>5</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_1">Returns</h4>
+<p><code>Promise</code>&lt;{ <code>data</code>: { <code>integrationIds</code>: <code>any</code> = data.packageIds; <code>nextIndex</code>: <code>any</code> = data.pointer }  }></p>
+<h4 id="defined-in_7">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/sdk/src/registry/index.ts#L216">sdk/src/registry/index.ts:216</a></p>
+<hr />
+<h3 id="getcontracts">getContracts</h3>
+<p>▸ <strong>getContracts</strong>(): <code>Object</code></p>
+<h4 id="returns_2">Returns</h4>
+<p><code>Object</code></p>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>AkashaRegistrarInstance</code></td>
+<td align="left"><code>any</code></td>
+</tr>
+<tr>
+<td align="left"><code>ENSinstance</code></td>
+<td align="left"><code>any</code></td>
+</tr>
+<tr>
+<td align="left"><code>IntegrationRegistryInstance</code></td>
+<td align="left"><code>any</code></td>
+</tr>
+<tr>
+<td align="left"><code>ReverseRegistrarInstance</code></td>
+<td align="left"><code>any</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_8">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/sdk/src/registry/index.ts#L234">sdk/src/registry/index.ts:234</a></p>
+<hr />
+<h3 id="getintegrationid">getIntegrationId</h3>
+<p>▸ <strong>getIntegrationId</strong>(<code>name</code>): <code>Promise</code>&lt;{ <code>data</code>: { <code>id</code>: <code>any</code> = data }  }></p>
+<h4 id="parameters_3">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>name</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_3">Returns</h4>
+<p><code>Promise</code>&lt;{ <code>data</code>: { <code>id</code>: <code>any</code> = data }  }></p>
+<h4 id="defined-in_9">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/sdk/src/registry/index.ts#L224">sdk/src/registry/index.ts:224</a></p>
+<hr />
+<h3 id="getintegrationinfo">getIntegrationInfo</h3>
+<p>▸ <strong>getIntegrationInfo</strong>(<code>packageId</code>): <code>Promise</code>&lt;{ <code>data</code>: { <code>author</code>: <code>any</code> = data.author; <code>enabled</code>: <code>any</code> = data.latestReleaseId; <code>integrationName</code>: <code>any</code> = data.integrationName; <code>latestReleaseId</code>: <code>any</code> = data.latestReleaseId }  }></p>
+<h4 id="parameters_4">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>packageId</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_4">Returns</h4>
+<p><code>Promise</code>&lt;{ <code>data</code>: { <code>author</code>: <code>any</code> = data.author; <code>enabled</code>: <code>any</code> = data.latestReleaseId; <code>integrationName</code>: <code>any</code> = data.integrationName; <code>latestReleaseId</code>: <code>any</code> = data.latestReleaseId }  }></p>
+<h4 id="defined-in_10">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/sdk/src/registry/index.ts#L190">sdk/src/registry/index.ts:190</a></p>
+<hr />
+<h3 id="getintegrationreleaseid">getIntegrationReleaseId</h3>
+<p>▸ <strong>getIntegrationReleaseId</strong>(<code>name</code>, <code>version</code>): <code>Promise</code>&lt;{ <code>data</code>: { <code>id</code>: <code>any</code> = data.releaseId }  }></p>
+<h4 id="parameters_5">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>name</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>version</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_5">Returns</h4>
+<p><code>Promise</code>&lt;{ <code>data</code>: { <code>id</code>: <code>any</code> = data.releaseId }  }></p>
+<h4 id="defined-in_11">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/sdk/src/registry/index.ts#L229">sdk/src/registry/index.ts:229</a></p>
+<hr />
+<h3 id="getintegrationreleaseinfo">getIntegrationReleaseInfo</h3>
+<p>▸ <strong>getIntegrationReleaseInfo</strong>(<code>releaseId</code>): <code>Promise</code>&lt;{ <code>data</code>: { <code>integrationName</code>: <code>any</code> = data.integrationName; <code>manifestHash</code>: <code>any</code> = data.manifestHash; <code>version</code>: <code>any</code> = data.version }  }></p>
+<h4 id="parameters_6">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>releaseId</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_6">Returns</h4>
+<p><code>Promise</code>&lt;{ <code>data</code>: { <code>integrationName</code>: <code>any</code> = data.integrationName; <code>manifestHash</code>: <code>any</code> = data.manifestHash; <code>version</code>: <code>any</code> = data.version }  }></p>
+<h4 id="defined-in_12">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/sdk/src/registry/index.ts#L200">sdk/src/registry/index.ts:200</a></p>
+<hr />
+<h3 id="getintegrationscount">getIntegrationsCount</h3>
+<p>▸ <strong>getIntegrationsCount</strong>(): <code>Promise</code>&lt;{ <code>data</code>: { <code>totalCount</code>: <code>any</code> = data.totalCount }  }></p>
+<h4 id="returns_7">Returns</h4>
+<p><code>Promise</code>&lt;{ <code>data</code>: { <code>totalCount</code>: <code>any</code> = data.totalCount }  }></p>
+<h4 id="defined-in_13">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/sdk/src/registry/index.ts#L209">sdk/src/registry/index.ts:209</a></p>
+<hr />
+<h3 id="isavailable">isAvailable</h3>
+<p>▸ <strong>isAvailable</strong>(<code>name</code>): <code>Promise</code>&lt;{ <code>data</code>: <code>any</code>  }></p>
+<h4 id="parameters_7">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>name</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_8">Returns</h4>
+<p><code>Promise</code>&lt;{ <code>data</code>: <code>any</code>  }></p>
+<h4 id="implementation-of_1">Implementation of</h4>
+<p><a href="../../interfaces/akashaproject_ui_app_loader._internal_.AWF_IENS/">AWF_IENS</a>.<a href="../../interfaces/akashaproject_ui_app_loader._internal_.AWF_IENS/#isavailable">isAvailable</a></p>
+<h4 id="defined-in_14">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/sdk/src/registry/index.ts#L134">sdk/src/registry/index.ts:134</a></p>
+<hr />
+<h3 id="registername">registerName</h3>
+<p>▸ <strong>registerName</strong>(<code>name</code>): <a href="../../modules/akashaproject_ui_app_loader._internal_/#servicecallresult"><code>ServiceCallResult</code></a>&lt;<code>any</code>></p>
+<h4 id="parameters_8">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>name</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_9">Returns</h4>
+<p><a href="../../modules/akashaproject_ui_app_loader._internal_/#servicecallresult"><code>ServiceCallResult</code></a>&lt;<code>any</code>></p>
+<h4 id="implementation-of_2">Implementation of</h4>
+<p><a href="../../interfaces/akashaproject_ui_app_loader._internal_.AWF_IENS/">AWF_IENS</a>.<a href="../../interfaces/akashaproject_ui_app_loader._internal_.AWF_IENS/#registername">registerName</a></p>
+<h4 id="defined-in_15">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/sdk/src/registry/index.ts#L74">sdk/src/registry/index.ts:74</a></p>
+<hr />
+<h3 id="resolveaddress">resolveAddress</h3>
+<p>▸ <strong>resolveAddress</strong>(<code>ethAddress</code>): <code>Promise</code>&lt;{ <code>data</code>: <code>string</code>  }></p>
+<h4 id="parameters_9">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ethAddress</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_10">Returns</h4>
+<p><code>Promise</code>&lt;{ <code>data</code>: <code>string</code>  }></p>
+<h4 id="implementation-of_3">Implementation of</h4>
+<p><a href="../../interfaces/akashaproject_ui_app_loader._internal_.AWF_IENS/">AWF_IENS</a>.<a href="../../interfaces/akashaproject_ui_app_loader._internal_.AWF_IENS/#resolveaddress">resolveAddress</a></p>
+<h4 id="defined-in_16">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/sdk/src/registry/index.ts#L146">sdk/src/registry/index.ts:146</a></p>
+<hr />
+<h3 id="resolvename">resolveName</h3>
+<p>▸ <strong>resolveName</strong>(<code>name</code>): <code>Promise</code>&lt;{ <code>data</code>: <code>string</code>  }></p>
+<h4 id="parameters_10">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>name</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_11">Returns</h4>
+<p><code>Promise</code>&lt;{ <code>data</code>: <code>string</code>  }></p>
+<h4 id="implementation-of_4">Implementation of</h4>
+<p><a href="../../interfaces/akashaproject_ui_app_loader._internal_.AWF_IENS/">AWF_IENS</a>.<a href="../../interfaces/akashaproject_ui_app_loader._internal_.AWF_IENS/#resolvename">resolveName</a></p>
+<h4 id="defined-in_17">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/sdk/src/registry/index.ts#L154">sdk/src/registry/index.ts:154</a></p>
+<hr />
+<h3 id="setupcontracts">setupContracts</h3>
+<p>▸ <strong>setupContracts</strong>(): <code>Promise</code>&lt;<code>void</code>></p>
+<h4 id="returns_12">Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>></p>
+<h4 id="defined-in_18">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/sdk/src/registry/index.ts#L159">sdk/src/registry/index.ts:159</a></p>
+<hr />
+<h3 id="userisownerof">userIsOwnerOf</h3>
+<p>▸ <strong>userIsOwnerOf</strong>(<code>name</code>): <code>Promise</code>&lt;{ <code>data</code>: <code>boolean</code>  }></p>
+<h4 id="parameters_11">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>name</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_13">Returns</h4>
+<p><code>Promise</code>&lt;{ <code>data</code>: <code>boolean</code>  }></p>
+<h4 id="implementation-of_5">Implementation of</h4>
+<p><a href="../../interfaces/akashaproject_ui_app_loader._internal_.AWF_IENS/">AWF_IENS</a>.<a href="../../interfaces/akashaproject_ui_app_loader._internal_.AWF_IENS/#userisownerof">userIsOwnerOf</a></p>
+<h4 id="defined-in_19">Defined in</h4>
+<p><a href="https://github.com/AKASHAorg/akasha-world-framework/blob/d81a7246/sdk/src/registry/index.ts#L123">sdk/src/registry/index.ts:123</a></p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.22074ed6.min.js"}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.01de222e.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,3007 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.7">
+    
+    
+      
+        <title>akashaproject design system. internal .DOMMatrix - AKASHA World Framework docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.cd566b2a.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#interface-dommatrix" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="AKASHA World Framework docs" class="md-header__button md-logo" aria-label="AKASHA World Framework docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AKASHA World Framework docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              akashaproject design system. internal .DOMMatrix
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="AKASHA World Framework docs" class="md-nav__button md-logo" aria-label="AKASHA World Framework docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    AKASHA World Framework docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modules/" class="md-nav__link">
+        API
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hierarchy" class="md-nav__link">
+    Hierarchy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    Table of contents
+  </a>
+  
+    <nav class="md-nav" aria-label="Table of contents">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    Properties
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    Methods
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties_1" class="md-nav__link">
+    Properties
+  </a>
+  
+    <nav class="md-nav" aria-label="Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a" class="md-nav__link">
+    a
+  </a>
+  
+    <nav class="md-nav" aria-label="a">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overrides" class="md-nav__link">
+    Overrides
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b" class="md-nav__link">
+    b
+  </a>
+  
+    <nav class="md-nav" aria-label="b">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overrides_1" class="md-nav__link">
+    Overrides
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_1" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c" class="md-nav__link">
+    c
+  </a>
+  
+    <nav class="md-nav" aria-label="c">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overrides_2" class="md-nav__link">
+    Overrides
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_2" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d" class="md-nav__link">
+    d
+  </a>
+  
+    <nav class="md-nav" aria-label="d">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overrides_3" class="md-nav__link">
+    Overrides
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_3" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e" class="md-nav__link">
+    e
+  </a>
+  
+    <nav class="md-nav" aria-label="e">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overrides_4" class="md-nav__link">
+    Overrides
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_4" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f" class="md-nav__link">
+    f
+  </a>
+  
+    <nav class="md-nav" aria-label="f">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overrides_5" class="md-nav__link">
+    Overrides
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_5" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is2d" class="md-nav__link">
+    is2D
+  </a>
+  
+    <nav class="md-nav" aria-label="is2D">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_6" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isidentity" class="md-nav__link">
+    isIdentity
+  </a>
+  
+    <nav class="md-nav" aria-label="isIdentity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_1" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_7" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m11" class="md-nav__link">
+    m11
+  </a>
+  
+    <nav class="md-nav" aria-label="m11">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overrides_6" class="md-nav__link">
+    Overrides
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_8" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m12" class="md-nav__link">
+    m12
+  </a>
+  
+    <nav class="md-nav" aria-label="m12">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overrides_7" class="md-nav__link">
+    Overrides
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_9" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m13" class="md-nav__link">
+    m13
+  </a>
+  
+    <nav class="md-nav" aria-label="m13">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overrides_8" class="md-nav__link">
+    Overrides
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_10" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m14" class="md-nav__link">
+    m14
+  </a>
+  
+    <nav class="md-nav" aria-label="m14">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overrides_9" class="md-nav__link">
+    Overrides
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_11" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m21" class="md-nav__link">
+    m21
+  </a>
+  
+    <nav class="md-nav" aria-label="m21">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overrides_10" class="md-nav__link">
+    Overrides
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_12" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m22" class="md-nav__link">
+    m22
+  </a>
+  
+    <nav class="md-nav" aria-label="m22">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overrides_11" class="md-nav__link">
+    Overrides
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_13" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m23" class="md-nav__link">
+    m23
+  </a>
+  
+    <nav class="md-nav" aria-label="m23">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overrides_12" class="md-nav__link">
+    Overrides
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_14" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m24" class="md-nav__link">
+    m24
+  </a>
+  
+    <nav class="md-nav" aria-label="m24">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overrides_13" class="md-nav__link">
+    Overrides
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_15" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m31" class="md-nav__link">
+    m31
+  </a>
+  
+    <nav class="md-nav" aria-label="m31">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overrides_14" class="md-nav__link">
+    Overrides
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_16" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m32" class="md-nav__link">
+    m32
+  </a>
+  
+    <nav class="md-nav" aria-label="m32">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overrides_15" class="md-nav__link">
+    Overrides
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_17" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m33" class="md-nav__link">
+    m33
+  </a>
+  
+    <nav class="md-nav" aria-label="m33">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overrides_16" class="md-nav__link">
+    Overrides
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_18" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m34" class="md-nav__link">
+    m34
+  </a>
+  
+    <nav class="md-nav" aria-label="m34">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overrides_17" class="md-nav__link">
+    Overrides
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_19" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m41" class="md-nav__link">
+    m41
+  </a>
+  
+    <nav class="md-nav" aria-label="m41">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overrides_18" class="md-nav__link">
+    Overrides
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_20" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m42" class="md-nav__link">
+    m42
+  </a>
+  
+    <nav class="md-nav" aria-label="m42">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overrides_19" class="md-nav__link">
+    Overrides
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_21" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m43" class="md-nav__link">
+    m43
+  </a>
+  
+    <nav class="md-nav" aria-label="m43">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overrides_20" class="md-nav__link">
+    Overrides
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_22" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m44" class="md-nav__link">
+    m44
+  </a>
+  
+    <nav class="md-nav" aria-label="m44">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overrides_21" class="md-nav__link">
+    Overrides
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_23" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#methods_1" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#flipx" class="md-nav__link">
+    flipX
+  </a>
+  
+    <nav class="md-nav" aria-label="flipX">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_2" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_24" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flipy" class="md-nav__link">
+    flipY
+  </a>
+  
+    <nav class="md-nav" aria-label="flipY">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_1" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_3" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_25" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inverse" class="md-nav__link">
+    inverse
+  </a>
+  
+    <nav class="md-nav" aria-label="inverse">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_2" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_4" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_26" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#invertself" class="md-nav__link">
+    invertSelf
+  </a>
+  
+    <nav class="md-nav" aria-label="invertSelf">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_3" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_27" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multiply" class="md-nav__link">
+    multiply
+  </a>
+  
+    <nav class="md-nav" aria-label="multiply">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_4" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_5" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_28" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multiplyself" class="md-nav__link">
+    multiplySelf
+  </a>
+  
+    <nav class="md-nav" aria-label="multiplySelf">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_1" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_5" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_29" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#premultiplyself" class="md-nav__link">
+    preMultiplySelf
+  </a>
+  
+    <nav class="md-nav" aria-label="preMultiplySelf">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_2" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_6" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_30" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rotate" class="md-nav__link">
+    rotate
+  </a>
+  
+    <nav class="md-nav" aria-label="rotate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_3" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_7" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_6" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_31" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rotateaxisangle" class="md-nav__link">
+    rotateAxisAngle
+  </a>
+  
+    <nav class="md-nav" aria-label="rotateAxisAngle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_4" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_8" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_7" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_32" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rotateaxisangleself" class="md-nav__link">
+    rotateAxisAngleSelf
+  </a>
+  
+    <nav class="md-nav" aria-label="rotateAxisAngleSelf">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_5" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_9" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_33" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rotatefromvector" class="md-nav__link">
+    rotateFromVector
+  </a>
+  
+    <nav class="md-nav" aria-label="rotateFromVector">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_6" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_10" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_8" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_34" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rotatefromvectorself" class="md-nav__link">
+    rotateFromVectorSelf
+  </a>
+  
+    <nav class="md-nav" aria-label="rotateFromVectorSelf">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_7" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_11" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_35" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rotateself" class="md-nav__link">
+    rotateSelf
+  </a>
+  
+    <nav class="md-nav" aria-label="rotateSelf">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_8" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_12" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_36" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scale" class="md-nav__link">
+    scale
+  </a>
+  
+    <nav class="md-nav" aria-label="scale">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_9" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_13" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_9" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_37" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scale3d" class="md-nav__link">
+    scale3d
+  </a>
+  
+    <nav class="md-nav" aria-label="scale3d">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_10" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_14" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_10" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_38" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scale3dself" class="md-nav__link">
+    scale3dSelf
+  </a>
+  
+    <nav class="md-nav" aria-label="scale3dSelf">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_11" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_15" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_39" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scalenonuniform" class="md-nav__link">
+    scaleNonUniform
+  </a>
+  
+    <nav class="md-nav" aria-label="scaleNonUniform">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_12" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_16" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_11" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_40" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scaleself" class="md-nav__link">
+    scaleSelf
+  </a>
+  
+    <nav class="md-nav" aria-label="scaleSelf">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_13" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_17" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_41" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setmatrixvalue" class="md-nav__link">
+    setMatrixValue
+  </a>
+  
+    <nav class="md-nav" aria-label="setMatrixValue">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_14" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_18" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_42" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skewx" class="md-nav__link">
+    skewX
+  </a>
+  
+    <nav class="md-nav" aria-label="skewX">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_15" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_19" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_12" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_43" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skewxself" class="md-nav__link">
+    skewXSelf
+  </a>
+  
+    <nav class="md-nav" aria-label="skewXSelf">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_16" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_20" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_44" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skewy" class="md-nav__link">
+    skewY
+  </a>
+  
+    <nav class="md-nav" aria-label="skewY">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_17" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_21" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_13" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_45" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skewyself" class="md-nav__link">
+    skewYSelf
+  </a>
+  
+    <nav class="md-nav" aria-label="skewYSelf">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_18" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_22" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_46" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tofloat32array" class="md-nav__link">
+    toFloat32Array
+  </a>
+  
+    <nav class="md-nav" aria-label="toFloat32Array">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_23" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_14" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_47" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tofloat64array" class="md-nav__link">
+    toFloat64Array
+  </a>
+  
+    <nav class="md-nav" aria-label="toFloat64Array">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_24" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_15" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_48" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tojson" class="md-nav__link">
+    toJSON
+  </a>
+  
+    <nav class="md-nav" aria-label="toJSON">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_25" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_16" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_49" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tostring" class="md-nav__link">
+    toString
+  </a>
+  
+    <nav class="md-nav" aria-label="toString">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_26" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_17" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_50" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transformpoint" class="md-nav__link">
+    transformPoint
+  </a>
+  
+    <nav class="md-nav" aria-label="transformPoint">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_19" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_27" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_18" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_51" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#translate" class="md-nav__link">
+    translate
+  </a>
+  
+    <nav class="md-nav" aria-label="translate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_20" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_28" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_19" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_52" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#translateself" class="md-nav__link">
+    translateSelf
+  </a>
+  
+    <nav class="md-nav" aria-label="translateSelf">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_21" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_29" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_53" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+<p><a href="../../">AWF</a> / <a href="../../modules/">Modules</a> / <a href="../../modules/akashaproject_design_system/">@akashaproject/design-system</a> / <a href="../../modules/akashaproject_design_system._internal_/">&lt;internal></a> / DOMMatrix</p>
+<h1 id="interface-dommatrix">Interface: DOMMatrix</h1>
+<p><a href="../../modules/akashaproject_design_system/">@akashaproject/design-system</a>.<a href="../../modules/akashaproject_design_system._internal_/"><internal></a>.DOMMatrix</p>
+<h2 id="hierarchy">Hierarchy</h2>
+<ul>
+<li><a href="../../modules/akashaproject_design_system._internal_/#dommatrixreadonly"><code>DOMMatrixReadOnly</code></a></li>
+</ul>
+<p>↳ <strong><code>DOMMatrix</code></strong></p>
+<h2 id="table-of-contents">Table of contents</h2>
+<h3 id="properties">Properties</h3>
+<ul>
+<li><a href="./#a">a</a></li>
+<li><a href="./#b">b</a></li>
+<li><a href="./#c">c</a></li>
+<li><a href="./#d">d</a></li>
+<li><a href="./#e">e</a></li>
+<li><a href="./#f">f</a></li>
+<li><a href="./#is2d">is2D</a></li>
+<li><a href="./#isidentity">isIdentity</a></li>
+<li><a href="./#m11">m11</a></li>
+<li><a href="./#m12">m12</a></li>
+<li><a href="./#m13">m13</a></li>
+<li><a href="./#m14">m14</a></li>
+<li><a href="./#m21">m21</a></li>
+<li><a href="./#m22">m22</a></li>
+<li><a href="./#m23">m23</a></li>
+<li><a href="./#m24">m24</a></li>
+<li><a href="./#m31">m31</a></li>
+<li><a href="./#m32">m32</a></li>
+<li><a href="./#m33">m33</a></li>
+<li><a href="./#m34">m34</a></li>
+<li><a href="./#m41">m41</a></li>
+<li><a href="./#m42">m42</a></li>
+<li><a href="./#m43">m43</a></li>
+<li><a href="./#m44">m44</a></li>
+</ul>
+<h3 id="methods">Methods</h3>
+<ul>
+<li><a href="./#flipx">flipX</a></li>
+<li><a href="./#flipy">flipY</a></li>
+<li><a href="./#inverse">inverse</a></li>
+<li><a href="./#invertself">invertSelf</a></li>
+<li><a href="./#multiply">multiply</a></li>
+<li><a href="./#multiplyself">multiplySelf</a></li>
+<li><a href="./#premultiplyself">preMultiplySelf</a></li>
+<li><a href="./#rotate">rotate</a></li>
+<li><a href="./#rotateaxisangle">rotateAxisAngle</a></li>
+<li><a href="./#rotateaxisangleself">rotateAxisAngleSelf</a></li>
+<li><a href="./#rotatefromvector">rotateFromVector</a></li>
+<li><a href="./#rotatefromvectorself">rotateFromVectorSelf</a></li>
+<li><a href="./#rotateself">rotateSelf</a></li>
+<li><a href="./#scale">scale</a></li>
+<li><a href="./#scale3d">scale3d</a></li>
+<li><a href="./#scale3dself">scale3dSelf</a></li>
+<li><a href="./#scalenonuniform">scaleNonUniform</a></li>
+<li><a href="./#scaleself">scaleSelf</a></li>
+<li><a href="./#setmatrixvalue">setMatrixValue</a></li>
+<li><a href="./#skewx">skewX</a></li>
+<li><a href="./#skewxself">skewXSelf</a></li>
+<li><a href="./#skewy">skewY</a></li>
+<li><a href="./#skewyself">skewYSelf</a></li>
+<li><a href="./#tofloat32array">toFloat32Array</a></li>
+<li><a href="./#tofloat64array">toFloat64Array</a></li>
+<li><a href="./#tojson">toJSON</a></li>
+<li><a href="./#tostring">toString</a></li>
+<li><a href="./#transformpoint">transformPoint</a></li>
+<li><a href="./#translate">translate</a></li>
+<li><a href="./#translateself">translateSelf</a></li>
+</ul>
+<h2 id="properties_1">Properties</h2>
+<h3 id="a">a</h3>
+<p>• <strong>a</strong>: <code>number</code></p>
+<h4 id="overrides">Overrides</h4>
+<p>DOMMatrixReadOnly.a</p>
+<h4 id="defined-in">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3772</p>
+<hr />
+<h3 id="b">b</h3>
+<p>• <strong>b</strong>: <code>number</code></p>
+<h4 id="overrides_1">Overrides</h4>
+<p>DOMMatrixReadOnly.b</p>
+<h4 id="defined-in_1">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3773</p>
+<hr />
+<h3 id="c">c</h3>
+<p>• <strong>c</strong>: <code>number</code></p>
+<h4 id="overrides_2">Overrides</h4>
+<p>DOMMatrixReadOnly.c</p>
+<h4 id="defined-in_2">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3774</p>
+<hr />
+<h3 id="d">d</h3>
+<p>• <strong>d</strong>: <code>number</code></p>
+<h4 id="overrides_3">Overrides</h4>
+<p>DOMMatrixReadOnly.d</p>
+<h4 id="defined-in_3">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3775</p>
+<hr />
+<h3 id="e">e</h3>
+<p>• <strong>e</strong>: <code>number</code></p>
+<h4 id="overrides_4">Overrides</h4>
+<p>DOMMatrixReadOnly.e</p>
+<h4 id="defined-in_4">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3776</p>
+<hr />
+<h3 id="f">f</h3>
+<p>• <strong>f</strong>: <code>number</code></p>
+<h4 id="overrides_5">Overrides</h4>
+<p>DOMMatrixReadOnly.f</p>
+<h4 id="defined-in_5">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3777</p>
+<hr />
+<h3 id="is2d">is2D</h3>
+<p>• <code>Readonly</code> <strong>is2D</strong>: <code>boolean</code></p>
+<h4 id="inherited-from">Inherited from</h4>
+<p>DOMMatrixReadOnly.is2D</p>
+<h4 id="defined-in_6">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3829</p>
+<hr />
+<h3 id="isidentity">isIdentity</h3>
+<p>• <code>Readonly</code> <strong>isIdentity</strong>: <code>boolean</code></p>
+<h4 id="inherited-from_1">Inherited from</h4>
+<p>DOMMatrixReadOnly.isIdentity</p>
+<h4 id="defined-in_7">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3830</p>
+<hr />
+<h3 id="m11">m11</h3>
+<p>• <strong>m11</strong>: <code>number</code></p>
+<h4 id="overrides_6">Overrides</h4>
+<p>DOMMatrixReadOnly.m11</p>
+<h4 id="defined-in_8">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3778</p>
+<hr />
+<h3 id="m12">m12</h3>
+<p>• <strong>m12</strong>: <code>number</code></p>
+<h4 id="overrides_7">Overrides</h4>
+<p>DOMMatrixReadOnly.m12</p>
+<h4 id="defined-in_9">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3779</p>
+<hr />
+<h3 id="m13">m13</h3>
+<p>• <strong>m13</strong>: <code>number</code></p>
+<h4 id="overrides_8">Overrides</h4>
+<p>DOMMatrixReadOnly.m13</p>
+<h4 id="defined-in_10">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3780</p>
+<hr />
+<h3 id="m14">m14</h3>
+<p>• <strong>m14</strong>: <code>number</code></p>
+<h4 id="overrides_9">Overrides</h4>
+<p>DOMMatrixReadOnly.m14</p>
+<h4 id="defined-in_11">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3781</p>
+<hr />
+<h3 id="m21">m21</h3>
+<p>• <strong>m21</strong>: <code>number</code></p>
+<h4 id="overrides_10">Overrides</h4>
+<p>DOMMatrixReadOnly.m21</p>
+<h4 id="defined-in_12">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3782</p>
+<hr />
+<h3 id="m22">m22</h3>
+<p>• <strong>m22</strong>: <code>number</code></p>
+<h4 id="overrides_11">Overrides</h4>
+<p>DOMMatrixReadOnly.m22</p>
+<h4 id="defined-in_13">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3783</p>
+<hr />
+<h3 id="m23">m23</h3>
+<p>• <strong>m23</strong>: <code>number</code></p>
+<h4 id="overrides_12">Overrides</h4>
+<p>DOMMatrixReadOnly.m23</p>
+<h4 id="defined-in_14">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3784</p>
+<hr />
+<h3 id="m24">m24</h3>
+<p>• <strong>m24</strong>: <code>number</code></p>
+<h4 id="overrides_13">Overrides</h4>
+<p>DOMMatrixReadOnly.m24</p>
+<h4 id="defined-in_15">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3785</p>
+<hr />
+<h3 id="m31">m31</h3>
+<p>• <strong>m31</strong>: <code>number</code></p>
+<h4 id="overrides_14">Overrides</h4>
+<p>DOMMatrixReadOnly.m31</p>
+<h4 id="defined-in_16">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3786</p>
+<hr />
+<h3 id="m32">m32</h3>
+<p>• <strong>m32</strong>: <code>number</code></p>
+<h4 id="overrides_15">Overrides</h4>
+<p>DOMMatrixReadOnly.m32</p>
+<h4 id="defined-in_17">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3787</p>
+<hr />
+<h3 id="m33">m33</h3>
+<p>• <strong>m33</strong>: <code>number</code></p>
+<h4 id="overrides_16">Overrides</h4>
+<p>DOMMatrixReadOnly.m33</p>
+<h4 id="defined-in_18">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3788</p>
+<hr />
+<h3 id="m34">m34</h3>
+<p>• <strong>m34</strong>: <code>number</code></p>
+<h4 id="overrides_17">Overrides</h4>
+<p>DOMMatrixReadOnly.m34</p>
+<h4 id="defined-in_19">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3789</p>
+<hr />
+<h3 id="m41">m41</h3>
+<p>• <strong>m41</strong>: <code>number</code></p>
+<h4 id="overrides_18">Overrides</h4>
+<p>DOMMatrixReadOnly.m41</p>
+<h4 id="defined-in_20">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3790</p>
+<hr />
+<h3 id="m42">m42</h3>
+<p>• <strong>m42</strong>: <code>number</code></p>
+<h4 id="overrides_19">Overrides</h4>
+<p>DOMMatrixReadOnly.m42</p>
+<h4 id="defined-in_21">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3791</p>
+<hr />
+<h3 id="m43">m43</h3>
+<p>• <strong>m43</strong>: <code>number</code></p>
+<h4 id="overrides_20">Overrides</h4>
+<p>DOMMatrixReadOnly.m43</p>
+<h4 id="defined-in_22">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3792</p>
+<hr />
+<h3 id="m44">m44</h3>
+<p>• <strong>m44</strong>: <code>number</code></p>
+<h4 id="overrides_21">Overrides</h4>
+<p>DOMMatrixReadOnly.m44</p>
+<h4 id="defined-in_23">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3793</p>
+<h2 id="methods_1">Methods</h2>
+<h3 id="flipx">flipX</h3>
+<p>▸ <strong>flipX</strong>(): <a href="../../modules/akashaproject_design_system._internal_/#dommatrix"><code>DOMMatrix</code></a></p>
+<h4 id="returns">Returns</h4>
+<p><a href="../../modules/akashaproject_design_system._internal_/#dommatrix"><code>DOMMatrix</code></a></p>
+<h4 id="inherited-from_2">Inherited from</h4>
+<p>DOMMatrixReadOnly.flipX</p>
+<h4 id="defined-in_24">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3847</p>
+<hr />
+<h3 id="flipy">flipY</h3>
+<p>▸ <strong>flipY</strong>(): <a href="../../modules/akashaproject_design_system._internal_/#dommatrix"><code>DOMMatrix</code></a></p>
+<h4 id="returns_1">Returns</h4>
+<p><a href="../../modules/akashaproject_design_system._internal_/#dommatrix"><code>DOMMatrix</code></a></p>
+<h4 id="inherited-from_3">Inherited from</h4>
+<p>DOMMatrixReadOnly.flipY</p>
+<h4 id="defined-in_25">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3848</p>
+<hr />
+<h3 id="inverse">inverse</h3>
+<p>▸ <strong>inverse</strong>(): <a href="../../modules/akashaproject_design_system._internal_/#dommatrix"><code>DOMMatrix</code></a></p>
+<h4 id="returns_2">Returns</h4>
+<p><a href="../../modules/akashaproject_design_system._internal_/#dommatrix"><code>DOMMatrix</code></a></p>
+<h4 id="inherited-from_4">Inherited from</h4>
+<p>DOMMatrixReadOnly.inverse</p>
+<h4 id="defined-in_26">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3849</p>
+<hr />
+<h3 id="invertself">invertSelf</h3>
+<p>▸ <strong>invertSelf</strong>(): <a href="../../modules/akashaproject_design_system._internal_/#dommatrix"><code>DOMMatrix</code></a></p>
+<h4 id="returns_3">Returns</h4>
+<p><a href="../../modules/akashaproject_design_system._internal_/#dommatrix"><code>DOMMatrix</code></a></p>
+<h4 id="defined-in_27">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3794</p>
+<hr />
+<h3 id="multiply">multiply</h3>
+<p>▸ <strong>multiply</strong>(<code>other?</code>): <a href="../../modules/akashaproject_design_system._internal_/#dommatrix"><code>DOMMatrix</code></a></p>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>other?</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_.DOMMatrixInit/"><code>DOMMatrixInit</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_4">Returns</h4>
+<p><a href="../../modules/akashaproject_design_system._internal_/#dommatrix"><code>DOMMatrix</code></a></p>
+<h4 id="inherited-from_5">Inherited from</h4>
+<p>DOMMatrixReadOnly.multiply</p>
+<h4 id="defined-in_28">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3850</p>
+<hr />
+<h3 id="multiplyself">multiplySelf</h3>
+<p>▸ <strong>multiplySelf</strong>(<code>other?</code>): <a href="../../modules/akashaproject_design_system._internal_/#dommatrix"><code>DOMMatrix</code></a></p>
+<h4 id="parameters_1">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>other?</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_.DOMMatrixInit/"><code>DOMMatrixInit</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_5">Returns</h4>
+<p><a href="../../modules/akashaproject_design_system._internal_/#dommatrix"><code>DOMMatrix</code></a></p>
+<h4 id="defined-in_29">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3795</p>
+<hr />
+<h3 id="premultiplyself">preMultiplySelf</h3>
+<p>▸ <strong>preMultiplySelf</strong>(<code>other?</code>): <a href="../../modules/akashaproject_design_system._internal_/#dommatrix"><code>DOMMatrix</code></a></p>
+<h4 id="parameters_2">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>other?</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_.DOMMatrixInit/"><code>DOMMatrixInit</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_6">Returns</h4>
+<p><a href="../../modules/akashaproject_design_system._internal_/#dommatrix"><code>DOMMatrix</code></a></p>
+<h4 id="defined-in_30">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3796</p>
+<hr />
+<h3 id="rotate">rotate</h3>
+<p>▸ <strong>rotate</strong>(<code>rotX?</code>, <code>rotY?</code>, <code>rotZ?</code>): <a href="../../modules/akashaproject_design_system._internal_/#dommatrix"><code>DOMMatrix</code></a></p>
+<h4 id="parameters_3">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>rotX?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>rotY?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>rotZ?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_7">Returns</h4>
+<p><a href="../../modules/akashaproject_design_system._internal_/#dommatrix"><code>DOMMatrix</code></a></p>
+<h4 id="inherited-from_6">Inherited from</h4>
+<p>DOMMatrixReadOnly.rotate</p>
+<h4 id="defined-in_31">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3851</p>
+<hr />
+<h3 id="rotateaxisangle">rotateAxisAngle</h3>
+<p>▸ <strong>rotateAxisAngle</strong>(<code>x?</code>, <code>y?</code>, <code>z?</code>, <code>angle?</code>): <a href="../../modules/akashaproject_design_system._internal_/#dommatrix"><code>DOMMatrix</code></a></p>
+<h4 id="parameters_4">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>x?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>y?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>z?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>angle?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_8">Returns</h4>
+<p><a href="../../modules/akashaproject_design_system._internal_/#dommatrix"><code>DOMMatrix</code></a></p>
+<h4 id="inherited-from_7">Inherited from</h4>
+<p>DOMMatrixReadOnly.rotateAxisAngle</p>
+<h4 id="defined-in_32">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3852</p>
+<hr />
+<h3 id="rotateaxisangleself">rotateAxisAngleSelf</h3>
+<p>▸ <strong>rotateAxisAngleSelf</strong>(<code>x?</code>, <code>y?</code>, <code>z?</code>, <code>angle?</code>): <a href="../../modules/akashaproject_design_system._internal_/#dommatrix"><code>DOMMatrix</code></a></p>
+<h4 id="parameters_5">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>x?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>y?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>z?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>angle?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_9">Returns</h4>
+<p><a href="../../modules/akashaproject_design_system._internal_/#dommatrix"><code>DOMMatrix</code></a></p>
+<h4 id="defined-in_33">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3797</p>
+<hr />
+<h3 id="rotatefromvector">rotateFromVector</h3>
+<p>▸ <strong>rotateFromVector</strong>(<code>x?</code>, <code>y?</code>): <a href="../../modules/akashaproject_design_system._internal_/#dommatrix"><code>DOMMatrix</code></a></p>
+<h4 id="parameters_6">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>x?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>y?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_10">Returns</h4>
+<p><a href="../../modules/akashaproject_design_system._internal_/#dommatrix"><code>DOMMatrix</code></a></p>
+<h4 id="inherited-from_8">Inherited from</h4>
+<p>DOMMatrixReadOnly.rotateFromVector</p>
+<h4 id="defined-in_34">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3853</p>
+<hr />
+<h3 id="rotatefromvectorself">rotateFromVectorSelf</h3>
+<p>▸ <strong>rotateFromVectorSelf</strong>(<code>x?</code>, <code>y?</code>): <a href="../../modules/akashaproject_design_system._internal_/#dommatrix"><code>DOMMatrix</code></a></p>
+<h4 id="parameters_7">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>x?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>y?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_11">Returns</h4>
+<p><a href="../../modules/akashaproject_design_system._internal_/#dommatrix"><code>DOMMatrix</code></a></p>
+<h4 id="defined-in_35">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3798</p>
+<hr />
+<h3 id="rotateself">rotateSelf</h3>
+<p>▸ <strong>rotateSelf</strong>(<code>rotX?</code>, <code>rotY?</code>, <code>rotZ?</code>): <a href="../../modules/akashaproject_design_system._internal_/#dommatrix"><code>DOMMatrix</code></a></p>
+<h4 id="parameters_8">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>rotX?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>rotY?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>rotZ?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_12">Returns</h4>
+<p><a href="../../modules/akashaproject_design_system._internal_/#dommatrix"><code>DOMMatrix</code></a></p>
+<h4 id="defined-in_36">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3799</p>
+<hr />
+<h3 id="scale">scale</h3>
+<p>▸ <strong>scale</strong>(<code>scaleX?</code>, <code>scaleY?</code>, <code>scaleZ?</code>, <code>originX?</code>, <code>originY?</code>, <code>originZ?</code>): <a href="../../modules/akashaproject_design_system._internal_/#dommatrix"><code>DOMMatrix</code></a></p>
+<h4 id="parameters_9">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>scaleX?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>scaleY?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>scaleZ?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>originX?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>originY?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>originZ?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_13">Returns</h4>
+<p><a href="../../modules/akashaproject_design_system._internal_/#dommatrix"><code>DOMMatrix</code></a></p>
+<h4 id="inherited-from_9">Inherited from</h4>
+<p>DOMMatrixReadOnly.scale</p>
+<h4 id="defined-in_37">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3854</p>
+<hr />
+<h3 id="scale3d">scale3d</h3>
+<p>▸ <strong>scale3d</strong>(<code>scale?</code>, <code>originX?</code>, <code>originY?</code>, <code>originZ?</code>): <a href="../../modules/akashaproject_design_system._internal_/#dommatrix"><code>DOMMatrix</code></a></p>
+<h4 id="parameters_10">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>scale?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>originX?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>originY?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>originZ?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_14">Returns</h4>
+<p><a href="../../modules/akashaproject_design_system._internal_/#dommatrix"><code>DOMMatrix</code></a></p>
+<h4 id="inherited-from_10">Inherited from</h4>
+<p>DOMMatrixReadOnly.scale3d</p>
+<h4 id="defined-in_38">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3855</p>
+<hr />
+<h3 id="scale3dself">scale3dSelf</h3>
+<p>▸ <strong>scale3dSelf</strong>(<code>scale?</code>, <code>originX?</code>, <code>originY?</code>, <code>originZ?</code>): <a href="../../modules/akashaproject_design_system._internal_/#dommatrix"><code>DOMMatrix</code></a></p>
+<h4 id="parameters_11">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>scale?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>originX?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>originY?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>originZ?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_15">Returns</h4>
+<p><a href="../../modules/akashaproject_design_system._internal_/#dommatrix"><code>DOMMatrix</code></a></p>
+<h4 id="defined-in_39">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3800</p>
+<hr />
+<h3 id="scalenonuniform">scaleNonUniform</h3>
+<p>▸ <strong>scaleNonUniform</strong>(<code>scaleX?</code>, <code>scaleY?</code>): <a href="../../modules/akashaproject_design_system._internal_/#dommatrix"><code>DOMMatrix</code></a></p>
+<p><strong><code>deprecated</code></strong></p>
+<h4 id="parameters_12">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>scaleX?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>scaleY?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_16">Returns</h4>
+<p><a href="../../modules/akashaproject_design_system._internal_/#dommatrix"><code>DOMMatrix</code></a></p>
+<h4 id="inherited-from_11">Inherited from</h4>
+<p>DOMMatrixReadOnly.scaleNonUniform</p>
+<h4 id="defined-in_40">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3857</p>
+<hr />
+<h3 id="scaleself">scaleSelf</h3>
+<p>▸ <strong>scaleSelf</strong>(<code>scaleX?</code>, <code>scaleY?</code>, <code>scaleZ?</code>, <code>originX?</code>, <code>originY?</code>, <code>originZ?</code>): <a href="../../modules/akashaproject_design_system._internal_/#dommatrix"><code>DOMMatrix</code></a></p>
+<h4 id="parameters_13">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>scaleX?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>scaleY?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>scaleZ?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>originX?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>originY?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>originZ?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_17">Returns</h4>
+<p><a href="../../modules/akashaproject_design_system._internal_/#dommatrix"><code>DOMMatrix</code></a></p>
+<h4 id="defined-in_41">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3801</p>
+<hr />
+<h3 id="setmatrixvalue">setMatrixValue</h3>
+<p>▸ <strong>setMatrixValue</strong>(<code>transformList</code>): <a href="../../modules/akashaproject_design_system._internal_/#dommatrix"><code>DOMMatrix</code></a></p>
+<h4 id="parameters_14">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>transformList</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_18">Returns</h4>
+<p><a href="../../modules/akashaproject_design_system._internal_/#dommatrix"><code>DOMMatrix</code></a></p>
+<h4 id="defined-in_42">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3802</p>
+<hr />
+<h3 id="skewx">skewX</h3>
+<p>▸ <strong>skewX</strong>(<code>sx?</code>): <a href="../../modules/akashaproject_design_system._internal_/#dommatrix"><code>DOMMatrix</code></a></p>
+<h4 id="parameters_15">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>sx?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_19">Returns</h4>
+<p><a href="../../modules/akashaproject_design_system._internal_/#dommatrix"><code>DOMMatrix</code></a></p>
+<h4 id="inherited-from_12">Inherited from</h4>
+<p>DOMMatrixReadOnly.skewX</p>
+<h4 id="defined-in_43">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3858</p>
+<hr />
+<h3 id="skewxself">skewXSelf</h3>
+<p>▸ <strong>skewXSelf</strong>(<code>sx?</code>): <a href="../../modules/akashaproject_design_system._internal_/#dommatrix"><code>DOMMatrix</code></a></p>
+<h4 id="parameters_16">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>sx?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_20">Returns</h4>
+<p><a href="../../modules/akashaproject_design_system._internal_/#dommatrix"><code>DOMMatrix</code></a></p>
+<h4 id="defined-in_44">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3803</p>
+<hr />
+<h3 id="skewy">skewY</h3>
+<p>▸ <strong>skewY</strong>(<code>sy?</code>): <a href="../../modules/akashaproject_design_system._internal_/#dommatrix"><code>DOMMatrix</code></a></p>
+<h4 id="parameters_17">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>sy?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_21">Returns</h4>
+<p><a href="../../modules/akashaproject_design_system._internal_/#dommatrix"><code>DOMMatrix</code></a></p>
+<h4 id="inherited-from_13">Inherited from</h4>
+<p>DOMMatrixReadOnly.skewY</p>
+<h4 id="defined-in_45">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3859</p>
+<hr />
+<h3 id="skewyself">skewYSelf</h3>
+<p>▸ <strong>skewYSelf</strong>(<code>sy?</code>): <a href="../../modules/akashaproject_design_system._internal_/#dommatrix"><code>DOMMatrix</code></a></p>
+<h4 id="parameters_18">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>sy?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_22">Returns</h4>
+<p><a href="../../modules/akashaproject_design_system._internal_/#dommatrix"><code>DOMMatrix</code></a></p>
+<h4 id="defined-in_46">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3804</p>
+<hr />
+<h3 id="tofloat32array">toFloat32Array</h3>
+<p>▸ <strong>toFloat32Array</strong>(): <code>Float32Array</code></p>
+<h4 id="returns_23">Returns</h4>
+<p><code>Float32Array</code></p>
+<h4 id="inherited-from_14">Inherited from</h4>
+<p>DOMMatrixReadOnly.toFloat32Array</p>
+<h4 id="defined-in_47">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3860</p>
+<hr />
+<h3 id="tofloat64array">toFloat64Array</h3>
+<p>▸ <strong>toFloat64Array</strong>(): <code>Float64Array</code></p>
+<h4 id="returns_24">Returns</h4>
+<p><code>Float64Array</code></p>
+<h4 id="inherited-from_15">Inherited from</h4>
+<p>DOMMatrixReadOnly.toFloat64Array</p>
+<h4 id="defined-in_48">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3861</p>
+<hr />
+<h3 id="tojson">toJSON</h3>
+<p>▸ <strong>toJSON</strong>(): <code>any</code></p>
+<h4 id="returns_25">Returns</h4>
+<p><code>any</code></p>
+<h4 id="inherited-from_16">Inherited from</h4>
+<p>DOMMatrixReadOnly.toJSON</p>
+<h4 id="defined-in_49">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3862</p>
+<hr />
+<h3 id="tostring">toString</h3>
+<p>▸ <strong>toString</strong>(): <code>string</code></p>
+<h4 id="returns_26">Returns</h4>
+<p><code>string</code></p>
+<h4 id="inherited-from_17">Inherited from</h4>
+<p>DOMMatrixReadOnly.toString</p>
+<h4 id="defined-in_50">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3865</p>
+<hr />
+<h3 id="transformpoint">transformPoint</h3>
+<p>▸ <strong>transformPoint</strong>(<code>point?</code>): <a href="../../modules/akashaproject_design_system._internal_/#dompoint"><code>DOMPoint</code></a></p>
+<h4 id="parameters_19">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>point?</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_.DOMPointInit/"><code>DOMPointInit</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_27">Returns</h4>
+<p><a href="../../modules/akashaproject_design_system._internal_/#dompoint"><code>DOMPoint</code></a></p>
+<h4 id="inherited-from_18">Inherited from</h4>
+<p>DOMMatrixReadOnly.transformPoint</p>
+<h4 id="defined-in_51">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3863</p>
+<hr />
+<h3 id="translate">translate</h3>
+<p>▸ <strong>translate</strong>(<code>tx?</code>, <code>ty?</code>, <code>tz?</code>): <a href="../../modules/akashaproject_design_system._internal_/#dommatrix"><code>DOMMatrix</code></a></p>
+<h4 id="parameters_20">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>tx?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>ty?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>tz?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_28">Returns</h4>
+<p><a href="../../modules/akashaproject_design_system._internal_/#dommatrix"><code>DOMMatrix</code></a></p>
+<h4 id="inherited-from_19">Inherited from</h4>
+<p>DOMMatrixReadOnly.translate</p>
+<h4 id="defined-in_52">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3864</p>
+<hr />
+<h3 id="translateself">translateSelf</h3>
+<p>▸ <strong>translateSelf</strong>(<code>tx?</code>, <code>ty?</code>, <code>tz?</code>): <a href="../../modules/akashaproject_design_system._internal_/#dommatrix"><code>DOMMatrix</code></a></p>
+<h4 id="parameters_21">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>tx?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>ty?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>tz?</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_29">Returns</h4>
+<p><a href="../../modules/akashaproject_design_system._internal_/#dommatrix"><code>DOMMatrix</code></a></p>
+<h4 id="defined-in_53">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3805</p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.22074ed6.min.js"}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.01de222e.min.js"></script>
+      
+    
+  </body>
+</html>

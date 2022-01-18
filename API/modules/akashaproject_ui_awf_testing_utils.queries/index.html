@@ -1,0 +1,5683 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.7">
+    
+    
+      
+        <title>Akashaproject ui awf testing utils.queries - AKASHA World Framework docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.cd566b2a.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#namespace-queries" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="AKASHA World Framework docs" class="md-header__button md-logo" aria-label="AKASHA World Framework docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AKASHA World Framework docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Akashaproject ui awf testing utils.queries
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="AKASHA World Framework docs" class="md-nav__button md-logo" aria-label="AKASHA World Framework docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    AKASHA World Framework docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        API
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    Table of contents
+  </a>
+  
+    <nav class="md-nav" aria-label="Table of contents">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#interfaces" class="md-nav__link">
+    Interfaces
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-aliases" class="md-nav__link">
+    Type aliases
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#functions" class="md-nav__link">
+    Functions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#type-aliases_1" class="md-nav__link">
+    Type aliases
+  </a>
+  
+    <nav class="md-nav" aria-label="Type aliases">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#allbyboundattribute" class="md-nav__link">
+    AllByBoundAttribute
+  </a>
+  
+    <nav class="md-nav" aria-label="AllByBoundAttribute">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#allbyrole" class="md-nav__link">
+    AllByRole
+  </a>
+  
+    <nav class="md-nav" aria-label="AllByRole">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_1" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_1" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_1" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_1" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_1" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#allbytext" class="md-nav__link">
+    AllByText
+  </a>
+  
+    <nav class="md-nav" aria-label="AllByText">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_2" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_2" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_2" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_2" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_2" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#findallbyboundattribute" class="md-nav__link">
+    FindAllByBoundAttribute
+  </a>
+  
+    <nav class="md-nav" aria-label="FindAllByBoundAttribute">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_3" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_3" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_3" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_3" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_3" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#findallbyrole" class="md-nav__link">
+    FindAllByRole
+  </a>
+  
+    <nav class="md-nav" aria-label="FindAllByRole">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_4" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_4" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_4" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_4" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_4" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#findallbytext" class="md-nav__link">
+    FindAllByText
+  </a>
+  
+    <nav class="md-nav" aria-label="FindAllByText">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_5" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_5" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_5" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_5" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_5" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#findbyboundattribute" class="md-nav__link">
+    FindByBoundAttribute
+  </a>
+  
+    <nav class="md-nav" aria-label="FindByBoundAttribute">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_6" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_6" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_6" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_6" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_6" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#findbyrole" class="md-nav__link">
+    FindByRole
+  </a>
+  
+    <nav class="md-nav" aria-label="FindByRole">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_7" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_7" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_7" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_7" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_7" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#findbytext" class="md-nav__link">
+    FindByText
+  </a>
+  
+    <nav class="md-nav" aria-label="FindByText">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_8" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_8" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_8" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_8" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_8" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getbyboundattribute" class="md-nav__link">
+    GetByBoundAttribute
+  </a>
+  
+    <nav class="md-nav" aria-label="GetByBoundAttribute">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_9" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_9" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_9" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_9" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_9" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getbyrole" class="md-nav__link">
+    GetByRole
+  </a>
+  
+    <nav class="md-nav" aria-label="GetByRole">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_10" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_10" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_10" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_10" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_10" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getbytext" class="md-nav__link">
+    GetByText
+  </a>
+  
+    <nav class="md-nav" aria-label="GetByText">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_11" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_11" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_11" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_11" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_11" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#querybyboundattribute" class="md-nav__link">
+    QueryByBoundAttribute
+  </a>
+  
+    <nav class="md-nav" aria-label="QueryByBoundAttribute">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_12" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_12" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_12" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_12" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_12" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#querybyrole" class="md-nav__link">
+    QueryByRole
+  </a>
+  
+    <nav class="md-nav" aria-label="QueryByRole">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_13" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_13" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_13" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_13" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_13" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#querybytext" class="md-nav__link">
+    QueryByText
+  </a>
+  
+    <nav class="md-nav" aria-label="QueryByText">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_14" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_14" class="md-nav__link">
+    Type declaration
+  </a>
+  
+    <nav class="md-nav" aria-label="Type declaration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_14" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_14" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_14" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#functions_1" class="md-nav__link">
+    Functions
+  </a>
+  
+    <nav class="md-nav" aria-label="Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#findallbyalttext" class="md-nav__link">
+    findAllByAltText
+  </a>
+  
+    <nav class="md-nav" aria-label="findAllByAltText">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_15" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_15" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_15" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_15" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#findallbydisplayvalue" class="md-nav__link">
+    findAllByDisplayValue
+  </a>
+  
+    <nav class="md-nav" aria-label="findAllByDisplayValue">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_16" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_16" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_16" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_16" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#findallbylabeltext" class="md-nav__link">
+    findAllByLabelText
+  </a>
+  
+    <nav class="md-nav" aria-label="findAllByLabelText">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_17" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_17" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_17" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_17" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#findallbyplaceholdertext" class="md-nav__link">
+    findAllByPlaceholderText
+  </a>
+  
+    <nav class="md-nav" aria-label="findAllByPlaceholderText">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_18" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_18" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_18" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_18" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#findallbyrole_1" class="md-nav__link">
+    findAllByRole
+  </a>
+  
+    <nav class="md-nav" aria-label="findAllByRole">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_19" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_19" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_19" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_19" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#findallbytestid" class="md-nav__link">
+    findAllByTestId
+  </a>
+  
+    <nav class="md-nav" aria-label="findAllByTestId">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_20" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_20" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_20" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_20" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#findallbytext_1" class="md-nav__link">
+    findAllByText
+  </a>
+  
+    <nav class="md-nav" aria-label="findAllByText">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_21" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_21" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_21" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_21" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#findallbytitle" class="md-nav__link">
+    findAllByTitle
+  </a>
+  
+    <nav class="md-nav" aria-label="findAllByTitle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_22" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_22" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_22" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_22" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#findbyalttext" class="md-nav__link">
+    findByAltText
+  </a>
+  
+    <nav class="md-nav" aria-label="findByAltText">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_23" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_23" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_23" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_23" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#findbydisplayvalue" class="md-nav__link">
+    findByDisplayValue
+  </a>
+  
+    <nav class="md-nav" aria-label="findByDisplayValue">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_24" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_24" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_24" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_24" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#findbylabeltext" class="md-nav__link">
+    findByLabelText
+  </a>
+  
+    <nav class="md-nav" aria-label="findByLabelText">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_25" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_25" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_25" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_25" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#findbyplaceholdertext" class="md-nav__link">
+    findByPlaceholderText
+  </a>
+  
+    <nav class="md-nav" aria-label="findByPlaceholderText">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_26" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_26" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_26" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_26" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#findbyrole_1" class="md-nav__link">
+    findByRole
+  </a>
+  
+    <nav class="md-nav" aria-label="findByRole">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_27" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_27" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_27" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_27" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#findbytestid" class="md-nav__link">
+    findByTestId
+  </a>
+  
+    <nav class="md-nav" aria-label="findByTestId">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_28" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_28" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_28" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_28" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#findbytext_1" class="md-nav__link">
+    findByText
+  </a>
+  
+    <nav class="md-nav" aria-label="findByText">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_29" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_29" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_29" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_29" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#findbytitle" class="md-nav__link">
+    findByTitle
+  </a>
+  
+    <nav class="md-nav" aria-label="findByTitle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_30" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_30" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_30" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_30" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getallbyalttext" class="md-nav__link">
+    getAllByAltText
+  </a>
+  
+    <nav class="md-nav" aria-label="getAllByAltText">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_31" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_31" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_31" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_31" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getallbydisplayvalue" class="md-nav__link">
+    getAllByDisplayValue
+  </a>
+  
+    <nav class="md-nav" aria-label="getAllByDisplayValue">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_32" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_32" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_32" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_32" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getallbylabeltext" class="md-nav__link">
+    getAllByLabelText
+  </a>
+  
+    <nav class="md-nav" aria-label="getAllByLabelText">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_33" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_33" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_33" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_33" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getallbyplaceholdertext" class="md-nav__link">
+    getAllByPlaceholderText
+  </a>
+  
+    <nav class="md-nav" aria-label="getAllByPlaceholderText">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_34" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_34" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_34" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_34" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getallbyrole" class="md-nav__link">
+    getAllByRole
+  </a>
+  
+    <nav class="md-nav" aria-label="getAllByRole">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_35" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_35" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_35" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_35" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getallbytestid" class="md-nav__link">
+    getAllByTestId
+  </a>
+  
+    <nav class="md-nav" aria-label="getAllByTestId">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_36" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_36" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_36" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_36" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getallbytext" class="md-nav__link">
+    getAllByText
+  </a>
+  
+    <nav class="md-nav" aria-label="getAllByText">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_37" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_37" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_37" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_37" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getallbytitle" class="md-nav__link">
+    getAllByTitle
+  </a>
+  
+    <nav class="md-nav" aria-label="getAllByTitle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_38" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_38" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_38" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_38" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getbyalttext" class="md-nav__link">
+    getByAltText
+  </a>
+  
+    <nav class="md-nav" aria-label="getByAltText">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_39" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_39" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_39" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_39" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getbydisplayvalue" class="md-nav__link">
+    getByDisplayValue
+  </a>
+  
+    <nav class="md-nav" aria-label="getByDisplayValue">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_40" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_40" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_40" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_40" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getbylabeltext" class="md-nav__link">
+    getByLabelText
+  </a>
+  
+    <nav class="md-nav" aria-label="getByLabelText">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_41" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_41" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_41" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_41" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getbyplaceholdertext" class="md-nav__link">
+    getByPlaceholderText
+  </a>
+  
+    <nav class="md-nav" aria-label="getByPlaceholderText">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_42" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_42" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_42" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_42" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getbyrole_1" class="md-nav__link">
+    getByRole
+  </a>
+  
+    <nav class="md-nav" aria-label="getByRole">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_43" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_43" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_43" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_43" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getbytestid" class="md-nav__link">
+    getByTestId
+  </a>
+  
+    <nav class="md-nav" aria-label="getByTestId">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_44" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_44" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_44" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_44" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getbytext_1" class="md-nav__link">
+    getByText
+  </a>
+  
+    <nav class="md-nav" aria-label="getByText">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_45" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_45" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_45" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_45" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getbytitle" class="md-nav__link">
+    getByTitle
+  </a>
+  
+    <nav class="md-nav" aria-label="getByTitle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_46" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_46" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_46" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_46" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#queryallbyalttext" class="md-nav__link">
+    queryAllByAltText
+  </a>
+  
+    <nav class="md-nav" aria-label="queryAllByAltText">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_47" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_47" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_47" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_47" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#queryallbydisplayvalue" class="md-nav__link">
+    queryAllByDisplayValue
+  </a>
+  
+    <nav class="md-nav" aria-label="queryAllByDisplayValue">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_48" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_48" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_48" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_48" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#queryallbylabeltext" class="md-nav__link">
+    queryAllByLabelText
+  </a>
+  
+    <nav class="md-nav" aria-label="queryAllByLabelText">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_49" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_49" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_49" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_49" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#queryallbyplaceholdertext" class="md-nav__link">
+    queryAllByPlaceholderText
+  </a>
+  
+    <nav class="md-nav" aria-label="queryAllByPlaceholderText">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_50" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_50" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_50" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_50" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#queryallbyrole" class="md-nav__link">
+    queryAllByRole
+  </a>
+  
+    <nav class="md-nav" aria-label="queryAllByRole">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_51" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_51" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_51" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_51" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#queryallbytestid" class="md-nav__link">
+    queryAllByTestId
+  </a>
+  
+    <nav class="md-nav" aria-label="queryAllByTestId">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_52" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_52" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_52" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_52" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#queryallbytext" class="md-nav__link">
+    queryAllByText
+  </a>
+  
+    <nav class="md-nav" aria-label="queryAllByText">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_53" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_53" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_53" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_53" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#queryallbytitle" class="md-nav__link">
+    queryAllByTitle
+  </a>
+  
+    <nav class="md-nav" aria-label="queryAllByTitle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_54" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_54" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_54" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_54" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#querybyalttext" class="md-nav__link">
+    queryByAltText
+  </a>
+  
+    <nav class="md-nav" aria-label="queryByAltText">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_55" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_55" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_55" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_55" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#querybydisplayvalue" class="md-nav__link">
+    queryByDisplayValue
+  </a>
+  
+    <nav class="md-nav" aria-label="queryByDisplayValue">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_56" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_56" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_56" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_56" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#querybylabeltext" class="md-nav__link">
+    queryByLabelText
+  </a>
+  
+    <nav class="md-nav" aria-label="queryByLabelText">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_57" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_57" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_57" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_57" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#querybyplaceholdertext" class="md-nav__link">
+    queryByPlaceholderText
+  </a>
+  
+    <nav class="md-nav" aria-label="queryByPlaceholderText">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_58" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_58" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_58" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_58" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#querybyrole_1" class="md-nav__link">
+    queryByRole
+  </a>
+  
+    <nav class="md-nav" aria-label="queryByRole">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_59" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_59" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_59" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_59" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#querybytestid" class="md-nav__link">
+    queryByTestId
+  </a>
+  
+    <nav class="md-nav" aria-label="queryByTestId">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_60" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_60" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_60" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_60" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#querybytext_1" class="md-nav__link">
+    queryByText
+  </a>
+  
+    <nav class="md-nav" aria-label="queryByText">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_61" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_61" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_61" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_61" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#querybytitle" class="md-nav__link">
+    queryByTitle
+  </a>
+  
+    <nav class="md-nav" aria-label="queryByTitle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_62" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_62" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_62" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_62" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+<p><a href="../../">AWF</a> / <a href="../">Modules</a> / <a href="../akashaproject_ui_awf_testing_utils/">@akashaproject/ui-awf-testing-utils</a> / queries</p>
+<h1 id="namespace-queries">Namespace: queries</h1>
+<p><a href="../akashaproject_ui_awf_testing_utils/">@akashaproject/ui-awf-testing-utils</a>.queries</p>
+<h2 id="table-of-contents">Table of contents</h2>
+<h3 id="interfaces">Interfaces</h3>
+<ul>
+<li><a href="../../interfaces/akashaproject_ui_awf_testing_utils.queries.ByRoleOptions/">ByRoleOptions</a></li>
+</ul>
+<h3 id="type-aliases">Type aliases</h3>
+<ul>
+<li><a href="./#allbyboundattribute">AllByBoundAttribute</a></li>
+<li><a href="./#allbyrole">AllByRole</a></li>
+<li><a href="./#allbytext">AllByText</a></li>
+<li><a href="./#findallbyboundattribute">FindAllByBoundAttribute</a></li>
+<li><a href="./#findallbyrole">FindAllByRole</a></li>
+<li><a href="./#findallbytext">FindAllByText</a></li>
+<li><a href="./#findbyboundattribute">FindByBoundAttribute</a></li>
+<li><a href="./#findbyrole">FindByRole</a></li>
+<li><a href="./#findbytext">FindByText</a></li>
+<li><a href="./#getbyboundattribute">GetByBoundAttribute</a></li>
+<li><a href="./#getbyrole">GetByRole</a></li>
+<li><a href="./#getbytext">GetByText</a></li>
+<li><a href="./#querybyboundattribute">QueryByBoundAttribute</a></li>
+<li><a href="./#querybyrole">QueryByRole</a></li>
+<li><a href="./#querybytext">QueryByText</a></li>
+</ul>
+<h3 id="functions">Functions</h3>
+<ul>
+<li><a href="./#findallbyalttext">findAllByAltText</a></li>
+<li><a href="./#findallbydisplayvalue">findAllByDisplayValue</a></li>
+<li><a href="./#findallbylabeltext">findAllByLabelText</a></li>
+<li><a href="./#findallbyplaceholdertext">findAllByPlaceholderText</a></li>
+<li><a href="./#findallbyrole">findAllByRole</a></li>
+<li><a href="./#findallbytestid">findAllByTestId</a></li>
+<li><a href="./#findallbytext">findAllByText</a></li>
+<li><a href="./#findallbytitle">findAllByTitle</a></li>
+<li><a href="./#findbyalttext">findByAltText</a></li>
+<li><a href="./#findbydisplayvalue">findByDisplayValue</a></li>
+<li><a href="./#findbylabeltext">findByLabelText</a></li>
+<li><a href="./#findbyplaceholdertext">findByPlaceholderText</a></li>
+<li><a href="./#findbyrole">findByRole</a></li>
+<li><a href="./#findbytestid">findByTestId</a></li>
+<li><a href="./#findbytext">findByText</a></li>
+<li><a href="./#findbytitle">findByTitle</a></li>
+<li><a href="./#getallbyalttext">getAllByAltText</a></li>
+<li><a href="./#getallbydisplayvalue">getAllByDisplayValue</a></li>
+<li><a href="./#getallbylabeltext">getAllByLabelText</a></li>
+<li><a href="./#getallbyplaceholdertext">getAllByPlaceholderText</a></li>
+<li><a href="./#getallbyrole">getAllByRole</a></li>
+<li><a href="./#getallbytestid">getAllByTestId</a></li>
+<li><a href="./#getallbytext">getAllByText</a></li>
+<li><a href="./#getallbytitle">getAllByTitle</a></li>
+<li><a href="./#getbyalttext">getByAltText</a></li>
+<li><a href="./#getbydisplayvalue">getByDisplayValue</a></li>
+<li><a href="./#getbylabeltext">getByLabelText</a></li>
+<li><a href="./#getbyplaceholdertext">getByPlaceholderText</a></li>
+<li><a href="./#getbyrole">getByRole</a></li>
+<li><a href="./#getbytestid">getByTestId</a></li>
+<li><a href="./#getbytext">getByText</a></li>
+<li><a href="./#getbytitle">getByTitle</a></li>
+<li><a href="./#queryallbyalttext">queryAllByAltText</a></li>
+<li><a href="./#queryallbydisplayvalue">queryAllByDisplayValue</a></li>
+<li><a href="./#queryallbylabeltext">queryAllByLabelText</a></li>
+<li><a href="./#queryallbyplaceholdertext">queryAllByPlaceholderText</a></li>
+<li><a href="./#queryallbyrole">queryAllByRole</a></li>
+<li><a href="./#queryallbytestid">queryAllByTestId</a></li>
+<li><a href="./#queryallbytext">queryAllByText</a></li>
+<li><a href="./#queryallbytitle">queryAllByTitle</a></li>
+<li><a href="./#querybyalttext">queryByAltText</a></li>
+<li><a href="./#querybydisplayvalue">queryByDisplayValue</a></li>
+<li><a href="./#querybylabeltext">queryByLabelText</a></li>
+<li><a href="./#querybyplaceholdertext">queryByPlaceholderText</a></li>
+<li><a href="./#querybyrole">queryByRole</a></li>
+<li><a href="./#querybytestid">queryByTestId</a></li>
+<li><a href="./#querybytext">queryByText</a></li>
+<li><a href="./#querybytitle">queryByTitle</a></li>
+</ul>
+<h2 id="type-aliases_1">Type aliases</h2>
+<h3 id="allbyboundattribute">AllByBoundAttribute</h3>
+<p>Ƭ <strong>AllByBoundAttribute</strong>&lt;<code>T</code>>: (<code>container</code>: <code>HTMLElement</code>, <code>id</code>: <a href="../akashaproject_ui_awf_testing_utils/#matcher"><code>Matcher</code></a>, <code>options?</code>: <a href="../../interfaces/akashaproject_ui_awf_testing_utils.MatcherOptions/"><code>MatcherOptions</code></a>) =&gt; <code>T</code>[]</p>
+<h4 id="type-parameters">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="type-declaration">Type declaration</h4>
+<p>▸ (<code>container</code>, <code>id</code>, <code>options?</code>): <code>T</code>[]</p>
+<h5 id="parameters">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>container</code></td>
+<td align="left"><code>HTMLElement</code></td>
+</tr>
+<tr>
+<td align="left"><code>id</code></td>
+<td align="left"><a href="../akashaproject_ui_awf_testing_utils/#matcher"><code>Matcher</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>options?</code></td>
+<td align="left"><a href="../../interfaces/akashaproject_ui_awf_testing_utils.MatcherOptions/"><code>MatcherOptions</code></a></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns">Returns</h5>
+<p><code>T</code>[]</p>
+<h4 id="defined-in">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:11</p>
+<hr />
+<h3 id="allbyrole">AllByRole</h3>
+<p>Ƭ <strong>AllByRole</strong>&lt;<code>T</code>>: (<code>container</code>: <code>HTMLElement</code>, <code>role</code>: <a href="../akashaproject_ui_awf_testing_utils/#byrolematcher"><code>ByRoleMatcher</code></a>, <code>options?</code>: <a href="../../interfaces/akashaproject_ui_awf_testing_utils.queries.ByRoleOptions/"><code>ByRoleOptions</code></a>) =&gt; <code>T</code>[]</p>
+<h4 id="type-parameters_1">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="type-declaration_1">Type declaration</h4>
+<p>▸ (<code>container</code>, <code>role</code>, <code>options?</code>): <code>T</code>[]</p>
+<h5 id="parameters_1">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>container</code></td>
+<td align="left"><code>HTMLElement</code></td>
+</tr>
+<tr>
+<td align="left"><code>role</code></td>
+<td align="left"><a href="../akashaproject_ui_awf_testing_utils/#byrolematcher"><code>ByRoleMatcher</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>options?</code></td>
+<td align="left"><a href="../../interfaces/akashaproject_ui_awf_testing_utils.queries.ByRoleOptions/"><code>ByRoleOptions</code></a></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_1">Returns</h5>
+<p><code>T</code>[]</p>
+<h4 id="defined-in_1">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:120</p>
+<hr />
+<h3 id="allbytext">AllByText</h3>
+<p>Ƭ <strong>AllByText</strong>&lt;<code>T</code>>: (<code>container</code>: <code>HTMLElement</code>, <code>id</code>: <a href="../akashaproject_ui_awf_testing_utils/#matcher"><code>Matcher</code></a>, <code>options?</code>: <a href="../../interfaces/akashaproject_ui_awf_testing_utils.queryHelpers.SelectorMatcherOptions/"><code>SelectorMatcherOptions</code></a>) =&gt; <code>T</code>[]</p>
+<h4 id="type-parameters_2">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="type-declaration_2">Type declaration</h4>
+<p>▸ (<code>container</code>, <code>id</code>, <code>options?</code>): <code>T</code>[]</p>
+<h5 id="parameters_2">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>container</code></td>
+<td align="left"><code>HTMLElement</code></td>
+</tr>
+<tr>
+<td align="left"><code>id</code></td>
+<td align="left"><a href="../akashaproject_ui_awf_testing_utils/#matcher"><code>Matcher</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>options?</code></td>
+<td align="left"><a href="../../interfaces/akashaproject_ui_awf_testing_utils.queryHelpers.SelectorMatcherOptions/"><code>SelectorMatcherOptions</code></a></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_2">Returns</h5>
+<p><code>T</code>[]</p>
+<h4 id="defined-in_2">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:43</p>
+<hr />
+<h3 id="findallbyboundattribute">FindAllByBoundAttribute</h3>
+<p>Ƭ <strong>FindAllByBoundAttribute</strong>&lt;<code>T</code>>: (<code>container</code>: <code>HTMLElement</code>, <code>id</code>: <a href="../akashaproject_ui_awf_testing_utils/#matcher"><code>Matcher</code></a>, <code>options?</code>: <a href="../../interfaces/akashaproject_ui_awf_testing_utils.MatcherOptions/"><code>MatcherOptions</code></a>, <code>waitForElementOptions?</code>: <a href="../../interfaces/akashaproject_ui_awf_testing_utils.waitForOptions/"><code>waitForOptions</code></a>) =&gt; <code>Promise</code>&lt;<code>T</code>[]></p>
+<h4 id="type-parameters_3">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="type-declaration_3">Type declaration</h4>
+<p>▸ (<code>container</code>, <code>id</code>, <code>options?</code>, <code>waitForElementOptions?</code>): <code>Promise</code>&lt;<code>T</code>[]></p>
+<h5 id="parameters_3">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>container</code></td>
+<td align="left"><code>HTMLElement</code></td>
+</tr>
+<tr>
+<td align="left"><code>id</code></td>
+<td align="left"><a href="../akashaproject_ui_awf_testing_utils/#matcher"><code>Matcher</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>options?</code></td>
+<td align="left"><a href="../../interfaces/akashaproject_ui_awf_testing_utils.MatcherOptions/"><code>MatcherOptions</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>waitForElementOptions?</code></td>
+<td align="left"><a href="../../interfaces/akashaproject_ui_awf_testing_utils.waitForOptions/"><code>waitForOptions</code></a></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_3">Returns</h5>
+<p><code>Promise</code>&lt;<code>T</code>[]></p>
+<h4 id="defined-in_3">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:17</p>
+<hr />
+<h3 id="findallbyrole">FindAllByRole</h3>
+<p>Ƭ <strong>FindAllByRole</strong>&lt;<code>T</code>>: (<code>container</code>: <code>HTMLElement</code>, <code>role</code>: <a href="../akashaproject_ui_awf_testing_utils/#byrolematcher"><code>ByRoleMatcher</code></a>, <code>options?</code>: <a href="../../interfaces/akashaproject_ui_awf_testing_utils.queries.ByRoleOptions/"><code>ByRoleOptions</code></a>, <code>waitForElementOptions?</code>: <a href="../../interfaces/akashaproject_ui_awf_testing_utils.waitForOptions/"><code>waitForOptions</code></a>) =&gt; <code>Promise</code>&lt;<code>T</code>[]></p>
+<h4 id="type-parameters_4">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="type-declaration_4">Type declaration</h4>
+<p>▸ (<code>container</code>, <code>role</code>, <code>options?</code>, <code>waitForElementOptions?</code>): <code>Promise</code>&lt;<code>T</code>[]></p>
+<h5 id="parameters_4">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>container</code></td>
+<td align="left"><code>HTMLElement</code></td>
+</tr>
+<tr>
+<td align="left"><code>role</code></td>
+<td align="left"><a href="../akashaproject_ui_awf_testing_utils/#byrolematcher"><code>ByRoleMatcher</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>options?</code></td>
+<td align="left"><a href="../../interfaces/akashaproject_ui_awf_testing_utils.queries.ByRoleOptions/"><code>ByRoleOptions</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>waitForElementOptions?</code></td>
+<td align="left"><a href="../../interfaces/akashaproject_ui_awf_testing_utils.waitForOptions/"><code>waitForOptions</code></a></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_4">Returns</h5>
+<p><code>Promise</code>&lt;<code>T</code>[]></p>
+<h4 id="defined-in_4">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:145</p>
+<hr />
+<h3 id="findallbytext">FindAllByText</h3>
+<p>Ƭ <strong>FindAllByText</strong>&lt;<code>T</code>>: (<code>container</code>: <code>HTMLElement</code>, <code>id</code>: <a href="../akashaproject_ui_awf_testing_utils/#matcher"><code>Matcher</code></a>, <code>options?</code>: <a href="../../interfaces/akashaproject_ui_awf_testing_utils.queryHelpers.SelectorMatcherOptions/"><code>SelectorMatcherOptions</code></a>, <code>waitForElementOptions?</code>: <a href="../../interfaces/akashaproject_ui_awf_testing_utils.waitForOptions/"><code>waitForOptions</code></a>) =&gt; <code>Promise</code>&lt;<code>T</code>[]></p>
+<h4 id="type-parameters_5">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="type-declaration_5">Type declaration</h4>
+<p>▸ (<code>container</code>, <code>id</code>, <code>options?</code>, <code>waitForElementOptions?</code>): <code>Promise</code>&lt;<code>T</code>[]></p>
+<h5 id="parameters_5">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>container</code></td>
+<td align="left"><code>HTMLElement</code></td>
+</tr>
+<tr>
+<td align="left"><code>id</code></td>
+<td align="left"><a href="../akashaproject_ui_awf_testing_utils/#matcher"><code>Matcher</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>options?</code></td>
+<td align="left"><a href="../../interfaces/akashaproject_ui_awf_testing_utils.queryHelpers.SelectorMatcherOptions/"><code>SelectorMatcherOptions</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>waitForElementOptions?</code></td>
+<td align="left"><a href="../../interfaces/akashaproject_ui_awf_testing_utils.waitForOptions/"><code>waitForOptions</code></a></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_5">Returns</h5>
+<p><code>Promise</code>&lt;<code>T</code>[]></p>
+<h4 id="defined-in_5">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:49</p>
+<hr />
+<h3 id="findbyboundattribute">FindByBoundAttribute</h3>
+<p>Ƭ <strong>FindByBoundAttribute</strong>&lt;<code>T</code>>: (<code>container</code>: <code>HTMLElement</code>, <code>id</code>: <a href="../akashaproject_ui_awf_testing_utils/#matcher"><code>Matcher</code></a>, <code>options?</code>: <a href="../../interfaces/akashaproject_ui_awf_testing_utils.MatcherOptions/"><code>MatcherOptions</code></a>, <code>waitForElementOptions?</code>: <a href="../../interfaces/akashaproject_ui_awf_testing_utils.waitForOptions/"><code>waitForOptions</code></a>) =&gt; <code>Promise</code>&lt;<code>T</code>></p>
+<h4 id="type-parameters_6">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="type-declaration_6">Type declaration</h4>
+<p>▸ (<code>container</code>, <code>id</code>, <code>options?</code>, <code>waitForElementOptions?</code>): <code>Promise</code>&lt;<code>T</code>></p>
+<h5 id="parameters_6">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>container</code></td>
+<td align="left"><code>HTMLElement</code></td>
+</tr>
+<tr>
+<td align="left"><code>id</code></td>
+<td align="left"><a href="../akashaproject_ui_awf_testing_utils/#matcher"><code>Matcher</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>options?</code></td>
+<td align="left"><a href="../../interfaces/akashaproject_ui_awf_testing_utils.MatcherOptions/"><code>MatcherOptions</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>waitForElementOptions?</code></td>
+<td align="left"><a href="../../interfaces/akashaproject_ui_awf_testing_utils.waitForOptions/"><code>waitForOptions</code></a></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_6">Returns</h5>
+<p><code>Promise</code>&lt;<code>T</code>></p>
+<h4 id="defined-in_6">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:30</p>
+<hr />
+<h3 id="findbyrole">FindByRole</h3>
+<p>Ƭ <strong>FindByRole</strong>&lt;<code>T</code>>: (<code>container</code>: <code>HTMLElement</code>, <code>role</code>: <a href="../akashaproject_ui_awf_testing_utils/#byrolematcher"><code>ByRoleMatcher</code></a>, <code>options?</code>: <a href="../../interfaces/akashaproject_ui_awf_testing_utils.queries.ByRoleOptions/"><code>ByRoleOptions</code></a>, <code>waitForElementOptions?</code>: <a href="../../interfaces/akashaproject_ui_awf_testing_utils.waitForOptions/"><code>waitForOptions</code></a>) =&gt; <code>Promise</code>&lt;<code>T</code>></p>
+<h4 id="type-parameters_7">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="type-declaration_7">Type declaration</h4>
+<p>▸ (<code>container</code>, <code>role</code>, <code>options?</code>, <code>waitForElementOptions?</code>): <code>Promise</code>&lt;<code>T</code>></p>
+<h5 id="parameters_7">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>container</code></td>
+<td align="left"><code>HTMLElement</code></td>
+</tr>
+<tr>
+<td align="left"><code>role</code></td>
+<td align="left"><a href="../akashaproject_ui_awf_testing_utils/#byrolematcher"><code>ByRoleMatcher</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>options?</code></td>
+<td align="left"><a href="../../interfaces/akashaproject_ui_awf_testing_utils.queries.ByRoleOptions/"><code>ByRoleOptions</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>waitForElementOptions?</code></td>
+<td align="left"><a href="../../interfaces/akashaproject_ui_awf_testing_utils.waitForOptions/"><code>waitForOptions</code></a></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_7">Returns</h5>
+<p><code>Promise</code>&lt;<code>T</code>></p>
+<h4 id="defined-in_7">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:138</p>
+<hr />
+<h3 id="findbytext">FindByText</h3>
+<p>Ƭ <strong>FindByText</strong>&lt;<code>T</code>>: (<code>container</code>: <code>HTMLElement</code>, <code>id</code>: <a href="../akashaproject_ui_awf_testing_utils/#matcher"><code>Matcher</code></a>, <code>options?</code>: <a href="../../interfaces/akashaproject_ui_awf_testing_utils.queryHelpers.SelectorMatcherOptions/"><code>SelectorMatcherOptions</code></a>, <code>waitForElementOptions?</code>: <a href="../../interfaces/akashaproject_ui_awf_testing_utils.waitForOptions/"><code>waitForOptions</code></a>) =&gt; <code>Promise</code>&lt;<code>T</code>></p>
+<h4 id="type-parameters_8">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="type-declaration_8">Type declaration</h4>
+<p>▸ (<code>container</code>, <code>id</code>, <code>options?</code>, <code>waitForElementOptions?</code>): <code>Promise</code>&lt;<code>T</code>></p>
+<h5 id="parameters_8">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>container</code></td>
+<td align="left"><code>HTMLElement</code></td>
+</tr>
+<tr>
+<td align="left"><code>id</code></td>
+<td align="left"><a href="../akashaproject_ui_awf_testing_utils/#matcher"><code>Matcher</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>options?</code></td>
+<td align="left"><a href="../../interfaces/akashaproject_ui_awf_testing_utils.queryHelpers.SelectorMatcherOptions/"><code>SelectorMatcherOptions</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>waitForElementOptions?</code></td>
+<td align="left"><a href="../../interfaces/akashaproject_ui_awf_testing_utils.waitForOptions/"><code>waitForOptions</code></a></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_8">Returns</h5>
+<p><code>Promise</code>&lt;<code>T</code>></p>
+<h4 id="defined-in_8">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:62</p>
+<hr />
+<h3 id="getbyboundattribute">GetByBoundAttribute</h3>
+<p>Ƭ <strong>GetByBoundAttribute</strong>&lt;<code>T</code>>: (<code>container</code>: <code>HTMLElement</code>, <code>id</code>: <a href="../akashaproject_ui_awf_testing_utils/#matcher"><code>Matcher</code></a>, <code>options?</code>: <a href="../../interfaces/akashaproject_ui_awf_testing_utils.MatcherOptions/"><code>MatcherOptions</code></a>) =&gt; <code>T</code></p>
+<h4 id="type-parameters_9">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="type-declaration_9">Type declaration</h4>
+<p>▸ (<code>container</code>, <code>id</code>, <code>options?</code>): <code>T</code></p>
+<h5 id="parameters_9">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>container</code></td>
+<td align="left"><code>HTMLElement</code></td>
+</tr>
+<tr>
+<td align="left"><code>id</code></td>
+<td align="left"><a href="../akashaproject_ui_awf_testing_utils/#matcher"><code>Matcher</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>options?</code></td>
+<td align="left"><a href="../../interfaces/akashaproject_ui_awf_testing_utils.MatcherOptions/"><code>MatcherOptions</code></a></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_9">Returns</h5>
+<p><code>T</code></p>
+<h4 id="defined-in_9">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:24</p>
+<hr />
+<h3 id="getbyrole">GetByRole</h3>
+<p>Ƭ <strong>GetByRole</strong>&lt;<code>T</code>>: (<code>container</code>: <code>HTMLElement</code>, <code>role</code>: <a href="../akashaproject_ui_awf_testing_utils/#byrolematcher"><code>ByRoleMatcher</code></a>, <code>options?</code>: <a href="../../interfaces/akashaproject_ui_awf_testing_utils.queries.ByRoleOptions/"><code>ByRoleOptions</code></a>) =&gt; <code>T</code></p>
+<h4 id="type-parameters_10">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="type-declaration_10">Type declaration</h4>
+<p>▸ (<code>container</code>, <code>role</code>, <code>options?</code>): <code>T</code></p>
+<h5 id="parameters_10">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>container</code></td>
+<td align="left"><code>HTMLElement</code></td>
+</tr>
+<tr>
+<td align="left"><code>role</code></td>
+<td align="left"><a href="../akashaproject_ui_awf_testing_utils/#byrolematcher"><code>ByRoleMatcher</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>options?</code></td>
+<td align="left"><a href="../../interfaces/akashaproject_ui_awf_testing_utils.queries.ByRoleOptions/"><code>ByRoleOptions</code></a></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_10">Returns</h5>
+<p><code>T</code></p>
+<h4 id="defined-in_10">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:126</p>
+<hr />
+<h3 id="getbytext">GetByText</h3>
+<p>Ƭ <strong>GetByText</strong>&lt;<code>T</code>>: (<code>container</code>: <code>HTMLElement</code>, <code>id</code>: <a href="../akashaproject_ui_awf_testing_utils/#matcher"><code>Matcher</code></a>, <code>options?</code>: <a href="../../interfaces/akashaproject_ui_awf_testing_utils.queryHelpers.SelectorMatcherOptions/"><code>SelectorMatcherOptions</code></a>) =&gt; <code>T</code></p>
+<h4 id="type-parameters_11">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="type-declaration_11">Type declaration</h4>
+<p>▸ (<code>container</code>, <code>id</code>, <code>options?</code>): <code>T</code></p>
+<h5 id="parameters_11">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>container</code></td>
+<td align="left"><code>HTMLElement</code></td>
+</tr>
+<tr>
+<td align="left"><code>id</code></td>
+<td align="left"><a href="../akashaproject_ui_awf_testing_utils/#matcher"><code>Matcher</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>options?</code></td>
+<td align="left"><a href="../../interfaces/akashaproject_ui_awf_testing_utils.queryHelpers.SelectorMatcherOptions/"><code>SelectorMatcherOptions</code></a></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_11">Returns</h5>
+<p><code>T</code></p>
+<h4 id="defined-in_11">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:56</p>
+<hr />
+<h3 id="querybyboundattribute">QueryByBoundAttribute</h3>
+<p>Ƭ <strong>QueryByBoundAttribute</strong>&lt;<code>T</code>>: (<code>container</code>: <code>HTMLElement</code>, <code>id</code>: <a href="../akashaproject_ui_awf_testing_utils/#matcher"><code>Matcher</code></a>, <code>options?</code>: <a href="../../interfaces/akashaproject_ui_awf_testing_utils.MatcherOptions/"><code>MatcherOptions</code></a>) =&gt; <code>T</code> | <code>null</code></p>
+<h4 id="type-parameters_12">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="type-declaration_12">Type declaration</h4>
+<p>▸ (<code>container</code>, <code>id</code>, <code>options?</code>): <code>T</code> | <code>null</code></p>
+<h5 id="parameters_12">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>container</code></td>
+<td align="left"><code>HTMLElement</code></td>
+</tr>
+<tr>
+<td align="left"><code>id</code></td>
+<td align="left"><a href="../akashaproject_ui_awf_testing_utils/#matcher"><code>Matcher</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>options?</code></td>
+<td align="left"><a href="../../interfaces/akashaproject_ui_awf_testing_utils.MatcherOptions/"><code>MatcherOptions</code></a></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_12">Returns</h5>
+<p><code>T</code> | <code>null</code></p>
+<h4 id="defined-in_12">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:5</p>
+<hr />
+<h3 id="querybyrole">QueryByRole</h3>
+<p>Ƭ <strong>QueryByRole</strong>&lt;<code>T</code>>: (<code>container</code>: <code>HTMLElement</code>, <code>role</code>: <a href="../akashaproject_ui_awf_testing_utils/#byrolematcher"><code>ByRoleMatcher</code></a>, <code>options?</code>: <a href="../../interfaces/akashaproject_ui_awf_testing_utils.queries.ByRoleOptions/"><code>ByRoleOptions</code></a>) =&gt; <code>T</code> | <code>null</code></p>
+<h4 id="type-parameters_13">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="type-declaration_13">Type declaration</h4>
+<p>▸ (<code>container</code>, <code>role</code>, <code>options?</code>): <code>T</code> | <code>null</code></p>
+<h5 id="parameters_13">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>container</code></td>
+<td align="left"><code>HTMLElement</code></td>
+</tr>
+<tr>
+<td align="left"><code>role</code></td>
+<td align="left"><a href="../akashaproject_ui_awf_testing_utils/#byrolematcher"><code>ByRoleMatcher</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>options?</code></td>
+<td align="left"><a href="../../interfaces/akashaproject_ui_awf_testing_utils.queries.ByRoleOptions/"><code>ByRoleOptions</code></a></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_13">Returns</h5>
+<p><code>T</code> | <code>null</code></p>
+<h4 id="defined-in_13">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:132</p>
+<hr />
+<h3 id="querybytext">QueryByText</h3>
+<p>Ƭ <strong>QueryByText</strong>&lt;<code>T</code>>: (<code>container</code>: <code>HTMLElement</code>, <code>id</code>: <a href="../akashaproject_ui_awf_testing_utils/#matcher"><code>Matcher</code></a>, <code>options?</code>: <a href="../../interfaces/akashaproject_ui_awf_testing_utils.queryHelpers.SelectorMatcherOptions/"><code>SelectorMatcherOptions</code></a>) =&gt; <code>T</code> | <code>null</code></p>
+<h4 id="type-parameters_14">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="type-declaration_14">Type declaration</h4>
+<p>▸ (<code>container</code>, <code>id</code>, <code>options?</code>): <code>T</code> | <code>null</code></p>
+<h5 id="parameters_14">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>container</code></td>
+<td align="left"><code>HTMLElement</code></td>
+</tr>
+<tr>
+<td align="left"><code>id</code></td>
+<td align="left"><a href="../akashaproject_ui_awf_testing_utils/#matcher"><code>Matcher</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>options?</code></td>
+<td align="left"><a href="../../interfaces/akashaproject_ui_awf_testing_utils.queryHelpers.SelectorMatcherOptions/"><code>SelectorMatcherOptions</code></a></td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns_14">Returns</h5>
+<p><code>T</code> | <code>null</code></p>
+<h4 id="defined-in_14">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:37</p>
+<h2 id="functions_1">Functions</h2>
+<h3 id="findallbyalttext">findAllByAltText</h3>
+<p>▸ <strong>findAllByAltText</strong>&lt;<code>T</code>>(...<code>args</code>): <a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#findallbyboundattribute"><code>FindAllByBoundAttribute</code></a>&lt;<code>T</code>>></p>
+<h4 id="type-parameters_15">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_15">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>...args</code></td>
+<td align="left">[container: HTMLElement, id: Matcher, options?: MatcherOptions, waitForElementOptions?: waitForOptions]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_15">Returns</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#findallbyboundattribute"><code>FindAllByBoundAttribute</code></a>&lt;<code>T</code>>></p>
+<h4 id="defined-in_15">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:221</p>
+<hr />
+<h3 id="findallbydisplayvalue">findAllByDisplayValue</h3>
+<p>▸ <strong>findAllByDisplayValue</strong>&lt;<code>T</code>>(...<code>args</code>): <a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#findallbyboundattribute"><code>FindAllByBoundAttribute</code></a>&lt;<code>T</code>>></p>
+<h4 id="type-parameters_16">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_16">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>...args</code></td>
+<td align="left">[container: HTMLElement, id: Matcher, options?: MatcherOptions, waitForElementOptions?: waitForOptions]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_16">Returns</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#findallbyboundattribute"><code>FindAllByBoundAttribute</code></a>&lt;<code>T</code>>></p>
+<h4 id="defined-in_16">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:257</p>
+<hr />
+<h3 id="findallbylabeltext">findAllByLabelText</h3>
+<p>▸ <strong>findAllByLabelText</strong>&lt;<code>T</code>>(...<code>args</code>): <a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#findallbytext"><code>FindAllByText</code></a>&lt;<code>T</code>>></p>
+<h4 id="type-parameters_17">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_17">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>...args</code></td>
+<td align="left">[container: HTMLElement, id: Matcher, options?: SelectorMatcherOptions, waitForElementOptions?: waitForOptions]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_17">Returns</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#findallbytext"><code>FindAllByText</code></a>&lt;<code>T</code>>></p>
+<h4 id="defined-in_17">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:167</p>
+<hr />
+<h3 id="findallbyplaceholdertext">findAllByPlaceholderText</h3>
+<p>▸ <strong>findAllByPlaceholderText</strong>&lt;<code>T</code>>(...<code>args</code>): <a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#findallbyboundattribute"><code>FindAllByBoundAttribute</code></a>&lt;<code>T</code>>></p>
+<h4 id="type-parameters_18">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_18">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>...args</code></td>
+<td align="left">[container: HTMLElement, id: Matcher, options?: MatcherOptions, waitForElementOptions?: waitForOptions]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_18">Returns</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#findallbyboundattribute"><code>FindAllByBoundAttribute</code></a>&lt;<code>T</code>>></p>
+<h4 id="defined-in_18">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:185</p>
+<hr />
+<h3 id="findallbyrole_1">findAllByRole</h3>
+<p>▸ <strong>findAllByRole</strong>&lt;<code>T</code>>(...<code>args</code>): <a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#findallbyrole"><code>FindAllByRole</code></a>&lt;<code>T</code>>></p>
+<h4 id="type-parameters_19">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_19">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>...args</code></td>
+<td align="left">[container: HTMLElement, role: ByRoleMatcher, options?: ByRoleOptions, waitForElementOptions?: waitForOptions]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_19">Returns</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#findallbyrole"><code>FindAllByRole</code></a>&lt;<code>T</code>>></p>
+<h4 id="defined-in_19">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:275</p>
+<hr />
+<h3 id="findallbytestid">findAllByTestId</h3>
+<p>▸ <strong>findAllByTestId</strong>&lt;<code>T</code>>(...<code>args</code>): <a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#findallbyboundattribute"><code>FindAllByBoundAttribute</code></a>&lt;<code>T</code>>></p>
+<h4 id="type-parameters_20">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_20">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>...args</code></td>
+<td align="left">[container: HTMLElement, id: Matcher, options?: MatcherOptions, waitForElementOptions?: waitForOptions]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_20">Returns</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#findallbyboundattribute"><code>FindAllByBoundAttribute</code></a>&lt;<code>T</code>>></p>
+<h4 id="defined-in_20">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:293</p>
+<hr />
+<h3 id="findallbytext_1">findAllByText</h3>
+<p>▸ <strong>findAllByText</strong>&lt;<code>T</code>>(...<code>args</code>): <a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#findallbytext"><code>FindAllByText</code></a>&lt;<code>T</code>>></p>
+<h4 id="type-parameters_21">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_21">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>...args</code></td>
+<td align="left">[container: HTMLElement, id: Matcher, options?: SelectorMatcherOptions, waitForElementOptions?: waitForOptions]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_21">Returns</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#findallbytext"><code>FindAllByText</code></a>&lt;<code>T</code>>></p>
+<h4 id="defined-in_21">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:203</p>
+<hr />
+<h3 id="findallbytitle">findAllByTitle</h3>
+<p>▸ <strong>findAllByTitle</strong>&lt;<code>T</code>>(...<code>args</code>): <a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#findallbyboundattribute"><code>FindAllByBoundAttribute</code></a>&lt;<code>T</code>>></p>
+<h4 id="type-parameters_22">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_22">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>...args</code></td>
+<td align="left">[container: HTMLElement, id: Matcher, options?: MatcherOptions, waitForElementOptions?: waitForOptions]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_22">Returns</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#findallbyboundattribute"><code>FindAllByBoundAttribute</code></a>&lt;<code>T</code>>></p>
+<h4 id="defined-in_22">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:239</p>
+<hr />
+<h3 id="findbyalttext">findByAltText</h3>
+<p>▸ <strong>findByAltText</strong>&lt;<code>T</code>>(...<code>args</code>): <a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#findbyboundattribute"><code>FindByBoundAttribute</code></a>&lt;<code>T</code>>></p>
+<h4 id="type-parameters_23">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_23">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>...args</code></td>
+<td align="left">[container: HTMLElement, id: Matcher, options?: MatcherOptions, waitForElementOptions?: waitForOptions]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_23">Returns</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#findbyboundattribute"><code>FindByBoundAttribute</code></a>&lt;<code>T</code>>></p>
+<h4 id="defined-in_23">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:218</p>
+<hr />
+<h3 id="findbydisplayvalue">findByDisplayValue</h3>
+<p>▸ <strong>findByDisplayValue</strong>&lt;<code>T</code>>(...<code>args</code>): <a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#findbyboundattribute"><code>FindByBoundAttribute</code></a>&lt;<code>T</code>>></p>
+<h4 id="type-parameters_24">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_24">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>...args</code></td>
+<td align="left">[container: HTMLElement, id: Matcher, options?: MatcherOptions, waitForElementOptions?: waitForOptions]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_24">Returns</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#findbyboundattribute"><code>FindByBoundAttribute</code></a>&lt;<code>T</code>>></p>
+<h4 id="defined-in_24">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:254</p>
+<hr />
+<h3 id="findbylabeltext">findByLabelText</h3>
+<p>▸ <strong>findByLabelText</strong>&lt;<code>T</code>>(...<code>args</code>): <a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#findbytext"><code>FindByText</code></a>&lt;<code>T</code>>></p>
+<h4 id="type-parameters_25">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_25">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>...args</code></td>
+<td align="left">[container: HTMLElement, id: Matcher, options?: SelectorMatcherOptions, waitForElementOptions?: waitForOptions]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_25">Returns</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#findbytext"><code>FindByText</code></a>&lt;<code>T</code>>></p>
+<h4 id="defined-in_25">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:164</p>
+<hr />
+<h3 id="findbyplaceholdertext">findByPlaceholderText</h3>
+<p>▸ <strong>findByPlaceholderText</strong>&lt;<code>T</code>>(...<code>args</code>): <a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#findbyboundattribute"><code>FindByBoundAttribute</code></a>&lt;<code>T</code>>></p>
+<h4 id="type-parameters_26">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_26">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>...args</code></td>
+<td align="left">[container: HTMLElement, id: Matcher, options?: MatcherOptions, waitForElementOptions?: waitForOptions]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_26">Returns</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#findbyboundattribute"><code>FindByBoundAttribute</code></a>&lt;<code>T</code>>></p>
+<h4 id="defined-in_26">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:182</p>
+<hr />
+<h3 id="findbyrole_1">findByRole</h3>
+<p>▸ <strong>findByRole</strong>&lt;<code>T</code>>(...<code>args</code>): <a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#findbyrole"><code>FindByRole</code></a>&lt;<code>T</code>>></p>
+<h4 id="type-parameters_27">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_27">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>...args</code></td>
+<td align="left">[container: HTMLElement, role: ByRoleMatcher, options?: ByRoleOptions, waitForElementOptions?: waitForOptions]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_27">Returns</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#findbyrole"><code>FindByRole</code></a>&lt;<code>T</code>>></p>
+<h4 id="defined-in_27">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:272</p>
+<hr />
+<h3 id="findbytestid">findByTestId</h3>
+<p>▸ <strong>findByTestId</strong>&lt;<code>T</code>>(...<code>args</code>): <a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#findbyboundattribute"><code>FindByBoundAttribute</code></a>&lt;<code>T</code>>></p>
+<h4 id="type-parameters_28">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_28">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>...args</code></td>
+<td align="left">[container: HTMLElement, id: Matcher, options?: MatcherOptions, waitForElementOptions?: waitForOptions]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_28">Returns</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#findbyboundattribute"><code>FindByBoundAttribute</code></a>&lt;<code>T</code>>></p>
+<h4 id="defined-in_28">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:290</p>
+<hr />
+<h3 id="findbytext_1">findByText</h3>
+<p>▸ <strong>findByText</strong>&lt;<code>T</code>>(...<code>args</code>): <a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#findbytext"><code>FindByText</code></a>&lt;<code>T</code>>></p>
+<h4 id="type-parameters_29">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_29">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>...args</code></td>
+<td align="left">[container: HTMLElement, id: Matcher, options?: SelectorMatcherOptions, waitForElementOptions?: waitForOptions]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_29">Returns</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#findbytext"><code>FindByText</code></a>&lt;<code>T</code>>></p>
+<h4 id="defined-in_29">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:200</p>
+<hr />
+<h3 id="findbytitle">findByTitle</h3>
+<p>▸ <strong>findByTitle</strong>&lt;<code>T</code>>(...<code>args</code>): <a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#findbyboundattribute"><code>FindByBoundAttribute</code></a>&lt;<code>T</code>>></p>
+<h4 id="type-parameters_30">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_30">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>...args</code></td>
+<td align="left">[container: HTMLElement, id: Matcher, options?: MatcherOptions, waitForElementOptions?: waitForOptions]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_30">Returns</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#findbyboundattribute"><code>FindByBoundAttribute</code></a>&lt;<code>T</code>>></p>
+<h4 id="defined-in_30">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:236</p>
+<hr />
+<h3 id="getallbyalttext">getAllByAltText</h3>
+<p>▸ <strong>getAllByAltText</strong>&lt;<code>T</code>>(...<code>args</code>): <a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#allbyboundattribute"><code>AllByBoundAttribute</code></a>&lt;<code>T</code>>></p>
+<h4 id="type-parameters_31">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_31">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>...args</code></td>
+<td align="left">[container: HTMLElement, id: Matcher, options?: MatcherOptions]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_31">Returns</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#allbyboundattribute"><code>AllByBoundAttribute</code></a>&lt;<code>T</code>>></p>
+<h4 id="defined-in_31">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:209</p>
+<hr />
+<h3 id="getallbydisplayvalue">getAllByDisplayValue</h3>
+<p>▸ <strong>getAllByDisplayValue</strong>&lt;<code>T</code>>(...<code>args</code>): <a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#allbyboundattribute"><code>AllByBoundAttribute</code></a>&lt;<code>T</code>>></p>
+<h4 id="type-parameters_32">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_32">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>...args</code></td>
+<td align="left">[container: HTMLElement, id: Matcher, options?: MatcherOptions]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_32">Returns</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#allbyboundattribute"><code>AllByBoundAttribute</code></a>&lt;<code>T</code>>></p>
+<h4 id="defined-in_32">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:245</p>
+<hr />
+<h3 id="getallbylabeltext">getAllByLabelText</h3>
+<p>▸ <strong>getAllByLabelText</strong>&lt;<code>T</code>>(...<code>args</code>): <a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#allbytext"><code>AllByText</code></a>&lt;<code>T</code>>></p>
+<h4 id="type-parameters_33">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_33">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>...args</code></td>
+<td align="left">[container: HTMLElement, id: Matcher, options?: SelectorMatcherOptions]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_33">Returns</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#allbytext"><code>AllByText</code></a>&lt;<code>T</code>>></p>
+<h4 id="defined-in_33">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:155</p>
+<hr />
+<h3 id="getallbyplaceholdertext">getAllByPlaceholderText</h3>
+<p>▸ <strong>getAllByPlaceholderText</strong>&lt;<code>T</code>>(...<code>args</code>): <a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#allbyboundattribute"><code>AllByBoundAttribute</code></a>&lt;<code>T</code>>></p>
+<h4 id="type-parameters_34">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_34">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>...args</code></td>
+<td align="left">[container: HTMLElement, id: Matcher, options?: MatcherOptions]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_34">Returns</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#allbyboundattribute"><code>AllByBoundAttribute</code></a>&lt;<code>T</code>>></p>
+<h4 id="defined-in_34">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:173</p>
+<hr />
+<h3 id="getallbyrole">getAllByRole</h3>
+<p>▸ <strong>getAllByRole</strong>&lt;<code>T</code>>(...<code>args</code>): <a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#allbyrole"><code>AllByRole</code></a>&lt;<code>T</code>>></p>
+<h4 id="type-parameters_35">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_35">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>...args</code></td>
+<td align="left">[container: HTMLElement, role: ByRoleMatcher, options?: ByRoleOptions]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_35">Returns</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#allbyrole"><code>AllByRole</code></a>&lt;<code>T</code>>></p>
+<h4 id="defined-in_35">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:263</p>
+<hr />
+<h3 id="getallbytestid">getAllByTestId</h3>
+<p>▸ <strong>getAllByTestId</strong>&lt;<code>T</code>>(...<code>args</code>): <a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#allbyboundattribute"><code>AllByBoundAttribute</code></a>&lt;<code>T</code>>></p>
+<h4 id="type-parameters_36">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_36">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>...args</code></td>
+<td align="left">[container: HTMLElement, id: Matcher, options?: MatcherOptions]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_36">Returns</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#allbyboundattribute"><code>AllByBoundAttribute</code></a>&lt;<code>T</code>>></p>
+<h4 id="defined-in_36">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:281</p>
+<hr />
+<h3 id="getallbytext">getAllByText</h3>
+<p>▸ <strong>getAllByText</strong>&lt;<code>T</code>>(...<code>args</code>): <a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#allbytext"><code>AllByText</code></a>&lt;<code>T</code>>></p>
+<h4 id="type-parameters_37">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_37">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>...args</code></td>
+<td align="left">[container: HTMLElement, id: Matcher, options?: SelectorMatcherOptions]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_37">Returns</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#allbytext"><code>AllByText</code></a>&lt;<code>T</code>>></p>
+<h4 id="defined-in_37">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:191</p>
+<hr />
+<h3 id="getallbytitle">getAllByTitle</h3>
+<p>▸ <strong>getAllByTitle</strong>&lt;<code>T</code>>(...<code>args</code>): <a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#allbyboundattribute"><code>AllByBoundAttribute</code></a>&lt;<code>T</code>>></p>
+<h4 id="type-parameters_38">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_38">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>...args</code></td>
+<td align="left">[container: HTMLElement, id: Matcher, options?: MatcherOptions]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_38">Returns</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#allbyboundattribute"><code>AllByBoundAttribute</code></a>&lt;<code>T</code>>></p>
+<h4 id="defined-in_38">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:227</p>
+<hr />
+<h3 id="getbyalttext">getByAltText</h3>
+<p>▸ <strong>getByAltText</strong>&lt;<code>T</code>>(...<code>args</code>): <a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#getbyboundattribute"><code>GetByBoundAttribute</code></a>&lt;<code>T</code>>></p>
+<h4 id="type-parameters_39">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_39">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>...args</code></td>
+<td align="left">[container: HTMLElement, id: Matcher, options?: MatcherOptions]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_39">Returns</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#getbyboundattribute"><code>GetByBoundAttribute</code></a>&lt;<code>T</code>>></p>
+<h4 id="defined-in_39">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:206</p>
+<hr />
+<h3 id="getbydisplayvalue">getByDisplayValue</h3>
+<p>▸ <strong>getByDisplayValue</strong>&lt;<code>T</code>>(...<code>args</code>): <a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#getbyboundattribute"><code>GetByBoundAttribute</code></a>&lt;<code>T</code>>></p>
+<h4 id="type-parameters_40">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_40">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>...args</code></td>
+<td align="left">[container: HTMLElement, id: Matcher, options?: MatcherOptions]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_40">Returns</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#getbyboundattribute"><code>GetByBoundAttribute</code></a>&lt;<code>T</code>>></p>
+<h4 id="defined-in_40">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:242</p>
+<hr />
+<h3 id="getbylabeltext">getByLabelText</h3>
+<p>▸ <strong>getByLabelText</strong>&lt;<code>T</code>>(...<code>args</code>): <a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#getbytext"><code>GetByText</code></a>&lt;<code>T</code>>></p>
+<h4 id="type-parameters_41">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_41">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>...args</code></td>
+<td align="left">[container: HTMLElement, id: Matcher, options?: SelectorMatcherOptions]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_41">Returns</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#getbytext"><code>GetByText</code></a>&lt;<code>T</code>>></p>
+<h4 id="defined-in_41">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:152</p>
+<hr />
+<h3 id="getbyplaceholdertext">getByPlaceholderText</h3>
+<p>▸ <strong>getByPlaceholderText</strong>&lt;<code>T</code>>(...<code>args</code>): <a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#getbyboundattribute"><code>GetByBoundAttribute</code></a>&lt;<code>T</code>>></p>
+<h4 id="type-parameters_42">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_42">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>...args</code></td>
+<td align="left">[container: HTMLElement, id: Matcher, options?: MatcherOptions]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_42">Returns</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#getbyboundattribute"><code>GetByBoundAttribute</code></a>&lt;<code>T</code>>></p>
+<h4 id="defined-in_42">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:170</p>
+<hr />
+<h3 id="getbyrole_1">getByRole</h3>
+<p>▸ <strong>getByRole</strong>&lt;<code>T</code>>(...<code>args</code>): <a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#getbyrole"><code>GetByRole</code></a>&lt;<code>T</code>>></p>
+<h4 id="type-parameters_43">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_43">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>...args</code></td>
+<td align="left">[container: HTMLElement, role: ByRoleMatcher, options?: ByRoleOptions]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_43">Returns</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#getbyrole"><code>GetByRole</code></a>&lt;<code>T</code>>></p>
+<h4 id="defined-in_43">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:260</p>
+<hr />
+<h3 id="getbytestid">getByTestId</h3>
+<p>▸ <strong>getByTestId</strong>&lt;<code>T</code>>(...<code>args</code>): <a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#getbyboundattribute"><code>GetByBoundAttribute</code></a>&lt;<code>T</code>>></p>
+<h4 id="type-parameters_44">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_44">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>...args</code></td>
+<td align="left">[container: HTMLElement, id: Matcher, options?: MatcherOptions]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_44">Returns</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#getbyboundattribute"><code>GetByBoundAttribute</code></a>&lt;<code>T</code>>></p>
+<h4 id="defined-in_44">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:278</p>
+<hr />
+<h3 id="getbytext_1">getByText</h3>
+<p>▸ <strong>getByText</strong>&lt;<code>T</code>>(...<code>args</code>): <a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#getbytext"><code>GetByText</code></a>&lt;<code>T</code>>></p>
+<h4 id="type-parameters_45">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_45">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>...args</code></td>
+<td align="left">[container: HTMLElement, id: Matcher, options?: SelectorMatcherOptions]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_45">Returns</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#getbytext"><code>GetByText</code></a>&lt;<code>T</code>>></p>
+<h4 id="defined-in_45">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:188</p>
+<hr />
+<h3 id="getbytitle">getByTitle</h3>
+<p>▸ <strong>getByTitle</strong>&lt;<code>T</code>>(...<code>args</code>): <a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#getbyboundattribute"><code>GetByBoundAttribute</code></a>&lt;<code>T</code>>></p>
+<h4 id="type-parameters_46">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_46">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>...args</code></td>
+<td align="left">[container: HTMLElement, id: Matcher, options?: MatcherOptions]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_46">Returns</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#getbyboundattribute"><code>GetByBoundAttribute</code></a>&lt;<code>T</code>>></p>
+<h4 id="defined-in_46">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:224</p>
+<hr />
+<h3 id="queryallbyalttext">queryAllByAltText</h3>
+<p>▸ <strong>queryAllByAltText</strong>&lt;<code>T</code>>(...<code>args</code>): <a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#allbyboundattribute"><code>AllByBoundAttribute</code></a>&lt;<code>T</code>>></p>
+<h4 id="type-parameters_47">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_47">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>...args</code></td>
+<td align="left">[container: HTMLElement, id: Matcher, options?: MatcherOptions]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_47">Returns</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#allbyboundattribute"><code>AllByBoundAttribute</code></a>&lt;<code>T</code>>></p>
+<h4 id="defined-in_47">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:215</p>
+<hr />
+<h3 id="queryallbydisplayvalue">queryAllByDisplayValue</h3>
+<p>▸ <strong>queryAllByDisplayValue</strong>&lt;<code>T</code>>(...<code>args</code>): <a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#allbyboundattribute"><code>AllByBoundAttribute</code></a>&lt;<code>T</code>>></p>
+<h4 id="type-parameters_48">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_48">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>...args</code></td>
+<td align="left">[container: HTMLElement, id: Matcher, options?: MatcherOptions]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_48">Returns</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#allbyboundattribute"><code>AllByBoundAttribute</code></a>&lt;<code>T</code>>></p>
+<h4 id="defined-in_48">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:251</p>
+<hr />
+<h3 id="queryallbylabeltext">queryAllByLabelText</h3>
+<p>▸ <strong>queryAllByLabelText</strong>&lt;<code>T</code>>(...<code>args</code>): <a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#allbytext"><code>AllByText</code></a>&lt;<code>T</code>>></p>
+<h4 id="type-parameters_49">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_49">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>...args</code></td>
+<td align="left">[container: HTMLElement, id: Matcher, options?: SelectorMatcherOptions]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_49">Returns</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#allbytext"><code>AllByText</code></a>&lt;<code>T</code>>></p>
+<h4 id="defined-in_49">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:161</p>
+<hr />
+<h3 id="queryallbyplaceholdertext">queryAllByPlaceholderText</h3>
+<p>▸ <strong>queryAllByPlaceholderText</strong>&lt;<code>T</code>>(...<code>args</code>): <a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#allbyboundattribute"><code>AllByBoundAttribute</code></a>&lt;<code>T</code>>></p>
+<h4 id="type-parameters_50">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_50">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>...args</code></td>
+<td align="left">[container: HTMLElement, id: Matcher, options?: MatcherOptions]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_50">Returns</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#allbyboundattribute"><code>AllByBoundAttribute</code></a>&lt;<code>T</code>>></p>
+<h4 id="defined-in_50">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:179</p>
+<hr />
+<h3 id="queryallbyrole">queryAllByRole</h3>
+<p>▸ <strong>queryAllByRole</strong>&lt;<code>T</code>>(...<code>args</code>): <a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#allbyrole"><code>AllByRole</code></a>&lt;<code>T</code>>></p>
+<h4 id="type-parameters_51">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_51">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>...args</code></td>
+<td align="left">[container: HTMLElement, role: ByRoleMatcher, options?: ByRoleOptions]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_51">Returns</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#allbyrole"><code>AllByRole</code></a>&lt;<code>T</code>>></p>
+<h4 id="defined-in_51">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:269</p>
+<hr />
+<h3 id="queryallbytestid">queryAllByTestId</h3>
+<p>▸ <strong>queryAllByTestId</strong>&lt;<code>T</code>>(...<code>args</code>): <a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#allbyboundattribute"><code>AllByBoundAttribute</code></a>&lt;<code>T</code>>></p>
+<h4 id="type-parameters_52">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_52">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>...args</code></td>
+<td align="left">[container: HTMLElement, id: Matcher, options?: MatcherOptions]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_52">Returns</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#allbyboundattribute"><code>AllByBoundAttribute</code></a>&lt;<code>T</code>>></p>
+<h4 id="defined-in_52">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:287</p>
+<hr />
+<h3 id="queryallbytext">queryAllByText</h3>
+<p>▸ <strong>queryAllByText</strong>&lt;<code>T</code>>(...<code>args</code>): <a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#allbytext"><code>AllByText</code></a>&lt;<code>T</code>>></p>
+<h4 id="type-parameters_53">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_53">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>...args</code></td>
+<td align="left">[container: HTMLElement, id: Matcher, options?: SelectorMatcherOptions]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_53">Returns</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#allbytext"><code>AllByText</code></a>&lt;<code>T</code>>></p>
+<h4 id="defined-in_53">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:197</p>
+<hr />
+<h3 id="queryallbytitle">queryAllByTitle</h3>
+<p>▸ <strong>queryAllByTitle</strong>&lt;<code>T</code>>(...<code>args</code>): <a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#allbyboundattribute"><code>AllByBoundAttribute</code></a>&lt;<code>T</code>>></p>
+<h4 id="type-parameters_54">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_54">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>...args</code></td>
+<td align="left">[container: HTMLElement, id: Matcher, options?: MatcherOptions]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_54">Returns</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#allbyboundattribute"><code>AllByBoundAttribute</code></a>&lt;<code>T</code>>></p>
+<h4 id="defined-in_54">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:233</p>
+<hr />
+<h3 id="querybyalttext">queryByAltText</h3>
+<p>▸ <strong>queryByAltText</strong>&lt;<code>T</code>>(...<code>args</code>): <a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#querybyboundattribute"><code>QueryByBoundAttribute</code></a>&lt;<code>T</code>>></p>
+<h4 id="type-parameters_55">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_55">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>...args</code></td>
+<td align="left">[container: HTMLElement, id: Matcher, options?: MatcherOptions]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_55">Returns</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#querybyboundattribute"><code>QueryByBoundAttribute</code></a>&lt;<code>T</code>>></p>
+<h4 id="defined-in_55">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:212</p>
+<hr />
+<h3 id="querybydisplayvalue">queryByDisplayValue</h3>
+<p>▸ <strong>queryByDisplayValue</strong>&lt;<code>T</code>>(...<code>args</code>): <a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#querybyboundattribute"><code>QueryByBoundAttribute</code></a>&lt;<code>T</code>>></p>
+<h4 id="type-parameters_56">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_56">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>...args</code></td>
+<td align="left">[container: HTMLElement, id: Matcher, options?: MatcherOptions]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_56">Returns</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#querybyboundattribute"><code>QueryByBoundAttribute</code></a>&lt;<code>T</code>>></p>
+<h4 id="defined-in_56">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:248</p>
+<hr />
+<h3 id="querybylabeltext">queryByLabelText</h3>
+<p>▸ <strong>queryByLabelText</strong>&lt;<code>T</code>>(...<code>args</code>): <a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#querybytext"><code>QueryByText</code></a>&lt;<code>T</code>>></p>
+<h4 id="type-parameters_57">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_57">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>...args</code></td>
+<td align="left">[container: HTMLElement, id: Matcher, options?: SelectorMatcherOptions]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_57">Returns</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#querybytext"><code>QueryByText</code></a>&lt;<code>T</code>>></p>
+<h4 id="defined-in_57">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:158</p>
+<hr />
+<h3 id="querybyplaceholdertext">queryByPlaceholderText</h3>
+<p>▸ <strong>queryByPlaceholderText</strong>&lt;<code>T</code>>(...<code>args</code>): <a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#querybyboundattribute"><code>QueryByBoundAttribute</code></a>&lt;<code>T</code>>></p>
+<h4 id="type-parameters_58">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_58">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>...args</code></td>
+<td align="left">[container: HTMLElement, id: Matcher, options?: MatcherOptions]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_58">Returns</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#querybyboundattribute"><code>QueryByBoundAttribute</code></a>&lt;<code>T</code>>></p>
+<h4 id="defined-in_58">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:176</p>
+<hr />
+<h3 id="querybyrole_1">queryByRole</h3>
+<p>▸ <strong>queryByRole</strong>&lt;<code>T</code>>(...<code>args</code>): <a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#querybyrole"><code>QueryByRole</code></a>&lt;<code>T</code>>></p>
+<h4 id="type-parameters_59">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_59">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>...args</code></td>
+<td align="left">[container: HTMLElement, role: ByRoleMatcher, options?: ByRoleOptions]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_59">Returns</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#querybyrole"><code>QueryByRole</code></a>&lt;<code>T</code>>></p>
+<h4 id="defined-in_59">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:266</p>
+<hr />
+<h3 id="querybytestid">queryByTestId</h3>
+<p>▸ <strong>queryByTestId</strong>&lt;<code>T</code>>(...<code>args</code>): <a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#querybyboundattribute"><code>QueryByBoundAttribute</code></a>&lt;<code>T</code>>></p>
+<h4 id="type-parameters_60">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_60">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>...args</code></td>
+<td align="left">[container: HTMLElement, id: Matcher, options?: MatcherOptions]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_60">Returns</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#querybyboundattribute"><code>QueryByBoundAttribute</code></a>&lt;<code>T</code>>></p>
+<h4 id="defined-in_60">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:284</p>
+<hr />
+<h3 id="querybytext_1">queryByText</h3>
+<p>▸ <strong>queryByText</strong>&lt;<code>T</code>>(...<code>args</code>): <a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#querybytext"><code>QueryByText</code></a>&lt;<code>T</code>>></p>
+<h4 id="type-parameters_61">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_61">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>...args</code></td>
+<td align="left">[container: HTMLElement, id: Matcher, options?: SelectorMatcherOptions]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_61">Returns</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#querybytext"><code>QueryByText</code></a>&lt;<code>T</code>>></p>
+<h4 id="defined-in_61">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:194</p>
+<hr />
+<h3 id="querybytitle">queryByTitle</h3>
+<p>▸ <strong>queryByTitle</strong>&lt;<code>T</code>>(...<code>args</code>): <a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#querybyboundattribute"><code>QueryByBoundAttribute</code></a>&lt;<code>T</code>>></p>
+<h4 id="type-parameters_62">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <code>HTMLElement</code> = <code>HTMLElement</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_62">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>...args</code></td>
+<td align="left">[container: HTMLElement, id: Matcher, options?: MatcherOptions]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_62">Returns</h4>
+<p><a href="../akashaproject_ui_awf_testing_utils._internal_/#returntype"><code>ReturnType</code></a>&lt;<a href="./#querybyboundattribute"><code>QueryByBoundAttribute</code></a>&lt;<code>T</code>>></p>
+<h4 id="defined-in_62">Defined in</h4>
+<p>node_modules/@testing-library/dom/types/queries.d.ts:230</p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.22074ed6.min.js"}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.01de222e.min.js"></script>
+      
+    
+  </body>
+</html>

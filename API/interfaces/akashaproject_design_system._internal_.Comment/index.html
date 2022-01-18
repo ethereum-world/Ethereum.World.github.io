@@ -1,0 +1,3496 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.7">
+    
+    
+      
+        <title>akashaproject design system. internal .Comment - AKASHA World Framework docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.cd566b2a.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#interface-comment" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="AKASHA World Framework docs" class="md-header__button md-logo" aria-label="AKASHA World Framework docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AKASHA World Framework docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              akashaproject design system. internal .Comment
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="AKASHA World Framework docs" class="md-nav__button md-logo" aria-label="AKASHA World Framework docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    AKASHA World Framework docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modules/" class="md-nav__link">
+        API
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hierarchy" class="md-nav__link">
+    Hierarchy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    Table of contents
+  </a>
+  
+    <nav class="md-nav" aria-label="Table of contents">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    Properties
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    Methods
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties_1" class="md-nav__link">
+    Properties
+  </a>
+  
+    <nav class="md-nav" aria-label="Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#attribute_node" class="md-nav__link">
+    ATTRIBUTE_NODE
+  </a>
+  
+    <nav class="md-nav" aria-label="ATTRIBUTE_NODE">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cdata_section_node" class="md-nav__link">
+    CDATA_SECTION_NODE
+  </a>
+  
+    <nav class="md-nav" aria-label="CDATA_SECTION_NODE">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_1" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_1" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comment_node" class="md-nav__link">
+    COMMENT_NODE
+  </a>
+  
+    <nav class="md-nav" aria-label="COMMENT_NODE">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_2" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_2" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#document_fragment_node" class="md-nav__link">
+    DOCUMENT_FRAGMENT_NODE
+  </a>
+  
+    <nav class="md-nav" aria-label="DOCUMENT_FRAGMENT_NODE">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_3" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_3" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#document_node" class="md-nav__link">
+    DOCUMENT_NODE
+  </a>
+  
+    <nav class="md-nav" aria-label="DOCUMENT_NODE">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_4" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_4" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#document_position_contained_by" class="md-nav__link">
+    DOCUMENT_POSITION_CONTAINED_BY
+  </a>
+  
+    <nav class="md-nav" aria-label="DOCUMENT_POSITION_CONTAINED_BY">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_5" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_5" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#document_position_contains" class="md-nav__link">
+    DOCUMENT_POSITION_CONTAINS
+  </a>
+  
+    <nav class="md-nav" aria-label="DOCUMENT_POSITION_CONTAINS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_6" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_6" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#document_position_disconnected" class="md-nav__link">
+    DOCUMENT_POSITION_DISCONNECTED
+  </a>
+  
+    <nav class="md-nav" aria-label="DOCUMENT_POSITION_DISCONNECTED">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_7" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_7" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#document_position_following" class="md-nav__link">
+    DOCUMENT_POSITION_FOLLOWING
+  </a>
+  
+    <nav class="md-nav" aria-label="DOCUMENT_POSITION_FOLLOWING">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_8" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_8" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#document_position_implementation_specific" class="md-nav__link">
+    DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC
+  </a>
+  
+    <nav class="md-nav" aria-label="DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_9" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_9" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#document_position_preceding" class="md-nav__link">
+    DOCUMENT_POSITION_PRECEDING
+  </a>
+  
+    <nav class="md-nav" aria-label="DOCUMENT_POSITION_PRECEDING">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_10" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_10" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#document_type_node" class="md-nav__link">
+    DOCUMENT_TYPE_NODE
+  </a>
+  
+    <nav class="md-nav" aria-label="DOCUMENT_TYPE_NODE">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_11" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_11" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#element_node" class="md-nav__link">
+    ELEMENT_NODE
+  </a>
+  
+    <nav class="md-nav" aria-label="ELEMENT_NODE">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_12" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_12" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entity_node" class="md-nav__link">
+    ENTITY_NODE
+  </a>
+  
+    <nav class="md-nav" aria-label="ENTITY_NODE">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_13" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_13" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entity_reference_node" class="md-nav__link">
+    ENTITY_REFERENCE_NODE
+  </a>
+  
+    <nav class="md-nav" aria-label="ENTITY_REFERENCE_NODE">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_14" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_14" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notation_node" class="md-nav__link">
+    NOTATION_NODE
+  </a>
+  
+    <nav class="md-nav" aria-label="NOTATION_NODE">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_15" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_15" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#processing_instruction_node" class="md-nav__link">
+    PROCESSING_INSTRUCTION_NODE
+  </a>
+  
+    <nav class="md-nav" aria-label="PROCESSING_INSTRUCTION_NODE">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_16" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_16" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#text_node" class="md-nav__link">
+    TEXT_NODE
+  </a>
+  
+    <nav class="md-nav" aria-label="TEXT_NODE">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_17" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_17" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#baseuri" class="md-nav__link">
+    baseURI
+  </a>
+  
+    <nav class="md-nav" aria-label="baseURI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_18" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_18" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#childnodes" class="md-nav__link">
+    childNodes
+  </a>
+  
+    <nav class="md-nav" aria-label="childNodes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_19" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_19" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data" class="md-nav__link">
+    data
+  </a>
+  
+    <nav class="md-nav" aria-label="data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_20" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_20" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#firstchild" class="md-nav__link">
+    firstChild
+  </a>
+  
+    <nav class="md-nav" aria-label="firstChild">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_21" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_21" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isconnected" class="md-nav__link">
+    isConnected
+  </a>
+  
+    <nav class="md-nav" aria-label="isConnected">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_22" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_22" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lastchild" class="md-nav__link">
+    lastChild
+  </a>
+  
+    <nav class="md-nav" aria-label="lastChild">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_23" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_23" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#length" class="md-nav__link">
+    length
+  </a>
+  
+    <nav class="md-nav" aria-label="length">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_24" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_24" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nextelementsibling" class="md-nav__link">
+    nextElementSibling
+  </a>
+  
+    <nav class="md-nav" aria-label="nextElementSibling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_25" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_25" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nextsibling" class="md-nav__link">
+    nextSibling
+  </a>
+  
+    <nav class="md-nav" aria-label="nextSibling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_26" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_26" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nodename" class="md-nav__link">
+    nodeName
+  </a>
+  
+    <nav class="md-nav" aria-label="nodeName">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_27" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_27" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nodetype" class="md-nav__link">
+    nodeType
+  </a>
+  
+    <nav class="md-nav" aria-label="nodeType">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_28" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_28" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nodevalue" class="md-nav__link">
+    nodeValue
+  </a>
+  
+    <nav class="md-nav" aria-label="nodeValue">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_29" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_29" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ownerdocument" class="md-nav__link">
+    ownerDocument
+  </a>
+  
+    <nav class="md-nav" aria-label="ownerDocument">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_30" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_30" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parentelement" class="md-nav__link">
+    parentElement
+  </a>
+  
+    <nav class="md-nav" aria-label="parentElement">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_31" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_31" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parentnode" class="md-nav__link">
+    parentNode
+  </a>
+  
+    <nav class="md-nav" aria-label="parentNode">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_32" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_32" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#previouselementsibling" class="md-nav__link">
+    previousElementSibling
+  </a>
+  
+    <nav class="md-nav" aria-label="previousElementSibling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_33" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_33" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#previoussibling" class="md-nav__link">
+    previousSibling
+  </a>
+  
+    <nav class="md-nav" aria-label="previousSibling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_34" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_34" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#textcontent" class="md-nav__link">
+    textContent
+  </a>
+  
+    <nav class="md-nav" aria-label="textContent">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_35" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_35" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#methods_1" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#addeventlistener" class="md-nav__link">
+    addEventListener
+  </a>
+  
+    <nav class="md-nav" aria-label="addEventListener">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_36" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_36" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#after" class="md-nav__link">
+    after
+  </a>
+  
+    <nav class="md-nav" aria-label="after">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_1" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_1" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_37" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_37" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#appendchild" class="md-nav__link">
+    appendChild
+  </a>
+  
+    <nav class="md-nav" aria-label="appendChild">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_2" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_2" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_38" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_38" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#appenddata" class="md-nav__link">
+    appendData
+  </a>
+  
+    <nav class="md-nav" aria-label="appendData">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_3" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_3" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_39" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_39" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#before" class="md-nav__link">
+    before
+  </a>
+  
+    <nav class="md-nav" aria-label="before">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_4" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_4" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_40" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_40" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clonenode" class="md-nav__link">
+    cloneNode
+  </a>
+  
+    <nav class="md-nav" aria-label="cloneNode">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_5" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_5" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_41" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_41" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comparedocumentposition" class="md-nav__link">
+    compareDocumentPosition
+  </a>
+  
+    <nav class="md-nav" aria-label="compareDocumentPosition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_6" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_6" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_42" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_42" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contains" class="md-nav__link">
+    contains
+  </a>
+  
+    <nav class="md-nav" aria-label="contains">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_7" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_7" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_43" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_43" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deletedata" class="md-nav__link">
+    deleteData
+  </a>
+  
+    <nav class="md-nav" aria-label="deleteData">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_8" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_8" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_44" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_44" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dispatchevent" class="md-nav__link">
+    dispatchEvent
+  </a>
+  
+    <nav class="md-nav" aria-label="dispatchEvent">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_9" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_9" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_45" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_45" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getrootnode" class="md-nav__link">
+    getRootNode
+  </a>
+  
+    <nav class="md-nav" aria-label="getRootNode">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_10" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_10" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_46" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_46" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#haschildnodes" class="md-nav__link">
+    hasChildNodes
+  </a>
+  
+    <nav class="md-nav" aria-label="hasChildNodes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_11" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_47" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_47" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#insertbefore" class="md-nav__link">
+    insertBefore
+  </a>
+  
+    <nav class="md-nav" aria-label="insertBefore">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_1" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_11" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_12" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_48" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_48" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#insertdata" class="md-nav__link">
+    insertData
+  </a>
+  
+    <nav class="md-nav" aria-label="insertData">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_12" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_13" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_49" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_49" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isdefaultnamespace" class="md-nav__link">
+    isDefaultNamespace
+  </a>
+  
+    <nav class="md-nav" aria-label="isDefaultNamespace">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_13" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_14" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_50" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_50" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isequalnode" class="md-nav__link">
+    isEqualNode
+  </a>
+  
+    <nav class="md-nav" aria-label="isEqualNode">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_14" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_15" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_51" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_51" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#issamenode" class="md-nav__link">
+    isSameNode
+  </a>
+  
+    <nav class="md-nav" aria-label="isSameNode">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_15" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_16" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_52" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_52" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lookupnamespaceuri" class="md-nav__link">
+    lookupNamespaceURI
+  </a>
+  
+    <nav class="md-nav" aria-label="lookupNamespaceURI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_16" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_17" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_53" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_53" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lookupprefix" class="md-nav__link">
+    lookupPrefix
+  </a>
+  
+    <nav class="md-nav" aria-label="lookupPrefix">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_17" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_18" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_54" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_54" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#normalize" class="md-nav__link">
+    normalize
+  </a>
+  
+    <nav class="md-nav" aria-label="normalize">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_19" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_55" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_55" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove" class="md-nav__link">
+    remove
+  </a>
+  
+    <nav class="md-nav" aria-label="remove">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#returns_20" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_56" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_56" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removechild" class="md-nav__link">
+    removeChild
+  </a>
+  
+    <nav class="md-nav" aria-label="removeChild">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_2" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_18" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_21" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_57" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_57" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removeeventlistener" class="md-nav__link">
+    removeEventListener
+  </a>
+  
+    <nav class="md-nav" aria-label="removeEventListener">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_19" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_22" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_58" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_58" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#replacechild" class="md-nav__link">
+    replaceChild
+  </a>
+  
+    <nav class="md-nav" aria-label="replaceChild">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters_3" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_20" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_23" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_59" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_59" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#replacedata" class="md-nav__link">
+    replaceData
+  </a>
+  
+    <nav class="md-nav" aria-label="replaceData">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_21" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_24" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_60" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_60" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#replacewith" class="md-nav__link">
+    replaceWith
+  </a>
+  
+    <nav class="md-nav" aria-label="replaceWith">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_22" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_25" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_61" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_61" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#substringdata" class="md-nav__link">
+    substringData
+  </a>
+  
+    <nav class="md-nav" aria-label="substringData">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_23" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_26" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from_62" class="md-nav__link">
+    Inherited from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_62" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+<p><a href="../../">AWF</a> / <a href="../../modules/">Modules</a> / <a href="../../modules/akashaproject_design_system/">@akashaproject/design-system</a> / <a href="../../modules/akashaproject_design_system._internal_/">&lt;internal></a> / Comment</p>
+<h1 id="interface-comment">Interface: Comment</h1>
+<p><a href="../../modules/akashaproject_design_system/">@akashaproject/design-system</a>.<a href="../../modules/akashaproject_design_system._internal_/"><internal></a>.Comment</p>
+<p>Textual notations within markup; although it is generally not visually shown, such comments are available to be read in the source view.</p>
+<h2 id="hierarchy">Hierarchy</h2>
+<ul>
+<li><a href="../../modules/akashaproject_design_system._internal_/#characterdata"><code>CharacterData</code></a></li>
+</ul>
+<p>↳ <strong><code>Comment</code></strong></p>
+<h2 id="table-of-contents">Table of contents</h2>
+<h3 id="properties">Properties</h3>
+<ul>
+<li><a href="./#attribute_node">ATTRIBUTE_NODE</a></li>
+<li><a href="./#cdata_section_node">CDATA_SECTION_NODE</a></li>
+<li><a href="./#comment_node">COMMENT_NODE</a></li>
+<li><a href="./#document_fragment_node">DOCUMENT_FRAGMENT_NODE</a></li>
+<li><a href="./#document_node">DOCUMENT_NODE</a></li>
+<li><a href="./#document_position_contained_by">DOCUMENT_POSITION_CONTAINED_BY</a></li>
+<li><a href="./#document_position_contains">DOCUMENT_POSITION_CONTAINS</a></li>
+<li><a href="./#document_position_disconnected">DOCUMENT_POSITION_DISCONNECTED</a></li>
+<li><a href="./#document_position_following">DOCUMENT_POSITION_FOLLOWING</a></li>
+<li><a href="./#document_position_implementation_specific">DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC</a></li>
+<li><a href="./#document_position_preceding">DOCUMENT_POSITION_PRECEDING</a></li>
+<li><a href="./#document_type_node">DOCUMENT_TYPE_NODE</a></li>
+<li><a href="./#element_node">ELEMENT_NODE</a></li>
+<li><a href="./#entity_node">ENTITY_NODE</a></li>
+<li><a href="./#entity_reference_node">ENTITY_REFERENCE_NODE</a></li>
+<li><a href="./#notation_node">NOTATION_NODE</a></li>
+<li><a href="./#processing_instruction_node">PROCESSING_INSTRUCTION_NODE</a></li>
+<li><a href="./#text_node">TEXT_NODE</a></li>
+<li><a href="./#baseuri">baseURI</a></li>
+<li><a href="./#childnodes">childNodes</a></li>
+<li><a href="./#data">data</a></li>
+<li><a href="./#firstchild">firstChild</a></li>
+<li><a href="./#isconnected">isConnected</a></li>
+<li><a href="./#lastchild">lastChild</a></li>
+<li><a href="./#length">length</a></li>
+<li><a href="./#nextelementsibling">nextElementSibling</a></li>
+<li><a href="./#nextsibling">nextSibling</a></li>
+<li><a href="./#nodename">nodeName</a></li>
+<li><a href="./#nodetype">nodeType</a></li>
+<li><a href="./#nodevalue">nodeValue</a></li>
+<li><a href="./#ownerdocument">ownerDocument</a></li>
+<li><a href="./#parentelement">parentElement</a></li>
+<li><a href="./#parentnode">parentNode</a></li>
+<li><a href="./#previouselementsibling">previousElementSibling</a></li>
+<li><a href="./#previoussibling">previousSibling</a></li>
+<li><a href="./#textcontent">textContent</a></li>
+</ul>
+<h3 id="methods">Methods</h3>
+<ul>
+<li><a href="./#addeventlistener">addEventListener</a></li>
+<li><a href="./#after">after</a></li>
+<li><a href="./#appendchild">appendChild</a></li>
+<li><a href="./#appenddata">appendData</a></li>
+<li><a href="./#before">before</a></li>
+<li><a href="./#clonenode">cloneNode</a></li>
+<li><a href="./#comparedocumentposition">compareDocumentPosition</a></li>
+<li><a href="./#contains">contains</a></li>
+<li><a href="./#deletedata">deleteData</a></li>
+<li><a href="./#dispatchevent">dispatchEvent</a></li>
+<li><a href="./#getrootnode">getRootNode</a></li>
+<li><a href="./#haschildnodes">hasChildNodes</a></li>
+<li><a href="./#insertbefore">insertBefore</a></li>
+<li><a href="./#insertdata">insertData</a></li>
+<li><a href="./#isdefaultnamespace">isDefaultNamespace</a></li>
+<li><a href="./#isequalnode">isEqualNode</a></li>
+<li><a href="./#issamenode">isSameNode</a></li>
+<li><a href="./#lookupnamespaceuri">lookupNamespaceURI</a></li>
+<li><a href="./#lookupprefix">lookupPrefix</a></li>
+<li><a href="./#normalize">normalize</a></li>
+<li><a href="./#remove">remove</a></li>
+<li><a href="./#removechild">removeChild</a></li>
+<li><a href="./#removeeventlistener">removeEventListener</a></li>
+<li><a href="./#replacechild">replaceChild</a></li>
+<li><a href="./#replacedata">replaceData</a></li>
+<li><a href="./#replacewith">replaceWith</a></li>
+<li><a href="./#substringdata">substringData</a></li>
+</ul>
+<h2 id="properties_1">Properties</h2>
+<h3 id="attribute_node">ATTRIBUTE_NODE</h3>
+<p>• <code>Readonly</code> <strong>ATTRIBUTE_NODE</strong>: <code>number</code></p>
+<h4 id="inherited-from">Inherited from</h4>
+<p>CharacterData.ATTRIBUTE_NODE</p>
+<h4 id="defined-in">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10578</p>
+<hr />
+<h3 id="cdata_section_node">CDATA_SECTION_NODE</h3>
+<p>• <code>Readonly</code> <strong>CDATA_SECTION_NODE</strong>: <code>number</code></p>
+<p>node is a CDATASection node.</p>
+<h4 id="inherited-from_1">Inherited from</h4>
+<p>CharacterData.CDATA_SECTION_NODE</p>
+<h4 id="defined-in_1">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10582</p>
+<hr />
+<h3 id="comment_node">COMMENT_NODE</h3>
+<p>• <code>Readonly</code> <strong>COMMENT_NODE</strong>: <code>number</code></p>
+<p>node is a Comment node.</p>
+<h4 id="inherited-from_2">Inherited from</h4>
+<p>CharacterData.COMMENT_NODE</p>
+<h4 id="defined-in_2">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10586</p>
+<hr />
+<h3 id="document_fragment_node">DOCUMENT_FRAGMENT_NODE</h3>
+<p>• <code>Readonly</code> <strong>DOCUMENT_FRAGMENT_NODE</strong>: <code>number</code></p>
+<p>node is a DocumentFragment node.</p>
+<h4 id="inherited-from_3">Inherited from</h4>
+<p>CharacterData.DOCUMENT_FRAGMENT_NODE</p>
+<h4 id="defined-in_3">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10590</p>
+<hr />
+<h3 id="document_node">DOCUMENT_NODE</h3>
+<p>• <code>Readonly</code> <strong>DOCUMENT_NODE</strong>: <code>number</code></p>
+<p>node is a document.</p>
+<h4 id="inherited-from_4">Inherited from</h4>
+<p>CharacterData.DOCUMENT_NODE</p>
+<h4 id="defined-in_4">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10594</p>
+<hr />
+<h3 id="document_position_contained_by">DOCUMENT_POSITION_CONTAINED_BY</h3>
+<p>• <code>Readonly</code> <strong>DOCUMENT_POSITION_CONTAINED_BY</strong>: <code>number</code></p>
+<p>Set when other is a descendant of node.</p>
+<h4 id="inherited-from_5">Inherited from</h4>
+<p>CharacterData.DOCUMENT_POSITION_CONTAINED_BY</p>
+<h4 id="defined-in_5">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10598</p>
+<hr />
+<h3 id="document_position_contains">DOCUMENT_POSITION_CONTAINS</h3>
+<p>• <code>Readonly</code> <strong>DOCUMENT_POSITION_CONTAINS</strong>: <code>number</code></p>
+<p>Set when other is an ancestor of node.</p>
+<h4 id="inherited-from_6">Inherited from</h4>
+<p>CharacterData.DOCUMENT_POSITION_CONTAINS</p>
+<h4 id="defined-in_6">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10602</p>
+<hr />
+<h3 id="document_position_disconnected">DOCUMENT_POSITION_DISCONNECTED</h3>
+<p>• <code>Readonly</code> <strong>DOCUMENT_POSITION_DISCONNECTED</strong>: <code>number</code></p>
+<p>Set when node and other are not in the same tree.</p>
+<h4 id="inherited-from_7">Inherited from</h4>
+<p>CharacterData.DOCUMENT_POSITION_DISCONNECTED</p>
+<h4 id="defined-in_7">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10606</p>
+<hr />
+<h3 id="document_position_following">DOCUMENT_POSITION_FOLLOWING</h3>
+<p>• <code>Readonly</code> <strong>DOCUMENT_POSITION_FOLLOWING</strong>: <code>number</code></p>
+<p>Set when other is following node.</p>
+<h4 id="inherited-from_8">Inherited from</h4>
+<p>CharacterData.DOCUMENT_POSITION_FOLLOWING</p>
+<h4 id="defined-in_8">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10610</p>
+<hr />
+<h3 id="document_position_implementation_specific">DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC</h3>
+<p>• <code>Readonly</code> <strong>DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC</strong>: <code>number</code></p>
+<h4 id="inherited-from_9">Inherited from</h4>
+<p>CharacterData.DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC</p>
+<h4 id="defined-in_9">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10611</p>
+<hr />
+<h3 id="document_position_preceding">DOCUMENT_POSITION_PRECEDING</h3>
+<p>• <code>Readonly</code> <strong>DOCUMENT_POSITION_PRECEDING</strong>: <code>number</code></p>
+<p>Set when other is preceding node.</p>
+<h4 id="inherited-from_10">Inherited from</h4>
+<p>CharacterData.DOCUMENT_POSITION_PRECEDING</p>
+<h4 id="defined-in_10">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10615</p>
+<hr />
+<h3 id="document_type_node">DOCUMENT_TYPE_NODE</h3>
+<p>• <code>Readonly</code> <strong>DOCUMENT_TYPE_NODE</strong>: <code>number</code></p>
+<p>node is a doctype.</p>
+<h4 id="inherited-from_11">Inherited from</h4>
+<p>CharacterData.DOCUMENT_TYPE_NODE</p>
+<h4 id="defined-in_11">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10619</p>
+<hr />
+<h3 id="element_node">ELEMENT_NODE</h3>
+<p>• <code>Readonly</code> <strong>ELEMENT_NODE</strong>: <code>number</code></p>
+<p>node is an element.</p>
+<h4 id="inherited-from_12">Inherited from</h4>
+<p>CharacterData.ELEMENT_NODE</p>
+<h4 id="defined-in_12">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10623</p>
+<hr />
+<h3 id="entity_node">ENTITY_NODE</h3>
+<p>• <code>Readonly</code> <strong>ENTITY_NODE</strong>: <code>number</code></p>
+<h4 id="inherited-from_13">Inherited from</h4>
+<p>CharacterData.ENTITY_NODE</p>
+<h4 id="defined-in_13">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10624</p>
+<hr />
+<h3 id="entity_reference_node">ENTITY_REFERENCE_NODE</h3>
+<p>• <code>Readonly</code> <strong>ENTITY_REFERENCE_NODE</strong>: <code>number</code></p>
+<h4 id="inherited-from_14">Inherited from</h4>
+<p>CharacterData.ENTITY_REFERENCE_NODE</p>
+<h4 id="defined-in_14">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10625</p>
+<hr />
+<h3 id="notation_node">NOTATION_NODE</h3>
+<p>• <code>Readonly</code> <strong>NOTATION_NODE</strong>: <code>number</code></p>
+<h4 id="inherited-from_15">Inherited from</h4>
+<p>CharacterData.NOTATION_NODE</p>
+<h4 id="defined-in_15">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10626</p>
+<hr />
+<h3 id="processing_instruction_node">PROCESSING_INSTRUCTION_NODE</h3>
+<p>• <code>Readonly</code> <strong>PROCESSING_INSTRUCTION_NODE</strong>: <code>number</code></p>
+<p>node is a ProcessingInstruction node.</p>
+<h4 id="inherited-from_16">Inherited from</h4>
+<p>CharacterData.PROCESSING_INSTRUCTION_NODE</p>
+<h4 id="defined-in_16">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10630</p>
+<hr />
+<h3 id="text_node">TEXT_NODE</h3>
+<p>• <code>Readonly</code> <strong>TEXT_NODE</strong>: <code>number</code></p>
+<p>node is a Text node.</p>
+<h4 id="inherited-from_17">Inherited from</h4>
+<p>CharacterData.TEXT_NODE</p>
+<h4 id="defined-in_17">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10634</p>
+<hr />
+<h3 id="baseuri">baseURI</h3>
+<p>• <code>Readonly</code> <strong>baseURI</strong>: <code>string</code></p>
+<p>Returns node's node document's document base URL.</p>
+<h4 id="inherited-from_18">Inherited from</h4>
+<p>CharacterData.baseURI</p>
+<h4 id="defined-in_18">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10495</p>
+<hr />
+<h3 id="childnodes">childNodes</h3>
+<p>• <code>Readonly</code> <strong>childNodes</strong>: <a href="../akashaproject_design_system._internal_.NodeListOf/"><code>NodeListOf</code></a>&lt;<a href="../akashaproject_design_system._internal_.ChildNode/"><code>ChildNode</code></a>></p>
+<p>Returns the children.</p>
+<h4 id="inherited-from_19">Inherited from</h4>
+<p>CharacterData.childNodes</p>
+<h4 id="defined-in_19">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10499</p>
+<hr />
+<h3 id="data">data</h3>
+<p>• <strong>data</strong>: <code>string</code></p>
+<h4 id="inherited-from_20">Inherited from</h4>
+<p>CharacterData.data</p>
+<h4 id="defined-in_20">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3470</p>
+<hr />
+<h3 id="firstchild">firstChild</h3>
+<p>• <code>Readonly</code> <strong>firstChild</strong>: <a href="../akashaproject_design_system._internal_.ChildNode/"><code>ChildNode</code></a></p>
+<p>Returns the first child.</p>
+<h4 id="inherited-from_21">Inherited from</h4>
+<p>CharacterData.firstChild</p>
+<h4 id="defined-in_21">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10503</p>
+<hr />
+<h3 id="isconnected">isConnected</h3>
+<p>• <code>Readonly</code> <strong>isConnected</strong>: <code>boolean</code></p>
+<p>Returns true if node is connected and false otherwise.</p>
+<h4 id="inherited-from_22">Inherited from</h4>
+<p>CharacterData.isConnected</p>
+<h4 id="defined-in_22">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10507</p>
+<hr />
+<h3 id="lastchild">lastChild</h3>
+<p>• <code>Readonly</code> <strong>lastChild</strong>: <a href="../akashaproject_design_system._internal_.ChildNode/"><code>ChildNode</code></a></p>
+<p>Returns the last child.</p>
+<h4 id="inherited-from_23">Inherited from</h4>
+<p>CharacterData.lastChild</p>
+<h4 id="defined-in_23">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10511</p>
+<hr />
+<h3 id="length">length</h3>
+<p>• <code>Readonly</code> <strong>length</strong>: <code>number</code></p>
+<h4 id="inherited-from_24">Inherited from</h4>
+<p>CharacterData.length</p>
+<h4 id="defined-in_24">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3471</p>
+<hr />
+<h3 id="nextelementsibling">nextElementSibling</h3>
+<p>• <code>Readonly</code> <strong>nextElementSibling</strong>: <code>Element</code></p>
+<p>Returns the first following sibling that is an element, and null otherwise.</p>
+<h4 id="inherited-from_25">Inherited from</h4>
+<p>CharacterData.nextElementSibling</p>
+<h4 id="defined-in_25">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10756</p>
+<hr />
+<h3 id="nextsibling">nextSibling</h3>
+<p>• <code>Readonly</code> <strong>nextSibling</strong>: <a href="../akashaproject_design_system._internal_.ChildNode/"><code>ChildNode</code></a></p>
+<p>Returns the next sibling.</p>
+<h4 id="inherited-from_26">Inherited from</h4>
+<p>CharacterData.nextSibling</p>
+<h4 id="defined-in_26">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10515</p>
+<hr />
+<h3 id="nodename">nodeName</h3>
+<p>• <code>Readonly</code> <strong>nodeName</strong>: <code>string</code></p>
+<p>Returns a string appropriate for the type of node.</p>
+<h4 id="inherited-from_27">Inherited from</h4>
+<p>CharacterData.nodeName</p>
+<h4 id="defined-in_27">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10519</p>
+<hr />
+<h3 id="nodetype">nodeType</h3>
+<p>• <code>Readonly</code> <strong>nodeType</strong>: <code>number</code></p>
+<p>Returns the type of node.</p>
+<h4 id="inherited-from_28">Inherited from</h4>
+<p>CharacterData.nodeType</p>
+<h4 id="defined-in_28">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10523</p>
+<hr />
+<h3 id="nodevalue">nodeValue</h3>
+<p>• <strong>nodeValue</strong>: <code>string</code></p>
+<h4 id="inherited-from_29">Inherited from</h4>
+<p>CharacterData.nodeValue</p>
+<h4 id="defined-in_29">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10524</p>
+<hr />
+<h3 id="ownerdocument">ownerDocument</h3>
+<p>• <code>Readonly</code> <strong>ownerDocument</strong>: <code>Document</code></p>
+<h4 id="inherited-from_30">Inherited from</h4>
+<p>CharacterData.ownerDocument</p>
+<h4 id="defined-in_30">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3472</p>
+<hr />
+<h3 id="parentelement">parentElement</h3>
+<p>• <code>Readonly</code> <strong>parentElement</strong>: <code>HTMLElement</code></p>
+<p>Returns the parent element.</p>
+<h4 id="inherited-from_31">Inherited from</h4>
+<p>CharacterData.parentElement</p>
+<h4 id="defined-in_31">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10532</p>
+<hr />
+<h3 id="parentnode">parentNode</h3>
+<p>• <code>Readonly</code> <strong>parentNode</strong>: <a href="../akashaproject_design_system._internal_.ParentNode/"><code>ParentNode</code></a></p>
+<p>Returns the parent.</p>
+<h4 id="inherited-from_32">Inherited from</h4>
+<p>CharacterData.parentNode</p>
+<h4 id="defined-in_32">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10536</p>
+<hr />
+<h3 id="previouselementsibling">previousElementSibling</h3>
+<p>• <code>Readonly</code> <strong>previousElementSibling</strong>: <code>Element</code></p>
+<p>Returns the first preceding sibling that is an element, and null otherwise.</p>
+<h4 id="inherited-from_33">Inherited from</h4>
+<p>CharacterData.previousElementSibling</p>
+<h4 id="defined-in_33">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10760</p>
+<hr />
+<h3 id="previoussibling">previousSibling</h3>
+<p>• <code>Readonly</code> <strong>previousSibling</strong>: <a href="../akashaproject_design_system._internal_.ChildNode/"><code>ChildNode</code></a></p>
+<p>Returns the previous sibling.</p>
+<h4 id="inherited-from_34">Inherited from</h4>
+<p>CharacterData.previousSibling</p>
+<h4 id="defined-in_34">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10540</p>
+<hr />
+<h3 id="textcontent">textContent</h3>
+<p>• <strong>textContent</strong>: <code>string</code></p>
+<h4 id="inherited-from_35">Inherited from</h4>
+<p>CharacterData.textContent</p>
+<h4 id="defined-in_35">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10541</p>
+<h2 id="methods_1">Methods</h2>
+<h3 id="addeventlistener">addEventListener</h3>
+<p>▸ <strong>addEventListener</strong>(<code>type</code>, <code>callback</code>, <code>options?</code>): <code>void</code></p>
+<p>Appends an event listener for events whose type attribute value is type. The callback argument sets the callback that will be invoked when the event is dispatched.</p>
+<p>The options argument sets listener-specific options. For compatibility this can be a boolean, in which case the method behaves exactly as if the value was specified as options's capture.</p>
+<p>When set to true, options's capture prevents callback from being invoked when the event's eventPhase attribute value is BUBBLING_PHASE. When false (or not present), callback will not be invoked when event's eventPhase attribute value is CAPTURING_PHASE. Either way, callback will be invoked if event's eventPhase attribute value is AT_TARGET.</p>
+<p>When set to true, options's passive indicates that the callback will not cancel the event by invoking preventDefault(). This is used to enable performance optimizations described in § 2.8 Observing event listeners.</p>
+<p>When set to true, options's once indicates that the callback will only be invoked once after which the event listener will be removed.</p>
+<p>If an AbortSignal is passed for options's signal, then the event listener will be removed when signal is aborted.</p>
+<p>The event listener is appended to target's event listener list and is not appended if it has the same type, callback, and capture.</p>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>type</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>callback</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#eventlisteneroreventlistenerobject"><code>EventListenerOrEventListenerObject</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>options?</code></td>
+<td align="left"><code>boolean</code> | <a href="../akashaproject_design_system._internal_.AddEventListenerOptions/"><code>AddEventListenerOptions</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><code>void</code></p>
+<h4 id="inherited-from_36">Inherited from</h4>
+<p>CharacterData.addEventListener</p>
+<h4 id="defined-in_36">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5206</p>
+<hr />
+<h3 id="after">after</h3>
+<p>▸ <strong>after</strong>(...<code>nodes</code>): <code>void</code></p>
+<p>Inserts nodes just after node, while replacing strings in nodes with equivalent Text nodes.</p>
+<p>Throws a "HierarchyRequestError" DOMException if the constraints of the node tree are violated.</p>
+<h4 id="parameters_1">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>...nodes</code></td>
+<td align="left">(<code>string</code> | <a href="../../modules/akashaproject_design_system._internal_/#node"><code>Node</code></a>)[]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_1">Returns</h4>
+<p><code>void</code></p>
+<h4 id="inherited-from_37">Inherited from</h4>
+<p>CharacterData.after</p>
+<h4 id="defined-in_37">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3491</p>
+<hr />
+<h3 id="appendchild">appendChild</h3>
+<p>▸ <strong>appendChild</strong>&lt;<code>T</code>>(<code>node</code>): <code>T</code></p>
+<h4 id="type-parameters">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <a href="../../modules/akashaproject_design_system._internal_/#node"><code>Node</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_2">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>node</code></td>
+<td align="left"><code>T</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_2">Returns</h4>
+<p><code>T</code></p>
+<h4 id="inherited-from_38">Inherited from</h4>
+<p>CharacterData.appendChild</p>
+<h4 id="defined-in_38">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10542</p>
+<hr />
+<h3 id="appenddata">appendData</h3>
+<p>▸ <strong>appendData</strong>(<code>data</code>): <code>void</code></p>
+<h4 id="parameters_3">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>data</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_3">Returns</h4>
+<p><code>void</code></p>
+<h4 id="inherited-from_39">Inherited from</h4>
+<p>CharacterData.appendData</p>
+<h4 id="defined-in_39">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3473</p>
+<hr />
+<h3 id="before">before</h3>
+<p>▸ <strong>before</strong>(...<code>nodes</code>): <code>void</code></p>
+<p>Inserts nodes just before node, while replacing strings in nodes with equivalent Text nodes.</p>
+<p>Throws a "HierarchyRequestError" DOMException if the constraints of the node tree are violated.</p>
+<h4 id="parameters_4">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>...nodes</code></td>
+<td align="left">(<code>string</code> | <a href="../../modules/akashaproject_design_system._internal_/#node"><code>Node</code></a>)[]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_4">Returns</h4>
+<p><code>void</code></p>
+<h4 id="inherited-from_40">Inherited from</h4>
+<p>CharacterData.before</p>
+<h4 id="defined-in_40">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3497</p>
+<hr />
+<h3 id="clonenode">cloneNode</h3>
+<p>▸ <strong>cloneNode</strong>(<code>deep?</code>): <a href="../../modules/akashaproject_design_system._internal_/#node"><code>Node</code></a></p>
+<p>Returns a copy of node. If deep is true, the copy also includes the node's descendants.</p>
+<h4 id="parameters_5">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>deep?</code></td>
+<td align="left"><code>boolean</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_5">Returns</h4>
+<p><a href="../../modules/akashaproject_design_system._internal_/#node"><code>Node</code></a></p>
+<h4 id="inherited-from_41">Inherited from</h4>
+<p>CharacterData.cloneNode</p>
+<h4 id="defined-in_41">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10546</p>
+<hr />
+<h3 id="comparedocumentposition">compareDocumentPosition</h3>
+<p>▸ <strong>compareDocumentPosition</strong>(<code>other</code>): <code>number</code></p>
+<p>Returns a bitmask indicating the position of other relative to node.</p>
+<h4 id="parameters_6">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>other</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#node"><code>Node</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_6">Returns</h4>
+<p><code>number</code></p>
+<h4 id="inherited-from_42">Inherited from</h4>
+<p>CharacterData.compareDocumentPosition</p>
+<h4 id="defined-in_42">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10550</p>
+<hr />
+<h3 id="contains">contains</h3>
+<p>▸ <strong>contains</strong>(<code>other</code>): <code>boolean</code></p>
+<p>Returns true if other is an inclusive descendant of node, and false otherwise.</p>
+<h4 id="parameters_7">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>other</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#node"><code>Node</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_7">Returns</h4>
+<p><code>boolean</code></p>
+<h4 id="inherited-from_43">Inherited from</h4>
+<p>CharacterData.contains</p>
+<h4 id="defined-in_43">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10554</p>
+<hr />
+<h3 id="deletedata">deleteData</h3>
+<p>▸ <strong>deleteData</strong>(<code>offset</code>, <code>count</code>): <code>void</code></p>
+<h4 id="parameters_8">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>offset</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>count</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_8">Returns</h4>
+<p><code>void</code></p>
+<h4 id="inherited-from_44">Inherited from</h4>
+<p>CharacterData.deleteData</p>
+<h4 id="defined-in_44">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3474</p>
+<hr />
+<h3 id="dispatchevent">dispatchEvent</h3>
+<p>▸ <strong>dispatchEvent</strong>(<code>event</code>): <code>boolean</code></p>
+<p>Dispatches a synthetic event event to target and returns true if either event's cancelable attribute value is false or its preventDefault() method was not invoked, and false otherwise.</p>
+<h4 id="parameters_9">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>event</code></td>
+<td align="left"><code>Event</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_9">Returns</h4>
+<p><code>boolean</code></p>
+<h4 id="inherited-from_45">Inherited from</h4>
+<p>CharacterData.dispatchEvent</p>
+<h4 id="defined-in_45">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5210</p>
+<hr />
+<h3 id="getrootnode">getRootNode</h3>
+<p>▸ <strong>getRootNode</strong>(<code>options?</code>): <a href="../../modules/akashaproject_design_system._internal_/#node"><code>Node</code></a></p>
+<p>Returns node's root.</p>
+<h4 id="parameters_10">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>options?</code></td>
+<td align="left"><a href="../akashaproject_design_system._internal_.GetRootNodeOptions/"><code>GetRootNodeOptions</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_10">Returns</h4>
+<p><a href="../../modules/akashaproject_design_system._internal_/#node"><code>Node</code></a></p>
+<h4 id="inherited-from_46">Inherited from</h4>
+<p>CharacterData.getRootNode</p>
+<h4 id="defined-in_46">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10558</p>
+<hr />
+<h3 id="haschildnodes">hasChildNodes</h3>
+<p>▸ <strong>hasChildNodes</strong>(): <code>boolean</code></p>
+<p>Returns whether node has children.</p>
+<h4 id="returns_11">Returns</h4>
+<p><code>boolean</code></p>
+<h4 id="inherited-from_47">Inherited from</h4>
+<p>CharacterData.hasChildNodes</p>
+<h4 id="defined-in_47">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10562</p>
+<hr />
+<h3 id="insertbefore">insertBefore</h3>
+<p>▸ <strong>insertBefore</strong>&lt;<code>T</code>>(<code>node</code>, <code>child</code>): <code>T</code></p>
+<h4 id="type-parameters_1">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <a href="../../modules/akashaproject_design_system._internal_/#node"><code>Node</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_11">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>node</code></td>
+<td align="left"><code>T</code></td>
+</tr>
+<tr>
+<td align="left"><code>child</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#node"><code>Node</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_12">Returns</h4>
+<p><code>T</code></p>
+<h4 id="inherited-from_48">Inherited from</h4>
+<p>CharacterData.insertBefore</p>
+<h4 id="defined-in_48">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10563</p>
+<hr />
+<h3 id="insertdata">insertData</h3>
+<p>▸ <strong>insertData</strong>(<code>offset</code>, <code>data</code>): <code>void</code></p>
+<h4 id="parameters_12">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>offset</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>data</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_13">Returns</h4>
+<p><code>void</code></p>
+<h4 id="inherited-from_49">Inherited from</h4>
+<p>CharacterData.insertData</p>
+<h4 id="defined-in_49">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3475</p>
+<hr />
+<h3 id="isdefaultnamespace">isDefaultNamespace</h3>
+<p>▸ <strong>isDefaultNamespace</strong>(<code>namespace</code>): <code>boolean</code></p>
+<h4 id="parameters_13">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>namespace</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_14">Returns</h4>
+<p><code>boolean</code></p>
+<h4 id="inherited-from_50">Inherited from</h4>
+<p>CharacterData.isDefaultNamespace</p>
+<h4 id="defined-in_50">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10564</p>
+<hr />
+<h3 id="isequalnode">isEqualNode</h3>
+<p>▸ <strong>isEqualNode</strong>(<code>otherNode</code>): <code>boolean</code></p>
+<p>Returns whether node and otherNode have the same properties.</p>
+<h4 id="parameters_14">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>otherNode</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#node"><code>Node</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_15">Returns</h4>
+<p><code>boolean</code></p>
+<h4 id="inherited-from_51">Inherited from</h4>
+<p>CharacterData.isEqualNode</p>
+<h4 id="defined-in_51">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10568</p>
+<hr />
+<h3 id="issamenode">isSameNode</h3>
+<p>▸ <strong>isSameNode</strong>(<code>otherNode</code>): <code>boolean</code></p>
+<h4 id="parameters_15">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>otherNode</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#node"><code>Node</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_16">Returns</h4>
+<p><code>boolean</code></p>
+<h4 id="inherited-from_52">Inherited from</h4>
+<p>CharacterData.isSameNode</p>
+<h4 id="defined-in_52">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10569</p>
+<hr />
+<h3 id="lookupnamespaceuri">lookupNamespaceURI</h3>
+<p>▸ <strong>lookupNamespaceURI</strong>(<code>prefix</code>): <code>string</code></p>
+<h4 id="parameters_16">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>prefix</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_17">Returns</h4>
+<p><code>string</code></p>
+<h4 id="inherited-from_53">Inherited from</h4>
+<p>CharacterData.lookupNamespaceURI</p>
+<h4 id="defined-in_53">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10570</p>
+<hr />
+<h3 id="lookupprefix">lookupPrefix</h3>
+<p>▸ <strong>lookupPrefix</strong>(<code>namespace</code>): <code>string</code></p>
+<h4 id="parameters_17">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>namespace</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_18">Returns</h4>
+<p><code>string</code></p>
+<h4 id="inherited-from_54">Inherited from</h4>
+<p>CharacterData.lookupPrefix</p>
+<h4 id="defined-in_54">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10571</p>
+<hr />
+<h3 id="normalize">normalize</h3>
+<p>▸ <strong>normalize</strong>(): <code>void</code></p>
+<p>Removes empty exclusive Text nodes and concatenates the data of remaining contiguous exclusive Text nodes into the first of their nodes.</p>
+<h4 id="returns_19">Returns</h4>
+<p><code>void</code></p>
+<h4 id="inherited-from_55">Inherited from</h4>
+<p>CharacterData.normalize</p>
+<h4 id="defined-in_55">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10575</p>
+<hr />
+<h3 id="remove">remove</h3>
+<p>▸ <strong>remove</strong>(): <code>void</code></p>
+<p>Removes node.</p>
+<h4 id="returns_20">Returns</h4>
+<p><code>void</code></p>
+<h4 id="inherited-from_56">Inherited from</h4>
+<p>CharacterData.remove</p>
+<h4 id="defined-in_56">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3501</p>
+<hr />
+<h3 id="removechild">removeChild</h3>
+<p>▸ <strong>removeChild</strong>&lt;<code>T</code>>(<code>child</code>): <code>T</code></p>
+<h4 id="type-parameters_2">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <a href="../../modules/akashaproject_design_system._internal_/#node"><code>Node</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_18">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>child</code></td>
+<td align="left"><code>T</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_21">Returns</h4>
+<p><code>T</code></p>
+<h4 id="inherited-from_57">Inherited from</h4>
+<p>CharacterData.removeChild</p>
+<h4 id="defined-in_57">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10576</p>
+<hr />
+<h3 id="removeeventlistener">removeEventListener</h3>
+<p>▸ <strong>removeEventListener</strong>(<code>type</code>, <code>callback</code>, <code>options?</code>): <code>void</code></p>
+<p>Removes the event listener in target's event listener list with the same type, callback, and options.</p>
+<h4 id="parameters_19">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>type</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+<tr>
+<td align="left"><code>callback</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#eventlisteneroreventlistenerobject"><code>EventListenerOrEventListenerObject</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>options?</code></td>
+<td align="left"><code>boolean</code> | <a href="../akashaproject_design_system._internal_.EventListenerOptions/"><code>EventListenerOptions</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_22">Returns</h4>
+<p><code>void</code></p>
+<h4 id="inherited-from_58">Inherited from</h4>
+<p>CharacterData.removeEventListener</p>
+<h4 id="defined-in_58">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:5214</p>
+<hr />
+<h3 id="replacechild">replaceChild</h3>
+<p>▸ <strong>replaceChild</strong>&lt;<code>T</code>>(<code>node</code>, <code>child</code>): <code>T</code></p>
+<h4 id="type-parameters_3">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+<td align="left">extends <a href="../../modules/akashaproject_design_system._internal_/#node"><code>Node</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters_20">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>node</code></td>
+<td align="left"><a href="../../modules/akashaproject_design_system._internal_/#node"><code>Node</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>child</code></td>
+<td align="left"><code>T</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_23">Returns</h4>
+<p><code>T</code></p>
+<h4 id="inherited-from_59">Inherited from</h4>
+<p>CharacterData.replaceChild</p>
+<h4 id="defined-in_59">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:10577</p>
+<hr />
+<h3 id="replacedata">replaceData</h3>
+<p>▸ <strong>replaceData</strong>(<code>offset</code>, <code>count</code>, <code>data</code>): <code>void</code></p>
+<h4 id="parameters_21">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>offset</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>count</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>data</code></td>
+<td align="left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_24">Returns</h4>
+<p><code>void</code></p>
+<h4 id="inherited-from_60">Inherited from</h4>
+<p>CharacterData.replaceData</p>
+<h4 id="defined-in_60">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3476</p>
+<hr />
+<h3 id="replacewith">replaceWith</h3>
+<p>▸ <strong>replaceWith</strong>(...<code>nodes</code>): <code>void</code></p>
+<p>Replaces node with nodes, while replacing strings in nodes with equivalent Text nodes.</p>
+<p>Throws a "HierarchyRequestError" DOMException if the constraints of the node tree are violated.</p>
+<h4 id="parameters_22">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>...nodes</code></td>
+<td align="left">(<code>string</code> | <a href="../../modules/akashaproject_design_system._internal_/#node"><code>Node</code></a>)[]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_25">Returns</h4>
+<p><code>void</code></p>
+<h4 id="inherited-from_61">Inherited from</h4>
+<p>CharacterData.replaceWith</p>
+<h4 id="defined-in_61">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3507</p>
+<hr />
+<h3 id="substringdata">substringData</h3>
+<p>▸ <strong>substringData</strong>(<code>offset</code>, <code>count</code>): <code>string</code></p>
+<h4 id="parameters_23">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>offset</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+<tr>
+<td align="left"><code>count</code></td>
+<td align="left"><code>number</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_26">Returns</h4>
+<p><code>string</code></p>
+<h4 id="inherited-from_62">Inherited from</h4>
+<p>CharacterData.substringData</p>
+<h4 id="defined-in_62">Defined in</h4>
+<p>node_modules/typescript/lib/lib.dom.d.ts:3477</p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.22074ed6.min.js"}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.01de222e.min.js"></script>
+      
+    
+  </body>
+</html>
